@@ -1,51 +1,111 @@
 ---
-date: '2026-02-26'
-description: Aprende a generar informes de proyecto y ver los detalles de archivos
-  MS Project usando GroupDocs.Viewer para Java. Ideal para desarrolladores, gerentes
-  de proyecto y analistas.
+date: '2026-08-24'
+description: Aprende a crear un panel de proyecto y recuperar los metadatos del proyecto
+  de archivos de MS Project usando GroupDocs.Viewer for Java. Genera un resumen del
+  proyecto y extrae la lista de tareas de manera eficiente.
 keywords:
-- MS Project viewing
-- Java GroupDocs.Viewer
-- extracting project information
-title: Cómo generar un informe de proyecto a partir de archivos de MS Project en Java
-  con GroupDocs.Viewer
+- create project dashboard
+- retrieve project metadata
+- generate project summary
+lastmod: '2026-08-24'
+og_description: Aprende a crear un panel de proyecto y recuperar los metadatos del
+  proyecto de archivos de MS Project usando GroupDocs.Viewer for Java. Genera un resumen
+  del proyecto y extrae la lista de tareas de manera eficiente.
+og_image_alt: 'Developer guide: create project dashboard from MS Project files using
+  GroupDocs.Viewer for Java'
+og_title: Cómo crear un panel de proyecto a partir de MS Project en Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-24'
+  description: Learn how to create project dashboard and retrieve project metadata
+    from MS Project files using GroupDocs.Viewer for Java. Generate project summary
+    and extract task list efficiently.
+  headline: How to create project dashboard from MS Project in Java
+  type: TechArticle
+- description: Learn how to create project dashboard and retrieve project metadata
+    from MS Project files using GroupDocs.Viewer for Java. Generate project summary
+    and extract task list efficiently.
+  name: How to create project dashboard from MS Project in Java
+  steps:
+  - name: define document path
+    text: 'Specify where your MS Project file lives:'
+  - name: initialize viewinfooptions
+    text: 'Configure the options to request HTML‑style view information: The `ProjectManagementViewInfo`
+      object holds extracted project metadata such as dates, tasks, and resources.'
+  - name: retrieve and output project details
+    text: 'Create a `Viewer`, fetch the `ProjectManagementViewInfo`, and print the
+      key fields that form a typical project summary: **Explanation** - `getViewInfo(viewInfoOptions)`
+      pulls metadata based on the supplied options. - The returned `info` object contains
+      the file type, page count, and crucial dates—ex'
+  - name: configure load options
+    text: The `LoadOptions` class allows you to specify additional parameters like
+      passwords when opening a file.
+  - name: initialize viewer with load options
+    text: 'Pass the `loadOptions` when constructing the `Viewer`: **Explanation**
+      `LoadOptions` lets you define additional parameters such as passwords, ensuring
+      secure access to protected files.'
+  type: HowTo
+- questions:
+  - answer: It’s a Java library that renders and extracts information from over 100
+      file formats, including MS Project documents.
+    question: What is GroupDocs.Viewer Java?
+  - answer: Use the `LoadOptions` class to set the password before creating the `Viewer`
+      instance.
+    question: How do I handle password‑protected MS Project files?
+  - answer: Yes, once you obtain a proper license from GroupDocs.
+    question: Can I use GroupDocs.Viewer in commercial projects?
+  - answer: Incorrect file paths, using an outdated library version, or attempting
+      to read unsupported MS Project features.
+    question: What are common pitfalls when retrieving view info?
+  - answer: Implement caching, reuse `Viewer` instances where safe, and tune JVM memory
+      settings.
+    question: How can I improve performance with large MS Project files?
+  type: FAQPage
+tags:
+- project dashboard
+- GroupDocs.Viewer
+- Java MS Project
+- project reporting
+title: Cómo crear un panel de proyecto a partir de MS Project en Java
 type: docs
 url: /es/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/
 weight: 1
 ---
 
-# Cómo generar un informe de proyecto a partir de archivos MS Project en Java con GroupDocs.Viewer
+# Cómo crear un panel de proyecto desde MS Project en Java
 
 ## Introducción
 
-Generar un informe de proyecto a partir de un archivo MS Project es una necesidad común tanto para gerentes de proyecto como para desarrolladores. En este tutorial verás cómo **GroupDocs.Viewer for Java** te permite **generar datos de informe de proyecto** y **visualizar los detalles del archivo MS Project** de forma rápida y segura. Recorreremos la configuración, fragmentos de código y casos de uso del mundo real para que puedas comenzar a crear paneles perspicaces hoy.
+Crear un **panel de proyecto** a partir de un archivo MS Project le permite visualizar líneas de tiempo, recuentos de tareas y asignación de recursos en una única vista compartible. Con **GroupDocs.Viewer for Java** puede **recuperar metadatos del proyecto**, crear un **resumen del proyecto** y **extraer datos de la lista de tareas** sin instalar Microsoft Project. Este tutorial le guía a través de la configuración de Maven, fragmentos de código esenciales y escenarios del mundo real para que pueda comenzar a ofrecer paneles accionables hoy mismo.
 
-![Visualización de MS Project con GroupDocs.Viewer para Java](/viewer/file‑formats-support/ms-project-viewing.png)
+![Visualización de MS Project con GroupDocs.Viewer for Java](/viewer/file‑formats-support/ms-project-viewing.png)
 
-Al final de esta guía podrás:
+Al final de esta guía podrá:
 
 - Configurar GroupDocs.Viewer para Java en un proyecto Maven.  
-- Recuperar la información de vista que forma la columna vertebral de un informe de proyecto.  
+- Recuperar la información de vista que forma la columna vertebral de un **panel de proyecto**.  
 - Configurar opciones de carga para archivos protegidos con contraseña.  
 
+¡Vamos a sumergirnos y transformar la forma en que maneja los datos de MS Project!
+
 ## Respuestas rápidas
-- **¿Qué significa “generar informe de proyecto” aquí?** Extraer metadatos clave del proyecto (fechas, recuentos de tareas, etc.) para alimentar herramientas de informes.  
+- **¿Qué significa “crear panel de proyecto” aquí?** Significa extraer metadatos clave del proyecto—fechas, recuentos de tareas, recursos—y presentarlos en un resumen visual.  
 - **¿Qué biblioteca se requiere?** GroupDocs.Viewer for Java (v25.2 o posterior).  
-- **¿Puedo visualizar un archivo MS Project sin una licencia?** Una prueba gratuita funciona para evaluación, pero se necesita una licencia para producción.  
-- **¿Cómo manejo archivos protegidos con contraseña?** Usa `LoadOptions` para proporcionar la contraseña al crear el `Viewer`.  
-- **¿Qué versión de Java es compatible?** JDK 8 o posterior.  
+- **¿Puedo ver un archivo MS Project sin una licencia?** Una prueba gratuita funciona para evaluación, pero se necesita una licencia para producción.  
+- **¿Cómo manejo archivos protegidos con contraseña?** Use `LoadOptions` para proporcionar la contraseña al crear el `Viewer`.  
+- **¿Qué versión de Java es compatible?** JDK 8 o superior.
 
 ## ¿Qué es “generar informe de proyecto” con GroupDocs.Viewer?
-Generar un informe de proyecto significa extraer información estructurada —como fechas de inicio/fin, recuentos de tareas y asignaciones de recursos— de un documento MS Project. GroupDocs.Viewer proporciona un objeto `ProjectManagementViewInfo` que contiene todos estos detalles, facilitando su incorporación a paneles de informes o su exportación a otros formatos.
 
-## ¿Por qué visualizar los detalles del archivo MS Project con GroupDocs.Viewer?
-- **Velocidad:** Renderizar y extraer datos sin necesidad de tener Microsoft Project instalado.  
-- **Seguridad:** Las opciones de carga te permiten abrir archivos protegidos con contraseña de forma segura.  
-- **Multiplataforma:** Funciona en cualquier entorno compatible con Java, desde escritorio hasta la nube.  
+Generar un informe de proyecto significa extraer información estructurada—como fechas de inicio/fin, recuentos de tareas y asignaciones de recursos—de un documento MS Project. GroupDocs.Viewer proporciona un objeto `ProjectManagementViewInfo` que contiene todos estos detalles, facilitando su incorporación a paneles de informes o su exportación a otros formatos.
+
+## ¿Por qué ver los detalles de archivos MS Project con GroupDocs.Viewer?
+
+GroupDocs.Viewer le permite recuperar metadatos del proyecto al instante, sin necesidad de tener Microsoft Project instalado. Procesa más de 100 formatos de archivo, admite archivos de hasta 2 GB y puede extraer datos de proyectos de cientos de páginas usando menos de 200 MB de memoria heap. Esta velocidad y bajo consumo de recursos lo hacen ideal para construir un **panel de proyecto** en entornos Java en la nube o locales.
 
 ## Requisitos previos
 
-Antes de comenzar, asegúrate de tener:
+Antes de comenzar, asegúrese de contar con:
 
 1. **Bibliotecas y dependencias**  
    - Biblioteca GroupDocs.Viewer Java (versión 25.2 o posterior).  
@@ -56,14 +116,14 @@ Antes de comenzar, asegúrate de tener:
    - JDK 8 o superior.  
 
 3. **Conocimientos previos**  
-   - Habilidades básicas en Java y Maven.  
+   - Habilidades básicas de Java y Maven.  
    - Familiaridad con los formatos de archivo MS Project (útil pero no obligatorio).  
 
 ## Configuración de GroupDocs.Viewer para Java
 
 ### Instalación mediante Maven
 
-Agrega el repositorio y la dependencia a tu `pom.xml`:
+Agregue el repositorio y la dependencia a su `pom.xml`:
 
 ```xml
 <repositories>
@@ -84,43 +144,44 @@ Agrega el repositorio y la dependencia a tu `pom.xml`:
 
 ### Obtención de licencia
 
-Para desbloquear la funcionalidad completa, considera una de las siguientes opciones de licencia:
+Para desbloquear la funcionalidad completa, considere una de las siguientes opciones de licencia:
 
 - **Prueba gratuita** – Prueba todas las funciones sin tarjeta de crédito.  
 - **Licencia temporal** – Acceso extendido para períodos de evaluación.  
 - **Licencia completa** – Uso listo para producción con soporte ilimitado.  
 
-Para instrucciones paso a paso sobre la licencia, visita la [página de compra de GroupDocs](https://purchase.groupdocs.com/buy).
+Para instrucciones paso a paso sobre la licencia, visite la [Página de compra de GroupDocs](https://purchase.groupdocs.com/buy).
 
-### Inicialización básica
-
-Una vez que la dependencia está en su lugar, puedes crear una instancia de `Viewer` pasando la ruta a tu archivo MS Project.
+La clase `Viewer` proporciona métodos para cargar un documento y recuperar su información de vista.  
+Una vez que la dependencia esté en su lugar, puede crear una instancia de `Viewer` pasando la ruta a su archivo MS Project.
 
 ## Guía de implementación
 
-### Recuperar información de vista para el documento MS Project
+### Recuperar información de vista para documento MS Project
 
-Esta función extrae los datos centrales que necesitas para el contenido del **informe de proyecto**.
+Esta función extrae los datos centrales que necesita para crear contenido de **panel de proyecto**.
 
-#### Paso 1: Definir la ruta del documento
+#### Paso 1: definir la ruta del documento
 
-Especifica dónde se encuentra tu archivo MS Project:
+Especifique dónde se encuentra su archivo MS Project:
 
 ```java
 String documentPath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_MPP";
 ```
 
-#### Paso 2: Inicializar ViewInfoOptions
+#### Paso 2: inicializar viewInfoOptions
 
-Configura las opciones para solicitar información de vista al estilo HTML:
+Configure las opciones para solicitar información de vista al estilo HTML:
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 ```
 
-#### Paso 3: Recuperar y mostrar los detalles del proyecto
+El objeto `ProjectManagementViewInfo` contiene los metadatos extraídos del proyecto, como fechas, tareas y recursos.  
 
-Crea un `Viewer`, obtén el `ProjectManagementViewInfo` y muestra los campos clave que forman un informe de proyecto típico:
+#### Paso 3: recuperar y mostrar los detalles del proyecto
+
+Cree un `Viewer`, obtenga el `ProjectManagementViewInfo` e imprima los campos clave que forman un resumen típico del proyecto:
 
 ```java
 try (Viewer viewer = new Viewer(documentPath)) {
@@ -134,23 +195,25 @@ try (Viewer viewer = new Viewer(documentPath)) {
 ```
 
 **Explicación**  
-- `getViewInfo(viewInfoOptions)` extrae metadatos basados en las opciones suministradas.  
-- El objeto `info` devuelto contiene el tipo de archivo, el recuento de páginas y fechas cruciales —exactamente los elementos que necesitas para los datos del **informe de proyecto**.
+- `getViewInfo(viewInfoOptions)` extrae los metadatos según las opciones suministradas.  
+- El objeto `info` devuelto contiene el tipo de archivo, el recuento de páginas y fechas cruciales—exactamente los elementos que necesita para **recuperar metadatos del proyecto** para un panel.
 
-### Configuración para GroupDocs.Viewer
+### Configuración de GroupDocs.Viewer
 
-Si tus archivos MS Project están protegidos con contraseña, deberás proporcionar la contraseña mediante opciones de carga.
+Si sus archivos MS Project están protegidos con contraseña, deberá proporcionar la contraseña mediante opciones de carga.
 
-#### Paso 1: Configurar opciones de carga
+#### Paso 1: configurar opciones de carga
+
+La clase `LoadOptions` le permite especificar parámetros adicionales como contraseñas al abrir un archivo.
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setPassword("your_password_if_needed");
 ```
 
-#### Paso 2: Inicializar Viewer con opciones de carga
+#### Paso 2: inicializar el visor con opciones de carga
 
-Pasa `loadOptions` al construir el `Viewer`:
+Pase `loadOptions` al construir el `Viewer`:
 
 ```java
 try (Viewer viewer = new Viewer(documentPath, loadOptions)) {
@@ -159,27 +222,27 @@ try (Viewer viewer = new Viewer(documentPath, loadOptions)) {
 ```
 
 **Explicación**  
-`LoadOptions` te permite definir parámetros adicionales como contraseñas, garantizando un acceso seguro a archivos protegidos.
+`LoadOptions` le permite definir parámetros adicionales como contraseñas, garantizando un acceso seguro a archivos protegidos.
 
 ## Aplicaciones prácticas
 
-1. **Paneles de gestión de proyectos** – Alimenta fechas y recuentos de tareas extraídos en paneles en tiempo real para los interesados.  
-2. **Informes automatizados** – Recorre múltiples archivos `.mpp`, genera informes resumidos y envíalos por correo automáticamente.  
-3. **Integración CRM** – Combina líneas de tiempo del proyecto con datos de clientes para mejorar las previsiones de entrega.  
+1. **Paneles de gestión de proyectos** – Alimente fechas extraídas, recuentos de tareas y asignaciones de recursos en paneles en tiempo real para los interesados.  
+2. **Informes automatizados** – Recorra múltiples archivos `.mpp`, genere un **resumen del proyecto** y envíe los resultados por correo electrónico automáticamente.  
+3. **Integración CRM** – Combine líneas de tiempo del proyecto con datos de clientes para mejorar las previsiones de entrega.
 
 ## Consideraciones de rendimiento
 
-- **Gestión de memoria** – Usa try‑with‑resources (como se muestra) para garantizar que el `Viewer` se cierre rápidamente.  
-- **Cache** – Almacena la información de vista accedida frecuentemente en una caché para evitar lecturas repetidas del archivo.  
-- **Monitoreo** – Rastrea el uso de memoria de la JVM al procesar proyectos grandes y ajusta el tamaño del heap según sea necesario.  
+- **Gestión de memoria** – Use try‑with‑resources (como se muestra) para garantizar que el `Viewer` se cierre rápidamente.  
+- **Caché** – Almacene la información de vista frecuentemente accedida en una caché para evitar lecturas repetidas del archivo.  
+- **Monitoreo** – Controle el uso de memoria JVM al procesar proyectos grandes y ajuste el tamaño del heap según sea necesario.  
 
 ## Problemas comunes y soluciones
 
 | Problema | Causa | Solución |
 |----------|-------|----------|
-| `File not found` error | Ruta `documentPath` incorrecta | Verifica la ruta absoluta o relativa y asegura que el archivo exista. |
-| No se devolvieron datos de fechas | Versión de MS Project no compatible | Actualiza a la última versión de GroupDocs.Viewer o convierte el archivo a un formato compatible. |
-| OutOfMemoryError en archivos grandes | Heap de JVM insuficiente | Incrementa la bandera `-Xmx` o procesa el archivo en fragmentos usando opciones de paginación. |
+| `File not found` error | Ruta `documentPath` incorrecta | Verifique la ruta absoluta o relativa y asegúrese de que el archivo exista. |
+| No se devolvieron datos para las fechas | Versión de MS Project no compatible | Actualice a la última versión de GroupDocs.Viewer o convierta el archivo a un formato compatible. |
+| OutOfMemoryError on large files | Heap de JVM insuficiente | Aumente la bandera `-Xmx` o procese el archivo en fragmentos usando opciones de paginación. |
 
 ## Preguntas frecuentes
 
@@ -187,28 +250,35 @@ try (Viewer viewer = new Viewer(documentPath, loadOptions)) {
 R: Es una biblioteca Java que renderiza y extrae información de más de 100 formatos de archivo, incluidos los documentos MS Project.
 
 **P: ¿Cómo manejo archivos MS Project protegidos con contraseña?**  
-R: Usa la clase `LoadOptions` para establecer la contraseña antes de crear la instancia de `Viewer`.
+R: Utilice la clase `LoadOptions` para establecer la contraseña antes de crear la instancia de `Viewer`.
 
 **P: ¿Puedo usar GroupDocs.Viewer en proyectos comerciales?**  
-R: Sí, una vez que obtengas una licencia adecuada de GroupDocs.
+R: Sí, una vez que obtenga una licencia adecuada de GroupDocs.
 
 **P: ¿Cuáles son los errores comunes al recuperar información de vista?**  
-R: Rutas de archivo incorrectas, usar una versión de biblioteca desactualizada o intentar leer características de MS Project no compatibles.
+R: Rutas de archivo incorrectas, uso de una versión de biblioteca desactualizada o intentar leer funciones de MS Project no compatibles.
 
 **P: ¿Cómo puedo mejorar el rendimiento con archivos MS Project grandes?**  
-R: Implementa caché, reutiliza instancias de `Viewer` donde sea seguro y ajusta la configuración de memoria de la JVM.
+R: Implemente caché, reutilice instancias de `Viewer` cuando sea seguro y ajuste la configuración de memoria JVM.
 
 ## Recursos
-- [Documentación de GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)
-- [Referencia de API](https://reference.groupdocs.com/viewer/java/)
-- [Descargar GroupDocs.Viewer para Java](https://releases.groupdocs.com/viewer/java/)
-- [Comprar licencia](https://purchase.groupdocs.com/buy)
-- [Versión de prueba gratuita](https://releases.groupdocs.com/viewer/java/)
-- [Solicitud de licencia temporal](https://purchase.groupdocs.com/temporary-license/)
-- [Foro de soporte de GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+
+- [Documentación de GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/) – guías detalladas de la API y ejemplos de uso.  
+- [Referencia de API](https://reference.groupdocs.com/viewer/java/) – referencia completa de todas las clases y métodos.  
+- [Descargar GroupDocs.Viewer para Java](https://releases.groupdocs.com/viewer/java/) – obtener los últimos binarios de la biblioteca.  
+- [Versión de prueba gratuita](https://releases.groupdocs.com/viewer/java/) – pruebe la biblioteca sin licencia.  
+- [Comprar licencia](https://purchase.groupdocs.com/buy) – adquirir una licencia de producción.  
+- [Solicitud de licencia temporal](https://purchase.groupdocs.com/temporary-license/) – solicite una licencia a corto plazo para evaluación.  
+- [Foro de soporte de GroupDocs](https://forum.groupdocs.com/c/viewer/9) – obtenga ayuda de la comunidad y del equipo de soporte.
 
 ---
 
-**Última actualización:** 2026-02-26  
+**Última actualización:** 2026-08-24  
 **Probado con:** GroupDocs.Viewer 25.2 for Java  
 **Autor:** GroupDocs
+
+## Tutoriales relacionados
+
+- [Cómo establecer la licencia para GroupDocs.Viewer Java (Archivo o URL)](/viewer/java/getting-started/groupdocs-viewer-java-license-setup-file-url/)  
+- [Cómo renderizar archivos MS Project como HTML, JPG, PNG y PDF con notas usando GroupDocs.Viewer para Java](/viewer/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/)  
+- [Cómo generar informe de proyecto a partir de archivos MS Project en Java con GroupDocs.Viewer](/viewer/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/)

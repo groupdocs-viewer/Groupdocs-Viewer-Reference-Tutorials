@@ -1,70 +1,127 @@
 ---
-date: '2026-02-26'
-description: Ismerje meg, hogyan lehet projektjelentést generálni és megtekinteni
-  az MS Project fájl részleteit a GroupDocs.Viewer for Java használatával. Ideális
-  fejlesztők, projektmenedzserek és elemzők számára.
+date: '2026-08-24'
+description: Tanulja meg, hogyan hozhat létre projekt irányítópultot, és hogyan szerezhet
+  be projekt metaadatokat MS Project fájlokból a GroupDocs.Viewer for Java használatával.
+  Hatékonyan generáljon projekt összefoglalót, és vonja ki a feladatlistát.
 keywords:
-- MS Project viewing
-- Java GroupDocs.Viewer
-- extracting project information
-title: Hogyan generáljunk projektjelentést MS Project fájlokból Java-ban a GroupDocs.Viewer
-  segítségével
+- create project dashboard
+- retrieve project metadata
+- generate project summary
+lastmod: '2026-08-24'
+og_description: Tanulja meg, hogyan hozhat létre projekt irányítópultot, és hogyan
+  szerezhet be projekt metaadatokat MS Project fájlokból a GroupDocs.Viewer for Java
+  használatával. Hatékonyan generáljon projekt összefoglalót, és vonja ki a feladatlistát.
+og_image_alt: 'Developer guide: create project dashboard from MS Project files using
+  GroupDocs.Viewer for Java'
+og_title: Hogyan készítsünk projekt irányítópultot MS Projectből Java-ban
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-24'
+  description: Learn how to create project dashboard and retrieve project metadata
+    from MS Project files using GroupDocs.Viewer for Java. Generate project summary
+    and extract task list efficiently.
+  headline: How to create project dashboard from MS Project in Java
+  type: TechArticle
+- description: Learn how to create project dashboard and retrieve project metadata
+    from MS Project files using GroupDocs.Viewer for Java. Generate project summary
+    and extract task list efficiently.
+  name: How to create project dashboard from MS Project in Java
+  steps:
+  - name: define document path
+    text: 'Specify where your MS Project file lives:'
+  - name: initialize viewinfooptions
+    text: 'Configure the options to request HTML‑style view information: The `ProjectManagementViewInfo`
+      object holds extracted project metadata such as dates, tasks, and resources.'
+  - name: retrieve and output project details
+    text: 'Create a `Viewer`, fetch the `ProjectManagementViewInfo`, and print the
+      key fields that form a typical project summary: **Explanation** - `getViewInfo(viewInfoOptions)`
+      pulls metadata based on the supplied options. - The returned `info` object contains
+      the file type, page count, and crucial dates—ex'
+  - name: configure load options
+    text: The `LoadOptions` class allows you to specify additional parameters like
+      passwords when opening a file.
+  - name: initialize viewer with load options
+    text: 'Pass the `loadOptions` when constructing the `Viewer`: **Explanation**
+      `LoadOptions` lets you define additional parameters such as passwords, ensuring
+      secure access to protected files.'
+  type: HowTo
+- questions:
+  - answer: It’s a Java library that renders and extracts information from over 100
+      file formats, including MS Project documents.
+    question: What is GroupDocs.Viewer Java?
+  - answer: Use the `LoadOptions` class to set the password before creating the `Viewer`
+      instance.
+    question: How do I handle password‑protected MS Project files?
+  - answer: Yes, once you obtain a proper license from GroupDocs.
+    question: Can I use GroupDocs.Viewer in commercial projects?
+  - answer: Incorrect file paths, using an outdated library version, or attempting
+      to read unsupported MS Project features.
+    question: What are common pitfalls when retrieving view info?
+  - answer: Implement caching, reuse `Viewer` instances where safe, and tune JVM memory
+      settings.
+    question: How can I improve performance with large MS Project files?
+  type: FAQPage
+tags:
+- project dashboard
+- GroupDocs.Viewer
+- Java MS Project
+- project reporting
+title: Hogyan készítsünk projekt irányítópultot MS Projectből Java-ban
 type: docs
 url: /hu/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/
 weight: 1
 ---
 
-# Hogyan generáljunk projektjelentést MS Project fájlokból Java-ban a GroupDocs.Viewer segítségével
+# Hogyan hozzunk létre projekt irányítópultot MS Projectből Java-ban
 
 ## Bevezetés
 
-Projektjelentés generálása egy MS Project fájlból gyakori igény mind a projektmenedzserek, mind a fejlesztők számára. Ebben az útmutatóban megmutatjuk, hogyan teszi lehetővé a **GroupDocs.Viewer for Java**, hogy **projektjelentés** adatokat **generálj** és **MS Project fájl** részleteket tekints meg gyorsan és biztonságosan. Végigvezetünk a beállításon, a kódrészleteken és a valós példákon, hogy már ma elkezdhesd az átfogó műszerfalak építését.
+Az MS Project fájlból **projekt irányítópult** létrehozása lehetővé teszi az ütemtervek, feladatok száma és erőforrás-elosztás vizualizálását egyetlen, megosztható nézetben. A **GroupDocs.Viewer for Java** segítségével **lekérheti a projekt metaadatait**, **összeállíthat egy projekt összefoglalót**, és **kivonhatja a feladatlistát** anélkül, hogy a Microsoft Projectet telepítené. Ez az útmutató végigvezeti a Maven beállításon, a lényeges kódrészleteken és a valós példákon, hogy már ma elkezdhesse a használható irányítópultok szállítását.
 
-![MS Project megtekintése a GroupDocs.Viewer for Java-val](/viewer/file‑formats-support/ms-project-viewing.png)
+![MS Project Viewing with GroupDocs.Viewer for Java](/viewer/file‑formats-support/ms-project-viewing.png)
 
-A végére a következőket fogod tudni:
+Az útmutató végére képes lesz:
 
-- Állítsd be a GroupDocs.Viewer for Java-t egy Maven projektben.  
-- Szerezd meg a nézetinformációkat, amelyek a projektjelentés alapját képezik.  
-- Állítsd be a betöltési opciókat jelszóval védett fájlokhoz.  
+- A GroupDocs.Viewer for Java beállítása Maven projektben.  
+- A nézetinformációk lekérése, amelyek a **projekt irányítópult** gerincét alkotják.  
+- Betöltési beállítások konfigurálása jelszóval védett fájlokhoz.  
 
-Merüljünk el, és alakítsuk át, ahogyan az MS Project adatokat kezeled!
+Merüljünk el, és alakítsuk át a MS Project adatok kezelésének módját!
 
 ## Gyors válaszok
-- **Mi jelent a „projektjelentés generálása” itt?** Kulcsfontosságú projekt metaadatok (dátumok, feladatok száma stb.) kinyerése a jelentéskészítő eszközök számára.  
+- **Mi jelent a „projekt irányítópult létrehozása” itt?** Ez azt jelenti, hogy kulcsfontosságú projekt metaadatokat – dátumokat, feladatok számát, erőforrásokat – vonunk ki, és vizuális összefoglalóban jelenítjük meg.  
 - **Melyik könyvtár szükséges?** GroupDocs.Viewer for Java (v25.2 vagy újabb).  
-- **Megtekinthetek MS Project fájlt licenc nélkül?** Az ingyenes próba verzió értékelésre használható, de a termeléshez licenc szükséges.  
-- **Hogyan kezeljem a jelszóval védett fájlokat?** Használd a `LoadOptions`-t a jelszó megadásához a `Viewer` létrehozásakor.  
-- **Melyik Java verzió támogatott?** JDK 8 vagy újabb.
+- **Megtekinthetek MS Project fájlt licenc nélkül?** Egy ingyenes próba verzió használható értékelésre, de a termeléshez licenc szükséges.  
+- **Hogyan kezelem a jelszóval védett fájlokat?** Használja a `LoadOptions` osztályt a jelszó megadásához a `Viewer` létrehozásakor.  
+- **Melyik Java verzió támogatott?** JDK 8 vagy újabb.
 
-## Mi a „projektjelentés generálása” a GroupDocs.Viewer-rel?
+## Mi az a „projekt jelentés generálása” a GroupDocs.Viewer‑rel?
 
-Projektjelentés generálása azt jelenti, hogy strukturált információkat (például kezdő/lezáró dátumok, feladatok száma és erőforrás-elosztás) nyerünk ki egy MS Project dokumentumból. A GroupDocs.Viewer egy `ProjectManagementViewInfo` objektumot biztosít, amely tartalmazza ezeket a részleteket, így könnyen beilleszthetők jelentésműszerfalakba vagy exportálhatók más formátumokba.
+A projekt jelentés generálása azt jelenti, hogy strukturált információkat – például kezdő/lezáró dátumokat, feladatok számát és erőforrás-elosztásokat – vonunk ki egy MS Project dokumentumból. A GroupDocs.Viewer egy `ProjectManagementViewInfo` objektumot biztosít, amely tartalmazza ezeket a részleteket, így könnyen beilleszthetők jelentés‑irányítópultokba vagy exportálhatók más formátumokba.
 
-## Miért tekintsük meg az MS Project fájl részleteit a GroupDocs.Viewer-rel?
-- **Sebesség:** Renderelés és adatkinyerés Microsoft Project telepítése nélkül.  
-- **Biztonság:** A betöltési opciók lehetővé teszik a jelszóval védett fájlok biztonságos megnyitását.  
-- **Keresztplatform:** Működik bármely Java-kompatibilis környezetben, asztali géptől a felhőig.  
+## Miért nézzük meg az MS Project fájl részleteit a GroupDocs.Viewer‑rel?
+
+A GroupDocs.Viewer lehetővé teszi a projekt metaadatok azonnali lekérését anélkül, hogy a Microsoft Project telepítve lenne. Több mint 100 fájlformátumot támogat, akár 2 GB‑os fájlokkal is dolgozik, és több száz oldalas projektekből is ki tudja nyerni az adatokat kevesebb, mint 200 MB heap memória felhasználásával. Ez a sebesség és alacsony erőforrásigény ideálissá teszi a **projekt irányítópult** felépítését felhőben vagy helyi Java környezetben.
 
 ## Előfeltételek
 
 1. **Könyvtárak és függőségek**  
-   - GroupDocs.Viewer Java könyvtár (verzió 25.2 vagy újabb).  
-   - Maven telepítve a függőségkezeléshez.  
+   - GroupDocs.Viewer Java library (version 25.2 or later).  
+   - Maven installed for dependency management.  
 
 2. **Környezet beállítása**  
    - Egy IDE, például IntelliJ IDEA vagy Eclipse.  
-   - JDK 8 vagy újabb.  
+   - JDK 8 vagy újabb.  
 
-3. **Tudás előfeltételek**  
+3. **Ismeretek előfeltételei**  
    - Alapvető Java és Maven ismeretek.  
-   - Ismeret az MS Project fájlformátumokkal (hasznos, de nem kötelező).  
+   - MS Project fájlformátumok ismerete (hasznos, de nem kötelező).  
 
-## A GroupDocs.Viewer for Java beállítása
+## A GroupDocs.Viewer beállítása Java-hoz
 
 ### Telepítés Maven segítségével
 
-Add hozzá a repository-t és a függőséget a `pom.xml`-hez:
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -85,43 +142,44 @@ Add hozzá a repository-t és a függőséget a `pom.xml`-hez:
 
 ### Licenc beszerzése
 
-A teljes funkcionalitás feloldásához fontold meg az alábbi licencelési lehetőségeket:
+A teljes funkcionalitás feloldásához fontolja meg az alábbi licencelési lehetőségek egyikét:
 
-- **Ingyenes próba** – Minden funkció tesztelése hitelkártya nélkül.  
-- **Ideiglenes licenc** – Kiterjesztett hozzáférés értékelési időszakokra.  
-- **Teljes licenc** – Termelésre kész használat korlátlan támogatással.  
+- **Free trial** – Tesztelje az összes funkciót hitelkártya nélkül.  
+- **Temporary license** – Kiterjesztett hozzáférés értékelési időszakokra.  
+- **Full license** – Termelés‑kész használat korlátlan támogatással.  
 
-Step‑by‑step licencelési útmutatóért látogasd meg a [GroupDocs purchase page](https://purchase.groupdocs.com/buy) oldalt.
+A lépésről‑lépésre licencelési útmutatóért látogassa meg a [GroupDocs vásárlási oldalt](https://purchase.groupdocs.com/buy).
 
-### Alapvető inicializálás
+A `Viewer` osztály metódusokat biztosít egy dokumentum betöltéséhez és a nézetinformációk lekéréséhez.  
+Miután a függőség telepítve van, a `Viewer` példányt a MS Project fájl elérési útjának átadásával hozhatja létre.
 
-Miután a függőség be van állítva, létrehozhatsz egy `Viewer` példányt a MS Project fájl elérési útjának megadásával.
-
-## Implementációs útmutató
+## Megvalósítási útmutató
 
 ### Nézetinformáció lekérése MS Project dokumentumhoz
 
-Ez a funkció kinyeri a **projektjelentés generálásához** szükséges alapadatokat.
+Ez a funkció kinyeri a **projekt irányítópult** tartalomhoz szükséges alapadatokat.
 
-#### 1. lépés: Dokumentum útvonal meghatározása
+#### 1. lépés: dokumentum útvonal meghatározása
 
-Add meg, hol található az MS Project fájlod:
+Specify where your MS Project file lives:
 
 ```java
 String documentPath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_MPP";
 ```
 
-#### 2. lépés: ViewInfoOptions inicializálása
+#### 2. lépés: viewInfoOptions inicializálása
 
-Állítsd be az opciókat, hogy HTML‑stílusú nézetinformációt kérj:
+Configure the options to request HTML‑style view information:
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 ```
 
-#### 3. lépés: Projekt részletek lekérése és kiírása
+A `ProjectManagementViewInfo` objektum tartalmazza a kinyert projekt metaadatokat, például dátumokat, feladatokat és erőforrásokat.  
 
-Hozz létre egy `Viewer`-t, szerezd be a `ProjectManagementViewInfo` objektumot, és írd ki a kulcsmezőket, amelyek egy tipikus projektjelentést alkotnak:
+#### 3. lépés: projekt részletek lekérése és kiírása
+
+Create a `Viewer`, fetch the `ProjectManagementViewInfo`, and print the key fields that form a typical project summary:
 
 ```java
 try (Viewer viewer = new Viewer(documentPath)) {
@@ -135,23 +193,25 @@ try (Viewer viewer = new Viewer(documentPath)) {
 ```
 
 **Magyarázat**  
-- `getViewInfo(viewInfoOptions)` a megadott opciók alapján metaadatokat húz le.  
-- A visszakapott `info` objektum tartalmazza a fájltípust, az oldalszámot és a fontos dátumokat – pontosan azok az elemek, amelyekre a **projektjelentés generálásához** szükséged van.
+- `getViewInfo(viewInfoOptions)` a megadott beállítások alapján húzza le a metaadatokat.  
+- A visszakapott `info` objektum tartalmazza a fájltípust, az oldalak számát és a kulcsfontosságú dátumokat – pontosan azokat az elemeket, amelyekre a **projekt metaadatok lekéréséhez** szükség van egy irányítópultban.
 
 ### Beállítás a GroupDocs.Viewer konfigurációhoz
 
-Ha az MS Project fájljaid jelszóval védettek, a jelszót a betöltési opciókon keresztül kell megadni.
+Ha MS Project fájljai jelszóval védettek, a jelszót a betöltési beállításokkal kell megadni.
 
-#### 1. lépés: Betöltési opciók konfigurálása
+#### 1. lépés: betöltési beállítások konfigurálása
+
+The `LoadOptions` class allows you to specify additional parameters like passwords when opening a file.
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setPassword("your_password_if_needed");
 ```
 
-#### 2. lépés: Viewer inicializálása betöltési opciókkal
+#### 2. lépés: viewer inicializálása betöltési beállításokkal
 
-Add át a `loadOptions`-t a `Viewer` létrehozásakor:
+Pass the `loadOptions` when constructing the `Viewer`:
 
 ```java
 try (Viewer viewer = new Viewer(documentPath, loadOptions)) {
@@ -160,54 +220,63 @@ try (Viewer viewer = new Viewer(documentPath, loadOptions)) {
 ```
 
 **Magyarázat**  
-`LoadOptions` lehetővé teszi további paraméterek, például jelszavak megadását, biztosítva a védett fájlok biztonságos elérését.
+`LoadOptions` lehetővé teszi további paraméterek, például jelszavak megadását, biztosítva a védett fájlok biztonságos hozzáférését.
 
 ## Gyakorlati alkalmazások
 
-1. **Projektmenedzsment műszerfalak** – A kinyert dátumok és feladatok száma valós‑idő műszerfalakba táplálva az érintettek számára.  
-2. **Automatizált jelentéskészítés** – Több `.mpp` fájlon iterálva generálj összegző jelentéseket, és küldd el őket automatikusan e‑mailben.  
-3. **CRM integráció** – Kombináld a projekt ütemterveket az ügyféladatokkal a szállítási előrejelzések javítása érdekében.
+1. **Projektmenedzsment irányítópultok** – Az kinyert dátumok, feladatok száma és erőforrás-elosztások betáplálása valós idejű irányítópultokba az érintettek számára.  
+2. **Automatizált jelentéskészítés** – Több `.mpp` fájl bejárása, **projekt összefoglaló** generálása, és az eredmények automatikus e‑mailben történő elküldése.  
+3. **CRM integráció** – Projekt ütemtervek kombinálása ügyféladatokkal a szállítási előrejelzések javítása érdekében.
 
 ## Teljesítmény szempontok
 
-- **Memóriakezelés** – Használd a try‑with‑resources (ahogy a példában) a `Viewer` gyors lezárásának biztosításához.  
-- **Gyorsítótárazás** – Tárold a gyakran lekért nézetinformációkat gyorsítótárban az ismételt fájlolvasások elkerülése érdekében.  
-- **Megfigyelés** – Kövesd a JVM memóriahasználatot nagy projektek feldolgozásakor, és állítsd be a heap méretét ennek megfelelően.
+- **Memory management** – Use try‑with‑resources (as shown) to guarantee the `Viewer` is closed promptly.  
+- **Caching** – Store frequently accessed view info in a cache to avoid repeated file reads.  
+- **Monitoring** – Track JVM memory usage when processing large projects and adjust heap size accordingly.  
 
 ## Gyakori problémák és megoldások
 
-| Probléma | Ok | Megoldás |
+| Issue | Cause | Solution |
 |-------|-------|----------|
-| `File not found` hiba | Hibás `documentPath` | Ellenőrizd a abszolút vagy relatív útvonalat, és győződj meg róla, hogy a fájl létezik. |
-| Nincs adat a dátumokhoz | Nem támogatott MS Project verzió | Frissíts a legújabb GroupDocs.Viewer verzióra, vagy konvertáld a fájlt támogatott formátumba. |
-| OutOfMemoryError nagy fájloknál | Nem elegendő JVM heap | Növeld a `-Xmx` kapcsolót, vagy dolgozd fel a fájlt darabokban a lapozási opciók használatával. |
+| `File not found` error | Incorrect `documentPath` | Verify the absolute or relative path and ensure the file exists. |
+| No data returned for dates | Unsupported MS Project version | Upgrade to the latest GroupDocs.Viewer version or convert the file to a supported format. |
+| OutOfMemoryError on large files | Insufficient JVM heap | Increase `-Xmx` flag or process the file in chunks using pagination options. |
 
 ## Gyakran ismételt kérdések
 
 **Q: Mi az a GroupDocs.Viewer Java?**  
-A: Ez egy Java könyvtár, amely több mint 100 fájlformátumot renderel és információt nyer ki, köztük az MS Project dokumentumokat.
+A: Ez egy Java könyvtár, amely több mint 100 fájlformátumot renderel és információkat nyer ki, beleértve az MS Project dokumentumokat is.
 
-**Q: Hogyan kezeljem a jelszóval védett MS Project fájlokat?**  
-A: Használd a `LoadOptions` osztályt a jelszó beállításához a `Viewer` példány létrehozása előtt.
+**Q: Hogyan kezelem a jelszóval védett MS Project fájlokat?**  
+A: Használja a `LoadOptions` osztályt a jelszó beállításához a `Viewer` példány létrehozása előtt.
 
-**Q: Használhatom a GroupDocs.Viewer-t kereskedelmi projektekben?**  
-A: Igen, amint megfelelő licencet szereztél a GroupDocs-tól.
+**Q: Használhatom a GroupDocs.Viewer‑t kereskedelmi projektekben?**  
+A: Igen, amint megfelelő licencet szerez a GroupDocs‑tól.
 
-**Q: Mik a gyakori buktatók a nézetinformáció lekérésekor?**  
-A: Hibás fájlutak, elavult könyvtárverzió használata, vagy nem támogatott MS Project funkciók olvasására való kísérlet.
+**Q: Melyek a gyakori buktatók a nézetinformáció lekérésekor?**  
+A: Hibás fájlútvonalak, elavult könyvtárverzió használata, vagy nem támogatott MS Project funkciók olvasása.
 
 **Q: Hogyan javíthatom a teljesítményt nagy MS Project fájlok esetén?**  
-A: Implementálj gyorsítótárazást, újrahasználd a `Viewer` példányokat ahol biztonságos, és finomhangold a JVM memória beállításait.
+A: Implementáljon gyorsítótárat, újrahasználja a `Viewer` példányokat ahol biztonságos, és finomhangolja a JVM memória beállításait.
 
-## Források
-- [GroupDocs Viewer dokumentáció](https://docs.groupdocs.com/viewer/java/)
-- [API referencia](https://reference.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer for Java letöltése](https://releases.groupdocs.com/viewer/java/)
-- [Licenc vásárlása](https://purchase.groupdocs.com/buy)
-- [Ingyenes próba verzió](https://releases.groupdocs.com/viewer/java/)
-- [Ideiglenes licenc igénylése](https://purchase.groupdocs.com/temporary-license/)
-- [GroupDocs támogatási fórum](https://forum.groupdocs.com/c/viewer/9)
+## Erőforrások
 
-**Utoljára frissítve:** 2026-02-26  
-**Tesztelt verzió:** GroupDocs.Viewer 25.2 for Java  
-**Szerző:** GroupDocs
+- [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/) – részletes API útmutatók és használati példák.  
+- [API Reference](https://reference.groupdocs.com/viewer/java/) – teljes referencia minden osztályhoz és metódushoz.  
+- [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/) – a legújabb könyvtári binárisok letöltése.  
+- [Free Trial Version](https://releases.groupdocs.com/viewer/java/) – próbálja ki a könyvtárat licenc nélkül.  
+- [Purchase License](https://purchase.groupdocs.com/buy) – termelési licenc beszerzése.  
+- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/) – rövid távú licenc kérése értékeléshez.  
+- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) – segítség a közösségtől és a támogatási csapattól.
+
+---
+
+**Last updated:** 2026-08-24  
+**Tested with:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs
+
+## Kapcsolódó oktatóanyagok
+
+- [How to Set License for GroupDocs.Viewer Java (File or URL)](/viewer/java/getting-started/groupdocs-viewer-java-license-setup-file-url/)
+- [How to Render MS Project Files as HTML, JPG, PNG, and PDF with Notes Using GroupDocs.Viewer for Java](/viewer/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/)
+- [How to Generate Project Report from MS Project Files in Java with GroupDocs.Viewer](/viewer/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/)

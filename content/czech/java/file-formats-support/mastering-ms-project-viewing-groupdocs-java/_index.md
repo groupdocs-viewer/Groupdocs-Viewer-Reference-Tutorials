@@ -1,64 +1,119 @@
 ---
-date: '2026-02-26'
-description: Naučte se generovat projektovou zprávu a zobrazovat podrobnosti souboru
-  MS Project pomocí GroupDocs.Viewer pro Javu. Ideální pro vývojáře, projektové manažery
-  a analytiky.
+date: '2026-08-24'
+description: Naučte se, jak vytvořit project dashboard a načíst project metadata ze
+  souborů MS Project pomocí GroupDocs.Viewer for Java. Efektivně generujte project
+  summary a extrahujte task list.
 keywords:
-- MS Project viewing
-- Java GroupDocs.Viewer
-- extracting project information
-title: Jak vygenerovat projektovou zprávu ze souborů MS Project v Javě pomocí GroupDocs.Viewer
+- create project dashboard
+- retrieve project metadata
+- generate project summary
+lastmod: '2026-08-24'
+og_description: Naučte se, jak vytvořit project dashboard a načíst project metadata
+  ze souborů MS Project pomocí GroupDocs.Viewer for Java. Efektivně generujte project
+  summary a extrahujte task list.
+og_image_alt: 'Developer guide: create project dashboard from MS Project files using
+  GroupDocs.Viewer for Java'
+og_title: Jak vytvořit project dashboard z MS Project v Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-24'
+  description: Learn how to create project dashboard and retrieve project metadata
+    from MS Project files using GroupDocs.Viewer for Java. Generate project summary
+    and extract task list efficiently.
+  headline: How to create project dashboard from MS Project in Java
+  type: TechArticle
+- description: Learn how to create project dashboard and retrieve project metadata
+    from MS Project files using GroupDocs.Viewer for Java. Generate project summary
+    and extract task list efficiently.
+  name: How to create project dashboard from MS Project in Java
+  steps:
+  - name: define document path
+    text: 'Specify where your MS Project file lives:'
+  - name: initialize viewinfooptions
+    text: 'Configure the options to request HTML‑style view information: The `ProjectManagementViewInfo`
+      object holds extracted project metadata such as dates, tasks, and resources.'
+  - name: retrieve and output project details
+    text: 'Create a `Viewer`, fetch the `ProjectManagementViewInfo`, and print the
+      key fields that form a typical project summary: **Explanation** - `getViewInfo(viewInfoOptions)`
+      pulls metadata based on the supplied options. - The returned `info` object contains
+      the file type, page count, and crucial dates—ex'
+  - name: configure load options
+    text: The `LoadOptions` class allows you to specify additional parameters like
+      passwords when opening a file.
+  - name: initialize viewer with load options
+    text: 'Pass the `loadOptions` when constructing the `Viewer`: **Explanation**
+      `LoadOptions` lets you define additional parameters such as passwords, ensuring
+      secure access to protected files.'
+  type: HowTo
+- questions:
+  - answer: It’s a Java library that renders and extracts information from over 100
+      file formats, including MS Project documents.
+    question: What is GroupDocs.Viewer Java?
+  - answer: Use the `LoadOptions` class to set the password before creating the `Viewer`
+      instance.
+    question: How do I handle password‑protected MS Project files?
+  - answer: Yes, once you obtain a proper license from GroupDocs.
+    question: Can I use GroupDocs.Viewer in commercial projects?
+  - answer: Incorrect file paths, using an outdated library version, or attempting
+      to read unsupported MS Project features.
+    question: What are common pitfalls when retrieving view info?
+  - answer: Implement caching, reuse `Viewer` instances where safe, and tune JVM memory
+      settings.
+    question: How can I improve performance with large MS Project files?
+  type: FAQPage
+tags:
+- project dashboard
+- GroupDocs.Viewer
+- Java MS Project
+- project reporting
+title: Jak vytvořit project dashboard z MS Project v Java
 type: docs
 url: /cs/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/
 weight: 1
 ---
 
-# Jak generovat projektovou zprávu z MS Project souborů v Javě pomocí GroupDocs.Viewer
+# Jak vytvořit projektový dashboard z MS Project v Javě
 
 ## Úvod
 
-Generování projektové zprávy z MS Project souboru je běžnou potřebou jak projektových manažerů, tak vývojářů. V tomto tutoriálu uvidíte, jak **GroupDocs.Viewer for Java** umožňuje **generovat data projektové zprávy** a **zobrazit podrobnosti MS Project souboru** rychle a bezpečně. Provedeme vás nastavením, ukázkami kódu a reálnými příklady použití, abyste mohli ještě dnes začít vytvářet přehledné dashboardy.
+Vytvoření **projektového dashboardu** z souboru MS Project vám umožní vizualizovat časové osy, počet úkolů a přidělení zdrojů v jediném, sdíleném zobrazení. S **GroupDocs.Viewer pro Java** můžete **získat metadata projektu**, vytvořit **souhrn projektu** a **extrahovat data seznamu úkolů** bez instalace Microsoft Project. Tento tutoriál vás provede nastavením Maven, nezbytnými úryvky kódu a reálnými scénáři, abyste mohli ještě dnes začít poskytovat použitelné dashboardy.
 
 ![Zobrazení MS Project pomocí GroupDocs.Viewer pro Java](/viewer/file‑formats-support/ms-project-viewing.png)
 
 Na konci tohoto průvodce budete schopni:
 
 - Nastavit GroupDocs.Viewer pro Java v Maven projektu.  
-- Získat informace o zobrazení, které tvoří základ projektové zprávy.  
-- Konfigurovat možnosti načítání pro soubory chráněné heslem.  
+- Získat informace o zobrazení, které tvoří základ **projektového dashboardu**.  
+- Konfigurovat load options pro soubory chráněné heslem.  
 
 Ponořme se a změňme způsob, jakým pracujete s daty MS Project!
 
 ## Rychlé odpovědi
-- **Co znamená „generovat projektovou zprávu“ v tomto kontextu?** Extrahování klíčových metadat projektu (data, počet úkolů atd.) pro napájení nástrojů pro reportování.  
-- **Která knihovna je vyžadována?** GroupDocs.Viewer for Java (v25.2 nebo novější).  
-- **Mohu zobrazit MS Project soubor bez licence?** Bezplatná zkušební verze funguje pro hodnocení, ale licence je potřebná pro produkční nasazení.  
+- **Co znamená „vytvořit projektový dashboard“ v tomto kontextu?** Znamená to extrahování klíčových metadat projektu – datumů, počtu úkolů, zdrojů – a jejich prezentaci ve vizuálním souhrnu.  
+- **Která knihovna je vyžadována?** GroupDocs.Viewer pro Java (v25.2 nebo novější).  
+- **Mohu zobrazit soubor MS Project bez licence?** Bezplatná zkušební verze funguje pro hodnocení, ale licence je potřebná pro produkční nasazení.  
 - **Jak zacházet se soubory chráněnými heslem?** Použijte `LoadOptions` k zadání hesla při vytváření `Viewer`.  
 - **Jaká verze Javy je podporována?** JDK 8 nebo novější.
 
 ## Co znamená „generovat projektovou zprávu“ s GroupDocs.Viewer?
 
-Generování projektové zprávy znamená extrahování strukturovaných informací—jako jsou datum zahájení/ukončení, počet úkolů a přidělení zdrojů—z dokumentu MS Project. GroupDocs.Viewer poskytuje objekt `ProjectManagementViewInfo`, který obsahuje všechny tyto podrobnosti, což usnadňuje jejich vložení do reportovacích dashboardů nebo export do jiných formátů.
+Generování projektové zprávy znamená extrahování strukturovaných informací – jako jsou datumy zahájení/ukončení, počet úkolů a přidělení zdrojů – z dokumentu MS Project. GroupDocs.Viewer poskytuje objekt `ProjectManagementViewInfo`, který obsahuje všechny tyto podrobnosti, což usnadňuje jejich vložení do reportovacích dashboardů nebo export do jiných formátů.
 
-## Proč zobrazovat podrobnosti MS Project souboru pomocí GroupDocs.Viewer?
+## Proč zobrazovat podrobnosti souboru MS Project pomocí GroupDocs.Viewer?
 
-- **Rychlost:** Vykreslování a extrahování dat bez nutnosti instalace Microsoft Project.  
-- **Bezpečnost:** Možnosti načítání vám umožňují bezpečně otevřít soubory chráněné heslem.  
-- **Cross‑platform:** Funguje v jakémkoli Java‑kompatibilním prostředí, od desktopu po cloud.  
+GroupDocs.Viewer vám umožní okamžitě získat metadata projektu, aniž byste potřebovali nainstalovaný Microsoft Project. Zpracovává více než 100 formátů souborů, podporuje soubory až do 2 GB a může extrahovat data z projektů o stovkách stránek při využití méně než 200 MB haldy paměti. Tato rychlost a nízká spotřeba prostředků jej činí ideálním pro tvorbu **projektového dashboardu** v cloudových nebo lokálních Java prostředích.
 
-## Požadavky
-
-Než začneme, ujistěte se, že máte:
+## Předpoklady
 
 1. **Knihovny a závislosti**  
-   - Knihovna GroupDocs.Viewer Java (verze 25.2 nebo novější).  
+   - GroupDocs.Viewer Java knihovna (verze 25.2 nebo novější).  
    - Maven nainstalovaný pro správu závislostí.  
 
 2. **Nastavení prostředí**  
-   - IDE jako IntelliJ IDEA nebo Eclipse.  
+   - IDE, např. IntelliJ IDEA nebo Eclipse.  
    - JDK 8 nebo vyšší.  
 
-3. **Předpoklady znalostí**  
+3. **Požadované znalosti**  
    - Základní dovednosti v Javě a Maven.  
    - Znalost formátů souborů MS Project (užitečné, ale nevyžadované).  
 
@@ -89,31 +144,30 @@ Přidejte repozitář a závislost do vašeho `pom.xml`:
 
 Pro odemčení plné funkčnosti zvažte jednu z následujících licenčních možností:
 
-- **Bezplatná zkušební verze** – Otestujte všechny funkce bez kreditní karty.  
+- **Bezplatná zkušební verze** – Vyzkoušejte všechny funkce bez kreditní karty.  
 - **Dočasná licence** – Rozšířený přístup pro evaluační období.  
 - **Plná licence** – Použití připravené pro produkci s neomezenou podporou.  
 
-Pro podrobné instrukce k licencování navštivte [GroupDocs purchase page](https://purchase.groupdocs.com/buy).
+Pro podrobné instrukce k licencování navštivte [stránku nákupu GroupDocs](https://purchase.groupdocs.com/buy).
 
-### Základní inicializace
-
-Jakmile je závislost na místě, můžete vytvořit instanci `Viewer` předáním cesty k vašemu MS Project souboru.
+Třída `Viewer` poskytuje metody pro načtení dokumentu a získání informací o jeho zobrazení.  
+Jakmile je závislost přidána, můžete vytvořit instanci `Viewer` předáním cesty k vašemu souboru MS Project.
 
 ## Průvodce implementací
 
-### Získání informací o zobrazení pro MS Project dokument
+### Získání informací o zobrazení pro dokument MS Project
 
-Tato funkce extrahuje základní data, která potřebujete pro obsah **generování projektové zprávy**.
+Tato funkce extrahuje základní data potřebná k **vytvoření projektového dashboardu**.
 
-#### Krok 1: Definice cesty k dokumentu
+#### Krok 1: definovat cestu k dokumentu
 
-Určete, kde se váš MS Project soubor nachází:
+Zadejte, kde se váš soubor MS Project nachází:
 
 ```java
 String documentPath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_MPP";
 ```
 
-#### Krok 2: Inicializace ViewInfoOptions
+#### Krok 2: inicializovat viewinfooptions
 
 Nakonfigurujte možnosti pro požadavek na HTML‑styl informací o zobrazení:
 
@@ -121,9 +175,11 @@ Nakonfigurujte možnosti pro požadavek na HTML‑styl informací o zobrazení:
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 ```
 
-#### Krok 3: Získání a výpis podrobností projektu
+Objekt `ProjectManagementViewInfo` obsahuje extrahovaná metadata projektu, jako jsou datumy, úkoly a zdroje.
 
-Vytvořte `Viewer`, načtěte `ProjectManagementViewInfo` a vytiskněte klíčová pole, která tvoří typickou projektovou zprávu:
+#### Krok 3: získat a vypsat podrobnosti projektu
+
+Vytvořte `Viewer`, načtěte `ProjectManagementViewInfo` a vytiskněte klíčová pole, která tvoří typický souhrn projektu:
 
 ```java
 try (Viewer viewer = new Viewer(documentPath)) {
@@ -137,21 +193,23 @@ try (Viewer viewer = new Viewer(documentPath)) {
 ```
 
 **Vysvětlení**  
-- `getViewInfo(viewInfoOptions)` získává metadata na základě poskytnutých možností.  
-- Vrácený objekt `info` obsahuje typ souboru, počet stránek a klíčová data—přesně ty části, které potřebujete pro data **generování projektové zprávy**.
+- `getViewInfo(viewInfoOptions)` získá metadata na základě poskytnutých možností.  
+- Vrácený objekt `info` obsahuje typ souboru, počet stránek a klíčová datumy – přesně ty položky, které potřebujete k **získání metadat projektu** pro dashboard.
 
 ### Nastavení konfigurace GroupDocs.Viewer
 
-Pokud jsou vaše MS Project soubory chráněny heslem, budete muset heslo zadat pomocí možností načítání.
+Pokud jsou vaše soubory MS Project chráněny heslem, musíte heslo zadat pomocí load options.
 
-#### Krok 1: Konfigurace Load Options
+#### Krok 1: nakonfigurovat load options
+
+Třída `LoadOptions` vám umožňuje specifikovat další parametry, jako jsou hesla, při otevírání souboru.
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setPassword("your_password_if_needed");
 ```
 
-#### Krok 2: Inicializace Viewer s Load Options
+#### Krok 2: inicializovat viewer s load options
 
 Předávejte `loadOptions` při konstrukci `Viewer`:
 
@@ -162,56 +220,61 @@ try (Viewer viewer = new Viewer(documentPath, loadOptions)) {
 ```
 
 **Vysvětlení**  
-`LoadOptions` vám umožňuje definovat další parametry, jako jsou hesla, a zajišťuje bezpečný přístup k chráněným souborům.
+`LoadOptions` vám umožňuje definovat další parametry, například hesla, což zajišťuje bezpečný přístup k chráněným souborům.
 
 ## Praktické aplikace
 
-1. **Dashboardy pro řízení projektů** – Vkládejte extrahovaná data a počty úkolů do real‑time dashboardů pro zainteresované strany.  
-2. **Automatizované reportování** – Procházejte více `.mpp` souborů, generujte souhrnné zprávy a automaticky je odesílejte e-mailem.  
+1. **Projektové řídicí panely** – Vkládejte extrahovaná datumy, počty úkolů a přidělení zdrojů do real‑time dashboardů pro zainteresované strany.  
+2. **Automatizované reportování** – Procházejte více souborů `.mpp`, generujte **souhrn projektu** a automaticky e-mailem odesílejte výsledky.  
 3. **Integrace s CRM** – Kombinujte časové osy projektů se zákaznickými daty pro zlepšení předpovědí dodávek.
 
 ## Úvahy o výkonu
 
 - **Správa paměti** – Používejte try‑with‑resources (jak je ukázáno) k zajištění rychlého uzavření `Viewer`.  
-- **Cache** – Ukládejte často přistupované informace o zobrazení do cache, aby se předešlo opakovanému čtení souborů.  
-- **Monitoring** – Sledujte využití paměti JVM při zpracování velkých projektů a podle toho upravte velikost haldy.
+- **Cache** – Ukládejte často přistupované informace o zobrazení do cache, abyste se vyhnuli opakovanému čtení souboru.  
+- **Monitorování** – Sledujte využití paměti JVM při zpracování velkých projektů a podle toho upravte velikost haldy.
 
-## Časté problémy a řešení
+## Běžné problémy a řešení
 
 | Problém | Příčina | Řešení |
-|-------|-------|----------|
-| ``File not found`` error | Incorrect ``documentPath`` | Ověřte absolutní nebo relativní cestu a ujistěte se, že soubor existuje. |
-| No data returned for dates | Unsupported MS Project version | Aktualizujte na nejnovější verzi GroupDocs.Viewer nebo konvertujte soubor do podporovaného formátu. |
-| OutOfMemoryError on large files | Insufficient JVM heap | Zvyšte příznak ``-Xmx`` nebo zpracovávejte soubor po částech pomocí možností stránkování. |
+|---------|---------|--------|
+| `File not found` chyba | Nesprávná `documentPath` | Zkontrolujte absolutní nebo relativní cestu a ujistěte se, že soubor existuje. |
+| Žádná data pro datumy nebyla vrácena | Není podporována verze MS Project | Aktualizujte na nejnovější verzi GroupDocs.Viewer nebo konvertujte soubor do podporovaného formátu. |
+| OutOfMemoryError u velkých souborů | Nedostatečná velikost haldy JVM | Zvyšte příznak `-Xmx` nebo zpracovávejte soubor po částech pomocí možností stránkování. |
 
 ## Často kladené otázky
 
-**Otázka: Co je GroupDocs.Viewer Java?**  
-Jedná se o Java knihovnu, která vykresluje a extrahuje informace z více než 100 formátů souborů, včetně dokumentů MS Project.
+**Q: Co je GroupDocs.Viewer Java?**  
+Jedná se o Java knihovnu, která renderuje a extrahuje informace z více než 100 formátů souborů, včetně dokumentů MS Project.
 
-**Otázka: Jak zacházet se soubory MS Project chráněnými heslem?**  
+**Q: Jak zacházet se soubory MS Project chráněnými heslem?**  
 Použijte třídu `LoadOptions` k nastavení hesla před vytvořením instance `Viewer`.
 
-**Otázka: Mohu používat GroupDocs.Viewer v komerčních projektech?**  
+**Q: Mohu používat GroupDocs.Viewer v komerčních projektech?**  
 Ano, po získání řádné licence od GroupDocs.
 
-**Otázka: Jaké jsou běžné úskalí při získávání informací o zobrazení?**  
-Nesprávné cesty k souborům, použití zastaralé verze knihovny nebo pokus o čtení nepodporovaných funkcí MS Project.
+**Q: Jaké jsou běžné úskalí při získávání informací o zobrazení?**  
+Nesprávné cesty k souborům, používání zastaralé verze knihovny nebo pokus o čtení nepodporovaných funkcí MS Project.
 
-**Otázka: Jak mohu zlepšit výkon při práci s velkými MS Project soubory?**  
-Implementujte cache, opakovaně používejte instance `Viewer`, kde je to bezpečné, a dolaďte nastavení paměti JVM.
+**Q: Jak mohu zlepšit výkon při práci s velkými soubory MS Project?**  
+Implementujte cache, znovu používejte instance `Viewer`, kde je to bezpečné, a ladte nastavení paměti JVM.
 
 ## Zdroje
-- [Dokumentace GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)
-- [Reference API](https://reference.groupdocs.com/viewer/java/)
-- [Stáhnout GroupDocs.Viewer pro Java](https://releases.groupdocs.com/viewer/java/)
-- [Koupit licenci](https://purchase.groupdocs.com/buy)
-- [Verze zdarma (Free Trial)](https://releases.groupdocs.com/viewer/java/)
-- [Žádost o dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)
-- [Fórum podpory GroupDocs](https://forum.groupdocs.com/c/viewer/9)
 
----
+- [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/) – podrobné API průvodce a příklady použití.  
+- [API Reference](https://reference.groupdocs.com/viewer/java/) – kompletní reference všech tříd a metod.  
+- [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/) – stáhněte nejnovější binární soubory knihovny.  
+- [Free Trial Version](https://releases.groupdocs.com/viewer/java/) – vyzkoušejte knihovnu bez licence.  
+- [Purchase License](https://purchase.groupdocs.com/buy) – zakupte produkční licenci.  
+- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/) – požádejte o krátkodobou licenci pro hodnocení.  
+- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) – získejte pomoc od komunity a podpůrného týmu.
 
-**Poslední aktualizace:** 2026-02-26  
+**Poslední aktualizace:** 2026-08-24  
 **Testováno s:** GroupDocs.Viewer 25.2 pro Java  
 **Autor:** GroupDocs
+
+## Související tutoriály
+
+- [Jak nastavit licenci pro GroupDocs.Viewer Java (soubor nebo URL)](/viewer/java/getting-started/groupdocs-viewer-java-license-setup-file-url/)
+- [Jak renderovat soubory MS Project jako HTML, JPG, PNG a PDF s poznámkami pomocí GroupDocs.Viewer pro Java](/viewer/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/)
+- [Jak generovat projektovou zprávu ze souborů MS Project v Javě s GroupDocs.Viewer](/viewer/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/)
