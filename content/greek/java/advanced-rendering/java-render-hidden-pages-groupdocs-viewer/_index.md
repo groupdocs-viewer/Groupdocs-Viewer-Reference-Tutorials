@@ -1,67 +1,119 @@
 ---
-date: '2026-03-14'
-description: Μάθετε πώς να αποδίδετε κρυφές σελίδες σε Java χρησιμοποιώντας το GroupDocs.Viewer.
-  Ρυθμίστε, διαμορφώστε και ενσωματώστε για να εξασφαλίσετε πλήρη ορατότητα του εγγράφου.
+date: '2026-08-25'
+description: Μάθετε πώς να αποδίδετε κρυφές σελίδες java με το GroupDocs.Viewer, να
+  διαμορφώσετε το API και να το ενσωματώσετε σε εφαρμογές Java για πλήρη ορατότητα
+  εγγράφων.
 keywords:
-- render hidden pages Java
-- GroupDocs Viewer setup
-- Java document rendering
-title: 'Απόδοση κρυφών σελίδων Java: Πώς να χρησιμοποιήσετε το GroupDocs.Viewer'
+- render hidden pages java
+- groupdocs viewer hidden slides
+- java document rendering
+- groupdocs viewer integration
+lastmod: '2026-08-25'
+og_description: Απόδοση κρυφών σελίδων java χρησιμοποιώντας το GroupDocs.Viewer. Αυτό
+  το step‑by‑step tutorial σας δείχνει πώς να ενεργοποιήσετε την απόδοση κρυφών διαφανειών,
+  να διαμορφώσετε επιλογές και να διαχειριστείτε την απόδοση σε Java.
+og_image_alt: 'Developer guide: render hidden pages java using GroupDocs.Viewer'
+og_title: Απόδοση κρυφών σελίδων java με το GroupDocs.Viewer – Πλήρης οδηγός
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-25'
+  description: Learn how to render hidden pages java with GroupDocs.Viewer, configure
+    the API, and integrate it into Java applications for full document visibility.
+  headline: 'Render hidden pages java: How to use GroupDocs.Viewer'
+  type: TechArticle
+- description: Learn how to render hidden pages java with GroupDocs.Viewer, configure
+    the API, and integrate it into Java applications for full document visibility.
+  name: 'Render hidden pages java: How to use GroupDocs.Viewer'
+  steps:
+  - name: Define output directory and file‑path format
+    text: 'Set up where the rendered HTML files will be saved: - **`outputDirectory`**
+      – the folder that will contain the generated HTML pages. - **`pageFilePathFormat`**
+      – naming pattern for each page file, using placeholders such as `{0}` for the
+      page number.'
+  - name: Configure HtmlViewOptions
+    text: 'Create an `HtmlViewOptions` instance and enable embedded resources: HtmlViewOptions
+      defines rendering settings for HTML output. - **`forEmbeddedResources`** – bundles
+      CSS, JavaScript, and images directly inside the HTML output. - **`setRenderHiddenPages(true)`**
+      – activates rendering of hidden slide'
+  - name: Render the document
+    text: 'Invoke the `Viewer` object with the configured options: - **`Viewer`**
+      – loads and processes the source file. - **`view(viewOptions)`** – performs
+      the rendering based on the supplied `HtmlViewOptions`. **Troubleshooting tip:**
+      Verify that the document path is correct and that the Java process has wr'
+  type: HowTo
+- questions:
+  - answer: It supports more than 30 popular formats, including PDF, DOCX, XLSX, PPTX,
+      HTML, and common image types.
+    question: What formats does GroupDocs.Viewer support?
+  - answer: Yes – a commercial license is required for production deployments.
+    question: Can I use GroupDocs.Viewer in a commercial application?
+  - answer: Optimize memory usage by increasing the JVM heap, render pages in batches,
+      and consider load‑balancing across multiple instances.
+    question: How do I handle large documents with GroupDocs.Viewer?
+  - answer: Absolutely. You can render to HTML, PNG, JPEG, or PDF by selecting the
+      appropriate `ViewOptions` class.
+    question: Is it possible to customize the output format?
+  - answer: Double‑check your `pom.xml` dependencies, confirm the license file is
+      correctly placed, and verify all file paths.
+    question: What should I do if I encounter errors during setup?
+  type: FAQPage
+tags:
+- render hidden pages
+- groupdocs viewer
+- java rendering
+- document processing
+title: 'Απόδοση κρυφών σελίδων java: Πώς να χρησιμοποιήσετε το GroupDocs.Viewer'
 type: docs
 url: /el/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/
 weight: 1
 ---
 
-# Render Hidden Pages Java: Πώς να Χρησιμοποιήσετε το GroupDocs.Viewer
+# Απόδοση κρυφών σελίδων java: Πώς να χρησιμοποιήσετε το GroupDocs.Viewer
 
-Σε αυτό το tutorial θα ανακαλύψετε **how to render hidden pages java** με το GroupDocs.Viewer. Είτε εργάζεστε με παρουσιάσεις PowerPoint, αρχεία Word ή PDF, αυτός ο οδηγός σας καθοδηγεί βήμα προς βήμα ώστε κάθε κρυφή διαφάνεια ή ενότητα να είναι ορατή στις εφαρμογές Java σας.
+Σε αυτό το σεμινάριο θα μάθετε **πώς να αποδίδετε κρυφές σελίδες java** με το GroupDocs.Viewer, γιατί αυτή η δυνατότητα είναι σημαντική για τη συμμόρφωση και την εμπειρία χρήστη, και ακριβώς ποιες κλήσεις API χρειάζεστε για να ενεργοποιήσετε την απόδοση κρυφών διαφανειών ή ενοτήτων. Είτε εργάζεστε με παρουσιάσεις PowerPoint, έγγραφα Word ή PDF, τα παρακάτω βήματα σας επιτρέπουν να εκθέσετε κάθε κρυφό στοιχείο στις εφαρμογές Java.
 
 ![Render Hidden Pages with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-pages-java.png)
+[Απόδοση κρυφών σελίδων με το GroupDocs.Viewer για Java](/viewer/advanced-rendering/render-hidden-pages-java.png)
 
-## Quick Answers
-- **Μπορεί το GroupDocs.Viewer να εμφανίσει κρυφές διαφάνειες PowerPoint;** Ναι, ενεργοποιήστε `setRenderHiddenPages(true)`.
-- **Χρειάζομαι άδεια για την απόδοση κρυφών σελίδων;** Απαιτείται έγκυρη άδεια GroupDocs για παραγωγική χρήση.
-- **Ποια έκδοση της Java υποστηρίζεται;** Java 8+ και οποιοδήποτε νεότερο JDK.
-- **Είναι το Maven ο μοναδικός τρόπος για να προσθέσετε τη βιβλιοθήκη;** Το Maven συνιστάται, αλλά μπορείτε επίσης να χρησιμοποιήσετε Gradle ή χειροκίνητα JARs.
-- **Θα επηρεάσει η διαδικασία απόδοσης την απόδοση;** Η απόδοση κρυφών σελίδων προσθέτει μικρό επιπλέον κόστος· δείτε τις συμβουλές απόδοσης παρακάτω.
+## Γρήγορες απαντήσεις
+- **Μπορεί το GroupDocs.Viewer να εμφανίσει κρυφές διαφάνειες PowerPoint;** Ναι – καλέστε `setRenderHiddenPages(true)` στις επιλογές προβολής.
+- **Χρειάζομαι άδεια για την απόδοση κρυφών σελίδων;** Απαιτείται έγκυρη άδεια GroupDocs για παραγωγικές εγκαταστάσεις.
+- **Ποια έκδοση Java υποστηρίζεται;** Java 8+ και οποιοδήποτε νεότερο JDK.
+- **Είναι το Maven ο μοναδικός τρόπος για την προσθήκη της βιβλιοθήκης;** Το Maven συνιστάται, αλλά το Gradle ή η χειροκίνητη προσθήκη JAR λειτουργούν επίσης.
+- **Θα επηρεάσει η απόδοση την απόδοση;** Η απόδοση κρυφών σελίδων προσθέτει ένα μέτριο κόστος· δείτε τις συμβουλές βελτιστοποίησης απόδοσης αργότερα σε αυτόν τον οδηγό.
 
-## What Is “Render Hidden Pages Java”?
+## Τι είναι η απόδοση κρυφών σελίδων java;
 
-Η δυνατότητα **render hidden pages java** λέει στο GroupDocs.Viewer να αντιμετωπίζει τις κρυφές διαφάνειες, τις κρυφές ενότητες ή οποιοδήποτε περιεχόμενο που έχει επισημανθεί ως αόρατο στο πηγαίο έγγραφο ως κανονικές σελίδες κατά τη διαδικασία απόδοσης. Αυτό εξασφαλίζει ότι καμία πληροφορία δεν θα παραλειφθεί ακούσια όταν δημιουργείτε HTML, εικόνες ή PDF από το πηγαίο αρχείο.
+Η απόδοση κρυφών σελίδων java λέει στο GroupDocs.Viewer να αντιμετωπίζει τις κρυφές διαφάνειες, τις κρυφές ενότητες ή οποιοδήποτε περιεχόμενο που έχει επισημανθεί ως αόρατο στο πηγαίο έγγραφο ως κανονικές σελίδες κατά την απόδοση. Αυτό εγγυάται ότι δεν παραλείπεται καμία πληροφορία όταν δημιουργείτε HTML, εικόνες ή PDF από το πηγαίο αρχείο.
 
-## Why Use GroupDocs.Viewer for Rendering Hidden Content?
+## Γιατί να χρησιμοποιήσετε το GroupDocs.Viewer για την απόδοση κρυφού περιεχομένου;
 
-- **Πλήρης έλεγχος περιεχομένου** – Εγγυάται ότι οι νομικές και συμμορφωτικές ομάδες βλέπουν κάθε σελίδα.  
-- **Συνεπής εμπειρία χρήστη** – Οι τελικοί χρήστες λαμβάνουν πλήρη προβολή, αποφεύγοντας εκπλήξεις.  
-- **Εύκολη ενσωμάτωση** – Λειτουργεί με Maven, Gradle και τα τυπικά IDE της Java.  
-- **Υποστήριξη πολλαπλών μορφών** – Διαχειρίζεται PPTX, DOCX, PDF και πολλές άλλες μορφές.  
+Το GroupDocs.Viewer μπορεί να επεξεργαστεί **πάνω από 30 μορφές εισόδου και εξόδου** – συμπεριλαμβανομένων των PPTX, DOCX, PDF, XLSX και πολλών τύπων εικόνων – χωρίς να φορτώνει ολόκληρο το αρχείο στη μνήμη. Η ενεργοποίηση της απόδοσης κρυφών σελίδων εξασφαλίζει ένα **αποτέλεσμα 100 % έτοιμο για έλεγχο**, το οποίο είναι απαραίτητο για νομική συμμόρφωση, παρουσιάσεις σε διοικητικά συμβούλια και διαδικασίες αρχειοθέτησης.
 
-## Prerequisites
+## Προαπαιτούμενα
 
-Πριν ξεκινήσετε, βεβαιωθείτε ότι έχετε:
-
-- **GroupDocs.Viewer for Java** έκδοση 25.2 ή νεότερη.  
-- Ένα **JDK 8+** εγκατεστημένο στο μηχάνημά σας.  
+- **GroupDocs.Viewer for Java** version 25.2 ή νεότερη.  
+- **JDK 8+** εγκατεστημένο στο μηχάνημά σας.  
 - Ένα IDE όπως το **IntelliJ IDEA** ή το **Eclipse**.  
-- **Maven** για διαχείριση εξαρτήσεων (ή Gradle αν προτιμάτε).  
+- **Maven** (ή Gradle) για διαχείριση εξαρτήσεων.
 
-### Required Libraries, Versions, and Dependencies
-- **GroupDocs.Viewer for Java** έκδοση 25.2 ή νεότερη.  
-- Java Development Kit (JDK) εγκατεστημένο στο μηχάνημά σας.  
+### Απαιτούμενες βιβλιοθήκες, εκδόσεις και εξαρτήσεις
+- GroupDocs.Viewer for Java 25.2+  
+- Java Development Kit (JDK) 8 ή νεότερο  
 
-### Environment Setup Requirements
-- Ολοκληρωμένο Περιβάλλον Ανάπτυξης (IDE) όπως IntelliJ IDEA ή Eclipse.  
-- Εργαλείο κατασκευής Maven για διαχείριση εξαρτήσεων.  
+### Απαιτήσεις ρύθμισης περιβάλλοντος
+- IntelliJ IDEA ή Eclipse για κωδικοποίηση και αποσφαλμάτωση.  
+- Maven (ή Gradle) για λήψη των αντικειμένων GroupDocs.
 
-### Knowledge Prerequisites
-- Βασική κατανόηση του προγραμματισμού Java.  
-- Εξοικείωση με τη χρήση του Maven για διαχείριση εξαρτήσεων.  
+### Προαπαιτούμενες γνώσεις
+- Βασικές δεξιότητες προγραμματισμού Java.  
+- Εξοικείωση με τη δομή αρχείου `pom.xml` του Maven.
 
-## Setting Up GroupDocs.Viewer for Java
+## Ρύθμιση GroupDocs.Viewer για Java
 
-### Maven Setup
+### Ρύθμιση Maven
 
-Προσθέστε την παρακάτω διαμόρφωση στο αρχείο `pom.xml` σας για να συμπεριλάβετε το GroupDocs.Viewer ως εξάρτηση:
+Προσθέστε την παρακάτω εξάρτηση στο αρχείο `pom.xml` σας για να συμπεριλάβετε το GroupDocs.Viewer:
 
 ```xml
 <repositories>
@@ -81,15 +133,16 @@ weight: 1
 </dependencies>
 ```
 
-### License Acquisition Steps
-- **Δωρεάν Δοκιμή**: Ξεκινήστε με μια δωρεάν δοκιμή για να εξερευνήσετε τις δυνατότητες του GroupDocs.Viewer.  
-- **Προσωρινή Άδεια**: Αποκτήστε μια προσωρινή άδεια για εκτεταμένη δοκιμή χωρίς περιορισμούς.  
-- **Αγορά**: Αγοράστε εμπορική άδεια για μακροπρόθεσμη χρήση.  
+### Βήματα απόκτησης άδειας
+- **Δωρεάν δοκιμή** – ξεκινήστε με μια δοκιμή για να εξερευνήσετε όλες τις δυνατότητες.  
+- **Προσωρινή άδεια** – αποκτήστε μια βραχυπρόθεσμη άδεια για εκτεταμένη δοκιμή χωρίς λειτουργικούς περιορισμούς.  
+- **Αγορά** – αγοράστε μια εμπορική άδεια για παραγωγική χρήση και λάβετε προτεραιότητα στην υποστήριξη.
 
-### Basic Initialization and Setup
+### Βασική αρχικοποίηση και ρύθμιση
 
-Βεβαιωθείτε ότι έχετε τις απαραίτητες εισαγωγές στην κλάση Java σας:
+Βεβαιωθείτε ότι εισάγετε τις απαιτούμενες κλάσεις στο αρχείο πηγαίου κώδικα Java:
 
+Η κλάση `Viewer` είναι το κύριο στοιχείο που φορτώνει και αποδίδει έγγραφα.
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -97,15 +150,15 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 ```
 
-Αρχικοποιήστε το αντικείμενο `Viewer` για να ξεκινήσετε να χρησιμοποιείτε τις λειτουργίες του GroupDocs.Viewer.
+Δημιουργήστε ένα αντικείμενο `Viewer` για να ξεκινήσετε να εργάζεστε με έγγραφα.
 
-## Implementation Guide
+## Οδηγός υλοποίησης
 
-### Rendering Hidden Pages
+### Απόδοση κρυφών σελίδων
 
 Παρακάτω είναι ένας βήμα‑βήμα οδηγός της διαδικασίας **render hidden pages java**.
 
-#### Step 1: Define Output Directory and File Path Format
+#### Βήμα 1: Ορισμός καταλόγου εξόδου και μορφής διαδρομής αρχείου
 
 Ορίστε πού θα αποθηκευτούν τα αποδοθέντα αρχεία HTML:
 
@@ -114,24 +167,25 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-- **`outputDirectory`**: Η διαδρομή του φακέλου όπου θα αποθηκευτούν τα αρχεία εξόδου.  
-- **`pageFilePathFormat`**: Μορφή ονομασίας του αρχείου κάθε σελίδας, χρησιμοποιώντας placeholders όπως `{0}`.  
+- **`outputDirectory`** – ο φάκελος που θα περιέχει τις παραγόμενες σελίδες HTML.  
+- **`pageFilePathFormat`** – το πρότυπο ονομασίας για κάθε αρχείο σελίδας, χρησιμοποιώντας placeholders όπως `{0}` για τον αριθμό σελίδας.
 
-#### Step 2: Configure HtmlViewOptions
+#### Βήμα 2: Διαμόρφωση HtmlViewOptions
 
-Δημιουργήστε μια παρουσία του `HtmlViewOptions`, καθορίζοντας ότι οι πόροι πρέπει να ενσωματωθούν:
+Δημιουργήστε ένα αντικείμενο `HtmlViewOptions` και ενεργοποιήστε τους ενσωματωμένους πόρους:
 
+Το HtmlViewOptions ορίζει τις ρυθμίσεις απόδοσης για την έξοδο HTML.
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.setRenderHiddenPages(true); // Enable rendering of hidden pages
 ```
 
-- **`forEmbeddedResources`**: Εξασφαλίζει ότι όλοι οι απαραίτητοι πόροι περιλαμβάνονται στα αρχεία HTML.  
-- **`setRenderHiddenPages(true)`**: Ενεργοποιεί την απόδοση κρυφών διαφανειών ή ενοτήτων.  
+- **`forEmbeddedResources`** – ενσωματώνει CSS, JavaScript και εικόνες απευθείας μέσα στην έξοδο HTML.  
+- **`setRenderHiddenPages(true)`** – ενεργοποιεί την απόδοση κρυφών διαφανειών ή ενοτήτων, εξασφαλίζοντας ότι εμφανίζονται στο τελικό αποτέλεσμα.
 
-#### Step 3: Render Document
+#### Βήμα 3: Απόδοση του εγγράφου
 
-Χρησιμοποιήστε το αντικείμενο `Viewer` για να αποδώσετε το έγγραφό σας με τις καθορισμένες επιλογές:
+Κληθείτε το αντικείμενο `Viewer` με τις διαμορφωμένες επιλογές:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE")) {
@@ -139,66 +193,72 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE
 }
 ```
 
-- **`Viewer`**: Διαχειρίζεται τη φόρτωση και την απόδοση των εγγράφων.  
-- **`view(viewOptions)`**: Εκτελεί τη διαδικασία απόδοσης βάσει των παρεχόμενων επιλογών.  
+- **`Viewer`** – φορτώνει και επεξεργάζεται το πηγαίο αρχείο.  
+- **`view(viewOptions)`** – εκτελεί την απόδοση βάσει των παρεχόμενων `HtmlViewOptions`.
 
-**Συμβουλή Επίλυσης Προβλημάτων:** Βεβαιωθείτε ότι η διαδρομή του εγγράφου είναι σωστή και ότι έχετε δικαιώματα εγγραφής στον φάκελο εξόδου για να αποφύγετε κοινά προβλήματα.
+**Συμβουλή αντιμετώπισης προβλημάτων:** Επαληθεύστε ότι η διαδρομή του εγγράφου είναι σωστή και ότι η διαδικασία Java έχει δικαίωμα εγγραφής στον κατάλογο εξόδου για να αποφύγετε σφάλματα “access denied”.
 
-## Practical Applications
+## Πρακτικές εφαρμογές
 
-1. **Εταιρικές Παρουσιάσεις** – Συμπεριλάβετε αυτόματα όλες τις διαφάνειες, ακόμη και αυτές που είναι σημειωμένες ως κρυφές, για παρουσιάσεις σε διοικητικό συμβούλιο.  
-2. **Αρχειοθέτηση Εγγράφων** – Διατηρήστε κάθε σελίδα νομικών συμβάσεων ή εγγράφων πολιτικής.  
-3. **Εκπαιδευτικό Υλικό** – Παρέχετε στους φοιτητές πλήρεις παρουσιάσεις διαλέξεων, συμπεριλαμβανομένων των σημειώσεων του εκπαιδευτή που είναι κρυφές στο αρχικό αρχείο.  
-4. **Διαδραστικές Αναφορές** – Επιτρέψτε στους αναλυτές να εξερευνήσουν συμπληρωματικά γραφήματα που ήταν κρυφά στην πηγή.  
-5. **Τεκμηρίωση Λογισμικού** – Αποκαλύψτε προαιρετικές ενότητες ρυθμίσεων που μπορεί να χρειαστούν οι προγραμματιστές κατά την αντιμετώπιση προβλημάτων.  
+1. **Εταιρικές παρουσιάσεις** – Συμπεριλάβετε κάθε κρυφή διαφάνεια για αξιολογήσεις σε διοικητικά συμβούλια, εξασφαλίζοντας ότι δεν λείπει κανένα εμπιστευτικό περιεχόμενο.  
+2. **Αρχειοθέτηση εγγράφων** – Διατηρήστε κάθε σελίδα νομικών συμβάσεων ή εγχειριδίων πολιτικής, ακόμη και εκείνες που είναι κρυφές για εσωτερική χρήση.  
+3. **Εκπαιδευτικό υλικό** – Παρέχετε πλήρεις παρουσιάσεις διαλέξεων, συμπεριλαμβανομένων των σημειώσεων του εκπαιδευτή που ήταν κρυφές στο αρχικό αρχείο.  
+4. **Διαδραστικές αναφορές** – Επιτρέψτε στους αναλυτές να εξερευνήσουν συμπληρωματικά διαγράμματα ή πίνακες που ήταν κρυφά στην πηγή.  
+5. **Τεκμηρίωση λογισμικού** – Αποκαλύψτε προαιρετικές ενότητες διαμόρφωσης που μπορεί να χρειαστούν οι προγραμματιστές κατά την αντιμετώπιση προβλημάτων.
 
-## Performance Considerations
+## Παράγοντες απόδοσης
 
-- **Διαχείριση Πόρων** – Παρακολουθήστε τη μνήμη JVM και ρυθμίστε το μέγεθος της heap για μεγάλα έγγραφα.  
-- **Ισορροπία Φορτίου** – Διανείμετε τις εργασίες απόδοσης σε πολλαπλές παρουσίες διακομιστών όταν επεξεργάζεστε μεγάλα φορτία.  
-- **Αποτελεσματικός Χειρισμός Αρχείων** – Χρησιμοποιήστε ροές NIO και αποφύγετε περιττές αντιγραφές για να διατηρήσετε τη καθυστέρηση χαμηλή.  
+- **Διαχείριση πόρων** – Παρακολουθήστε το μέγεθος της στοίβας JVM (`-Xmx`) όταν αποδίδετε μεγάλα αρχεία PPTX με πολλές κρυφές διαφάνειες.  
+- **Ισορροπία φόρτου** – Διανείμετε τις εργασίες απόδοσης σε πολλαπλές παρουσίες διακομιστών για να διαχειριστείτε υψηλού όγκου φορτία.  
+- **Αποδοτική διαχείριση αρχείων** – Χρησιμοποιήστε ροές Java NIO και αποφύγετε περιττές αντιγραφές αρχείων για να διατηρήσετε το λανθάνοντα χρόνο χαμηλό.
 
-## Common Issues and Solutions
+## Κοινά προβλήματα και λύσεις
 
 | Πρόβλημα | Αιτία | Λύση |
 |----------|-------|------|
-| Δεν δημιουργήθηκαν αρχεία εξόδου | Λανθασμένη διαδρομή `outputDirectory` ή έλλειψη δικαιώματος εγγραφής | Επαληθεύστε ότι η διαδρομή υπάρχει και ότι η διαδικασία Java μπορεί να γράψει σε αυτήν |
+| Δεν δημιουργήθηκαν αρχεία εξόδου | Λανθασμένη διαδρομή `outputDirectory` ή έλλειψη δικαιώματος εγγραφής | Επαληθεύστε ότι ο φάκελος υπάρχει και χορηγήστε δικαίωμα εγγραφής στη διαδικασία Java |
 | Οι κρυφές σελίδες εξακολουθούν να λείπουν | `setRenderHiddenPages(true)` δεν κλήθηκε | Βεβαιωθείτε ότι η επιλογή έχει οριστεί πριν καλέσετε `viewer.view()` |
-| Σφάλματα Έλλειψης Μνήμης | Απόδοση πολύ μεγάλων αρχείων PPTX με πολλές κρυφές διαφάνειες | Αυξήστε τη heap της JVM (`-Xmx`) ή χωρίστε το έγγραφο σε μικρότερα τμήματα |
+| Σφάλματα έλλειψης μνήμης | Απόδοση πολύ μεγάλων αρχείων PPTX με πολλές κρυφές διαφάνειες | Αυξήστε τη στοίβα JVM (`-Xmx`) ή χωρίστε το έγγραφο σε μικρότερα τμήματα πριν την απόδοση |
 
-## Frequently Asked Questions
+## Συχνές ερωτήσεις
 
-**Ε: Ποιοι τύποι αρχείων υποστηρίζει το GroupDocs.Viewer;**  
-Α: Υποστηρίζει PDF, Word, Excel, PowerPoint και πολλούς άλλους δημοφιλείς τύπους εγγράφων.
+**Ε: Ποιες μορφές υποστηρίζει το GroupDocs.Viewer;**  
+Α: Υποστηρίζει περισσότερες από 30 δημοφιλείς μορφές, συμπεριλαμβανομένων των PDF, DOCX, XLSX, PPTX, HTML και κοινών τύπων εικόνων.
 
 **Ε: Μπορώ να χρησιμοποιήσω το GroupDocs.Viewer σε εμπορική εφαρμογή;**  
-Α: Ναι, απαιτείται εμπορική άδεια για παραγωγικές εγκαταστάσεις.
+Α: Ναι – απαιτείται εμπορική άδεια για παραγωγικές εγκαταστάσεις.
 
 **Ε: Πώς να διαχειριστώ μεγάλα έγγραφα με το GroupDocs.Viewer;**  
-Α: Βελτιστοποιήστε τη χρήση μνήμης, εξετάστε τη σελιδοποίηση της διαδικασίας απόδοσης και χρησιμοποιήστε ισοροπία φόρτου μεταξύ πολλαπλών παρουσιών.
+Α: Βελτιστοποιήστε τη χρήση μνήμης αυξάνοντας τη στοίβα JVM, αποδίδοντας σελίδες σε παρτίδες, και εξετάστε την ισοροπία φόρτου μεταξύ πολλαπλών παρουσιών.
 
 **Ε: Είναι δυνατόν να προσαρμόσω τη μορφή εξόδου;**  
 Α: Απόλυτα. Μπορείτε να αποδώσετε σε HTML, PNG, JPEG ή PDF επιλέγοντας την κατάλληλη κλάση `ViewOptions`.
 
 **Ε: Τι πρέπει να κάνω αν αντιμετωπίσω σφάλματα κατά τη ρύθμιση;**  
-Α: Ελέγξτε ξανά τις εξαρτήσεις στο `pom.xml`, βεβαιωθείτε ότι το αρχείο άδειας βρίσκεται στη σωστή θέση και επαληθεύστε όλες τις διαδρομές αρχείων.
+Α: Ελέγξτε ξανά τις εξαρτήσεις `pom.xml`, βεβαιωθείτε ότι το αρχείο άδειας είναι σωστά τοποθετημένο, και επαληθεύστε όλες τις διαδρομές αρχείων.
 
-## Conclusion
+## Συμπέρασμα
 
-Τώρα έχετε κατακτήσει το **render hidden pages java** χρησιμοποιώντας το GroupDocs.Viewer. Ενεργοποιώντας το `setRenderHiddenPages(true)`, εξασφαλίζετε ότι κάθε κομμάτι περιεχομένου—ορατό ή κρυφό—αποδίδεται για τους χρήστες σας. Εξερευνήστε πρόσθετες δυνατότητες του Viewer, όπως υδατογράφημα ή προσαρμοσμένο CSS, για να προσαρμόσετε περαιτέρω την έξοδο στις ανάγκες σας.
+Τώρα έχετε έναν πλήρη, έτοιμο για παραγωγή οδηγό για **render hidden pages java** χρησιμοποιώντας το GroupDocs.Viewer. Ενεργοποιώντας το `setRenderHiddenPages(true)`, εξασφαλίζετε ότι κάθε κομμάτι περιεχομένου—ορατό ή κρυφό—αποδίδεται για τους χρήστες σας. Εξερευνήστε πρόσθετες δυνατότητες του Viewer όπως υδατογράφημα, προσαρμοσμένο CSS ή μετατροπή σε PDF για να επεκτείνετε περαιτέρω τη λύση.
 
 ---
 
-**Τελευταία Ενημέρωση:** 2026-03-14  
-**Δοκιμή Με:** GroupDocs.Viewer 25.2 for Java  
+**Τελευταία ενημέρωση:** 2026-08-25  
+**Δοκιμή με:** GroupDocs.Viewer 25.2 for Java  
 **Συγγραφέας:** GroupDocs  
 
-## Resources
+## Πόροι
 
-- **Τεκμηρίωση**: [Τεκμηρίωση GroupDocs.Viewer Java](https://docs.groupdocs.com/viewer/java/)
-- **Αναφορά API**: [Αναφορά API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Λήψη**: [Λήψη GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Αγορά**: [Αγορά Άδειας GroupDocs](https://purchase.groupdocs.com/buy)
-- **Δωρεάν Δοκιμή**: [Έναρξη Δωρεάν Δοκιμής](https://releases.groupdocs.com/viewer/java/)
-- **Προσωρινή Άδεια**: [Λήψη Προσωρινής Άδειας](https://purchase.groupdocs.com/temporary-license/)
-- **Υποστήριξη**: [Φόρουμ GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Τεκμηρίωση**: [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Αναφορά API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Λήψη**: [GroupDocs Viewer Download](https://releases.groupdocs.com/viewer/java/)
+- **Αγορά**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Δωρεάν δοκιμή**: [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Προσωρινή άδεια**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Υποστήριξη**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+
+## Σχετικά μαθήματα
+
+- [Οδηγός Java: απόδοση επιλεγμένων σελίδων java με το GroupDocs.Viewer](/viewer/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/)
+- [Πώς να μετατρέψετε Excel σε HTML και να αποδώσετε κρυφές γραμμές & στήλες σε Java με το GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
+- [Φόρτωση εγγράφου από URL σε Java – Οδηγός GroupDocs.Viewer](/viewer/java/document-loading/)
