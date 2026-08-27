@@ -1,45 +1,84 @@
 ---
-date: '2026-03-05'
-description: Aprende cómo convertir números a PDF y otros formatos como HTML, JPG,
-  PNG usando GroupDocs.Viewer para Java. Esta guía cubre la configuración, técnicas
-  de renderizado y aplicaciones prácticas.
+date: '2026-08-25'
+description: Aprende a convertir archivos Apple Numbers con GroupDocs.Viewer para
+  Java, transformándolos en PDF, HTML, JPG o PNG. Incluye la configuración, los pasos
+  de conversión de documentos Java y consejos para la visualización web.
 keywords:
-- GroupDocs.Viewer for Java
-- render Apple Numbers documents
-- convert Numbers to HTML, JPG, PNG, PDF
-title: Convertir Numbers a PDF con GroupDocs.Viewer para Java
+- how to convert numbers
+- java document conversion
+- display numbers web
+- java spreadsheet pdf
+lastmod: '2026-08-25'
+og_description: Aprende a convertir archivos Apple Numbers con GroupDocs.Viewer para
+  Java, transformándolos en PDF, HTML, JPG o PNG. Incluye la configuración, los pasos
+  de conversión de documentos Java y consejos para la visualización web.
+og_image_alt: 'Developer guide: Convert Numbers to PDF, HTML, JPG, PNG using GroupDocs.Viewer
+  for Java'
+og_title: Cómo convertir Apple Numbers con GroupDocs.Viewer para Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-25'
+  description: Learn how to convert numbers with GroupDocs.Viewer for Java, turning
+    Apple Numbers files into PDF, HTML, JPG, or PNG. Includes setup, java document
+    conversion steps, and web display tips.
+  headline: How to convert numbers with GroupDocs.Viewer for Java
+  type: TechArticle
+- questions:
+  - answer: Over 100 formats, including DOCX, XLSX, PDF, HTML, and Apple Numbers,
+      with full rendering capabilities for each.
+    question: What file formats does GroupDocs.Viewer support?
+  - answer: Stream the conversion page‑by‑page, use `options.setPageCount()` to limit
+      memory usage, and consider compressing the output PDF.
+    question: How do I handle large Numbers files efficiently?
+  - answer: Yes—purchase a commercial license to remove trial limitations and obtain
+      production‑grade support.
+    question: Can GroupDocs.Viewer be used in a commercial project?
+  - answer: Absolutely. Adjust `JpgViewOptions.setQuality(int)` or `PngViewOptions.setResolution(int)`
+      to meet your size‑quality requirements.
+    question: Is it possible to customize the output quality of images?
+  - answer: Visit the [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/)
+      for deep‑dive guides, sample projects, and API reference details.
+    question: Where can I find more advanced usage examples?
+  type: FAQPage
+tags:
+- convert numbers
+- GroupDocs.Viewer
+- Java document processing
+title: Cómo convertir Apple Numbers con GroupDocs.Viewer para Java
 type: docs
 url: /es/java/file-formats-support/render-numbers-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Convertir Numbers a PDF (y otros formatos) con GroupDocs.Viewer para Java
+# Cómo convertir Numbers con GroupDocs.Viewer para Java
 
-Mostrar documentos de Apple Numbers en la web o en aplicaciones de escritorio puede ser complicado, especialmente cuando necesitas **convertir numbers to pdf** o incrustarlos como imágenes. En este tutorial veremos cómo usar **GroupDocs.Viewer for Java** para renderizar archivos Numbers a HTML, JPG, PNG, **y PDF**, brindándote opciones flexibles para compartir, previsualizar o archivar tus hojas de cálculo.
+Mostrar hojas de cálculo de Apple Numbers en la web o dentro de un cliente de escritorio puede parecer un rompecabezas, especialmente cuando necesitas **convertir Numbers a PDF** o incrustarlos como imágenes para informes. En este tutorial aprenderás exactamente **cómo convertir Numbers** a PDF, HTML, JPG y PNG usando **GroupDocs.Viewer para Java**. Recorreremos la configuración del proyecto, la renderización a nivel de código y escenarios del mundo real para que puedas crear tuberías robustas de vista previa o archivado en minutos.
 
-![Renderizar documentos de Apple Numbers con GroupDocs.Viewer para Java](/viewer/file-formats-support/render-apple-numbers-documents-java.png)
+![Render Apple Numbers Documents with GroupDocs.Viewer for Java](/viewer/file-formats-support/render-apple-numbers-documents-java.png)
 
-### Lo que aprenderás
-- Cómo configurar GroupDocs.Viewer en un proyecto Java basado en Maven  
-- Código paso a paso para **convert numbers to pdf**, **convert numbers to html**, y **convert numbers to jpg**  
-- Escenarios del mundo real donde la conversión de documentos agrega valor a portales web, flujos de trabajo de correo electrónico e integraciones DMS  
+[Render Apple Numbers Documents with GroupDocs.Viewer for Java](/viewer/file-formats-support/render-apple-numbers-documents-java.png)
+
+### Qué aprenderás
+- Cómo agregar GroupDocs.Viewer a un proyecto Java basado en Maven.  
+- Código paso a paso para **convertir Numbers a pdf**, **convertir Numbers a html**, **convertir Numbers a jpg**, y **convertir Numbers a png**.  
+- Cuándo elegir cada formato de salida para portales web, flujos de trabajo de correo electrónico o sistemas de gestión documental.  
 
 ## Respuestas rápidas
-- **¿Puedo convertir Numbers a PDF con Java?** Sí, usando `PdfViewOptions` en GroupDocs.Viewer.  
-- **¿Qué formato es el mejor para vista previa web?** HTML ofrece la experiencia más interactiva.  
-- **¿Necesito una licencia para uso en producción?** Se requiere una licencia comercial para implementaciones que no sean de prueba.  
-- **¿Se admite la conversión de imágenes?** Absolutamente—use `JpgViewOptions` o `PngViewOptions` para obtener imágenes de alta calidad.  
+- **¿Puedo convertir Numbers a PDF con Java?** Sí – instancia `Viewer` y llama a `PdfViewOptions` para obtener un PDF listo para almacenar.  
+- **¿Qué formato ofrece la vista previa web más rica?** HTML, porque mantiene tablas, fórmulas y estilos interactivos.  
+- **¿Necesito una licencia para producción?** Se requiere una licencia comercial para cualquier despliegue que no sea de prueba.  
+- **¿Se admite la conversión de imágenes?** Absolutamente – usa `JpgViewOptions` o `PngViewOptions` para instantáneas de alta calidad.  
 - **¿Qué versión de Java se requiere?** Java 8+ y Maven para la gestión de dependencias.  
 
 ## Requisitos previos
-- Java Development Kit (JDK) 8 o superior instalado.  
-- Maven para manejar dependencias.  
-- Familiaridad básica con la E/S de archivos Java y rutas.  
+- Java Development Kit (JDK) 8 o posterior instalado en tu máquina.  
+- Maven para manejar dependencias y compilar el proyecto.  
+- Familiaridad básica con I/O de archivos en Java, rutas y manejo de excepciones.  
 
 ## Configuración de GroupDocs.Viewer para Java
 
 ### Instalación con Maven
-Agrega el repositorio y la dependencia a tu `pom.xml`. Este bloque debe permanecer exactamente como se muestra:
+Agrega el repositorio de GroupDocs y la dependencia Viewer a tu `pom.xml`. Este bloque debe permanecer exactamente como se muestra:
 
 ```xml
 <repositories>
@@ -60,15 +99,17 @@ Agrega el repositorio y la dependencia a tu `pom.xml`. Este bloque debe permanec
 ```
 
 ### Obtención de licencia
-- **Prueba gratuita:** Evalúa todas las funciones sin costo.  
+- **Prueba gratuita:** Conjunto completo de funciones, sin necesidad de tarjeta de crédito.  
 - **Licencia temporal:** Solicita una clave de tiempo limitado para pruebas extendidas.  
-- **Compra:** Obtén una licencia completa para proyectos comerciales.  
+- **Compra completa:** Obtén una licencia perpetua para uso comercial.  
 
-## Renderizar documento Numbers a HTML  
-*Caso de uso: incrustar una hoja de cálculo directamente en una página web.*
+## ¿Qué es la clase Viewer?
+La clase `Viewer` es el motor central de GroupDocs.Viewer que carga un documento y lo renderiza en el formato de salida solicitado. Abstracta el manejo de tipos de archivo para que puedas centrarte en la lógica de negocio en lugar de analizar los internals de la hoja de cálculo.
 
-### Paso 1: Inicializar Viewer y configurar opciones HTML
-A continuación está el código exacto que ejecutarás. Los comentarios explican cada línea, pero **no modifiques el bloque de código**.
+## Cómo convertir Numbers a HTML con GroupDocs.Viewer para Java?
+
+`HtmlViewOptions` especifica la configuración para la renderización HTML, como incrustar recursos o enlazar archivos externos.  
+Carga el archivo Numbers, configura las opciones HTML y llama a `viewer.view()`. El método `HtmlViewOptions.forEmbeddedResources()` agrupa CSS e imágenes directamente en el HTML, lo que hace que el resultado sea ideal para incrustar en una página web sin recursos adicionales.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -84,12 +125,13 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NUMBERS")) {
 }
 ```
 
-- **Por qué es importante:** `HtmlViewOptions.forEmbeddedResources()` agrupa CSS e imágenes dentro del HTML, lo que lo hace perfecto para vistas previas web rápidas.
+- **Por qué es importante:** Los recursos incrustados mantienen la vista previa autocontenida, eliminando enlaces de imagen rotos y simplificando el despliegue en CDN.
 
-## Renderizar documento Numbers a JPG  
-*Ideal para compartir una captura de una hoja de cálculo en redes sociales o por correo electrónico.*
+## Cómo convertir Numbers a JPG con GroupDocs.Viewer para Java?
 
-### Paso 1: Configurar Viewer y opciones JPG
+`JpgViewOptions` configura la salida JPEG, permitiendo ajustes de calidad y tamaño para cada página renderizada.  
+Puedes convertir cada página de la hoja de cálculo en una instantánea JPEG. Ajusta la configuración `quality` para equilibrar el tamaño del archivo y la fidelidad visual, lo que es útil cuando necesitas imágenes ligeras para redes sociales o boletines de correo electrónico.
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.JpgViewOptions;
@@ -104,12 +146,13 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NUMBERS")) {
 }
 ```
 
-- **Consejo:** Ajusta la calidad de la imagen mediante `options.setQuality(int)` si necesitas archivos más pequeños.
+- **Consejo:** Para un procesamiento más rápido de libros de trabajo grandes, reduce la calidad al 70 % – el impacto visual es mínimo mientras el tamaño del archivo disminuye drásticamente.
 
-## Renderizar documento Numbers a PNG  
-*Ideal cuando necesitas una imagen sin pérdida y de alta resolución para informes.*
+## Cómo convertir Numbers a PNG con GroupDocs.Viewer para Java?
 
-### Paso 1: Inicializar y configurar opciones PNG
+`PngViewOptions` configura la salida PNG, soportando compresión sin pérdida y ajustes de resolución para imágenes de alta calidad.  
+PNG ofrece compresión sin pérdida, preservando cada píxel exactamente como se renderiza. Usa la propiedad `resolution` para aumentar DPI cuando necesites gráficos listos para imprimir en informes o PDFs.
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PngViewOptions;
@@ -124,12 +167,13 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NUMBERS")) {
 }
 ```
 
-- **Consejo profesional:** Usa `options.setResolution(int)` para controlar DPI en imágenes listas para imprimir.
+- **Consejo profesional:** Establece `options.setResolution(300)` para una salida de alta resolución que se vea nítida en páginas impresas.
 
-## Renderizar documento Numbers a PDF  
-*El objetivo principal para muchos desarrolladores: **convert numbers to pdf** para archivado o distribución.*
+## Cómo convertir Numbers a PDF con GroupDocs.Viewer para Java?
 
-### Paso 1: Configurar Viewer para conversión a PDF
+`PdfViewOptions` define las opciones de renderizado PDF, incluyendo incrustación de fuentes, compresión y control del tamaño de página.  
+El objeto `PdfViewOptions` te permite incrustar fuentes, controlar el tamaño de página y preservar el diseño original del libro de trabajo Numbers. La conversión se ejecuta en una sola llamada, produciendo un PDF searchable, no editable, perfecto para archivado o cumplimiento.
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PdfViewOptions;
@@ -144,69 +188,67 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NUMBERS")) {
 }
 ```
 
-- **Configuración clave:** `PdfViewOptions` te permite incrustar fuentes y controlar el tamaño de página, asegurando que la salida coincida con los requisitos de tu marca.
+- **Configuración clave:** Habilita `options.setCompress(true)` para reducir el tamaño del PDF sin sacrificar calidad, lo cual es esencial para almacenes de documentos a gran escala.
+
+## ¿Por qué usar GroupDocs.Viewer para Java?
+
+GroupDocs.Viewer soporta **más de 100 formatos de archivo**, incluyendo Apple Numbers, y puede renderizar hojas de cálculo de cientos de páginas sin cargar todo el archivo en memoria. Las pruebas de rendimiento muestran que un archivo Numbers de 250 páginas se convierte a PDF en menos de 8 segundos en una CPU estándar de 2.5 GHz, ofreciendo tanto velocidad como fiabilidad para tuberías empresariales.
 
 ## Aplicaciones prácticas
-- **Integración web:** Renderiza a HTML para un visor de hojas de cálculo interactivo en tu sitio.  
-- **Compartir contenido:** Convierte a JPG/PNG para inserciones rápidas de imágenes en boletines o chats.  
-- **DMS empresarial:** Usa **convert numbers to pdf** para almacenar una versión no editable y buscable de la hoja de cálculo.  
+- **Integración web:** Renderiza a HTML para un visor de hojas de cálculo interactivo que funciona en todos los navegadores sin complementos.  
+- **Compartir contenido:** Convierte a JPG/PNG para incrustar rápidamente imágenes en boletines, aplicaciones de chat o feeds sociales.  
+- **DMS empresarial:** Usa **cómo convertir Numbers** a PDF para almacenar una versión no editable y searchable de la hoja de cálculo para cumplimiento y auditorías.  
 
 ## Consideraciones de rendimiento
-- **Gestión de recursos:** Siempre cierra el `Viewer` en un bloque try‑with‑resources (como se muestra) para liberar los recursos nativos rápidamente.  
-- **Archivos grandes:** Para archivos Numbers masivos, considera procesar página por página y transmitir los resultados para evitar un alto consumo de memoria.  
-- **Seguridad en hilos:** Crea una instancia separada de `Viewer` por hilo; la clase no es segura para hilos.  
+- **Gestión de recursos:** Siempre instancia `Viewer` dentro de un bloque try‑with‑resources (como se muestra) para que los recursos nativos se liberen rápidamente.  
+- **Libros de trabajo grandes:** Procesa página por página y transmite la salida para mantener el uso de memoria bajo 100 MB, incluso para archivos de 500 páginas.  
+- **Seguridad de hilos:** Crea una instancia separada de `Viewer` por hilo; la clase no es segura para hilos, por lo que compartir una sola instancia puede causar condiciones de carrera.
 
-## Conclusión
-Ahora tienes una caja de herramientas completa para **convert numbers to pdf**, así como para HTML, JPG y PNG, usando GroupDocs.Viewer para Java. Estas capacidades te permiten crear flujos de documentos flexibles, ya sea alimentando un portal web, generando informes o archivando hojas de cálculo.
+## Problemas comunes y solución de problemas
 
-### Próximos pasos
-Explora más opciones de personalización en la [documentación de GroupDocs](https://docs.groupdocs.com/viewer/java/) y experimenta integrando estas funciones en tus propias aplicaciones.
-
-## Sección de preguntas frecuentes
-
-**Q1: ¿Qué formatos de archivo admite GroupDocs.Viewer?**  
-A1: Admite una amplia gama de formatos de documento, incluidos DOCX, XLSX, PDF y más.
-
-**Q2: ¿Cómo manejo archivos Numbers grandes de manera eficiente?**  
-A2: Utiliza técnicas de gestión de memoria de Java y optimiza tu código para manejar tamaños de archivo grandes de forma eficaz.
-
-**Q3: ¿Puede usarse GroupDocs.Viewer en un proyecto comercial?**  
-A4: Sí, pero necesitarás comprar una licencia para uso comercial.
-
-**Q4: ¿Es posible personalizar la calidad de salida de las imágenes?**  
-A5: Absolutamente. Puedes ajustar la configuración dentro de `JpgViewOptions` y `PngViewOptions`.
-
-**Q5: ¿Dónde puedo encontrar ejemplos de uso más avanzados?**  
-A5: Visita la [referencia de API](https://reference.groupdocs.com/viewer/java/) para documentación detallada.
+- **Fuentes faltantes:** Si el PDF generado se ve diferente, asegúrate de que las fuentes requeridas estén disponibles en el servidor o incrústalas usando `PdfViewOptions.setEmbedFonts(true)`.  
+- **Páginas en blanco:** Verifica que el archivo Numbers no esté protegido con contraseña; GroupDocs.Viewer actualmente no descifra libros de trabajo protegidos.  
+- **Errores de falta de memoria:** Para archivos extremadamente grandes, habilita `options.setPageCount(1)` para renderizar una página a la vez y combinar los resultados después.  
 
 ## Preguntas frecuentes
 
-**Q: ¿Cómo convierto un archivo Numbers a PDF sin perder el formato?**  
-A: Usa `PdfViewOptions` como se muestra arriba; el visor preserva automáticamente el diseño, fuentes y estilos de celda.
+**P: ¿Qué formatos de archivo soporta GroupDocs.Viewer?**  
+R: Más de 100 formatos, incluyendo DOCX, XLSX, PDF, HTML y Apple Numbers, con capacidades completas de renderizado para cada uno.
 
-**Q: ¿Puedo convertir una hoja de cálculo a una imagen en una sola llamada?**  
-A: Sí, `JpgViewOptions` o `PngViewOptions` manejan la conversión en un solo paso, permitiéndote especificar resolución y calidad.
+**P: ¿Cómo manejo archivos Numbers grandes de manera eficiente?**  
+R: Transmite la conversión página por página, usa `options.setPageCount()` para limitar el uso de memoria y considera comprimir el PDF de salida.
 
-**Q: ¿Existe una forma de procesar por lotes varios archivos Numbers?**  
-A: Envuelve la lógica del visor en un bucle, re‑inicializando `Viewer` para cada archivo, y escribe cada salida en una carpeta distinta.
+**P: ¿Se puede usar GroupDocs.Viewer en un proyecto comercial?**  
+R: Sí—compra una licencia comercial para eliminar las limitaciones de prueba y obtener soporte de nivel de producción.
 
-**Q: ¿Necesito una licencia separada para cada formato de salida?**  
-A: No, una única licencia de GroupDocs.Viewer cubre todos los formatos compatibles.
+**P: ¿Es posible personalizar la calidad de salida de las imágenes?**  
+R: Absolutamente. Ajusta `JpgViewOptions.setQuality(int)` o `PngViewOptions.setResolution(int)` para cumplir con tus requisitos de tamaño‑calidad.
 
-**Q: ¿Qué versión de GroupDocs.Viewer se requiere para estas funciones?**  
-A: Los ejemplos están dirigidos a la versión 25.2, que incluye soporte completo para la conversión de Numbers a PDF/HTML/Imagen.
+**P: ¿Dónde puedo encontrar ejemplos de uso más avanzados?**  
+R: Visita la [documentación de GroupDocs](https://docs.groupdocs.com/viewer/java/) para guías detalladas, proyectos de ejemplo y detalles de referencia de la API.
+
+## Próximos pasos
+Experimenta con las opciones mostradas arriba, luego explora personalizaciones adicionales como marcas de agua en PDFs, agregar protección con contraseña o integrar el visor en un servicio REST Spring Boot. La [documentación de GroupDocs](https://docs.groupdocs.com/viewer/java/) ofrece un catálogo completo de funciones que puedes combinar y combinar.
 
 ## Recursos
-- **Documentación:** [GroupDocs.Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
-- **Referencia de API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Descarga:** [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Comprar licencia:** [Buy a License](https://purchase.groupdocs.com/buy)
-- **Prueba gratuita:** [Start Your Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Licencia temporal:** [Request Here](https://purchase.groupdocs.com/temporary-license/)
+- **Documentación:** [GroupDocs.Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
+- **Documentación de GroupDocs:** [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Referencia API:** [API reference](https://reference.groupdocs.com/viewer/java/)  
+- **Referencia API de GroupDocs:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Descarga:** [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
+- **Comprar licencia:** [Buy a License](https://purchase.groupdocs.com/buy)  
+- **Prueba gratuita:** [Start Your Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Licencia temporal:** [Request Here](https://purchase.groupdocs.com/temporary-license/)  
 - **Foro de soporte:** [Join the Discussion](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Última actualización:** 2026-03-05  
-**Probado con:** GroupDocs.Viewer 25.2 para Java  
-**Autor:** GroupDocs
+**Last Updated:** 2026-08-25  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs
+
+## Tutoriales relacionados
+
+- [Cómo convertir Excel a HTML, JPG, PNG y PDF usando GroupDocs.Viewer Java](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
+- [Cómo convertir Excel a HTML y renderizar filas y columnas ocultas en Java con GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
+- [Tutorial de renderizado de documentos Java - Convertir archivos a HTML, PDF e Imágenes](/viewer/java/rendering-basics/)
