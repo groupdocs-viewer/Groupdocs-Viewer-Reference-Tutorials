@@ -1,55 +1,93 @@
 ---
-date: '2026-03-16'
-description: Pelajari cara mengonversi DWG ke PNG dengan ukuran khusus dan warna latar
-  belakang menggunakan GroupDocs.Viewer untuk Java.
+date: '2026-08-30'
+description: Pelajari cara mengonversi DWG ke PNG, mengatur warna latar belakang di
+  Java, dan menyesuaikan ukuran gambar dengan GroupDocs.Viewer for Java.
 keywords:
-- render CAD drawings PNG
-- GroupDocs.Viewer for Java setup
-- custom image size and background color
-title: Cara Mengonversi DWG ke PNG dengan Ukuran Kustom & Warna Latar Belakang Menggunakan
-  GroupDocs.Viewer untuk Java
+- convert dwg to png
+- set background color java
+- change cad background color
+- java convert cad png
+lastmod: '2026-08-30'
+og_description: Konversi DWG ke PNG menggunakan GroupDocs.Viewer for Java sambil mengatur
+  lebar gambar khusus dan warna latar belakang. Panduan ini menyediakan langkah‑demi‑langkah,
+  potongan kode, dan tips pemecahan masalah.
+og_image_alt: 'Guide: converting DWG to PNG with custom size and background color
+  using GroupDocs.Viewer for Java'
+og_title: Konversi DWG ke PNG dengan ukuran khusus, warna latar belakang di Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-30'
+  description: Learn how to convert DWG to PNG, set background color Java, and customize
+    image size with GroupDocs.Viewer for Java.
+  headline: How to convert DWG to PNG with custom size & background color using GroupDocs.Viewer
+    for Java
+  type: TechArticle
+- questions:
+  - answer: Yes, GroupDocs.Viewer supports DXF, DWF, and several additional CAD formats.
+    question: Can I render other CAD formats besides DWG?
+  - answer: Instantiate a new `Color` with `new Color(123, 45, 67)` and pass it to
+      `setBackgroundColor`.
+    question: How do I use a custom RGB color instead of a predefined constant?
+  - answer: You can specify layout or layer options via `CadOptions` before calling
+      `viewer.view`.
+    question: Is it possible to render only a specific layout or layer?
+  - answer: Set the background color to `new Color(0,0,0,0)` for full transparency
+      if the output format supports it.
+    question: Does the library support transparent backgrounds?
+  - answer: The tutorial uses version 25.2, but newer releases retain the same API
+      surface.
+    question: What version of GroupDocs.Viewer is required?
+  type: FAQPage
+tags:
+- convert dwg
+- GroupDocs.Viewer
+- Java CAD rendering
+- custom PNG output
+title: Cara mengonversi DWG ke PNG dengan ukuran khusus & warna latar belakang menggunakan
+  GroupDocs.Viewer for Java
 type: docs
 url: /id/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/
 weight: 1
 ---
 
-# Cara Mengonversi DWG ke PNG dengan Ukuran Kustom & Warna Latar Belakang Menggunakan GroupDocs.Viewer untuk Java
+# Cara mengonversi DWG ke PNG dengan ukuran khusus & warna latar belakang menggunakan GroupDocs.Viewer untuk Java
 
-Jika Anda ingin **mengonversi DWG ke PNG** sambil memiliki kontrol penuh atas dimensi gambar dan gaya latar belakang, Anda berada di tempat yang tepat. Pada tutorial ini kami akan memandu Anda melalui proses merender file CAD menjadi PNG, menyesuaikan lebar, dan mengubah warna latar belakang sehingga output sesuai dengan kebutuhan laporan, presentasi, atau pratinjau web Anda.
+Dalam tutorial ini Anda akan belajar **cara mengonversi DWG ke PNG** sambil mengontrol dimensi output dan warna latar belakang, menggunakan GroupDocs.Viewer untuk Java. Baik Anda perlu menyematkan gambar CAD dalam laporan, menghasilkan thumbnail untuk portal web, atau mengotomatiskan rendering batch, langkah-langkah di bawah ini memberi Anda kontrol penuh atas tampilan visual setiap file PNG.
 
 ## Jawaban Cepat
-- **Apa arti “mengonversi DWG ke PNG”?** Itu adalah proses mengubah file CAD DWG menjadi gambar PNG menggunakan kode.  
-- **Apakah saya dapat mengatur lebar kustom?** Ya – gunakan `CadOptions.forRenderingByWidth(int width)`.  
-- **Bagaimana cara mengubah warna latar belakang?** Panggil `cadOptions.setBackgroundColor(Color.YOUR_COLOR)`.  
-- **Perpustakaan apa yang dibutuhkan?** GroupDocs.Viewer untuk Java (versi 25.2 atau lebih baru).  
-- **Apakah saya memerlukan lisensi?** Lisensi sementara atau berbayar menghapus batasan evaluasi.
+- **Apa arti “convert DWG to PNG”?** Ini adalah proses mengubah file CAD DWG menjadi gambar PNG melalui kode, mempertahankan detail vektor sebagai piksel raster.  
+- **Apakah saya dapat mengatur lebar khusus?** Ya – panggil `CadOptions.forRenderingByWidth(int width)` untuk menentukan lebar piksel yang tepat yang Anda butuhkan.  
+- **Bagaimana cara mengubah warna latar belakang?** Gunakan `cadOptions.setBackgroundColor(Color.YOUR_COLOR)` sebelum rendering.  
+- **Perpustakaan apa yang diperlukan?** GroupDocs.Viewer untuk Java (versi 25.2 atau lebih baru).  
+- **Apakah saya memerlukan lisensi?** Lisensi sementara atau penuh menghapus batas evaluasi dan memungkinkan rendering tak terbatas.
 
-![Render CAD Drawings as PNG with Custom Size & Background Color with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-cad-drawings-as-png-with-custom-size-background-color-java.png)
+![Render Gambar CAD sebagai PNG dengan Ukuran Kustom & Warna Latar Belakang menggunakan GroupDocs.Viewer untuk Java](/viewer/advanced-rendering/render-cad-drawings-as-png-with-custom-size-background-color-java.png)
 
-## Cara Mengonversi DWG ke PNG – Ikhtisar
-Pada bagian ini kami memperluas tujuan utama: **cara mengonversi DWG ke PNG** sambil mengontrol ukuran dan latar belakang. Anda akan melihat pengaturan lengkap, kode yang tepat, serta tips praktis untuk menghindari jebakan umum.
+## Apa itu GroupDocs.Viewer untuk Java?
+GroupDocs.Viewer untuk Java adalah API sisi‑server yang merender lebih dari 150 format file—termasuk file CAD—menjadi gambar, PDF, atau HTML. Ia berfungsi tanpa memerlukan perangkat lunak pihak ketiga seperti AutoCAD, menjadikannya ideal untuk alur kerja otomatis.
 
-## Apa yang Akan Anda Pelajari
-- Menyiapkan GroupDocs.Viewer untuk Java dalam proyek Maven  
-- **Mengonversi DWG ke PNG** dengan dimensi kustom  
-- **Mengubah warna latar belakang CAD** saat merender untuk tampilan yang lebih rapi  
-- Skenario dunia nyata di mana rendering kustom menambah nilai  
+## Cara mengonversi DWG ke PNG dengan ukuran khusus dan warna latar belakang?
+Muat file DWG dengan instance `Viewer`, konfigurasikan `CadOptions` untuk lebar dan latar belakang yang diinginkan, dan akhirnya panggil `viewer.view` dengan `PngViewOptions`. Alur tiga langkah ini menangani I/O file, rendering, dan penamaan output dalam satu operasi yang efisien memori.
+
+Viewer adalah kelas utama yang memuat dokumen dan melakukan rendering.  
+CadOptions mengonfigurasi pengaturan khusus CAD seperti lebar gambar dan warna latar belakang.  
+PngViewOptions mendefinisikan format output PNG dan pola penamaan untuk halaman yang dirender.
+
+Sekarang Anda dapat merender gambar DWG apa pun menjadi PNG dengan lebar tepat yang Anda tentukan, dan Anda dapat memilih warna latar belakang padat apa pun (atau transparan) untuk menyesuaikan merek atau tema UI Anda.
+
+## Mengapa mengatur warna latar belakang khusus?
+Mengatur warna latar belakang memastikan PNG yang dirender menyatu mulus dengan elemen UI di sekitarnya, menghindari margin putih yang tidak diinginkan, dan dapat menyoroti detail gambar yang sebaliknya akan hilang pada kanvas putih default. GroupDocs.Viewer mendukung setiap `java.awt.Color`, termasuk nilai RGB khusus, memberi Anda kontrol pixel‑perfect.
+
+java.awt.Color mewakili nilai warna yang digunakan untuk merender latar belakang.
 
 ## Prasyarat
-
-### Perpustakaan dan Dependensi yang Diperlukan
-- Java Development Kit (JDK) 8+  
-- Maven untuk manajemen dependensi  
-
-### Persyaratan Penyiapan Lingkungan
-- IDE seperti IntelliJ IDEA atau Eclipse  
-- Pengetahuan dasar Java  
-
-### Prasyarat Pengetahuan
-- Familiaritas dengan penanganan file di Java  
+- **Java Development Kit (JDK) 8+** – API menargetkan Java 8 dan yang lebih baru.  
+- **Maven** – untuk manajemen dependensi.  
+- **IDE** – IntelliJ IDEA, Eclipse, atau editor apa pun yang Anda sukai.  
+- **Pengetahuan dasar penanganan file Java** – untuk membaca file DWG sumber dan menulis output PNG.
 
 ## Menyiapkan GroupDocs.Viewer untuk Java
-Tambahkan repositori GroupDocs dan dependensi ke `pom.xml` Maven Anda:
+Tambahkan repositori GroupDocs dan dependensi Viewer ke `pom.xml` Maven Anda:
 
 ```xml
 <repositories>
@@ -69,10 +107,10 @@ Tambahkan repositori GroupDocs dan dependensi ke `pom.xml` Maven Anda:
 ```
 
 ### Akuisisi Lisensi
-Dapatkan lisensi sementara atau penuh untuk menghapus batasan evaluasi.
+Dapatkan kunci lisensi sementara atau penuh dari portal GroupDocs dan letakkan file `license.lic` di folder sumber daya proyek Anda. Ini menghapus batas evaluasi 20‑halaman dan membuka rendering resolusi penuh.
 
-### Inisialisasi dan Penyiapan Dasar
-Buat instance `Viewer` yang menunjuk ke file CAD Anda:
+### Inisialisasi dan Pengaturan Dasar
+Buat instance `Viewer` yang menunjuk ke folder yang berisi file DWG Anda:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -84,14 +122,14 @@ try (Viewer viewer = new Viewer(documentPath.toString())) {
 }
 ```
 
-## Fitur 1: Merender Gambar CAD dengan Ukuran Gambar Kustom dan Warna Latar Belakang
+## Fitur 1: merender gambar CAD dengan ukuran gambar khusus dan warna latar belakang
 
-### Cara Mengubah Warna Latar Belakang CAD
-Fitur ini memungkinkan Anda **mengonversi DWG ke PNG** sambil menentukan lebar kustom dan menerapkan warna latar belakang baru.
+### Cara mengubah warna latar belakang CAD
+Untuk mengubah warna latar belakang CAD, konfigurasikan objek CadOptions sebelum rendering. Tetapkan lebar yang diinginkan dengan `forRenderingByWidth` dan terapkan latar belakang baru menggunakan `setBackgroundColor`. Viewer kemudian menghasilkan gambar PNG yang mencerminkan warna yang ditentukan, memastikan gaya visual yang konsisten di semua file output.
 
 #### Implementasi Langkah‑demi‑Langkah
 
-##### Impor Paket yang Diperlukan
+##### Impor paket yang diperlukan
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.CadOptions;
@@ -100,13 +138,13 @@ import java.nio.file.Path;
 import java.awt.Color;
 ```
 
-##### Atur Direktori Output dan Format Jalur File
+##### Siapkan direktori output dan format jalur file
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/SetImageBackgroundColor");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
 
-##### Inisialisasi Viewer dengan Opsi Rendering Kustom
+##### Inisialisasi viewer dengan opsi rendering khusus
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS")) {
     PngViewOptions options = new PngViewOptions(pageFilePathFormat);
@@ -121,23 +159,25 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS
 }
 ```
 
-**Penjelasan Parameter**  
-- `PngViewOptions` – mendefinisikan format output dan penamaan.  
-- `forRenderingByWidth(int width)` – menetapkan lebar gambar kustom.  
-- `setBackgroundColor(Color color)` – **menetapkan warna latar belakang PNG** untuk meningkatkan konsistensi visual.
+**Penjelasan parameter**  
+- `PngViewOptions` – mendefinisikan format output PNG dan pola penamaan.  
+- `forRenderingByWidth(int width)` – memaksa renderer menghasilkan gambar yang lebarnya sesuai dengan nilai piksel yang diberikan; tinggi diskalakan secara proporsional.  
+- `setBackgroundColor(Color color)` – menimpa kanvas putih default dengan warna yang Anda pilih, meningkatkan konsistensi visual di seluruh aset yang dihasilkan.
 
 #### Tips Pemecahan Masalah
-- Pastikan folder output ada; buat jika diperlukan.  
-- Periksa kembali jalur file input dan izin akses.  
+- Pastikan folder output ada; gunakan `Files.createDirectories(outputDir)` jika tidak.  
+- Verifikasi jalur file input benar dan aplikasi memiliki izin membaca.  
 
-## Fitur 2: Menetapkan Warna Latar Belakang dalam Opsi Rendering
+## Fitur 2: mengatur warna latar belakang dalam opsi rendering
 
-### Cara Menetapkan Warna Latar Belakang PNG
-Di sini kami fokus pada opsi **set background color PNG** agar setiap gambar yang dirender sesuai dengan palet merek Anda.
+### Cara mengatur warna latar belakang PNG
+Mengatur warna latar belakang PNG melibatkan pembuatan instance Color dan menetapkannya ke CadOptions sebelum rendering. Ini memastikan setiap PNG yang dihasilkan menggunakan latar belakang yang ditentukan, sesuai dengan pedoman merek atau tema UI Anda. Anda dapat menggunakan konstanta yang telah ditentukan atau mendefinisikan nilai RGB khusus untuk kontrol yang tepat.
+
+java.awt.Color mewakili nilai warna yang digunakan untuk merender latar belakang.
 
 #### Implementasi Langkah‑demi‑Langkah
 
-##### Impor Paket yang Diperlukan
+##### Impor paket yang diperlukan
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.CadOptions;
@@ -146,7 +186,7 @@ import java.nio.file.Path;
 import java.awt.Color;
 ```
 
-##### Konfigurasikan Opsi Rendering dengan Warna Latar Belakang
+##### Konfigurasikan opsi rendering dengan warna latar belakang
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/SetImageBackgroundColor");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
@@ -163,63 +203,70 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS
 }
 ```
 
-**Opsi Konfigurasi Utama**  
-- Sesuaikan `forRenderingByWidth(int width)` untuk dimensi yang berbeda.  
-- Gunakan konstanta `Color` apa pun atau `new Color(r,g,b)` kustom untuk latar belakang khusus.  
+**Opsi konfigurasi utama**  
+- Sesuaikan `forRenderingByWidth(int width)` untuk dimensi berbeda, seperti 800 px untuk thumbnail web atau 1920 px untuk cetakan resolusi tinggi.  
+- Gunakan konstanta `Color` yang telah ditentukan (mis., `Color.LIGHT_GRAY`) atau buat instance khusus dengan `new Color(r, g, b)` untuk branding yang tepat.
 
 ## Aplikasi Praktis
 
-### 1. Dokumentasi Teknik
-Rendering kustom memastikan gambar teknik memenuhi panduan gaya perusahaan.
+### 1. Dokumentasi teknik
+Rendering khusus memastikan setiap gambar mematuhi panduan gaya perusahaan, menghilangkan kebutuhan penyuntingan gambar manual setelah ekspor.
 
-### 2. Visualisasi Arsitektur
-Tampilkan blueprint dengan latar belakang bersih yang cocok dengan deck presentasi.
+### 2. Visualisasi arsitektur
+Tampilkan blueprint dengan latar belakang yang cocok dengan slide deck atau portal yang dihadapi klien, meningkatkan kohesi visual.
 
-### 3. Prototipe Manufaktur
-Hasilkan PNG yang presisi untuk alur kerja prototyping cepat.
+### 3. Prototipe manufaktur
+Hasilkan PNG untuk alur kerja prototipe cepat di mana alat hilir mengharapkan ukuran gambar dan latar belakang tertentu.
 
 ### Kemungkinan Integrasi
-Gabungkan pipeline rendering ini dengan sistem manajemen dokumen untuk mengotomatisasi pembuatan aset visual.
+Pasangkan pipeline rendering ini dengan sistem manajemen dokumen (mis., SharePoint) untuk secara otomatis menghasilkan gambar pratinjau setiap kali file DWG diunggah.
 
 ## Pertimbangan Kinerja
 
-### Mengoptimalkan Kinerja
-- **Pemrosesan Batch:** Render beberapa file CAD dalam loop.  
-- **Manajemen Sumber Daya:** Sesuaikan ukuran heap JVM untuk gambar besar.
+### Mengoptimalkan kinerja
+- **Pemrosesan batch:** Loop melalui direktori file DWG dan render masing‑masing secara berurutan untuk mengurangi biaya pemanasan JVM.  
+- **Manajemen sumber daya:** Untuk gambar besar (500+ halaman), tingkatkan heap JVM (`-Xmx2g`) atau proses file dalam batch lebih kecil untuk menghindari kesalahan out‑of‑memory.
 
-### Pedoman Penggunaan Sumber Daya
-Pantau CPU dan memori; lepaskan instance `Viewer` segera setelah selesai.
+### Pedoman penggunaan sumber daya
+Pantau penggunaan CPU dan memori dengan alat seperti VisualVM; lepaskan instance `Viewer` dengan cepat menggunakan try‑with‑resources.
 
-### Praktik Terbaik untuk Manajemen Memori Java
-- Gunakan try‑with‑resources (seperti yang ditunjukkan) untuk menutup `Viewer` secara otomatis.  
-- Hindari menyimpan objek `Path` besar lebih lama dari yang diperlukan.
+### Praktik terbaik untuk manajemen memori Java
+- Gunakan try‑with‑resources (seperti yang ditunjukkan) untuk menutup otomatis `Viewer`.  
+- Hindari mempertahankan objek `Path` besar di luar penggunaan langsungnya.  
 
-## Masalah Umum dan Solusinya
+## Masalah umum dan solusi
+
 | Masalah | Solusi |
 |-------|----------|
-| **Folder output tidak ditemukan** | Buat direktori terlebih dahulu atau tambahkan `Files.createDirectories(outputDirectory);` |
-| **Gambar kosong** | Pastikan `cadOptions.setBackgroundColor` dipanggil setelah `forRenderingByWidth`. |
-| **Kesalahan out‑of‑memory** | Tingkatkan opsi JVM `-Xmx` atau proses file dalam batch yang lebih kecil. |
+| Folder output tidak ditemukan | Buat direktori terlebih dahulu atau tambahkan `Files.createDirectories(outputDirectory);` |
+| Gambar kosong | Pastikan `cadOptions.setBackgroundColor` dipanggil setelah `forRenderingByWidth`. |
+| Kesalahan out‑of‑memory | Tingkatkan opsi JVM `-Xmx` atau proses file dalam batch lebih kecil. |
 
-## Pertanyaan yang Sering Diajukan
+## Pertanyaan yang sering diajukan
 
-**T: Bisakah saya merender format CAD lain selain DWG?**  
-J: Ya, GroupDocs.Viewer mendukung DXF, DWF, dan beberapa tipe file CAD lainnya.
+**Q: Bisakah saya merender format CAD lain selain DWG?**  
+A: Ya, GroupDocs.Viewer mendukung DXF, DWF, dan beberapa format CAD tambahan.
 
-**T: Bagaimana cara menggunakan warna RGB kustom alih-alih konstanta yang sudah ada?**  
-J: Buat instance `Color` baru, misalnya `new Color(123, 45, 67)` dan berikan ke `setBackgroundColor`.
+**Q: Bagaimana cara menggunakan warna RGB khusus alih-alih konstanta yang telah ditentukan?**  
+A: Buat instance `Color` baru dengan `new Color(123, 45, 67)` dan berikan ke `setBackgroundColor`.
 
-**T: Apakah memungkinkan merender hanya layout atau layer tertentu?**  
-J: Anda dapat menentukan opsi layout atau layer melalui `CadOptions` sebelum memanggil `viewer.view`.
+**Q: Apakah memungkinkan merender hanya tata letak atau lapisan tertentu?**  
+A: Anda dapat menentukan opsi tata letak atau lapisan melalui `CadOptions` sebelum memanggil `viewer.view`.
 
-**T: Apakah perpustakaan mendukung latar belakang transparan?**  
-J: Atur warna latar belakang menjadi `new Color(0,0,0,0)` untuk transparansi penuh jika format target mendukungnya.
+**Q: Apakah perpustakaan mendukung latar belakang transparan?**  
+A: Atur warna latar belakang menjadi `new Color(0,0,0,0)` untuk transparansi penuh jika format output mendukungnya.
 
-**T: Versi GroupDocs.Viewer apa yang diperlukan?**  
-J: Tutorial ini menggunakan versi 25.2, namun versi yang lebih baru tetap memiliki API yang sama.
+**Q: Versi GroupDocs.Viewer apa yang diperlukan?**  
+A: Tutorial ini menggunakan versi 25.2, tetapi rilis yang lebih baru mempertahankan antarmuka API yang sama.
 
 ---
 
-**Terakhir Diperbarui:** 2026-03-16  
+**Terakhir Diperbarui:** 2026-08-30  
 **Diuji Dengan:** GroupDocs.Viewer 25.2 untuk Java  
 **Penulis:** GroupDocs
+
+## Tutorial Terkait
+
+- [groupdocs viewer dwg – Cara Merender Gambar CAD Spesifik di Java Menggunakan GroupDocs.Viewer](/viewer/java/rendering-basics/render-cad-groupdocs-viewer-java/)
+- [Render Lapisan CAD Java dengan GroupDocs.Viewer – Panduan Lengkap](/viewer/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/)
+- [Cara mengonversi pdf ke html dan mengoptimalkan kualitas gambar di Java dengan GroupDocs.Viewer](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
