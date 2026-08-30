@@ -1,52 +1,113 @@
 ---
-date: '2026-03-16'
-description: Tìm hiểu cách chuyển đổi Word sang hình ảnh có lớp văn bản trong Java
-  bằng GroupDocs.Viewer, trích xuất lớp phủ văn bản để tạo ra các hình ảnh tài liệu
-  có thể tìm kiếm và độ nét cao.
+date: '2026-08-30'
+description: Tìm hiểu cách chuyển đổi Word sang PNG với lớp văn bản có thể tìm kiếm
+  trong Java bằng cách sử dụng GroupDocs.Viewer, và cũng chuyển đổi PDF sang PNG với
+  lớp phủ văn bản để có hình ảnh có thể tìm kiếm độ nét cao.
 keywords:
-- convert word to image
+- convert word to png
+- convert pdf to png
 - extract text overlay
-- improve document clarity
 - groupdocs viewer java
-- convert pdf to image
-- how to render word
-title: Chuyển đổi Word sang hình ảnh với lớp văn bản trong Java
+- searchable document images
+lastmod: '2026-08-30'
+og_description: Chuyển đổi Word sang PNG với lớp văn bản có thể tìm kiếm trong Java
+  bằng GroupDocs.Viewer. Hướng dẫn này cũng chỉ cách chuyển đổi PDF sang PNG với lớp
+  phủ văn bản để có hình ảnh có thể tìm kiếm.
+og_image_alt: 'Developer guide: Convert Word to PNG with text layer using GroupDocs.Viewer
+  for Java'
+og_title: Chuyển đổi Word sang PNG với lớp văn bản có thể tìm kiếm trong Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-30'
+  description: Learn how to convert Word to PNG with a searchable text layer in Java
+    using GroupDocs.Viewer, and also convert PDF to PNG with text overlay for high‑clarity
+    searchable images.
+  headline: Convert Word to PNG with a searchable text layer in Java
+  type: TechArticle
+- description: Learn how to convert Word to PNG with a searchable text layer in Java
+    using GroupDocs.Viewer, and also convert PDF to PNG with text overlay for high‑clarity
+    searchable images.
+  name: Convert Word to PNG with a searchable text layer in Java
+  steps:
+  - name: define the output directory
+    text: First, tell the viewer where to store the generated PNG files. The code
+      below creates (or re‑uses) a folder called `YOUR_OUTPUT_DIRECTORY`. > **Pro
+      tip:** Use `Files.createDirectories(outputDirectory);` if you want the folder
+      to be created automatically.
+  - name: configure view options
+    text: '`PngViewOptions` configures how each page is rendered to PNG and can enable
+      text extraction. By calling `setExtractText(true)` you instruct GroupDocs.Viewer
+      to embed an invisible text layer in every image.'
+  - name: render the document
+    text: 'The `viewer.view(viewOptions)` call opens the source DOCX and generates
+      the PNG pages. The `try‑with‑resources` block guarantees that the `Viewer` instance
+      is closed properly, releasing all native resources. When the process completes,
+      each page of the Word document appears as a high‑resolution PNG '
+  type: HowTo
+- questions:
+  - answer: Render pages incrementally and release each `Viewer` instance after processing
+      a batch to keep memory usage low.
+    question: How do I handle large documents?
+  - answer: Yes, GroupDocs.Viewer supports PDF and the same `setExtractText(true)`
+      flag will generate searchable PDF images.
+    question: Can I render PDFs with the same approach?
+  - answer: Verify that `viewOptions.setExtractText(true)` is set and that the output
+      folder has write permissions.
+    question: What if the text layer isn’t visible in the output?
+  - answer: Besides PNG, you can use `JpgViewOptions` or `BmpViewOptions` by swapping
+      the view option class.
+    question: Are other image formats supported?
+  - answer: The official docs provide exhaustive examples and configuration details.
+    question: Where can I find more detailed API documentation?
+  type: FAQPage
+tags:
+- convert word
+- convert pdf
+- groupdocs viewer
+- java rendering
+title: Chuyển đổi Word sang PNG với lớp văn bản có thể tìm kiếm trong Java
 type: docs
 url: /vi/java/advanced-rendering/render-documents-to-images-with-text-layer-java/
 weight: 1
 ---
 
-# Chuyển Đổi Word Sang Hình Ảnh Với Lớp Văn Bản Trong Java Sử Dụng GroupDocs.Viewer
+# Chuyển đổi Word sang PNG với lớp văn bản có thể tìm kiếm trong Java
 
-Bạn có cần **chuyển đổi Word sang hình ảnh** đồng thời giữ cho văn bản có thể chọn và tìm kiếm không? Khi render một DOCX thành hình ảnh thường làm mất văn bản gốc, khiến việc tìm kiếm và sao chép‑dán trở nên không thể. Trong hướng dẫn này, chúng tôi sẽ chỉ cho bạn các bước chính xác để render một tài liệu Word thành các ảnh PNG **với lớp văn bản chồng lên** bằng GroupDocs.Viewer cho Java. Cách tiếp cận này không chỉ **cải thiện độ rõ nét của ảnh tài liệu** mà còn **tạo ra các ảnh có thể tìm kiếm** hoạt động hoàn hảo trong các cổng thông tin web, giải pháp CMS và bất kỳ hệ thống nào dựa vào việc trích xuất văn bản không cần OCR.
+Trong hướng dẫn toàn diện này, bạn sẽ học cách **chuyển đổi Word sang PNG** đồng thời giữ lại một lớp văn bản ẩn, có thể chọn được bằng cách sử dụng GroupDocs.Viewer cho Java. Kỹ thuật tương tự cũng áp dụng cho PDF, cung cấp cho bạn các bản xem trước hình ảnh độ nét cao vẫn có thể tìm kiếm hoàn toàn — lý tưởng cho các cổng thông tin web, hệ thống CMS và giải pháp lưu trữ cần render nhanh mà không làm giảm khả năng khám phá.
 
-![Render Documents as Images with Text Layer with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
+![Hiển thị tài liệu dưới dạng hình ảnh với lớp văn bản bằng GroupDocs.Viewer cho Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
 
-## Câu Hỏi Nhanh
-- **“Chuyển đổi Word sang hình ảnh” có nghĩa là gì?** Nó tạo ra một ảnh raster (PNG) cho mỗi trang đồng thời bảo tồn văn bản gốc trong một lớp ẩn.  
-- **Tại sao cần thêm lớp văn bản?** Lớp chồng giúp ảnh có thể tìm kiếm và chọn được, nâng cao khả năng truy cập và SEO.  
-- **Thư viện nào thực hiện việc này?** GroupDocs.Viewer cho Java cung cấp hỗ trợ tích hợp cho việc trích xuất văn bản và render ảnh.  
-- **Có cần giấy phép không?** Bản dùng thử miễn phí hoạt động cho phát triển; giấy phép trả phí cần thiết cho môi trường production.  
-- **Có thể dùng cùng mã cho PDF không?** Có – cùng một tùy chọn view áp dụng cho PDF, DOCX và nhiều định dạng khác.
+[Hiển thị tài liệu dưới dạng hình ảnh với lớp văn bản bằng GroupDocs.Viewer cho Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
 
-## “Chuyển đổi Word sang hình ảnh” với lớp văn bản là gì?
-Việc chuyển đổi một file Word sang hình ảnh thường tạo ra một bitmap chỉ chứa các pixel. Bằng cách bật **extract text overlay**, GroupDocs.Viewer thêm một lớp văn bản vô hình lên trên mỗi ảnh, cho phép trình duyệt và công cụ tìm kiếm đọc được nội dung.
+## Câu trả lời nhanh
+- **“convert Word to PNG” có nghĩa là gì?** Nó tạo ra một file PNG raster cho mỗi trang và nhúng một lớp văn bản vô hình để nội dung vẫn có thể tìm kiếm được.  
+- **Tại sao cần thêm lớp văn bản?** Lớp phủ cho phép trình duyệt và công cụ tìm kiếm lập chỉ mục văn bản mà không cần chạy OCR, cải thiện khả năng truy cập và SEO.  
+- **Thư viện nào xử lý việc này?** GroupDocs.Viewer cho Java cung cấp hỗ trợ tích hợp cho cả việc render hình ảnh và trích xuất văn bản.  
+- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí đủ cho việc phát triển; giấy phép trả phí cần thiết cho triển khai sản xuất.  
+- **Tôi có thể dùng cùng mã cho PDF không?** Có — chỉ cần chỉ định viewer tới một file PDF và bật tùy chọn lớp văn bản tương tự.
 
-## Tại sao nên dùng GroupDocs.Viewer cho nhiệm vụ này?
-- **Đầu ra PNG chất lượng cao** giữ nguyên bố cục gốc.  
-- **Tự động extract text overlay**, vì vậy bạn có được các ảnh có thể tìm kiếm mà không cần xử lý thêm.  
-- **API đơn giản** – chỉ vài dòng Java code đã xử lý toàn bộ quy trình.  
-- **Hỗ trợ đa định dạng** – cùng một cách tiếp cận hoạt động cho PDF, PPTX và các định dạng khác.  
-- **Cải thiện độ rõ nét của tài liệu** nhờ engine render không mất dữ liệu.
+## Chuyển đổi Word sang PNG với lớp văn bản là gì?
+Chuyển đổi Word sang PNG với lớp văn bản sẽ render mỗi trang DOCX thành một hình ảnh PNG và nhúng một lớp văn bản vô hình để có thể tìm kiếm.  
+Quá trình này biến một tài liệu Word thành một tập hợp các hình ảnh độ phân giải cao trong khi vẫn giữ nguyên văn bản gốc có thể truy cập bởi các trình đọc màn hình và công cụ thu thập dữ liệu. Kết quả trông giống như một bức ảnh tĩnh, nhưng bạn vẫn có thể sao chép‑dán hoặc tìm kiếm nội dung vì văn bản tồn tại trong một lớp ẩn phía sau các pixel.
 
-## Yêu Cầu Trước
-- Java Development Kit (JDK) đã được cài đặt và cấu hình.  
+## Tại sao sử dụng GroupDocs.Viewer cho nhiệm vụ này?
+GroupDocs.Viewer cung cấp đầu ra PNG pixel‑perfect **và** tự động thêm lớp văn bản có thể tìm kiếm, loại bỏ nhu cầu sử dụng bước OCR riêng. Engine render của nó xử lý tài liệu theo dạng streaming, vì vậy ngay cả các file hàng trăm trang cũng được xử lý mà không cần tải toàn bộ file vào bộ nhớ. Thư viện hỗ trợ **hơn 70 định dạng đầu vào và đầu ra**, bao gồm DOCX, PDF, PPTX, XLSX và các loại hình ảnh phổ biến, biến nó thành giải pháp một cửa cho các pipeline tài liệu đa dạng.
+
+- **Đầu ra PNG chất lượng cao** phản ánh bố cục gốc pixel‑by‑pixel.  
+- **Tự động trích xuất lớp văn bản** giúp bạn không phải tự triển khai OCR.  
+- **API đơn giản** — một vài dòng mã Java xử lý toàn bộ quy trình.  
+- **Hỗ trợ đa định dạng** — cùng cách tiếp cận hoạt động cho PDF, PPTX và nhiều định dạng khác.  
+- **Cải thiện độ rõ của tài liệu** nhờ engine render không mất dữ liệu, bảo tồn đồ họa vector và phông chữ.
+
+## Yêu cầu trước
+- Java Development Kit (JDK) 8 trở lên đã được cài đặt và cấu hình.  
 - Maven để quản lý phụ thuộc.  
-- Kiến thức cơ bản về xử lý file trong Java và dự án Maven.
+- Kiến thức cơ bản về xử lý file trong Java và cấu trúc dự án Maven.  
 
-## Cài Đặt GroupDocs.Viewer cho Java
-### Thông Tin Cài Đặt
-Thêm GroupDocs.Viewer vào dự án Maven của bạn bằng cách chèn repository và dependency vào file `pom.xml`:
+## Cài đặt GroupDocs.Viewer cho Java
+
+### Thông tin cài đặt
+Thêm GroupDocs.Viewer vào dự án Maven của bạn bằng cách chèn repository và dependency vào tệp `pom.xml` của bạn:
 
 ```xml
 <repositories>
@@ -65,25 +126,25 @@ Thêm GroupDocs.Viewer vào dự án Maven của bạn bằng cách chèn reposi
 </dependencies>
 ```
 
-### Nhận Giấy Phép
-Bắt đầu với bản dùng thử miễn phí bằng cách tải GroupDocs.Viewer từ [trang tải về](https://releases.groupdocs.com/viewer/java/). Đối với môi trường production, mua giấy phép hoặc lấy key tạm thời từ [trang giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/).
+### Nhận giấy phép
+Bắt đầu với bản dùng thử miễn phí bằng cách tải GroupDocs.Viewer từ [trang tải xuống](https://releases.groupdocs.com/viewer/java/). Đối với sử dụng trong môi trường sản xuất, mua giấy phép hoặc lấy khóa tạm thời từ [trang giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/).
 
-### Khởi Tạo và Cấu Hình Cơ Bản
-Sau khi đồng bộ Maven, bạn có thể tạo một instance `Viewer` – đối tượng này sẽ điều khiển quá trình render.
+### Khởi tạo và cấu hình cơ bản
+Lớp `Viewer` là thành phần cốt lõi tải tài liệu và render chúng theo các tùy chọn xem được chỉ định. Sau khi đồng bộ Maven, bạn có thể tạo một thể hiện `Viewer` — đối tượng này sẽ điều khiển quá trình render.
 
-## Hướng Dẫn Từng Bước Để Chuyển Đổi Word Sang Hình Ảnh
+## Hướng dẫn từng bước để chuyển đổi Word sang PNG
 
-### Bước 1: Xác Định Thư Mục Đầu Ra
-Đầu tiên, chỉ định cho viewer nơi lưu các file PNG được tạo. Đoạn code dưới đây tạo (hoặc tái sử dụng) một thư mục có tên `YOUR_OUTPUT_DIRECTORY`.
+### Bước 1: xác định thư mục đầu ra
+Đầu tiên, cho viewer biết nơi lưu các file PNG được tạo. Đoạn mã dưới đây tạo (hoặc tái sử dụng) một thư mục có tên `YOUR_OUTPUT_DIRECTORY`.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 ```
 
-> **Mẹo chuyên nghiệp:** Dùng `Files.createDirectories(outputDirectory);` nếu bạn muốn thư mục được tạo tự động.
+> **Mẹo:** Sử dụng `Files.createDirectories(outputDirectory);` nếu bạn muốn thư mục được tạo tự động.
 
-### Bước 2: Cấu Hình Tùy Chọn View (Configure View Options)
-Tiếp theo, thiết lập các tùy chọn render. Bằng cách sử dụng `PngViewOptions` và bật `setExtractText(true)`, bạn chỉ định cho GroupDocs.Viewer **extract text overlay** và nhúng nó vào mỗi ảnh.
+### Bước 2: cấu hình tùy chọn xem
+`PngViewOptions` cấu hình cách mỗi trang được render thành PNG và có thể bật trích xuất văn bản. Bằng cách gọi `setExtractText(true)` bạn chỉ định cho GroupDocs.Viewer nhúng một lớp văn bản vô hình vào mỗi hình ảnh.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
@@ -91,8 +152,8 @@ PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 viewOptions.setExtractText(true);  // Enable extracting text over the image
 ```
 
-### Bước 3: Render Tài Liệu (Convert Word to Image)
-Cuối cùng, mở file DOCX nguồn và gọi `viewer.view(viewOptions)`. Khối `try‑with‑resources` đảm bảo rằng instance `Viewer` được đóng đúng cách.
+### Bước 3: render tài liệu
+Lệnh `viewer.view(viewOptions)` mở file DOCX nguồn và tạo các trang PNG. Khối `try‑with‑resources` đảm bảo thể hiện `Viewer` được đóng đúng cách, giải phóng tất cả tài nguyên gốc.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
@@ -100,59 +161,64 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
 }
 ```
 
-Khi code kết thúc, mỗi trang của tài liệu Word sẽ xuất hiện dưới dạng PNG độ phân giải cao với lớp văn bản vô hình, sẵn sàng để lập chỉ mục và tìm kiếm.
+Khi quá trình hoàn tất, mỗi trang của tài liệu Word sẽ xuất hiện dưới dạng PNG độ phân giải cao với lớp văn bản vô hình, sẵn sàng cho việc lập chỉ mục và tìm kiếm.
 
-## Tại Sao Điều Này Quan Trọng
-Nhúng một lớp văn bản có thể tìm kiếm có nghĩa là bạn có thể cung cấp các bản preview ảnh nhẹ **và** vẫn giữ khả năng tìm kiếm toàn văn bản. Điều này đặc biệt có giá trị cho:
+## Tại sao điều này quan trọng
+Nhúng lớp văn bản có thể tìm kiếm có nghĩa là bạn có thể cung cấp các bản xem trước hình ảnh nhẹ **và** vẫn giữ khả năng tìm kiếm toàn văn. Điều này đặc biệt có giá trị cho:
 
-1. **Cổng thông tin web** cần preview nhanh mà không làm giảm SEO.  
-2. **Hệ thống quản lý nội dung** lưu trữ ảnh lưu trữ nhưng vẫn yêu cầu chỉ mục văn bản.  
-3. **Lưu trữ tài liệu** nơi chi phí lưu trữ là vấn đề nhưng khả năng khám phá phải cao.
+1. **Cổng thông tin web** cần bản xem trước thumbnail nhanh mà không làm giảm SEO.  
+2. **Hệ thống Quản lý Nội dung** lưu trữ các ảnh chụp lưu trữ nhưng vẫn cần lập chỉ mục văn bản.  
+3. **Lưu trữ tài liệu** nơi chi phí lưu trữ là mối quan tâm nhưng khả năng khám phá phải vẫn cao.  
 
-## Các Vấn Đề Thường Gặp và Giải Pháp
-- **File Not Found:** Kiểm tra lại đường dẫn tới `SAMPLE_DOCX`. Sử dụng đường dẫn tuyệt đối để chắc chắn.  
-- **Permission Issues:** Đảm bảo quá trình Java có quyền ghi vào `YOUR_OUTPUT_DIRECTORY`.  
-- **Version Mismatch:** Xác nhận rằng phiên bản trong `pom.xml` khớp với thư viện bạn đã tải.  
-- **Missing Text Layer:** Kiểm tra `viewOptions.setExtractText(true)` đã được đặt và thư mục đầu ra có quyền ghi.
+## Các vấn đề thường gặp và giải pháp
+- **File không tìm thấy:** Kiểm tra lại đường dẫn tới `SAMPLE_DOCX`. Sử dụng đường dẫn tuyệt đối để chắc chắn.  
+- **Vấn đề quyền:** Đảm bảo quá trình Java có thể ghi vào `YOUR_OUTPUT_DIRECTORY`.  
+- **Phiên bản không khớp:** Xác nhận rằng phiên bản trong `pom.xml` khớp với thư viện bạn đã tải.  
+- **Thiếu lớp văn bản:** Xác nhận `viewOptions.setExtractText(true)` đã được đặt và thư mục đầu ra có quyền ghi.
 
-## Ứng Dụng Thực Tiễn
-1. **Cổng Thông Tin Web:** Hiển thị preview tài liệu mà người dùng có thể tìm kiếm mà không cần tải xuống file gốc.  
-2. **Hệ Thống Quản Lý Nội Dung:** Lưu trữ ảnh snapshot có thể tìm kiếm cho mục đích lưu trữ.  
-3. **Lưu Trữ Tài Liệu:** Giữ phiên bản ảnh nhẹ trong khi vẫn cho phép tìm kiếm toàn văn bản.
+## Ứng dụng thực tiễn
+1. **Cổng thông tin web:** Hiển thị bản xem trước tài liệu mà người dùng có thể tìm kiếm mà không cần tải file gốc.  
+2. **Hệ thống Quản lý Nội dung:** Lưu trữ các ảnh chụp hình ảnh có thể tìm kiếm cho mục đích lưu trữ.  
+3. **Lưu trữ tài liệu:** Giữ một phiên bản hình ảnh nhẹ trong khi vẫn cho phép tìm kiếm toàn văn.
 
-## Các Yếu Tố Về Hiệu Suất
+## Các cân nhắc về hiệu năng
 - Giải phóng các đối tượng `Viewer` kịp thời (như trong ví dụ `try‑with‑resources`).  
-- Chọn PNG để có chất lượng tốt; chuyển sang JPEG nếu băng thông là mối quan tâm.  
-- Cache các trang đã render khi cùng một tài liệu được yêu cầu nhiều lần.
+- Chọn PNG để có chất lượng; chuyển sang JPEG nếu băng thông là vấn đề.  
+- Lưu cache các trang đã render khi cùng một tài liệu được yêu cầu nhiều lần.  
 
-## Câu Hỏi Thường Gặp
+## Câu hỏi thường gặp
 
-**Q: Làm sao xử lý tài liệu lớn?**  
-A: Render các trang một cách tuần tự và giải phóng mỗi instance `Viewer` sau khi xử lý một batch để giảm tiêu thụ bộ nhớ.
+**Q: Làm thế nào để xử lý tài liệu lớn?**  
+A: Render các trang một cách tăng dần và giải phóng mỗi thể hiện `Viewer` sau khi xử lý một lô để giữ mức sử dụng bộ nhớ thấp.
 
-**Q: Có thể render PDF bằng cùng cách không?**  
-A: Có, GroupDocs.Viewer hỗ trợ PDF và cờ `setExtractText(true)` sẽ tạo ra các ảnh PDF có thể tìm kiếm.
+**Q: Tôi có thể render PDF bằng cùng cách tiếp cận không?**  
+A: Có, GroupDocs.Viewer hỗ trợ PDF và cờ `setExtractText(true)` sẽ tạo ra các hình ảnh PDF có thể tìm kiếm.
 
-**Q: Nếu lớp văn bản không hiển thị trong output thì sao?**  
-A: Xác nhận rằng `viewOptions.setExtractText(true)` đã được bật và thư mục đầu ra có quyền ghi.
+**Q: Nếu lớp văn bản không hiển thị trong đầu ra thì sao?**  
+A: Xác nhận rằng `viewOptions.setExtractText(true)` đã được đặt và thư mục đầu ra có quyền ghi.
 
-**Q: Các định dạng ảnh khác có được hỗ trợ không?**  
-A: Ngoài PNG, bạn có thể dùng `JpgViewOptions` hoặc `BmpViewOptions` bằng cách thay đổi lớp tùy chọn view.
+**Q: Các định dạng hình ảnh khác có được hỗ trợ không?**  
+A: Ngoài PNG, bạn có thể sử dụng `JpgViewOptions` hoặc `BmpViewOptions` bằng cách thay đổi lớp tùy chọn view.
 
-**Q: Tôi có thể tìm tài liệu API chi tiết ở đâu?**  
-A: Tài liệu chính thức cung cấp các ví dụ và chi tiết cấu hình đầy đủ.
+**Q: Tôi có thể tìm tài liệu API chi tiết hơn ở đâu?**  
+A: Tài liệu chính thức cung cấp các ví dụ đầy đủ và chi tiết cấu hình.
 
-## Tài Nguyên
-- **Documentation:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
-- **API Reference:** [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
-- **Download:** [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
-- **Purchase:** [Buy License](https://purchase.groupdocs.com/buy)  
-- **Free Trial:** [Download Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- **Temporary License:** [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+## Tài nguyên
+- **Tài liệu:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Tham khảo API:** [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
+- **Tải xuống:** [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
+- **Mua:** [Buy License](https://purchase.groupdocs.com/buy)  
+- **Dùng thử miễn phí:** [Download Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Giấy phép tạm thời:** [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Hỗ trợ:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
+**Cập nhật lần cuối:** 2026-08-30  
+**Kiểm thử với:** GroupDocs.Viewer 25.2 cho Java  
+**Tác giả:** GroupDocs
 
-**Cập Nhật Lần Cuối:** 2026-03-16  
-**Được Kiểm Tra Với:** GroupDocs.Viewer 25.2 for Java  
-**Tác Giả:** GroupDocs
+## Hướng dẫn liên quan
+
+- [Chuyển đổi PDF sang PNG với GroupDocs Viewer cho Java](/viewer/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/)
+- [Render PDF Layered Java – Render PDF lớp đa tầng hiệu quả với GroupDocs.Viewer](/viewer/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/)
+- [Cách chuyển đổi Excel sang HTML, JPG, PNG và PDF bằng GroupDocs.Viewer Java](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)

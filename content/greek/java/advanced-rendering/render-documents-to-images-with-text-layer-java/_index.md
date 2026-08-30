@@ -1,52 +1,113 @@
 ---
-date: '2026-03-16'
-description: Μάθετε πώς να μετατρέψετε αρχεία Word σε εικόνα με στρώση κειμένου σε
-  Java χρησιμοποιώντας το GroupDocs.Viewer, εξάγοντας την επικάλυψη κειμένου για αναζητήσιμες,
-  υψηλής ευκρίνειας εικόνες εγγράφων.
+date: '2026-08-30'
+description: Μάθετε πώς να μετατρέψετε το Word σε PNG με στρώση αναζητήσιμου κειμένου
+  σε Java χρησιμοποιώντας το GroupDocs.Viewer, καθώς και πώς να μετατρέψετε το PDF
+  σε PNG με επικάλυψη κειμένου για εικόνες υψηλής ευκρίνειας με δυνατότητα αναζήτησης.
 keywords:
-- convert word to image
+- convert word to png
+- convert pdf to png
 - extract text overlay
-- improve document clarity
 - groupdocs viewer java
-- convert pdf to image
-- how to render word
-title: Μετατροπή Word σε εικόνα με στρώση κειμένου σε Java
+- searchable document images
+lastmod: '2026-08-30'
+og_description: Μετατροπή Word σε PNG με στρώση αναζητήσιμου κειμένου σε Java χρησιμοποιώντας
+  το GroupDocs.Viewer. Αυτός ο οδηγός δείχνει επίσης πώς να μετατρέψετε το PDF σε
+  PNG με επικάλυψη κειμένου για εικόνες με δυνατότητα αναζήτησης.
+og_image_alt: 'Developer guide: Convert Word to PNG with text layer using GroupDocs.Viewer
+  for Java'
+og_title: Μετατροπή Word σε PNG με στρώση αναζητήσιμου κειμένου σε Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-30'
+  description: Learn how to convert Word to PNG with a searchable text layer in Java
+    using GroupDocs.Viewer, and also convert PDF to PNG with text overlay for high‑clarity
+    searchable images.
+  headline: Convert Word to PNG with a searchable text layer in Java
+  type: TechArticle
+- description: Learn how to convert Word to PNG with a searchable text layer in Java
+    using GroupDocs.Viewer, and also convert PDF to PNG with text overlay for high‑clarity
+    searchable images.
+  name: Convert Word to PNG with a searchable text layer in Java
+  steps:
+  - name: define the output directory
+    text: First, tell the viewer where to store the generated PNG files. The code
+      below creates (or re‑uses) a folder called `YOUR_OUTPUT_DIRECTORY`. > **Pro
+      tip:** Use `Files.createDirectories(outputDirectory);` if you want the folder
+      to be created automatically.
+  - name: configure view options
+    text: '`PngViewOptions` configures how each page is rendered to PNG and can enable
+      text extraction. By calling `setExtractText(true)` you instruct GroupDocs.Viewer
+      to embed an invisible text layer in every image.'
+  - name: render the document
+    text: 'The `viewer.view(viewOptions)` call opens the source DOCX and generates
+      the PNG pages. The `try‑with‑resources` block guarantees that the `Viewer` instance
+      is closed properly, releasing all native resources. When the process completes,
+      each page of the Word document appears as a high‑resolution PNG '
+  type: HowTo
+- questions:
+  - answer: Render pages incrementally and release each `Viewer` instance after processing
+      a batch to keep memory usage low.
+    question: How do I handle large documents?
+  - answer: Yes, GroupDocs.Viewer supports PDF and the same `setExtractText(true)`
+      flag will generate searchable PDF images.
+    question: Can I render PDFs with the same approach?
+  - answer: Verify that `viewOptions.setExtractText(true)` is set and that the output
+      folder has write permissions.
+    question: What if the text layer isn’t visible in the output?
+  - answer: Besides PNG, you can use `JpgViewOptions` or `BmpViewOptions` by swapping
+      the view option class.
+    question: Are other image formats supported?
+  - answer: The official docs provide exhaustive examples and configuration details.
+    question: Where can I find more detailed API documentation?
+  type: FAQPage
+tags:
+- convert word
+- convert pdf
+- groupdocs viewer
+- java rendering
+title: Μετατροπή Word σε PNG με στρώση αναζητήσιμου κειμένου σε Java
 type: docs
 url: /el/java/advanced-rendering/render-documents-to-images-with-text-layer-java/
 weight: 1
 ---
 
-# Μετατροπή Word σε Εικόνα με Στρώση Κειμένου σε Java Χρησιμοποιώντας το GroupDocs.Viewer
+# Μετατροπή Word σε PNG με επιπλέον στρώση αναζητήσιμου κειμένου σε Java
 
-Χρειάζεστε να **μετατρέψετε Word σε εικόνα** διατηρώντας το κείμενο επιλέξιμο και αναζητήσιμο; Η απόδοση ενός DOCX ως εικόνα συχνά χάνει το υποκείμενο κείμενο, καθιστώντας αδύνατη την αναζήτηση και την αντιγραφή‑επικόλληση. Σε αυτό το εκπαιδευτικό υλικό θα σας καθοδηγήσουμε βήμα‑βήμα για την απόδοση ενός εγγράφου Word σε εικόνες PNG **με επικάλυψη στρώσης κειμένου** χρησιμοποιώντας το GroupDocs.Viewer για Java. Αυτή η προσέγγιση δεν βελτιώνει μόνο **την ευκρίνεια των εικόνων του εγγράφου**, αλλά επίσης **δημιουργεί αναζητήσιμες εικόνες** που λειτουργούν τέλεια σε διαδικτυακές πύλες, λύσεις CMS και οποιοδήποτε σύστημα που βασίζεται σε εξαγωγή κειμένου χωρίς OCR.
+Σε αυτόν τον ολοκληρωμένο οδηγό θα μάθετε πώς να **μετατρέψετε το Word σε PNG** διατηρώντας ένα κρυφό, επιλέξιμο στρώμα κειμένου χρησιμοποιώντας το GroupDocs.Viewer για Java. Η ίδια τεχνική λειτουργεί και για PDFs, παρέχοντάς σας προεπισκοπήσεις εικόνας υψηλής ευκρίνειας που παραμένουν πλήρως αναζητήσιμες — ιδανικό για διαδικτυακές πύλες, συστήματα CMS και αρχειοθετητικές λύσεις που χρειάζονται γρήγορη απόδοση χωρίς να θυσιάζεται η δυνατότητα εύρεσης.
 
-![Render Documents as Images with Text Layer with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
+![Απόδοση εγγράφων ως εικόνες με στρώση κειμένου με GroupDocs.Viewer για Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
 
-## Γρήγορες Απαντήσεις
-- **Τι σημαίνει “convert Word to image”;** Δημιουργεί μια raster εικόνα (PNG) για κάθε σελίδα διατηρώντας το αρχικό κείμενο σε κρυφό στρώμα.  
-- **Γιατί να προσθέσετε στρώση κειμένου;** Η επικάλυψη κάνει την εικόνα αναζητήσιμη και επιλέξιμη, ενισχύοντας την προσβασιμότητα και το SEO.  
-- **Ποια βιβλιοθήκη το διαχειρίζεται;** Το GroupDocs.Viewer για Java παρέχει ενσωματωμένη υποστήριξη για εξαγωγή κειμένου και απόδοση εικόνας.  
-- **Χρειάζομαι άδεια;** Μια δωρεάν δοκιμή λειτουργεί για ανάπτυξη· απαιτείται πληρωμένη άδεια για παραγωγή.  
-- **Μπορώ να χρησιμοποιήσω τον ίδιο κώδικα για PDFs;** Ναι – οι ίδιες επιλογές προβολής ισχύουν για PDF, DOCX και πολλές άλλες μορφές.  
+[Απόδοση εγγράφων ως εικόνες με στρώση κειμένου με GroupDocs.Viewer για Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
 
-## Τι είναι η “convert Word to image” με στρώση κειμένου;
-Η μετατροπή ενός αρχείου Word σε εικόνα συνήθως παράγει ένα bitmap που περιέχει μόνο εικονοστοιχεία. Ενεργοποιώντας την **εξαγωγή επικάλυψης κειμένου**, το GroupDocs.Viewer προσθέτει ένα αόρατο στρώμα κειμένου πάνω από κάθε εικόνα, επιτρέποντας στα προγράμματα περιήγησης και τις μηχανές αναζήτησης να διαβάζουν το περιεχόμενο.
+## Γρήγορες απαντήσεις
+- **Τι σημαίνει “convert Word to PNG”;** Δημιουργεί ένα raster PNG για κάθε σελίδα και ενσωματώνει μια αόρατη επικάλυψη κειμένου ώστε το περιεχόμενο να παραμένει αναζητήσιμο.  
+- **Γιατί να προσθέσετε στρώση κειμένου;** Η επικάλυψη επιτρέπει στα προγράμματα περιήγησης και τις μηχανές αναζήτησης να ευρετηριάσουν το κείμενο χωρίς να εκτελούν OCR, βελτιώνοντας την προσβασιμότητα και το SEO.  
+- **Ποια βιβλιοθήκη το διαχειρίζεται;** Το GroupDocs.Viewer για Java παρέχει ενσωματωμένη υποστήριξη τόσο για απόδοση εικόνας όσο και για εξαγωγή κειμένου.  
+- **Χρειάζομαι άδεια;** Μια δωρεάν δοκιμή είναι επαρκής για ανάπτυξη· απαιτείται πληρωμένη άδεια για παραγωγικές εγκαταστάσεις.  
+- **Μπορώ να χρησιμοποιήσω τον ίδιο κώδικα για PDFs;** Ναι—απλώς κατευθύνετε το viewer σε ένα PDF και ενεργοποιήστε την ίδια επιλογή επικάλυψης κειμένου.  
+
+## Τι είναι η μετατροπή Word σε PNG με στρώση κειμένου;
+Η μετατροπή Word σε PNG με στρώση κειμένου αποδίδει κάθε σελίδα DOCX ως εικόνα PNG και ενσωματώνει μια αόρατη επικάλυψη κειμένου για αναζητησιμότητα.  
+Αυτή η διαδικασία μετατρέπει ένα έγγραφο Word σε σύνολο εικόνων υψηλής ανάλυσης, διατηρώντας το αρχικό κείμενο προσβάσιμο σε προγράμματα ανάγνωσης οθόνης και μηχανές ανίχνευσης. Το αποτέλεσμα φαίνεται ως στατική εικόνα, αλλά μπορείτε να αντιγράψετε‑επικολλήσετε ή να αναζητήσετε το περιεχόμενο επειδή το κείμενο ζει σε κρυφή στρώση πίσω από τα pixel.
 
 ## Γιατί να χρησιμοποιήσετε το GroupDocs.Viewer για αυτήν την εργασία;
-- **Έξοδος PNG υψηλής ποιότητας** που διατηρεί την αρχική διάταξη.  
-- **Αυτόματη εξαγωγή επικάλυψης κειμένου**, ώστε να έχετε αναζητήσιμες εικόνες χωρίς πρόσθετη επεξεργασία.  
-- **Απλό API** – λίγες γραμμές κώδικα Java διαχειρίζονται ολόκληρη τη διαδικασία.  
-- **Ευρεία υποστήριξη μορφών** – η ίδια προσέγγιση λειτουργεί για PDFs, PPTX και άλλα.  
-- **Βελτιωμένη ευκρίνεια εγγράφου** χάρη στη μη απωλεστική μηχανή απόδοσης.  
+Το GroupDocs.Viewer παρέχει έξοδο PNG pixel‑perfect **και** προσθέτει αυτόματα μια στρώση αναζητήσιμου κειμένου, εξαλείφοντας την ανάγκη για ξεχωριστό βήμα OCR. Η μηχανή απόδοσής του επεξεργάζεται τα έγγραφα με ροή, ώστε ακόμη και αρχεία με εκατοντάδες σελίδες να διαχειρίζονται χωρίς να φορτώνεται ολόκληρο το αρχείο στη μνήμη. Η βιβλιοθήκη υποστηρίζει **70+ μορφές εισόδου και εξόδου**, συμπεριλαμβανομένων των DOCX, PDF, PPTX, XLSX και κοινών τύπων εικόνας, καθιστώντας την μια ολοκληρωμένη λύση για ποικίλες διαδρόμους εγγράφων.
+
+- **Έξοδος PNG υψηλής ποιότητας** που αντικατοπτρίζει την αρχική διάταξη pixel προς pixel.  
+- **Αυτόματη εξαγωγή επικάλυψης κειμένου** σας εξοικονομεί την υλοποίηση OCR.  
+- **Απλό API**—μερικές γραμμές κώδικα Java διαχειρίζονται όλη τη ροή εργασίας.  
+- **Ευρεία υποστήριξη μορφών**—η ίδια προσέγγιση λειτουργεί για PDFs, PPTX και πολλές άλλες μορφές.  
+- **Βελτιωμένη σαφήνεια εγγράφου** χάρη σε μια μη απωλεστική μηχανή απόδοσης που διατηρεί γραφικά vector και γραμματοσειρές.
 
 ## Προαπαιτούμενα
-- Java Development Kit (JDK) εγκατεστημένο και ρυθμισμένο.  
+- Java Development Kit (JDK) 8 ή νεότερο εγκατεστημένο και διαμορφωμένο.  
 - Maven για διαχείριση εξαρτήσεων.  
-- Βασική εξοικείωση με τη διαχείριση αρχείων Java και τα έργα Maven.  
+- Βασική εξοικείωση με τη διαχείριση αρχείων Java και τη δομή έργου Maven.  
 
 ## Ρύθμιση GroupDocs.Viewer για Java
-### Πληροφορίες Εγκατάστασης
-Προσθέστε το GroupDocs.Viewer στο Maven έργο σας εισάγοντας το αποθετήριο και την εξάρτηση στο `pom.xml`:
+
+### Πληροφορίες εγκατάστασης
+Προσθέστε το GroupDocs.Viewer στο Maven έργο σας εισάγοντας το αποθετήριο και την εξάρτηση στο `pom.xml` σας:
 
 ```xml
 <repositories>
@@ -65,25 +126,25 @@ weight: 1
 </dependencies>
 ```
 
-### Απόκτηση Άδειας
+### Απόκτηση άδειας
 Ξεκινήστε με μια δωρεάν δοκιμή κατεβάζοντας το GroupDocs.Viewer από τη [σελίδα λήψης](https://releases.groupdocs.com/viewer/java/). Για παραγωγική χρήση, αγοράστε άδεια ή αποκτήστε προσωρινό κλειδί από τη [σελίδα προσωρινής άδειας](https://purchase.groupdocs.com/temporary-license/).
 
-### Βασική Αρχικοποίηση και Ρύθμιση
-Μετά το συγχρονισμό του Maven, μπορείτε να δημιουργήσετε μια παρουσία `Viewer` – αυτό το αντικείμενο θα οδηγήσει τη διαδικασία απόδοσης.
+### Βασική αρχικοποίηση και ρύθμιση
+Η κλάση `Viewer` είναι το κύριο συστατικό που φορτώνει έγγραφα και τα αποδίδει σύμφωνα με τις καθορισμένες επιλογές προβολής. Μετά το συγχρονισμό Maven, μπορείτε να δημιουργήσετε μια παρουσία `Viewer`—αυτό το αντικείμενο θα οδηγήσει τη διαδικασία απόδοσης.
 
-## Οδηγός Βήμα‑βήμα για τη Μετατροπή Word σε Εικόνα
+## Οδηγός βήμα‑βήμα για τη μετατροπή Word σε PNG
 
-### Βήμα 1: Ορισμός Καταλόγου Εξόδου
-Πρώτα, ενημερώστε το viewer πού θα αποθηκεύσει τα παραγόμενα αρχεία PNG. Ο παρακάτω κώδικας δημιουργεί (ή επαναχρησιμοποιεί) έναν φάκελο με το όνομα `YOUR_OUTPUT_DIRECTORY`.
+### Βήμα 1: ορισμός του καταλόγου εξόδου
+Πρώτα, ενημερώστε το viewer πού θα αποθηκεύσει τα παραγόμενα αρχεία PNG. Ο κώδικας παρακάτω δημιουργεί (ή επαναχρησιμοποιεί) έναν φάκελο με όνομα `YOUR_OUTPUT_DIRECTORY`.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 ```
 
-> **Συμβουλή:** Χρησιμοποιήστε `Files.createDirectories(outputDirectory);` εάν θέλετε ο φάκελος να δημιουργηθεί αυτόματα.
+> **Συμβουλή:** Χρησιμοποιήστε `Files.createDirectories(outputDirectory);` αν θέλετε ο φάκελος να δημιουργηθεί αυτόματα.
 
-### Βήμα 2: Διαμόρφωση Επιλογών Προβολής (Configure View Options)
-Στη συνέχεια, ρυθμίστε τις επιλογές απόδοσης. Χρησιμοποιώντας το `PngViewOptions` και ενεργοποιώντας το `setExtractText(true)`, καθοδηγείτε το GroupDocs.Viewer να **εξάγει επικάλυψη κειμένου** και να την ενσωματώσει σε κάθε εικόνα.
+### Βήμα 2: διαμόρφωση επιλογών προβολής
+`PngViewOptions` διαμορφώνει πώς κάθε σελίδα αποδίδεται σε PNG και μπορεί να ενεργοποιήσει την εξαγωγή κειμένου. Καλώντας `setExtractText(true)` υποδεικνύετε στο GroupDocs.Viewer να ενσωματώσει μια αόρατη στρώση κειμένου σε κάθε εικόνα.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
@@ -91,8 +152,8 @@ PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 viewOptions.setExtractText(true);  // Enable extracting text over the image
 ```
 
-### Βήμα 3: Απόδοση Εγγράφου (Convert Word to Image)
-Τέλος, ανοίξτε το πηγαίο DOCX και καλέστε `viewer.view(viewOptions)`. Το μπλοκ `try‑with‑resources` εγγυάται ότι η παρουσία `Viewer` κλείνει σωστά.
+### Βήμα 3: απόδοση του εγγράφου
+Η κλήση `viewer.view(viewOptions)` ανοίγει το πηγαίο DOCX και δημιουργεί τις σελίδες PNG. Το μπλοκ `try‑with‑resources` εγγυάται ότι η παρουσία `Viewer` κλείνει σωστά, απελευθερώνοντας όλους τους εγγενείς πόρους.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
@@ -100,59 +161,65 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
 }
 ```
 
-Όταν ολοκληρωθεί ο κώδικας, κάθε σελίδα του εγγράφου Word εμφανίζεται ως PNG υψηλής ανάλυσης με αόρατο στρώμα κειμένου, έτοιμη για ευρετηρίαση και αναζήτηση.
+Όταν ολοκληρωθεί η διαδικασία, κάθε σελίδα του εγγράφου Word εμφανίζεται ως PNG υψηλής ανάλυσης με αόρατη στρώση κειμένου, έτοιμη για ευρετηρίαση και αναζήτηση.
 
-## Γιατί είναι Σημαντικό
-Η ενσωμάτωση ενός αναζητήσιμου στρώματος κειμένου σημαίνει ότι μπορείτε να παρέχετε ελαφριές προεπισκοπήσεις εικόνας **και** να διατηρείτε πλήρη δυνατότητα αναζήτησης κειμένου. Αυτό είναι ιδιαίτερα πολύτιμο για:
+## Γιατί αυτό είναι σημαντικό
+Η ενσωμάτωση μιας στρώσης αναζητήσιμου κειμένου σημαίνει ότι μπορείτε να προσφέρετε ελαφριές προεπισκοπήσεις εικόνας **και** να διατηρήσετε πλήρη δυνατότητα αναζήτησης κειμένου. Αυτό είναι ιδιαίτερα πολύτιμο για:
 
-1. **Διαδικτυακές πύλες** που χρειάζονται γρήγορες προεπισκοπήσεις μικρογραφιών χωρίς να θυσιάζουν το SEO.  
-2. **Συστήματα Διαχείρισης Περιεχομένου** που αποθηκεύουν αρχειακά στιγμιότυπα αλλά εξακολουθούν να απαιτούν ευρετηρίαση κειμένου.  
+1. **Διαδικτυακές πύλες** που χρειάζονται γρήγορες προεπισκοπήσεις μικρογραφιών χωρίς να θυσιάζεται το SEO.  
+2. **Συστήματα Διαχείρισης Περιεχομένου** που αποθηκεύουν αρχειοθετημένα στιγμιότυπα αλλά εξακολουθούν να απαιτούν ευρετηρίαση κειμένου.  
 3. **Αρχειοθέτηση εγγράφων** όπου το κόστος αποθήκευσης είναι σημαντικό αλλά η δυνατότητα εύρεσης πρέπει να παραμένει υψηλή.  
 
-## Συνηθισμένα Προβλήματα και Λύσεις
+## Κοινά προβλήματα και λύσεις
 - **Αρχείο δεν βρέθηκε:** Ελέγξτε ξανά τη διαδρομή προς το `SAMPLE_DOCX`. Χρησιμοποιήστε απόλυτες διαδρομές για βεβαιότητα.  
-- **Προβλήματα Δικαιωμάτων:** Βεβαιωθείτε ότι η διαδικασία Java μπορεί να γράψει στο `YOUR_OUTPUT_DIRECTORY`.  
-- **Ασυμφωνία Έκδοσης:** Επαληθεύστε ότι η έκδοση στο `pom.xml` ταιριάζει με τη βιβλιοθήκη που κατεβάσατε.  
-- **Απουσία Στρώματος Κειμένου:** Επιβεβαιώστε ότι το `viewOptions.setExtractText(true)` είναι ορισμένο και ότι ο φάκελος εξόδου είναι εγγράψιμος.  
+- **Προβλήματα δικαιωμάτων:** Βεβαιωθείτε ότι η διαδικασία Java μπορεί να γράψει στο `YOUR_OUTPUT_DIRECTORY`.  
+- **Ασυμφωνία έκδοσης:** Επαληθεύστε ότι η έκδοση στο `pom.xml` ταιριάζει με τη βιβλιοθήκη που κατεβάσατε.  
+- **Λείπει η στρώση κειμένου:** Επιβεβαιώστε ότι το `viewOptions.setExtractText(true)` είναι ορισμένο και ότι ο φάκελος εξόδου είναι εγγράψιμος.  
 
-## Πρακτικές Εφαρμογές
-1. **Διαδικτυακές Πύλες:** Εμφανίστε προεπισκοπήσεις εγγράφων που οι χρήστες μπορούν να αναζητήσουν χωρίς να κατεβάσουν το αρχικό αρχείο.  
-2. **Συστήματα Διαχείρισης Περιεχομένου:** Αποθηκεύστε αναζητήσιμα στιγμιότυπα εικόνας για αρχειακούς σκοπούς.  
-3. **Αρχειοθέτηση Εγγράφων:** Διατηρήστε μια ελαφριά έκδοση εικόνας ενώ εξακολουθείτε να επιτρέπετε πλήρη αναζήτηση κειμένου.  
+## Πρακτικές εφαρμογές
+1. **Διαδικτυακές πύλες:** Εμφανίστε προεπισκοπήσεις εγγράφων που οι χρήστες μπορούν να αναζητήσουν χωρίς να κατεβάσουν το αρχικό αρχείο.  
+2. **Συστήματα Διαχείρισης Περιεχομένου:** Αποθηκεύστε αναζητήσιμα στιγμιότυπα εικόνας για αρχειοθετητικούς σκοπούς.  
+3. **Αρχειοθέτηση εγγράφων:** Διατηρήστε μια ελαφριά έκδοση εικόνας ενώ εξακολουθείτε να επιτρέπετε πλήρη αναζήτηση κειμένου.  
 
-## Σκέψεις Απόδοσης
-- Αποδεσμεύστε άμεσα τα αντικείμενα `Viewer` (όπως φαίνεται με το `try‑with‑resources`).  
-- Επιλέξτε PNG για ποιότητα· μεταβείτε σε JPEG εάν η ζήτηση bandwidth είναι πρόβλημα.  
-- Κάντε cache τις αποδοθείσες σελίδες όταν το ίδιο έγγραφο ζητείται επανειλημμένα.  
+## Παραμέτρους απόδοσης
+- Αποδεσμεύστε άμεσα τα αντικείμενα `Viewer` (όπως φαίνεται με `try‑with‑resources`).  
+- Επιλέξτε PNG για ποιότητα· αλλάξτε σε JPEG αν η ζήτηση bandwidth είναι πρόβλημα.  
+- Κρατήστε στην cache τις αποδομένες σελίδες όταν το ίδιο έγγραφο ζητείται επανειλημμένα.  
 
-## Συχνές Ερωτήσεις
+## Συχνές ερωτήσεις
 
-**Ε: Πώς διαχειρίζομαι μεγάλα έγγραφα;**  
-Α: Αποδίδετε τις σελίδες σταδιακά και απελευθερώνετε κάθε παρουσία `Viewer` μετά την επεξεργασία ενός batch για να διατηρείται η χρήση μνήμης χαμηλή.
+**Q: Πώς διαχειρίζομαι μεγάλα έγγραφα;**  
+A: Αποδίδετε τις σελίδες σταδιακά και απελευθερώνετε κάθε παρουσία `Viewer` μετά την επεξεργασία ενός batch για να διατηρείται η χρήση μνήμης χαμηλή.
 
-**Ε: Μπορώ να αποδώσω PDFs με την ίδια προσέγγιση;**  
-Α: Ναι, το GroupDocs.Viewer υποστηρίζει PDF και η ίδια σημαία `setExtractText(true)` θα δημιουργήσει αναζητήσιμες εικόνες PDF.
+**Q: Μπορώ να αποδώσω PDFs με την ίδια προσέγγιση;**  
+A: Ναι, το GroupDocs.Viewer υποστηρίζει PDF και η ίδια σημαία `setExtractText(true)` θα δημιουργήσει αναζητήσιμες εικόνες PDF.
 
-**Ε: Τι γίνεται αν το στρώμα κειμένου δεν είναι ορατό στην έξοδο;**  
-Α: Επαληθεύστε ότι το `viewOptions.setExtractText(true)` είναι ορισμένο και ότι ο φάκελος εξόδου έχει δικαιώματα εγγραφής.
+**Q: Τι γίνεται αν η στρώση κειμένου δεν είναι ορατή στην έξοδο;**  
+A: Επαληθεύστε ότι το `viewOptions.setExtractText(true)` είναι ορισμένο και ότι ο φάκελος εξόδου έχει δικαιώματα εγγραφής.
 
-**Ε: Υποστηρίζονται και άλλες μορφές εικόνας;**  
-Α: Εκτός από PNG, μπορείτε να χρησιμοποιήσετε `JpgViewOptions` ή `BmpViewOptions` αντικαθιστώντας την κλάση επιλογής προβολής.
+**Q: Υποστηρίζονται και άλλες μορφές εικόνας;**  
+A: Εκτός από PNG, μπορείτε να χρησιμοποιήσετε `JpgViewOptions` ή `BmpViewOptions` αντικαθιστώντας την κλάση επιλογής προβολής.
 
-**Ε: Πού μπορώ να βρω πιο λεπτομερή τεκμηρίωση API;**  
-Α: Η επίσημη τεκμηρίωση παρέχει εκτενείς παραδείγματα και λεπτομέρειες ρυθμίσεων.  
+**Q: Πού μπορώ να βρω πιο λεπτομερή τεκμηρίωση API;**  
+A: Η επίσημη τεκμηρίωση παρέχει εκτενείς παραδείγματα και λεπτομέρειες διαμόρφωσης.
 
 ## Πόροι
 - **Τεκμηρίωση:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
-- **Αναφορά API:** [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
+- **Οδηγός αναφοράς API:** [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
 - **Λήψη:** [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
-- **Αγορά:** [Buy License](https://purchase.groupdocs.com/buy)  
-- **Δωρεάν Δοκιμή:** [Download Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- **Προσωρινή Άδεια:** [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Υποστήριξη:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Αγορά άδειας:** [Buy License](https://purchase.groupdocs.com/buy)  
+- **Λήψη δωρεάν δοκιμής:** [Download Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Απόκτηση προσωρινής άδειας:** [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Φόρουμ GroupDocs:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Τελευταία Ενημέρωση:** 2026-03-16  
-**Δοκιμή Με:** GroupDocs.Viewer 25.2 for Java  
+**Τελευταία ενημέρωση:** 2026-08-30  
+**Δοκιμάστηκε με:** GroupDocs.Viewer 25.2 for Java  
 **Συγγραφέας:** GroupDocs
+
+## Σχετικά μαθήματα
+
+- [Μετατροπή PDF σε PNG με GroupDocs Viewer για Java](/viewer/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/)
+- [Απόδοση PDF σε στρώσεις Java – Αποτελεσματική απόδοση PDF σε στρώσεις με GroupDocs.Viewer](/viewer/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/)
+- [Πώς να μετατρέψετε Excel σε HTML, JPG, PNG και PDF χρησιμοποιώντας το GroupDocs.Viewer Java](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
