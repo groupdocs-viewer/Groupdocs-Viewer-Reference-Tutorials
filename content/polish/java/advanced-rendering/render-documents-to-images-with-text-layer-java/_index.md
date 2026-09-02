@@ -1,50 +1,110 @@
 ---
-date: '2026-03-16'
-description: Dowiedz się, jak konwertować dokumenty Word na obrazy z warstwą tekstową
-  w Javie przy użyciu GroupDocs.Viewer, wyodrębniając nakładkę tekstową dla przeszukiwalnych,
-  wysokiej jakości obrazów dokumentów.
+date: '2026-08-30'
+description: Dowiedz się, jak konwertować Word na PNG z warstwą tekstu możliwą do
+  przeszukiwania w Javie przy użyciu GroupDocs.Viewer oraz jak konwertować PDF na
+  PNG z nakładką tekstową, aby uzyskać obrazy wysokiej jakości możliwe do przeszukiwania.
 keywords:
-- convert word to image
+- convert word to png
+- convert pdf to png
 - extract text overlay
-- improve document clarity
 - groupdocs viewer java
-- convert pdf to image
-- how to render word
-title: Konwertuj Word na obraz z warstwą tekstu w Javie
+- searchable document images
+lastmod: '2026-08-30'
+og_description: Konwertuj Word na PNG z warstwą tekstu możliwą do przeszukiwania w
+  Javie przy użyciu GroupDocs.Viewer. Ten przewodnik pokazuje również, jak konwertować
+  PDF na PNG z nakładką tekstową, aby uzyskać obrazy możliwe do przeszukiwania.
+og_image_alt: 'Developer guide: Convert Word to PNG with text layer using GroupDocs.Viewer
+  for Java'
+og_title: Konwertuj Word na PNG z warstwą tekstu możliwą do przeszukiwania w Javie
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-30'
+  description: Learn how to convert Word to PNG with a searchable text layer in Java
+    using GroupDocs.Viewer, and also convert PDF to PNG with text overlay for high‑clarity
+    searchable images.
+  headline: Convert Word to PNG with a searchable text layer in Java
+  type: TechArticle
+- description: Learn how to convert Word to PNG with a searchable text layer in Java
+    using GroupDocs.Viewer, and also convert PDF to PNG with text overlay for high‑clarity
+    searchable images.
+  name: Convert Word to PNG with a searchable text layer in Java
+  steps:
+  - name: define the output directory
+    text: First, tell the viewer where to store the generated PNG files. The code
+      below creates (or re‑uses) a folder called `YOUR_OUTPUT_DIRECTORY`. > **Pro
+      tip:** Use `Files.createDirectories(outputDirectory);` if you want the folder
+      to be created automatically.
+  - name: configure view options
+    text: '`PngViewOptions` configures how each page is rendered to PNG and can enable
+      text extraction. By calling `setExtractText(true)` you instruct GroupDocs.Viewer
+      to embed an invisible text layer in every image.'
+  - name: render the document
+    text: 'The `viewer.view(viewOptions)` call opens the source DOCX and generates
+      the PNG pages. The `try‑with‑resources` block guarantees that the `Viewer` instance
+      is closed properly, releasing all native resources. When the process completes,
+      each page of the Word document appears as a high‑resolution PNG '
+  type: HowTo
+- questions:
+  - answer: Render pages incrementally and release each `Viewer` instance after processing
+      a batch to keep memory usage low.
+    question: How do I handle large documents?
+  - answer: Yes, GroupDocs.Viewer supports PDF and the same `setExtractText(true)`
+      flag will generate searchable PDF images.
+    question: Can I render PDFs with the same approach?
+  - answer: Verify that `viewOptions.setExtractText(true)` is set and that the output
+      folder has write permissions.
+    question: What if the text layer isn’t visible in the output?
+  - answer: Besides PNG, you can use `JpgViewOptions` or `BmpViewOptions` by swapping
+      the view option class.
+    question: Are other image formats supported?
+  - answer: The official docs provide exhaustive examples and configuration details.
+    question: Where can I find more detailed API documentation?
+  type: FAQPage
+tags:
+- convert word
+- convert pdf
+- groupdocs viewer
+- java rendering
+title: Konwertuj Word na PNG z warstwą tekstu możliwą do przeszukiwania w Javie
 type: docs
 url: /pl/java/advanced-rendering/render-documents-to-images-with-text-layer-java/
 weight: 1
 ---
 
-# Konwertuj Word na obraz z warstwą tekstu w Javie przy użyciu GroupDocs.Viewer
+# Konwertuj dokument Word do PNG z warstwą tekstu możliwą do przeszukiwania w Javie
 
-Czy potrzebujesz **konwertować Word na obraz** zachowując możliwość zaznaczania i wyszukiwania tekstu? Renderowanie pliku DOCX jako obrazu często traci ukryty tekst, co uniemożliwia wyszukiwanie i kopiowanie‑wklejanie. W tym samouczku przeprowadzimy Cię krok po kroku przez proces renderowania dokumentu Word do obrazów PNG **z nałożoną warstwą tekstu** przy użyciu GroupDocs.Viewer dla Javy. To podejście nie tylko **poprawia klarowność obrazu dokumentu**, ale także **generuje obrazy możliwe do przeszukiwania**, które działają doskonale w portalach internetowych, rozwiązaniach CMS i każdym systemie, który polega na ekstrakcji tekstu bez OCR.
+W tym obszernym przewodniku dowiesz się, jak **konwertować Word do PNG** zachowując ukrytą, zaznaczaną warstwę tekstu przy użyciu GroupDocs.Viewer dla Javy. Ta sama technika działa również dla PDF‑ów, zapewniając wysokiej jakości podglądy obrazów, które pozostają w pełni przeszukiwalne — idealne dla portali internetowych, systemów CMS i rozwiązań archiwizacyjnych, które potrzebują szybkiego renderowania bez utraty możliwości wyszukiwania.
 
 ![Render Documents as Images with Text Layer with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
 
-## Szybkie odpowiedzi
-- **Co oznacza „convert Word to image”?** Tworzy rasterowy obraz (PNG) każdej strony, zachowując oryginalny tekst w ukrytej warstwie.  
-- **Dlaczego dodać warstwę tekstu?** Nakładka sprawia, że obraz jest możliwy do przeszukiwania i zaznaczania, zwiększając dostępność i SEO.  
-- **Która biblioteka obsługuje to?** GroupDocs.Viewer dla Javy zapewnia wbudowaną obsługę ekstrakcji tekstu i renderowania obrazów.  
-- **Czy potrzebna jest licencja?** Darmowa wersja próbna działa w środowisku deweloperskim; płatna licencja jest wymagana w produkcji.  
-- **Czy mogę używać tego samego kodu dla PDF?** Tak – te same opcje widoku mają zastosowanie do PDF, DOCX i wielu innych formatów.  
+[Render Documents as Images with Text Layer with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
 
-## Co to jest „convert Word to image” z warstwą tekstu?
-Konwersja pliku Word na obraz zazwyczaj tworzy bitmapę zawierającą jedynie piksele. Włączając **extract text overlay**, GroupDocs.Viewer dodaje niewidoczną warstwę tekstu na każdym obrazie, umożliwiając przeglądarkom i wyszukiwarkom odczytanie zawartości.
+## Szybkie odpowiedzi
+- **Co oznacza „convert Word to PNG”?** Tworzy rastrowy PNG dla każdej strony i osadza niewidoczną nakładkę tekstową, dzięki czemu treść pozostaje przeszukiwalna.  
+- **Dlaczego dodawać warstwę tekstową?** Nakładka umożliwia przeglądarkom i wyszukiwarkom indeksowanie tekstu bez uruchamiania OCR, poprawiając dostępność i SEO.  
+- **Która biblioteka to obsługuje?** GroupDocs.Viewer dla Javy zapewnia wbudowane wsparcie zarówno dla renderowania obrazów, jak i wyodrębniania tekstu.  
+- **Czy potrzebna jest licencja?** Darmowa wersja próbna wystarczy do rozwoju; płatna licencja jest wymagana przy wdrożeniach produkcyjnych.  
+- **Czy mogę użyć tego samego kodu dla PDF‑ów?** Tak — wystarczy skierować viewer na plik PDF i włączyć tę samą opcję nakładki tekstowej.
+
+## Co to jest konwersja Word do PNG z warstwą tekstu?
+Konwersja Word do PNG z warstwą tekstu renderuje każdą stronę DOCX jako obraz PNG i osadza niewidoczną nakładkę tekstową umożliwiającą wyszukiwanie.  
+Ten proces przekształca dokument Word w zestaw wysokiej rozdzielczości obrazów, zachowując jednocześnie oryginalny tekst dostępny dla czytników ekranu i robotów wyszukiwarek. Wynik wygląda jak statyczny obraz, ale można kopiować‑wklejać lub wyszukiwać treść, ponieważ tekst znajduje się w ukrytej warstwie za pikselami.
 
 ## Dlaczego używać GroupDocs.Viewer do tego zadania?
-- **Wysokiej jakości wyjście PNG**, które zachowuje oryginalny układ.  
-- **Extract text overlay** automatycznie, dzięki czemu otrzymujesz obrazy możliwe do przeszukiwania bez dodatkowego przetwarzania.  
-- **Proste API** – kilka linii kodu Java obsługuje cały proces.  
-- **Szerokie wsparcie formatów** – to samo podejście działa dla PDF, PPTX i innych.  
-- **Poprawiona klarowność dokumentu** dzięki bezstratnemu silnikowi renderującemu.  
+GroupDocs.Viewer zapewnia pikselowo‑idealny wynik PNG **i** automatycznie dodaje przeszukiwalną warstwę tekstową, eliminując potrzebę osobnego kroku OCR. Jego silnik renderujący przetwarza dokumenty w trybie strumieniowym, więc nawet pliki o setkach stron są obsługiwane bez ładowania całego pliku do pamięci. Biblioteka obsługuje **ponad 70 formatów wejściowych i wyjściowych**, w tym DOCX, PDF, PPTX, XLSX oraz popularne typy obrazów, co czyni ją kompleksowym rozwiązaniem dla różnorodnych przepływów dokumentów.
+- **Wysokiej jakości wyjście PNG** odzwierciedlające oryginalny układ piksel po pikselu.  
+- **Automatyczne wyodrębnianie warstwy tekstowej** oszczędza konieczności implementacji OCR.  
+- **Proste API** — kilka linii kodu Java obsługuje cały przepływ pracy.  
+- **Szerokie wsparcie formatów** — to samo podejście działa dla PDF‑ów, PPTX i wielu innych formatów.  
+- **Poprawiona klarowność dokumentu** dzięki bezstratnemu silnikowi renderującemu, który zachowuje grafikę wektorową i czcionki.
 
 ## Wymagania wstępne
-- Zainstalowany i skonfigurowany Java Development Kit (JDK).  
+- Zainstalowany i skonfigurowany Java Development Kit (JDK) 8 lub wyższy.  
 - Maven do zarządzania zależnościami.  
-- Podstawowa znajomość obsługi plików w Javie oraz projektów Maven.  
+- Podstawowa znajomość obsługi plików w Javie oraz struktury projektu Maven.  
 
 ## Konfiguracja GroupDocs.Viewer dla Javy
+
 ### Informacje o instalacji
 Dodaj GroupDocs.Viewer do swojego projektu Maven, wstawiając repozytorium i zależność do pliku `pom.xml`:
 
@@ -65,16 +125,16 @@ Dodaj GroupDocs.Viewer do swojego projektu Maven, wstawiając repozytorium i zal
 </dependencies>
 ```
 
-### Uzyskiwanie licencji
+### Uzyskanie licencji
 Rozpocznij od darmowej wersji próbnej, pobierając GroupDocs.Viewer ze swojej [strony pobierania](https://releases.groupdocs.com/viewer/java/). Do użytku produkcyjnego zakup licencję lub uzyskaj tymczasowy klucz ze [strony tymczasowej licencji](https://purchase.groupdocs.com/temporary-license/).
 
 ### Podstawowa inicjalizacja i konfiguracja
-Po synchronizacji Maven, możesz utworzyć instancję `Viewer` – ten obiekt będzie sterował procesem renderowania.
+Klasa `Viewer` jest podstawowym komponentem, który ładuje dokumenty i renderuje je zgodnie z określonymi opcjami widoku. Po synchronizacji Maven możesz utworzyć instancję `Viewer` — ten obiekt będzie sterował procesem renderowania.
 
-## Przewodnik krok po kroku: konwersja Word na obraz
+## Przewodnik krok po kroku konwersji Word do PNG
 
-### Krok 1: Zdefiniuj katalog wyjściowy
-Najpierw określ widzowi, gdzie przechowywać wygenerowane pliki PNG. Poniższy kod tworzy (lub ponownie używa) folder o nazwie `YOUR_OUTPUT_DIRECTORY`.
+### Krok 1: określ katalog wyjściowy
+Najpierw poinformuj viewer, gdzie ma przechowywać wygenerowane pliki PNG. Poniższy kod tworzy (lub ponownie używa) folder o nazwie `YOUR_OUTPUT_DIRECTORY`.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
@@ -82,8 +142,8 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 
 > **Wskazówka:** Użyj `Files.createDirectories(outputDirectory);`, jeśli chcesz, aby folder został utworzony automatycznie.
 
-### Krok 2: Skonfiguruj opcje widoku (Configure View Options)
-Następnie skonfiguruj opcje renderowania. Używając `PngViewOptions` i włączając `setExtractText(true)`, instruujesz GroupDocs.Viewer, aby **extract text overlay** i osadził go w każdym obrazie.
+### Krok 2: skonfiguruj opcje widoku
+`PngViewOptions` konfiguruje, jak każda strona jest renderowana do PNG i może włączyć wyodrębnianie tekstu. Wywołując `setExtractText(true)` instruujesz GroupDocs.Viewer, aby osadził niewidoczną warstwę tekstową w każdym obrazie.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
@@ -91,8 +151,8 @@ PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 viewOptions.setExtractText(true);  // Enable extracting text over the image
 ```
 
-### Krok 3: Renderuj dokument (Convert Word to Image)
-Na koniec otwórz źródłowy DOCX i wywołaj `viewer.view(viewOptions)`. Blok `try‑with‑resources` zapewnia prawidłowe zamknięcie instancji `Viewer`.
+### Krok 3: renderuj dokument
+Wywołanie `viewer.view(viewOptions)` otwiera źródłowy DOCX i generuje strony PNG. Blok `try‑with‑resources` zapewnia prawidłowe zamknięcie instancji `Viewer`, zwalniając wszystkie zasoby natywne.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
@@ -100,47 +160,46 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
 }
 ```
 
-Po zakończeniu działania kodu, każda strona dokumentu Word pojawia się jako wysokiej rozdzielczości PNG z niewidoczną warstwą tekstu, gotowa do indeksowania i wyszukiwania.
+Po zakończeniu procesu każda strona dokumentu Word pojawia się jako wysokiej rozdzielczości PNG z niewidoczną warstwą tekstową, gotowa do indeksowania i wyszukiwania.
 
 ## Dlaczego to ma znaczenie
-Osadzenie warstwy tekstu możliwej do przeszukiwania oznacza, że możesz udostępniać lekkie podglądy obrazów **i** zachować pełną możliwość wyszukiwania tekstu. Jest to szczególnie cenne dla:
+Osadzenie przeszukiwalnej warstwy tekstowej oznacza, że możesz udostępniać lekkie podglądy obrazów **i** zachować pełną możliwość wyszukiwania tekstu. Jest to szczególnie cenne dla:
+1. **Portali internetowych**, które potrzebują szybkich miniatur podglądu bez utraty SEO.  
+2. **Systemów zarządzania treścią (CMS)**, które przechowują archiwalne migawki, ale nadal wymagają indeksacji tekstu.  
+3. **Archiwizacji dokumentów**, gdzie koszt przechowywania jest istotny, ale wykrywalność musi pozostać wysoka.  
 
-1. **Portale internetowe**, które potrzebują szybkich podglądów miniatur bez utraty SEO.  
-2. **Systemy zarządzania treścią (CMS)**, które przechowują archiwalne migawki, ale nadal wymagają indeksowania tekstu.  
-3. **Archiwizacja dokumentów**, gdzie koszt przechowywania jest istotny, ale wykrywalność musi pozostać wysoka.  
-
-## Częste problemy i rozwiązania
+## Typowe problemy i rozwiązania
 - **Plik nie znaleziony:** Sprawdź dokładnie ścieżkę do `SAMPLE_DOCX`. Użyj ścieżek bezwzględnych dla pewności.  
 - **Problemy z uprawnieniami:** Upewnij się, że proces Java może zapisywać do `YOUR_OUTPUT_DIRECTORY`.  
 - **Niezgodność wersji:** Zweryfikuj, że wersja w `pom.xml` odpowiada pobranej bibliotece.  
-- **Brak warstwy tekstu:** Upewnij się, że `viewOptions.setExtractText(true)` jest ustawione i że folder wyjściowy jest zapisywalny.  
+- **Brak warstwy tekstowej:** Upewnij się, że `viewOptions.setExtractText(true)` jest ustawione i że folder wyjściowy jest zapisywalny.  
 
 ## Praktyczne zastosowania
 1. **Portale internetowe:** Wyświetlaj podglądy dokumentów, które użytkownicy mogą przeszukiwać bez pobierania oryginalnego pliku.  
 2. **Systemy zarządzania treścią:** Przechowuj przeszukiwalne migawki obrazów w celach archiwalnych.  
 3. **Archiwizacja dokumentów:** Zachowaj lekką wersję obrazu, jednocześnie umożliwiając pełnotekstowe wyszukiwanie.  
 
-## Rozważania dotyczące wydajności
-- Szybko zwalniaj obiekty `Viewer` (jak pokazano przy użyciu `try‑with‑resources`).  
+## Względy wydajnościowe
+- Niezwłocznie zwalniaj obiekty `Viewer` (jak pokazano w `try‑with‑resources`).  
 - Wybierz PNG dla jakości; przełącz na JPEG, jeśli przepustowość jest problemem.  
 - Buforuj renderowane strony, gdy ten sam dokument jest żądany wielokrotnie.  
 
 ## Najczęściej zadawane pytania
 
-**Q: Jak obsłużyć duże dokumenty?**  
-A: Renderuj strony stopniowo i zwalniaj każdą instancję `Viewer` po przetworzeniu partii, aby utrzymać niskie zużycie pamięci.
+**P:** Jak obsługiwać duże dokumenty?  
+**O:** Renderuj strony stopniowo i zwalniaj każdą instancję `Viewer` po przetworzeniu partii, aby utrzymać niskie zużycie pamięci.
 
-**Q: Czy mogę renderować PDFy tym samym podejściem?**  
-A: Tak, GroupDocs.Viewer obsługuje PDF, a ten sam flag `setExtractText(true)` wygeneruje przeszukiwalne obrazy PDF.
+**P:** Czy mogę renderować PDF‑y tym samym podejściem?  
+**O:** Tak, GroupDocs.Viewer obsługuje PDF, a ten sam znacznik `setExtractText(true)` wygeneruje przeszukiwalne obrazy PDF.
 
-**Q: Co zrobić, gdy warstwa tekstu nie jest widoczna w wyniku?**  
-A: Sprawdź, czy `viewOptions.setExtractText(true)` jest ustawione i czy folder wyjściowy ma uprawnienia do zapisu.
+**P:** Co zrobić, gdy warstwa tekstowa nie jest widoczna w wyniku?  
+**O:** Zweryfikuj, że `viewOptions.setExtractText(true)` jest ustawione i że folder wyjściowy ma uprawnienia do zapisu.
 
-**Q: Czy obsługiwane są inne formaty obrazów?**  
-A: Oprócz PNG, możesz użyć `JpgViewOptions` lub `BmpViewOptions`, zamieniając klasę opcji widoku.
+**P:** Czy obsługiwane są inne formaty obrazów?  
+**O:** Oprócz PNG możesz użyć `JpgViewOptions` lub `BmpViewOptions`, zamieniając klasę opcji widoku.
 
-**Q: Gdzie mogę znaleźć bardziej szczegółową dokumentację API?**  
-A: Oficjalna dokumentacja zawiera wyczerpujące przykłady i szczegóły konfiguracji.
+**P:** Gdzie mogę znaleźć bardziej szczegółową dokumentację API?  
+**O:** Oficjalna dokumentacja zawiera wyczerpujące przykłady i szczegóły konfiguracji.
 
 ## Zasoby
 - **Dokumentacja:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
@@ -153,6 +212,12 @@ A: Oficjalna dokumentacja zawiera wyczerpujące przykłady i szczegóły konfigu
 
 ---
 
-**Ostatnia aktualizacja:** 2026-03-16  
+**Ostatnia aktualizacja:** 2026-08-30  
 **Testowano z:** GroupDocs.Viewer 25.2 for Java  
 **Autor:** GroupDocs
+
+## Powiązane samouczki
+
+- [Konwertuj PDF do PNG przy użyciu GroupDocs Viewer dla Javy](/viewer/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/)
+- [Renderowanie warstwowego PDF w Javie – wydajne renderowanie warstwowego PDF z GroupDocs.Viewer](/viewer/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/)
+- [Jak konwertować Excel do HTML, JPG, PNG i PDF przy użyciu GroupDocs.Viewer Java](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
