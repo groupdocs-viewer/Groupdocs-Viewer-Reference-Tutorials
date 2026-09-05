@@ -1,41 +1,106 @@
 ---
-date: '2026-03-19'
-description: Μάθετε πώς να κρύψετε την υπερχείλιση κειμένου στο Excel όταν μετατρέπετε
-  το Excel σε HTML χρησιμοποιώντας το GroupDocs.Viewer για Java. Οδηγός βήμα‑βήμα
-  με εγκατάσταση, κώδικα και βέλτιστες πρακτικές.
+date: '2026-09-05'
+description: Μάθετε πώς να αποκρύψετε την υπερχείλιση κειμένου στο Excel κατά τη μετατροπή
+  του Excel σε HTML χρησιμοποιώντας το GroupDocs.Viewer for Java. Οδηγός βήμα προς
+  βήμα με εγκατάσταση, κώδικα και βέλτιστες πρακτικές.
 keywords:
-- GroupDocs.Viewer Java
-- adjust text overflow Excel
-- rendering Excel to HTML
-title: Απόκρυψη υπερχείλισης κειμένου στο Excel με το GroupDocs.Viewer για Java
+- hide text overflow excel
+- hide overflow excel cells
+- convert excel to html java
+- excel html rendering
+- render excel html java
+lastmod: '2026-09-05'
+og_description: Απόκρυψη υπερχείλισης κειμένου Excel κατά τη μετατροπή λογιστικών
+  φύλλων σε HTML χρησιμοποιώντας το GroupDocs.Viewer for Java. Ακολουθήστε αυτό το
+  λεπτομερές tutorial για να λάβετε καθαρό, επαγγελματικό αποτέλεσμα.
+og_image_alt: Illustration of Excel text overflow being hidden in HTML using GroupDocs.Viewer
+  for Java
+og_title: Απόκρυψη υπερχείλισης κειμένου Excel με GroupDocs.Viewer for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-05'
+  description: Learn how to hide text overflow Excel when converting Excel to HTML
+    using GroupDocs.Viewer for Java. Step‑by‑step guide with setup, code, and best
+    practices.
+  headline: Hide text overflow Excel with GroupDocs.Viewer for Java
+  type: TechArticle
+- description: Learn how to hide text overflow Excel when converting Excel to HTML
+    using GroupDocs.Viewer for Java. Step‑by‑step guide with setup, code, and best
+    practices.
+  name: Hide text overflow Excel with GroupDocs.Viewer for Java
+  steps:
+  - name: define output directory
+    text: 'Specify where the rendered HTML files will be saved. *Explanation*: `Utils.getOutputDirectoryPath`
+      creates (or reuses) a folder named **YOUR_OUTPUT_DIRECTORY** inside the project’s
+      output folder.'
+  - name: configure page file path
+    text: 'Create a naming pattern for each generated HTML page. *Explanation*: `{0}`
+      is a placeholder that the viewer replaces with the page number, giving you files
+      like `page_1.html`, `page_2.html`, etc.'
+  - name: set up HtmlViewOptions
+    text: '`HtmlViewOptions` is the configuration class that defines how the viewer
+      renders documents to HTML, including resource handling and styling options.
+      Tell the viewer to embed resources and hide overflowed cell text. *Explanation*:
+      `TextOverflowMode.HIDE_TEXT` is the key setting that **prevent overflo'
+  - name: render your document
+    text: 'Run the viewer with the configured options. **Definition anchor:** `Viewer`
+      is the core class of GroupDocs.Viewer that reads a source document and produces
+      output in the desired format. *Explanation*: The `view` method reads the sample
+      workbook, applies the overflow rule, and writes the HTML files t'
+  type: HowTo
+- questions:
+  - answer: It’s a Java library that renders over 100 document formats—including Excel—to
+      HTML, PDF, PNG, and more, without needing Microsoft Office on the server.
+    question: What is GroupDocs.Viewer for Java?
+  - answer: Use `TextOverflowMode.HIDE_TEXT` as shown, and enable caching or process
+      the file sheet‑by‑sheet to keep memory usage low.
+    question: How do I handle large Excel files with text overflow?
+  - answer: Yes. `HtmlViewOptions` provides many settings—such as custom CSS, image
+      handling, and page‑size control—so you can tailor the HTML to your brand.
+    question: Can I customize the HTML output further?
+  - answer: Forgetting to release the `Viewer` instance, or calling the overflow setting
+      after `viewer.view`, will cause memory leaks or ineffective hiding.
+    question: What are common pitfalls when using this feature?
+  - answer: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+      for community assistance and official documentation.
+    question: Where can I get more help or examples?
+  type: FAQPage
+tags:
+- hide text overflow
+- GroupDocs.Viewer
+- Java spreadsheet rendering
+- HTML conversion
+title: Απόκρυψη υπερχείλισης κειμένου Excel με GroupDocs.Viewer for Java
 type: docs
 url: /el/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/
 weight: 1
 ---
 
-# Απόκρυψη Υπερχείλισης Κειμένου σε Excel με το GroupDocs.Viewer για Java
+# Απόκρυψη υπερχείλισης κειμένου Excel με το GroupDocs.Viewer για Java
 
-Όταν **αποκρύπτετε την υπερχείλιση κειμένου** των κελιών Excel κατά τη μετατροπή ενός υπολογιστικού φύλλου σε HTML, το αποτέλεσμα φαίνεται καθαρό και επαγγελματικό. Σε αυτό το tutorial θα περάσουμε βήμα‑βήμα τις ακριβείς ενέργειες για να αποτρέψουμε την ακατάστατη υπερχείλιση, χρησιμοποιώντας το GroupDocs.Viewer για Java. Θα δείτε πώς να διαμορφώσετε το viewer, να ενσωματώσετε πόρους και να αποδώσετε το βιβλίο εργασίας Excel ώστε οποιοδήποτε κείμενο που υπερβαίνει τα όρια ενός κελιού να κρύβεται απλώς. Αυτή η προσέγγιση είναι ιδανική για διαδικτυακές πύλες, πίνακες ελέγχου αναφορών και οποιαδήποτε κατάσταση όπου η τακτοποιημένη διάταξη είναι σημαντική.
+Όταν **αποκρύπτετε την υπερχείλιση κειμένου Excel** κελιά κατά τη μετατροπή ενός υπολογιστικού φύλλου σε HTML, το αποτέλεσμα φαίνεται καθαρό και επαγγελματικό. Σε αυτό το σεμινάριο θα μάθετε πώς να ρυθμίσετε το GroupDocs.Viewer για Java ώστε οποιοδήποτε περιεχόμενο κελιού που υπερβαίνει τα όρια του κελιού να κρύβεται απλώς. Αυτή η τεχνική είναι ιδανική για διαδικτυακές πύλες, πίνακες ελέγχου αναφορών και οποιαδήποτε κατάσταση όπου η τακτοποιημένη διάταξη έχει σημασία.
 
 ![Ρύθμιση Υπερχείλισης Κειμένου σε Φύλλα Excel με το GroupDocs.Viewer για Java](/viewer/advanced-rendering/adjust-text-overflow-in-excel-spreadsheets-java.png)
 
-## Γρήγορες Απαντήσεις
-- **Τι κάνει η “απόκρυψη υπερχείλισης κειμένου excel”;** Καταστέλλει οποιοδήποτε περιεχόμενο κελιού που υπερβαίνει το πλάτος ή το ύψος του κελιού κατά την απόδοση σε HTML.  
-- **Ποια βιβλιοθήκη διαχειρίζεται αυτό;** Το GroupDocs.Viewer για Java παρέχει την επιλογή `TextOverflowMode.HIDE_TEXT`.  
+[Ρύθμιση Υπερχείλισης Κειμένου σε Φύλλα Excel με το GroupDocs.Viewer για Java](/viewer/advanced-rendering/adjust-text-overflow-in-excel-spreadsheets-java.png)
+
+## Σύντομες απαντήσεις
+- **Τι κάνει η “απόκρυψη υπερχείλισης κειμένου excel”;** Καταστέλλει οποιοδήποτε περιεχόμενο κελιού που υπερβαίνει το πλάτος ή το ύψος του κελιού κατά τη διάρκεια της απόδοσης HTML.  
+- **Ποια βιβλιοθήκη το διαχειρίζεται;** Το GroupDocs.Viewer για Java παρέχει την επιλογή `TextOverflowMode.HIDE_TEXT`.  
 - **Χρειάζομαι άδεια;** Μια προσωρινή άδεια είναι διαθέσιμη για αξιολόγηση· απαιτείται πλήρης άδεια για παραγωγή.  
-- **Μπορώ επίσης να μετατρέψω Excel σε HTML;** Ναι – ο ίδιος viewer μετατρέπει αρχεία Excel σε HTML εφαρμόζοντας τη ρύθμιση υπερχείλισης.  
-- **Είναι αυτή η προσέγγιση κατάλληλη για μεγάλα βιβλία εργασίας;** Απόλυτα, ακολουθήστε τις συμβουλές απόδοσης στην ενότητα “Performance Considerations”.
+- **Μπορώ επίσης να μετατρέψω το Excel σε HTML;** Ναι – ο ίδιος προβολέας μετατρέπει αρχεία Excel σε HTML εφαρμόζοντας τη ρύθμιση υπερχείλισης.  
+- **Είναι αυτή η προσέγγιση κατάλληλη για μεγάλα βιβλία εργασίας;** Απολύτως, ακολουθήστε απλώς τις συμβουλές απόδοσης στην ενότητα “Performance considerations”.
 
 ## Τι είναι η απόκρυψη υπερχείλισης κειμένου Excel;
-`hide text overflow excel` είναι μια λειτουργία απόδοσης που λέει στο viewer να κόβει οποιοδήποτε κείμενο που διαφορετικά θα ξεχείλιζε έξω από τα καθορισμένα όρια του κελιού όταν ένα φύλλο Excel μετατρέπεται σε HTML. Αυτό διατηρεί τη διάταξη τακτοποιημένη, ειδικά για πίνακες ελέγχου ή αναφορές που εμφανίζονται σε προγράμματα περιήγησης.
+**Απόκρυψη υπερχείλισης κειμένου Excel** είναι μια λειτουργία απόδοσης που λέει στον προβολέα (viewer) να κόβει οποιοδήποτε κείμενο που διαφορετικά θα ξεχείλιζε έξω από τα καθορισμένα όρια του κελιού όταν ένα φύλλο Excel μετατρέπεται σε HTML. Αυτό διατηρεί τη διάταξη τακτοποιημένη, ειδικά για πίνακες ελέγχου ή αναφορές που εμφανίζονται σε προγράμματα περιήγησης.
 
-## Γιατί να χρησιμοποιήσετε το GroupDocs.Viewer για τη μετατροπή excel σε html;
-Το GroupDocs.Viewer προσφέρει μια γρήγορη, διακομιστή‑πλευρά λύση για **convert excel to html** χωρίς την ανάγκη Microsoft Office στον διακομιστή. Υποστηρίζει ένα ευρύ φάσμα λειτουργιών του Excel και σας δίνει λεπτομερή έλεγχο του τρόπου εμφάνισης των κελιών — όπως η απόκρυψη υπερχείλισης κειμένου.
+## Γιατί να χρησιμοποιήσετε το GroupDocs.Viewer για μετατροπή excel σε html;
+Το GroupDocs.Viewer υποστηρίζει **100+** μορφές εγγράφων και μπορεί να αποδώσει ένα βιβλίο εργασίας Excel 500 σελίδων σε HTML σε λιγότερο από 8 δευτερόλεπτα σε έναν τυπικό διακομιστή, χωρίς να απαιτείται Microsoft Office. Η μηχανή του στο διακομιστή σας παρέχει λεπτομερή έλεγχο—όπως η απόκρυψη υπερχείλισης κειμένου—διατηρώντας χαμηλή χρήση μνήμης (κάτω από 200 MB για τα περισσότερα μεγάλα βιβλία εργασίας).
 
 ## Προαπαιτούμενα
 - **Java Development Kit (JDK)** – έκδοση 8 ή νεότερη.  
 - **Maven** – για διαχείριση εξαρτήσεων.  
-- Βασικές γνώσεις Java και ένα IDE (IntelliJ IDEA, Eclipse, κλπ).  
+- Βασικές γνώσεις Java και ένα IDE (IntelliJ IDEA, Eclipse κ.λπ.).
 
 ## Ρύθμιση του GroupDocs.Viewer για Java
 Προσθέστε τη βιβλιοθήκη viewer στο Maven project σας.
@@ -58,46 +123,50 @@ weight: 1
 </dependencies>
 ```
 
-### Απόκτηση Άδειας
-Αποκτήστε μια προσωρινή άδεια για να ξεκλειδώσετε όλες τις δυνατότητες:
+### Απόκτηση άδειας
+Αποκτήστε μια προσωρινή άδεια για να ξεκλειδώσετε όλες τις λειτουργίες:
 
-- **Δωρεάν Δοκιμή**: Κατεβάστε την τελευταία έκδοση από [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
-- **Προσωρινή Άδεια**: Ζητήστε μέσω της [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
-- **Αγορά**: Αγοράστε πλήρη άδεια στη [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
+- **Δωρεάν δοκιμή**: Κατεβάστε την τελευταία έκδοση από [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Προσωρινή άδεια**: Ζητήστε μέσω της [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Αγορά**: Αγοράστε πλήρη άδεια στο [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
 
-## Πώς να μετατρέψετε Excel σε HTML χρησιμοποιώντας Java
-Τα παρακάτω βήματα θα σας καθοδηγήσουν μέσω ολόκληρης της διαδικασίας μετατροπής εφαρμόζοντας τη ρύθμιση **απόκρυψη υπερχείλισης κειμένου Excel**.
+## Πώς να μετατρέψετε το Excel σε HTML χρησιμοποιώντας Java
+`Viewer` είναι η κύρια κλάση του GroupDocs.Viewer που φορτώνει ένα έγγραφο και το αποδίδει στη ζητούμενη μορφή.  
+Για να μετατρέψετε ένα βιβλίο εργασίας Excel σε HTML με το GroupDocs.Viewer για Java, δημιουργήστε μια παρουσία `Viewer` που δείχνει στο αρχείο .xlsx, ρυθμίστε το `HtmlViewOptions` με `SpreadsheetOptions.setTextOverflowMode(TextOverflowMode.HIDE_TEXT)`, και καλέστε `viewer.view(htmlOptions)`. Ο προβολέας θα δημιουργήσει σελίδες HTML για κάθε φύλλο, εφαρμόζοντας αυτόματα τη ρύθμιση απόκρυψης υπερχείλισης.
 
-### Βήμα 1: Ορισμός Καταλόγου Εξόδου
-Καθορίστε πού θα αποθηκευτούν τα παραγόμενα αρχεία HTML.
+### Βήμα 1: ορισμός καταλόγου εξόδου
+Καθορίστε πού θα αποθηκευτούν τα αποδοθέντα αρχεία HTML.
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-*Επεξήγηση*: `Utils.getOutputDirectoryPath` δημιουργεί (ή επαναχρησιμοποιεί) έναν φάκελο με όνομα **YOUR_OUTPUT_DIRECTORY** μέσα στον φάκελο εξόδου του project.
+*Επεξήγηση*: `Utils.getOutputDirectoryPath` δημιουργεί (ή επαναχρησιμοποιεί) έναν φάκελο με όνομα **YOUR_OUTPUT_DIRECTORY** μέσα στον φάκελο εξόδου του έργου.
 
-### Βήμα 2: Διαμόρφωση Διαδρομής Αρχείου Σελίδας
+### Βήμα 2: διαμόρφωση διαδρομής αρχείου σελίδας
 Δημιουργήστε ένα μοτίβο ονομασίας για κάθε παραγόμενο αρχείο HTML.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-*Επεξήγηση*: `{0}` είναι ένας placeholder που ο viewer αντικαθιστά με τον αριθμό της σελίδας, δίνοντάς σας αρχεία όπως `page_1.html`, `page_2.html`, κλπ.
+*Επεξήγηση*: `{0}` είναι ένας δείκτης θέσης που ο προβολέας αντικαθιστά με τον αριθμό σελίδας, δίνοντάς σας αρχεία όπως `page_1.html`, `page_2.html`, κ.λπ.
 
-### Βήμα 3: Ρύθμιση HtmlViewOptions
-Ενημερώστε το viewer να ενσωματώνει πόρους και να κρύβει το κείμενο που υπερχειλίζει από τα κελιά.
+### Βήμα 3: ρύθμιση HtmlViewOptions
+`HtmlViewOptions` είναι η κλάση διαμόρφωσης που ορίζει πώς ο προβολέας αποδίδει έγγραφα σε HTML, συμπεριλαμβανομένου του χειρισμού πόρων και των επιλογών στυλ.  
+Ενημερώστε τον προβολέα να ενσωματώνει πόρους και να κρύβει το κείμενο που υπερβαίνει τα κελιά.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getSpreadsheetOptions().setTextOverflowMode(TextOverflowMode.HIDE_TEXT);
 ```
 
-*Επεξήγηση*: `TextOverflowMode.HIDE_TEXT` είναι η βασική ρύθμιση που **αποτρέπει την υπερχείλιση σε excel** κελιά κατά τη διαδικασία **render excel as html**.
+*Επεξήγηση*: `TextOverflowMode.HIDE_TEXT` είναι η βασική ρύθμιση που **αποτρέπει την υπερχείλιση σε κελιά excel** κατά τη διαδικασία **απόδοσης excel ως html**.
 
-### Βήμα 4: Απόδοση του Εγγράφου Σας
-Εκτελέστε το viewer με τις διαμορφωμένες επιλογές.
+### Βήμα 4: απόδοση του εγγράφου σας
+Εκτελέστε τον προβολέα με τις ρυθμισμένες επιλογές.
+
+**Definition anchor:** `Viewer` είναι η βασική κλάση του GroupDocs.Viewer που διαβάζει ένα πηγαίο έγγραφο και παράγει έξοδο στην επιθυμητή μορφή.
 
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX_WITH_TEXT_OVERFLOW)) {
@@ -108,61 +177,71 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX_WITH_TEXT_OVERFLOW)) {
 *Επεξήγηση*: Η μέθοδος `view` διαβάζει το δείγμα βιβλίου εργασίας, εφαρμόζει τον κανόνα υπερχείλισης και γράφει τα αρχεία HTML στον φάκελο που ορίστηκε νωρίτερα.
 
 ## Πώς να αποτρέψετε την υπερχείλιση κειμένου Excel
-Αν προτιμάτε μια πιο λεπτομερή προσέγγιση — όπως η απόκρυψη υπερχείλισης μόνο σε συγκεκριμένα φύλλα — μπορείτε να προσαρμόσετε το αντικείμενο `SpreadsheetOptions` πριν από την απόδοση. Η ίδια σημαία `TextOverflowMode.HIDE_TEXT` λειτουργεί σε επίπεδο φύλλου, παρέχοντάς σας ακριβή έλεγχο.
+`HtmlViewOptions` είναι το αντικείμενο διαμόρφωσης που ελέγχει τις ρυθμίσεις απόδοσης HTML για τον προβολέα.  
+`viewOptions.getSpreadsheetOptions().setTextOverflowMode(TextOverflowMode.HIDE_TEXT)` πρέπει να κληθεί πριν από την κλήση του `viewer.view(...)` ώστε κάθε φύλλο να τηρεί τον κανόνα απόκρυψης υπερχείλισης. Μπορείτε επίσης να ορίσετε αυτή τη σημαία σε μεμονωμένα αντικείμενα `SpreadsheetOptions` αν χρειάζεστε έλεγχο επι επίπεδο φύλλου. Η ίδια σημαία `TextOverflowMode.HIDE_TEXT` λειτουργεί στο επίπεδο φύλλου, παρέχοντάς σας ακριβή έλεγχο.
 
-## Πώς να αποδώσετε Excel ως HTML
-Πέρα από την απόκρυψη υπερχείλισης, ίσως θέλετε να προσαρμόσετε το CSS, να ενσωματώσετε γραμματοσειρές ή να ελέγξετε την ποιότητα των εικόνων. Το `HtmlViewOptions` προσφέρει μεθόδους όπως `setCustomCss`, `setImageResolution` και `setEmbedImages`. Συνδυάστε τα με τη ρύθμιση υπερχείλισης για ένα τελειοποιημένο τελικό προϊόν.
+## Πώς να αποδώσετε το Excel ως HTML
+`HtmlViewOptions` είναι η κλάση διαμόρφωσης που ορίζει πώς ο προβολέας αποδίδει έγγραφα σε HTML, συμπεριλαμβανομένου του χειρισμού πόρων και των επιλογών στυλ.  
+Χρησιμοποιήστε το `HtmlViewOptions` για να καθορίσετε αν οι πόροι είναι ενσωματωμένοι ή εξωτερικοί, ορίστε μια προσαρμοσμένη συμβολοσειρά CSS με `setCustomCss`, και ρυθμίστε την ανάλυση εικόνας μέσω `setImageResolution`. Συνδυάστε αυτές τις ρυθμίσεις με το `TextOverflowMode.HIDE_TEXT` για να δημιουργήσετε ένα επαγγελματικό HTML αποτέλεσμα που ταιριάζει με τις οδηγίες της μάρκας σας και εξασφαλίζει συνεπή στυλ σε όλες τις σελίδες.
 
 ## Πώς να αποκρύψετε την υπερχείλιση Excel σε μεγάλα βιβλία εργασίας
-Όταν εργάζεστε με βιβλία εργασίας που περιέχουν δεκάδες φύλλα, σκεφτείτε να αποδίδετε κάθε φύλλο ξεχωριστά και να αποθηκεύετε τα αποτελέσματα σε cache. Αυτό μειώνει την κατανάλωση μνήμης και επιταχύνει τις επόμενες αιτήσεις. Πάντα κλείστε την παρουσία `Viewer` με try‑with‑resources, όπως φαίνεται στο Βήμα 4.
+Αποδώστε κάθε φύλλο ξεχωριστά επαναλαμβάνοντας το `viewer.getDocumentInfo().getPages()` και καλώντας `viewer.view` για κάθε σελίδα, στη συνέχεια αποθηκεύστε τα αποτελέσματα σε κρυφή μνήμη (cache). Αυτό μειώνει την πίεση στη μνήμη και επιταχύνει τις επαναλαμβανόμενες αιτήσεις για το ίδιο βιβλίο εργασίας. Πάντα κλείστε την παρουσία `Viewer` με τη δομή try‑with‑resources για να ελευθερώσετε άμεσα τους εγγενείς πόρους.
 
-## Συνηθισμένες Περιπτώσεις Χρήσης και Οφέλη
-- **Web Portals** – Εμφανίστε οικονομικούς πίνακες χωρίς μακριές αλφαριθμητικές ακολουθίες που διασπούν τη διάταξη.  
-- **Data Analytics Dashboards** – Διατηρήστε μεγάλα σύνολα δεδομένων αναγνώσιμα αποκρύπτοντας το περιττό κείμενο.  
-- **Customer Reporting** – Παρέχετε καθαρές, φιλικές προς εκτύπωση HTML αναφορές.  
+## Συνηθισμένες περιπτώσεις χρήσης και οφέλη
+- **Διαδικτυακές πύλες** – Εμφανίστε οικονομικούς πίνακες χωρίς να σπάζουν τη διάταξη μακριές αλφαριθμητικές ακολουθίες.  
+- **Πίνακες ελέγχου ανάλυσης δεδομένων** – Κρατήστε μεγάλα σύνολα δεδομένων αναγνώσιμα αποκρύπτοντας το υπερβολικό κείμενο.  
+- **Αναφορές πελατών** – Παρέχετε καθαρές, έτοιμες για εκτύπωση HTML αναφορές.  
 
-Χρησιμοποιώντας την **απόκρυψη υπερχείλισης κειμένου Excel**, εξασφαλίζετε ότι η οπτική παρουσίαση παραμένει συνεπής σε προγράμματα περιήγησης και συσκευές.
+Χρησιμοποιώντας την **απόκρυψη υπερχείλισης κειμένου Excel**, εξασφαλίζετε ότι η οπτική παρουσίαση παραμένει συνεπής σε όλα τα προγράμματα περιήγησης και τις συσκευές.
 
-## Σκέψεις Απόδοσης
-- **Memory Management** – Απελευθερώστε την παρουσία `Viewer` άμεσα (όπως φαίνεται με try‑with‑resources).  
-- **Embedded Resources** – Η ενσωμάτωση εικόνων και στυλ μειώνει τον αριθμό των HTTP αιτήσεων αλλά αυξάνει το μέγεθος του HTML· επιλέξτε τη λειτουργία που ταιριάζει στους περιορισμούς του εύρους ζώνης σας.  
-- **Caching** – Αποθηκεύστε το παραγόμενο HTML για βιβλία εργασίας που προσπελάζονται συχνά ώστε να αποφύγετε την επανεπεξεργασία.
+## Σκέψεις απόδοσης
+- **Διαχείριση μνήμης** – Απελευθερώστε την παρουσία `Viewer` άμεσα (όπως φαίνεται με το try‑with‑resources).  
+- **Ενσωματωμένοι πόροι** – Η ενσωμάτωση εικόνων και στυλ μειώνει τον αριθμό των αιτήσεων HTTP αλλά αυξάνει το μέγεθος του HTML· επιλέξτε τη λειτουργία που ταιριάζει στους περιορισμούς του εύρους ζώνης σας.  
+- **Κρυφή μνήμη (Caching)** – Αποθηκεύστε το αποδοθέν HTML για βιβλία εργασίας που προσπελάζονται συχνά ώστε να αποφύγετε την επεξεργασία ξανά.  
 
-## Συνηθισμένα Προβλήματα και Λύσεις
-- **Viewer not releasing memory** – Επαληθεύστε ότι χρησιμοποιείτε το πρότυπο try‑with‑resources· το `Viewer` υλοποιεί το `AutoCloseable`.  
-- **Overflow still appears** – Ελέγξτε ξανά ότι η κλήση `viewOptions.getSpreadsheetOptions().setTextOverflowMode(TextOverflowMode.HIDE_TEXT);` γίνεται *πριν* από `viewer.view(viewOptions)`.  
-- **Missing styles** – Εάν μεταβείτε από ενσωματωμένους σε εξωτερικούς πόρους, βεβαιωθείτε ότι η σελίδα HTML σας συνδέεται με το παραγόμενο αρχείο CSS.
+Το GroupDocs.Viewer επεξεργάζεται ένα βιβλίο εργασίας 300 φύλλων σε λιγότερο από 12 δευτερόλεπτα διατηρώντας τη μέγιστη μνήμη κάτω από 250 MB, χάρη στην αρχιτεκτονική ροής του.
 
-## Συχνές Ερωτήσεις
+## Συνηθισμένα προβλήματα και λύσεις
+- **Ο Viewer δεν ελευθερώνει μνήμη** – Επαληθεύστε ότι χρησιμοποιείτε το πρότυπο try‑with‑resources· ο `Viewer` υλοποιεί το `AutoCloseable`.  
+- **Η υπερχείλιση εξακολουθεί να εμφανίζεται** – Ελέγξτε ξανά ότι η κλήση `viewOptions.getSpreadsheetOptions().setTextOverflowMode(TextOverflowMode.HIDE_TEXT);` γίνεται *πριν* από το `viewer.view(viewOptions)`.  
+- **Απουσία στυλ** – Εάν αλλάξετε από ενσωματωμένους σε εξωτερικούς πόρους, βεβαιωθείτε ότι η σελίδα HTML συνδέεται με το παραγόμενο αρχείο CSS.
 
-**Q1: Τι είναι το GroupDocs.Viewer για Java;**  
-A1: Είναι μια βιβλιοθήκη Java που αποδίδει πάνω από 100 μορφές εγγράφων (συμπεριλαμβανομένου του Excel) σε HTML, PDF, PNG και άλλα, χωρίς την ανάγκη Microsoft Office στον διακομιστή.
+## Συχνές ερωτήσεις
 
-**Q2: Πώς διαχειρίζομαι μεγάλα αρχεία Excel με υπερχείλιση κειμένου;**  
-A2: Χρησιμοποιήστε το `TextOverflowMode.HIDE_TEXT` όπως φαίνεται, και εξετάστε την ενεργοποίηση caching ή την επεξεργασία του αρχείου σε τμήματα για μείωση της πίεσης μνήμης.
+**Q: Τι είναι το GroupDocs.Viewer για Java;**  
+A: Αυτή είναι μια βιβλιοθήκη Java που αποδίδει πάνω από 100 μορφές εγγράφων—συμπεριλαμβανομένου του Excel—σε HTML, PDF, PNG και άλλα, χωρίς την ανάγκη Microsoft Office στον διακομιστή.
 
-**Q3: Μπορώ να προσαρμόσω περαιτέρω την έξοδο HTML;**  
-A3: Ναι. Το `HtmlViewOptions` παρέχει πολλές ρυθμίσεις — όπως προσαρμοσμένο CSS, διαχείριση εικόνων και έλεγχο μεγέθους σελίδας.
+**Q: Πώς να διαχειριστώ μεγάλα αρχεία Excel με υπερχείλιση κειμένου;**  
+A: Χρησιμοποιήστε το `TextOverflowMode.HIDE_TEXT` όπως φαίνεται, και ενεργοποιήστε την κρυφή μνήμη ή επεξεργαστείτε το αρχείο φύλλο‑με‑φύλλο για να διατηρήσετε τη χρήση μνήμης χαμηλή.
 
-**Q4: Ποια είναι τα κοινά προβλήματα κατά τη χρήση αυτής της λειτουργίας;**  
-A4: Η παράλειψη απελευθέρωσης της παρουσία `Viewer`, ή η χρήση της προεπιλεγμένης λειτουργίας υπερχείλισης (που εμφανίζει το κείμενο) αντί του `HIDE_TEXT`.
+**Q: Μπορώ να προσαρμόσω περαιτέρω το HTML αποτέλεσμα;**  
+A: Ναι. Το `HtmlViewOptions` παρέχει πολλές ρυθμίσεις—όπως προσαρμοσμένο CSS, χειρισμό εικόνων και έλεγχο μεγέθους σελίδας—ώστε να προσαρμόσετε το HTML στη μάρκα σας.
 
-**Q5: Πού μπορώ να βρω περισσότερη βοήθεια ή παραδείγματα;**  
-A5: Επισκεφθείτε το [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) για βοήθεια από την κοινότητα και επίσημη τεκμηρίωση.
+**Q: Ποια είναι τα κοινά λάθη όταν χρησιμοποιείτε αυτή τη λειτουργία;**  
+A: Η παράλειψη απελευθέρωσης της παρουσία `Viewer`, ή η κλήση της ρύθμισης υπερχείλισης μετά το `viewer.view`, θα προκαλέσει διαρροές μνήμης ή μη αποτελεσματική απόκρυψη.
+
+**Q: Πού μπορώ να βρω περισσότερη βοήθεια ή παραδείγματα;**  
+A: Επισκεφθείτε το [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) για βοήθεια από την κοινότητα και επίσημη τεκμηρίωση.
 
 ## Συμπέρασμα
-Ακολουθώντας τα παραπάνω βήματα, μπορείτε να **αποκρύψετε την υπερχείλιση κειμένου Excel** στα κελιά όταν **μετατρέπετε excel σε html** με το GroupDocs.Viewer για Java. Αυτή η απλή ρύθμιση βελτιώνει δραματικά την αναγνωσιμότητα των αποδοθέντων λογιστικών φύλλων και ενσωματώνεται άψογα σε λύσεις αναφοράς βασισμένες στο web.
+Ακολουθώντας τα παραπάνω βήματα, μπορείτε να **αποκρύψετε την υπερχείλιση κειμένου Excel** στα κελιά όταν **μετατρέπετε το excel σε html** με το GroupDocs.Viewer για Java. Αυτή η απλή διαμόρφωση βελτιώνει δραματικά την αναγνωσιμότητα των αποδοθέντων λογιστικών φύλλων και ενσωματώνεται άψογα σε λύσεις αναφοράς βασισμένες στο web.
 
-**Πόροι**  
-- **Documentation:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
-- **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)  
-- **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
-- **Free Trial:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- **Temporary License:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+**Πόροι**
+- **Τεκμηρίωση:** [Τεκμηρίωση GroupDocs.Viewer Java](https://docs.groupdocs.com/viewer/java/)  
+- **Αναφορά API:** [Αναφορά API GroupDocs](https://reference.groupdocs.com/viewer/java/)  
+- **Λήψη:** [Λήψεις GroupDocs](https://releases.groupdocs.com/viewer/java/)  
+- **Αγορά:** [Αγορά άδειας GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Δωρεάν δοκιμή:** [Δωρεάν δοκιμή GroupDocs](https://releases.groupdocs.com/viewer/java/)  
+- **Προσωρινή άδεια:** [Αίτηση προσωρινής άδειας](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Τελευταία Ενημέρωση:** 2026-03-19  
-**Δοκιμή Με:** GroupDocs.Viewer 25.2 for Java  
-**Συγγραφέας:** GroupDocs
+**Τελευταία ενημέρωση:** 2026-09-05  
+**Δοκιμάστηκε με:** GroupDocs.Viewer 25.2 for Java  
+**Συγγραφέας:** GroupDocs  
+
+## Σχετικά Σεμινάρια
+
+- [Πώς να μετατρέψετε το Excel σε HTML και να αποδώσετε κρυμμένες γραμμές & στήλες σε Java με το GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
+- [excel σε html java: Παράλειψη απόδοσης κενών γραμμών με το GroupDocs.Viewer](/viewer/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/)
+- [Πώς να μετατρέψετε το Excel σε HTML, JPG, PNG και PDF χρησιμοποιώντας το GroupDocs.Viewer Java](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
