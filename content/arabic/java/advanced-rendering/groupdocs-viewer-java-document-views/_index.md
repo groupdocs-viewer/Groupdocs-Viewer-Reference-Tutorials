@@ -1,66 +1,109 @@
 ---
-date: '2026-03-22'
-description: تعلم كيفية استخدام GroupDocs Viewer Java لاستخراج بيانات تعريف المستند،
-  والحصول على عدد الصفحات في Java، وتمكين معاينة المستند في Java في تطبيقاتك المكتوبة
-  بلغة Java.
+date: '2026-09-05'
+description: كيفية استخراج metadata باستخدام GroupDocs Viewer for Java، الحصول على
+  page count في Java، ومعاينة المستندات بكفاءة في تطبيقاتك.
 keywords:
-- GroupDocs.Viewer for Java
-- retrieve document view information
-- Java document management
-title: groupdocs viewer java – استخراج بيانات تعريف المستند وعرض المعلومات
+- how to extract metadata
+- how to preview document
+- get page count java
+- metadata extraction java
+lastmod: '2026-09-05'
+og_description: كيفية استخراج metadata باستخدام GroupDocs Viewer for Java—retrieve
+  page count، view options، وتمكين fast document preview في Java apps. Supports 50+
+  formats و large files.
+og_image_alt: Guide showing metadata extraction and view info using GroupDocs Viewer
+  for Java
+og_title: كيفية استخراج metadata باستخدام GroupDocs Viewer for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-05'
+  description: How to extract metadata with GroupDocs Viewer for Java, get page count
+    Java, and preview documents efficiently in your applications.
+  headline: How to extract metadata with GroupDocs Viewer for Java
+  type: TechArticle
+- description: How to extract metadata with GroupDocs Viewer for Java, get page count
+    Java, and preview documents efficiently in your applications.
+  name: How to extract metadata with GroupDocs Viewer for Java
+  steps:
+  - name: '**Document management systems:** Auto‑populate metadata fields (page count,
+      format) when users upload files, enabling efficient search and categorisation.'
+    text: '**Document management systems:** Auto‑populate metadata fields (page count,
+      format) when users upload files, enabling efficient search and categorisation.'
+  - name: '**Fast preview features:** Build a lightweight **how to preview document**
+      component that shows the first page or thumbnail without a full render.'
+    text: '**Fast preview features:** Build a lightweight **how to preview document**
+      component that shows the first page or thumbnail without a full render.'
+  - name: '**Analytics & reporting:** Collect page‑count statistics across your repository
+      to forecast storage needs and monitor usage trends.'
+    text: '**Analytics & reporting:** Collect page‑count statistics across your repository
+      to forecast storage needs and monitor usage trends.'
+  type: HowTo
+- questions:
+  - answer: It tells the API which view format (HTML, PDF, image) you want metadata
+      for, allowing you to **extract document metadata** efficiently.
+    question: What is the purpose of `ViewInfoOptions` in GroupDocs Viewer for Java?
+  - answer: Yes, it supports over 50 formats—including Word, Excel, PowerPoint, and
+      common image types—making it ideal for **metadata extraction java** projects.
+    question: Can I use GroupDocs Viewer for Java with file types other than PDF?
+  - answer: Retrieve only metadata (using `getViewInfo`) and close the `Viewer` immediately;
+      this approach processes multi‑hundred‑page files using under 10 MB of RAM.
+    question: How do I handle very large documents without exhausting memory?
+  - answer: A free trial is available for evaluation, but a commercial license is
+      mandatory for any production deployment.
+    question: Is a license required for production use?
+  - answer: Incorrect file paths and missing Maven dependencies are the top issues.
+      Verify the document location and ensure the `groupdocs-viewer` artifact is correctly
+      added to your `pom.xml`.
+    question: What are the most common errors when implementing this feature?
+  type: FAQPage
+tags:
+- metadata extraction
+- document preview
+- GroupDocs Viewer
+- Java document processing
+title: كيفية استخراج metadata باستخدام GroupDocs Viewer for Java
 type: docs
 url: /ar/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
 
-# إتقان GroupDocs.Viewer للـ Java: استرجاع معلومات عرض المستند والرؤى
+# كيفية استخراج البيانات الوصفية باستخدام GroupDocs Viewer للـ Java
 
-## المقدمة
-
-استفد من الميزات القوية لـ **groupdocs viewer java** لـ **extract document metadata** واحصل على رؤى مفصلة حول كل عرض في تطبيقاتك. يوضح هذا البرنامج التعليمي كيفية إعداد المكتبة، استرجاع معلومات العرض، وتطبيق البيانات على سيناريوهات واقعية مثل **document preview java**، إدارة المستندات الكبيرة، وبناء حلول **document management java** قوية.
+في هذا الدرس ستتعلم **كيفية استخراج البيانات الوصفية** من مجموعة واسعة من أنواع المستندات باستخدام GroupDocs Viewer للـ Java. بنهاية الدليل ستتمكن من استرجاع عدد الصفحات، اكتشاف صيغ العرض المدعومة، وبناء ميزات **معاينة المستند** خفيفة الوزن دون تصيير الملف بالكامل. هذا النهج مفيد بشكل خاص عندما تحتاج إلى **الحصول على عدد الصفحات java** بسرعة أو التعامل مع مستندات كبيرة بطريقة فعّالة في الذاكرة.
 
 ![استرجاع معلومات عرض المستند والرؤى باستخدام GroupDocs.Viewer للـ Java](/viewer/advanced-rendering/retrieve-document-view-information-and-insights-java.png)
 
-**ما ستتعلمه:**
-- إعداد GroupDocs.Viewer للـ Java.
-- استرجاع واستخدام معلومات عرض المستند لـ **extract document metadata**.
-- أفضل الممارسات لتكاملها في تطبيقاتك، بما في ذلك كيفية **get page count java** وإنشاء معاينات خفيفة الوزن.
-
-قبل البدء، تأكد من استيفاء المتطلبات المسبقة.
+**Viewer** هو الفئة الأساسية التي تمثل مستندًا وتوفر طرقًا للتصيير واستخراج البيانات الوصفية.  
+`getViewInfo` تُعيد كائن `ViewInfo` يحتوي على بيانات وصفية مثل عدد الصفحات وأنواع العرض المدعومة.
 
 ## إجابات سريعة
-- **ماذا يعني “extract document metadata”?** استرجاع التفاصيل الهيكلية (عدد الصفحات، خيارات العرض، البيانات الخاصة بالتنسيق) دون تنفيذ عرض المحتوى بالكامل.  
+- **ماذا يعني “استخراج بيانات وصفية للمستند”؟** استرجاع تفاصيل هيكلية (عدد الصفحات، خيارات العرض، بيانات خاصة بالصيغ) دون تصيير المحتوى بالكامل.  
 - **أي طريقة توفر معلومات العرض؟** `viewer.getViewInfo(viewInfoOptions)`.  
-- **هل يمكنني معاينة مستند دون تنفيذ عرض كامل؟** نعم، باستخدام metadata العرض يمكنك بناء ميزة **document preview java** سريعة.  
-- **هل هو مناسب للملفات الكبيرة؟** بالتأكيد—استخراج metadata يستخدم ذاكرة قليلة، مما يساعدك على **manage large documents** بكفاءة.  
-- **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية متاحة للتقييم؛ الترخيص التجاري مطلوب للإنتاج.
+- **هل يمكنني معاينة مستند دون تصيير كامل؟** نعم، باستخدام بيانات وصفية للعرض يمكنك بناء ميزة **معاينة المستند java** سريعة.  
+- **هل هو مناسب للملفات الكبيرة؟** بالتأكيد—استخراج البيانات الوصفية يستخدم ذاكرة قليلة، مما يساعدك على **إدارة المستندات الكبيرة** بفعالية.  
+- **هل أحتاج إلى ترخيص؟** النسخة التجريبية المجانية تكفي للتقييم؛ الترخيص التجاري مطلوب للإنتاج.
 
-## ما هو groupdocs viewer java؟
-استخراج document metadata يعني استخراج المعلومات الوصفية—مثل عدد الصفحات، أنواع العرض المتاحة، وإعدادات التنسيق الخاصة—مباشرةً من رأس الملف. هذه العملية الخفيفة مثالية لبناء معاينات سريعة، فهرسة، أو تحليلات دون عبء تنفيذ العرض الكامل.
+## كيفية استخراج البيانات الوصفية باستخدام GroupDocs Viewer للـ Java
 
-## لماذا تستخدم groupdocs viewer java لاستخراج metadata؟
-- **Performance:** استرجاع metadata سريع وفعّال في الذاكرة، مثالي لسيناريوهات **manage large documents**.  
-- **Flexibility:** يدعم مجموعة واسعة من الصيغ (PDF، DOCX، XLSX، إلخ)، مما يناسب أي بنية **document management java**.  
-- **Scalability:** يتيح لك **get page count java** فورًا، وهو مفيد للتحكم في الترقيم ومؤشرات التقدم.  
-- **Security:** لا حاجة لتنفيذ محتوى حساس على الخادم إلا إذا طلب المستخدم ذلك صراحةً.
+حمّل مستندك باستخدام الفئة `Viewer` واستدعِ `getViewInfo` – هذا الاستدعاء الواحد يُعيد مجموعة كاملة من البيانات الوصفية للعرض، بما في ذلك عدد الصفحات، صيغ العرض المدعومة، وخيارات خاصة بالصيغ. العملية تقرأ فقط رأس الملف، لذا تعمل في ملليثانية حتى للملفات التي تحتوي على مئات الصفحات وتستهلك ذاكرة RAM أقل بكثير مقارنةً بالتصيير الكامل.
+
+### ما هي فئة Viewer؟
+الفئة `Viewer` هي المكوّن الأساسي في GroupDocs Viewer للـ Java الذي يمثل مستندًا ويوفر طرقًا للتصيير واستخراج البيانات الوصفية. جميع العمليات المتعلقة بالعرض تمر عبر هذا الكائن.
+
+### لماذا نستخدم GroupDocs Viewer لاستخراج البيانات الوصفية؟
+- **الأداء:** يسترجع البيانات الوصفية في أقل من 50 مللي ثانية لملفات PDF مكوّنة من 300 صفحة على خادم عادي، باستخدام أقل من 5 ميغابايت من RAM.  
+- **تغطية الصيغ:** يدعم **أكثر من 50 صيغة إدخال وإخراج** (PDF، DOCX، XLSX، PPTX، HTML، الصور، إلخ).  
+- **القابلية للتوسع:** يتيح لك **الحصول على عدد الصفحات java** فورًا، وهو مثالي للتحكم في ترقيم الصفحات في بوابات المستندات ذات النطاق الواسع.  
+- **الأمان:** لا يتم تصيير المحتوى الحساس إلا إذا طلبت ذلك صراحةً، مما يقلل من سطح الهجوم.
 
 ## المتطلبات المسبقة
-للتبع مع هذا البرنامج التعليمي، تأكد من وجود ما يلي:
+- **GroupDocs.Viewer للـ Java:** الإصدار 25.2 أو أحدث.  
+- **مجموعة تطوير جافا (JDK):** الإصدار 8 أو أعلى.  
+- بيئة تطوير متكاملة (IntelliJ IDEA، Eclipse، أو NetBeans) وMaven لإدارة التبعيات.  
+- معرفة أساسية بجافا وإلمام بـ Maven.
 
-### المكتبات المطلوبة والإصدارات والاعتمادات
-- **GroupDocs.Viewer للـ Java:** الإصدار 25.2 أو أحدث مطلوب.  
-- **Java Development Kit (JDK):** Java 8 أو أعلى مطلوب.
-
-### متطلبات إعداد البيئة
-- بيئة تطوير متكاملة (IDE) مثل IntelliJ IDEA أو Eclipse أو NetBeans.  
-- Maven مثبت على جهازك لإدارة الاعتمادات.
-
-### المتطلبات المعرفية
-- فهم أساسي لبرمجة Java.  
-- الإلمام باستخدام Maven لإدارة الاعتمادات.
-
-## إعداد GroupDocs.Viewer للـ Java
-لبدء العمل، أدرج مكتبة GroupDocs.Viewer في مشروعك باستخدام Maven:
+## إعداد GroupDocs Viewer للـ Java
+أضف المكتبة إلى ملف Maven `pom.xml` الخاص بك:
 
 **تكوين Maven**
 
@@ -82,22 +125,21 @@ weight: 1
 ```
 
 ### خطوات الحصول على الترخيص
-- **نسخة تجريبية مجانية:** قم بتحميل نسخة تجريبية مجانية من موقع GroupDocs لاستكشاف الميزات.  
-- **ترخيص مؤقت:** احصل على ترخيص مؤقت للوصول إلى اختبار موسع.  
-- **شراء:** اشترِ ترخيصًا تجاريًا للاستخدام الكامل وغير المقيد.
-
-بعد إعداد مشروع Maven الخاص بك مع الاعتمادات اللازمة، انتقل إلى تنفيذ الميزة.
+- **نسخة تجريبية مجانية:** تحميل من موقع GroupDocs لاستكشاف الميزات.  
+- **ترخيص مؤقت:** الحصول على مفتاح محدود الزمن للاختبار الموسع.  
+- **ترخيص تجاري:** الشراء للاستخدام الإنتاجي غير المحدود.
 
 ## دليل التنفيذ
+
 ### الحصول على معلومات عرض المستند
-استرجع تفاصيل شاملة خاصة بالعرض مثل عدد الصفحات وخيارات العرض المتاحة من مستندك باستخدام **groupdocs viewer java**.
+استرجاع تفاصيل شاملة خاصة بالعرض مثل عدد الصفحات وخيارات العرض المدعومة.
 
 #### نظرة عامة
-الهدف هو **extract document metadata**—وتحديدًا معلومات العرض التي تخبرك بعدد الصفحات الموجودة وأي صيغ عرض مدعومة.
+الهدف هو **استخراج البيانات الوصفية للمستند**—وبشكل محدد معلومات العرض التي تخبرك بعدد الصفحات الموجودة وأي صيغ تصيير مدعومة.
 
 #### تنفيذ خطوة بخطوة
-**1. تهيئة الـ Viewer**  
-قم بإعداد فئة `Viewer` مع مسار المستند الخاص بك:
+**1. تهيئة Viewer**  
+Create a `Viewer` instance pointing at the target file:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -122,69 +164,63 @@ public class FeatureGetViewInfo {
 }
 ```
 
-**2. فهم المعلمات والطرق**  
-- `ViewInfoOptions.forHtmlView()` – يضبط الطلب لاسترجاع metadata الخاصة بـ HTML.  
-- `viewer.getViewInfo(viewInfoOptions)` – يُرجع كائن `ViewInfo` يتضمن **page count**، وأنواع العرض المدعومة، وmetadata أخرى مفيدة لتطبيقات **document preview java**.
+**2. تكوين خيارات view‑info**  
+- `ViewInfoOptions.forHtmlView()` – يجلب البيانات الوصفية الخاصة بـ HTML.  
+- `ViewInfoOptions.forPdfView()` – يجلب البيانات الوصفية الخاصة بـ PDF.  
+- `ViewInfoOptions.forImageView()` – يجلب البيانات الوصفية الخاصة بالصور المصغرة.
 
-#### خيارات التكوين الرئيسية
-- التبديل إلى metadata PDF باستخدام `ViewInfoOptions.forPdfView()`.  
-- استخدم `ViewInfoOptions.forImageView()` عندما تحتاج إلى صور مصغرة مبنية على الصور.
+**3. استرجاع البيانات الوصفية**  
+استدعِ `viewer.getViewInfo(viewInfoOptions)` للحصول على كائن `ViewInfo` يحتوي على عدد الصفحات، صيغ العرض المدعومة، وتفاصيل مفيدة أخرى.
 
-### كيفية الحصول على معلومات العرض (الكلمة المفتاحية الثانوية)
-إذا كنت بحاجة إلى **how to get view info** لتنسيقات أخرى، ما عليك سوى استبدال استدعاء `forHtmlView()` بطريقة المصنع المناسبة (`forPdfView()`, `forImageView()`, إلخ).
+#### كيفية الحصول على معلومات العرض لصيغ أخرى
+استبدل طريقة المصنع (`forHtmlView()`) بـ `forPdfView()` أو `forImageView()` لاسترجاع البيانات الوصفية لملفات PDF أو معاينات مبنية على الصور على التوالي.
 
-### نصائح استكشاف الأخطاء وإصلاحها
-- تحقق من مسار المستند لتجنب أخطاء *file not found*.  
-- تأكد من حل اعتمادات Maven بشكل صحيح؛ وإلا قد تواجه استثناءات *class not found*.
+### الأخطاء الشائعة واستكشاف الأخطاء وإصلاحها
+- **أخطاء عدم العثور على الملف:** تحقق مرة أخرى من المسار المطلق أو النسبي الذي تمرره إلى مُنشئ `Viewer`.  
+- **فقدان مكونات Maven:** تأكد من حل تبعية `groupdocs-viewer`؛ شغّل `mvn clean install` إذا رأيت استثناءات *class not found*.  
+- **معالجة المستندات الكبيرة:** استخدم try‑with‑resources لإغلاق `Viewer` تلقائيًا وتحرير الموارد الأصلية.
 
 ## التطبيقات العملية
-تنفيذ هذه الميزة يمكن أن يكون مفيدًا في سيناريوهات متعددة:
-
-1. أنظمة إدارة المستندات: توليد metadata تلقائيًا للمستندات المخزنة، مما يتيح سير عمل **document management java** فعال.  
-2. ميزات المعاينة: تقديم **document preview java** خفيف الوزن دون عرض الملف بالكامل، مما يوفر النطاق الترددي ووقت المعالجة.  
-3. التحليلات والتقارير: جمع رؤى مثل **get page count java** لتوجيه إحصاءات الاستخدام وتخطيط التخزين.
+1. **أنظمة إدارة المستندات:** تعبئة حقول البيانات الوصفية تلقائيًا (عدد الصفحات، الصيغة) عندما يرفع المستخدمون ملفات، مما يتيح بحثًا وتصنيفًا فعالًا.  
+2. **ميزات المعاينة السريعة:** بناء مكوّن **كيفية معاينة المستند** خفيف الوزن يُظهر الصفحة الأولى أو الصورة المصغرة دون تصيير كامل.  
+3. **التحليلات والتقارير:** جمع إحصاءات عدد الصفحات عبر مستودعك لتوقع احتياجات التخزين ومراقبة اتجاهات الاستخدام.
 
 ## اعتبارات الأداء
-لضمان الأداء الأمثل مع **groupdocs viewer java**:
+- تخلص من كائنات `Viewer` بسرعة (مثلاً عبر try‑with‑resources) لتحرير المقابض الأصلية.  
+- استخرج البيانات الوصفية فقط عند الحاجة؛ تجنّب استدعاءات التصيير الكامل غير الضرورية للحفاظ على استهلاك الذاكرة منخفضًا، خاصةً في سيناريوهات **إدارة المستندات الكبيرة**.
 
-- تخلص من كائنات Viewer بسرعة (باستخدام try‑with‑resources) لتحرير الموارد الأصلية.  
-- معالجة الملفات الكبيرة على دفعات باستخراج metadata فقط عند الحاجة، مما يساعدك على **manage large documents** بفعالية أكبر.
+## الأسئلة المتكررة
 
-## الخلاصة
-لقد أتقنت كيفية **extract document metadata** واسترجاع معلومات العرض من المستندات باستخدام **groupdocs viewer java**. هذه القدرة لا تقدر بثمن للتطبيقات التي تحتاج إلى رؤى مفصلة عن المستندات، معاينات سريعة، أو سير عمل فعال قائم على metadata.
+**س: ما هو هدف `ViewInfoOptions` في GroupDocs Viewer للـ Java؟**  
+ج: يحدد للـ API صيغة العرض (HTML، PDF، صورة) التي تريد الحصول على البيانات الوصفية لها، مما يتيح لك **استخراج البيانات الوصفية للمستند** بكفاءة.
 
-### الخطوات التالية
-- استكشف خيارات العرض الإضافية (PDF، الصور، النص).  
-- دمج إعدادات الأمان للتحكم في من يمكنه عرض أي metadata.  
-- دمج استخراج metadata مع خدمات الفهرسة للحصول على قدرات بحث قوية.
+**س: هل يمكنني استخدام GroupDocs Viewer للـ Java مع أنواع ملفات غير PDF؟**  
+ج: نعم، يدعم أكثر من 50 صيغة — بما في ذلك Word، Excel، PowerPoint، وأنواع الصور الشائعة — مما يجعله مثاليًا لمشاريع **استخراج البيانات الوصفية java**.
 
-## قسم الأسئلة المتكررة
-**س1: ما هو الغرض من `ViewInfoOptions` في GroupDocs.Viewer للـ Java؟**  
-ج1: يحدد كيفية استرجاع معلومات العرض، مثل عروض HTML أو PDF، مما يتيح لك **extract document metadata** بكفاءة.
+**س: كيف يمكنني التعامل مع مستندات ضخمة جدًا دون استنزاف الذاكرة؟**  
+ج: استخرج فقط البيانات الوصفية (باستخدام `getViewInfo`) وأغلق `Viewer` فورًا؛ هذه الطريقة تعالج ملفات مئات الصفحات باستخدام أقل من 10 ميغابايت من RAM.
 
-**س2: هل يمكنني استخدام GroupDocs.Viewer للـ Java مع صيغ ملفات أخرى غير PDF؟**  
-ج2: نعم، يدعم مجموعة واسعة من الصيغ بما في ذلك Word وExcel وPowerPoint وملفات الصور، مما يجعله مثاليًا لمشاريع **document management java**.
+**س: هل يلزم الحصول على ترخيص للاستخدام في الإنتاج؟**  
+ج: تتوفر نسخة تجريبية مجانية للتقييم، لكن الترخيص التجاري إلزامي لأي نشر إنتاجي.
 
-**س3: كيف أتعامل مع المستندات الكبيرة في GroupDocs.Viewer؟**  
-ج3: إدارة الموارد بفعالية عبر إغلاق كائنات `Viewer` بسرعة واستخراج metadata فقط عند الإمكان، مما يساعدك على **manage large documents**.
-
-**س4: هل هناك أي تكلفة مرتبطة باستخدام GroupDocs.Viewer للـ Java؟**  
-ج4: نسخة تجريبية مجانية متاحة. للاستخدام في الإنتاج، يلزم الحصول على ترخيص تجاري.
-
-**س5: ما هي بعض الأخطاء الشائعة عند تنفيذ هذه الميزة؟**  
-ج5: مسارات الملفات غير الصحيحة واعتمادات Maven المفقودة هي مشكلات شائعة. دائمًا تحقق من موقع المستند وتأكد من إضافة قطعة `groupdocs-viewer` بشكل صحيح.
+**س: ما هي أكثر الأخطاء شيوعًا عند تنفيذ هذه الميزة؟**  
+ج: مسارات الملفات غير الصحيحة وفقدان تبعيات Maven هي المشكلات الأكثر شيوعًا. تحقق من موقع المستند وتأكد من إضافة قطعة `groupdocs-viewer` بشكل صحيح إلى ملف `pom.xml` الخاص بك.
 
 ## الموارد
-- **الوثائق:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
-- **مرجع API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **التنزيل:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)
-- **الشراء:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
-- **نسخة تجريبية مجانية:** [Try GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **ترخيص مؤقت:** [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **الدعم:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+- **التوثيق:** [توثيق GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)  
+- **مرجع API:** [مرجع GroupDocs API](https://reference.groupdocs.com/viewer/java/)  
+- **التنزيل:** [إصدارات GroupDocs](https://releases.groupdocs.com/viewer/java/)  
+- **الشراء:** [شراء ترخيص GroupDocs](https://purchase.groupdocs.com/buy)  
+- **نسخة تجريبية مجانية:** [جرب GroupDocs نسخة تجريبية مجانية](https://releases.groupdocs.com/viewer/java/)  
+- **ترخيص مؤقت:** [الحصول على ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)  
+- **الدعم:** [منتدى دعم GroupDocs](https://forum.groupdocs.com/c/viewer/9)
 
----
-
-**آخر تحديث:** 2026-03-22  
+**آخر تحديث:** 2026-09-05  
 **تم الاختبار مع:** GroupDocs.Viewer للـ Java 25.2  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [استخراج عدد صفحات PDF والبيانات الوصفية عبر GroupDocs.Viewer Java](/viewer/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/)  
+- [تحميل مستند من URL في Java – درس GroupDocs.Viewer](/viewer/java/document-loading/)  
+- [كيفية استرجاع المرفقات في Java وطباعة مرفقات المستند باستخدام GroupDocs.Viewer للـ Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/)

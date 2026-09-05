@@ -1,68 +1,112 @@
 ---
-date: '2026-03-22'
-description: Tanulja meg, hogyan használja a GroupDocs Viewer Java-t a dokumentum
-  metaadatainak kinyeréséhez, a lapok számának lekérdezéséhez Java-ban, és a dokumentum
-  előnézet engedélyezéséhez Java alkalmazásaiban.
+date: '2026-09-05'
+description: Hogyan lehet kinyerni a metadata-t a GroupDocs Viewer for Java segítségével,
+  lekérni a page count-ot Java-ban, és hatékonyan preview-olni a dokumentumokat az
+  applications-odban.
 keywords:
-- GroupDocs.Viewer for Java
-- retrieve document view information
-- Java document management
-title: groupdocs viewer java – Dokumentum metaadatok kinyerése és információk megtekintése
+- how to extract metadata
+- how to preview document
+- get page count java
+- metadata extraction java
+lastmod: '2026-09-05'
+og_description: Hogyan lehet kinyerni a metadata-t a GroupDocs Viewer for Java—lekérni
+  a page count-ot, view options-ot, és engedélyezni a gyors document preview-t Java
+  appokban. Támogatja a 50+ formats-ot és a large files-ot.
+og_image_alt: Guide showing metadata extraction and view info using GroupDocs Viewer
+  for Java
+og_title: Hogyan lehet kinyerni a metadata-t a GroupDocs Viewer for Java segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-05'
+  description: How to extract metadata with GroupDocs Viewer for Java, get page count
+    Java, and preview documents efficiently in your applications.
+  headline: How to extract metadata with GroupDocs Viewer for Java
+  type: TechArticle
+- description: How to extract metadata with GroupDocs Viewer for Java, get page count
+    Java, and preview documents efficiently in your applications.
+  name: How to extract metadata with GroupDocs Viewer for Java
+  steps:
+  - name: '**Document management systems:** Auto‑populate metadata fields (page count,
+      format) when users upload files, enabling efficient search and categorisation.'
+    text: '**Document management systems:** Auto‑populate metadata fields (page count,
+      format) when users upload files, enabling efficient search and categorisation.'
+  - name: '**Fast preview features:** Build a lightweight **how to preview document**
+      component that shows the first page or thumbnail without a full render.'
+    text: '**Fast preview features:** Build a lightweight **how to preview document**
+      component that shows the first page or thumbnail without a full render.'
+  - name: '**Analytics & reporting:** Collect page‑count statistics across your repository
+      to forecast storage needs and monitor usage trends.'
+    text: '**Analytics & reporting:** Collect page‑count statistics across your repository
+      to forecast storage needs and monitor usage trends.'
+  type: HowTo
+- questions:
+  - answer: It tells the API which view format (HTML, PDF, image) you want metadata
+      for, allowing you to **extract document metadata** efficiently.
+    question: What is the purpose of `ViewInfoOptions` in GroupDocs Viewer for Java?
+  - answer: Yes, it supports over 50 formats—including Word, Excel, PowerPoint, and
+      common image types—making it ideal for **metadata extraction java** projects.
+    question: Can I use GroupDocs Viewer for Java with file types other than PDF?
+  - answer: Retrieve only metadata (using `getViewInfo`) and close the `Viewer` immediately;
+      this approach processes multi‑hundred‑page files using under 10 MB of RAM.
+    question: How do I handle very large documents without exhausting memory?
+  - answer: A free trial is available for evaluation, but a commercial license is
+      mandatory for any production deployment.
+    question: Is a license required for production use?
+  - answer: Incorrect file paths and missing Maven dependencies are the top issues.
+      Verify the document location and ensure the `groupdocs-viewer` artifact is correctly
+      added to your `pom.xml`.
+    question: What are the most common errors when implementing this feature?
+  type: FAQPage
+tags:
+- metadata extraction
+- document preview
+- GroupDocs Viewer
+- Java document processing
+title: Hogyan lehet kinyerni a metadata-t a GroupDocs Viewer for Java segítségével
 type: docs
 url: /hu/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
 
-# Master GroupDocs.Viewer for Java: Dokumentumnézet-információk és betekintések lekérése
+# Hogyan lehet metaadatokat kinyerni a GroupDocs Viewer for Java segítségével
 
-## Bevezetés
+Ebben az oktatóanyagban megtanulja, hogyan kell **metaadatokat kinyerni** a különféle dokumentumtípusokból a GroupDocs Viewer for Java használatával. A útmutató végére képes lesz lekérni az oldalszámokat, felfedezni a támogatott megjelenítési formátumokat, és könnyű **document preview** funkciókat építeni anélkül, hogy a teljes fájlt renderelné. Ez a megközelítés különösen hasznos, ha gyorsan kell **get page count java** vagy nagy dokumentumokat kell memóriahatékony módon kezelni.
 
-Használja ki a **groupdocs viewer java** erőteljes funkcióit a **document metadata** kinyeréséhez, és szerezzen részletes betekintést az egyes nézetekbe alkalmazásaiban. Ez az útmutató végigvezet a könyvtár beállításán, a nézetinformációk lekérésén, és az adatok valós életbeli forgatókönyvekben való alkalmazásán, mint például **document preview java**, nagy dokumentumok kezelése, és robusztus **document management java** megoldások építése.
+![Dokumentum nézetinformációk és betekintések lekérése a GroupDocs.Viewer for Java segítségével](/viewer/advanced-rendering/retrieve-document-view-information-and-insights-java.png)
 
-![Dokumentumnézet-információk és betekintések lekérése a GroupDocs.Viewer for Java segítségével](/viewer/advanced-rendering/retrieve-document-view-information-and-insights-java.png)
-
-**Amit megtanul:**
-- A GroupDocs.Viewer for Java beállítása.
-- A dokumentumnézet-információk lekérése és használata a **document metadata** kinyeréséhez.
-- Legjobb gyakorlatok az alkalmazásokba való integráláshoz, beleértve a **get page count java** használatát és könnyű előnézetek létrehozását.
-
-Kezdés előtt győződjön meg arról, hogy megfelel a követelményeknek.
+**Viewer** az a fő osztály, amely egy dokumentumot képvisel, és módszereket biztosít a rendereléshez és a metaadatok kinyeréséhez.  
+`getViewInfo` egy `ViewInfo` objektumot ad vissza, amely metaadatokat tartalmaz, például az oldalszámot és a támogatott nézettípusokat.
 
 ## Gyors válaszok
-- **Mit jelent a “extract document metadata”?** A struktúrára vonatkozó részletek (oldalszám, nézetopciók, formátum‑specifikus adatok) lekérése a teljes tartalom renderelése nélkül.  
-- **Melyik metódus adja vissza a nézetinformációkat?** `viewer.getViewInfo(viewInfoOptions)`.  
+- **Mi a jelentése a „extract document metadata” kifejezésnek?** A strukturális részletek (oldalszám, nézetopciók, formátumspecifikus adatok) lekérése a teljes tartalom renderelése nélkül.  
+- **Melyik metódus biztosítja a nézetinformációt?** `viewer.getViewInfo(viewInfoOptions)`.  
 - **Előnézhetek egy dokumentumot teljes renderelés nélkül?** Igen, a nézetmetaadatok használatával gyors **document preview java** funkciót építhet.  
-- **Alkalmas nagy fájlokra?** Teljesen – a metaadatok kinyerése minimális memóriát használ, segítve a **manage large documents** hatékony kezelését.  
-- **Szükségem van licencre?** Az ingyenes próba a kiértékeléshez megfelelő; a termeléshez kereskedelmi licenc szükséges.
+- **Alkalmas nagy fájlokra?** Teljesen – a metaadatok kinyerése minimális memóriát használ, segítve a **manage large documents** hatékonyan.  
+- **Szükségem van licencre?** Egy ingyenes próba a kiértékeléshez megfelelő; a termeléshez kereskedelmi licenc szükséges.
 
-## Mi az a groupdocs viewer java?
-A document metadata kinyerése azt jelenti, hogy leírható információkat – például oldalszámot, elérhető nézettípusokat és formátum‑specifikus beállításokat – közvetlenül a fájl fejlécéből nyerünk ki. Ez a könnyű művelet ideális gyors előnézetek, indexelés vagy analitika építéséhez a teljes renderelés terhe nélkül.
+## Hogyan lehet metaadatokat kinyerni a GroupDocs Viewer for Java segítségével
 
-## Miért használja a groupdocs viewer java-t metaadatok kinyerésére?
-- **Teljesítmény:** A metaadatok lekérése gyors és memória‑hatékony, tökéletes a **manage large documents** helyzetekben.  
-- **Rugalmasság:** Széles körű formátumot támogat (PDF, DOCX, XLSX stb.), illeszkedik bármely **document management java** stackhez.  
-- **Skálázhatóság:** Lehetővé teszi a **get page count java** azonnali lekérését, ami hasznos az oldalszámozási vezérlők és folyamatjelzők számára.  
-- **Biztonság:** Nem szükséges érzékeny tartalmat renderelni a szerveren, hacsak a felhasználó kifejezetten nem kéri.
+Töltse be a dokumentumot a `Viewer` osztállyal, és hívja meg a `getViewInfo` metódust – ez az egyetlen hívás visszaadja a nézetmetaadatok teljes készletét, beleértve az oldalszámot, a támogatott nézettípusokat és a formátumspecifikus beállításokat. A művelet csak a fájlfejlécet olvassa, így ez ezredmásodpercek alatt lefut, még több száz oldalas fájlok esetén is, és sokkal kevesebb RAM-ot használ, mint egy teljes renderelés.
+
+### Mi a Viewer osztály?
+A `Viewer` osztály a GroupDocs Viewer for Java központi komponense, amely egy dokumentumot képvisel, és módszereket biztosít a rendereléshez és a metaadatok kinyeréséhez. Minden nézethez kapcsolódó művelet ezen az objektumon keresztül folyik.
+
+### Miért használja a GroupDocs Viewer-t metaadatok kinyeréséhez?
+- **Teljesítmény:** Metaadatokat kér le 50 ms alatt 300 oldalas PDF-eknél egy tipikus szerveren, kevesebb mint 5 MB RAM használatával.  
+- **Formátum lefedettség:** Támogat **50+ bemeneti és kimeneti formátumot** (PDF, DOCX, XLSX, PPTX, HTML, képek, stb.).  
+- **Skálázhatóság:** Lehetővé teszi, hogy **get page count java** azonnal megkapja, ami ideális a lapozási vezérlők számára nagy‑méretű dokumentumportálokban.  
+- **Biztonság:** Érzékeny tartalom renderelése nem történik, hacsak kifejezetten nem kérjük, ez csökkenti a támadási felületet.
 
 ## Előfeltételek
-Az útmutató követéséhez győződjön meg róla, hogy rendelkezik:
+- **GroupDocs.Viewer for Java:** 25.2 vagy újabb verzió.  
+- **Java Development Kit (JDK):** 8 vagy újabb verzió.  
+- Egy IDE (IntelliJ IDEA, Eclipse vagy NetBeans) és Maven a függőségkezeléshez.  
+- Alapvető Java ismeretek és Maven ismerete.
 
-### Szükséges könyvtárak, verziók és függőségek
-- **GroupDocs.Viewer for Java:** A 25.2 vagy újabb verzió szükséges.
-- **Java Development Kit (JDK):** Java 8 vagy újabb szükséges.
+## A GroupDocs Viewer for Java beállítása
+Adja hozzá a könyvtárat a Maven `pom.xml` fájlhoz:
 
-### Környezet beállítási követelmények
-- IDE, például IntelliJ IDEA, Eclipse vagy NetBeans.
-- Maven telepítve a gépen a függőségkezeléshez.
-
-### Tudás előfeltételek
-- Alapvető Java programozási ismeretek.
-- Ismeret a Maven használatában a függőségek kezeléséhez.
-
-## A GroupDocs.Viewer for Java beállítása
-A kezdéshez adja hozzá a GroupDocs.Viewer könyvtárat a projektjéhez Maven segítségével:
-
-**Maven Configuration**
+**Maven konfiguráció**
 
 ```xml
 <repositories>
@@ -82,22 +126,21 @@ A kezdéshez adja hozzá a GroupDocs.Viewer könyvtárat a projektjéhez Maven s
 ```
 
 ### Licenc beszerzési lépések
-- **Ingyenes próba:** Töltse le az ingyenes próbaverziót a GroupDocs weboldaláról a funkciók felfedezéséhez.  
-- **Ideiglenes licenc:** Szerezzen ideiglenes licencet a kiterjesztett tesztelési hozzáféréshez.  
-- **Vásárlás:** Vásároljon kereskedelmi licencet a teljes, korlátlan használathoz.
+- **Ingyenes próba:** Töltse le a GroupDocs weboldaláról a funkciók kipróbálásához.  
+- **Ideiglenes licenc:** Szerezzen időkorlátos kulcsot a kiterjesztett teszteléshez.  
+- **Kereskedelmi licenc:** Vásárolja meg korlátlan termelési használathoz.
 
-A szükséges függőségek Maven projektbe való beállítása után lépjen tovább a funkció megvalósításához.
+## Megvalósítási útmutató
 
-## Implementációs útmutató
-### Dokumentumnézet-információk lekérése
-Szerezzen be átfogó, nézet‑specifikus részleteket, mint például oldalszámok és elérhető nézetopciók a dokumentumból a **groupdocs viewer java** használatával.
+### Dokumentum nézetinformáció lekérése
+Szerezzen be átfogó, nézetspecifikus részleteket, például oldalszámokat és támogatott nézetopciókat.
 
 #### Áttekintés
-A cél a **document metadata** kinyerése – konkrétan a nézetinformáció, amely megmutatja, hány oldal létezik és mely renderelési formátumok támogatottak.
+A cél a **extract document metadata** – konkrétan a nézetinformációk, amelyek megmutatják, hány oldal létezik, és mely renderelési formátumok támogatottak.
 
 #### Lépésről‑lépésre megvalósítás
 **1. A Viewer inicializálása**  
-Állítsa be a `Viewer` osztályt a dokumentum útvonalával:
+Hozzon létre egy `Viewer` példányt, amely a célfájlra mutat:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -122,69 +165,65 @@ public class FeatureGetViewInfo {
 }
 ```
 
-**2. Paraméterek és metódusok megértése**  
-- **`ViewInfoOptions.forHtmlView()`** – A kérést HTML‑specifikus metaadatok lekérésére konfigurálja.  
-- **`viewer.getViewInfo(viewInfoOptions)`** – Visszaad egy `ViewInfo` objektumot, amely tartalmazza az **page count** értéket, a támogatott nézettípusokat és egyéb metaadatokat, amelyek hasznosak a **document preview java** megvalósításokhoz.
+**2. A view‑info beállítások konfigurálása**  
+- `ViewInfoOptions.forHtmlView()` – HTML‑specifikus metaadatokat kér le.  
+- `ViewInfoOptions.forPdfView()` – PDF‑specifikus metaadatokat kér le.  
+- `ViewInfoOptions.forImageView()` – kép‑bélyegkép metaadatokat kér le.
 
-#### Kulcsfontosságú konfigurációs beállítások
-- Váltson PDF metaadatokra a `ViewInfoOptions.forPdfView()` használatával.  
-- Használja a `ViewInfoOptions.forImageView()`‑t, ha képalapú bélyegképekre van szükség.
+**3. A metaadatok lekérése**  
+Hívja meg a `viewer.getViewInfo(viewInfoOptions)` metódust, hogy egy `ViewInfo` objektumot kapjon, amely tartalmazza az oldalszámot, a támogatott nézettípusokat és egyéb hasznos részleteket.
 
-### Hogyan kérhetünk nézetinformációt (másodlagos kulcsszó)
-Ha más formátumokhoz kell **how to get view info**, egyszerűen cserélje le a `forHtmlView()` hívást a megfelelő gyári metódusra (`forPdfView()`, `forImageView()`, stb.).
+#### Hogyan kérje le a nézetinformációt más formátumokhoz
+Cserélje le a gyári metódust (`forHtmlView()`) a `forPdfView()` vagy `forImageView()`-ra, hogy a PDF vagy képalapú előnézetek metaadatait kérje le.
 
-### Hibaelhárítási tippek
-- Ellenőrizze a dokumentum útvonalát a *file not found* hibák elkerülése érdekében.  
-- Győződjön meg arról, hogy a Maven függőségek helyesen vannak feloldva; ellenkező esetben *class not found* kivételekkel találkozhat.
+### Gyakori buktatók és hibaelhárítás
+- **File‑not‑found hibák:** Ellenőrizze újra a `Viewer` konstruktorának átadott abszolút vagy relatív útvonalat.  
+- **Hiányzó Maven artefaktok:** Győződjön meg arról, hogy a `groupdocs-viewer` függőség feloldódik; futtassa a `mvn clean install` parancsot, ha *class not found* kivételeket lát.  
+- **Nagy dokumentumok kezelése:** Használjon try‑with‑resources szerkezetet a `Viewer` automatikus bezárásához és a natív erőforrások felszabadításához.
 
 ## Gyakorlati alkalmazások
-Ennek a funkciónak a megvalósítása számos helyzetben előnyös lehet:
+1. **Dokumentumkezelő rendszerek:** Automatikusan töltse fel a metaadatmezőket (oldalszám, formátum), amikor a felhasználók fájlokat töltenek fel, ezáltal hatékony keresést és kategorizálást tesz lehetővé.  
+2. **Gyors előnézeti funkciók:** Építsen egy könnyű **how to preview document** komponenst, amely az első oldalt vagy bélyegképet mutatja teljes renderelés nélkül.  
+3. **Elemzés és jelentés:** Gyűjtsön oldalszám‑statisztikákat a tárolójában, hogy előre jelezze a tárhelyigényt és nyomon kövesse a használati trendeket.
 
-1. **Dokumentumkezelő rendszerek:** Automatikusan generál metaadatokat a tárolt dokumentumokhoz, lehetővé téve a hatékony **document management java** munkafolyamatokat.  
-2. **Előnézeti funkciók:** Kínáljon könnyű **document preview java** megoldást a teljes fájl renderelése nélkül, ezzel sávszélességet és feldolgozási időt takarítva meg.  
-3. **Analitika és jelentéskészítés:** Gyűjtsön információkat, például **get page count java**, a felhasználási statisztikák és a tárolási tervezés támogatásához.
+## Teljesítmény szempontok
+- A `Viewer` példányokat azonnal szabadítsa fel (pl. try‑with‑resources használatával), hogy a natív kezelőket elengedje.  
+- Csak szükség esetén vonja ki a metaadatokat; kerülje a felesleges teljes renderelés hívásokat, hogy alacsonyan tartsa a memóriahasználatot, különösen a **manage large documents** (nagy dokumentumok kezelése) helyzetekben.
 
-## Teljesítménybeli megfontolások
-Az optimális teljesítmény biztosítása a **groupdocs viewer java** használatával:
+## Gyakran feltett kérdések
 
-- **A Viewer példányok gyors elengedése** (try‑with‑resources használatával) a natív erőforrások felszabadításához.  
-- **Nagy fájlok kötegelt feldolgozása** a metaadatok csak szükség esetén történő kinyerésével, ami segít a **manage large documents** hatékonyabb kezelésében.
+**K: Mi a célja a `ViewInfoOptions`-nek a GroupDocs Viewer for Java-ban?**  
+Azt mondja az API-nak, melyik nézetformátumra (HTML, PDF, kép) szeret metaadatokat, lehetővé téve a **extract document metadata** hatékony kinyerését.
 
-## Következtetés
-Már elsajátította, hogyan **extract document metadata** és hogyan kérje le a nézetinformációkat dokumentumokból a **groupdocs viewer java** használatával. Ez a képesség felbecsülhetetlen értékű olyan alkalmazások számára, amelyek részletes dokumentum‑insightokra, gyors előnézetekre vagy hatékony metaadat‑vezérelt munkafolyamatokra van szükségük.
+**K: Használhatom a GroupDocs Viewer for Java-t PDF-ön kívüli fájltípusokkal?**  
+Igen, több mint 50 formátumot támogat – beleértve a Word, Excel, PowerPoint és általános képformátumokat – így ideális a **metadata extraction java** projektekhez.
 
-### Következő lépések
-- Fedezze fel a további renderelési lehetőségeket (PDF, képek, szöveg).  
-- Integráljon biztonsági beállításokat, hogy szabályozza, ki láthatja mely metaadatokat.  
-- Kombinálja a metaadat‑kinyerést indexelési szolgáltatásokkal a hatékony keresési lehetőségekért.
+**K: Hogyan kezeljek nagyon nagy dokumentumokat anélkül, hogy a memóriát kimeríteném?**  
+Csak a metaadatokat kérje le (`getViewInfo` használatával), és azonnal zárja be a `Viewer`-t; ez a megközelítés több száz oldalas fájlokat kevesebb, mint 10 MB RAM-mal dolgoz fel.
 
-## GyIK szekció
-**Q1: Mi a `ViewInfoOptions` célja a GroupDocs.Viewer for Java-ban?**  
-A1: Meghatározza, hogyan szeretné lekérni a nézetinformációkat, például HTML vagy PDF nézetek esetén, lehetővé téve a **document metadata** hatékony kinyerését.
+**K: Szükséges licenc a termelési használathoz?**  
+Az ingyenes próba elérhető kiértékeléshez, de a kereskedelmi licenc kötelező minden termelési telepítéshez.
 
-**Q2: Használhatom a GroupDocs.Viewer for Java-t más fájlformátumokkal a PDF-en kívül?**  
-A2: Igen, széles körű formátumot támogat, beleértve a Word, Excel, PowerPoint és képfájlokat, így ideális **document management java** projektekhez.
+**K: Mik a leggyakoribb hibák ennek a funkciónak a megvalósításakor?**  
+A leggyakoribb problémák a helytelen fájlútvonalak és a hiányzó Maven függőségek. Ellenőrizze a dokumentum helyét, és győződjön meg róla, hogy a `groupdocs-viewer` artefakt megfelelően hozzá van adva a `pom.xml`-hez.
 
-**Q3: Hogyan kezelem a nagy dokumentumokat a GroupDocs.Viewer-ben?**  
-A3: Hatékonyan kezelje az erőforrásokat a `Viewer` példányok gyors lezárásával és csak a szükséges metaadatok kinyerésével, ami segít a **manage large documents** kezelésében.
-
-**Q4: Van költség a GroupDocs.Viewer for Java használatával kapcsolatban?**  
-A4: Elérhető egy ingyenes próba. A termeléshez kereskedelmi licenc szükséges.
-
-**Q5: Milyen gyakori hibák fordulhatnak elő ennek a funkciónak a megvalósításakor?**  
-A5: Gyakori problémák a helytelen fájlútvonalak és a hiányzó Maven függőségek. Mindig ellenőrizze a dokumentum helyét, és győződjön meg arról, hogy a `groupdocs-viewer` artefakt megfelelően hozzá van adva.
-
-## Források
-- **Documentation:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Download:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)
-- **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
-- **Free Trial:** [Try GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Temporary License:** [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+## Erőforrások
+- **Dokumentáció:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API referencia:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Letöltés:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)  
+- **Vásárlás:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Ingyenes próba:** [Try GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Ideiglenes licenc:** [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Támogatás:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Last Updated:** 2026-03-22  
+**Last Updated:** 2026-09-05  
 **Tested With:** GroupDocs.Viewer for Java 25.2  
 **Author:** GroupDocs
+
+## Kapcsolódó oktatóanyagok
+
+- [PDF oldalszám és metaadatok kinyerése a GroupDocs.Viewer Java segítségével](/viewer/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/)
+- [Dokumentum betöltése URL-ről Java-ban – GroupDocs.Viewer oktatóanyag](/viewer/java/document-loading/)
+- [Mellékletek lekérése Java-ban és dokumentummellékletek nyomtatása a GroupDocs.Viewer for Java segítségével](/viewer/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/)

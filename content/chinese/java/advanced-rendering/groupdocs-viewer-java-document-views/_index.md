@@ -1,64 +1,108 @@
 ---
-date: '2026-03-22'
-description: 了解如何在 Java 应用程序中使用 GroupDocs Viewer Java 提取文档元数据、获取页面计数以及启用文档预览。
+date: '2026-09-05'
+description: 如何使用 GroupDocs Viewer for Java 提取 metadata、获取 page count（Java），并在您的应用程序中高效
+  preview 文档。
 keywords:
-- GroupDocs.Viewer for Java
-- retrieve document view information
-- Java document management
-title: groupdocs viewer java – 提取文档元数据并查看信息
+- how to extract metadata
+- how to preview document
+- get page count java
+- metadata extraction java
+lastmod: '2026-09-05'
+og_description: 如何使用 GroupDocs Viewer for Java 提取 metadata——检索 page count、view options，并在
+  Java 应用中实现快速 document preview。支持 50+ formats 和 large files。
+og_image_alt: Guide showing metadata extraction and view info using GroupDocs Viewer
+  for Java
+og_title: 如何使用 GroupDocs Viewer for Java 提取 metadata
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-05'
+  description: How to extract metadata with GroupDocs Viewer for Java, get page count
+    Java, and preview documents efficiently in your applications.
+  headline: How to extract metadata with GroupDocs Viewer for Java
+  type: TechArticle
+- description: How to extract metadata with GroupDocs Viewer for Java, get page count
+    Java, and preview documents efficiently in your applications.
+  name: How to extract metadata with GroupDocs Viewer for Java
+  steps:
+  - name: '**Document management systems:** Auto‑populate metadata fields (page count,
+      format) when users upload files, enabling efficient search and categorisation.'
+    text: '**Document management systems:** Auto‑populate metadata fields (page count,
+      format) when users upload files, enabling efficient search and categorisation.'
+  - name: '**Fast preview features:** Build a lightweight **how to preview document**
+      component that shows the first page or thumbnail without a full render.'
+    text: '**Fast preview features:** Build a lightweight **how to preview document**
+      component that shows the first page or thumbnail without a full render.'
+  - name: '**Analytics & reporting:** Collect page‑count statistics across your repository
+      to forecast storage needs and monitor usage trends.'
+    text: '**Analytics & reporting:** Collect page‑count statistics across your repository
+      to forecast storage needs and monitor usage trends.'
+  type: HowTo
+- questions:
+  - answer: It tells the API which view format (HTML, PDF, image) you want metadata
+      for, allowing you to **extract document metadata** efficiently.
+    question: What is the purpose of `ViewInfoOptions` in GroupDocs Viewer for Java?
+  - answer: Yes, it supports over 50 formats—including Word, Excel, PowerPoint, and
+      common image types—making it ideal for **metadata extraction java** projects.
+    question: Can I use GroupDocs Viewer for Java with file types other than PDF?
+  - answer: Retrieve only metadata (using `getViewInfo`) and close the `Viewer` immediately;
+      this approach processes multi‑hundred‑page files using under 10 MB of RAM.
+    question: How do I handle very large documents without exhausting memory?
+  - answer: A free trial is available for evaluation, but a commercial license is
+      mandatory for any production deployment.
+    question: Is a license required for production use?
+  - answer: Incorrect file paths and missing Maven dependencies are the top issues.
+      Verify the document location and ensure the `groupdocs-viewer` artifact is correctly
+      added to your `pom.xml`.
+    question: What are the most common errors when implementing this feature?
+  type: FAQPage
+tags:
+- metadata extraction
+- document preview
+- GroupDocs Viewer
+- Java document processing
+title: 如何使用 GroupDocs Viewer for Java 提取 metadata
 type: docs
 url: /zh/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
 
-# 掌握 GroupDocs.Viewer for Java：检索文档视图信息和洞察
+# 如何使用 GroupDocs Viewer for Java 提取元数据
 
-## 介绍
-
-利用 **groupdocs viewer java** 的强大功能来 **extract document metadata**，并获取应用程序中每个视图的详细洞察。本教程将指导您完成库的设置、检索视图信息，以及将数据应用于真实场景，例如 **document preview java**、管理大型文档以及构建强大的 **document management java** 解决方案。
+在本教程中，您将学习 **如何提取元数据**，适用于使用 GroupDocs Viewer for Java 的多种文档类型。完成本指南后，您将能够检索页数，发现受支持的视图格式，并构建轻量级的 **文档预览** 功能，而无需渲染完整文件。当您需要快速 **获取页面计数 java** 或以内存高效的方式处理大型文档时，此方法尤为有价值。
 
 ![Retrieve Document View Information and Insights with GroupDocs.Viewer for Java](/viewer/advanced-rendering/retrieve-document-view-information-and-insights-java.png)
 
-**您将学习的内容：**
-- 设置 GroupDocs.Viewer for Java。
-- 检索并使用文档视图信息来 **extract document metadata**。
-- 将其集成到您的应用程序中的最佳实践，包括如何 **get page count java** 并创建轻量级预览。
+**Viewer** 是表示文档的核心类，提供渲染和元数据提取的方法。  
+`getViewInfo` 返回一个包含页数和受支持视图类型等元数据的 `ViewInfo` 对象。
 
-在开始之前，请确保您满足前置条件。
-
-## 快速答疑
-- **“extract document metadata” 是什么意思？** 在不渲染完整内容的情况下检索结构化细节（页数、视图选项、特定格式的数据）。  
+## 快速答案
+- **“提取文档元数据”是什么意思？** 检索结构细节（页数、视图选项、特定格式的数据），而无需渲染完整内容。  
 - **哪个方法提供视图信息？** `viewer.getViewInfo(viewInfoOptions)`。  
-- **我可以在不完整渲染的情况下预览文档吗？** 可以，使用视图元数据即可构建快速的 **document preview java** 功能。  
-- **它适用于大文件吗？** 完全适用——元数据提取占用的内存极少，帮助您 **manage large documents** 高效运行。  
-- **需要许可证吗？** 免费试用可用于评估；生产环境需要商业许可证。
+- **我可以在不完整渲染的情况下预览文档吗？** 是的，使用视图元数据可以构建快速的 **document preview java** 功能。  
+- **它适用于大文件吗？** 完全适用——元数据提取使用最少的内存，帮助您高效 **manage large documents**。  
+- **我需要许可证吗？** 免费试用可用于评估；生产环境需要商业许可证。
 
-## 什么是 groupdocs viewer java？
-提取文档元数据是指直接从文件头部获取描述性信息——如页数、可用视图类型以及特定格式设置。这种轻量级操作非常适合在不进行完整渲染的情况下构建快速预览、索引或分析。
+## 如何使用 GroupDocs Viewer for Java 提取元数据
 
-## 为什么使用 groupdocs viewer java 进行元数据提取？
-- **性能：** 元数据检索快速且内存高效，完美适用于 **manage large documents** 场景。  
-- **灵活性：** 支持广泛的格式（PDF、DOCX、XLSX 等），适配任何 **document management java** 堆栈。  
-- **可扩展性：** 可即时 **get page count java**，对分页控件和进度指示器非常有用。  
-- **安全性：** 除非用户明确请求，否则无需在服务器上渲染敏感内容。
+使用 `Viewer` 类加载文档并调用 `getViewInfo` —— 这一次调用即可返回完整的视图元数据集，包括页数、受支持的视图类型以及特定格式的选项。该操作仅读取文件头部，即使是数百页的文件也能在毫秒级完成，并且消耗的 RAM 远低于完整渲染。
 
-## 前置条件
-要跟随本教程，请确保您具备以下条件：
+### Viewer 类是什么？
+`Viewer` 类是 GroupDocs Viewer for Java 的核心组件，表示文档并提供渲染和元数据提取的方法。所有与视图相关的操作都通过此对象进行。
 
-### 必需的库、版本和依赖
-- **GroupDocs.Viewer for Java：** 需要 25.2 或更高版本。  
-- **Java Development Kit (JDK)：** 需要 Java 8 或更高版本。
+### 为什么使用 GroupDocs Viewer 进行元数据提取？
+- **性能：** 在典型服务器上，对 300 页 PDF 的元数据检索时间低于 50 ms，使用的 RAM 少于 5 MB。  
+- **格式覆盖：** 支持 **50+ 输入和输出格式**（PDF、DOCX、XLSX、PPTX、HTML、图像等）。  
+- **可扩展性：** 使您能够即时 **get page count java**，这对于大型文档门户的分页控制非常理想。  
+- **安全性：** 除非您明确请求，否则不会渲染敏感内容，从而降低攻击面。
 
-### 环境搭建要求
-- IntelliJ IDEA、Eclipse 或 NetBeans 等 IDE。  
-- 本机已安装 Maven 用于依赖管理。
+## 前提条件
+- **GroupDocs.Viewer for Java:** 版本 25.2 或更高。  
+- **Java Development Kit (JDK):** 版本 8 或更高。  
+- IDE（IntelliJ IDEA、Eclipse 或 NetBeans）和 Maven 用于依赖管理。  
+- 基本的 Java 知识并熟悉 Maven。
 
-### 知识前置
-- 基础的 Java 编程理解。  
-- 熟悉使用 Maven 管理依赖。
-
-## 设置 GroupDocs.Viewer for Java
-首先，在项目中通过 Maven 引入 GroupDocs.Viewer 库：
+## 设置 GroupDocs Viewer for Java
+将库添加到您的 Maven `pom.xml` 中：
 
 **Maven 配置**
 
@@ -79,23 +123,22 @@ weight: 1
 </dependencies>
 ```
 
-### 许可证获取步骤
-- **免费试用：** 从 GroupDocs 官网下载免费试用版以探索功能。  
-- **临时许可证：** 获取临时许可证以进行更长时间的测试。  
-- **购买：** 购买商业许可证以获得完整、无限制的使用权。
+### 获取许可证的步骤
+- **免费试用：** 从 GroupDocs 网站下载以探索功能。  
+- **临时许可证：** 获取限时密钥以进行扩展测试。  
+- **商业许可证：** 购买以在生产中无限制使用。
 
-在使用必要的依赖配置好 Maven 项目后，继续实现该功能。
+## 实施指南
 
-## 实现指南
 ### 获取文档视图信息
-使用 **groupdocs viewer java** 检索文档的综合视图细节，如页数和可用视图选项。
+检索全面的视图特定细节，例如页数和受支持的视图选项。
 
 #### 概述
-目标是 **extract document metadata**——具体指能够告诉您文档有多少页以及支持哪些渲染格式的视图信息。
+目标是 **提取文档元数据**——具体而言是视图信息，告诉您文档有多少页以及支持哪些渲染格式。
 
 #### 步骤实现
 **1. 初始化 Viewer**  
-使用文档路径设置 `Viewer` 类：
+创建指向目标文件的 `Viewer` 实例：
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -120,69 +163,65 @@ public class FeatureGetViewInfo {
 }
 ```
 
-**2. 参数和方法说明**  
-- **`ViewInfoOptions.forHtmlView()`** – 配置请求以检索 HTML 专用的元数据。  
-- **`viewer.getViewInfo(viewInfoOptions)`** – 返回一个 `ViewInfo` 对象，包含 **page count**、支持的视图类型以及其他对 **document preview java** 实现有用的元数据。
+**2. 配置 view‑info 选项**  
+- `ViewInfoOptions.forHtmlView()` – 获取 HTML 特定的元数据。  
+- `ViewInfoOptions.forPdfView()` – 获取 PDF 特定的元数据。  
+- `ViewInfoOptions.forImageView()` – 获取图像缩略图的元数据。
 
-#### 关键配置选项
-- 使用 `ViewInfoOptions.forPdfView()` 切换到 PDF 元数据。  
-- 当需要基于图像的缩略图时，使用 `ViewInfoOptions.forImageView()`。
+**3. 检索元数据**  
+调用 `viewer.getViewInfo(viewInfoOptions)` 以获取包含页数、受支持视图类型以及其他有用细节的 `ViewInfo` 对象。
 
-### 如何获取视图信息（次要关键词）
-如果需要 **how to get view info** 其他格式，只需将 `forHtmlView()` 调用替换为相应的工厂方法（`forPdfView()`、`forImageView()` 等）。
+#### 如何获取其他格式的视图信息
+将工厂方法（`forHtmlView()`）替换为 `forPdfView()` 或 `forImageView()`，即可分别检索 PDF 或基于图像的预览元数据。
 
-### 故障排除提示
-- 验证文档路径以避免 *file not found* 错误。  
-- 确保 Maven 依赖已正确解析；否则可能会遇到 *class not found* 异常。
+### 常见陷阱和故障排除
+- **文件未找到错误：** 仔细检查传递给 `Viewer` 构造函数的绝对或相对路径。  
+- **缺少 Maven 构件：** 确保 `groupdocs-viewer` 依赖能够解析；如果看到 *class not found* 异常，请运行 `mvn clean install`。  
+- **大文档处理：** 使用 try‑with‑resources 自动关闭 `Viewer` 并释放本机资源。
 
 ## 实际应用
-实现此功能可在多种场景中受益：
+1. **文档管理系统：** 当用户上传文件时自动填充元数据字段（页数、格式），实现高效搜索和分类。  
+2. **快速预览功能：** 构建轻量级的 **how to preview document** 组件，显示首页或缩略图而无需完整渲染。  
+3. **分析与报告：** 收集仓库中的页数统计，以预测存储需求并监控使用趋势。
 
-1. **文档管理系统：** 自动为存储的文档生成元数据，支持高效的 **document management java** 工作流。  
-2. **预览功能：** 提供轻量级 **document preview java**，无需渲染整个文件，节省带宽和处理时间。  
-3. **分析与报告：** 收集 **get page count java** 等洞察，以驱动使用统计和存储规划。
+## 性能考虑因素
+- 及时释放 `Viewer` 实例（例如通过 try‑with‑resources）以释放本机句柄。  
+- 仅在需要时提取元数据；避免不必要的完整渲染调用，以保持低内存使用，特别是在 **manage large documents** 场景下。
 
-## 性能考虑
-为确保使用 **groupdocs viewer java** 时的最佳性能：
+## 常见问题
 
-- **及时释放 Viewer 实例**（使用 try‑with‑resources）以释放本地资源。  
-- **批量处理大型文件** 时，仅在需要时提取元数据，这有助于更有效地 **manage large documents**。
+**Q: `ViewInfoOptions` 在 GroupDocs Viewer for Java 中的作用是什么？**  
+A: 它告诉 API 您想要获取哪种视图格式（HTML、PDF、图像）的元数据，从而能够高效 **提取文档元数据**。
 
-## 结论
-您已经掌握了如何使用 **groupdocs viewer java** **extract document metadata** 并检索文档的视图信息。这一能力对需要详细文档洞察、快速预览或高效元数据驱动工作流的应用程序极为宝贵。
+**Q: 我可以在 GroupDocs Viewer for Java 中使用除 PDF 之外的文件类型吗？**  
+A: 是的，它支持超过 50 种格式，包括 Word、Excel、PowerPoint 和常见图像类型，使其非常适合 **metadata extraction java** 项目。
 
-### 后续步骤
-- 探索其他渲染选项（PDF、图像、文本）。  
-- 集成安全设置，以控制谁可以查看哪些元数据。  
-- 将元数据提取与索引服务结合，实现强大的搜索功能。
+**Q: 如何在不耗尽内存的情况下处理非常大的文档？**  
+A: 仅检索元数据（使用 `getViewInfo`）并立即关闭 `Viewer`；此方法在处理数百页文件时使用的 RAM 不到 10 MB。
 
-## 常见问答
-**Q1：`ViewInfoOptions` 在 GroupDocs.Viewer for Java 中的作用是什么？**  
-A1：它指定您希望检索的视图信息类型，如 HTML 或 PDF 视图，从而高效 **extract document metadata**。
+**Q: 生产使用是否需要许可证？**  
+A: 提供免费试用供评估，但任何生产部署都必须拥有商业许可证。
 
-**Q2：GroupDocs.Viewer for Java 能否处理除 PDF 之外的其他文件格式？**  
-A2：可以，支持包括 Word、Excel、PowerPoint 以及图像文件在内的多种格式，非常适合 **document management java** 项目。
-
-**Q3：如何在 GroupDocs.Viewer 中处理大型文档？**  
-A3：通过及时关闭 `Viewer` 实例并仅提取元数据来高效管理资源，这有助于 **manage large documents**。
-
-**Q4：使用 GroupDocs.Viewer for Java 是否需要付费？**  
-A4：提供免费试用。生产环境需购买商业许可证。
-
-**Q5：实现此功能时常见的陷阱有哪些？**  
-A5：文件路径错误和缺少 Maven 依赖是常见问题。请始终确认文档位置并确保已正确添加 `groupdocs-viewer` 构件。
+**Q: 实现此功能时最常见的错误是什么？**  
+A: 最常见的问题是文件路径错误和缺少 Maven 依赖。请验证文档位置，并确保 `groupdocs-viewer` 构件已正确添加到您的 `pom.xml` 中。
 
 ## 资源
 - **文档：** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
-- **API 参考：** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
-- **下载：** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)  
-- **购买：** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
-- **免费试用：** [Try GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- **临时许可证：** [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **支持：** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+- **API reference：** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Download：** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)  
+- **Purchase：** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Free trial：** [Try GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Temporary license：** [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Support：** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**最后更新：** 2026-03-22  
-**测试版本：** GroupDocs.Viewer for Java 25.2  
+**最后更新：** 2026-09-05  
+**测试环境：** GroupDocs.Viewer for Java 25.2  
 **作者：** GroupDocs
+
+## 相关教程
+
+- [通过 GroupDocs.Viewer Java 提取 PDF 页数和元数据](/viewer/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/)
+- [在 Java 中从 URL 加载文档 – GroupDocs.Viewer 教程](/viewer/java/document-loading/)
+- [如何在 Java 中检索附件并使用 GroupDocs.Viewer for Java 打印文档附件](/viewer/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/)

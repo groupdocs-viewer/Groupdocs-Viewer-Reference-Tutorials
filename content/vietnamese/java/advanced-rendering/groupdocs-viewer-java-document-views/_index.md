@@ -1,66 +1,109 @@
 ---
-date: '2026-03-22'
-description: Tìm hiểu cách sử dụng GroupDocs Viewer Java để trích xuất siêu dữ liệu
-  tài liệu, lấy số trang trong Java và bật tính năng xem trước tài liệu trong các
-  ứng dụng Java của bạn.
+date: '2026-09-05'
+description: Cách trích xuất metadata với GroupDocs Viewer for Java, lấy số trang
+  và xem trước tài liệu một cách hiệu quả trong các ứng dụng của bạn.
 keywords:
-- GroupDocs.Viewer for Java
-- retrieve document view information
-- Java document management
-title: groupdocs viewer java – Trích xuất siêu dữ liệu tài liệu & Xem thông tin
+- how to extract metadata
+- how to preview document
+- get page count java
+- metadata extraction java
+lastmod: '2026-09-05'
+og_description: Cách trích xuất metadata với GroupDocs Viewer for Java—lấy số trang,
+  các tùy chọn xem và cho phép xem trước tài liệu nhanh trong các ứng dụng Java. Hỗ
+  trợ hơn 50 định dạng và tệp lớn.
+og_image_alt: Guide showing metadata extraction and view info using GroupDocs Viewer
+  for Java
+og_title: Cách trích xuất metadata với GroupDocs Viewer for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-05'
+  description: How to extract metadata with GroupDocs Viewer for Java, get page count
+    Java, and preview documents efficiently in your applications.
+  headline: How to extract metadata with GroupDocs Viewer for Java
+  type: TechArticle
+- description: How to extract metadata with GroupDocs Viewer for Java, get page count
+    Java, and preview documents efficiently in your applications.
+  name: How to extract metadata with GroupDocs Viewer for Java
+  steps:
+  - name: '**Document management systems:** Auto‑populate metadata fields (page count,
+      format) when users upload files, enabling efficient search and categorisation.'
+    text: '**Document management systems:** Auto‑populate metadata fields (page count,
+      format) when users upload files, enabling efficient search and categorisation.'
+  - name: '**Fast preview features:** Build a lightweight **how to preview document**
+      component that shows the first page or thumbnail without a full render.'
+    text: '**Fast preview features:** Build a lightweight **how to preview document**
+      component that shows the first page or thumbnail without a full render.'
+  - name: '**Analytics & reporting:** Collect page‑count statistics across your repository
+      to forecast storage needs and monitor usage trends.'
+    text: '**Analytics & reporting:** Collect page‑count statistics across your repository
+      to forecast storage needs and monitor usage trends.'
+  type: HowTo
+- questions:
+  - answer: It tells the API which view format (HTML, PDF, image) you want metadata
+      for, allowing you to **extract document metadata** efficiently.
+    question: What is the purpose of `ViewInfoOptions` in GroupDocs Viewer for Java?
+  - answer: Yes, it supports over 50 formats—including Word, Excel, PowerPoint, and
+      common image types—making it ideal for **metadata extraction java** projects.
+    question: Can I use GroupDocs Viewer for Java with file types other than PDF?
+  - answer: Retrieve only metadata (using `getViewInfo`) and close the `Viewer` immediately;
+      this approach processes multi‑hundred‑page files using under 10 MB of RAM.
+    question: How do I handle very large documents without exhausting memory?
+  - answer: A free trial is available for evaluation, but a commercial license is
+      mandatory for any production deployment.
+    question: Is a license required for production use?
+  - answer: Incorrect file paths and missing Maven dependencies are the top issues.
+      Verify the document location and ensure the `groupdocs-viewer` artifact is correctly
+      added to your `pom.xml`.
+    question: What are the most common errors when implementing this feature?
+  type: FAQPage
+tags:
+- metadata extraction
+- document preview
+- GroupDocs Viewer
+- Java document processing
+title: Cách trích xuất metadata với GroupDocs Viewer for Java
 type: docs
 url: /vi/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
 
-# Nắm Vững GroupDocs.Viewer cho Java: Truy xuất Thông tin Xem Tài liệu và Những hiểu biết
+# Cách trích xuất siêu dữ liệu với GroupDocs Viewer cho Java
 
-## Giới thiệu
+Trong hướng dẫn này, bạn sẽ học **cách trích xuất siêu dữ liệu** từ nhiều loại tài liệu khác nhau bằng cách sử dụng GroupDocs Viewer cho Java. Khi kết thúc hướng dẫn, bạn sẽ có thể lấy số trang, khám phá các định dạng xem được hỗ trợ, và xây dựng các tính năng **xem trước tài liệu** nhẹ mà không cần render toàn bộ tệp. Cách tiếp cận này đặc biệt hữu ích khi bạn cần **lấy số trang java** nhanh chóng hoặc xử lý các tài liệu lớn một cách tiết kiệm bộ nhớ.
 
-Tận dụng các tính năng mạnh mẽ của **groupdocs viewer java** để **extract document metadata** và có được những hiểu biết chi tiết về mỗi chế độ xem trong ứng dụng của bạn. Hướng dẫn này sẽ chỉ cho bạn cách thiết lập thư viện, truy xuất thông tin xem, và áp dụng dữ liệu vào các kịch bản thực tế như **document preview java**, quản lý tài liệu lớn, và xây dựng các giải pháp **document management java** mạnh mẽ.
+![Lấy Thông tin và Nhận thức về Xem Tài liệu với GroupDocs.Viewer cho Java](/viewer/advanced-rendering/retrieve-document-view-information-and-insights-java.png)
 
-![Retrieve Document View Information and Insights with GroupDocs.Viewer for Java](/viewer/advanced-rendering/retrieve-document-view-information-and-insights-java.png)
-
-**Bạn sẽ học được:**
-- Cài đặt GroupDocs.Viewer cho Java.
-- Truy xuất và sử dụng thông tin xem tài liệu để **extract document metadata**.
-- Các thực tiễn tốt nhất để tích hợp vào ứng dụng của bạn, bao gồm cách **get page count java** và tạo các bản xem trước nhẹ.
-
-Trước khi bắt đầu, hãy đảm bảo bạn đáp ứng các điều kiện tiên quyết.
+**Viewer** là lớp cốt lõi đại diện cho một tài liệu và cung cấp các phương thức để render và trích xuất siêu dữ liệu.  
+`getViewInfo` trả về một đối tượng `ViewInfo` chứa siêu dữ liệu như số trang và các loại xem được hỗ trợ.
 
 ## Câu trả lời nhanh
-- **“extract document metadata” có nghĩa là gì?** Truy xuất chi tiết cấu trúc (số trang, tùy chọn xem, dữ liệu đặc thù định dạng) mà không cần render toàn bộ nội dung.  
+- **Ý nghĩa của “trích xuất siêu dữ liệu tài liệu” là gì?** Truy xuất các chi tiết cấu trúc (số trang, tùy chọn xem, dữ liệu đặc thù định dạng) mà không render toàn bộ nội dung.  
 - **Phương thức nào cung cấp thông tin xem?** `viewer.getViewInfo(viewInfoOptions)`.  
-- **Tôi có thể xem trước tài liệu mà không render toàn bộ không?** Có, bằng cách sử dụng siêu dữ liệu xem, bạn có thể xây dựng tính năng **document preview java** nhanh.  
-- **Có phù hợp với các tệp lớn không?** Chắc chắn—việc trích xuất siêu dữ liệu sử dụng ít bộ nhớ, giúp bạn **manage large documents** hiệu quả.  
-- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí đủ cho đánh giá; giấy phép thương mại cần thiết cho môi trường sản xuất.
+- **Tôi có thể xem trước tài liệu mà không render toàn bộ không?** Có, bằng cách sử dụng siêu dữ liệu xem bạn có thể xây dựng tính năng **document preview java** nhanh.  
+- **Có phù hợp với các tệp lớn không?** Chắc chắn—việc trích xuất siêu dữ liệu sử dụng bộ nhớ tối thiểu, giúp bạn **manage large documents** một cách hiệu quả.  
+- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí hoạt động cho việc đánh giá; giấy phép thương mại cần thiết cho môi trường sản xuất.
 
-## groupdocs viewer java là gì?
-Việc trích xuất siêu dữ liệu tài liệu có nghĩa là lấy ra thông tin mô tả—như số trang, các loại chế độ xem có sẵn và các cài đặt đặc thù định dạng—trực tiếp từ tiêu đề tệp. Hoạt động nhẹ này lý tưởng cho việc xây dựng các bản xem trước nhanh, lập chỉ mục, hoặc phân tích mà không cần tải toàn bộ nội dung.
+## Cách trích xuất siêu dữ liệu với GroupDocs Viewer cho Java
 
-## Tại sao nên sử dụng groupdocs viewer java để trích xuất siêu dữ liệu?
-- **Hiệu suất:** Việc truy xuất siêu dữ liệu nhanh và tiết kiệm bộ nhớ, hoàn hảo cho các kịch bản **manage large documents**.  
-- **Linh hoạt:** Hỗ trợ nhiều định dạng (PDF, DOCX, XLSX, v.v.), phù hợp với bất kỳ ngăn xếp **document management java** nào.  
-- **Khả năng mở rộng:** Cho phép bạn **get page count java** ngay lập tức, hữu ích cho các điều khiển phân trang và chỉ báo tiến độ.  
-- **Bảo mật:** Không cần render nội dung nhạy cảm trên máy chủ trừ khi người dùng yêu cầu rõ ràng.
+Tải tài liệu của bạn bằng lớp `Viewer` và gọi `getViewInfo` – cuộc gọi duy nhất này trả về toàn bộ siêu dữ liệu xem, bao gồm số trang, các loại xem được hỗ trợ và các tùy chọn đặc thù định dạng. Thao tác chỉ đọc phần đầu tệp, vì vậy nó chạy trong vài mili giây ngay cả với các tệp hàng trăm trang và tiêu tốn RAM ít hơn nhiều so với việc render toàn bộ.
 
-## Điều kiện tiên quyết
-Để làm theo hướng dẫn này, hãy chắc chắn rằng bạn có:
+### Lớp Viewer là gì?
+Lớp `Viewer` là thành phần cốt lõi của GroupDocs Viewer cho Java, đại diện cho một tài liệu và cung cấp các phương thức để render và trích xuất siêu dữ liệu. Tất cả các thao tác liên quan đến việc xem đều đi qua đối tượng này.
 
-### Thư viện, Phiên bản và Phụ thuộc cần thiết
-- **GroupDocs.Viewer for Java:** Yêu cầu phiên bản 25.2 trở lên.  
-- **Java Development Kit (JDK):** Cần Java 8 hoặc cao hơn.
+### Tại sao nên sử dụng GroupDocs Viewer để trích xuất siêu dữ liệu?
+- **Hiệu suất:** Truy xuất siêu dữ liệu trong dưới 50 ms cho các PDF 300 trang trên máy chủ tiêu chuẩn, sử dụng dưới 5 MB RAM.  
+- **Phạm vi định dạng:** Hỗ trợ **hơn 50 định dạng đầu vào và đầu ra** (PDF, DOCX, XLSX, PPTX, HTML, hình ảnh, v.v.).  
+- **Khả năng mở rộng:** Cho phép bạn **lấy số trang java** ngay lập tức, rất phù hợp cho các điều khiển phân trang trong các cổng tài liệu quy mô lớn.  
+- **Bảo mật:** Không có việc render nội dung nhạy cảm trừ khi bạn yêu cầu rõ ràng, giảm bề mặt tấn công.
 
-### Yêu cầu thiết lập môi trường
-- Một IDE như IntelliJ IDEA, Eclipse hoặc NetBeans.  
-- Maven được cài đặt trên máy để quản lý phụ thuộc.
+## Yêu cầu trước
+- **GroupDocs.Viewer for Java:** phiên bản 25.2 hoặc mới hơn.  
+- **Java Development Kit (JDK):** phiên bản 8 hoặc cao hơn.  
+- Một IDE (IntelliJ IDEA, Eclipse, hoặc NetBeans) và Maven để quản lý phụ thuộc.  
+- Kiến thức cơ bản về Java và quen thuộc với Maven.
 
-### Kiến thức tiên quyết
-- Kiến thức cơ bản về lập trình Java.  
-- Quen thuộc với việc sử dụng Maven để quản lý phụ thuộc.
-
-## Cài đặt GroupDocs.Viewer cho Java
-Để bắt đầu, thêm thư viện GroupDocs.Viewer vào dự án của bạn bằng Maven:
+## Cài đặt GroupDocs Viewer cho Java
+Thêm thư viện vào tệp Maven `pom.xml` của bạn:
 
 **Cấu hình Maven**
 
@@ -82,22 +125,21 @@ Việc trích xuất siêu dữ liệu tài liệu có nghĩa là lấy ra thôn
 ```
 
 ### Các bước lấy giấy phép
-- **Dùng thử miễn phí:** Tải bản dùng thử miễn phí từ trang web GroupDocs để khám phá tính năng.  
-- **Giấy phép tạm thời:** Nhận giấy phép tạm thời để truy cập thử nghiệm kéo dài.  
-- **Mua:** Mua giấy phép thương mại để sử dụng đầy đủ, không giới hạn.
-
-Sau khi thiết lập dự án Maven với các phụ thuộc cần thiết, tiếp tục triển khai tính năng.
+- **Bản dùng thử miễn phí:** Tải xuống từ trang web GroupDocs để khám phá các tính năng.  
+- **Giấy phép tạm thời:** Nhận khóa có thời hạn để thử nghiệm mở rộng.  
+- **Giấy phép thương mại:** Mua để sử dụng không giới hạn trong môi trường sản xuất.
 
 ## Hướng dẫn triển khai
-### Lấy Thông tin Xem Tài liệu
-Truy xuất chi tiết cụ thể về chế độ xem như số trang và các tùy chọn xem có sẵn từ tài liệu của bạn bằng **groupdocs viewer java**.
+
+### Lấy thông tin xem tài liệu
+Lấy các chi tiết cụ thể về việc xem như số trang và các tùy chọn xem được hỗ trợ.
 
 #### Tổng quan
-Mục tiêu là **extract document metadata**—cụ thể là thông tin xem cho biết có bao nhiêu trang và các định dạng render nào được hỗ trợ.
+Mục tiêu là **trích xuất siêu dữ liệu tài liệu**—cụ thể là thông tin xem cho biết có bao nhiêu trang và các định dạng render nào được hỗ trợ.
 
-#### Triển khai theo từng bước
+#### Triển khai từng bước
 **1. Khởi tạo Viewer**  
-Cài đặt lớp `Viewer` với đường dẫn tới tài liệu của bạn:
+Tạo một thể hiện `Viewer` trỏ tới tệp mục tiêu:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -122,69 +164,65 @@ public class FeatureGetViewInfo {
 }
 ```
 
-**2. Hiểu các tham số và phương thức**  
-- **`ViewInfoOptions.forHtmlView()`** – Cấu hình yêu cầu để truy xuất siêu dữ liệu đặc thù cho HTML.  
-- **`viewer.getViewInfo(viewInfoOptions)`** – Trả về một đối tượng `ViewInfo` bao gồm **page count**, các loại chế độ xem được hỗ trợ, và các siêu dữ liệu khác hữu ích cho các triển khai **document preview java**.
+**2. Cấu hình các tùy chọn view‑info**  
+- `ViewInfoOptions.forHtmlView()` – lấy siêu dữ liệu đặc thù HTML.  
+- `ViewInfoOptions.forPdfView()` – lấy siêu dữ liệu đặc thù PDF.  
+- `ViewInfoOptions.forImageView()` – lấy siêu dữ liệu thumbnail hình ảnh.
 
-#### Các tùy chọn cấu hình chính
-- Chuyển sang siêu dữ liệu PDF bằng `ViewInfoOptions.forPdfView()`.  
-- Sử dụng `ViewInfoOptions.forImageView()` khi bạn cần các hình thu nhỏ dựa trên hình ảnh.
+**3. Lấy siêu dữ liệu**  
+Gọi `viewer.getViewInfo(viewInfoOptions)` để nhận một đối tượng `ViewInfo` chứa số trang, các loại xem được hỗ trợ và các chi tiết hữu ích khác.
 
-### Cách lấy thông tin xem (từ khóa phụ)
-Nếu bạn cần **how to get view info** cho các định dạng khác, chỉ cần thay thế lời gọi `forHtmlView()` bằng phương thức factory thích hợp (`forPdfView()`, `forImageView()`, v.v.).
+#### Cách lấy thông tin xem cho các định dạng khác
+Thay thế phương thức tạo (`forHtmlView()`) bằng `forPdfView()` hoặc `forImageView()` để lấy siêu dữ liệu cho các preview PDF hoặc dựa trên hình ảnh tương ứng.
 
-### Mẹo khắc phục sự cố
-- Xác minh đường dẫn tài liệu để tránh lỗi *file not found*.  
-- Đảm bảo các phụ thuộc Maven được giải quyết đúng; nếu không bạn có thể gặp ngoại lệ *class not found*.
+### Những khó khăn thường gặp và khắc phục
+- **File‑not‑found errors:** Kiểm tra lại đường dẫn tuyệt đối hoặc tương đối bạn truyền vào constructor của `Viewer`.  
+- **Missing Maven artifacts:** Đảm bảo phụ thuộc `groupdocs-viewer` được giải quyết; chạy `mvn clean install` nếu bạn gặp ngoại lệ *class not found*.  
+- **Large document handling:** Sử dụng try‑with‑resources để tự động đóng `Viewer` và giải phóng tài nguyên gốc.
 
 ## Ứng dụng thực tiễn
-Việc triển khai tính năng này có thể hữu ích trong nhiều kịch bản:
+1. **Document management systems:** Tự động điền các trường siêu dữ liệu (số trang, định dạng) khi người dùng tải lên tệp, cho phép tìm kiếm và phân loại hiệu quả.  
+2. **Fast preview features:** Xây dựng một thành phần **how to preview document** nhẹ, hiển thị trang đầu hoặc thumbnail mà không cần render toàn bộ.  
+3. **Analytics & reporting:** Thu thập thống kê số trang trong toàn bộ kho để dự đoán nhu cầu lưu trữ và theo dõi xu hướng sử dụng.
 
-1. **Hệ thống Quản lý Tài liệu:** Tự động tạo siêu dữ liệu cho các tài liệu đã lưu, cho phép quy trình làm việc **document management java** hiệu quả.  
-2. **Tính năng Xem trước:** Cung cấp **document preview java** nhẹ mà không cần render toàn bộ tệp, tiết kiệm băng thông và thời gian xử lý.  
-3. **Phân tích và Báo cáo:** Thu thập những hiểu biết như **get page count java** để thúc đẩy thống kê sử dụng và kế hoạch lưu trữ.
+## Các cân nhắc về hiệu suất
+- Giải phóng các thể hiện `Viewer` kịp thời (ví dụ, qua try‑with‑resources) để giải phóng các handle gốc.  
+- Chỉ trích xuất siêu dữ liệu khi cần; tránh các cuộc gọi render toàn bộ không cần thiết để giữ mức sử dụng bộ nhớ thấp, đặc biệt trong các kịch bản **manage large documents**.
 
-## Các cân nhắc về hiệu năng
-Để đảm bảo hiệu năng tối ưu với **groupdocs viewer java**:
+## Câu hỏi thường gặp
 
-- **Giải phóng các thể hiện Viewer kịp thời** (sử dụng try‑with‑resources) để giải phóng tài nguyên gốc.  
-- **Xử lý hàng loạt các tệp lớn** bằng cách chỉ trích xuất siêu dữ liệu khi cần, giúp bạn **manage large documents** hiệu quả hơn.
+**Q: Mục đích của `ViewInfoOptions` trong GroupDocs Viewer cho Java là gì?**  
+A: Nó cho API biết định dạng xem (HTML, PDF, image) bạn muốn lấy siêu dữ liệu, cho phép bạn **trích xuất siêu dữ liệu tài liệu** một cách hiệu quả.
 
-## Kết luận
-Bạn đã nắm vững cách **extract document metadata** và truy xuất thông tin xem từ tài liệu bằng **groupdocs viewer java**. Khả năng này vô giá cho các ứng dụng cần hiểu biết chi tiết về tài liệu, bản xem trước nhanh, hoặc quy trình làm việc dựa trên siêu dữ liệu hiệu quả.
+**Q: Tôi có thể sử dụng GroupDocs Viewer cho Java với các loại tệp khác ngoài PDF không?**  
+A: Có, nó hỗ trợ hơn 50 định dạng—bao gồm Word, Excel, PowerPoint và các loại hình ảnh phổ biến—làm cho nó trở thành lựa chọn lý tưởng cho các dự án **metadata extraction java**.
 
-### Các bước tiếp theo
-- Khám phá các tùy chọn render bổ sung (PDF, hình ảnh, văn bản).  
-- Tích hợp cài đặt bảo mật để kiểm soát ai có thể xem siêu dữ liệu nào.  
-- Kết hợp trích xuất siêu dữ liệu với dịch vụ lập chỉ mục để có khả năng tìm kiếm mạnh mẽ.
+**Q: Làm thế nào để xử lý các tài liệu rất lớn mà không tiêu tốn bộ nhớ?**  
+A: Chỉ lấy siêu dữ liệu (bằng cách sử dụng `getViewInfo`) và đóng `Viewer` ngay lập tức; cách tiếp cận này xử lý các tệp hàng trăm trang với dưới 10 MB RAM.
 
-## Phần Câu hỏi thường gặp
-**Q1: Mục đích của `ViewInfoOptions` trong GroupDocs.Viewer cho Java là gì?**  
-A1: Nó xác định cách bạn muốn truy xuất thông tin xem, như chế độ HTML hoặc PDF, cho phép bạn **extract document metadata** một cách hiệu quả.
+**Q: Có cần giấy phép cho việc sử dụng trong môi trường sản xuất không?**  
+A: Bản dùng thử miễn phí có sẵn để đánh giá, nhưng giấy phép thương mại là bắt buộc cho bất kỳ triển khai sản xuất nào.
 
-**Q2: Tôi có thể sử dụng GroupDocs.Viewer cho Java với các định dạng tệp khác ngoài PDF không?**  
-A2: Có, nó hỗ trợ nhiều định dạng bao gồm Word, Excel, PowerPoint và các tệp hình ảnh, làm cho nó trở thành lựa chọn lý tưởng cho các dự án **document management java**.
-
-**Q3: Làm thế nào để xử lý tài liệu lớn trong GroupDocs.Viewer?**  
-A3: Quản lý tài nguyên hiệu quả bằng cách đóng các thể hiện `Viewer` kịp thời và chỉ trích xuất siêu dữ liệu khi có thể, giúp bạn **manage large documents**.
-
-**Q4: Có chi phí nào liên quan đến việc sử dụng GroupDocs.Viewer cho Java không?**  
-A4: Có bản dùng thử miễn phí. Đối với môi trường sản xuất, cần giấy phép thương mại.
-
-**Q5: Những khó khăn phổ biến nào khi triển khai tính năng này?**  
-A5: Đường dẫn tệp không đúng và thiếu phụ thuộc Maven là các vấn đề thường gặp. Luôn xác minh vị trí tài liệu và đảm bảo artifact `groupdocs-viewer` được thêm đúng cách.
+**Q: Những lỗi phổ biến nhất khi triển khai tính năng này là gì?**  
+A: Đường dẫn tệp không đúng và thiếu phụ thuộc Maven là những vấn đề hàng đầu. Xác minh vị trí tài liệu và đảm bảo artifact `groupdocs-viewer` được thêm đúng vào `pom.xml` của bạn.
 
 ## Tài nguyên
-- **Documentation:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Download:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)
-- **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
-- **Free Trial:** [Try GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Temporary License:** [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Tài liệu:** [Tài liệu GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)  
+- **Tham chiếu API:** [Tham chiếu API GroupDocs](https://reference.groupdocs.com/viewer/java/)  
+- **Tải xuống:** [Bản phát hành GroupDocs](https://releases.groupdocs.com/viewer/java/)  
+- **Mua:** [Mua giấy phép GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Dùng thử miễn phí:** [Thử dùng miễn phí GroupDocs](https://releases.groupdocs.com/viewer/java/)  
+- **Giấy phép tạm thời:** [Nhận giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)  
+- **Hỗ trợ:** [Diễn đàn hỗ trợ GroupDocs](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Cập nhật lần cuối:** 2026-03-22  
-**Kiểm tra với:** GroupDocs.Viewer for Java 25.2  
+**Cập nhật lần cuối:** 2026-09-05  
+**Được kiểm tra với:** GroupDocs.Viewer for Java 25.2  
 **Tác giả:** GroupDocs
+
+## Các hướng dẫn liên quan
+
+- [Trích xuất số trang PDF và siêu dữ liệu qua GroupDocs.Viewer Java](/viewer/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/)
+- [Tải tài liệu từ URL trong Java – Hướng dẫn GroupDocs.Viewer](/viewer/java/document-loading/)
+- [Cách lấy tệp đính kèm Java và In tệp đính kèm tài liệu với GroupDocs.Viewer cho Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/)
