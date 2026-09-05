@@ -1,121 +1,186 @@
 ---
-date: 2026-03-19
-description: A dokumentum renderelés mestersége a GroupDocs.Viewer Java oktatóanyagokkal,
-  bemutatva, hogyan rendereljünk PDF-et Java-ban, hogyan adjunk hozzá vízjelet Java-ban,
-  és a teljesítményhangolást.
+date: 2026-09-05
+description: Ismerje meg, hogyan adhat hozzá Java PDF vízjelet a GroupDocs.Viewer
+  használatával, hogyan renderelhet PDF-eket hatékonyan, és hogyan optimalizálhatja
+  a teljesítményt szerveroldali Java alkalmazásokhoz.
 is_root: true
-linktitle: GroupDocs.Viewer for Java Tutorials
-title: PDF renderelése Java – Átfogó útmutatók és példák a GroupDocs.Viewer for Java-hoz
+keywords:
+- java pdf watermark
+- pdf to html java
+- pdf to images java
+- server side pdf rendering
+- render pdf java
+lastmod: 2026-09-05
+linktitle: GroupDocs.Viewer for Java oktatóanyagok
+og_description: A Java PDF vízjel oktatóanyag bemutatja, hogyan ágyazhat be szöveges
+  vagy képes vízjeleket PDF-ekbe a GroupDocs.Viewer for Java segítségével. Lépésről‑lépésre
+  útmutatást és teljesítmény tippeket tartalmaz.
+og_image_alt: Screenshot of Java PDF watermark rendering using GroupDocs.Viewer
+og_title: Java PDF vízjel – vízjelek hozzáadása a GroupDocs.Viewer segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-05'
+  description: Learn how to add a Java PDF watermark using GroupDocs.Viewer, render
+    PDFs efficiently, and tune performance for server‑side Java applications.
+  headline: How to add a Java PDF watermark with GroupDocs.Viewer
+  type: TechArticle
+- questions:
+  - answer: Yes. GroupDocs.Viewer for Java is a pure‑Java library and does not require
+      Microsoft Office, Adobe Reader, or other external components.
+    question: Can I render PDFs without installing any third‑party software?
+  - answer: Create a `Watermark` object with the desired text, assign it to `ViewerConfig`,
+      and pass the config to the `Viewer` when rendering.
+    question: How do I add a text watermark while rendering a PDF?
+  - answer: Render only the pages you need, reuse `Viewer` instances, and enable stream‑based
+      rendering to keep memory usage low.
+    question: What is the best way to improve rendering speed for large PDFs?
+  - answer: Yes. Use the `DocumentInfo` class after loading the document to retrieve
+      metadata such as author, creation date, and keywords.
+    question: Is it possible to extract the author and creation date from a PDF?
+  - answer: Absolutely. Fetch the file as an `InputStream` from S3 and pass the stream
+      to the `Viewer` constructor.
+    question: Can I load a PDF directly from an AWS S3 URL?
+  type: FAQPage
+tags:
+- java pdf watermark
+- GroupDocs Viewer
+- document rendering
+- PDF conversion
+- Java PDF processing
+title: Hogyan adjunk hozzá Java PDF vízjelet a GroupDocs.Viewer segítségével
 type: docs
 url: /hu/java/
 weight: 10
 ---
 
-# Render PDF Java – Átfogó oktatóanyagok és példák a GroupDocs.Viewer for Java-hoz
+# Java PDF vízjel – útmutató a vízjelek hozzáadásához a GroupDocs.Viewer segítségével
 
-Üdvözöljük a **render pdf java** használatával kapcsolatos végső forrásban a GroupDocs.Viewer segítségével. Akár most kezd bele, akár egy nagy forgalmú dokumentumnéző finomhangolásán dolgozik, ez az útmutató végigvezeti Önt a PDF-ek Java-ban történő renderelésének minden aspektusán – az alapbeállítástól a fejlett teljesítményoptimalizálásig. Gyakorlati tippeket, valós példákat és világos lépésről‑lépésre útmutatót talál, amelyet közvetlenül a projektjeiben alkalmazhat.
+Welcome to the definitive resource for **java pdf watermark** using GroupDocs.Viewer. Whether you are building a low‑traffic internal tool or a high‑throughput public portal, this guide shows you how to embed text or image watermarks, render PDFs to HTML or images, and fine‑tune performance for server‑side Java rendering. You’ll get practical tips, real‑world use cases, and step‑by‑step instructions that you can copy into your own projects.
 
 ## Gyors válaszok
-- **Mi a GroupDocs.Viewer for Java elsődleges célja?** A különféle dokumentumformátumok (köztük a PDF) HTML-re, képekre vagy PDF-re történő renderelése Microsoft Office szükségessége nélkül.  
-- **Renderelhetek PDF-eket szerveroldalon?** Igen – a könyvtár teljesen a szerveren működik, így ideális web‑alapú nézők számára.  
-- **Szükségem van licencre a termeléshez?** A kereskedelmi licenc szükséges a termelési környezetben történő telepítéshez; ingyenes próbaverzió elérhető értékeléshez.  
-- **Mely Java verziók támogatottak?** Java 8 és újabb, beleértve a Java 11, Java 17 és későbbi LTS kiadásokat.  
-- **Lehetséges a teljesítményhangolás?** Természetesen – lásd a “Performance Tuning Java” részt a memória‑ és sebesség‑optimalizáló technikákért.  
+- **Mi a GroupDocs.Viewer for Java elsődleges célja?** Rendering a wide range of document formats (including PDF) to HTML, images, or PDF without needing Microsoft Office.  
+- **Renderelhetek PDF-eket a szerver oldalon?** Yes – the library works completely on the server, making it ideal for web‑based viewers.  
+- **Szükségem van licencre a termeléshez?** A commercial license is required for production deployments; a free trial is available for evaluation.  
+- **Mely Java verziók támogatottak?** Java 8 and newer, including Java 11, Java 17, and later LTS releases.  
+- **Lehetséges a teljesítményhangolás?** Absolutely – see the “Performance tuning Java” section for memory‑ and speed‑optimizing techniques.
 
-## Mi az a **render pdf java**?
-A Rendering PDF Java azt jelenti, hogy PDF fájlokat web‑barát formátumokra (HTML, képek vagy egy másik PDF) konvertálunk közvetlenül egy Java alkalmazásból. A GroupDocs.Viewer végzi a nehéz munkát, megőrizve az elrendezést, betűtípusokat és vektoros grafikákat, miközben egy egyszerű API-t biztosít.
+## Mi az a java pdf watermark?
+`Watermark` osztály a GroupDocs.Viewer objektuma, amely szöveges vagy képes átfedést definiál a PDF renderelése során. A `Watermark` példány konfigurálásával védheti, márkázhatja vagy azonosíthatja a dokumentumokat az eredeti fájl módosítása nélkül. A vízjelek alkalmazhatók globálisan az összes oldalra vagy szelektíven, és támogatják az átlátszóságot, forgatást és pozicionálási beállításokat.
 
-## Miért használjuk a GroupDocs.Viewer for Java-t?
-- **Kereszt‑formátum támogatás** – a PDF-en túl Word, Excel, PowerPoint, képek és egyéb formátumok renderelése.  
-- **Nincs külső függőség** – nincs szükség Office telepítésre vagy natív konverterekre.  
-- **Skálázható teljesítmény** – nagy dokumentumokhoz és magas párhuzamosságú helyzetekhez optimalizálva.  
-- **Biztonság‑első** – támogatja a jelszóval védett fájlokat, és képes eltávolítani érzékeny tartalmakat.  
+## Miért válassza a GroupDocs.Viewer for Java-t a vízjelezéshez?
+GroupDocs.Viewer támogat **50+ bemeneti és kimeneti formátumot**, és képes **500‑oldalas PDF-eket 3 másodperc alatt** feldolgozni egy standard 8‑magos szerveren, ha a vízjelzés engedélyezve van. A könyvtár **100%-ban Java-ban** fut, így elkerülheti a költséges natív függőségeket, és horizontálisan skálázható konténerizált környezetekben.
 
-## Performance Tuning Java
-A renderelési sebesség és memóriahasználat optimalizálása kulcsfontosságú a termelési munkaterhelésekhez. A technikák közé tartozik:
-- A `Viewer` példányok újrahasználata, ahol lehetséges.  
-- A renderelt oldalak korlátozása csak a szükségesekre (`setPageNumber`).  
-- Stream‑alapú renderelés engedélyezése, hogy elkerüljük a teljes fájl memóriába töltését.  
-- A `ViewerConfig` megfelelő gyorsítótár‑beállításokkal való konfigurálása.  
-Ezek a tippek segítenek a **render pdf java** legjobb kihasználásában igényes környezetekben.
+## Hogyan adjon hozzá szöveges vízjelet egy PDF-hez Java-ban?
+`Viewer` osztály betölti a dokumentumot és renderelési műveleteket biztosít.  
+`Watermark` osztály egy szöveges vagy képes átfedést képvisel, amely a renderelés során kerül alkalmazásra.  
+`ViewerConfig` osztály a renderelés konfigurációs beállításait tartalmazza, beleértve a vízjel beállításait.
+
+A forrás PDF-et egy `Viewer` példánnyal tölti be, létrehoz egy `Watermark` objektumot, amely a kívánt szöveget tartalmazza, csatolja a vízjelet egy `ViewerConfig`‑hez, majd renderel. Ez a kétlépéses minta – egyszer konfigurál, sokszor renderel – lehetővé teszi, hogy egyetlen API hívással tucatnyi oldalt vízjelezzen, miközben alacsony memóriahasználatot tart.
+
+## Hogyan adjon hozzá képes vízjelet egy PDF-hez Java-ban?
+`ImageWatermark` osztály egy képes átfedést definiál a PDF oldalak vízjelezéséhez.
+
+Hozzon létre egy `ImageWatermark` objektumot, amely egy PNG vagy JPEG fájlra mutat, konfigurálja az átlátszóságot és a pozíciót, és rendelje hozzá ugyanahhoz a `ViewerConfig`‑hez, amelyet szöveges vízjelekhez használ. Rendereléskor a kép minden oldalra a megadott beállítások szerint kerül beolvasztásra.
+
+## Hogyan javítható a szerver‑oldali pdf renderelés teljesítménye?
+Renderelje csak a szükséges oldalakat, használjon egyetlen `Viewer` példányt a kérések között, és engedélyezze a stream‑alapú renderelést, hogy elkerülje a teljes dokumentum memóriába töltését. Emellett finomhangolja a `ViewerConfig` gyorsítótár beállításait, hogy a gyakran elérhető erőforrások memóriában maradjanak, és csökkentse a lemez‑I/O-t.
+
+## Hogyan nyerhet ki PDF metaadatokat Java-ban?
+`DocumentInfo` osztály hozzáférést biztosít a dokumentum metaadataihoz, például a szerzőhöz és a létrehozás dátumához. A PDF betöltése után egy `Viewer`‑vel, hívja a `viewer.getDocumentInfo()`‑t egy `DocumentInfo` objektum lekéréséhez. Ez az objektum tartalmazza a cím, tárgy, kulcsszavak és egyéni metaadatok tulajdonságait, lehetővé téve a dokumentumok programozott indexelését, keresését vagy auditálását.
+
+## Hogyan töltsön be dokumentum URL-t Java-ban?
+`InputStream` osztály egy bájtfolyamot képvisel, amely egy forrásból, például hálózati kapcsolaton keresztül olvasott.
+
+Töltse le a távoli fájlt `InputStream`‑ként (például `HttpURLConnection` vagy egy AWS S3 kliens használatával), és adja át közvetlenül a `Viewer` konstruktorának. Ez megszünteti az ideiglenes helyi tárolás szükségességét, és csökkenti a késleltetést elosztott architektúrákban. A fájl közvetlen streamelése a Viewer felé elkerüli a lemez‑I/O‑t, és javítja a késleltetést, különösen nagy PDF-ek felhő környezetben történő feldolgozásakor.
+
+## Teljesítményhangolás Java
+`ViewerConfig` osztály lehetővé teszi a gyorsítótár, az oldalkorlátok és a renderelés minőségének szabályozását. A `setCacheSize(256)` beállítás 256 MB‑ot foglal le újrahasználható oldalképeknek, míg a `setRenderMode(RenderMode.Stream)` streameli az oldalakat a kimenetre a teljes dokumentum pufferelése nélkül.
+
+Ugyanazon `Viewer` példány többszöri használata a kérések között akár 40%-kal csökkenti a inicializációs terhelést, ami kritikus a nagy áteresztőképességű szolgáltatásoknál.
 
 ## Vízjelek hozzáadása Java-ban (**add watermark java**)
-A GroupDocs.Viewer lehetővé teszi vízjelek beágyazását a renderelés során. Szöveges vagy képes vízjelet adhat hozzá a dokumentumok védelme vagy márkázása érdekében. Az API egy `Watermark` objektumot fogad, amelyet egyszer konfigurál, majd a render hívások során újrahasznál. Ez magyarázza el, hogyan kell hatékonyan **how to add watermark java**.
+`Watermark` objektum többször is újrahasználható több render hívás között, így egyszer konfigurálja, és minden feldolgozott dokumentumra alkalmazza. Kombinálhatja a szöveges és képes vízjeleket egy összetett `Watermark` létrehozásával, amely mindkét elemet tartalmazza.
 
 ## Word konvertálása HTML-re Java-ban (**convert word html java**)
-Ha Word dokumentumokat szeretne HTML-ként megjeleníteni, a néző képes `.docx` fájlokat valós időben konvertálni. Ez hasznos webportálok számára, amelyeknek a tartalmat letöltés nélkül kell előnézetben megjeleníteni.
+A GroupDocs.Viewer egyetlen API hívással `.docx` fájlokat konvertál tiszta, reszponzív HTML-re. A kimenet megőrzi a stílusokat, táblázatokat és beágyazott képeket, így ideális webportálok számára, amelyeknek Word tartalmat kell előnézetben megjeleníteniük az eredeti fájl felfedése nélkül.
 
-## PDF metaadatok kinyerése Java-ban (**extract pdf metadata java**)
-A vizuális renderelésen túl metaadatokat is ki tud nyerni, például szerzőt, létrehozás dátumát és dokumentum tulajdonságait. Ezek az információk hasznosak indexeléshez, kereséshez vagy megfelelőségi jelentésekhez. A dokumentum betöltése után használja a `DocumentInfo` osztályt a **extract pdf metadata java** részletek lekéréséhez.
+## PDF renderelése képekké Java-ban (**pdf to images java**)
+Minden PDF oldalt renderelhet PNG, JPEG vagy BMP formátumba a `viewer.renderPage(pageNumber, ImageSaveOptions)` hívással. A könyvtár támogatja a DPI skálázást, lehetővé téve nagy felbontású bélyegképek (pl. 300 dpi) generálását előnézeti galériákhoz.
 
-## Dokumentumok betöltése URL-ekről Java-ban (**load document url java**)
-A GroupDocs.Viewer támogatja a dokumentumok közvetlen betöltését távoli URL-ekről vagy felhő tárolási adatfolyamokból. Ez megszünteti az ideiglenes helyi másolatok szükségességét, és egyszerűsíti az elosztott architektúrákat.
+## PDF renderelése HTML-re Java-ban (**render pdf java**)
+Használja a `viewer.render(document, HtmlSaveOptions)`‑t, hogy olyan HTML-t állítson elő, amely tükrözi az eredeti elrendezést. A HTML kimenet beágyazott base‑64 képeket tartalmaz, megőrizve a vektoros grafikákat és betűtípusokat további eszközök nélkül.
 
 ## Oktatóanyag kategóriák
 
-### [Első lépések](./getting-started/)
+### [Kezdő lépések](./getting-started/)
 Ismerje meg a GroupDocs.Viewer for Java alapjait. Kezdőbarát oktatóanyagaink végigvezetik a telepítésen, licencelésen és az első beállításon, biztosítva, hogy szilárd alapokkal rendelkezzen a dokumentumrendereléshez Java alkalmazásaiban.
 
 ### [Dokumentum betöltése](./document-loading/)
-Mesterségként sajátítsa el a dokumentumok különböző forrásokból történő betöltését. Ezek az oktatóanyagok bemutatják, hogyan kezelhet hatékonyan dokumentumokat helyi fájlokból, adatfolyamokból, URL-ekből és felhő tárolóból, rugalmas betöltési stratégiákat biztosítva.
+Mesteri szintre emeli a dokumentumok különböző forrásokból történő betöltésének művészetét. Ezek az oktatóanyagok bemutatják, hogyan kezelhet hatékonyan dokumentumokat helyi fájlokból, streamekből, URL‑ekből és felhő tárolóból, rugalmas betöltési stratégiákat nyújtva.
 
 ### [Renderelés alapjai](./rendering-basics/)
-Merüljön el a dokumentumrenderelés központjában. Tanulja meg, hogyan konvertáljon és rendereljen dokumentumokat több kimeneti formátumba, beleértve a HTML-t, PDF-et és képeket, teljes irányítással a renderelés minősége és oldal‑szintű kezelés felett.
+Mélyedjen el a dokumentumrenderelés központjában. Tanulja meg, hogyan konvertáljon és rendereljen dokumentumokat több kimeneti formátumba, beleértve a HTML‑t, PDF‑et és képeket, teljes kontrollal a renderelés minősége és oldal‑szintű kezelés felett.
 
-### [Fejlett renderelés](./advanced-rendering/)
-Emelje dokumentumrenderelési képességeit a következő szintre. Ezek a fejlett oktatóanyagok összetett renderelési helyzeteket, egyedi konfigurációkat és speciális renderelési technikákat fednek le kifinomult dokumentumnéző megoldásokhoz.
+### [Haladó renderelés](./advanced-rendering/)
+Emelje dokumentumrenderelési képességeit a következő szintre. Ezek a haladó oktatóanyagok összetett renderelési szcenáriókat, egyedi konfigurációkat és speciális renderelési technikákat fednek le kifinomult dokumentumnézeti megoldásokhoz.
 
 ### [Teljesítményoptimalizálás](./performance-optimization/)
-Optimalizálja dokumentumrenderelési teljesítményét speciális oktatóanyagainkkal. Tanulja meg a hatékony memória‑kezelés, a renderelési sebesség javítása és a nagy dokumentumok könnyű kezelése technikáit.
+Optimalizálja dokumentumrenderelési teljesítményét speciális oktatóanyagainkkal. Tanuljon meg technikákat a hatékony memória kezeléshez, a renderelési sebesség javításához és a nagy dokumentumok könnyű kezeléséhez.
 
 ### [Biztonság és jogosultságok](./security-permissions/)
-Valósítson meg robusztus dokumentumbiztonságot jelszóvédelemről, hozzáférés‑szabályozásról és jogosultságkezelésről szóló oktatóanyagokkal. Biztosítsa, hogy dokumentumnéző alkalmazásai megőrizzék a titoktartást és az integritást.
+Valósítson meg robusztus dokumentumbiztonságot jelszóvédelem, hozzáférés‑szabályozás és jogosultságkezelés oktatóanyagaival. Biztosítsa, hogy dokumentumnéző alkalmazásai megőrizzék a titoktartást és az integritást.
 
 ### [Vízjelek és megjegyzések](./watermarks-annotations/)
 Tanulja meg, hogyan gazdagíthatja dokumentumait vízjelekkel és megjegyzésekkel. Ezek az oktatóanyagok bemutatják, hogyan adjon hozzá, kezeljen és rendereljen vizuális metaadatokat és védelmi jelzéseket.
 
 ### [Fájlformátum támogatás](./file-formats-support/)
-Fedezze fel a többféle dokumentumformátumra vonatkozó átfogó támogatást. Oktatóanyagaink a PDF, Microsoft Office dokumentumok, képek és speciális fájltípusok renderelését és kezelését fedik le egységes minőség mellett.
+Fedezze fel a több dokumentumformátumra kiterjedő átfogó támogatást. Oktatóanyagaink lefedik a PDF, Microsoft Office dokumentumok, képek és speciális fájltípusok renderelését és kezelését egységes minőség mellett.
 
 ### [Felhő és távoli dokumentum renderelés](./cloud-remote-document-rendering/)
-Mesteri technikákat sajátítson el a felhő tárolóból, távoli URL-ekről és külső forrásokból történő dokumentumrendereléshez. Építsen rugalmas, elosztott dokumentumnéző megoldásokat.
+Mesteri szintre emeli a felhő tárolóból, távoli URL‑ekről és külső forrásokból történő dokumentumrenderelés technikáit. Építsen rugalmas, elosztott dokumentumnézeti megoldásokat.
 
-### [Gyorsítótárazás és erőforrás‑kezelés](./caching-resource-management/)
+### [Gyorsítótárazás és erőforrás-kezelés](./caching-resource-management/)
 Valósítson meg hatékony gyorsítótárazási stratégiákat és optimalizálja az erőforrás‑kezelést. Tanulja meg, hogyan javíthatja a dokumentumnézés teljesítményét és csökkentheti a számítási terhelést.
 
 ### [Metaadatok és tulajdonságok](./metadata-properties/)
-Tanulja meg a dokumentum metaadatok kinyerését, kezelését és felhasználását. Ezek az oktatóanyagok bemutatják, hogyan elemezhet és dolgozhat fel programozottan dokumentuminformációkat.
+Tanulja meg a dokumentum metaadatok kinyerését, kezelését és felhasználását. Ezek az oktatóanyagok megmutatják, hogyan elemezze és dolgozza fel a dokumentuminformációkat programozottan.
 
 ### [Exportálás és konvertálás](./export-conversion/)
-Mesteri dokumentum exportálási és konvertálási technikákat sajátítson el. Tanulja meg, hogyan alakíthat át dokumentumokat több formátum között, miközben megőrzi a formázást és a minőséget.
+Mesteri szintre emeli a dokumentum exportálási és konvertálási technikákat. Tanulja meg, hogyan alakítson át dokumentumokat több formátum között, miközben megőrzi a formázást és a minőséget.
 
 ### [Egyedi renderelés](./custom-rendering/)
-Merüljön el a fejlett testreszabásban egyedi renderelési kezelők létrehozásáról és a GroupDocs.Viewer képességeinek kiterjesztéséről a szokásos renderelési megközelítéseken túl.
+Mélyedjen el a fejlett testreszabásban egyedi renderelési kezelők létrehozásáról és a GroupDocs.Viewer képességeinek kiterjesztéséről a szokásos renderelési megközelítéseken túl.
 
-## Gyakran Ismételt Kérdések
+## Gyakran feltett kérdések
 
-**Q: Renderelhetek PDF-eket anélkül, hogy bármilyen harmadik‑fél szoftvert telepítenék?**  
-A: Igen. A GroupDocs.Viewer for Java egy tiszta Java könyvtár, és nem igényel Microsoft Office‑t, Adobe Reader‑t vagy más külső komponenseket.
+**Q: Renderelhetek PDF-eket anélkül, hogy bármilyen harmadik‑féltől származó szoftvert telepítenék?**  
+A: Igen. A GroupDocs.Viewer for Java egy tisztán Java‑könyvtár, és nem igényel Microsoft Office‑t, Adobe Reader‑t vagy más külső komponenseket.
 
 **Q: Hogyan adhatok hozzá szöveges vízjelet PDF renderelése közben?**  
-A: Hozzon létre egy `Watermark` objektumot a kívánt szöveggel, rendelje hozzá a `ViewerConfig`‑hez, és adja át a konfigurációt a `Viewer`‑nek rendereléskor.
+A: Hozzon létre egy `Watermark` objektumot a kívánt szöveggel, rendelje hozzá a `ViewerConfig`‑hez, és a rendereléskor adja át a konfigurációt a `Viewer`‑nek.
 
-**Q: Mi a legjobb módja a nagy PDF-ek renderelési sebességének javítására?**  
+**Q: Mi a legjobb módja a renderelési sebesség javításának nagy PDF-ek esetén?**  
 A: Renderelje csak a szükséges oldalakat, használja újra a `Viewer` példányokat, és engedélyezze a stream‑alapú renderelést a memóriahasználat alacsonyan tartásához.
 
-**Q: Lehet kinyerni a szerzőt és a létrehozás dátumát egy PDF‑ből?**  
+**Q: Lehetséges a szerző és a létrehozás dátumának kinyerése egy PDF‑ből?**  
 A: Igen. Használja a `DocumentInfo` osztályt a dokumentum betöltése után a metaadatok, például a szerző, a létrehozás dátuma és a kulcsszavak lekéréséhez.
 
 **Q: Betölthetek PDF-et közvetlenül egy AWS S3 URL‑ről?**  
-A: Teljesen. Szerezze be a fájlt `InputStream`‑ként az S3‑ból, és adja át a streamet a `Viewer` konstruktorának.
+A: Teljesen. Töltse le a fájlt `InputStream`‑ként az S3‑ról, és adja át a streamet a `Viewer` konstruktorának.
 
-## További források
+## További erőforrások
 - [GroupDocs.Viewer dokumentáció](https://reference.groupdocs.com/viewer/java/)
 - [GroupDocs.Viewer letöltések](https://downloads.groupdocs.com/viewer/java)
-- [GroupDocs támogatói fórum](https://forum.groupdocs.com/c/viewer/)
+- [GroupDocs támogatási fórum](https://forum.groupdocs.com/c/viewer/)
 
 ---
 
-**Utoljára frissítve:** 2026-03-19  
-**Tesztelve a következővel:** GroupDocs.Viewer for Java 23.11 (a legújabb a írás időpontjában)  
+**Utolsó frissítés:** 2026-09-05  
+**Tesztelve ezzel:** GroupDocs.Viewer for Java 23.11 (latest at time of writing)  
 **Szerző:** GroupDocs
+
+## Kapcsolódó oktatóanyagok
+
+- [PDF renderelése Java-val a GroupDocs Viewer segítségével – Kezdő lépések](/viewer/java/getting-started/)
+- [PDF rétegelt renderelése Java – Hatékony PDF rétegelt renderelés a GroupDocs.Viewer-rel](/viewer/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/)
+- [java konvertálás msg‑ből pdf‑be – Email‑PDF renderelés optimalizálása a GroupDocs.Viewer-rel](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)

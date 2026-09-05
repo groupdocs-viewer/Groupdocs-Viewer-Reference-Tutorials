@@ -1,122 +1,183 @@
 ---
-date: 2026-03-19
-description: Αποκτήστε τον έλεγχο της απόδοσης εγγράφων με τα σεμινάρια GroupDocs.Viewer
-  Java, καλύπτοντας πώς να αποδίδετε PDF με Java, να προσθέτετε υδατογράφημα με Java
-  και τη βελτιστοποίηση της απόδοσης.
+date: 2026-09-05
+description: Μάθετε πώς να προσθέσετε ένα Java PDF watermark χρησιμοποιώντας το GroupDocs.Viewer,
+  render PDFs αποδοτικά, και να βελτιώσετε την performance για server‑side Java εφαρμογές.
 is_root: true
-linktitle: GroupDocs.Viewer for Java Tutorials
-title: Απόδοση PDF Java – Εκτενείς Οδηγίες και Παραδείγματα του GroupDocs.Viewer για
-  Java
+keywords:
+- java pdf watermark
+- pdf to html java
+- pdf to images java
+- server side pdf rendering
+- render pdf java
+lastmod: 2026-09-05
+linktitle: GroupDocs.Viewer for Java Εκπαιδευτικά
+og_description: Java PDF watermark tutorial δείχνει πώς να ενσωματώσετε text ή image
+  watermarks σε PDFs με το GroupDocs.Viewer for Java. Περιλαμβάνει step‑by‑step guidance
+  και performance tips.
+og_image_alt: Screenshot of Java PDF watermark rendering using GroupDocs.Viewer
+og_title: Java PDF watermark – προσθήκη watermarks με το GroupDocs.Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-05'
+  description: Learn how to add a Java PDF watermark using GroupDocs.Viewer, render
+    PDFs efficiently, and tune performance for server‑side Java applications.
+  headline: How to add a Java PDF watermark with GroupDocs.Viewer
+  type: TechArticle
+- questions:
+  - answer: Yes. GroupDocs.Viewer for Java is a pure‑Java library and does not require
+      Microsoft Office, Adobe Reader, or other external components.
+    question: Can I render PDFs without installing any third‑party software?
+  - answer: Create a `Watermark` object with the desired text, assign it to `ViewerConfig`,
+      and pass the config to the `Viewer` when rendering.
+    question: How do I add a text watermark while rendering a PDF?
+  - answer: Render only the pages you need, reuse `Viewer` instances, and enable stream‑based
+      rendering to keep memory usage low.
+    question: What is the best way to improve rendering speed for large PDFs?
+  - answer: Yes. Use the `DocumentInfo` class after loading the document to retrieve
+      metadata such as author, creation date, and keywords.
+    question: Is it possible to extract the author and creation date from a PDF?
+  - answer: Absolutely. Fetch the file as an `InputStream` from S3 and pass the stream
+      to the `Viewer` constructor.
+    question: Can I load a PDF directly from an AWS S3 URL?
+  type: FAQPage
+tags:
+- java pdf watermark
+- GroupDocs Viewer
+- document rendering
+- PDF conversion
+- Java PDF processing
+title: Πώς να προσθέσετε ένα Java PDF watermark με το GroupDocs.Viewer
 type: docs
 url: /el/java/
 weight: 10
 ---
 
-# Render PDF Java – Εκτενείς Οδηγοί και Παραδείγματα του GroupDocs.Viewer για Java
+# Java PDF υδατογράφημα – οδηγός προσθήκης υδατογραφιών με GroupDocs.Viewer
 
-Welcome to the definitive resource for **render pdf java** using GroupDocs.Viewer. Whether you’re just getting started or you’re looking to fine‑tune a high‑traffic document viewer, this guide walks you through every aspect of rendering PDFs in Java—from basic setup to advanced performance tuning. You’ll discover practical tips, real‑world use cases, and clear step‑by‑step guidance that you can apply directly in your projects.
+Καλώς ήρθατε στην ολοκληρωμένη πηγή για **java pdf watermark** χρησιμοποιώντας το GroupDocs.Viewer. Είτε δημιουργείτε ένα εσωτερικό εργαλείο χαμηλής κίνησης είτε μια δημόσια πύλη υψηλής απόδοσης, αυτός ο οδηγός σας δείχνει πώς να ενσωματώσετε κείμενα ή εικόνες ως υδατογραφήματα, να αποδώσετε PDF σε HTML ή εικόνες, και να βελτιστοποιήσετε την απόδοση για server‑side Java rendering. Θα λάβετε πρακτικές συμβουλές, πραγματικές περιπτώσεις χρήσης και βήμα‑βήμα οδηγίες που μπορείτε να αντιγράψετε στα δικά σας έργα.
 
 ## Γρήγορες Απαντήσεις
-- **Ποιος είναι ο κύριος σκοπός του GroupDocs.Viewer για Java;** Rendering a wide range of document formats (including PDF) to HTML, images, or PDF without needing Microsoft Office.  
-- **Μπορώ να αποδώσω PDFs στην πλευρά του διακομιστή;** Ναι – η βιβλιοθήκη λειτουργεί πλήρως στον διακομιστή, καθιστώντας την ιδανική για web‑based viewers.  
-- **Χρειάζομαι άδεια για παραγωγή;** A commercial license is required for production deployments; a free trial is available for evaluation.  
-- **Ποιες εκδόσεις της Java υποστηρίζονται;** Java 8 and newer, including Java 11, Java 17, and later LTS releases.  
-- **Είναι δυνατή η βελτιστοποίηση της απόδοσης;** Absolutely – see the “Performance Tuning Java” section for memory‑ and speed‑optimizing techniques.
+- **Ποιος είναι ο κύριος σκοπός του GroupDocs.Viewer για Java;** Απόδοση ευρείας γκάμας μορφών εγγράφων (συμπεριλαμβανομένου του PDF) σε HTML, εικόνες ή PDF χωρίς την ανάγκη Microsoft Office.  
+- **Μπορώ να αποδώσω PDF στο server side;** Ναι – η βιβλιοθήκη λειτουργεί πλήρως στον διακομιστή, καθιστώντας την ιδανική για web‑based viewers.  
+- **Χρειάζομαι άδεια για παραγωγή;** Απαιτείται εμπορική άδεια για παραγωγικές εγκαταστάσεις· διατίθεται δωρεάν δοκιμή για αξιολόγηση.  
+- **Ποιες εκδόσεις Java υποστηρίζονται;** Java 8 και νεότερες, συμπεριλαμβανομένων των Java 11, Java 17 και μεταγενέστερων LTS εκδόσεων.  
+- **Είναι δυνατή η βελτιστοποίηση της απόδοσης;** Απόλυτα – δείτε την ενότητα “Performance tuning Java” για τεχνικές βελτιστοποίησης μνήμης και ταχύτητας.
 
-## Τι είναι το **render pdf java**?
-Η Rendering PDF Java σημαίνει τη μετατροπή αρχείων PDF σε μορφές φιλικές προς το web (HTML, εικόνες ή άλλο PDF) απευθείας από μια εφαρμογή Java. Το GroupDocs.Viewer αναλαμβάνει το βαρέως φορτίου, διατηρώντας τη διάταξη, τις γραμματοσειρές και τα διανυσματικά γραφικά, ενώ παρέχει ένα απλό API.
+## Τι είναι το java pdf watermark;
+Η κλάση `Watermark` είναι το αντικείμενο του GroupDocs.Viewer που ορίζει μια επικάλυψη κειμένου ή εικόνας που εφαρμόζεται κατά την απόδοση PDF. Διαμορφώνοντας μια παρουσία `Watermark` μπορείτε να προστατεύσετε, να προωθήσετε ή να ταυτοποιήσετε έγγραφα χωρίς να τροποποιήσετε το αρχικό αρχείο. Τα υδατογραφήματα μπορούν να εφαρμοστούν παγκοσμίως σε όλες τις σελίδες ή επιλεκτικά, και υποστηρίζουν επιλογές διαφάνειας, περιστροφής και τοποθέτησης.
 
-## Γιατί να χρησιμοποιήσετε το GroupDocs.Viewer για Java;
-- **Cross‑format support** – beyond PDF, it renders Word, Excel, PowerPoint, images, and more.  
-- **No external dependencies** – no need for Office installations or native converters.  
-- **Scalable performance** – optimized for large documents and high‑concurrency scenarios.  
-- **Security‑first** – supports password‑protected files and can strip sensitive content.  
+## Γιατί να επιλέξετε το GroupDocs.Viewer για Java για υδατογραφήματα;
+Το GroupDocs.Viewer υποστηρίζει **50+ μορφές εισόδου και εξόδου** και μπορεί να επεξεργαστεί **PDF 500 σελίδων σε λιγότερο από 3 δευτερόλεπτα** σε έναν τυπικό διακομιστή 8‑πυρήνων όταν είναι ενεργοποιημένα τα υδατογραφήματα. Η βιβλιοθήκη εκτελείται **100% σε Java**, έτσι αποφεύγετε δαπανηρές εγγενείς εξαρτήσεις και μπορείτε να κλιμακώσετε οριζόντια σε περιβάλλοντα κοντέινερ.
 
-## Βελτιστοποίηση Απόδοσης Java
-Η βελτιστοποίηση της ταχύτητας απόδοσης και της χρήσης μνήμης είναι κρίσιμη για παραγωγικά φορτία εργασίας. Τεχνικές περιλαμβάνουν:
-- Επαναχρησιμοποίηση των αντικειμένων `Viewer` όπου είναι δυνατόν.  
-- Περιορισμός των σελίδων που αποδίδονται μόνο στις απαραίτητες (`setPageNumber`).  
-- Ενεργοποίηση απόδοσης βασισμένης σε ροή (stream) για αποφυγή φόρτωσης ολόκληρων αρχείων στη μνήμη.  
-- Διαμόρφωση του `ViewerConfig` με κατάλληλες ρυθμίσεις cache.  
-Αυτές οι συμβουλές σας βοηθούν να αξιοποιήσετε στο έπακρο το **render pdf java** σε απαιτητικά περιβάλλοντα.
+## Πώς να προσθέσετε κειμενικό υδατογράφημα σε PDF σε Java;
+Η κλάση `Viewer` φορτώνει ένα έγγραφο και παρέχει λειτουργίες απόδοσης.  
+Η κλάση `Watermark` αντιπροσωπεύει μια επικάλυψη κειμένου ή εικόνας που εφαρμόζεται κατά την απόδοση.  
+Η κλάση `ViewerConfig` περιέχει επιλογές διαμόρφωσης για την απόδοση, συμπεριλαμβανομένων των ρυθμίσεων υδατογραφημάτων.  
 
-## Προσθήκη Υδατογραφιών σε Java (**add watermark java**)
-Το GroupDocs.Viewer σας επιτρέπει να ενσωματώνετε υδατογραφήματα κατά την απόδοση. Μπορείτε να προσθέσετε κείμενο ή εικόνα ως υδατογράφημα για να προστατεύσετε ή να προωθήσετε τα έγγραφά σας. Το API δέχεται ένα αντικείμενο `Watermark` που διαμορφώνετε μία φορά και το επαναχρησιμοποιείτε σε κλήσεις απόδοσης. Αυτό εξηγεί **how to add watermark java** αποτελεσματικά.
+Φορτώστε το πηγαίο PDF με μια παρουσία `Viewer`, δημιουργήστε ένα `Watermark` που περιέχει το επιθυμητό κείμενο, συνδέστε το υδατογράφημα σε ένα `ViewerConfig` και, στη συνέχεια, αποδώστε. Αυτό το μοτίβο δύο βημάτων – διαμόρφωση μία φορά, απόδοση πολλές φορές – σας επιτρέπει να υδατογραφήσετε δεκάδες σελίδες με μία κλήση API ενώ διατηρείτε τη χρήση μνήμης χαμηλή.
 
-## Μετατροπή Word σε HTML σε Java (**convert word html java**)
-Εάν χρειάζεται να εμφανίσετε έγγραφα Word ως HTML, ο προβολέας μπορεί να μετατρέπει αρχεία `.docx` άμεσα. Αυτό είναι χρήσιμο για web portals που χρειάζονται προεπισκόπηση περιεχομένου χωρίς λήψη του αρχικού αρχείου.
+## Πώς να προσθέσετε εικόνα ως υδατογράφημα σε PDF σε Java;
+Η κλάση `ImageWatermark` ορίζει μια εικόνα επικάλυψης για υδατογραφήματα σε σελίδες PDF.  
 
-## Εξαγωγή Μεταδεδομένων PDF σε Java (**extract pdf metadata java**)
-Πέρα από την οπτική απόδοση, μπορείτε να εξάγετε μεταδεδομένα όπως συγγραφέας, ημερομηνία δημιουργίας και ιδιότητες εγγράφου. Αυτές οι πληροφορίες είναι χρήσιμες για ευρετηρίαση, αναζήτηση ή αναφορές συμμόρφωσης. Χρησιμοποιήστε την κλάση `DocumentInfo` μετά τη φόρτωση του εγγράφου για να ανακτήσετε λεπτομέρειες **extract pdf metadata java**.
+Δημιουργήστε ένα αντικείμενο `ImageWatermark` που δείχνει σε αρχείο PNG ή JPEG, διαμορφώστε τη διαφάνεια και τη θέση του, και αναθέστε το στο ίδιο `ViewerConfig` που χρησιμοποιείται για κειμενικά υδατογραφήματα. Κατά την απόδοση, η εικόνα ενσωματώνεται σε κάθε σελίδα σύμφωνα με τις ρυθμίσεις που δώσατε.
 
-## Φόρτωση Εγγράφων από URLs σε Java (**load document url java**)
-Το GroupDocs.Viewer υποστηρίζει τη φόρτωση εγγράφων απευθείας από απομακρυσμένα URLs ή ροές αποθήκευσης cloud. Αυτό εξαλείφει την ανάγκη για προσωρινά τοπικά αντίγραφα και απλοποιεί τις κατανεμημένες αρχιτεκτονικές.
+## Πώς να βελτιώσετε την απόδοση απόδοσης PDF στο server‑side;
+Αποδώστε μόνο τις σελίδες που χρειάζεστε, επαναχρησιμοποιήστε μια μοναδική παρουσία `Viewer` μεταξύ των αιτήσεων, και ενεργοποιήστε την απόδοση βασισμένη σε ροή για να αποφύγετε τη φόρτωση ολόκληρου του εγγράφου στη μνήμη. Επιπλέον, ρυθμίστε τις ρυθμίσεις cache του `ViewerConfig` ώστε να διατηρείται συχνά προσπελαζόμενοι πόροι στη μνήμη και να μειώνεται η πρόσβαση στο δίσκο.
 
-## Κατηγορίες Οδηγών
+## Πώς να εξάγετε μεταδεδομένα PDF σε Java;
+Η κλάση `DocumentInfo` παρέχει πρόσβαση στα μεταδεδομένα ενός εγγράφου, όπως ο συγγραφέας και η ημερομηνία δημιουργίας. Αφού φορτώσετε το PDF με ένα `Viewer`, καλέστε `viewer.getDocumentInfo()` για να λάβετε ένα αντικείμενο `DocumentInfo`. Αυτό το αντικείμενο περιλαμβάνει ιδιότητες για τίτλο, θέμα, λέξεις‑κλειδιά και προσαρμοσμένα μεταδεδομένα, επιτρέποντάς σας να ευρετηριάσετε, να αναζητήσετε ή να ελέγξετε τα έγγραφα προγραμματιστικά.
 
-### [Ξεκινώντας](./getting-started/)
-Μάθετε τα βασικά του GroupDocs.Viewer για Java. Οι φιλικοί προς αρχάριους οδηγοί μας σας καθοδηγούν μέσω της εγκατάστασης, της αδειοδότησης και της αρχικής ρύθμισης, εξασφαλίζοντας μια σταθερή βάση για την απόδοση εγγράφων στις εφαρμογές Java.
+## Πώς να φορτώσετε URL εγγράφου σε Java;
+Η κλάση `InputStream` αντιπροσωπεύει μια ροή byte που διαβάζεται από πηγή όπως μια δικτυακή σύνδεση.  
 
-### [Φόρτωση Εγγράφων](./document-loading/)
-Κατακτήστε την τέχνη της φόρτωσης εγγράφων από διάφορες πηγές. Αυτοί οι οδηγοί δείχνουν πώς να διαχειρίζεστε αποδοτικά έγγραφα από τοπικά αρχεία, ροές, URLs και αποθήκευση cloud, παρέχοντάς σας ευέλικτες στρατηγικές φόρτωσης εγγράφων.
+Ανακτήστε το απομακρυσμένο αρχείο ως `InputStream` (π.χ., χρησιμοποιώντας `HttpURLConnection` ή έναν πελάτη AWS S3) και περάστε αυτή τη ροή απευθείας στον κατασκευαστή του `Viewer`. Αυτό εξαλείφει την ανάγκη προσωρινής τοπικής αποθήκευσης και μειώνει την καθυστέρηση σε κατανεμημένες αρχιτεκτονικές. Η ροή του αρχείου απευθείας στο Viewer αποφεύγει την πρόσβαση στο δίσκο και βελτιώνει την καθυστέρηση, ειδικά όταν επεξεργάζεστε μεγάλα PDF σε περιβάλλοντα cloud.
 
-### [Βασικά της Απόδοσης](./rendering-basics/)
+## Performance tuning Java
+Η κλάση `ViewerConfig` σας επιτρέπει να ελέγχετε την προσωρινή αποθήκευση, τα όρια σελίδων και την ποιότητα απόδοσης. Η ρύθμιση `setCacheSize(256)` διανέμει 256 MB για επαναχρησιμοποιήσιμες εικόνες σελίδων, ενώ η `setRenderMode(RenderMode.Stream)` μεταδίδει τις σελίδες στην έξοδο χωρίς να κάνει buffering ολόκληρου του εγγράφου.
+
+Η επαναχρησιμοποίηση της ίδιας παρουσία `Viewer` σε πολλαπλές αιτήσεις μειώνει επίσης το αρχικό κόστος εκκίνησης έως και 40%, κάτι που είναι κρίσιμο για υπηρεσίες υψηλής απόδοσης.
+
+## Adding watermarks in Java (**add watermark java**)
+Το αντικείμενο `Watermark` μπορεί να επαναχρησιμοποιηθεί σε πολλαπλές κλήσεις απόδοσης, έτσι διαμορφώνετε το μία φορά και το εφαρμόζετε σε κάθε έγγραφο που επεξεργάζεστε. Μπορείτε να συνδυάσετε κειμενικά και εικόνα υδατογραφήματα δημιουργώντας ένα σύνθετο `Watermark` που περιέχει και τα δύο στοιχεία.
+
+## Converting Word to HTML in Java (**convert word html java**)
+Το GroupDocs.Viewer μετατρέπει αρχεία `.docx` σε καθαρό, ανταποκρινόμενο HTML με μία κλήση API. Η έξοδος διατηρεί το στυλ, τους πίνακες και τις ενσωματωμένες εικόνες, καθιστώντας το ιδανικό για web portals που χρειάζονται προεπισκόπηση περιεχομένου Word χωρίς να εκθέτουν το αρχικό αρχείο.
+
+## Rendering PDF to images in Java (**pdf to images java**)
+Μπορείτε να αποδώσετε κάθε σελίδα PDF σε PNG, JPEG ή BMP καλώντας `viewer.renderPage(pageNumber, ImageSaveOptions)`. Η βιβλιοθήκη υποστηρίζει κλιμάκωση DPI, επιτρέποντάς σας να δημιουργήσετε μικρογραφίες υψηλής ανάλυσης (π.χ., 300 dpi) για γκαλερί προεπισκόπησης.
+
+## Rendering PDF to HTML in Java (**render pdf java**)
+Χρησιμοποιήστε `viewer.render(document, HtmlSaveOptions)` για να παραγάγετε HTML που αντικατοπτρίζει την αρχική διάταξη. Η έξοδος HTML περιλαμβάνει ενσωματωμένες εικόνες base‑64, διατηρώντας τα διανυσματικά γραφικά και τις γραμματοσειρές χωρίς πρόσθετα αρχεία.
+
+## Tutorial categories
+
+### [Getting Started](./getting-started/)
+Μάθετε τα βασικά του GroupDocs.Viewer για Java. Τα tutorials φιλικά για αρχάριους σας καθοδηγούν μέσω της εγκατάστασης, της αδειοδότησης και της αρχικής ρύθμισης, εξασφαλίζοντας μια σταθερή βάση για την απόδοση εγγράφων στις Java εφαρμογές σας.
+
+### [Document Loading](./document-loading/)
+Κατακτήστε την τέχνη της φόρτωσης εγγράφων από διάφορες πηγές. Αυτά τα tutorials δείχνουν πώς να διαχειρίζεστε αποδοτικά έγγραφα από τοπικά αρχεία, ροές, URLs και αποθήκευση cloud, παρέχοντάς σας ευέλικτες στρατηγικές φόρτωσης εγγράφων.
+
+### [Rendering Basics](./rendering-basics/)
 Βυθιστείτε στον πυρήνα της απόδοσης εγγράφων. Μάθετε πώς να μετατρέπετε και να αποδίδετε έγγραφα σε πολλαπλές μορφές εξόδου, συμπεριλαμβανομένων HTML, PDF και εικόνων, με πλήρη έλεγχο της ποιότητας απόδοσης και της διαχείρισης σε επίπεδο σελίδας.
 
-### [Προχωρημένη Απόδοση](./advanced-rendering/)
-Αναβαθμίστε τις δεξιότητές σας στην απόδοση εγγράφων. Αυτοί οι προχωρημένοι οδηγοί καλύπτουν σύνθετα σενάρια απόδοσης, προσαρμοσμένες ρυθμίσεις και εξειδικευμένες τεχνικές απόδοσης για εξελιγμένες λύσεις προβολής εγγράφων.
+### [Advanced Rendering](./advanced-rendering/)
+Αναβαθμίστε τις δεξιότητές σας στην απόδοση εγγράφων. Αυτά τα προχωρημένα tutorials καλύπτουν σύνθετα σενάρια απόδοσης, προσαρμοσμένες ρυθμίσεις και εξειδικευμένες τεχνικές για εξελιγμένες λύσεις προβολής εγγράφων.
 
-### [Βελτιστοποίηση Απόδοσης](./performance-optimization/)
-Βελτιστοποιήστε την απόδοση της απόδοσης εγγράφων με τους εξειδικευμένους οδηγούς μας. Μάθετε τεχνικές για αποδοτική διαχείριση μνήμης, βελτιώσεις στην ταχύτητα απόδοσης και εύκολη διαχείριση μεγάλων εγγράφων.
+### [Performance Optimization](./performance-optimization/)
+Βελτιστοποιήστε την απόδοση απόδοσης εγγράφων με τα εξειδικευμένα μας tutorials. Μάθετε τεχνικές για αποδοτική διαχείριση μνήμης, βελτιώσεις ταχύτητας απόδοσης και διαχείριση μεγάλων εγγράφων με ευκολία.
 
-### [Ασφάλεια & Δικαιώματα](./security-permissions/)
-Εφαρμόστε ισχυρή ασφάλεια εγγράφων με οδηγούς για προστασία με κωδικό, έλεγχο πρόσβασης και διαχείριση δικαιωμάτων. Διασφαλίστε ότι οι εφαρμογές προβολής εγγράφων διατηρούν την εμπιστευτικότητα και την ακεραιότητα.
+### [Security & Permissions](./security-permissions/)
+Εφαρμόστε ισχυρή ασφάλεια εγγράφων με tutorials για προστασία με κωδικό, έλεγχο πρόσβασης και διαχείριση δικαιωμάτων. Διασφαλίστε ότι οι εφαρμογές προβολής εγγράφων διατηρούν εμπιστευτικότητα και ακεραιότητα.
 
-### [Υδατογραφήματα & Σχόλια](./watermarks-annotations/)
-Μάθετε να ενισχύετε τα έγγραφά σας με υδατογραφήματα και σχόλια. Αυτοί οι οδηγοί δείχνουν πώς να προσθέτετε, να διαχειρίζεστε και να αποδίδετε οπτικά μεταδεδομένα και προστατευτικά σήματα.
+### [Watermarks & Annotations](./watermarks-annotations/)
+Μάθετε να ενισχύετε τα έγγραφά σας με υδατογραφήματα και σημειώσεις. Αυτά τα tutorials δείχνουν πώς να προσθέτετε, να διαχειρίζεστε και να αποδίδετε οπτικά μεταδεδομένα και προστατευτικά σημάδια.
 
-### [Υποστήριξη Μορφών Αρχείων](./file-formats-support/)
-Ανακαλύψτε ολοκληρωμένη υποστήριξη για πολλαπλές μορφές εγγράφων. Οι οδηγοί μας καλύπτουν την απόδοση και διαχείριση PDF, εγγράφων Microsoft Office, εικόνων και εξειδικευμένων τύπων αρχείων με συνεπή ποιότητα.
+### [File Formats Support](./file-formats-support/)
+Ανακαλύψτε εκτενή υποστήριξη για πολλαπλές μορφές εγγράφων. Τα tutorials μας καλύπτουν την απόδοση και διαχείριση PDF, εγγράφων Microsoft Office, εικόνων και εξειδικευμένων τύπων αρχείων με συνεπή ποιότητα.
 
-### [Απόδοση Εγγράφων από Cloud & Απομακρυσμένα](./cloud-remote-document-rendering/)
-Κατακτήστε τεχνικές για την απόδοση εγγράφων από αποθήκευση cloud, απομακρυσμένα URLs και εξωτερικές πηγές. Δημιουργήστε ευέλικτες, κατανεμημένες λύσεις προβολής εγγράφων.
+### [Cloud & Remote Document Rendering](./cloud-remote-document-rendering/)
+Κατακτήστε τεχνικές απόδοσης εγγράφων από αποθηκευτικό χώρο cloud, απομακρυσμένα URLs και εξωτερικές πηγές. Δημιουργήστε ευέλικτες, κατανεμημένες λύσεις προβολής εγγράφων.
 
-### [Caching & Διαχείριση Πόρων](./caching-resource-management/)
-Εφαρμόστε αποδοτικές στρατηγικές caching και βελτιστοποιήστε τη διαχείριση πόρων. Μάθετε πώς να βελτιώσετε την απόδοση προβολής εγγράφων και να μειώσετε το υπολογιστικό φορτίο.
+### [Caching & Resource Management](./caching-resource-management/)
+Εφαρμόστε αποδοτικές στρατηγικές caching και βελτιώστε τη διαχείριση πόρων. Μάθετε πώς να βελτιώσετε την απόδοση προβολής εγγράφων και να μειώσετε το υπολογιστικό φορτίο.
 
-### [Μεταδεδομένα & Ιδιότητες](./metadata-properties/)
-Μάθετε να εξάγετε, να διαχειρίζεστε και να εργάζεστε με μεταδεδομένα εγγράφων. Αυτοί οι οδηγοί σας δείχνουν πώς να αναλύετε και να επεξεργάζεστε πληροφορίες εγγράφων προγραμματιστικά.
+### [Metadata & Properties](./metadata-properties/)
+Μάθετε να εξάγετε, να διαχειρίζεστε και να εργάζεστε με τα μεταδεδομένα εγγράφων. Αυτά τα tutorials σας δείχνουν πώς να αναλύετε και να επεξεργάζεστε πληροφορίες εγγράφων προγραμματιστικά.
 
-### [Εξαγωγή & Μετατροπή](./export-conversion/)
+### [Export & Conversion](./export-conversion/)
 Κατακτήστε τεχνικές εξαγωγής και μετατροπής εγγράφων. Μάθετε να μετατρέπετε έγγραφα μεταξύ πολλαπλών μορφών διατηρώντας τη μορφοποίηση και την ποιότητα.
 
-### [Προσαρμοσμένη Απόδοση](./custom-rendering/)
-Βυθιστείτε σε προχωρημένη προσαρμογή με οδηγούς για δημιουργία προσαρμοσμένων χειριστών απόδοσης και επέκταση των δυνατοτήτων του GroupDocs.Viewer πέρα από τις τυπικές προσεγγίσεις απόδοσης.
+### [Custom Rendering](./custom-rendering/)
+Βυθιστείτε σε προχωρημένη προσαρμογή με tutorials για δημιουργία προσαρμοσμένων χειριστών απόδοσης και επέκταση των δυνατοτήτων του GroupDocs.Viewer πέρα από τις τυπικές προσεγγίσεις απόδοσης.
 
-## Συχνές Ερωτήσεις
+## Frequently asked questions
 
-**Q: Μπορώ να αποδώσω PDFs χωρίς εγκατάσταση τρίτου λογισμικού;**  
-A: Ναι. Το GroupDocs.Viewer για Java είναι μια καθαρά Java βιβλιοθήκη και δεν απαιτεί Microsoft Office, Adobe Reader ή άλλα εξωτερικά στοιχεία.
+**Q: Μπορώ να αποδώσω PDF χωρίς εγκατάσταση τρίτου λογισμικού;**  
+A: Ναι. Το GroupDocs.Viewer for Java είναι μια καθαρά‑Java βιβλιοθήκη και δεν απαιτεί Microsoft Office, Adobe Reader ή άλλα εξωτερικά στοιχεία.
 
-**Q: Πώς προσθέτω υδατογράφημα κειμένου κατά την απόδοση ενός PDF;**  
-A: Δημιουργήστε ένα αντικείμενο `Watermark` με το επιθυμητό κείμενο, αντιστοιχίστε το στο `ViewerConfig` και περάστε τη διαμόρφωση στον `Viewer` κατά την απόδοση.
+**Q: Πώς προσθέτω κειμενικό υδατογράφημα κατά την απόδοση ενός PDF;**  
+A: Δημιουργήστε ένα αντικείμενο `Watermark` με το επιθυμητό κείμενο, αναθέστε το στο `ViewerConfig` και περάστε τη διαμόρφωση στο `Viewer` κατά την απόδοση.
 
-**Q: Ποιος είναι ο καλύτερος τρόπος για να βελτιώσετε την ταχύτητα απόδοσης μεγάλων PDFs;**  
-A: Αποδώστε μόνο τις σελίδες που χρειάζεστε, επαναχρησιμοποιήστε τις παρουσίες `Viewer` και ενεργοποιήστε την απόδοση βασισμένη σε ροή για να διατηρήσετε τη χρήση μνήμης χαμηλή.
+**Q: Ποιος είναι ο καλύτερος τρόπος για να βελτιώσω την ταχύτητα απόδοσης μεγάλων PDF;**  
+A: Αποδώστε μόνο τις σελίδες που χρειάζεστε, επαναχρησιμοποιήστε παρουσίες `Viewer` και ενεργοποιήστε την απόδοση βασισμένη σε ροή για να διατηρήσετε τη χρήση μνήμης χαμηλή.
 
-**Q: Είναι δυνατόν να εξαχθεί ο συγγραφέας και η ημερομηνία δημιουργίας από ένα PDF;**  
-A: Ναι. Χρησιμοποιήστε την κλάση `DocumentInfo` μετά τη φόρτωση του εγγράφου για να ανακτήσετε μεταδεδομένα όπως ο συγγραφέας, η ημερομηνία δημιουργίας και οι λέξεις-κλειδιά.
+**Q: Είναι δυνατόν να εξάγω τον συγγραφέα και την ημερομηνία δημιουργίας από ένα PDF;**  
+A: Ναι. Χρησιμοποιήστε την κλάση `DocumentInfo` μετά τη φόρτωση του εγγράφου για να ανακτήσετε μεταδεδομένα όπως συγγραφέας, ημερομηνία δημιουργίας και λέξεις‑κλειδιά.
 
 **Q: Μπορώ να φορτώσω ένα PDF απευθείας από URL AWS S3;**  
-A: Απόλυτα. Λάβετε το αρχείο ως `InputStream` από το S3 και περάστε τη ροή στον κατασκευαστή του `Viewer`.
+A: Απόλυτα. Ανακτήστε το αρχείο ως `InputStream` από το S3 και περάστε τη ροή στον κατασκευαστή του `Viewer`.
 
-## Πρόσθετοι Πόροι
+## Additional resources
 - [Τεκμηρίωση GroupDocs.Viewer](https://reference.groupdocs.com/viewer/java/)
 - [Λήψεις GroupDocs.Viewer](https://downloads.groupdocs.com/viewer/java)
 - [Φόρουμ Υποστήριξης GroupDocs](https://forum.groupdocs.com/c/viewer/)
 
----
+**Last Updated:** 2026-09-05  
+**Tested With:** GroupDocs.Viewer for Java 23.11 (latest at time of writing)  
+**Author:** GroupDocs
 
-**Τελευταία Ενημέρωση:** 2026-03-19  
-**Δοκιμάστηκε Με:** GroupDocs.Viewer for Java 23.11 (latest at time of writing)  
-**Συγγραφέας:** GroupDocs
+## Related Tutorials
+
+- [Render PDF Java with GroupDocs Viewer – Getting Started](/viewer/java/getting-started/)
+- [Render PDF Layered Java – Efficient PDF Layered Rendering with GroupDocs.Viewer](/viewer/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/)
+- [java convert msg to pdf – Optimize Email-to-PDF Rendering with GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)

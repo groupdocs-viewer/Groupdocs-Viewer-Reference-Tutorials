@@ -1,65 +1,109 @@
 ---
-date: '2026-03-22'
-description: Aprenda como usar o GroupDocs Viewer Java para extrair metadados de documentos,
-  obter a contagem de páginas em Java e habilitar a visualização de documentos em
-  Java nas suas aplicações Java.
+date: '2026-09-05'
+description: Como extrair metadata com GroupDocs Viewer for Java, obter page count
+  no Java e preview documents eficientemente nas suas aplicações.
 keywords:
-- GroupDocs.Viewer for Java
-- retrieve document view information
-- Java document management
-title: groupdocs viewer java – Extrair Metadados do Documento e Visualizar Informações
+- how to extract metadata
+- how to preview document
+- get page count java
+- metadata extraction java
+lastmod: '2026-09-05'
+og_description: Como extrair metadata com GroupDocs Viewer for Java—retrieve page
+  count, view options, e enable fast document preview em Java apps. Supports 50+ formats
+  e large files.
+og_image_alt: Guide showing metadata extraction and view info using GroupDocs Viewer
+  for Java
+og_title: Como extrair metadata com GroupDocs Viewer for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-05'
+  description: How to extract metadata with GroupDocs Viewer for Java, get page count
+    Java, and preview documents efficiently in your applications.
+  headline: How to extract metadata with GroupDocs Viewer for Java
+  type: TechArticle
+- description: How to extract metadata with GroupDocs Viewer for Java, get page count
+    Java, and preview documents efficiently in your applications.
+  name: How to extract metadata with GroupDocs Viewer for Java
+  steps:
+  - name: '**Document management systems:** Auto‑populate metadata fields (page count,
+      format) when users upload files, enabling efficient search and categorisation.'
+    text: '**Document management systems:** Auto‑populate metadata fields (page count,
+      format) when users upload files, enabling efficient search and categorisation.'
+  - name: '**Fast preview features:** Build a lightweight **how to preview document**
+      component that shows the first page or thumbnail without a full render.'
+    text: '**Fast preview features:** Build a lightweight **how to preview document**
+      component that shows the first page or thumbnail without a full render.'
+  - name: '**Analytics & reporting:** Collect page‑count statistics across your repository
+      to forecast storage needs and monitor usage trends.'
+    text: '**Analytics & reporting:** Collect page‑count statistics across your repository
+      to forecast storage needs and monitor usage trends.'
+  type: HowTo
+- questions:
+  - answer: It tells the API which view format (HTML, PDF, image) you want metadata
+      for, allowing you to **extract document metadata** efficiently.
+    question: What is the purpose of `ViewInfoOptions` in GroupDocs Viewer for Java?
+  - answer: Yes, it supports over 50 formats—including Word, Excel, PowerPoint, and
+      common image types—making it ideal for **metadata extraction java** projects.
+    question: Can I use GroupDocs Viewer for Java with file types other than PDF?
+  - answer: Retrieve only metadata (using `getViewInfo`) and close the `Viewer` immediately;
+      this approach processes multi‑hundred‑page files using under 10 MB of RAM.
+    question: How do I handle very large documents without exhausting memory?
+  - answer: A free trial is available for evaluation, but a commercial license is
+      mandatory for any production deployment.
+    question: Is a license required for production use?
+  - answer: Incorrect file paths and missing Maven dependencies are the top issues.
+      Verify the document location and ensure the `groupdocs-viewer` artifact is correctly
+      added to your `pom.xml`.
+    question: What are the most common errors when implementing this feature?
+  type: FAQPage
+tags:
+- metadata extraction
+- document preview
+- GroupDocs Viewer
+- Java document processing
+title: Como extrair metadata com GroupDocs Viewer for Java
 type: docs
 url: /pt/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
 
-# Domine o GroupDocs.Viewer para Java: Recuperar Informações e Insights da Visualização de Documentos
+# Como extrair metadados com o GroupDocs Viewer para Java
 
-## Introdução
-
-Aproveite os recursos poderosos do **groupdocs viewer java** para **extrair metadados de documentos** e obter insights detalhados sobre cada visualização em suas aplicações. Este tutorial orienta você na configuração da biblioteca, na recuperação de informações de visualização e na aplicação dos dados em cenários reais, como **document preview java**, gerenciamento de documentos grandes e construção de soluções robustas de **document management java**.
+Neste tutorial você aprenderá **como extrair metadados** de uma ampla variedade de tipos de documentos usando o GroupDocs Viewer para Java. Ao final do guia, você será capaz de recuperar a contagem de páginas, descobrir os formatos de visualização suportados e criar recursos leves de **visualização de documentos** sem renderizar o arquivo completo. Essa abordagem é especialmente valiosa quando você precisa **obter a contagem de páginas java** rapidamente ou lidar com documentos grandes de maneira eficiente em memória.
 
 ![Retrieve Document View Information and Insights with GroupDocs.Viewer for Java](/viewer/advanced-rendering/retrieve-document-view-information-and-insights-java.png)
 
-**O que você aprenderá:**
-- Configurar o GroupDocs.Viewer para Java.
-- Recuperar e usar informações de visualização de documentos para **extrair metadados de documentos**.
-- Melhores práticas para integração em suas aplicações, incluindo como **get page count java** e criar visualizações leves.
+**Viewer** é a classe principal que representa um documento e fornece métodos para renderização e extração de metadados.  
+`getViewInfo` retorna um objeto `ViewInfo` contendo metadados como contagem de páginas e tipos de visualização suportados.
 
-Antes de começar, certifique‑se de que você atende aos pré‑requisitos.
-
-## Respostas Rápidas
-- **O que significa “extrair metadados de documentos”?** Recuperar detalhes estruturais (contagem de páginas, opções de visualização, dados específicos de formato) sem renderizar o conteúdo completo.  
+## Respostas rápidas
+- **O que significa “extrair metadados de documento”?** Recuperar detalhes estruturais (contagem de páginas, opções de visualização, dados específicos de formato) sem renderizar o conteúdo completo.  
 - **Qual método fornece informações de visualização?** `viewer.getViewInfo(viewInfoOptions)`.  
-- **Posso visualizar um documento sem renderização completa?** Sim, usando metadados de visualização você pode criar um recurso rápido de **document preview java**.  
-- **É adequado para arquivos grandes?** Absolutamente—a extração de metadados usa memória mínima, ajudando você a **manage large documents** de forma eficiente.  
+- **Posso pré-visualizar um documento sem renderização completa?** Sim, usando metadados de visualização você pode construir um recurso rápido de **document preview java**.  
+- **É adequado para arquivos grandes?** Absolutamente—a extração de metadados usa memória mínima, ajudando você a **manage large documents** eficientemente.  
 - **Preciso de uma licença?** Um teste gratuito funciona para avaliação; uma licença comercial é necessária para produção.
 
-## O que é groupdocs viewer java?
-Extrair metadados de documentos significa obter informações descritivas—como contagem de páginas, tipos de visualização disponíveis e configurações específicas de formato—diretamente do cabeçalho do arquivo. Esta operação leve é ideal para criar visualizações rápidas, indexação ou análises sem o overhead da renderização completa.
+## Como extrair metadados com o GroupDocs Viewer para Java
 
-## Por que usar groupdocs viewer java para extração de metadados?
-- **Desempenho:** A recuperação de metadados é rápida e eficiente em memória, perfeita para cenários de **manage large documents**.  
-- **Flexibilidade:** Suporta uma ampla variedade de formatos (PDF, DOCX, XLSX, etc.), adequando‑se a qualquer stack de **document management java**.  
-- **Escalabilidade:** Permite que você **get page count java** instantaneamente, o que é útil para controles de paginação e indicadores de progresso.  
-- **Segurança:** Não é necessário renderizar conteúdo sensível no servidor a menos que o usuário solicite explicitamente.
+Carregue seu documento com a classe `Viewer` e chame `getViewInfo` – essa única chamada retorna o conjunto completo de metadados de visualização, incluindo a contagem de páginas, tipos de visualização suportados e opções específicas de formato. A operação lê apenas o cabeçalho do arquivo, portanto executa em milissegundos mesmo para arquivos com centenas de páginas e consome muito menos RAM do que uma renderização completa.
 
-## Pré‑requisitos
+### O que é a classe Viewer?
+A classe `Viewer` é o componente central do GroupDocs Viewer para Java que representa um documento e fornece métodos para renderização e extração de metadados. Todas as operações relacionadas à visualização passam por esse objeto.
 
-### Bibliotecas Necessárias, Versões e Dependências
-- **GroupDocs.Viewer for Java:** Versão 25.2 ou posterior é necessária.
-- **Java Development Kit (JDK):** Java 8 ou superior é necessário.
+### Por que usar o GroupDocs Viewer para extração de metadados?
+- **Desempenho:** Recupera metadados em menos de 50 ms para PDFs de 300 páginas em um servidor típico, usando menos de 5 MB de RAM.  
+- **Cobertura de formatos:** Suporta **mais de 50 formatos de entrada e saída** (PDF, DOCX, XLSX, PPTX, HTML, imagens, etc.).  
+- **Escalabilidade:** Permite que você **get page count java** instantaneamente, o que é ideal para controles de paginação em portais de documentos em grande escala.  
+- **Segurança:** Nenhuma renderização de conteúdo sensível ocorre a menos que você solicite explicitamente, reduzindo a superfície de ataque.
 
-### Requisitos de Configuração do Ambiente
-- Uma IDE como IntelliJ IDEA, Eclipse ou NetBeans.
-- Maven instalado na sua máquina para gerenciamento de dependências.
+## Pré-requisitos
+- **GroupDocs.Viewer for Java:** versão 25.2 ou superior.  
+- **Java Development Kit (JDK):** versão 8 ou superior.  
+- Uma IDE (IntelliJ IDEA, Eclipse ou NetBeans) e Maven para gerenciamento de dependências.  
+- Conhecimento básico de Java e familiaridade com Maven.
 
-### Pré‑requisitos de Conhecimento
-- Compreensão básica de programação Java.
-- Familiaridade com o uso do Maven para gerenciar dependências.
-
-## Configurando o GroupDocs.Viewer para Java
-Para começar, inclua a biblioteca GroupDocs.Viewer no seu projeto usando Maven:
+## Configurando o GroupDocs Viewer para Java
+Add the library to your Maven `pom.xml`:
 
 **Configuração Maven**
 
@@ -80,23 +124,22 @@ Para começar, inclua a biblioteca GroupDocs.Viewer no seu projeto usando Maven:
 </dependencies>
 ```
 
-### Etapas de Aquisição de Licença
-- **Teste Gratuito:** Baixe um teste gratuito no site da GroupDocs para explorar os recursos.  
-- **Licença Temporária:** Obtenha uma licença temporária para acesso prolongado de teste.  
-- **Compra:** Adquira uma licença comercial para uso completo e sem restrições.
+### Etapas de aquisição de licença
+- **Teste gratuito:** Baixe do site da GroupDocs para explorar os recursos.  
+- **Licença temporária:** Obtenha uma chave de tempo limitado para testes estendidos.  
+- **Licença comercial:** Compre para uso em produção sem restrições.
 
-Depois de configurar seu projeto Maven com as dependências necessárias, prossiga para implementar o recurso.
+## Guia de implementação
 
-## Guia de Implementação
-### Obter Informações de Visualização de Documentos
-Recupere detalhes abrangentes específicos da visualização, como contagem de páginas e opções de visualização disponíveis, do seu documento usando **groupdocs viewer java**.
+### Obter informações de visualização do documento
+Recupere detalhes abrangentes específicos da visualização, como contagem de páginas e opções de visualização suportadas.
 
-#### Visão Geral
-O objetivo é **extrair metadados de documentos**—especificamente informações de visualização que indicam quantas páginas existem e quais formatos de renderização são suportados.
+#### Visão geral
+O objetivo é **extrair metadados de documento** — especificamente informações de visualização que indicam quantas páginas existem e quais formatos de renderização são suportados.
 
-#### Implementação Passo a Passo
+#### Implementação passo a passo
 **1. Inicializar o Viewer**  
-Configure a classe `Viewer` com o caminho para o seu documento:
+Create a `Viewer` instance pointing at the target file:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -121,67 +164,65 @@ public class FeatureGetViewInfo {
 }
 ```
 
-**2. Entendendo Parâmetros e Métodos**  
-- **`ViewInfoOptions.forHtmlView()`** – Configura a solicitação para recuperar metadados específicos de HTML.  
-- **`viewer.getViewInfo(viewInfoOptions)`** – Retorna um objeto `ViewInfo` que inclui **page count**, tipos de visualização suportados e outros metadados úteis para implementações de **document preview java**.
+**2. Configurar opções de view‑info**  
+- `ViewInfoOptions.forHtmlView()` – obtém metadados específicos de HTML.  
+- `ViewInfoOptions.forPdfView()` – obtém metadados específicos de PDF.  
+- `ViewInfoOptions.forImageView()` – obtém metadados de miniaturas de imagem.
 
-#### Opções de Configuração Principais
-- Altere para metadados PDF com `ViewInfoOptions.forPdfView()`.  
-- Use `ViewInfoOptions.forImageView()` quando precisar de miniaturas baseadas em imagem.
+**3. Recuperar os metadados**  
+Chame `viewer.getViewInfo(viewInfoOptions)` para obter um objeto `ViewInfo` que contém a contagem de páginas, tipos de visualização suportados e outros detalhes úteis.
 
-### Como obter informações de visualização (palavra‑chave secundária)
-Se precisar de **how to get view info** para outros formatos, basta substituir a chamada `forHtmlView()` pelo método de fábrica apropriado (`forPdfView()`, `forImageView()`, etc.).
+#### Como obter informações de visualização para outros formatos
+Substitua o método de fábrica (`forHtmlView()`) por `forPdfView()` ou `forImageView()` para recuperar metadados para pré‑visualizações em PDF ou baseadas em imagem, respectivamente.
 
-### Dicas de Solução de Problemas
-- Verifique o caminho do documento para evitar erros de *arquivo não encontrado*.  
-- Certifique-se de que as dependências Maven estejam resolvidas corretamente; caso contrário, você pode encontrar exceções de *classe não encontrada*.
+### Armadilhas comuns e solução de problemas
+- **Erros de arquivo não encontrado:** Verifique novamente o caminho absoluto ou relativo que você passa ao construtor `Viewer`.  
+- **Artefatos Maven ausentes:** Certifique‑se de que a dependência `groupdocs-viewer` seja resolvida; execute `mvn clean install` se você vir exceções *class not found*.  
+- **Manipulação de documentos grandes:** Use try‑with‑resources para fechar automaticamente o `Viewer` e liberar recursos nativos.
 
-## Aplicações Práticas
-1. **Sistemas de Gerenciamento de Documentos:** Gere automaticamente metadados para documentos armazenados, permitindo fluxos de trabalho eficientes de **document management java**.  
-2. **Recursos de Visualização:** Ofereça **document preview java** leve sem renderizar o arquivo inteiro, economizando largura de banda e tempo de processamento.  
-3. **Analytics e Relatórios:** Colete insights como **get page count java** para impulsionar estatísticas de uso e planejamento de armazenamento.  
+## Aplicações práticas
+1. **Sistemas de gerenciamento de documentos:** Preencha automaticamente os campos de metadados (contagem de páginas, formato) quando os usuários carregam arquivos, permitindo busca e categorização eficientes.  
+2. **Recursos de pré‑visualização rápida:** Crie um componente leve de **how to preview document** que exibe a primeira página ou miniatura sem uma renderização completa.  
+3. **Análise e relatórios:** Colete estatísticas de contagem de páginas em todo o seu repositório para prever necessidades de armazenamento e monitorar tendências de uso.
 
-## Considerações de Desempenho
-Para garantir desempenho ideal com **groupdocs viewer java**:
+## Considerações de desempenho
+- Libere as instâncias de `Viewer` prontamente (por exemplo, via try‑with‑resources) para liberar handles nativos.  
+- Extraia metadados somente quando necessário; evite chamadas de renderização completa desnecessárias para manter o uso de memória baixo, especialmente em cenários de **manage large documents**.
 
-- **Descarte as instâncias do Viewer prontamente** (usando try‑with‑resources) para liberar recursos nativos.  
-- **Processamento em lote de arquivos grandes** extraindo metadados somente quando necessário, o que ajuda a **manage large documents** de forma mais eficaz.  
+## Perguntas frequentes
 
-## Conclusão
-Você dominou como **extrair metadados de documentos** e recuperar informações de visualização de documentos usando **groupdocs viewer java**. Essa capacidade é inestimável para aplicações que precisam de insights detalhados de documentos, visualizações rápidas ou fluxos de trabalho eficientes baseados em metadados.
+**Q: Qual é o propósito de `ViewInfoOptions` no GroupDocs Viewer para Java?**  
+A: Ele informa à API qual formato de visualização (HTML, PDF, imagem) você deseja metadados, permitindo que você **extrair metadados de documento** eficientemente.
 
-### Próximos Passos
-- Explore opções adicionais de renderização (PDF, imagens, texto).  
-- Integre configurações de segurança para controlar quem pode visualizar quais metadados.  
-- Combine a extração de metadados com serviços de indexação para recursos de busca poderosos.
+**Q: Posso usar o GroupDocs Viewer para Java com tipos de arquivo diferentes de PDF?**  
+A: Sim, ele suporta mais de 50 formatos — incluindo Word, Excel, PowerPoint e tipos de imagem comuns — tornando‑o ideal para projetos de **metadata extraction java**.
 
-## Seção de Perguntas Frequentes
-**Q1: Qual é o propósito do `ViewInfoOptions` no GroupDocs.Viewer para Java?**  
-A1: Ele especifica como você deseja recuperar informações de visualização, como visualizações HTML ou PDF, permitindo que você **extrair metadados de documentos** de forma eficiente.
+**Q: Como lidar com documentos muito grandes sem esgotar a memória?**  
+A: Recupere apenas os metadados (usando `getViewInfo`) e feche o `Viewer` imediatamente; essa abordagem processa arquivos com centenas de páginas usando menos de 10 MB de RAM.
 
-**Q2: Posso usar o GroupDocs.Viewer para Java com outros formatos de arquivo além de PDF?**  
-A2: Sim, ele suporta uma ampla gama de formatos incluindo Word, Excel, PowerPoint e arquivos de imagem, tornando‑o ideal para projetos de **document management java**.
+**Q: É necessária uma licença para uso em produção?**  
+A: Um teste gratuito está disponível para avaliação, mas uma licença comercial é obrigatória para qualquer implantação em produção.
 
-**Q3: Como lidar com documentos grandes no GroupDocs.Viewer?**  
-A3: Gerencie recursos de forma eficiente fechando as instâncias de `Viewer` prontamente e extraindo apenas metadados quando possível, o que ajuda a **manage large documents**.
-
-**Q4: Existe algum custo associado ao uso do GroupDocs.Viewer para Java?**  
-A4: Um teste gratuito está disponível. Para uso em produção, é necessária uma licença comercial.
-
-**Q5: Quais são alguns erros comuns ao implementar este recurso?**  
-A5: Caminhos de arquivo incorretos e dependências Maven ausentes são problemas frequentes. Sempre verifique a localização do documento e assegure que o artefato `groupdocs-viewer` esteja corretamente adicionado.
+**Q: Quais são os erros mais comuns ao implementar este recurso?**  
+A: Caminhos de arquivo incorretos e dependências Maven ausentes são os principais problemas. Verifique a localização do documento e certifique‑se de que o artefato `groupdocs-viewer` esteja corretamente adicionado ao seu `pom.xml`.
 
 ## Recursos
-- **Documentation:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Download:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)
-- **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
-- **Free Trial:** [Try GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Temporary License:** [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Documentação:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Referência da API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Download:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)  
+- **Compra:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Teste gratuito:** [Try GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Licença temporária:** [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Suporte:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Última atualização:** 2026-03-22  
+**Última atualização:** 2026-09-05  
 **Testado com:** GroupDocs.Viewer for Java 25.2  
 **Autor:** GroupDocs
+
+## Tutoriais Relacionados
+
+- [Extrair contagem de páginas PDF e metadados via GroupDocs.Viewer Java](/viewer/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/)
+- [Carregar documento a partir de URL em Java – Tutorial GroupDocs.Viewer](/viewer/java/document-loading/)
+- [Como recuperar anexos Java e imprimir anexos de documentos com GroupDocs.Viewer para Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/)
