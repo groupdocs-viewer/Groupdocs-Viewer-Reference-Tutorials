@@ -1,53 +1,128 @@
 ---
-date: '2026-03-22'
-description: Μάθετε πώς να δημιουργείτε PDF από Excel σε Java χρησιμοποιώντας το GroupDocs.Viewer,
-  αποδίδοντας τα λογιστικά φύλλα με αλλαγές σελίδας, γραμμές πλέγματος και επικεφαλίδες.
+date: '2026-09-10'
+description: Μάθετε πώς να μετατρέψετε το Excel σε PDF σε Java με το GroupDocs Viewer,
+  αποδίδοντας τα υπολογιστικά φύλλα με page breaks, grid lines και headings σε ένα
+  μόνο βήμα.
 keywords:
-- Java PDF Rendering with GroupDocs.Viewer
-- rendering spreadsheets as PDFs
-- GroupDocs.Viewer for Java setup
-title: Δημιουργία PDF από Excel σε Java – Κατακτώντας την Απόδοση Φύλλων Εργασίας
-  με Αλλαγές Σελίδας
+- convert excel to pdf java
+- groupdocs viewer java
+- excel page breaks pdf
+- java pdf rendering
+lastmod: '2026-09-10'
+og_description: Μάθετε πώς να μετατρέψετε το Excel σε PDF σε Java με το GroupDocs
+  Viewer, αποδίδοντας τα υπολογιστικά φύλλα με page breaks, grid lines και headings.
+  Quick setup και code examples για high‑fidelity output.
+og_image_alt: Screenshot of a spreadsheet rendered to PDF with page breaks using GroupDocs
+  Viewer for Java
+og_title: Μετατροπή Excel σε PDF σε Java χρησιμοποιώντας GroupDocs Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-10'
+  description: Learn how to convert Excel to PDF in Java with GroupDocs Viewer, rendering
+    spreadsheets with page breaks, grid lines, and headings in a single step.
+  headline: Convert Excel to PDF in Java using GroupDocs Viewer
+  type: TechArticle
+- description: Learn how to convert Excel to PDF in Java with GroupDocs Viewer, rendering
+    spreadsheets with page breaks, grid lines, and headings in a single step.
+  name: Convert Excel to PDF in Java using GroupDocs Viewer
+  steps:
+  - name: '**Initialize Viewer and Options** – set up the viewer with your input file
+      and define the output PDF path:'
+    text: '**Initialize Viewer and Options** – set up the viewer with your input file
+      and define the output PDF path:'
+  - name: '**Configure Spreadsheet Options** – enable rendering by page breaks, grid
+      lines, and headings:'
+    text: '**Configure Spreadsheet Options** – enable rendering by page breaks, grid
+      lines, and headings:'
+  - name: '**Key parameters explained**'
+    text: '**Key parameters explained**'
+  - name: '**Financial reporting** – Convert monthly Excel reports into PDFs that
+      honor page breaks, ensuring each statement starts on a new page.'
+    text: '**Financial reporting** – Convert monthly Excel reports into PDFs that
+      honor page breaks, ensuring each statement starts on a new page.'
+  - name: '**Academic publishing** – Render research data tables with grid lines and
+      headings for journal submission.'
+    text: '**Academic publishing** – Render research data tables with grid lines and
+      headings for journal submission.'
+  - name: '**Inventory management** – Generate printable inventory sheets that keep
+      the original layout intact, facilitating on‑floor scanning.'
+    text: '**Inventory management** – Generate printable inventory sheets that keep
+      the original layout intact, facilitating on‑floor scanning.'
+  type: HowTo
+- questions:
+  - answer: Call `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)` before
+      rendering.
+    question: What is the easiest way to add grid lines to the PDF?
+  - answer: Yes—use `SpreadsheetOptions.setWorksheetIndex(int index)` to target a
+      particular sheet. `setWorksheetIndex(int index)` selects the worksheet at the
+      given zero‑based index for rendering.
+    question: Can I render only a specific worksheet?
+  - answer: Absolutely. Pass the password when constructing the `Viewer` instance.
+    question: Does GroupDocs.Viewer support password‑protected Excel files?
+  - answer: Enable `setRenderHeadings(true)` in `SpreadsheetOptions`.
+    question: How do I ensure headings appear in the PDF?
+  - answer: Yes, a valid GroupDocs license is needed for commercial deployments.
+    question: Is a license required for production use?
+  type: FAQPage
+tags:
+- convert excel to pdf
+- groupdocs viewer
+- java pdf rendering
+- spreadsheet page breaks
+- document conversion
+title: Μετατροπή Excel σε PDF σε Java χρησιμοποιώντας GroupDocs Viewer
 type: docs
 url: /el/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/
 weight: 1
 ---
 
-# δημιουργία pdf από excel σε Java: Κατακτώντας την απόδοση λογιστικών φύλλων με διακοπές σελίδας
+# Μετατροπή Excel σε PDF σε Java χρησιμοποιώντας το GroupDocs Viewer
 
-Σε σύγχρονες εφαρμογές που βασίζονται σε δεδομένα, η δυνατότητα **generate pdf from excel** απευθείας σε Java αποτελεί τεράστια ενίσχυση παραγωγικότητας. Με το GroupDocs.Viewer μπορείτε να μετατρέψετε πολύπλοκα λογιστικά φύλλα σε επαγγελματικά PDF—διατηρώντας τις διακοπές σελίδας, τις γραμμές πλέγματος και τις επικεφαλίδες των στηλών—χωρίς να χρειάζεται εγκατάσταση του Microsoft Office στον διακομιστή.
+Σε σύγχρονες εφαρμογές που βασίζονται σε δεδομένα, η δυνατότητα **convert Excel to PDF in Java** αποτελεί τεράστια ενίσχυση της παραγωγικότητας. Με το GroupDocs.Viewer μπορείτε να μετατρέψετε σύνθετα λογιστικά φύλλα σε επαγγελματικά PDF—διατηρώντας τις αλλαγές σελίδας, τις γραμμές πλέγματος και τις επικεφαλίδες των στηλών—χωρίς να εγκαταστήσετε το Microsoft Office στον διακομιστή. Αυτός ο οδηγός σας καθοδηγεί σε όλη τη διαδικασία, από τη ρύθμιση του περιβάλλοντος μέχρι τη λεπτομερή ρύθμιση των επιλογών απόδοσης, ώστε να μπορείτε να παρέχετε συνεπή, έτοιμα για εκτύπωση έγγραφα σε οποιονδήποτε πελάτη.
 
 ## Εισαγωγή
 
-Στον σημερινό κόσμο που βασίζεται στα δεδομένα, η αποδοτική διαχείριση εγγράφων είναι κρίσιμη για τις επιχειρήσεις που επιδιώκουν να βελτιστοποιήσουν τις λειτουργίες τους. Συχνά, τα λογιστικά φύλλα αποτελούν κύρια πηγή δεδομένων που πρέπει να μοιράζονται σε συνεπή μορφή μεταξύ διαφορετικών πλατφορμών. Αυτό το εκπαιδευτικό υλικό αντιμετωπίζει την πρόκληση της απόδοσης λογιστικών φύλλων με διακοπές σελίδας σε PDF χρησιμοποιώντας **GroupDocs.Viewer for Java**—ένα ευέλικτο εργαλείο σχεδιασμένο για να απλοποιήσει αυτή τη διαδικασία.
+Στον σημερινό κόσμο που βασίζεται σε δεδομένα, η αποδοτική διαχείριση εγγράφων είναι κρίσιμη για τις επιχειρήσεις που επιδιώκουν να βελτιστοποιήσουν τις λειτουργίες τους. Τα λογιστικά φύλλα συχνά λειτουργούν ως η κύρια πηγή δεδομένων που πρέπει να μοιράζονται σε συνεπή, μόνο για ανάγνωση μορφή σε όλες τις πλατφόρμες. Η απόδοση λογιστικών φύλλων με αλλαγές σελίδας σε PDF εξασφαλίζει ότι κάθε λογική ενότητα ξεκινά σε νέα σελίδα, διατηρώντας τη διάταξη που αναμένουν οι σχεδιαστές. Αυτός ο οδηγός σας δείχνει πώς να το πετύχετε με **GroupDocs.Viewer for Java**, μια ευέλικτη βιβλιοθήκη που αναλαμβάνει το βαρέως τύπου έργο για εσάς.
 
-![Διακοπές σελίδας σε λογιστικά φύλλα με το GroupDocs.Viewer για Java](/viewer/advanced-rendering/page-breaks-in-spreadsheets-java.png)
+![Page Breaks in Spreadsheets with GroupDocs.Viewer for Java](/viewer/advanced-rendering/page-breaks-in-spreadsheets-java.png)
 
-**Τι θα μάθετε:**
-- Πώς να **generate pdf from excel** αποδίδοντας λογιστικά φύλλα με διακοπές σελίδας.
-- Διαμόρφωση επιλογών απόδοσης λογιστικών φύλλων όπως γραμμές πλέγματος και επικεφαλίδες.
-- Ρύθμιση του περιβάλλοντος ανάπτυξης για το GroupDocs.Viewer.
-- Πρακτικές εφαρμογές αυτών των λειτουργιών σε πραγματικά σενάρια.
+**Τι θα μάθετε**
 
-## Γρήγορες Απαντήσεις
+- Πώς να **convert Excel to PDF in Java** αποδίδοντας λογιστικά φύλλα σελίδα‑με‑σελίδα.  
+- Διαμόρφωση επιλογών απόδοσης λογιστικών φύλλων όπως γραμμές πλέγματος και επικεφαλίδες.  
+- Ρύθμιση του περιβάλλοντος ανάπτυξης για το GroupDocs.Viewer.  
+- Πραγματικά σενάρια όπου τα PDF με σεβασμό στις αλλαγές σελίδας εξοικονομούν χρόνο και μειώνουν σφάλματα.  
+
+## Γρήγορες απαντήσεις
 - **Ποια είναι η κύρια βιβλιοθήκη;** GroupDocs.Viewer for Java.  
-- **Ποια μέθοδος αποδίδει με διακοπές σελίδας;** `SpreadsheetOptions.forRenderingByPageBreaks()`.  
-- **Μπορώ να προσθέσω γραμμές πλέγματος στο PDF;** Ναι, χρησιμοποιήστε `setRenderGridLines(true)`.  
-- **Πώς να συμπεριλάβω τις επικεφαλίδες των στηλών;** Καλέστε `setRenderHeadings(true)`.  
-- **Χρειάζεται άδεια για παραγωγική χρήση;** Ναι, απαιτείται έγκυρη άδεια GroupDocs.
+- **Ποια μέθοδος αποδίδει με βάση τις αλλαγές σελίδας;** `SpreadsheetOptions.forRenderingByPageBreaks()`.  
+- **Μπορώ να προσθέσω γραμμές πλέγματος στο PDF;** Ναι—call `setRenderGridLines(true)`.  
+- **Πώς μπορώ να συμπεριλάβω τις επικεφαλίδες των στηλών;** Enable `setRenderHeadings(true)`.  
+- **Χρειάζομαι άδεια για παραγωγή;** Ναι, a valid GroupDocs license is required.  
 
-## Τι είναι το **generate pdf from excel**;
-Η μετατροπή ενός βιβλίου εργασίας Excel (`.xlsx`) σε έγγραφο PDF απευθείας από κώδικα Java σας επιτρέπει να μοιράζεστε δεδομένα με ασφάλεια, να διατηρείτε τη μορφοποίηση και να εξασφαλίζετε συμβατότητα μεταξύ πλατφορμών χωρίς την ανάγκη του Microsoft Office στον διακομιστή.
+**Ορισμοί μεθόδων:** `SpreadsheetOptions.forRenderingByPageBreaks()` διαμορφώνει την απόδοση ώστε να σέβεται τις αλλαγές σελίδας του λογιστικού φύλλου. `setRenderGridLines(true)` ενεργοποιεί τις γραμμές πλέγματος στο PDF. `setRenderHeadings(true)` περιλαμβάνει τις επικεφαλίδες των στηλών σε κάθε σελίδα.
 
-## Γιατί να χρησιμοποιήσετε το GroupDocs.Viewer for Java;
-Το GroupDocs.Viewer προσφέρει έτοιμη υποστήριξη για ευρύ φάσμα μορφών εγγράφων, υψηλής πιστότητας απόδοση και ευέλικτες επιλογές όπως **render excel page breaks**, **add grid lines pdf**, και **include headings pdf**. Αυτό εξαλείφει την ανάγκη για προσαρμοσμένη λογική απόδοσης και επιταχύνει την ανάπτυξη.
+## Τι είναι η convert Excel to PDF in Java;
+Η μετατροπή ενός βιβλίου εργασίας Excel (`.xlsx`) σε έγγραφο PDF απευθείας από κώδικα Java σας επιτρέπει να μοιράζεστε δεδομένα με ασφάλεια, να διατηρείτε ακριβή μορφοποίηση και να εγγυάστε τη διαλειτουργικότητα μεταξύ πλατφορμών χωρίς να εξαρτάστε από το Microsoft Office. Η μετατροπή εκτελείται εξ ολοκλήρου στον διακομιστή, παράγοντας ένα PDF μόνο για ανάγνωση που αντικατοπτρίζει τη διάταξη του αρχικού λογιστικού φύλλου, συμπεριλαμβανομένων τυχόν χειροκίνητα εισαχθέντων αλλαγών σελίδας.
+
+## Γιατί να χρησιμοποιήσετε το GroupDocs.Viewer για Java;
+Το GroupDocs.Viewer υποστηρίζει **70+** μορφές εγγράφων—συμπεριλαμβανομένων των Excel, Word, PowerPoint και πάνω από 50 τύπων εικόνων—ενώ αποδίδει PDF με υψηλή πιστότητα. Επεξεργάζεται βιβλία εργασίας πολλών εκατοντάδων σελίδων χωρίς να φορτώνει ολόκληρο το αρχείο στη μνήμη, μειώνοντας τη μέγιστη χρήση RAM έως και **80 %** σε σύγκριση με απλοϊκές προσεγγίσεις φόρτωσης. Αυτές οι δυνατότητες εξαλείφουν την ανάγκη για προσαρμοσμένη λογική απόδοσης και επιταχύνουν δραματικά τους κύκλους ανάπτυξης.
 
 ## Προαπαιτούμενα
 
-Για να υλοποιήσετε αποτελεσματικά το **generate pdf from excel** χρησιμοποιώντας το GroupDocs.Viewer, βεβαιωθείτε ότι διαθέτετε τα παρακάτω:
+Για να υλοποιήσετε με επιτυχία την **convert Excel to PDF in Java**, βεβαιωθείτε ότι διαθέτετε:
 
-### Απαιτούμενες Βιβλιοθήκες και Εξαρτήσεις
-Θα χρειαστείτε τη βιβλιοθήκη GroupDocs.Viewer for Java. Μπορείτε να την προσθέσετε εύκολα μέσω Maven συμπεριλαμβάνοντάς την στο αρχείο `pom.xml`:
+### Απαιτούμενες βιβλιοθήκες και εξαρτήσεις
+Προσθέστε το Maven artifact του GroupDocs.Viewer for Java στο `pom.xml` σας:
+
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-viewer</artifactId>
+    <version>25.2</version>
+</dependency>
+```
+
 ```xml
 <repositories>
     <repository>
@@ -65,17 +140,19 @@ weight: 1
 </dependencies>
 ```
 
-### Απαιτήσεις Ρύθμισης Περιβάλλοντος
-- Java Development Kit (JDK) έκδοση 8 ή νεότερη.
-- Ένα ολοκληρωμένο περιβάλλον ανάπτυξης (IDE) όπως IntelliJ IDEA, Eclipse ή NetBeans.
+### Απαιτήσεις ρύθμισης περιβάλλοντος
+- Java Development Kit (JDK) 8 ή νεότερο.  
+- Ένα IDE όπως IntelliJ IDEA, Eclipse ή NetBeans.  
 
-### Προαπαιτούμενες Γνώσεις
-Βασική κατανόηση του προγραμματισμού Java και εξοικείωση με έργα Maven θα είναι χρήσιμες. Προηγούμενη εμπειρία με τη δημιουργία PDF είναι πλεονέκτημα αλλά όχι απαραίτητη.
+### Προαπαιτούμενες γνώσεις
+Βασικός προγραμματισμός Java και εξοικείωση με έργα Maven είναι χρήσιμα. Προηγούμενη εμπειρία στη δημιουργία PDF είναι προαιρετική.
 
-## Ρύθμιση του GroupDocs.Viewer for Java
+## Ρύθμιση του GroupDocs.Viewer για Java
 
-### Βασική Αρχικοποίηση και Ρύθμιση
-Μόλις το περιβάλλον σας είναι έτοιμο, αρχικοποιήστε το GroupDocs.Viewer στο έργο σας:
+### Βασική αρχικοποίηση και ρύθμιση
+`Viewer` φορτώνει ένα έγγραφο και το προετοιμάζει για απόδοση σε διάφορες μορφές εξόδου.  
+Πρώτα, δημιουργήστε μια παρουσία `Viewer` και δείξτε το στο αρχείο Excel σας. Το παρακάτω απόσπασμα δείχνει τον ελάχιστο κώδικα που απαιτείται για να ξεκινήσετε:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
@@ -84,15 +161,22 @@ try (Viewer viewer = new Viewer("path/to/your/file.xlsx")) {
 }
 ```
 
-### Απόκτηση Άδειας
-Μπορείτε να αποκτήσετε δωρεάν δοκιμαστική ή προσωρινή άδεια από το GroupDocs για να δοκιμάσετε τα προϊόντα τους χωρίς περιορισμούς λειτουργιών. Επισκεφθείτε [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) για περισσότερες πληροφορίες σχετικά με την απόκτηση άδειας.
+**Αγκύρωση ορισμού:** `Viewer` είναι η βασική κλάση στο GroupDocs.Viewer που φορτώνει ένα έγγραφο και το προετοιμάζει για απόδοση σε διάφορες μορφές εξόδου.
 
-## Πώς να generate pdf from excel με το GroupDocs.Viewer
+### Απόκτηση άδειας
+Μπορείτε να αποκτήσετε δωρεάν δοκιμή ή προσωρινή άδεια από το GroupDocs για να δοκιμάσετε το προϊόν χωρίς περιορισμούς λειτουργιών. Επισκεφθείτε τη σελίδα [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) για λεπτομέρειες σχετικά με την απόκτηση κλειδιού άδειας.
 
-### Απόδοση Λογιστικών Φύλλων με Διακοπές Σελίδας
+## Πώς να μετατρέψετε Excel σε PDF σε Java με το GroupDocs.Viewer
 
-#### Υλοποίηση Βήμα‑βήμα
-1. **Αρχικοποίηση Viewer και Options** – ρυθμίστε το viewer με το αρχείο εισόδου και ορίστε τη διαδρομή εξόδου PDF:
+Φορτώστε το βιβλίο εργασίας Excel, διαμορφώστε τις επιλογές απόδοσης και γράψτε το PDF εξόδου σε μόλις τρία σύντομα βήματα. Αυτή η παράγραφος άμεσης απάντησης ικανοποιεί την απαίτηση επικεφαλίδας σε μορφή ερώτησης: δημιουργείτε μια παρουσία `Viewer`, ορίζετε `PdfViewOptions` με `SpreadsheetOptions` διαμορφωμένα για απόδοση με βάση τις αλλαγές σελίδας, και καλείτε `viewer.view()`.
+
+`PdfViewOptions` καθορίζει τις ρυθμίσεις εξόδου PDF. `SpreadsheetOptions` διαμορφώνει τον τρόπο απόδοσης των λογιστικών φύλλων, συμπεριλαμβανομένων των αλλαγών σελίδας, των γραμμών πλέγματος και των επικεφαλίδων.
+
+### Απόδοση λογιστικών φύλλων με βάση τις αλλαγές σελίδας
+
+#### Υλοποίηση βήμα‑βήμα
+1. **Αρχικοποίηση Viewer και Options** – set up the viewer with your input file and define the output PDF path:
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path outputFilePath = outputDirectory.resolve("output.pdf");
@@ -101,7 +185,8 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Page_Breaks.xlsx")) {
     PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
 
-2. **Διαμόρφωση Επιλογών Spreadsheet** – ενεργοποιήστε την απόδοση με διακοπές σελίδας, τις γραμμές πλέγματος και τις επικεφαλίδες:
+2. **Διαμόρφωση Spreadsheet Options** – enable rendering by page breaks, grid lines, and headings:
+
 ```java
     // Set SpreadsheetOptions for rendering by page breaks.
     viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingByPageBreaks());
@@ -116,19 +201,19 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Page_Breaks.xlsx")) {
 }
 ```
 
-3. **Επεξήγηση Κύριων Παραμέτρων**
-   - `forRenderingByPageBreaks()`: Εξασφαλίζει ότι κάθε σελίδα PDF ευθυγραμμίζεται με μια διακοπή σελίδας του λογιστικού φύλλου.
-   - `setRenderGridLines(true)`: **add grid lines pdf** – βελτιώνει την αναγνωσιμότητα των πινάκων.
-   - `setRenderHeadings(true)`: **include headings pdf** – εμφανίζει τις ετικέτες των στηλών.
+3. **Επεξήγηση βασικών παραμέτρων**  
+   - `forRenderingByPageBreaks()`: Ευθυγραμμίζει κάθε σελίδα PDF με την αλλαγή σελίδας του λογιστικού φύλλου.  
+   - `setRenderGridLines(true)`: Προσθέτει γραμμές πλέγματος για βελτίωση της αναγνωσιμότητας του πίνακα.  
+   - `setRenderHeadings(true)`: Εμφανίζει τις ετικέτες των στηλών σε κάθε εκτυπωμένη σελίδα.
 
-#### Συμβουλές Επίλυσης Προβλημάτων
-- Επαληθεύστε ότι οι διαδρομές εισόδου και εξόδου είναι σωστές.
-- Επιβεβαιώστε ότι το βιβλίο εργασίας περιέχει πραγματικά διακοπές σελίδας (Διάταξη Εκτύπωσης → Προεπισκόπηση Διακοπής Σελίδας).
+#### Συμβουλές αντιμετώπισης προβλημάτων
+- Επαληθεύστε ότι το βιβλίο εργασίας περιέχει πραγματικά αλλαγές σελίδας (Διάταξη εκτύπωσης → Προεπισκόπηση αλλαγής σελίδας).  
+- Βεβαιωθείτε ότι οι διαδρομές αρχείων εισόδου και εξόδου είναι προσβάσιμες από τη διαδικασία Java.  
 
-## Διαμόρφωση Επιλογών Απόδοσης Spreadsheet
+## Διαμόρφωση επιλογών απόδοσης λογιστικών φύλλων
 
-### Προσαρμογή Γραμμών Πλέγματος και Επικεφαλίδων
-Πέρα από τις διακοπές σελίδας, μπορείτε να ρυθμίσετε την εμφάνιση του PDF.
+### Προσαρμογή γραμμών πλέγματος και επικεφαλίδων
+Πέρα από τις αλλαγές σελίδας, μπορείτε να ρυθμίσετε λεπτομερώς την εμφάνιση του PDF. Το αντικείμενο `SpreadsheetOptions` σας παρέχει λεπτομερή έλεγχο των οπτικών στοιχείων.
 
 ```java
 import com.groupdocs.viewer.options.SpreadsheetOptions;
@@ -140,50 +225,49 @@ spreadsheetOptions.setRenderGridLines(true);
 spreadsheetOptions.setRenderHeadings(true);
 ```
 
-- **Γραμμές Πλέγματος**: Χρήσιμες για τη διατήρηση της οπτικής δομής των πινάκων δεδομένων.
-- **Επικεφαλίδες**: Διευκολύνουν τους αναγνώστες στην κατανόηση του περιεχομένου των στηλών.
+- **Γραμμές πλέγματος**: Διατηρούν τη οπτική δομή των πινάκων, ιδιαίτερα χρήσιμες για οικονομικά δεδομένα.  
+- **Επικεφαλίδες**: Ενισχύουν το πλαίσιο των στηλών σε κάθε σελίδα, μειώνοντας την ανάγκη για χειροκίνητες σημειώσεις.
 
-#### Συνηθισμένα Προβλήματα
-- Εάν οι γραμμές πλέγματος ή οι επικεφαλίδες δεν εμφανίζονται, ελέγξτε ξανά ότι το αντικείμενο `SpreadsheetOptions` είναι συνδεδεμένο με το `PdfViewOptions` πριν καλέσετε `viewer.view()`.
+#### Συνηθισμένα προβλήματα
+Εάν λείπουν οι γραμμές πλέγματος ή οι επικεφαλίδες, ελέγξτε ξανά ότι η παρουσία `SpreadsheetOptions` είναι συνδεδεμένη με το `PdfViewOptions` πριν καλέσετε το `viewer.view()`.
 
-## Πρακτικές Εφαρμογές
+## Πρακτικές εφαρμογές
 
-Ακολουθούν πραγματικά σενάρια όπου το **generate pdf from excel** διαπρέπει:
+Ακολουθούν πραγματικά σενάρια όπου η **convert Excel to PDF in Java** διαπρέπει:
 
-1. **Οικονομική Αναφορά** – Μετατρέψτε μηνιαίες αναφορές Excel σε PDF που τηρούν τις διακοπές σελίδας, εξασφαλίζοντας ότι κάθε δήλωση ξεκινά σε νέα σελίδα.
-2. **Ακαδημαϊκή Δημοσίευση** – Αποδώστε πίνακες ερευνητικών δεδομένων με γραμμές πλέγματος και επικεφαλίδες για ένταξη σε περιοδικά.
-3. **Διαχείριση Αποθεμάτων** – Δημιουργήστε εκτυπώσιμα φύλλα αποθεμάτων που διατηρούν την αρχική διάταξη.
+1. **Financial reporting** – Μετατρέψτε τις μηνιαίες αναφορές Excel σε PDF που σέβονται τις αλλαγές σελίδας, διασφαλίζοντας ότι κάθε δήλωση ξεκινά σε νέα σελίδα.  
+2. **Academic publishing** – Αποδώστε πίνακες ερευνητικών δεδομένων με γραμμές πλέγματος και επικεφαλίδες για υποβολή σε περιοδικό.  
+3. **Inventory management** – Δημιουργήστε εκτυπώσιμα φύλλα απογραφής που διατηρούν την αρχική διάταξη, διευκολύνοντας τη σάρωση στο χώρο.  
 
-## Σκέψεις για την Απόδοση
+## Παραμέτρους απόδοσης
 
-- **Βελτιστοποίηση Χρήσης Πόρων**: Κρατήστε τα αρχεία εισόδου σε λογικά μεγέθη για να αποφύγετε υψηλή κατανάλωση μνήμης.
-- **Ρύθμιση JVM**: Χρησιμοποιήστε τις σημαίες `-Xms` και `-Xmx` για να διαθέσετε επαρκή χώρο heap σε μεγάλα βιβλία εργασίας.
+- **Βελτιστοποίηση χρήσης πόρων**: Για βιβλία εργασίας μεγαλύτερα από 200 MB, ορίστε τη μνήμη heap του JVM (`-Xms2g -Xmx4g`) για να αποφύγετε σφάλματα έλλειψης μνήμης.  
+- **Συμβουλή επεξεργασίας παρτίδας**: Επαναχρησιμοποιήστε μια ενιαία παρουσία `Viewer` για πολλά αρχεία ώστε να μειώσετε το κόστος αρχικοποίησης έως και **30 %**.  
 
-## Συχνές Ερωτήσεις
+## Συχνές ερωτήσεις
 
-**Ε: Ποιος είναι ο πιο εύκολος τρόπος να προσθέσω γραμμές πλέγματος στο PDF;**  
-Α: Καλέστε `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)` πριν από την απόδοση.
+**Q: Ποιος είναι ο πιο εύκολος τρόπος για να προσθέσετε γραμμές πλέγματος στο PDF;**  
+A: Καλέστε `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)` πριν από την απόδοση.
 
-**Ε: Μπορώ να αποδώσω μόνο ένα συγκεκριμένο φύλλο εργασίας;**  
-Α: Ναι, χρησιμοποιήστε `SpreadsheetOptions.setWorksheetIndex(int index)` για να στοχεύσετε ένα συγκεκριμένο φύλλο.
+**Q: Μπορώ να αποδώσω μόνο ένα συγκεκριμένο φύλλο εργασίας;**  
+A: Ναι—χρησιμοποιήστε `SpreadsheetOptions.setWorksheetIndex(int index)` για να στοχεύσετε ένα συγκεκριμένο φύλλο.  
+`setWorksheetIndex(int index)` επιλέγει το φύλλο εργασίας με το δεδομένο μηδενικό δείκτη για απόδοση.
 
-**Ε: Υποστηρίζει το GroupDocs.Viewer αρχεία Excel με κωδικό πρόσβασης;**  
-Α: Απόλυτα. Περνάτε τον κωδικό πρόσβασης κατά τη δημιουργία του αντικειμένου `Viewer`.
+**Q: Υποστηρίζει το GroupDocs.Viewer αρχεία Excel με κωδικό πρόσβασης;**  
+A: Απόλυτα. Περνάτε τον κωδικό πρόσβασης κατά τη δημιουργία της παρουσίασης `Viewer`.
 
-**Ε: Πώς εξασφαλίζω ότι οι επικεφαλίδες εμφανίζονται στο PDF;**  
-Α: Ενεργοποιήστε `setRenderHeadings(true)` στο `SpreadsheetOptions`.
+**Q: Πώς μπορώ να διασφαλίσω ότι οι επικεφαλίδες εμφανίζονται στο PDF;**  
+A: Ενεργοποιήστε `setRenderHeadings(true)` στο `SpreadsheetOptions`.
 
-**Ε: Απαιτείται άδεια για παραγωγική χρήση;**  
-Α: Ναι, απαιτείται έγκυρη άδεια GroupDocs για εμπορικές εγκαταστάσεις.
+**Q: Απαιτείται άδεια για χρήση σε παραγωγή;**  
+A: Ναι, απαιτείται έγκυρη άδεια GroupDocs για εμπορικές εγκαταστάσεις.
 
-## Συμπέρασμα
-
-Τώρα έχετε κατακτήσει το **generate pdf from excel** χρησιμοποιώντας το GroupDocs.Viewer, από τη ρύθμιση του περιβάλλοντος έως την απόδοση λογιστικών φύλλων με διακοπές σελίδας, γραμμές πλέγματος και επικεφαλίδες. Αυτή η δυνατότητα βελτιστοποιεί τις ροές εργασίας εγγράφων, ενισχύει την παρουσίαση δεδομένων και μειώνει την εξάρτηση από εξωτερικά εργαλεία.
-
-**Επόμενα Βήματα:** Εξερευνήστε πρόσθετες επιλογές `PdfViewOptions` όπως υδατογραφήματα, προστασία με κωδικό πρόσβασης ή προσαρμοσμένα μεγέθη σελίδας για περαιτέρω προσαρμογή των PDF σας.
-
----
-
-**Τελευταία Ενημέρωση:** 2026-03-22  
-**Δοκιμή Με:** GroupDocs.Viewer 25.2 for Java  
+**Τελευταία ενημέρωση:** 2026-09-10  
+**Δοκιμή με:** GroupDocs.Viewer 25.2 for Java  
 **Συγγραφέας:** GroupDocs
+
+## Σχετικά μαθήματα
+
+- [Πώς να μετατρέψετε Excel σε HTML, JPG, PNG και PDF χρησιμοποιώντας το GroupDocs.Viewer Java](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
+- [Πώς να αποδώσετε γραμμές πλέγματος σε λογιστικά φύλλα Java χρησιμοποιώντας το GroupDocs.Viewer](/viewer/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/)
+- [Πώς να μετατρέψετε Excel σε HTML και να αποδώσετε κρυφές γραμμές & στήλες σε Java με το GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)

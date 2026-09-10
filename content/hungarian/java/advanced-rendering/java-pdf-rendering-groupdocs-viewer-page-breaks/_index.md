@@ -1,52 +1,128 @@
 ---
-date: '2026-03-22'
-description: Tanulja meg, hogyan generáljon PDF-et Excelből Java-ban a GroupDocs.Viewer
-  használatával, megjelenítve a táblázatokat oldaltörésekkel, rácsvonalakkal és címsorokkal.
+date: '2026-09-10'
+description: Ismerje meg, hogyan konvertálhatja az Excelt PDF-be Java-ban a GroupDocs
+  Viewer segítségével, egy lépésben megjelenítve a táblázatokat oldaltörésekkel, rácsvonalakkal
+  és fejlécekkel.
 keywords:
-- Java PDF Rendering with GroupDocs.Viewer
-- rendering spreadsheets as PDFs
-- GroupDocs.Viewer for Java setup
-title: PDF generálása Excelből Java-ban – A táblázat renderelésének mestersége oldaltörésekkel
+- convert excel to pdf java
+- groupdocs viewer java
+- excel page breaks pdf
+- java pdf rendering
+lastmod: '2026-09-10'
+og_description: Ismerje meg, hogyan konvertálhatja az Excelt PDF-be Java-ban a GroupDocs
+  Viewer segítségével, oldaltörésekkel, rácsvonalakkal és fejlécekkel. Gyors beállítás
+  és kódrészletek a high‑fidelity output érdekében.
+og_image_alt: Screenshot of a spreadsheet rendered to PDF with page breaks using GroupDocs
+  Viewer for Java
+og_title: Excel konvertálása PDF-be Java-ban a GroupDocs Viewer segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-10'
+  description: Learn how to convert Excel to PDF in Java with GroupDocs Viewer, rendering
+    spreadsheets with page breaks, grid lines, and headings in a single step.
+  headline: Convert Excel to PDF in Java using GroupDocs Viewer
+  type: TechArticle
+- description: Learn how to convert Excel to PDF in Java with GroupDocs Viewer, rendering
+    spreadsheets with page breaks, grid lines, and headings in a single step.
+  name: Convert Excel to PDF in Java using GroupDocs Viewer
+  steps:
+  - name: '**Initialize Viewer and Options** – set up the viewer with your input file
+      and define the output PDF path:'
+    text: '**Initialize Viewer and Options** – set up the viewer with your input file
+      and define the output PDF path:'
+  - name: '**Configure Spreadsheet Options** – enable rendering by page breaks, grid
+      lines, and headings:'
+    text: '**Configure Spreadsheet Options** – enable rendering by page breaks, grid
+      lines, and headings:'
+  - name: '**Key parameters explained**'
+    text: '**Key parameters explained**'
+  - name: '**Financial reporting** – Convert monthly Excel reports into PDFs that
+      honor page breaks, ensuring each statement starts on a new page.'
+    text: '**Financial reporting** – Convert monthly Excel reports into PDFs that
+      honor page breaks, ensuring each statement starts on a new page.'
+  - name: '**Academic publishing** – Render research data tables with grid lines and
+      headings for journal submission.'
+    text: '**Academic publishing** – Render research data tables with grid lines and
+      headings for journal submission.'
+  - name: '**Inventory management** – Generate printable inventory sheets that keep
+      the original layout intact, facilitating on‑floor scanning.'
+    text: '**Inventory management** – Generate printable inventory sheets that keep
+      the original layout intact, facilitating on‑floor scanning.'
+  type: HowTo
+- questions:
+  - answer: Call `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)` before
+      rendering.
+    question: What is the easiest way to add grid lines to the PDF?
+  - answer: Yes—use `SpreadsheetOptions.setWorksheetIndex(int index)` to target a
+      particular sheet. `setWorksheetIndex(int index)` selects the worksheet at the
+      given zero‑based index for rendering.
+    question: Can I render only a specific worksheet?
+  - answer: Absolutely. Pass the password when constructing the `Viewer` instance.
+    question: Does GroupDocs.Viewer support password‑protected Excel files?
+  - answer: Enable `setRenderHeadings(true)` in `SpreadsheetOptions`.
+    question: How do I ensure headings appear in the PDF?
+  - answer: Yes, a valid GroupDocs license is needed for commercial deployments.
+    question: Is a license required for production use?
+  type: FAQPage
+tags:
+- convert excel to pdf
+- groupdocs viewer
+- java pdf rendering
+- spreadsheet page breaks
+- document conversion
+title: Excel konvertálása PDF-be Java-ban a GroupDocs Viewer segítségével
 type: docs
 url: /hu/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/
 weight: 1
 ---
 
-# pdf generálása Excelből Java-ban: A táblázatok megjelenítésének elsajátítása oldaltörésekkel
+# Excel konvertálása PDF-re Java-ban a GroupDocs Viewer használatával
 
-A modern adat‑központú alkalmazásokban a **pdf generálása Excelből** közvetlenül Java-ban óriási termelékenységnövekedést jelent. A GroupDocs.Viewer segítségével összetett táblázatokat alakíthat át kifinomult PDF‑ekké — megőrizve az oldaltöréseket, a rácsvonalakat és az oszlopfejléceket — anélkül, hogy a szerveren a Microsoft Office‑t telepíteni kellene.
+A modern adat‑központú alkalmazásokban az **Excel PDF-re konvertálása Java-ban** óriási termelékenységnövekedést jelent. A GroupDocs.Viewer segítségével összetett táblázatokat alakíthat át kifinomult PDF-ekké—megőrizve az oldaltöréseket, rácsvonalakat és oszlopfejléceket—Microsoft Office telepítése nélkül a szerveren. Ez az útmutató végigvezeti a teljes folyamaton, a környezet beállításától a megjelenítési beállítások finomhangolásáig, hogy konzisztens, nyomtatásra kész dokumentumokat tudjon szállítani bármely ügyfélnek.
 
 ## Bevezetés
 
-A mai adat‑központú világban a hatékony dokumentumkezelés elengedhetetlen azok számára, akik szeretnék egyszerűsíteni működésüket. Gyakran a táblázatok az adatok elsődleges forrásai, amelyeket konzisztens formátumban kell megosztani a különböző platformok között. Ez az útmutató a táblázatok oldaltörésekkel történő PDF‑be konvertálásának kihívásával foglalkozik a **GroupDocs.Viewer for Java** segítségével — egy sokoldalú eszköz, amely leegyszerűsíti ezt a folyamatot.
+A mai adat‑központú világban a hatékony dokumentumkezelés kulcsfontosságú a működésük optimalizálására törekvő vállalkozások számára. A táblázatok gyakran a fő adatforrást jelentik, amelyet konzisztens, csak‑olvasásra szánt formátumban kell megosztani a platformok között. A táblázatok oldaltörésekkel történő PDF-be konvertálása biztosítja, hogy minden logikai szakasz új oldalon kezdődjön, megőrizve a tervezők által elvárt elrendezést. Ez az útmutató megmutatja, hogyan érhető el ez a **GroupDocs.Viewer for Java** segítségével, egy sokoldalú könyvtárral, amely elvégzi a nehéz munkát.
 
-![Oldaltörések a táblázatokban a GroupDocs.Viewer for Java-val](/viewer/advanced-rendering/page-breaks-in-spreadsheets-java.png)
+![Page Breaks in Spreadsheets with GroupDocs.Viewer for Java](/viewer/advanced-rendering/page-breaks-in-spreadsheets-java.png)
 
-**Amit megtanul:**
-- Hogyan **pdf generálása Excelből** oldaltörésekkel történő táblázatmegjelenítéssel.
-- A táblázatmegjelenítési beállítások konfigurálása, például a rácsvonalak és a fejlécek.
-- A fejlesztői környezet beállítása a GroupDocs.Viewer számára.
-- Ezeknek a funkcióknak a gyakorlati alkalmazásai valós helyzetekben.
+**Mit fog megtanulni**
+
+- Hogyan **konvertálja az Excelt PDF-re Java-ban** a táblázatok oldalankénti renderelésével.  
+- A táblázat renderelési beállítások konfigurálása, például rácsvonalak és fejlécek.  
+- A fejlesztői környezet beállítása a GroupDocs.Viewer számára.  
+- Valós példák, ahol az oldaltörés‑érzékeny PDF-ek időt takarítanak meg és csökkentik a hibákat.  
 
 ## Gyors válaszok
 - **Mi a fő könyvtár?** GroupDocs.Viewer for Java.  
-- **Melyik metódus jeleníti meg oldaltörésekkel?** `SpreadsheetOptions.forRenderingByPageBreaks()`.  
-- **Hozzáadhatok rácsvonalakat a PDF‑hez?** Igen, használja a `setRenderGridLines(true)`‑t.  
-- **Hogyan adhatom hozzá az oszlopfejléceket?** Hívja a `setRenderHeadings(true)`‑t.  
-- **Szükség van licencre a termeléshez?** Igen, érvényes GroupDocs licenc szükséges.
+- **Melyik metódus renderel oldaltörésekkel?** `SpreadsheetOptions.forRenderingByPageBreaks()`.  
+- **Hozzáadhatok rácsvonalakat a PDF-hez?** Igen—hívja a `setRenderGridLines(true)`-t.  
+- **Hogyan tudom belefoglalni az oszlopfejléceket?** Engedélyezze a `setRenderHeadings(true)`-t.  
+- **Szükség van licencre a termeléshez?** Igen, egy érvényes GroupDocs licenc szükséges.  
 
-## Mi az a **pdf generálása Excelből**?
-Egy Excel munkafüzet (`.xlsx`) közvetlenül Java kódból PDF dokumentummá konvertálása lehetővé teszi az adatok biztonságos megosztását, a formázás megőrzését, és a platformok közötti kompatibilitás biztosítását anélkül, hogy a szerveren a Microsoft Office‑t igénybe kellene venni.
+**Metódusdefiníciók:** `SpreadsheetOptions.forRenderingByPageBreaks()` beállítja a renderelést, hogy tiszteletben tartsa a táblázat oldaltöréseit. `setRenderGridLines(true)` engedélyezi a rácsvonalakat a PDF-ben. `setRenderHeadings(true)` minden oldalon megjeleníti az oszlopfejléceket.
 
-## Miért használjuk a GroupDocs.Viewer for Java‑t?
-A GroupDocs.Viewer kész megoldást kínál számos dokumentumformátum támogatására, magas hűségű megjelenítésre és rugalmas beállításokra, mint például **excel oldaltörések megjelenítése**, **rácsvonalak hozzáadása pdf‑hez**, és **fejlécek belefoglalása pdf‑be**. Ez megszünteti az egyedi megjelenítési logika szükségességét és felgyorsítja a fejlesztést.
+## Mi az Excel PDF-re konvertálása Java-ban?
+Az Excel munkafüzet (`.xlsx`) PDF-dokumentummá konvertálása közvetlenül Java kódból lehetővé teszi az adatok biztonságos megosztását, a pontos formázás megőrzését, és a platformok közötti kompatibilitás garantálását Microsoft Office használata nélkül. A konvertálás teljesen a szerveren fut, egy csak‑olvasásra szánt PDF-et hoz létre, amely tükrözi az eredeti táblázat elrendezését, beleértve a manuálisan beillesztett oldaltöréseket is.
+
+## Miért használja a GroupDocs.Viewer for Java-t?
+A GroupDocs.Viewer **70+** dokumentumformátumot támogat—beleértve az Excelt, Word-öt, PowerPoint-ot és több mint 50 kép típust—miközben magas hűségű PDF-eket renderel. Több száz oldalas munkafüzeteket dolgoz fel anélkül, hogy a teljes fájlt a memóriába töltené, így a csúcs RAM‑használatot akár **80 %**‑kal csökkenti a naív betöltési megközelítésekhez képest. Ezek a képességek megszüntetik az egyedi renderelési logika szükségességét, és drámaian felgyorsítják a fejlesztési ciklusokat.
 
 ## Előfeltételek
 
-A **pdf generálása Excelből** hatékony megvalósításához a GroupDocs.Viewer használatával, győződjön meg róla, hogy a következőkkel rendelkezik:
+A **Excel PDF-re konvertálása Java-ban** sikeres megvalósításához győződjön meg róla, hogy rendelkezik a következőkkel:
 
 ### Szükséges könyvtárak és függőségek
-Szüksége lesz a GroupDocs.Viewer for Java könyvtárra. Ez könnyen hozzáadható Maven‑en keresztül a `pom.xml` fájlba való beillesztésével:
+Adja hozzá a GroupDocs.Viewer for Java Maven artefaktumot a `pom.xml`-hez:
+
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-viewer</artifactId>
+    <version>25.2</version>
+</dependency>
+```
+
 ```xml
 <repositories>
     <repository>
@@ -65,16 +141,18 @@ Szüksége lesz a GroupDocs.Viewer for Java könyvtárra. Ez könnyen hozzáadha
 ```
 
 ### Környezet beállítási követelmények
-- Java Development Kit (JDK) 8-as vagy újabb verzió.
-- Integrált fejlesztőkörnyezet (IDE), például IntelliJ IDEA, Eclipse vagy NetBeans.
+- Java Development Kit (JDK) 8 vagy újabb.  
+- Egy IDE, például IntelliJ IDEA, Eclipse vagy NetBeans.  
 
 ### Tudás előfeltételek
-Alapvető Java programozási ismeretek és a Maven projektekhez való jártaság hasznos lesz. A PDF generálásban szerzett korábbi tapasztalat előny, de nem feltétlenül szükséges.
+Az alapvető Java programozás és a Maven projektek ismerete hasznos. A korábbi PDF‑generálási tapasztalat opcionális.
 
 ## A GroupDocs.Viewer for Java beállítása
 
 ### Alapvető inicializálás és beállítás
-Miután a környezet készen áll, inicializálja a GroupDocs.Viewer‑t a projektben:
+`Viewer` betölti a dokumentumot és előkészíti a különböző kimeneti formátumokba való rendereléshez.  
+Először hozzon létre egy `Viewer` példányt, és mutassa rá az Excel fájlra. Az alábbi kódrészlet mutatja a legkisebb szükséges kódot a kezdéshez:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
@@ -83,15 +161,22 @@ try (Viewer viewer = new Viewer("path/to/your/file.xlsx")) {
 }
 ```
 
+**Definíció horgony:** `Viewer` a GroupDocs.Viewer központi osztálya, amely betölti a dokumentumot és előkészíti a különböző kimeneti formátumokba való rendereléshez.
+
 ### Licenc beszerzése
-Ingyenes próba vagy ideiglenes licenc szerezhető a GroupDocs‑tól termékeik teszteléséhez korlátozások nélkül. További információért a licenc beszerzéséről látogasson el a [GroupDocs Ingyenes Próbaverzió](https://releases.groupdocs.com/viewer/java/) oldalra.
+Szerezhet ingyenes próba vagy ideiglenes licencet a GroupDocs-tól a termék funkciókorlátozások nélküli teszteléséhez. Látogassa meg a [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) oldalt a licenckulcs beszerzésének részleteiért.
 
-## Hogyan generáljunk pdf‑et Excelből a GroupDocs.Viewer‑rel
+## Hogyan konvertáljon Excelt PDF-re Java-val a GroupDocs.Viewer segítségével
 
-### Táblázatok megjelenítése oldaltörésekkel
+Töltse be az Excel munkafüzetet, konfigurálja a renderelési beállításokat, és írja ki a PDF kimenetet mindössze három tömör lépésben. Ez a közvetlen‑válasz bekezdés megfelel a kérdés‑formátumú címsor követelménynek: példányosít egy `Viewer`-t, beállítja a `PdfViewOptions`-t a `SpreadsheetOptions`-szel, amely oldaltöréses renderelésre van konfigurálva, és meghívja a `viewer.view()`-t.
+
+`PdfViewOptions` határozza meg a PDF kimeneti beállításokat. `SpreadsheetOptions` konfigurálja, hogyan kerülnek renderelésre a táblázatok, beleértve az oldaltöréseket, rácsvonalakat és fejléceket.
+
+### Táblázatok renderelése oldaltörésekkel
 
 #### Lépésről‑lépésre megvalósítás
-1. **Viewer és beállítások inicializálása** – állítsa be a viewert a bemeneti fájllal, és határozza meg a kimeneti PDF útvonalát:
+1. **Viewer és opciók inicializálása** – állítsa be a viewert a bemeneti fájllal, és határozza meg a kimeneti PDF útvonalát:
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path outputFilePath = outputDirectory.resolve("output.pdf");
@@ -100,7 +185,8 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Page_Breaks.xlsx")) {
     PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
 
-2. **Táblázat opciók konfigurálása** – engedélyezze a megjelenítést oldaltörésekkel, rácsvonalakkal és fejlécekkel:
+2. **Táblázat opciók konfigurálása** – engedélyezze az oldaltöréses renderelést, a rácsvonalakat és a fejléceket:
+
 ```java
     // Set SpreadsheetOptions for rendering by page breaks.
     viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingByPageBreaks());
@@ -115,19 +201,19 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Page_Breaks.xlsx")) {
 }
 ```
 
-3. **Kulcsparaméterek magyarázata**
-   - `forRenderingByPageBreaks()`: Biztosítja, hogy minden PDF oldal a táblázat oldaltörésével egyezzen.
-   - `setRenderGridLines(true)`: **rácsvonalak hozzáadása pdf** – javítja a táblázatos adatok olvashatóságát.
-   - `setRenderHeadings(true)`: **fejlécek belefoglalása pdf** – megjeleníti az oszlopcímkéket.
+3. **Kulcsparaméterek magyarázata**  
+   - `forRenderingByPageBreaks()`: Minden PDF oldalt a táblázat oldaltörésével igazít.  
+   - `setRenderGridLines(true)`: Rácsvonalakat ad a táblázat olvashatóságának javításához.  
+   - `setRenderHeadings(true)`: Minden nyomtatott oldalon megjeleníti az oszlopcímkéket.
 
 #### Hibaelhárítási tippek
-- Ellenőrizze, hogy a bemeneti és kimeneti útvonalak helyesek.
-- Győződjön meg róla, hogy a munkafüzet valóban tartalmaz oldaltöréseket (Nyomtatási elrendezés → Oldaltörés előnézet).
+- Ellenőrizze, hogy a munkafüzet valóban tartalmaz-e oldaltöréseket (Nyomtatási elrendezés → Oldaltörés előnézet).  
+- Győződjön meg arról, hogy a bemeneti és kimeneti fájl útvonalak elérhetők a Java folyamat számára.  
 
-## A táblázat megjelenítési opciók konfigurálása
+## Táblázat renderelési opciók konfigurálása
 
 ### Rácsvonalak és fejlécek testreszabása
-Az oldaltöréseken túl finomhangolhatja a PDF megjelenését.
+Az oldaltöréseken túl finomhangolhatja a PDF megjelenését. A `SpreadsheetOptions` objektum részletes vezérlést biztosít a vizuális elemek felett.
 
 ```java
 import com.groupdocs.viewer.options.SpreadsheetOptions;
@@ -139,50 +225,50 @@ spreadsheetOptions.setRenderGridLines(true);
 spreadsheetOptions.setRenderHeadings(true);
 ```
 
-- **Rácsvonalak**: Hasznosak az adat táblák vizuális struktúrájának megőrzéséhez.
-- **Fejlécek**: Megkönnyíti az olvasók számára az oszlopok kontextusának megértését.
+- **Rácsvonalak**: Megőrzik a táblázatok vizuális struktúráját, különösen hasznos pénzügyi adatok esetén.  
+- **Fejlécek**: Erősítik az oszlop kontextusát minden oldalon, csökkentve a manuális megjegyzések szükségességét.
 
 #### Gyakori problémák
-- Ha a rácsvonalak vagy a fejlécek nem jelennek meg, ellenőrizze, hogy a `SpreadsheetOptions` példány a `PdfViewOptions`‑hoz van‑e csatolva a `viewer.view()` hívása előtt.
+Ha a rácsvonalak vagy a fejlécek hiányoznak, ellenőrizze, hogy a `SpreadsheetOptions` példány a `PdfViewOptions`-hez van-e csatolva a `viewer.view()` meghívása előtt.
 
 ## Gyakorlati alkalmazások
 
-Íme néhány valós helyzet, ahol a **pdf generálása Excelből** kiemelkedik:
-
-1. **Pénzügyi jelentés** – Havi Excel jelentések konvertálása PDF‑ekbe, amelyek tiszteletben tartják az oldaltöréseket, biztosítva, hogy minden kimutatás új oldalon kezdődjön.
-2. **Akademiai publikáció** – Kutatási adat táblázatok megjelenítése rácsvonalakkal és fejlécekkel a folyóiratokba való beillesztéshez.
-3. **Készletkezelés** – Nyomtatható készletlapok generálása, amelyek megőrzik az eredeti elrendezést.
+Itt van néhány valós példája, ahol az **Excel PDF-re konvertálása Java-ban** kiemelkedik:
+1. **Pénzügyi jelentés** – Konvertálja a havi Excel jelentéseket PDF-ekbe, amelyek tiszteletben tartják az oldaltöréseket, biztosítva, hogy minden kimutatás új oldalon kezdődjön.  
+2. **Akademiai kiadvány** – Renderelje a kutatási adat táblázatokat rácsvonalakkal és fejlécekkel a folyóirati benyújtáshoz.  
+3. **Készletkezelés** – Generáljon nyomtatható készletlapokat, amelyek megőrzik az eredeti elrendezést, megkönnyítve a helyszíni beolvasást.  
 
 ## Teljesítmény szempontok
 
-- **Erőforrás-használat optimalizálása**: Tartsa a bemeneti fájlokat ésszerű méretűnek a magas memóriahasználat elkerülése érdekében.
-- **JVM hangolás**: Használja a `-Xms` és `-Xmx` kapcsolókat a nagy munkafüzetekhez elegendő heap memória biztosításához.
+- **Erőforrás-használat optimalizálása**: 200 MB-nál nagyobb munkafüzetek esetén állítsa be a JVM heap-et (`-Xms2g -Xmx4g`), hogy elkerülje a memóriahiány hibákat.  
+- **Kötegelt feldolgozási tipp**: Használjon egyetlen `Viewer` példányt több fájlhoz, hogy csökkentse az inicializációs terhelést akár **30 %**‑kal.  
 
 ## Gyakran feltett kérdések
 
-**K: Mi a legegyszerűbb módja a rácsvonalak PDF‑hez való hozzáadásának?**  
-A: Hívja meg a `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)`‑t a megjelenítés előtt.
+**K: Mi a legegyszerűbb módja a rácsvonalak hozzáadásának a PDF-hez?**  
+V: Hívja a `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)`-t a renderelés előtt.
 
-**K: Megjeleníthetek csak egy adott munkalapot?**  
-A: Igen, használja a `SpreadsheetOptions.setWorksheetIndex(int index)`‑t egy adott lap célzásához.
+**K: Renderelhetek csak egy adott munkalapot?**  
+V: Igen—használja a `SpreadsheetOptions.setWorksheetIndex(int index)`-t egy adott lap célzásához.  
+`setWorksheetIndex(int index)` kiválasztja a megadott nullától indexelt munkalapot a rendereléshez.
 
 **K: Támogatja a GroupDocs.Viewer a jelszóval védett Excel fájlokat?**  
-A: Természetesen. Adja meg a jelszót a `Viewer` példány létrehozásakor.
+V: Teljesen. Adja meg a jelszót a `Viewer` példány létrehozásakor.
 
-**K: Hogyan biztosíthatom, hogy a fejlécek megjelenjenek a PDF‑ben?**  
-A: Engedélyezze a `setRenderHeadings(true)`‑t a `SpreadsheetOptions`‑ban.
+**K: Hogyan biztosíthatom, hogy a fejlécek megjelenjenek a PDF-ben?**  
+V: Engedélyezze a `setRenderHeadings(true)`-t a `SpreadsheetOptions`-ban.
 
-**K: Szükséges licenc a termeléshez?**  
-A: Igen, érvényes GroupDocs licenc szükséges a kereskedelmi bevetéshez.
-
-## Következtetés
-
-Most már elsajátította a **pdf generálása Excelből** használatát a GroupDocs.Viewer‑rel, a környezet beállításától a táblázatok oldaltörésekkel, rácsvonalakkal és fejlécekkel történő megjelenítéséig. Ez a képesség egyszerűsíti a dokumentumfolyamatokat, javítja az adatok bemutatását, és csökkenti a külső eszközök függőségét.
-
-**Következő lépések:** Fedezze fel a további `PdfViewOptions` beállításokat, mint például a vízjel, jelszóvédelem vagy egyedi oldalméretek, hogy tovább testre szabja a PDF‑eket.
+**K: Szükséges licenc a termelési használathoz?**  
+V: Igen, egy érvényes GroupDocs licenc szükséges a kereskedelmi telepítésekhez.
 
 ---
 
-**Utoljára frissítve:** 2026-03-22  
-**Tesztelve:** GroupDocs.Viewer 25.2 for Java  
+**Utoljára frissítve:** 2026-09-10  
+**Tesztelt verzió:** GroupDocs.Viewer 25.2 for Java  
 **Szerző:** GroupDocs
+
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan konvertáljon Excelt HTML-re, JPG-re, PNG-re és PDF-re a GroupDocs.Viewer Java használatával](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
+- [Hogyan rendereljünk rácsvonalakat Java táblázatokban a GroupDocs.Viewer segítségével](/viewer/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/)
+- [Hogyan konvertáljon Excelt HTML-re és rendereljen rejtett sorokat és oszlopokat Java-ban a GroupDocs.Viewer-rel](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)

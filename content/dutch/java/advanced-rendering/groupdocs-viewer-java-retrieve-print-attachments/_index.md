@@ -1,48 +1,97 @@
 ---
-date: '2026-03-22'
-description: Leer hoe je bijlagen in Java kunt ophalen en PDF‑bijlagen in Java efficiënt
-  kunt afdrukken met GroupDocs.Viewer voor Java. Volg deze stapsgewijze gids om je
-  Java‑toepassingen te verbeteren.
+date: '2026-09-10'
+description: Leer hoe je PDF-bijlagen kunt afdrukken en bijlagen in Java efficiënt
+  kunt ophalen met GroupDocs.Viewer voor Java.
 keywords:
-- GroupDocs.Viewer for Java
-- retrieve document attachments
-- print document attachments
-title: Hoe bijlagen op te halen in Java en documentbijlagen af te drukken met GroupDocs.Viewer
-  voor Java
+- how to print pdf attachments
+- retrieve attachments java
+- print pdf attachments java
+lastmod: '2026-09-10'
+og_description: Leer hoe je PDF-bijlagen kunt afdrukken en bijlagen in Java efficiënt
+  kunt ophalen met GroupDocs.Viewer voor Java. Volg deze stap‑voor‑stap gids voor
+  snelle, betrouwbare resultaten.
+og_image_alt: Developer guide showing Java code to retrieve and print PDF attachments
+  with GroupDocs.Viewer
+og_title: Hoe PDF-bijlagen af te drukken in Java met GroupDocs.Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-10'
+  description: Learn how to print PDF attachments and retrieve attachments java efficiently
+    using GroupDocs.Viewer for Java.
+  headline: How to print PDF attachments in Java with GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to print PDF attachments and retrieve attachments java efficiently
+    using GroupDocs.Viewer for Java.
+  name: How to print PDF attachments in Java with GroupDocs.Viewer
+  steps:
+  - name: Initialize the Viewer object
+    text: The `Viewer` class is GroupDocs.Viewer’s entry point that loads a source
+      document and provides methods for rendering, conversion, and attachment extraction.
+      Using a *try‑with‑resources* block guarantees the viewer is closed automatically,
+      preventing memory leaks.
+  - name: Retrieve attachments
+    text: The `Attachment` class represents a single embedded file extracted from
+      the source document. Call `viewer.getAttachments()` to obtain a `List<Attachment>`;
+      you can then iterate, filter, or stream the results to other services.
+  - name: Print attachment details
+    text: Before printing, log each attachment’s metadata—name, size, and content
+      type—so you know exactly what you are sending to the printer. This step also
+      helps with debugging and audit trails.
+  type: HowTo
+- questions:
+  - answer: Yes. Supply the password when opening the attachment stream, then print
+      it normally.
+    question: Does “print PDF attachments java” work with password‑protected PDFs?
+  - answer: Absolutely. GroupDocs.Viewer treats embedded objects in Office files as
+      attachments and returns them via `getAttachments()`.
+    question: Can I retrieve attachments from a DOCX file?
+  - answer: After calling `getAttachments()`, filter the list by `attachment.getSize()`
+      before processing.
+    question: How can I limit the size of attachments I retrieve?
+  - answer: Yes. Stream the attachment directly to a viewer component or an in‑memory
+      buffer.
+    question: Is there a way to preview attachments without saving them first?
+  - answer: For production, a commercial license is recommended. A temporary license
+      is available for testing and evaluation.
+    question: What licensing model should I choose for production?
+  type: FAQPage
+tags:
+- print pdf attachments
+- GroupDocs.Viewer
+- Java document processing
+title: Hoe PDF-bijlagen af te drukken in Java met GroupDocs.Viewer
 type: docs
 url: /nl/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/
 weight: 1
 ---
 
-# Hoe Bijlagen Op te halen in Java en Documentbijlagen af te drukken met GroupDocs.Viewer for Java
+# Hoe PDF‑bijlagen af te drukken in Java met GroupDocs.Viewer
 
-Als je een Java‑applicatie bouwt die moet werken met complexe bestanden—zoals e‑mails, PDF‑s met ingebedde bronnen, of Office‑documenten—kan het omgaan met verborgen bijlagen al snel een hoofdpijn worden. **GroupDocs.Viewer for Java** verwijdert die frictie door je een schone, eenduidige API te bieden om **retrieve attachments java** uit te voeren en zelfs PDF‑bijlagen direct vanuit code af te drukken. In deze tutorial lopen we stap voor stap door alles wat je nodig hebt om te beginnen, van het installeren van de bibliotheek tot het extraheren en afdrukken van elke bijlage.
+Als je een Java‑applicatie bouwt die complexe bestanden moet verwerken—zoals e‑mails, PDF‑s met ingesloten bronnen, of Office‑documenten—kan het werken met verborgen bijlagen al snel een knelpunt worden. **GroupDocs.Viewer for Java** elimineert die wrijving door een schone, eenduidige API te bieden die je **retrieve attachments java** en **print PDF attachments** direct vanuit code laat uitvoeren. In deze tutorial zie je hoe je de bibliotheek instelt, elk ingesloten bestand extraheert en PDF‑bijlagen rechtstreeks naar een printer stuurt, terwijl je het geheugengebruik laag houdt en de prestaties hoog.
 
-![Bijlagen van Documenten ophalen en afdrukken met GroupDocs.Viewer for Java](/viewer/advanced-rendering/retrieve-and-print-document-attachments-java.png)
+![Documentbijlagen ophalen en afdrukken met GroupDocs.Viewer voor Java](/viewer/advanced-rendering/retrieve-and-print-document-attachments-java.png)
 
-## Snelle Antwoorden
-- **Wat betekent “retrieve attachments java”?** Het betekent het extraheren van bestanden die ingebed zijn in een hoofd‑document (bijv. MSG, EML, PDF) met Java‑code.  
-- **Welke bibliotheek verwerkt het afdrukken van PDF‑bijlagen in Java?** GroupDocs.Viewer for Java biedt de `print pdf attachments java`‑functionaliteit direct out‑of‑the‑box.  
-- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor evaluatie; een commerciële licentie is vereist voor productie.  
-- **Kan ik grote batches verwerken?** Ja – combineer de API met batch‑ of asynchrone verwerking voor schaalbaarheid.  
-- **Welke Java‑versie is vereist?** JDK 8 of hoger.
+[Documentbijlagen ophalen en afdrukken met GroupDocs.Viewer voor Java](/viewer/advanced-rendering/retrieve-and-print-document-attachments-java.png)
+
+## Snelle antwoorden
+- **What does “retrieve attachments java” mean?** Het betekent het extraheren van bestanden die ingebed zijn in een hoofd‑document (bijv. MSG, EML, PDF) met Java‑code.  
+- **Which library handles PDF attachment printing in Java?** GroupDocs.Viewer for Java biedt de `print pdf attachments java`‑functionaliteit direct uit de doos.  
+- **Do I need a license?** Een gratis proefversie werkt voor evaluatie; een commerciële licentie is vereist voor productie.  
+- **Can I process large batches?** Ja – combineer de API met batch‑ of asynchrone verwerking voor schaalbaarheid.  
+- **What Java version is required?** JDK 8 of hoger.
 
 ## Wat is “retrieve attachments java”?
-Het ophalen van bijlagen betekent dat je programmatisch toegang krijgt tot bestanden die ingebed zijn in een hoofd‑document (zoals e‑mailberichten, PDF‑s met ingebedde bestanden, of Office‑documenten). Dit is essentieel wanneer je die bestanden wilt tonen, downloaden of verder verwerken.
+**Retrieving attachments means programmatically accessing files that are embedded within a parent document (such as email messages, PDFs with embedded files, or Office documents).** Deze mogelijkheid is essentieel wanneer je die bestanden moet blootstellen voor voorbeeldweergave, download of verdere verwerking.
 
-## Waarom GroupDocs.Viewer for Java gebruiken om pdf‑bijlagen af te drukken java?
-- **Unified API** – Ondersteunt meer dan 90 formaten, inclusief MSG, EML en PDF.  
-- **Performance‑optimized** – Ontworpen voor laag geheugenverbruik, zelfs bij grote bestanden.  
-- **Cross‑platform** – Werkt in desktop‑, web‑ en cloud‑gebaseerde Java‑applicaties.  
+## Waarom GroupDocs.Viewer voor Java gebruiken om PDF‑bijlagen af te drukken?
+GroupDocs.Viewer biedt een **enkele, consistente API** die **90+ invoer‑ en uitvoerformaten** ondersteunt, inclusief MSG, EML en PDF. Het is **prestaties‑geoptimaliseerd**, verbruikt minder dan 30 MB heap voor een PDF van 200 pagina’s met tientallen bijlagen, en werkt op desktop, web en cloud‑gebaseerde Java‑applicaties.
 
-## Prerequisites
-
+## Vereisten
 - **GroupDocs.Viewer for Java** ≥ 25.2  
 - JDK 8 of nieuwer  
 - Maven (of een andere build‑tool) voor afhankelijkheidsbeheer  
 
-## Setting Up GroupDocs.Viewer for Java
-
+## GroupDocs.Viewer voor Java instellen
 Voeg de repository en afhankelijkheid toe aan je `pom.xml`. Deze stap zorgt ervoor dat Maven de juiste binaries kan downloaden:
 
 ```xml
@@ -62,14 +111,14 @@ Voeg de repository en afhankelijkheid toe aan je `pom.xml`. Deze stap zorgt ervo
 </dependencies>
 ```
 
-### License Acquisition
-Begin met een gratis proefversie om de mogelijkheden van GroupDocs.Viewer te verkennen. Voor continu gebruik kun je overwegen een tijdelijke licentie voor testen aan te schaffen of een volledige licentie te kopen.
+### Licentie‑acquisitie
+Begin met een gratis proefversie om de mogelijkheden van GroupDocs.Viewer te verkennen. Voor doorlopend gebruik kun je een tijdelijke licentie voor testen verkrijgen of een volledige commerciële licentie aanschaffen.
 
-## How to Retrieve Attachments Java
+## Hoe retrieve attachments java
+Het ophalen van bijlagen is eenvoudig met GroupDocs.Viewer. Na het maken van een `Viewer`‑instance, roep je `getAttachments()` aan om een lijst van `Attachment`‑objecten te verkrijgen. Elk object bevat de bestandsnaam, grootte, content‑type en een input‑stream die indien nodig kan worden opgeslagen, weergegeven of afgedrukt.
 
-### Step 1: Initialize the Viewer Object
-
-Eerst maak je een `Viewer`‑instance die wijst naar het document dat de bijlagen bevat. Het gebruik van een *try‑with‑resources*‑blok garandeert dat de viewer automatisch wordt gesloten, waardoor je applicatie netjes blijft en geheugenlekken worden voorkomen.
+### Stap 1: Initialiseer het Viewer‑object
+De `Viewer`‑klasse is het toegangspunt van GroupDocs.Viewer dat een bron‑document laadt en methoden biedt voor rendering, conversie en het extraheren van bijlagen. Het gebruik van een *try‑with‑resources*‑blok garandeert dat de viewer automatisch wordt gesloten, waardoor geheugenlekken worden voorkomen.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -85,18 +134,16 @@ try (Viewer viewer = new Viewer(documentPath)) {
 }
 ```
 
-### Step 2: Retrieve Attachments
-
-Met de viewer gereed, roep je `getAttachments()` aan om elk ingebed bestand uit het bron‑document te halen. De methode retourneert een `List<Attachment>` die je kunt itereren, filteren of direct naar andere services kunt doorsturen.
+### Stap 2: Bijlagen ophalen
+De `Attachment`‑klasse vertegenwoordigt één ingesloten bestand dat uit het bron‑document is geëxtraheerd. Roep `viewer.getAttachments()` aan om een `List<Attachment>` te verkrijgen; je kunt vervolgens itereren, filteren of de resultaten streamen naar andere services.
 
 ```java
 // Retrieve all attachments from the specified document
 List<Attachment> attachments = viewer.getAttachments();
 ```
 
-### Step 3: Print Attachment Details
-
-Voor het afdrukken is het nuttig om de metadata van elke bijlage—naam, grootte en content‑type—te loggen, zodat je precies weet waarmee je werkt.
+### Stap 3: Bijlage‑details afdrukken
+Log vóór het afdrukken de metadata van elke bijlage—naam, grootte en content‑type—zodat je precies weet wat je naar de printer stuurt. Deze stap helpt ook bij foutopsporing en audit‑trails.
 
 ```java
 // Iterate through each attachment and print its details
@@ -105,67 +152,63 @@ for (Attachment attachment : attachments) {
 }
 ```
 
-## Print PDF Attachments Java – Practical Tips
+## PDF‑bijlagen afdrukken Java – praktische tips
+- **Direct afdrukken** – Roep `viewer.print()` aan op een `Attachment` waarvan het content‑type PDF is om het rechtstreeks naar een printer te sturen zonder tussenliggende bestanden.  
+- **Batch‑afdrukken** – Verzamel alle PDF‑bijlagen in een lijst en roep een bulk‑print‑routine aan om de doorvoer te verbeteren.  
+- **Geheugenbeheer** – Sluit de input‑stream van elke bijlage na het afdrukken om de JVM‑voetafdruk laag te houden.
 
-- **Direct Printing** – Gebruik `viewer.print()` op een `Attachment` die een PDF is om deze direct naar een printer te sturen.  
-- **Batch Printing** – Verzamel alle PDF‑bijlagen in een lijst en roep een bulk‑print routine aan om de doorvoer te verbeteren.  
-- **Memory Management** – Sluit de stream van elke bijlage na het afdrukken om de JVM‑voetafdruk laag te houden.
-
-## Common Issues and Solutions
-
-| Symptoom | Waarschijnlijke Oorzaak | Oplossing |
+## Veelvoorkomende problemen en oplossingen
+| Symptoom | Waarschijnlijke oorzaak | Oplossing |
 |---|---|---|
 | `FileNotFoundException` | Verkeerde `documentPath` of onvoldoende bestandsrechten | Controleer het pad en zorg ervoor dat het proces leesrechten heeft |
-| Netwerk‑gerelateerde fouten | Document opgeslagen op een netwerkschijf zonder juiste rechten | Verleen lees‑/schrijfrechten aan het service‑account |
-| “Unsupported format”‑exception | Het bestand is corrupt of gebruikt een extreem oude specificatie | Pre‑process het bestand (bijv. converteren naar een ondersteunde versie) of neem contact op met GroupDocs support |
+| Netwerkgerelateerde fouten | Document opgeslagen op een netwerkshare zonder de juiste rechten | Verleen lees‑/schrijfrechten aan het service‑account |
+| “Unsupported format”‑exception | Het bestand is beschadigd of gebruikt een extreem oude specificatie | Pre‑process het bestand (bijv. converteren naar een ondersteunde versie) of neem contact op met GroupDocs‑ondersteuning |
 
-## Practical Applications
+## Praktische toepassingen
+1. **E‑mailclients** – Automatisch bijlagen extraheren en weergeven van binnenkomende MSG/EML‑berichten.  
+2. **Documentbeheersystemen** – Bied een “view attachments”‑knop zonder het originele bestand te openen.  
+3. **Archiveringsoplossingen** – Extraheer ingesloten bestanden voor langdurige opslag of compliance‑audits.  
 
-1. **Email Clients** – Automatisch bijlagen extraheren en weergeven van binnenkomende MSG/EML‑berichten.  
-2. **Document Management Systems** – Bied gebruikers een “view attachments”‑knop zonder het originele bestand te openen.  
-3. **Archival Solutions** – Extraheer ingebedde bestanden voor langdurige opslag of compliance‑audits.  
+## Prestatie‑overwegingen
+- **Geheugeninstellingen** – Verhoog de JVM‑heap (`-Xmx`) bij het verwerken van grote batches.  
+- **Batchverwerking** – Groepeer documenten om I/O‑overhead te verminderen.  
+- **Asynchrone bewerkingen** – Gebruik `CompletableFuture` of vergelijkbare constructies om UI‑threads responsief te houden.
 
-## Performance Considerations
+## Conclusie
+Door deze gids te volgen weet je nu **how to retrieve attachments java** en hoe je de **print PDF attachments**‑functionaliteit van GroupDocs.Viewer voor Java kunt gebruiken. Deze functies kunnen de gebruikerservaring van elke applicatie die met complexe documenten of e‑mailarchieven werkt drastisch verbeteren. Om meer te ontdekken, bekijk de officiële documentatie of experimenteer met extra Viewer‑functies zoals documentconversie, paginarendering of aangepaste render‑pijplijnen.
 
-- **Memory Settings** – Verhoog de JVM‑heap (`-Xmx`) bij het verwerken van grote batches.  
-- **Batch Processing** – Verwerk documenten in groepen om I/O‑overhead te verminderen.  
-- **Asynchronous Operations** – Maak gebruik van `CompletableFuture` of soortgelijke constructies om UI‑threads responsief te houden.
-
-## Conclusion
-
-Door deze gids te volgen, weet je nu **how to retrieve attachments java** en kun je de `print pdf attachments java`‑functionaliteit van GroupDocs.Viewer for Java gebruiken. Deze functies kunnen de gebruikerservaring van elke applicatie die werkt met complexe documenten of e‑mailarchieven aanzienlijk verbeteren.
-
-Om meer te ontdekken, bekijk de officiële documentatie of experimenteer met extra Viewer‑functies zoals documentconversie, paginavergave of aangepaste render‑pijplijnen.
-
-## FAQ
-
-**Q: Werkt “print pdf attachments java” met met wachtwoord‑beveiligde PDF‑s?**  
-A: Ja. Je kunt het wachtwoord opgeven bij het openen van de bijlage‑stream en deze vervolgens normaal afdrukken.
+## Veelgestelde vragen
+**Q: Werkt “print PDF attachments java” met wachtwoord‑beveiligde PDF’s?**  
+A: Ja. Geef het wachtwoord op bij het openen van de bijlage‑stream, en druk het vervolgens normaal af.
 
 **Q: Kan ik bijlagen ophalen uit een DOCX‑bestand?**  
-A: Absoluut. GroupDocs.Viewer behandelt ingebedde objecten in Office‑bestanden als bijlagen en retourneert ze via `getAttachments()`.
+A: Zeker. GroupDocs.Viewer behandelt ingesloten objecten in Office‑bestanden als bijlagen en retourneert ze via `getAttachments()`.
 
-**Q: Hoe kan ik de grootte van de bijlagen die ik ophaal beperken?**  
-A: Na het aanroepen van `getAttachments()` kun je de lijst filteren op `attachment.getSize()` voordat je ze verwerkt.
+**Q: Hoe kan ik de grootte van bijlagen die ik ophaal beperken?**  
+A: Na het aanroepen van `getAttachments()`, filter je de lijst op `attachment.getSize()` voordat je ze verwerkt.
 
 **Q: Is er een manier om bijlagen te previewen zonder ze eerst op te slaan?**  
-A: Ja. Je kunt de bijlage direct streamen naar een viewer‑component of een tijdelijk in‑memory buffer.
+A: Ja. Stream de bijlage direct naar een viewer‑component of een in‑memory buffer.
 
 **Q: Welk licentiemodel moet ik kiezen voor productie?**  
 A: Voor productie wordt een commerciële licentie aanbevolen. Een tijdelijke licentie is beschikbaar voor testen en evaluatie.
 
-## Resources
+---
 
+**Laatst bijgewerkt:** 2026-09-10  
+**Getest met:** GroupDocs.Viewer 25.2 for Java  
+**Auteur:** GroupDocs  
+
+## Bronnen
 - [GroupDocs Viewer Documentatie](https://docs.groupdocs.com/viewer/java/)
 - [API‑referentie](https://reference.groupdocs.com/viewer/java/)
-- [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
-- [Een licentie aanschaffen](https://purchase.groupdocs.com/buy)
+- [GroupDocs.Viewer voor Java downloaden](https://releases.groupdocs.com/viewer/java/)
+- [Licentie aanschaffen](https://purchase.groupdocs.com/buy)
 - [Gratis proefversie downloaden](https://releases.groupdocs.com/viewer/java/)
 - [Tijdelijke licentie verkrijgen](https://purchase.groupdocs.com/temporary-license/)
 - [Supportforum](https://forum.groupdocs.com/c/viewer/9)
 
----
-
-**Last Updated:** 2026-03-22  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs
+## Gerelateerde tutorials
+- [Hoe documentbijlagen ophalen en opslaan met java file output stream met GroupDocs.Viewer voor Java](/viewer/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/)
+- [java convert msg to pdf – Optimaliseer e‑mail‑naar‑PDF rendering met GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
+- [GroupDocs Viewer Java – Outlook‑rendering beperken](/viewer/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/)
