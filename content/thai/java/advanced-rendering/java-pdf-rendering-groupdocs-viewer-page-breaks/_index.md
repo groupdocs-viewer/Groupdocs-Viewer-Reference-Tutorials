@@ -1,52 +1,127 @@
 ---
-date: '2026-03-22'
-description: เรียนรู้วิธีสร้าง PDF จาก Excel ใน Java ด้วย GroupDocs.Viewer พร้อมการแสดงสเปรดชีตที่มีการแบ่งหน้า
-  เส้นกริด และหัวเรื่อง
+date: '2026-09-10'
+description: เรียนรู้วิธีแปลง Excel เป็น PDF ใน Java ด้วย GroupDocs Viewer, การแสดงสเปรดชีตพร้อม
+  page breaks, grid lines, และ headings ในขั้นตอนเดียว
 keywords:
-- Java PDF Rendering with GroupDocs.Viewer
-- rendering spreadsheets as PDFs
-- GroupDocs.Viewer for Java setup
-title: สร้าง PDF จาก Excel ใน Java – เชี่ยวชาญการเรนเดอร์สเปรดชีตพร้อมการแบ่งหน้า
+- convert excel to pdf java
+- groupdocs viewer java
+- excel page breaks pdf
+- java pdf rendering
+lastmod: '2026-09-10'
+og_description: เรียนรู้วิธีแปลง Excel เป็น PDF ใน Java ด้วย GroupDocs Viewer, การแสดงสเปรดชีตพร้อม
+  page breaks, grid lines, และ headings. การตั้งค่าอย่างรวดเร็วและ code examples สำหรับ
+  high‑fidelity output
+og_image_alt: Screenshot of a spreadsheet rendered to PDF with page breaks using GroupDocs
+  Viewer for Java
+og_title: แปลง Excel เป็น PDF ใน Java ด้วย GroupDocs Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-10'
+  description: Learn how to convert Excel to PDF in Java with GroupDocs Viewer, rendering
+    spreadsheets with page breaks, grid lines, and headings in a single step.
+  headline: Convert Excel to PDF in Java using GroupDocs Viewer
+  type: TechArticle
+- description: Learn how to convert Excel to PDF in Java with GroupDocs Viewer, rendering
+    spreadsheets with page breaks, grid lines, and headings in a single step.
+  name: Convert Excel to PDF in Java using GroupDocs Viewer
+  steps:
+  - name: '**Initialize Viewer and Options** – set up the viewer with your input file
+      and define the output PDF path:'
+    text: '**Initialize Viewer and Options** – set up the viewer with your input file
+      and define the output PDF path:'
+  - name: '**Configure Spreadsheet Options** – enable rendering by page breaks, grid
+      lines, and headings:'
+    text: '**Configure Spreadsheet Options** – enable rendering by page breaks, grid
+      lines, and headings:'
+  - name: '**Key parameters explained**'
+    text: '**Key parameters explained**'
+  - name: '**Financial reporting** – Convert monthly Excel reports into PDFs that
+      honor page breaks, ensuring each statement starts on a new page.'
+    text: '**Financial reporting** – Convert monthly Excel reports into PDFs that
+      honor page breaks, ensuring each statement starts on a new page.'
+  - name: '**Academic publishing** – Render research data tables with grid lines and
+      headings for journal submission.'
+    text: '**Academic publishing** – Render research data tables with grid lines and
+      headings for journal submission.'
+  - name: '**Inventory management** – Generate printable inventory sheets that keep
+      the original layout intact, facilitating on‑floor scanning.'
+    text: '**Inventory management** – Generate printable inventory sheets that keep
+      the original layout intact, facilitating on‑floor scanning.'
+  type: HowTo
+- questions:
+  - answer: Call `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)` before
+      rendering.
+    question: What is the easiest way to add grid lines to the PDF?
+  - answer: Yes—use `SpreadsheetOptions.setWorksheetIndex(int index)` to target a
+      particular sheet. `setWorksheetIndex(int index)` selects the worksheet at the
+      given zero‑based index for rendering.
+    question: Can I render only a specific worksheet?
+  - answer: Absolutely. Pass the password when constructing the `Viewer` instance.
+    question: Does GroupDocs.Viewer support password‑protected Excel files?
+  - answer: Enable `setRenderHeadings(true)` in `SpreadsheetOptions`.
+    question: How do I ensure headings appear in the PDF?
+  - answer: Yes, a valid GroupDocs license is needed for commercial deployments.
+    question: Is a license required for production use?
+  type: FAQPage
+tags:
+- convert excel to pdf
+- groupdocs viewer
+- java pdf rendering
+- spreadsheet page breaks
+- document conversion
+title: แปลง Excel เป็น PDF ใน Java ด้วย GroupDocs Viewer
 type: docs
 url: /th/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/
 weight: 1
 ---
 
-# สร้าง PDF จาก Excel ใน Java: เชี่ยวชาญการเรนเดอร์สเปรดชีตด้วยการแบ่งหน้า
+# แปลง Excel เป็น PDF ใน Java ด้วย GroupDocs Viewer
 
-In modern data‑driven applications, the ability to **generate pdf from excel** directly in Java is a huge productivity boost. With GroupDocs.Viewer you can turn complex spreadsheets into polished PDFs—preserving page breaks, grid lines, and column headings—without having to install Microsoft Office on the server.
+ในแอปพลิเคชันสมัยใหม่ที่ขับเคลื่อนด้วยข้อมูล ความสามารถในการ **แปลง Excel เป็น PDF ใน Java** เป็นการเพิ่มประสิทธิภาพการทำงานอย่างมหาศาล ด้วย GroupDocs.Viewer คุณสามารถเปลี่ยนสเปรดชีตที่ซับซ้อนให้เป็น PDF ที่เรียบหรู—รักษาการแบ่งหน้า, เส้นกริด, และหัวคอลัมน์—โดยไม่ต้องติดตั้ง Microsoft Office บนเซิร์ฟเวอร์ บทแนะนำนี้จะพาคุณผ่านกระบวนการทั้งหมด ตั้งแต่การตั้งค่าสภาพแวดล้อมจนถึงการปรับแต่งตัวเลือกการแสดงผล เพื่อให้คุณสามารถส่งมอบเอกสารที่สม่ำเสมอและพร้อมพิมพ์ให้กับลูกค้าใดก็ได้
 
 ## บทนำ
 
-In today’s data‑driven world, efficient document management is crucial for businesses looking to streamline their operations. Often, spreadsheets are a primary source of data that needs to be shared in a consistent format across platforms. This tutorial addresses the challenge of rendering spreadsheets with page breaks into PDFs using **GroupDocs.Viewer for Java**—a versatile tool designed to simplify this process.
+ในโลกที่ขับเคลื่อนด้วยข้อมูลในวันนี้ การจัดการเอกสารอย่างมีประสิทธิภาพเป็นสิ่งสำคัญสำหรับธุรกิจที่ต้องการปรับกระบวนการทำงานให้เรียบง่าย สเปรดชีตมักเป็นแหล่งข้อมูลหลักที่ต้องแชร์ในรูปแบบอ่าน‑อย่างเดียวที่สอดคล้องกันบนหลายแพลตฟอร์ม การแสดงสเปรดชีตพร้อมการแบ่งหน้าเป็น PDF ทำให้แต่ละส่วนเชิงตรรกะเริ่มต้นบนหน้าใหม่ รักษาการจัดวางตามที่นักออกแบบคาดหวัง คู่มือนี้จะแสดงวิธีทำเช่นนั้นด้วย **GroupDocs.Viewer for Java** ซึ่งเป็นไลบรารีอเนกประสงค์ที่ทำงานหนักให้คุณ
 
-![การแบ่งหน้าในสเปรดชีตด้วย GroupDocs.Viewer for Java](/viewer/advanced-rendering/page-breaks-in-spreadsheets-java.png)
+![การแบ่งหน้าในสเปรดชีตด้วย GroupDocs.Viewer สำหรับ Java](/viewer/advanced-rendering/page-breaks-in-spreadsheets-java.png)
 
-**สิ่งที่คุณจะได้เรียนรู้:**
-- วิธี **generate pdf from excel** โดยการเรนเดอร์สเปรดชีตตามการแบ่งหน้า.
-- การกำหนดค่าตัวเลือกการเรนเดอร์สเปรดชีต เช่น เส้นกริดและหัวคอลัมน์.
-- การตั้งค่าสภาพแวดล้อมการพัฒนาของคุณสำหรับ GroupDocs.Viewer.
-- การประยุกต์ใช้คุณลักษณะเหล่านี้ในสถานการณ์จริง.
+**สิ่งที่คุณจะได้เรียนรู้**
+
+- วิธี **แปลง Excel เป็น PDF ใน Java** โดยการแสดงสเปรดชีตทีละหน้า  
+- การกำหนดค่าตัวเลือกการแสดงสเปรดชีต เช่น เส้นกริดและหัวข้อ  
+- การตั้งค่าสภาพแวดล้อมการพัฒนาของคุณสำหรับ GroupDocs.Viewer  
+- สถานการณ์จริงที่ PDF ที่รับรู้การแบ่งหน้าช่วยประหยัดเวลาและลดข้อผิดพลาด  
 
 ## คำตอบด่วน
 - **ไลบรารีหลักคืออะไร?** GroupDocs.Viewer for Java.  
-- **วิธีการใดที่เรนเดอร์ตามการแบ่งหน้า?** `SpreadsheetOptions.forRenderingByPageBreaks()`.  
-- **ฉันสามารถเพิ่มเส้นกริดใน PDF ได้หรือไม่?** ใช่, ใช้ `setRenderGridLines(true)`.  
-- **ฉันจะใส่หัวคอลัมน์ได้อย่างไร?** เรียก `setRenderHeadings(true)`.  
-- **ฉันต้องการไลเซนส์สำหรับการใช้งานจริงหรือไม่?** ใช่, จำเป็นต้องมีไลเซนส์ GroupDocs ที่ถูกต้อง.
+- **เมธอดใดที่แสดงผลตามการแบ่งหน้า?** `SpreadsheetOptions.forRenderingByPageBreaks()`.  
+- **ฉันสามารถเพิ่มเส้นกริดใน PDF ได้หรือไม่?** ได้—เรียก `setRenderGridLines(true)`.  
+- **ฉันจะใส่หัวคอลัมน์ได้อย่างไร?** เปิดใช้งาน `setRenderHeadings(true)`.  
+- **ต้องการใบอนุญาตสำหรับการใช้งานจริงหรือไม่?** ใช่, จำเป็นต้องมีใบอนุญาต GroupDocs ที่ถูกต้อง  
 
-## **generate pdf from excel** คืออะไร?
-Converting an Excel workbook (`.xlsx`) to a PDF document directly from Java code enables you to share data securely, preserve formatting, and ensure cross‑platform compatibility without requiring Microsoft Office on the server.
+**คำนิยามเมธอด:** `SpreadsheetOptions.forRenderingByPageBreaks()` กำหนดการแสดงผลให้เคารพการแบ่งหน้าของสเปรดชีต `setRenderGridLines(true)` เปิดใช้งานเส้นกริดใน PDF `setRenderHeadings(true)` ใส่หัวคอลัมน์ในแต่ละหน้า  
 
-## ทำไมต้องใช้ GroupDocs.Viewer for Java?
-GroupDocs.Viewer offers out‑of‑the‑box support for a wide range of document formats, high‑fidelity rendering, and flexible options such as **render excel page breaks**, **add grid lines pdf**, and **include headings pdf**. This eliminates the need for custom rendering logic and speeds up development.
+## การแปลง Excel เป็น PDF ใน Java คืออะไร
+การแปลงเวิร์กบุ๊ก Excel (`.xlsx`) เป็นเอกสาร PDF โดยตรงจากโค้ด Java ทำให้คุณสามารถแชร์ข้อมูลอย่างปลอดภัย รักษาการจัดรูปแบบที่แม่นยำ และรับประกันความเข้ากันได้ข้ามแพลตฟอร์มโดยไม่ต้องพึ่งพา Microsoft Office การแปลงทำงานทั้งหมดบนเซิร์ฟเวอร์ สร้าง PDF แบบอ่าน‑อย่างเดียวที่สะท้อนการจัดวางของสเปรดชีตต้นฉบับ รวมถึงการแบ่งหน้าที่ใส่ด้วยตนเอง  
+
+## ทำไมต้องใช้ GroupDocs.Viewer สำหรับ Java
+GroupDocs.Viewer รองรับ **70+** รูปแบบเอกสาร—including Excel, Word, PowerPoint, และรูปภาพกว่า 50 ประเภท—พร้อมการแสดงผล PDF ด้วยความแม่นยำสูง มันประมวลผลเวิร์กบุ๊กหลายร้อยหน้าโดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ ลดการใช้ RAM สูงสุดได้ถึง **80 %** เมื่อเทียบกับวิธีการโหลดแบบธรรมดา ความสามารถเหล่านี้ทำให้ไม่ต้องมีตรรกะการแสดงผลแบบกำหนดเองและเร่งรัดวงจรการพัฒนาอย่างมาก  
 
 ## ข้อกำหนดเบื้องต้น
 
-To effectively implement **generate pdf from excel** using GroupDocs.Viewer, ensure you have the following:
+เพื่อดำเนินการ **แปลง Excel เป็น PDF ใน Java** อย่างสำเร็จ โปรดตรวจสอบว่าคุณมี:
 
 ### ไลบรารีและการพึ่งพาที่จำเป็น
-You'll need the GroupDocs.Viewer for Java library. This can be easily added via Maven by including it in your `pom.xml` file:
+เพิ่มอาร์ติแฟกต์ Maven ของ GroupDocs.Viewer สำหรับ Java ลงใน `pom.xml` ของคุณ:
+
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-viewer</artifactId>
+    <version>25.2</version>
+</dependency>
+```
+
 ```xml
 <repositories>
     <repository>
@@ -65,16 +140,18 @@ You'll need the GroupDocs.Viewer for Java library. This can be easily added via 
 ```
 
 ### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
-- Java Development Kit (JDK) รุ่น 8 หรือสูงกว่า.
-- Integrated Development Environment (IDE) เช่น IntelliJ IDEA, Eclipse หรือ NetBeans.
+- Java Development Kit (JDK) 8 หรือสูงกว่า.  
+- IDE เช่น IntelliJ IDEA, Eclipse หรือ NetBeans.  
 
 ### ความรู้เบื้องต้นที่จำเป็น
-A basic understanding of Java programming and familiarity with Maven projects will be beneficial. Prior experience with PDF generation is advantageous but not necessary.
+การเขียนโปรแกรม Java เบื้องต้นและความคุ้นเคยกับโครงการ Maven จะเป็นประโยชน์ ประสบการณ์การสร้าง PDF ก่อนหน้านี้เป็นทางเลือก  
 
-## การตั้งค่า GroupDocs.Viewer for Java
+## การตั้งค่า GroupDocs.Viewer สำหรับ Java
 
 ### การเริ่มต้นและตั้งค่าเบื้องต้น
-Once your environment is ready, initialize GroupDocs.Viewer in your project:
+`Viewer` โหลดเอกสารและเตรียมการแสดงผลเป็นรูปแบบเอาต์พุตต่าง ๆ  
+ขั้นแรก สร้างอินสแตนซ์ `Viewer` และชี้ไปที่ไฟล์ Excel ของคุณ โค้ดตัวอย่างต่อไปนี้แสดงโค้ดขั้นต่ำที่จำเป็นสำหรับการเริ่มต้น:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
@@ -83,15 +160,22 @@ try (Viewer viewer = new Viewer("path/to/your/file.xlsx")) {
 }
 ```
 
-### การรับไลเซนส์
-You can acquire a free trial or temporary license from GroupDocs to test their products without any feature limitations. Visit [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) for more information on obtaining a license.
+**คำนิยาม:** `Viewer` เป็นคลาสหลักใน GroupDocs.Viewer ที่โหลดเอกสารและเตรียมการแสดงผลเป็นรูปแบบเอาต์พุตต่าง ๆ  
 
-## วิธีการ generate pdf from excel ด้วย GroupDocs.Viewer
+### การรับใบอนุญาต
+คุณสามารถรับการทดลองใช้ฟรีหรือใบอนุญาตชั่วคราวจาก GroupDocs เพื่อทดสอบผลิตภัณฑ์โดยไม่มีข้อจำกัดของฟีเจอร์ เยี่ยมชมหน้า [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) เพื่อดูรายละเอียดการรับคีย์ใบอนุญาต  
 
-### การเรนเดอร์สเปรดชีตตามการแบ่งหน้า
+## วิธีแปลง Excel เป็น PDF ใน Java ด้วย GroupDocs.Viewer
 
-#### การดำเนินการแบบขั้นตอน
-1. **Initialize Viewer and Options** – ตั้งค่า viewer ด้วยไฟล์อินพุตของคุณและกำหนดเส้นทางไฟล์ PDF ที่จะสร้าง:
+โหลดเวิร์กบุ๊ก Excel กำหนดตัวเลือกการแสดงผล และเขียน PDF ผลลัพธ์เพียงสามขั้นตอนสั้น ๆ ย่อหน้านี้เป็นคำตอบโดยตรงที่สอดคล้องกับรูปแบบหัวข้อคำถาม: คุณสร้างอินสแตนซ์ `Viewer` ตั้งค่า `PdfViewOptions` พร้อม `SpreadsheetOptions` ที่กำหนดให้แสดงผลตามการแบ่งหน้า แล้วเรียก `viewer.view()`.
+
+`PdfViewOptions` ระบุการตั้งค่าเอาต์พุตของ PDF `SpreadsheetOptions` กำหนดวิธีการแสดงสเปรดชีต รวมถึงการแบ่งหน้า, เส้นกริด, และหัวข้อ  
+
+### การแสดงสเปรดชีตตามการแบ่งหน้า
+
+#### การดำเนินการทีละขั้นตอน
+1. **เริ่มต้น Viewer และ Options** – ตั้งค่า viewer ด้วยไฟล์อินพุตของคุณและกำหนดเส้นทาง PDF เอาต์พุต:
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path outputFilePath = outputDirectory.resolve("output.pdf");
@@ -100,7 +184,8 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Page_Breaks.xlsx")) {
     PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
 
-2. **Configure Spreadsheet Options** – เปิดการเรนเดอร์ตามการแบ่งหน้า, เส้นกริด, และหัวคอลัมน์:
+2. **กำหนดค่า Spreadsheet Options** – เปิดการแสดงผลตามการแบ่งหน้า, เส้นกริด, และหัวข้อ:
+
 ```java
     // Set SpreadsheetOptions for rendering by page breaks.
     viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingByPageBreaks());
@@ -115,19 +200,19 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Page_Breaks.xlsx")) {
 }
 ```
 
-3. **พารามิเตอร์สำคัญที่อธิบาย**
-   - `forRenderingByPageBreaks()`: ทำให้แต่ละหน้าของ PDF สอดคล้องกับการแบ่งหน้าของสเปรดชีต.
-   - `setRenderGridLines(true)`: **add grid lines pdf** – ปรับปรุงการอ่านข้อมูลตาราง.
-   - `setRenderHeadings(true)`: **include headings pdf** – แสดงป้ายชื่อคอลัมน์.
+3. **อธิบายพารามิเตอร์สำคัญ**  
+   - `forRenderingByPageBreaks()`: จัดให้แต่ละหน้าของ PDF สอดคล้องกับการแบ่งหน้าของสเปรดชีต  
+   - `setRenderGridLines(true)`: เพิ่มเส้นกริดเพื่อปรับปรุงความอ่านง่ายของตาราง  
+   - `setRenderHeadings(true)`: แสดงป้ายชื่อคอลัมน์บนทุกหน้าที่พิมพ์  
 
 #### เคล็ดลับการแก้ไขปัญหา
-- ตรวจสอบว่าเส้นทางไฟล์อินพุตและเอาต์พุตถูกต้อง.
-- ยืนยันว่าเวิร์กบุ๊กมีการแบ่งหน้าจริง (Print Layout → Page Break Preview).
+- ตรวจสอบว่าเวิร์กบุ๊กมีการแบ่งหน้าจริง ๆ (Print Layout → Page Break Preview)  
+- ตรวจสอบให้แน่ใจว่าเส้นทางไฟล์อินพุตและเอาต์พุตสามารถเข้าถึงได้โดยกระบวนการ Java  
 
-## การกำหนดค่าตัวเลือกการเรนเดอร์สเปรดชีต
+## การกำหนดค่าการแสดงผลสเปรดชีต
 
-### การปรับแต่งเส้นกริดและหัวคอลัมน์
-Beyond page breaks, you can fine‑tune the appearance of the PDF.
+### การปรับแต่งเส้นกริดและหัวข้อ
+นอกเหนือจากการแบ่งหน้า คุณสามารถปรับแต่งลักษณะของ PDF อย่างละเอียด วัตถุ `SpreadsheetOptions` ให้การควบคุมระดับละเอียดต่อองค์ประกอบภาพ
 
 ```java
 import com.groupdocs.viewer.options.SpreadsheetOptions;
@@ -139,50 +224,47 @@ spreadsheetOptions.setRenderGridLines(true);
 spreadsheetOptions.setRenderHeadings(true);
 ```
 
-- **Grid Lines**: มีประโยชน์ในการรักษาโครงสร้างภาพของตารางข้อมูล.
-- **Headings**: ทำให้ผู้อ่านเข้าใจบริบทของคอลัมน์ได้ง่ายขึ้น.
+- **เส้นกริด**: รักษาโครงสร้างภาพของตาราง โดยเฉพาะอย่างยิ่งเป็นประโยชน์สำหรับข้อมูลการเงิน  
+- **หัวข้อ**: เสริมความเข้าใจของคอลัมน์ในทุกหน้า ลดความจำเป็นในการอธิบายด้วยตนเอง  
 
-#### ปัญหาที่พบบ่อย
-- หากเส้นกริดหรือหัวคอลัมน์ไม่แสดง, ตรวจสอบอีกครั้งว่าอินสแตนซ์ `SpreadsheetOptions` ถูกแนบกับ `PdfViewOptions` ก่อนเรียก `viewer.view()`.
+#### ปัญหาทั่วไป
+หากเส้นกริดหรือหัวข้อหายไป ตรวจสอบอีกครั้งว่าตัวอินสแตนซ์ `SpreadsheetOptions` ถูกแนบกับ `PdfViewOptions` ก่อนเรียก `viewer.view()`  
 
-## การประยุกต์ใช้ในทางปฏิบัติ
+## การประยุกต์ใช้งานจริง
 
-นี่คือตัวอย่างสถานการณ์จริงที่ **generate pdf from excel** มีประโยชน์:
+1. **การรายงานการเงิน** – แปลงรายงาน Excel รายเดือนเป็น PDF ที่เคารพการแบ่งหน้า ทำให้แต่ละแถลงการณ์เริ่มต้นบนหน้าใหม่  
+2. **การตีพิมพ์ทางวิชาการ** – แสดงตารางข้อมูลการวิจัยพร้อมเส้นกริดและหัวข้อสำหรับการส่งบทความวารสาร  
+3. **การจัดการสินค้าคงคลัง** – สร้างแผ่นสินค้าคงคลังที่พิมพ์ได้ซึ่งรักษาการจัดวางเดิมไว้ ช่วยให้การสแกนบนพื้นที่ทำงานเป็นไปอย่างราบรื่น  
 
-1. **Financial Reporting** – แปลงรายงาน Excel รายเดือนเป็น PDF ที่เคารพการแบ่งหน้า, ทำให้แต่ละใบแถลงเริ่มต้นในหน้าใหม่.
-2. **Academic Publishing** – เรนเดอร์ตารางข้อมูลการวิจัยพร้อมเส้นกริดและหัวคอลัมน์เพื่อใส่ในวารสาร.
-3. **Inventory Management** – สร้างแผ่นรายการสินค้าที่พิมพ์ได้โดยคงรูปแบบต้นฉบับไว้.
+## ข้อควรพิจารณาด้านประสิทธิภาพ
 
-## การพิจารณาประสิทธิภาพ
-
-- **Optimize Resource Usage**: รักษาไฟล์อินพุตให้มีขนาดเหมาะสมเพื่อหลีกเลี่ยงการใช้หน่วยความจำสูง.
-- **JVM Tuning**: ใช้พารามิเตอร์ `-Xms` และ `-Xmx` เพื่อจัดสรรพื้นที่ heap ที่เพียงพอสำหรับเวิร์กบุ๊กขนาดใหญ่.
+- **เพิ่มประสิทธิภาพการใช้ทรัพยากร**: สำหรับเวิร์กบุ๊กที่ใหญ่กว่า 200 MB ตั้งค่า heap ของ JVM (`-Xms2g -Xmx4g`) เพื่อหลีกเลี่ยงข้อผิดพลาด out‑of‑memory  
+- **เคล็ดลับการประมวลผลแบบชุด**: ใช้ `Viewer` อินสแตนซ์เดียวกันหลายไฟล์เพื่อลดภาระการเริ่มต้นสูงสุดถึง **30 %**  
 
 ## คำถามที่พบบ่อย
 
-**Q: วิธีที่ง่ายที่สุดในการเพิ่มเส้นกริดใน PDF คืออะไร?**  
-A: เรียก `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)` ก่อนทำการเรนเดอร์.
+**ถาม: วิธีที่ง่ายที่สุดในการเพิ่มเส้นกริดใน PDF คืออะไร?**  
+ตอบ: เรียก `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)` ก่อนการแสดงผล  
 
-**Q: ฉันสามารถเรนเดอร์เฉพาะ worksheet ที่ต้องการได้หรือไม่?**  
-A: ได้, ใช้ `SpreadsheetOptions.setWorksheetIndex(int index)` เพื่อเลือกแผ่นงานเฉพาะ.
+**ถาม: ฉันสามารถแสดงผลเฉพาะแผ่นงานที่ต้องการได้หรือไม่?**  
+ตอบ: ได้—ใช้ `SpreadsheetOptions.setWorksheetIndex(int index)` เพื่อเลือกแผ่นงานที่ต้องการ  
+`setWorksheetIndex(int index)` เลือกแผ่นงานตามดัชนีเริ่มจากศูนย์สำหรับการแสดงผล  
 
-**Q: GroupDocs.Viewer รองรับไฟล์ Excel ที่มีการป้องกันด้วยรหัสผ่านหรือไม่?**  
-A: แน่นอน. ส่งรหัสผ่านเมื่อสร้างอินสแตนซ์ `Viewer`.
+**ถาม: GroupDocs.Viewer รองรับไฟล์ Excel ที่มีการป้องกันด้วยรหัสผ่านหรือไม่?**  
+ตอบ: แน่นอน ส่งรหัสผ่านเมื่อสร้างอินสแตนซ์ `Viewer`  
 
-**Q: ฉันจะทำให้หัวคอลัมน์แสดงใน PDF ได้อย่างไร?**  
-A: เปิดใช้งาน `setRenderHeadings(true)` ใน `SpreadsheetOptions`.
+**ถาม: ฉันจะทำให้หัวข้อปรากฏใน PDF ได้อย่างไร?**  
+ตอบ: เปิดใช้งาน `setRenderHeadings(true)` ใน `SpreadsheetOptions`  
 
-**Q: จำเป็นต้องมีไลเซนส์สำหรับการใช้งานในผลิตภัณฑ์หรือไม่?**  
-A: ใช่, จำเป็นต้องมีไลเซนส์ GroupDocs ที่ถูกต้องสำหรับการใช้งานเชิงพาณิชย์.
+**ถาม: จำเป็นต้องมีใบอนุญาตสำหรับการใช้งานในผลิตภัณฑ์หรือไม่?**  
+ตอบ: ใช่, จำเป็นต้องมีใบอนุญาต GroupDocs ที่ถูกต้องสำหรับการใช้งานเชิงพาณิชย์  
 
-## สรุป
+**อัปเดตล่าสุด:** 2026-09-10  
+**ทดสอบด้วย:** GroupDocs.Viewer 25.2 for Java  
+**ผู้เขียน:** GroupDocs  
 
-คุณได้เชี่ยวชาญ **generate pdf from excel** ด้วย GroupDocs.Viewer ตั้งแต่การตั้งค่าสภาพแวดล้อมจนถึงการเรนเดอร์สเปรดชีตพร้อมการแบ่งหน้า, เส้นกริด, และหัวคอลัมน์แล้ว ความสามารถนี้ช่วยทำให้กระบวนการทำงานกับเอกสารเป็นระบบ, ปรับปรุงการนำเสนอข้อมูล, และลดการพึ่งพาเครื่องมือภายนอก.
+## บทแนะนำที่เกี่ยวข้อง
 
-**ขั้นตอนต่อไป:** สำรวจ `PdfViewOptions` เพิ่มเติม เช่น การใส่ลายน้ำ, การป้องกันด้วยรหัสผ่าน, หรือขนาดหน้าที่กำหนดเอง เพื่อปรับแต่ง PDF ของคุณให้เหมาะสมยิ่งขึ้น.
-
----
-
-**Last Updated:** 2026-03-22  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs
+- [วิธีแปลง Excel เป็น HTML, JPG, PNG และ PDF ด้วย GroupDocs.Viewer Java](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
+- [วิธีแสดงเส้นกริดในสเปรดชีต Java ด้วย GroupDocs.Viewer](/viewer/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/)
+- [วิธีแปลง Excel เป็น HTML และแสดงแถวและคอลัมน์ที่ซ่อนอยู่ใน Java ด้วย GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)

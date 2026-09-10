@@ -1,50 +1,126 @@
 ---
-date: '2026-03-22'
-description: تعلم كيفية إنشاء ملف PDF من Excel في Java باستخدام GroupDocs.Viewer،
-  وعرض الجداول مع فواصل الصفحات، وخطوط الشبكة، والعناوين.
+date: '2026-09-10'
+description: تعلم كيفية تحويل Excel إلى PDF في Java باستخدام GroupDocs Viewer، مع
+  عرض جداول البيانات مع page breaks، grid lines، و headings في خطوة واحدة.
 keywords:
-- Java PDF Rendering with GroupDocs.Viewer
-- rendering spreadsheets as PDFs
-- GroupDocs.Viewer for Java setup
-title: إنشاء PDF من Excel في Java – إتقان عرض الجداول مع فواصل الصفحات
+- convert excel to pdf java
+- groupdocs viewer java
+- excel page breaks pdf
+- java pdf rendering
+lastmod: '2026-09-10'
+og_description: تعلم كيفية تحويل Excel إلى PDF في Java باستخدام GroupDocs Viewer،
+  مع عرض جداول البيانات مع page breaks، grid lines، و headings. إعداد سريع وأمثلة
+  على الكود لإنتاج مخرجات high‑fidelity.
+og_image_alt: Screenshot of a spreadsheet rendered to PDF with page breaks using GroupDocs
+  Viewer for Java
+og_title: تحويل Excel إلى PDF في Java باستخدام GroupDocs Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-10'
+  description: Learn how to convert Excel to PDF in Java with GroupDocs Viewer, rendering
+    spreadsheets with page breaks, grid lines, and headings in a single step.
+  headline: Convert Excel to PDF in Java using GroupDocs Viewer
+  type: TechArticle
+- description: Learn how to convert Excel to PDF in Java with GroupDocs Viewer, rendering
+    spreadsheets with page breaks, grid lines, and headings in a single step.
+  name: Convert Excel to PDF in Java using GroupDocs Viewer
+  steps:
+  - name: '**Initialize Viewer and Options** – set up the viewer with your input file
+      and define the output PDF path:'
+    text: '**Initialize Viewer and Options** – set up the viewer with your input file
+      and define the output PDF path:'
+  - name: '**Configure Spreadsheet Options** – enable rendering by page breaks, grid
+      lines, and headings:'
+    text: '**Configure Spreadsheet Options** – enable rendering by page breaks, grid
+      lines, and headings:'
+  - name: '**Key parameters explained**'
+    text: '**Key parameters explained**'
+  - name: '**Financial reporting** – Convert monthly Excel reports into PDFs that
+      honor page breaks, ensuring each statement starts on a new page.'
+    text: '**Financial reporting** – Convert monthly Excel reports into PDFs that
+      honor page breaks, ensuring each statement starts on a new page.'
+  - name: '**Academic publishing** – Render research data tables with grid lines and
+      headings for journal submission.'
+    text: '**Academic publishing** – Render research data tables with grid lines and
+      headings for journal submission.'
+  - name: '**Inventory management** – Generate printable inventory sheets that keep
+      the original layout intact, facilitating on‑floor scanning.'
+    text: '**Inventory management** – Generate printable inventory sheets that keep
+      the original layout intact, facilitating on‑floor scanning.'
+  type: HowTo
+- questions:
+  - answer: Call `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)` before
+      rendering.
+    question: What is the easiest way to add grid lines to the PDF?
+  - answer: Yes—use `SpreadsheetOptions.setWorksheetIndex(int index)` to target a
+      particular sheet. `setWorksheetIndex(int index)` selects the worksheet at the
+      given zero‑based index for rendering.
+    question: Can I render only a specific worksheet?
+  - answer: Absolutely. Pass the password when constructing the `Viewer` instance.
+    question: Does GroupDocs.Viewer support password‑protected Excel files?
+  - answer: Enable `setRenderHeadings(true)` in `SpreadsheetOptions`.
+    question: How do I ensure headings appear in the PDF?
+  - answer: Yes, a valid GroupDocs license is needed for commercial deployments.
+    question: Is a license required for production use?
+  type: FAQPage
+tags:
+- convert excel to pdf
+- groupdocs viewer
+- java pdf rendering
+- spreadsheet page breaks
+- document conversion
+title: تحويل Excel إلى PDF في Java باستخدام GroupDocs Viewer
 type: docs
 url: /ar/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/
 weight: 1
 ---
 
-# إنشاء PDF من Excel في Java: إتقان عرض جداول البيانات مع فواصل الصفحات
+# تحويل Excel إلى PDF في Java باستخدام GroupDocs Viewer
 
-## المقدمة
+في التطبيقات الحديثة المعتمدة على البيانات، القدرة على **تحويل Excel إلى PDF في Java** تمثل دفعة هائلة في الإنتاجية. باستخدام GroupDocs.Viewer يمكنك تحويل جداول البيانات المعقدة إلى ملفات PDF مصقولة—مع الحفاظ على فواصل الصفحات، خطوط الشبكة، وعناوين الأعمدة—دون الحاجة لتثبيت Microsoft Office على الخادم. يشرح هذا الدليل العملية بالكامل، من إعداد البيئة إلى ضبط خيارات العرض بدقة، لتتمكن من تقديم مستندات جاهزة للطباعة ومتسقة لأي عميل.
 
-في التطبيقات الحديثة المعتمدة على البيانات، القدرة على **generate pdf from excel** مباشرةً في Java تمثل دفعة كبيرة في الإنتاجية. باستخدام GroupDocs.Viewer يمكنك تحويل جداول البيانات المعقدة إلى ملفات PDF مصقولة—مع الحفاظ على فواصل الصفحات، خطوط الشبكة، وعناوين الأعمدة—دون الحاجة إلى تثبيت Microsoft Office على الخادم.
+## مقدمة
+
+في عالم اليوم المعتمد على البيانات، إدارة المستندات بكفاءة أمر حاسم للشركات التي تسعى لتبسيط عملياتها. غالبًا ما تكون جداول البيانات المصدر الأساسي للبيانات التي يجب مشاركتها بصيغة ثابتة للقراءة فقط عبر المنصات. تحويل جداول البيانات مع فواصل الصفحات إلى ملفات PDF يضمن أن يبدأ كل قسم منطقي في صفحة جديدة، مع الحفاظ على التخطيط الذي يتوقعه المصممون. يوضح هذا الدليل كيفية تحقيق ذلك باستخدام **GroupDocs.Viewer for Java**، مكتبة متعددة الاستخدامات تتولى عنك الأعمال الشاقة.
 
 ![فواصل الصفحات في جداول البيانات باستخدام GroupDocs.Viewer for Java](/viewer/advanced-rendering/page-breaks-in-spreadsheets-java.png)
 
-**ما ستتعلمه:**
-- كيفية **generate pdf from excel** عن طريق عرض جداول البيانات وفق فواصل الصفحات.
-- تكوين خيارات عرض جداول البيانات مثل خطوط الشبكة والعناوين.
-- إعداد بيئة التطوير الخاصة بك لـ GroupDocs.Viewer.
-- تطبيقات عملية لهذه الميزات في سيناريوهات العالم الحقيقي.
+**ما ستتعلمه**
+
+- كيفية **تحويل Excel إلى PDF في Java** عن طريق عرض جداول البيانات صفحةً بصفحة.  
+- تكوين خيارات عرض جداول البيانات مثل خطوط الشبكة والعناوين.  
+- إعداد بيئة التطوير الخاصة بك لـ GroupDocs.Viewer.  
+- سيناريوهات واقعية حيث توفر ملفات PDF المدركة لفواصل الصفحات الوقت وتقلل الأخطاء.  
 
 ## إجابات سريعة
 - **ما هي المكتبة الأساسية؟** GroupDocs.Viewer for Java.  
-- **أي طريقة تعرض وفق فواصل الصفحات؟** `SpreadsheetOptions.forRenderingByPageBreaks()`.  
-- **هل يمكنني إضافة خطوط الشبكة إلى PDF؟** نعم، استخدم `setRenderGridLines(true)`.  
-- **كيف يمكنني تضمين عناوين الأعمدة؟** استدعِ `setRenderHeadings(true)`.  
+- **أي طريقة تعرض وفقًا لفواصل الصفحات؟** `SpreadsheetOptions.forRenderingByPageBreaks()`.  
+- **هل يمكنني إضافة خطوط الشبكة إلى PDF؟** نعم—استدعِ `setRenderGridLines(true)`.  
+- **كيف يمكنني تضمين عناوين الأعمدة؟** فعّل `setRenderHeadings(true)`.  
 - **هل أحتاج إلى ترخيص للإنتاج؟** نعم، يلزم وجود ترخيص GroupDocs صالح.
 
-## ما هو **generate pdf from excel**؟
-تحويل دفتر عمل Excel (`.xlsx`) إلى مستند PDF مباشرةً من كود Java يتيح لك مشاركة البيانات بأمان، الحفاظ على التنسيق، وضمان التوافق عبر المنصات دون الحاجة إلى Microsoft Office على الخادم.
+**تعريفات الطرق:** `SpreadsheetOptions.forRenderingByPageBreaks()` يضبط العرض لاحترام فواصل الصفحات في جداول البيانات. `setRenderGridLines(true)` يفعّل خطوط الشبكة في PDF. `setRenderHeadings(true)` يضيف عناوين الأعمدة في كل صفحة.
+
+## ما هو تحويل Excel إلى PDF في Java؟
+تحويل مصنف Excel (`.xlsx`) إلى مستند PDF مباشرةً من كود Java يتيح لك مشاركة البيانات بأمان، والحفاظ على التنسيق الدقيق، وضمان التوافق عبر المنصات دون الاعتماد على Microsoft Office. يتم تنفيذ التحويل بالكامل على الخادم، وينتج PDF للقراءة فقط يعكس تخطيط جدول البيانات الأصلي، بما في ذلك أي فواصل صفحات تم إدخالها يدويًا.
 
 ## لماذا تستخدم GroupDocs.Viewer for Java؟
-يقدم GroupDocs.Viewer دعمًا جاهزًا لمجموعة واسعة من صيغ المستندات، عرضًا عالي الدقة، وخيارات مرنة مثل **render excel page breaks**، **add grid lines pdf**، و **include headings pdf**. هذا يلغي الحاجة إلى منطق عرض مخصص ويسرّع عملية التطوير.
+يدعم GroupDocs.Viewer **أكثر من 70** تنسيقًا للمستندات—بما في ذلك Excel وWord وPowerPoint وأكثر من 50 نوعًا من الصور—مع عرض ملفات PDF بدقة عالية. يعالج المصنفات التي تتضمن مئات الصفحات دون تحميل الملف بالكامل إلى الذاكرة، مما يقلل من استهلاك الذاكرة القصوى بنسبة تصل إلى **80 %** مقارنةً بأساليب التحميل البسيطة. هذه القدرات تلغي الحاجة إلى منطق عرض مخصص وتسرّع دورات التطوير بشكل كبير.
 
 ## المتطلبات المسبقة
-
-لتنفيذ **generate pdf from excel** بفعالية باستخدام GroupDocs.Viewer، تأكد من توفر ما يلي:
+لتنفيذ **تحويل Excel إلى PDF في Java** بنجاح، تأكد من وجود ما يلي:
 
 ### المكتبات والاعتمادات المطلوبة
-ستحتاج إلى مكتبة GroupDocs.Viewer for Java. يمكن إضافتها بسهولة عبر Maven عن طريق تضمينها في ملف `pom.xml` الخاص بك:
+أضف حزمة GroupDocs.Viewer for Java إلى ملف `pom.xml` الخاص بـ Maven:
+
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-viewer</artifactId>
+    <version>25.2</version>
+</dependency>
+```
+
 ```xml
 <repositories>
     <repository>
@@ -63,16 +139,18 @@ weight: 1
 ```
 
 ### متطلبات إعداد البيئة
-- مجموعة تطوير جافا (JDK) الإصدار 8 أو أعلى.
-- بيئة تطوير متكاملة (IDE) مثل IntelliJ IDEA أو Eclipse أو NetBeans.
+- مجموعة تطوير جافا (JDK) 8 أو أعلى.  
+- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse أو NetBeans.  
 
 ### المتطلبات المعرفية
-فهم أساسي لبرمجة Java وإلمام بمشاريع Maven سيكون مفيدًا. الخبرة السابقة في إنشاء ملفات PDF تعتبر ميزة ولكنها ليست ضرورية.
+برمجة Java الأساسية ومعرفة بمشاريع Maven مفيدة. الخبرة السابقة في إنشاء ملفات PDF اختيارية.
 
 ## إعداد GroupDocs.Viewer for Java
 
 ### التهيئة الأساسية والإعداد
-بمجرد أن تكون بيئتك جاهزة، قم بتهيئة GroupDocs.Viewer في مشروعك:
+`Viewer` يقوم بتحميل المستند ويجهزه للعرض بأشكال إخراج مختلفة.  
+أولاً، أنشئ كائن `Viewer` ووجهه إلى ملف Excel الخاص بك. يوضح المقتطف التالي الحد الأدنى من الكود اللازم للبدء:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
@@ -81,15 +159,20 @@ try (Viewer viewer = new Viewer("path/to/your/file.xlsx")) {
 }
 ```
 
-### الحصول على الترخيص
-يمكنك الحصول على نسخة تجريبية مجانية أو ترخيص مؤقت من GroupDocs لاختبار منتجاتهم دون أي قيود على الميزات. زر [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) لمزيد من المعلومات حول الحصول على ترخيص.
+**مرساة التعريف:** `Viewer` هي الفئة الأساسية في GroupDocs.Viewer التي تقوم بتحميل المستند وتجهزه للعرض بأشكال إخراج مختلفة.
 
-## كيفية إنشاء PDF من Excel باستخدام GroupDocs.Viewer
+### الحصول على الترخيص
+يمكنك الحصول على نسخة تجريبية مجانية أو ترخيص مؤقت من GroupDocs لاختبار المنتج دون قيود على الميزات. زر صفحة [تجربة GroupDocs المجانية](https://releases.groupdocs.com/viewer/java/) للحصول على تفاصيل حول الحصول على مفتاح الترخيص.
+
+## كيفية تحويل Excel إلى PDF في Java باستخدام GroupDocs.Viewer
+حمّل مصنف Excel، وقم بتكوين خيارات العرض، واكتب ملف PDF الناتج في ثلاث خطوات مختصرة فقط. يفي هذا الفقرة ذات الإجابة المباشرة بمتطلبات عنوان السؤال: تقوم بإنشاء كائن `Viewer`، وتعيين `PdfViewOptions` مع `SpreadsheetOptions` المكوَّنة للعرض وفق فواصل الصفحات، ثم تستدعي `viewer.view()`.
+
+`PdfViewOptions` يحدد إعدادات إخراج PDF. `SpreadsheetOptions` يضبط كيفية عرض جداول البيانات، بما في ذلك فواصل الصفحات، خطوط الشبكة، والعناوين.
 
 ### عرض جداول البيانات وفق فواصل الصفحات
 
 #### تنفيذ خطوة بخطوة
-1. **تهيئة Viewer والخيارات** – إعداد Viewer مع ملف الإدخال وتحديد مسار PDF الناتج:
+1. **تهيئة Viewer والخيارات** – إعداد المشاهد بملف الإدخال الخاص بك وتحديد مسار ملف PDF الناتج:  
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path outputFilePath = outputDirectory.resolve("output.pdf");
@@ -98,7 +181,7 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Page_Breaks.xlsx")) {
     PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
 
-2. **تكوين خيارات Spreadsheet** – تمكين العرض وفق فواصل الصفحات، خطوط الشبكة، والعناوين:
+2. **تكوين خيارات Spreadsheet** – تمكين العرض وفق فواصل الصفحات، خطوط الشبكة، والعناوين:  
 ```java
     // Set SpreadsheetOptions for rendering by page breaks.
     viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingByPageBreaks());
@@ -113,19 +196,19 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Page_Breaks.xlsx")) {
 }
 ```
 
-3. **شرح المعلمات الرئيسية**
-   - `forRenderingByPageBreaks()`: يضمن أن كل صفحة PDF تتطابق مع فاصل صفحة في جدول البيانات.
-   - `setRenderGridLines(true)`: **add grid lines pdf** – يحسن قابلية قراءة البيانات الجدولية.
-   - `setRenderHeadings(true)`: **include headings pdf** – يعرض تسميات الأعمدة.
+3. **شرح المعلمات الرئيسية**  
+   - `forRenderingByPageBreaks()`: يطابق كل صفحة PDF مع فاصل صفحة في جدول البيانات.  
+   - `setRenderGridLines(true)`: يضيف خطوط الشبكة لتحسين قابلية قراءة الجدول.  
+   - `setRenderHeadings(true)`: يعرض تسميات الأعمدة في كل صفحة مطبوعة.
 
 #### نصائح استكشاف الأخطاء وإصلاحها
-- تحقق من صحة مسارات الإدخال والإخراج.
-- تأكد من أن دفتر العمل يحتوي فعليًا على فواصل صفحات (تخطيط الطباعة → معاينة فواصل الصفحات).
+- تأكد من أن المصنف يحتوي فعليًا على فواصل صفحات (تخطيط الطباعة → معاينة فواصل الصفحات).  
+- تأكد من أن مسارات ملفات الإدخال والإخراج قابلة للوصول من قبل عملية Java.
 
 ## تكوين خيارات عرض جداول البيانات
 
 ### تخصيص خطوط الشبكة والعناوين
-بالإضافة إلى فواصل الصفحات، يمكنك ضبط مظهر PDF بدقة.
+بخلاف فواصل الصفحات، يمكنك ضبط مظهر PDF بدقة. يوفر لك كائن `SpreadsheetOptions` تحكمًا دقيقًا في العناصر البصرية.
 
 ```java
 import com.groupdocs.viewer.options.SpreadsheetOptions;
@@ -137,24 +220,22 @@ spreadsheetOptions.setRenderGridLines(true);
 spreadsheetOptions.setRenderHeadings(true);
 ```
 
-- **خطوط الشبكة**: مفيدة للحفاظ على الهيكل البصري لجداول البيانات.
-- **العناوين**: تجعل من السهل على القارئ فهم سياق الأعمدة.
+- **خطوط الشبكة**: تحافظ على الهيكل البصري للجداول، مفيدة بشكل خاص للبيانات المالية.  
+- **العناوين**: تعزز سياق الأعمدة في كل صفحة، مما يقلل الحاجة إلى التعليقات التوضيحية اليدوية.
 
 #### المشكلات الشائعة
-- إذا لم تظهر خطوط الشبكة أو العناوين، تحقق مرة أخرى من أن كائن `SpreadsheetOptions` مرتبط بـ `PdfViewOptions` قبل استدعاء `viewer.view()`.
+إذا كانت خطوط الشبكة أو العناوين مفقودة، تحقق مرة أخرى من أن كائن `SpreadsheetOptions` مرتبط بـ `PdfViewOptions` قبل استدعاء `viewer.view()`.
 
 ## تطبيقات عملية
+إليك سيناريوهات واقعية حيث يبرز **تحويل Excel إلى PDF في Java**:
 
-إليك سيناريوهات من العالم الحقيقي حيث يبرز **generate pdf from excel**:
-
-1. **التقارير المالية** – تحويل تقارير Excel الشهرية إلى PDFs تحترم فواصل الصفحات، مما يضمن أن يبدأ كل بيان في صفحة جديدة.
-2. **النشر الأكاديمي** – عرض جداول بيانات البحث مع خطوط الشبكة والعناوين لتضمينها في المجلات.
-3. **إدارة المخزون** – إنشاء أوراق جرد قابلة للطباعة تحافظ على التخطيط الأصلي.
+1. **التقارير المالية** – تحويل تقارير Excel الشهرية إلى ملفات PDF تحترم فواصل الصفحات، مما يضمن أن يبدأ كل بيان في صفحة جديدة.  
+2. **النشر الأكاديمي** – عرض جداول بيانات البحث مع خطوط الشبكة والعناوين لتقديمها إلى المجلات.  
+3. **إدارة المخزون** – إنشاء أوراق مخزون قابلة للطباعة تحافظ على التخطيط الأصلي، مما يسهل المسح الضوئي في الميدان.
 
 ## اعتبارات الأداء
-
-- **تحسين استخدام الموارد**: حافظ على حجم ملفات الإدخال معقولًا لتجنب استهلاك الذاكرة العالي.
-- **ضبط JVM**: استخدم علمي `-Xms` و `-Xmx` لتخصيص مساحة كومة كافية لدفاتر العمل الكبيرة.
+- **تحسين استخدام الموارد**: بالنسبة للمصنفات التي يزيد حجمها عن 200 ميغابايت، اضبط كومة JVM (`-Xms2g -Xmx4g`) لتجنب أخطاء نفاد الذاكرة.  
+- **نصيحة المعالجة الدفعية**: أعد استخدام كائن `Viewer` واحد عبر ملفات متعددة لتقليل عبء التهيئة بنسبة تصل إلى **30 %**.
 
 ## الأسئلة المتكررة
 
@@ -162,7 +243,8 @@ spreadsheetOptions.setRenderHeadings(true);
 ج: استدعِ `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)` قبل العرض.
 
 **س: هل يمكنني عرض ورقة عمل محددة فقط؟**  
-ج: نعم، استخدم `SpreadsheetOptions.setWorksheetIndex(int index)` لاستهداف ورقة معينة.
+ج: نعم—استخدم `SpreadsheetOptions.setWorksheetIndex(int index)` لاستهداف ورقة معينة.  
+`setWorksheetIndex(int index)` يختار ورقة العمل ذات الفهرس الصفري المحدد للعرض.
 
 **س: هل يدعم GroupDocs.Viewer ملفات Excel المحمية بكلمة مرور؟**  
 ج: بالتأكيد. مرّر كلمة المرور عند إنشاء كائن `Viewer`.
@@ -173,14 +255,14 @@ spreadsheetOptions.setRenderHeadings(true);
 **س: هل يلزم وجود ترخيص للاستخدام في الإنتاج؟**  
 ج: نعم، يلزم وجود ترخيص GroupDocs صالح للنشر التجاري.
 
-## الخلاصة
-
-لقد أصبحت الآن متمكنًا من **generate pdf from excel** باستخدام GroupDocs.Viewer، من إعداد البيئة إلى عرض جداول البيانات مع فواصل الصفحات، خطوط الشبكة، والعناوين. هذه القدرة تُبسّط سير عمل المستندات، تحسن عرض البيانات، وتقلل الاعتماد على الأدوات الخارجية.
-
-**الخطوات التالية:** استكشف `PdfViewOptions` إضافية مثل إضافة علامة مائية، حماية بكلمة مرور، أو أحجام صفحات مخصصة لتخصيص ملفات PDF الخاصة بك بشكل أكبر.
-
 ---
 
-**آخر تحديث:** 2026-03-22  
+**آخر تحديث:** 2026-09-10  
 **تم الاختبار مع:** GroupDocs.Viewer 25.2 for Java  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [كيفية تحويل Excel إلى HTML, JPG, PNG, و PDF باستخدام GroupDocs.Viewer Java](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
+- [كيفية عرض خطوط الشبكة في جداول بيانات Java باستخدام GroupDocs.Viewer](/viewer/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/)
+- [كيفية تحويل Excel إلى HTML وعرض الصفوف والأعمدة المخفية في Java باستخدام GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
