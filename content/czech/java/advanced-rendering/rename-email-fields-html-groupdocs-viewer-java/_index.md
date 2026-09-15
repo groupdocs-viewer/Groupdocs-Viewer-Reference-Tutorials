@@ -69,10 +69,6 @@ url: /cs/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Převod e‑mailu do HTML a přejmenování polí – GroupDocs Viewer Java
 
 Pokud potřebujete **převést e‑mail do HTML** a zároveň dát hlavičkám e‑mailu vlastní vzhled, jste na správném místě. V tomto tutoriálu vás provedeme přesnými kroky, jak přejmenovat pole e‑mailu, **převést e‑mail do HTML** a přizpůsobit hlavičky e‑mailu pomocí GroupDocs.Viewer pro Java. Na konci budete mít čistou HTML reprezentaci s názvy hlaviček, které preferujete, což usnadní čtení výstupu a jeho integraci do vašich aplikací.
@@ -258,9 +254,3 @@ A: Cesta souboru následuje vzor definovaný v `pageFilePathFormat`; můžete ji
 - [Convert EML to HTML with Custom DateTime in Java Using GroupDocs.Viewer](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java convert msg to pdf – Optimize Email-to-PDF Rendering with GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Render Document Attachments HTML with GroupDocs.Viewer Java – A Step‑By‑Step Guide](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

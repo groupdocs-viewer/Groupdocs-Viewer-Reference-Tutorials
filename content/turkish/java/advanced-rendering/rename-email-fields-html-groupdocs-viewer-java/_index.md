@@ -70,10 +70,6 @@ url: /tr/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # E-postayı HTML'ye dönüştür ve alanları yeniden adlandır – GroupDocs Viewer Java
 
 E-posta başlıklarına özel bir görünüm verirken **convert email to HTML** istiyorsanız, doğru yerdesiniz. Bu öğreticide e-posta alanlarını yeniden adlandırmak, **convert email to HTML** ve GroupDocs.Viewer for Java kullanarak e-posta başlıklarını özelleştirmek için tam adımları göstereceğiz. Sonunda, tercih ettiğiniz başlık adlarıyla temiz bir HTML temsiline sahip olacaksınız, bu da çıktıyı okumayı ve uygulamalarınıza entegre etmeyi kolaylaştırır.
@@ -257,8 +253,3 @@ Artık GroupDocs.Viewer for Java ile **convert email to HTML** yaparken **rename
 - [EML'yi Java'da GroupDocs.Viewer Kullanarak Özel Tarih/Zaman ile HTML'ye Dönüştür](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java convert msg to pdf – GroupDocs.Viewer ile Email-to-PDF Render'ını Optimize Et](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [GroupDocs.Viewer Java ile Belge Eklerini HTML Olarak Render Et – Adım Adım Kılavuz](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

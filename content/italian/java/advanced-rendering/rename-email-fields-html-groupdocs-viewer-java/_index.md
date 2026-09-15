@@ -69,10 +69,6 @@ url: /it/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Convertire email in HTML e rinominare i campi – GroupDocs Viewer Java
 
 Se hai bisogno di **convertire email in HTML** aggiungendo alle intestazioni email un aspetto personalizzato, sei nel posto giusto. In questo tutorial illustreremo i passaggi esatti per rinominare i campi email, **convertire email in HTML**, e personalizzare le intestazioni email usando GroupDocs.Viewer per Java. Alla fine avrai una rappresentazione HTML pulita con i nomi delle intestazioni che preferisci, rendendo l'output più facile da leggere e integrare nelle tue applicazioni.
@@ -255,8 +251,3 @@ R: Il percorso del file segue il modello definito in `pageFilePathFormat`; puoi 
 - [Convert EML to HTML with Custom DateTime in Java Using GroupDocs.Viewer](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java convert msg to pdf – Optimize Email-to-PDF Rendering with GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Render Document Attachments HTML with GroupDocs.Viewer Java – A Step‑By‑Step Guide](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

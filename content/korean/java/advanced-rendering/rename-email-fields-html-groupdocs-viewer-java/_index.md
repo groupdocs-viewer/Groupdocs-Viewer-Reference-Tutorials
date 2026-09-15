@@ -66,10 +66,6 @@ url: /ko/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # 이메일을 HTML로 변환하고 필드 이름 바꾸기 – GroupDocs Viewer Java
 
 이메일 헤더에 사용자 지정 모양을 적용하면서 **이메일을 HTML로 변환**해야 한다면, 올바른 곳에 오셨습니다. 이 튜토리얼에서는 이메일 필드 이름을 바꾸고, **이메일을 HTML로 변환**하며, GroupDocs.Viewer for Java를 사용해 이메일 헤더를 맞춤 설정하는 정확한 단계를 안내합니다. 최종적으로 원하는 헤더 이름이 적용된 깔끔한 HTML 표현을 얻어, 출력물을 더 쉽게 읽고 애플리케이션에 통합할 수 있게 됩니다.
@@ -251,8 +247,3 @@ A: 파일 경로는 `pageFilePathFormat`에 정의된 패턴을 따르며, 페�
 - [Java에서 GroupDocs.Viewer를 사용해 맞춤 날짜/시간으로 EML을 HTML로 변환](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java msg를 pdf로 변환 – GroupDocs.Viewer로 이메일‑PDF 렌더링 최적화](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [GroupDocs.Viewer Java로 문서 첨부 파일 HTML 렌더링 – 단계별 가이드](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

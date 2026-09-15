@@ -69,10 +69,6 @@ url: /nl/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # E‑mail omzetten naar HTML & velden hernoemen – GroupDocs Viewer Java
 
 Als je **e‑mail omzetten naar HTML** wilt terwijl je de e‑mailheaders een aangepaste uitstraling geeft, ben je hier op het juiste adres. In deze tutorial lopen we de exacte stappen door om e‑mailvelden te hernoemen, **e‑mail omzetten naar HTML**, en e‑mailheaders aan te passen met GroupDocs.Viewer voor Java. Aan het einde heb je een nette HTML‑representatie met de header‑namen die je verkiest, waardoor de output makkelijker te lezen en te integreren is in je applicaties.
@@ -256,9 +252,3 @@ A: Het bestandspad volgt het patroon gedefinieerd in `pageFilePathFormat`; je ku
 - [E‑mail (EML) omzetten naar HTML met aangepaste datum‑tijd in Java met GroupDocs.Viewer](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java convert msg to pdf – Email‑naar‑PDF rendering optimaliseren met GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Documentbijlagen renderen als HTML met GroupDocs.Viewer Java – Een stap‑voor‑stap gids](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

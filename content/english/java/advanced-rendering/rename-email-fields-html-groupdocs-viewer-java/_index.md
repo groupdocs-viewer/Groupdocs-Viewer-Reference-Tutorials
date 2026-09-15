@@ -69,10 +69,6 @@ url: /java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Convert email to HTML & rename fields – GroupDocs Viewer Java
 
 If you need to **convert email to HTML** while giving the email headers a custom look, you’re in the right place. In this tutorial we’ll walk through the exact steps to rename email fields, **convert email to HTML**, and customize email headers using GroupDocs.Viewer for Java. By the end you’ll have a clean HTML representation with the header names you prefer, making the output easier to read and integrate into your applications.
@@ -258,9 +254,3 @@ A: The file path follows the pattern defined in `pageFilePathFormat`; you can co
 - [Convert EML to HTML with Custom DateTime in Java Using GroupDocs.Viewer](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java convert msg to pdf – Optimize Email-to-PDF Rendering with GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Render Document Attachments HTML with GroupDocs.Viewer Java – A Step‑By‑Step Guide](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

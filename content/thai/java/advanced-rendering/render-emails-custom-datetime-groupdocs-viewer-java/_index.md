@@ -80,10 +80,6 @@ url: /th/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # แปลง eml เป็น html ด้วย datetime ที่กำหนดเองใน java โดยใช้ GroupDocs.Viewer
 
 ในระบบสนับสนุนและการจัดเก็บข้อมูลสมัยใหม่ การ **แปลง eml เป็น html** อย่างรวดเร็วพร้อมการรักษาเวลาตราบตรงเป็นความสามารถที่จำเป็นอย่างยิ่ง บทแนะนำนี้จะแสดงวิธีการเรนเดอร์อีเมล EML เป็น HTML, ใช้ **รูปแบบ datetime ที่กำหนดเอง**, และตั้ง **ค่า offset ของโซนเวลา** ด้วย GroupDocs.Viewer สำหรับ Java. เมื่อเสร็จคุณจะได้โค้ดส่วนนำกลับมาใช้ใหม่ที่สร้างมุมมองอีเมลที่แม่นยำและพร้อมสำหรับเว็บสำหรับกระบวนการ **การแปลง email เป็น html** ใด ๆ
@@ -281,10 +277,3 @@ A: ไลเซนส์เป็นต่อการปรับใช้; โ
 - [แปลงอีเมลเป็น HTML & เปลี่ยนชื่อฟิลด์ – GroupDocs Viewer Java](/viewer/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/)
 - [java แปลง msg เป็น pdf – ปรับประสิทธิภาพการเรนเดอร์ Email‑to‑PDF ด้วย GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Groupdocs Viewer Java การเรนเดอร์ HTML แบบตอบสนอง](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

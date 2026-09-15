@@ -69,10 +69,6 @@ url: /hi/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # ईमेल को HTML में बदलें और फ़ील्ड का नाम बदलें – GroupDocs Viewer Java
 
 यदि आपको **ईमेल को HTML में बदलने** की आवश्यकता है जबकि ईमेल हेडर को कस्टम रूप देना चाहते हैं, तो आप सही जगह पर हैं। इस ट्यूटोरियल में हम ईमेल फ़ील्ड का नाम बदलने, **ईमेल को HTML में बदलने**, और GroupDocs.Viewer for Java का उपयोग करके ईमेल हेडर को कस्टमाइज़ करने के सटीक चरणों से गुजरेंगे। अंत तक आपके पास एक साफ़ HTML प्रतिनिधित्व होगा जिसमें हेडर नाम आपकी पसंद के अनुसार होंगे, जिससे आउटपुट पढ़ने और आपके एप्लिकेशन में एकीकृत करने में आसान होगा।
@@ -258,9 +254,3 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
 - [Java में कस्टम DateTime के साथ EML को HTML में बदलें GroupDocs.Viewer का उपयोग करके](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java convert msg to pdf – GroupDocs.Viewer के साथ Email‑to‑PDF रेंडरिंग को ऑप्टिमाइज़ करें](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [GroupDocs.Viewer Java के साथ डॉक्यूमेंट अटैचमेंट्स को HTML में रेंडर करें – चरण‑दर‑चरण गाइड](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

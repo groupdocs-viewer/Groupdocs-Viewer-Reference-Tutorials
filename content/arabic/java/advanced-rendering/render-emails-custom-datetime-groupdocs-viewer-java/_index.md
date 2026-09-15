@@ -82,10 +82,6 @@ url: /ar/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # تحويل eml إلى html مع تاريخ ووقت مخصص في java باستخدام GroupDocs.Viewer
 
 في أنظمة الدعم والأرشفة الحديثة، **تحويل eml إلى html** بسرعة مع الحفاظ على الطوابع الزمنية الدقيقة أمر ضروري. يوضح هذا البرنامج التعليمي كيفية تحويل بريد EML إلى HTML، وتطبيق **تنسيق تاريخ ووقت مخصص**، وتعيين **إزاحة المنطقة الزمنية** باستخدام GroupDocs.Viewer للغة Java. في النهاية ستحصل على مقطع شفرة قابل لإعادة الاستخدام ينتج عروض بريد إلكتروني دقيقة وجاهزة للويب لأي سير عمل **تحويل البريد الإلكتروني إلى html**.
@@ -283,11 +279,3 @@ viewer.view(options);
 - [تحويل البريد الإلكتروني إلى HTML وإعادة تسمية الحقول – GroupDocs Viewer Java](/viewer/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/)
 - [java convert msg to pdf – تحسين عرض البريد إلى PDF باستخدام GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Groupdocs Viewer Java Responsive Html Rendering](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

@@ -69,10 +69,6 @@ url: /hu/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # E‑mail konvertálása HTML‑re és mezők átnevezése – GroupDocs Viewer Java
 
 Ha **e‑mailt HTML‑re kell konvertálni**, miközben az e‑mail fejléceket egyedi megjelenést adsz, jó helyen vagy. Ebben az útmutatóban lépésről‑lépésre bemutatjuk, hogyan lehet átnevezni az e‑mail mezőket, **e‑mailt HTML‑re konvertálni**, és testreszabni az e‑mail fejléceket a GroupDocs.Viewer for Java használatával. A végére egy tiszta HTML‑reprezentációt kapsz a kívánt fejlécnevekkel, ami megkönnyíti a kimenet olvasását és az alkalmazásokba való integrálását.
@@ -264,8 +260,3 @@ A: A fájl útvonal a `pageFilePathFormat`‑ben definiált mintát követi; a `
 - [EML konvertálása HTML‑re egyedi dátummal Java-ban a GroupDocs.Viewer használatával](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java convert msg to pdf – Email‑to‑PDF renderelés optimalizálása a GroupDocs.Viewer‑rel](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Dokumentum mellékletek HTML‑re renderelése GroupDocs.Viewer Java‑val – Lépésről‑lépésre útmutató](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

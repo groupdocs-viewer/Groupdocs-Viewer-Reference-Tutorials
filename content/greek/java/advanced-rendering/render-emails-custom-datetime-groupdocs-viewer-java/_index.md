@@ -82,10 +82,6 @@ url: /el/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Μετατροπή eml σε html με προσαρμοσμένη ημερομηνία/ώρα σε java χρησιμοποιώντας το GroupDocs.Viewer
 
 Σε σύγχρονα συστήματα υποστήριξης και αρχειοθέτησης, η **μετατροπή eml σε html** γρήγορα ενώ διατηρείται η ακριβής χρονική σήμανση είναι απαραίτητη δυνατότητα. Αυτό το tutorial σας δείχνει πώς να αποδίδετε ένα email EML σε HTML, να εφαρμόζετε ένα **προσαρμοσμένο φορμάτ ημερομηνίας/ώρας** και να ορίζετε ένα **μετατόπιση ζώνης ώρας** χρησιμοποιώντας το GroupDocs.Viewer για Java. Στο τέλος θα έχετε ένα επαναχρησιμοποιήσιμο απόσπασμα κώδικα που παράγει ακριβείς, έτοιμες για web προβολές email για οποιαδήποτε **email to html conversion** workflow.
@@ -283,10 +279,3 @@ viewer.view(options);
 - [Μετατροπή Email σε HTML & Μετονομασία Πεδίων – GroupDocs Viewer Java](/viewer/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/)
 - [java convert msg to pdf – Βελτιστοποίηση Απόδοσης Email σε PDF με το GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [GroupDocs Viewer Java – Ανταποκρινόμενη Απόδοση HTML](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

@@ -82,10 +82,6 @@ url: /vi/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Chuyển đổi eml sang html với datetime tùy chỉnh trong java bằng GroupDocs.Viewer
 
 Trong các hệ thống hỗ trợ và lưu trữ hiện đại, **chuyển đổi eml sang html** nhanh chóng đồng thời bảo toàn thời gian chính xác là một khả năng không thể thiếu. Hướng dẫn này sẽ chỉ cho bạn cách hiển thị email EML dưới dạng HTML, áp dụng **định dạng datetime tùy chỉnh**, và thiết lập **độ lệch múi giờ** bằng GroupDocs.Viewer cho Java. Khi hoàn thành, bạn sẽ có một đoạn mã có thể tái sử dụng, tạo ra các hiển thị email chính xác, sẵn sàng cho web cho bất kỳ quy trình **chuyển đổi email sang html** nào.
@@ -283,11 +279,3 @@ A: Giấy phép được tính theo triển khai; tham khảo hướng dẫn gi�
 - [Convert Email to HTML & Rename Fields – GroupDocs Viewer Java](/viewer/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/)  
 - [java convert msg to pdf – Optimize Email-to-PDF Rendering with GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)  
 - [Groupdocs Viewer Java Responsive Html Rendering](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

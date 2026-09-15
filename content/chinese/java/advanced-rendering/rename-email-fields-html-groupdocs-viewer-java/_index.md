@@ -66,10 +66,6 @@ url: /zh/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # 将电子邮件转换为HTML并重命名字段 – GroupDocs Viewer Java
 
 如果您需要在为电子邮件标题提供自定义外观的同时**将电子邮件转换为HTML**，那么您来对地方了。在本教程中，我们将逐步演示如何重命名电子邮件字段、**将电子邮件转换为HTML**，以及使用 GroupDocs.Viewer for Java 自定义电子邮件标题。完成后，您将拥有一个干净的 HTML 表示，并使用您喜欢的标题名称，使输出更易于阅读并集成到您的应用程序中。
@@ -252,9 +248,3 @@ A: 文件路径遵循 `pageFilePathFormat` 中定义的模式；您可以使用 
 - [使用 GroupDocs.Viewer 将 EML 转换为 HTML 并自定义日期时间（Java）](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java 将 msg 转换为 pdf – 使用 GroupDocs.Viewer 优化电子邮件到 PDF 的渲染](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [使用 GroupDocs.Viewer Java 渲染文档附件为 HTML – 步骤指南](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

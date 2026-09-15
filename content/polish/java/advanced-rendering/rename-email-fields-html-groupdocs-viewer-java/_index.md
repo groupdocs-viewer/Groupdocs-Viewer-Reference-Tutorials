@@ -69,10 +69,6 @@ url: /pl/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Konwertuj e‑mail na HTML i zmień nazwy pól – GroupDocs Viewer Java
 
 Jeśli potrzebujesz **konwertować e‑mail na HTML** i nadać nagłówkom e‑maila niestandardowy wygląd, jesteś we właściwym miejscu. W tym samouczku przeprowadzimy Cię przez dokładne kroki, aby zmienić nazwy pól e‑maila, **konwertować e‑mail na HTML** i dostosować nagłówki e‑maila przy użyciu GroupDocs.Viewer dla Javy. Po zakończeniu będziesz mieć czystą reprezentację HTML z nazwami nagłówków, które preferujesz, co ułatwi odczyt i integrację z Twoimi aplikacjami.
@@ -255,8 +251,3 @@ A: Ścieżka pliku podąża za wzorcem zdefiniowanym w `pageFilePathFormat`; mo�
 - [Konwertuj EML na HTML z niestandardową datą i godziną w Javie przy użyciu GroupDocs.Viewer](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java convert msg to pdf – Optymalizacja renderowania e‑mail do PDF przy użyciu GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Renderowanie załączników dokumentu HTML przy użyciu GroupDocs.Viewer Java – Przewodnik krok po kroku](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

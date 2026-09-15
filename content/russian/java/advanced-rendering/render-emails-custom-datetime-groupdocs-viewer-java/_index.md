@@ -84,10 +84,6 @@ url: /ru/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Преобразование eml в html с пользовательским форматом даты и времени в java с использованием GroupDocs.Viewer
 
 В современных системах поддержки и архивирования **преобразование eml в html** быстро с сохранением точных меток времени является обязательной возможностью. Этот учебник покажет, как отобразить письмо EML в HTML, применить **пользовательский формат даты и времени** и задать **смещение часового пояса** с помощью GroupDocs.Viewer для Java. К концу вы получите переиспользуемый фрагмент кода, который генерирует точные, готовые к веб‑отображению представления писем для любого рабочего процесса **преобразования email в html**.
@@ -285,11 +281,3 @@ A: Лицензирование происходит per‑deployment; обра�
 - [Convert Email to HTML & Rename Fields – GroupDocs Viewer Java](/viewer/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/)
 - [java convert msg to pdf – Optimize Email-to-PDF Rendering with GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Groupdocs Viewer Java Responsive Html Rendering](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

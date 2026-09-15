@@ -69,10 +69,6 @@ url: /ar/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # تحويل البريد الإلكتروني إلى HTML وإعادة تسمية الحقول – GroupDocs Viewer Java
 
 إذا كنت بحاجة إلى **convert email to HTML** مع إعطاء رؤوس البريد الإلكتروني مظهرًا مخصصًا، فأنت في المكان الصحيح. في هذا البرنامج التعليمي سنستعرض الخطوات الدقيقة لإعادة تسمية حقول البريد الإلكتروني، **convert email to HTML**، وتخصيص رؤوس البريد باستخدام GroupDocs.Viewer for Java. في النهاية ستحصل على تمثيل HTML نظيف بأسماء الرؤوس التي تفضلها، مما يجعل المخرجات أسهل للقراءة والتكامل مع تطبيقاتك.
@@ -251,8 +247,3 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
 - [تحويل EML إلى HTML مع تاريخ/وقت مخصص في Java باستخدام GroupDocs.Viewer](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java تحويل msg إلى pdf – تحسين عرض البريد إلى PDF باستخدام GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [عرض مرفقات المستندات HTML باستخدام GroupDocs.Viewer Java – دليل خطوة بخطوة](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

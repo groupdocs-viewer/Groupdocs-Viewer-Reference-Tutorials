@@ -84,10 +84,6 @@ url: /hu/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # EML konvertálása HTML-re egyedi dátum/idővel Java-ban a GroupDocs.Viewer használatával
 
 A modern ügyfélszolgálati és archiválási rendszerekben a **convert eml to html** gyors végrehajtása, miközben a pontos időbélyegek megmaradnak, elengedhetetlen képesség. Ez az útmutató megmutatja, hogyan jelenítsünk meg egy EML e‑mailt HTML-ben, alkalmazzunk **custom datetime format**-ot, és állítsunk be **timezone offset**-ot a GroupDocs.Viewer for Java segítségével. A végére egy újrahasználható kódrészletet kapsz, amely pontos, web‑kész e‑mail nézeteket generál bármely **email to html conversion** munkafolyamatban.
@@ -285,11 +281,3 @@ V: A licenc a telepítéshez kötődik; kérdezze meg a GroupDocs licenc útmuta
 - [Convert Email to HTML & Rename Fields – GroupDocs Viewer Java](/viewer/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/)
 - [java convert msg to pdf – Optimize Email-to-PDF Rendering with GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Groupdocs Viewer Java Responsive Html Rendering](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

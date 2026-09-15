@@ -69,10 +69,6 @@ url: /el/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Μετατροπή email σε HTML & μετονομασία πεδίων – GroupDocs Viewer Java
 
 Αν χρειάζεστε **convert email to HTML** ενώ δίνετε στις κεφαλίδες του email μια προσαρμοσμένη εμφάνιση, βρίσκεστε στο σωστό μέρος. Σε αυτό το tutorial θα περάσουμε από τα ακριβή βήματα για να μετονομάσουμε τα πεδία του email, **convert email to HTML**, και να προσαρμόσουμε τις κεφαλίδες του email χρησιμοποιώντας το GroupDocs.Viewer for Java. Στο τέλος θα έχετε μια καθαρή αναπαράσταση HTML με τα ονόματα κεφαλίδων που προτιμάτε, καθιστώντας το αποτέλεσμα πιο εύκολο στην ανάγνωση και ενσωμάτωση στις εφαρμογές σας.
@@ -254,8 +250,3 @@ A: Η διαδρομή ακολουθεί το μοτίβο που ορίζετ�
 - [Μετατροπή EML σε HTML με προσαρμοσμένο DateTime σε Java χρησιμοποιώντας το GroupDocs.Viewer](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java μετατροπή msg σε pdf – Βελτιστοποίηση απόδοσης Email σε PDF με το GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Απόδοση συνημμένων εγγράφων HTML με GroupDocs.Viewer Java – Οδηγός βήμα‑βήμα](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

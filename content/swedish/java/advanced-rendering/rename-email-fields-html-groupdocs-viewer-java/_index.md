@@ -69,10 +69,6 @@ url: /sv/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Konvertera e‑post till HTML & byt namn på fält – GroupDocs Viewer Java
 
 Om du behöver **konvertera e‑post till HTML** samtidigt som du ger e‑posthuvudena ett anpassat utseende, är du på rätt plats. I den här handledningen går vi igenom de exakta stegen för att byta namn på e‑postfält, **konvertera e‑post till HTML**, och anpassa e‑posthuvuden med GroupDocs.Viewer för Java. I slutet har du en ren HTML‑representation med de rubriknamn du föredrar, vilket gör utskriften enklare att läsa och integrera i dina applikationer.
@@ -253,8 +249,3 @@ A: Filvägen följer mönstret som definieras i `pageFilePathFormat`; du kan kon
 - [Konvertera EML till HTML med anpassad datum/tid i Java med GroupDocs.Viewer](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java konvertera msg till pdf – Optimera e‑post‑till‑PDF rendering med GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Rendera dokumentbilagor HTML med GroupDocs.Viewer Java – En steg‑för‑steg‑guide](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

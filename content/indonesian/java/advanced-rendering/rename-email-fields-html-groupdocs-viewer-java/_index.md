@@ -69,10 +69,6 @@ url: /id/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Konversi email ke HTML & ganti nama bidang – GroupDocs Viewer Java
 
 Jika Anda perlu **mengonversi email ke HTML** sambil memberikan header email tampilan khusus, Anda berada di tempat yang tepat. Dalam tutorial ini kami akan menjelaskan langkah‑langkah tepat untuk mengganti nama bidang email, **mengonversi email ke HTML**, dan menyesuaikan header email menggunakan GroupDocs.Viewer untuk Java. Pada akhir tutorial Anda akan memiliki representasi HTML yang bersih dengan nama header yang Anda inginkan, sehingga output lebih mudah dibaca dan diintegrasikan ke dalam aplikasi Anda.
@@ -255,8 +251,3 @@ A: Jalur file mengikuti pola yang didefinisikan dalam `pageFilePathFormat`; Anda
 - [Konversi EML ke HTML dengan DateTime Kustom dalam Java Menggunakan GroupDocs.Viewer](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
 - [java konversi msg ke pdf – Optimalkan Rendering Email-ke-PDF dengan GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Render Lampiran Dokumen HTML dengan GroupDocs.Viewer Java – Panduan Langkah‑per‑Langkah](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

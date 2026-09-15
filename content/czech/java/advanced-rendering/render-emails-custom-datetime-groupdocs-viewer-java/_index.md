@@ -83,10 +83,6 @@ url: /cs/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Převod eml na html s vlastním formátem data a času v jave pomocí GroupDocs.Viewer
 
 V moderních systémech podpory a archivace je **convert eml to html** rychle a při zachování přesných časových razítek nezbytnou schopností. Tento tutoriál vám ukáže, jak vykreslit e‑mail EML do HTML, použít **vlastní formát data a času** a nastavit **posun časového pásma** pomocí GroupDocs.Viewer pro Java. Na konci budete mít znovupoužitelný úryvek kódu, který vytváří přesné, web‑připravené zobrazení e‑mailů pro jakýkoli **email to html conversion** workflow.
@@ -284,11 +280,3 @@ A: Licence je vázána na nasazení; konzultujte průvodce licencováním GroupD
 - [Převod e‑mailu na HTML a přejmenování polí – GroupDocs Viewer Java](/viewer/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/)
 - [java převod msg na pdf – Optimalizace vykreslování e‑mailu do PDF pomocí GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [GroupDocs Viewer Java Responzivní vykreslování HTML](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

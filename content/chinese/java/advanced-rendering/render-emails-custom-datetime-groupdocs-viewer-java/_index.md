@@ -80,10 +80,6 @@ url: /zh/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # 将 eml 转换为 html 并在 java 中使用 GroupDocs.Viewer 自定义日期时间
 
 在现代的支持和归档系统中，**convert eml to html** 能够快速完成且保持精确时间戳是必备功能。本教程展示如何使用 GroupDocs.Viewer for Java 将 EML 邮件渲染为 HTML，应用 **custom datetime format**，并设置 **timezone offset**。完成后，您将拥有可重复使用的代码片段，能够为任何 **email to html conversion** 工作流生成准确、适合网页展示的邮件视图。
@@ -279,10 +275,3 @@ A: 许可证按部署计费；有关多服务器场景，请参阅 GroupDocs 许
 - [将电子邮件转换为 HTML 并重命名字段 – GroupDocs Viewer Java](/viewer/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/)
 - [java 将 msg 转换为 pdf – 使用 GroupDocs.Viewer 优化电子邮件到 PDF 的渲染](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [Groupdocs Viewer Java 响应式 HTML 渲染](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

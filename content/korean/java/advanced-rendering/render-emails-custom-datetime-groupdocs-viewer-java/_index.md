@@ -80,10 +80,6 @@ url: /ko/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Java에서 GroupDocs.Viewer를 사용하여 사용자 지정 날짜/시간으로 eml을 html로 변환
 
 현대적인 지원 및 보관 시스템에서 **eml을 html로 변환**하면서 정확한 타임스탬프를 유지하는 것은 필수 기능입니다. 이 튜토리얼에서는 GroupDocs.Viewer for Java를 사용하여 EML 이메일을 HTML로 렌더링하고 **사용자 지정 날짜/시간 형식**을 적용하며 **시간대 오프셋**을 설정하는 방법을 보여줍니다. 끝까지 따라 하면 **이메일을 html로 변환** 워크플로우에 사용할 수 있는 재사용 가능한 스니펫을 얻을 수 있습니다.
@@ -281,11 +277,3 @@ A: 라이선스는 배포당 적용됩니다; 다중 서버 시나리오에 대�
 - [이메일을 HTML로 변환하고 필드 이름 바꾸기 – GroupDocs Viewer Java](/viewer/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/)
 - [java convert msg to pdf – GroupDocs.Viewer로 이메일‑PDF 렌더링 최적화](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
 - [GroupDocs Viewer Java 반응형 HTML 렌더링](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
