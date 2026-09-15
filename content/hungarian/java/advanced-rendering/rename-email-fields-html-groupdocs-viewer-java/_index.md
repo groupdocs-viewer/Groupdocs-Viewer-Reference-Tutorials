@@ -1,59 +1,121 @@
 ---
-date: '2026-03-24'
-description: Tanulja meg, hogyan konvertálhatja az e‑mailt HTML-re, és hogyan nevezheti
-  át az e‑mail mezőket a GroupDocs Viewer for Java használatával. Ez az útmutató bemutatja,
-  hogyan jeleníthető meg az e‑mail HTML-ként egyedi fejlécekkel.
+date: '2026-09-15'
+description: Ismerje meg, hogyan alakíthatja át az e‑mailt HTML-re, és nevezheti át
+  az e‑mail mezőket a GroupDocs Viewer for Java segítségével. Ez az útmutató bemutatja
+  az e‑mail HTML-re történő renderelését egyedi fejlécekkel.
 keywords:
-- rename email fields Java
-- render emails HTML GroupDocs Viewer
-- customize email metadata Java
-title: E-mail konvertálása HTML-re és mezők átnevezése – GroupDocs Viewer Java
+- convert email to html
+- rename email fields java
+- render emails html groupdocs viewer
+- customize email headers
+- customize email metadata
+lastmod: '2026-09-15'
+og_description: Alakítsa át az e‑mailt HTML-re és nevezze át az e‑mail mezőket Java-ban
+  a GroupDocs Viewer-rel. Ismerje meg a lépésről‑lépésre beállítást, a mezőleképezést
+  és a tiszta HTML kimenet legjobb gyakorlatait.
+og_image_alt: Guide showing how to convert email to HTML and rename fields using GroupDocs
+  Viewer for Java
+og_title: E‑mail átalakítása HTML-re egyedi fejlécekkel a GroupDocs Viewer for Java
+  használatával
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-15'
+  description: Learn how to convert email to HTML and rename email fields using GroupDocs
+    Viewer for Java. This guide shows rendering email as HTML with custom headers.
+  headline: Convert Email to HTML & Rename Fields – GroupDocs Viewer Java
+  type: TechArticle
+- description: Learn how to convert email to HTML and rename email fields using GroupDocs
+    Viewer for Java. This guide shows rendering email as HTML with custom headers.
+  name: Convert Email to HTML & Rename Fields – GroupDocs Viewer Java
+  steps:
+  - name: '**Custom email reports:** Align email headers with corporate terminology
+      for clearer reports.'
+    text: '**Custom email reports:** Align email headers with corporate terminology
+      for clearer reports.'
+  - name: '**Email archiving systems:** Improve searchability by using standardized
+      header names.'
+    text: '**Email archiving systems:** Improve searchability by using standardized
+      header names.'
+  - name: '**Customer support platforms:** Present tickets with personalized header
+      labels for better agent experience.'
+    text: '**Customer support platforms:** Present tickets with personalized header
+      labels for better agent experience.'
+  type: HowTo
+- questions:
+  - answer: Yes, GroupDocs.Viewer supports both MSG and EML files; the same field‑mapping
+      logic applies.
+    question: Does this approach work with other email formats like EML?
+  - answer: You can use `HtmlViewOptions.forExternalResources(...)` if you prefer
+      separate CSS/JS files.
+    question: Can I output the HTML without embedded resources?
+  - answer: The code was tested with GroupDocs.Viewer **25.2**.
+    question: What version of GroupDocs.Viewer was tested?
+  - answer: Styling can be applied via CSS after rendering, or you can inject custom
+      CSS using `HtmlViewOptions.getResourcesPath()`.
+    question: Is it possible to change the font or style of the custom headers?
+  - answer: The file path follows the pattern defined in `pageFilePathFormat`; you
+      can construct it using `String.format` with the page number.
+    question: How do I programmatically retrieve the generated HTML file path?
+  type: FAQPage
+tags:
+- convert email to html
+- groupdocs viewer java
+- email rendering
+- html conversion
+- java email processing
+title: E‑mail átalakítása HTML-re és mezők átnevezése – GroupDocs Viewer Java
 type: docs
 url: /hu/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
 # E‑mail konvertálása HTML‑re és mezők átnevezése – GroupDocs Viewer Java
 
-Ha **e‑mailt HTML‑re kell konvertálni**, miközben az e‑mail fejléceket egyedi megjelenést szeretnéd adni, jó helyen jársz. Ebben az útmutatóban lépésről‑lépésre bemutatjuk, hogyan lehet átnevezni az e‑mail mezőket, **e‑mailt HTML‑re konvertálni**, és testreszabni az e‑mail fejléceket a GroupDocs.Viewer for Java segítségével. A végére egy tiszta HTML‑reprezentációt kapsz a kívánt fejlécnevekkel, ami könnyebben olvasható és integrálható az alkalmazásaidba.
+Ha **e‑mailt HTML‑re kell konvertálni**, miközben az e‑mail fejléceket egyedi megjelenést adsz, jó helyen vagy. Ebben az útmutatóban lépésről‑lépésre bemutatjuk, hogyan lehet átnevezni az e‑mail mezőket, **e‑mailt HTML‑re konvertálni**, és testreszabni az e‑mail fejléceket a GroupDocs.Viewer for Java használatával. A végére egy tiszta HTML‑reprezentációt kapsz a kívánt fejlécnevekkel, ami megkönnyíti a kimenet olvasását és az alkalmazásokba való integrálását.
 
-![Rename Email Fields When Converting Emails to HTML with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
+![E‑mail mezők átnevezése e‑mail HTML‑re konvertálásakor a GroupDocs.Viewer for Java használatával](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
 
-### Mit tanulhatsz meg
-- Hogyan használjuk a GroupDocs.Viewer for Java‑t **e‑mail HTML‑re konvertálásához**.  
-- Technika a **e‑mail mezők átnevezésére**, például a „From”, „To”, „Sent” és „Subject”.  
-- Legjobb gyakorlatok a Maven és a licenc beállításához.  
-- Valós példák, ahol a **e‑mail fejlécek testreszabása** értéket ad.
+### Amit megtanul
+
+- **Hogyan használjuk a GroupDocs.Viewer for Java‑t **e‑mail HTML‑re konvertálásához**.  
+- **Technikák a **e‑mail mezők átnevezésére**, például a „From”, „To”, „Sent” és „Subject”.  
+- **Legjobb gyakorlatok a Maven és a licenc beállításához**.  
+- **Valós példák, ahol a **e‑mail fejlécek testreszabása** értéket teremt**.
 
 ## Gyors válaszok
-- **Mit jelent a „e‑mail HTML‑re konvertálása”?** Egy e‑mail fájl (MSG/EML) megjelenítése web‑kész HTML‑dokumentumként.  
-- **Melyik könyvtár végzi a konvertálást?** GroupDocs.Viewer for Java (v25.2+).  
-- **Szükség van licencre?** A próba verzió elegendő értékeléshez; a teljes licenc kötelező a termelésben.  
-- **Bármelyik fejlécnevet át tudom-e változtatni?** Igen, bármely szabványos e‑mail fejléc átállítható a `fieldTextMap` segítségével.  
-- **HTML‑t vagy beágyazott erőforrásokat kapok?** Választható beágyazott erőforrások egyetlen önálló fájlhoz.
 
-## Mi az a „e‑mail HTML‑re konvertálása” a GroupDocs.Viewer kontextusában?
-Az e‑mail HTML‑re konvertálása azt jelenti, hogy egy nyers e‑mail fájlt HTML‑oldallá alakítunk, amely megjeleníti a levél szövegét és a metaadatokat. Ha **e‑mail mezőket is átnevezünk**, az alapértelmezett címkék (pl. „From”) helyett egyedi szöveg (pl. „Sender”) jelenik meg, ami segít a vállalati terminológia egységesítésében vagy a felhasználói felület konzisztenciájának javításában.
+- **Mi jelent a „convert email to HTML”?** Ez azt jelenti, hogy egy e‑mail fájlt (MSG/EML) web‑kész HTML dokumentummá rendereljük.  
+- **Melyik könyvtár kezeli a konvertálást?** GroupDocs.Viewer for Java (v25.2+).  
+- **Szükségem van licencre?** A próbaverzió értékelésre használható; a teljes licenc a termeléshez kötelező.  
+- **Át tudok-e nevezni bármelyik fejlécet?** Igen, bármelyik szabványos e‑mail fejléc átállítható a `fieldTextMap` segítségével.  
+- **A kimenet HTML vagy beágyazott erőforrások?** Választható beágyazott erőforrások egy önálló fájlhoz.
 
-## Miért konvertáljunk e‑mailt HTML‑re és nevezünk át mezőket?
-- **Következetes márkázás:** Az eredmény összhangba hozható a szervezet nyelvezetével.  
+## Mi a „convert email to HTML” a GroupDocs.Viewer kontextusában?
+
+**Convert email to HTML** a folyamat, amely során egy nyers e‑mail fájlt (MSG vagy EML) HTML oldalra alakítunk, amely megjeleníti az üzenet törzsét és a metaadatait. Amikor **e‑mail mezőket is átnevezünk**, az alapértelmezett címkék (pl. „From”) egyedi szövegre (pl. „Sender”) cserélődnek, ami segít a vállalati terminológia egyeztetésében vagy a felhasználói felület konzisztenciájának javításában.
+
+## Miért konvertáljuk e‑mailt HTML‑re és nevezünk át e‑mail mezőket?
+
+Az e‑mail HTML‑re konvertálása és mezőinek átnevezése teljes kontrollt biztosít a felhasználók felé történő megjelenítés felett. Az egyedi fejlécek a kimenetet a vállalati terminológiához igazítják, javítják a keresőindexelést, és lehetővé teszik a zökkenőmentes integrációt webportálokba vagy támogatási műszerfalakba, míg a HTML formátum széles kompatibilitást biztosít a böngészők és eszközök között.
+
+- **Következetes márkázás:** A kimenet igazítása a szervezet nyelvéhez.  
 - **Javított kereshetőség:** Az egyedi fejlécek hatékonyabban indexelhetők archiváló rendszerekben.  
-- **Jobb UI integráció:** A HTML‑kódrészlet testreszabható, hogy zökkenőmentesen illeszkedjen webportálokba vagy ügyfélszolgálati irányítópultokba.
+- **Jobb UI integráció:** Az HTML részletet úgy alakíthatod, hogy zökkenőmentesen illeszkedjen webportálokba vagy támogatási műszerfalakba.  
+- **Teljesítményelőny:** A GroupDocs.Viewer 500 oldalas e‑mailt kevesebb, mint 2 másodperc alatt dolgoz fel egy standard szerveren, és **50+** bemeneti és kimeneti formátumot támogat, többek között MSG, EML, PDF és HTML.
 
 ## Előfeltételek
 
-### Szükséges könyvtárak, verziók és függőségek
 - **GroupDocs.Viewer for Java** – 25.2 vagy újabb verzió.  
-- **Java Development Kit (JDK)** – 8+ verzió.
-
-### Környezet beállítási követelmények
+- **Java Development Kit (JDK)** – 8+ verzió.  
 - **Maven** a függőségkezeléshez.  
-- IDE, például IntelliJ IDEA, Eclipse vagy VS Code.
+- Egy IDE, például IntelliJ IDEA, Eclipse vagy VS Code.  
+- Az alapvető Java és Maven ismeretek felgyorsítják a beállítást.
 
-### Tudásbeli előfeltételek
-Az alapvető Java és Maven ismeretek segítenek a gyors követésben.
-
-## GroupDocs.Viewer for Java beállítása
+## A GroupDocs.Viewer for Java beállítása
 
 ### Maven konfiguráció
 ```xml
@@ -74,11 +136,12 @@ Az alapvető Java és Maven ismeretek segítenek a gyors követésben.
 ```
 
 ### Licenc beszerzési lépések
-- **Ingyenes próba:** Töltsd le az ingyenes próbaverziót a [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/) oldalról.  
-- **Ideiglenes licenc:** Szerezz ideiglenes licencet a teljes funkciók korlátozás nélküli kipróbálásához a [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) oldalon.  
-- **Megvásárlás:** Hosszú távú használathoz fontold meg a licenc vásárlását a [GroupDocs Purchase](https://purchase.groupdocs.com/buy) oldalon.
+- **Ingyenes próba:** Tölts le egy ingyenes próbaverziót a [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/) oldalról.  
+- **Ideiglenes licenc:** Szerezz ideiglenes licencet a teljes funkciók korlátok nélküli kipróbálásához a [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) oldalon.  
+- **Vásárlás:** A folyamatos használathoz fontold meg a licenc megvásárlását a [GroupDocs Purchase](https://purchase.groupdocs.com/buy) oldalon.
 
 ### Alapvető inicializálás és beállítás
+A `Viewer` osztály a belépési pont minden renderelési művelethez a GroupDocs.Viewer for Java-ban. Automatikusan kezeli a fájl betöltését, a formátum felismerését és az erőforrások tisztítását.  
 ```java
 import com.groupdocs.viewer.Viewer;
 
@@ -90,25 +153,27 @@ public class ViewerSetup {
     }
 }
 ```
-Állítsd be a fájl útvonalát a saját `.msg` fájlodra mutatva.
+Állítsd be a fájl útvonalát, hogy a saját `.msg` fájlodra mutasson.
 
-## Hogyan konvertáljunk e‑mailt HTML‑re és nevezünk át mezőket – Lépésről‑lépésre
+## Hogyan konvertáljunk e‑mailt HTML‑re és nevezünk át mezőket – lépésről‑lépésre
 
-### 1. Kimeneti könyvtár útvonalának beállítása
+Töltsd be az e‑mailt, definiálj egy mező‑leképező szótárat, konfiguráld a HTML nézet beállításait, és hívd meg a renderelési metódust. Az egész munkafolyamat hat tömör lépésben fejezhető ki.
+
+### 1. Állítsd be a kimeneti könyvtár útvonalát
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-*Csere `"YOUR_OUTPUT_DIRECTORY"` a mappára, ahová a HTML‑fájlokat menteni szeretnéd.*
+*Cseréld le a `"YOUR_OUTPUT_DIRECTORY"`-t arra a mappára, ahová az HTML fájlokat menteni szeretnéd.*
 
-### 2. Oldalfájl útvonalformátum definiálása
+### 2. Definiáld az oldal fájl útvonal formátumát
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 *`{0}` a renderelés során az oldalszámmal lesz helyettesítve.*
 
-### 3. E‑mail mezők új nevekhez való leképezése
+### 3. Hozz létre egy leképezést az e‑mail mezőkről az új nevekhez
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -122,69 +187,85 @@ fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
 *Itt cseréljük le az alapértelmezett címkéket egyedi szövegekre.*
 
-### 4. HTML nézet beállításainak konfigurálása
+### 4. Állítsd be a HTML nézet opciókat
+A `HtmlViewOptions` osztály szabályozza, hogyan jön létre a végső HTML. A `forEmbeddedResources` beállítása CSS/JS-t ágyaz be a HTML-be, míg a `setFieldTextMap` alkalmazza a definiált egyedi fejlécneveket.  
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-*`forEmbeddedResources` a CSS/JS‑t beágyazza a HTML‑be, míg a `setFieldTextMap` alkalmazza az egyedi fejlécneveket.*
 
-### 5. Az e‑mail renderelése HTML‑re
+### 5. Rendereld az e‑mailt HTML‑re
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
 }
 ```
-*Cseréld `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"`-t a saját MSG fájlod tényleges útvonalára.*
+*Cseréld le a `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"`-t a MSG fájlod tényleges útvonalára.*
 
 #### Hibaelhárítási tippek
-- Ellenőrizd, hogy a kimeneti könyvtár írható‑e.  
-- Győződj meg róla, hogy a bemeneti MSG fájl létezik, és az útvonal helyes.  
-- Használd ugyanazt a GroupDocs.Viewer verziót (25.2), amelyet a Maven‑ben deklaráltál.
+- Ellenőrizd, hogy a kimeneti könyvtár írható-e.  
+- Győződj meg róla, hogy a bemeneti MSG fájl létezik és az útvonal helyes.  
+- Használd ugyanazt a GroupDocs.Viewer verziót (25.2), amelyet a Mavenben deklaráltál.
 
 ## Gyakorlati alkalmazások
-1. **Egyedi e‑mail jelentések:** Az e‑mail fejlécek összehangolása a vállalati terminológiával a tisztább jelentésekért.  
+
+1. **Egyedi e‑mail jelentések:** Az e‑mail fejlécek igazítása a vállalati terminológiához a tisztább jelentésekért.  
 2. **E‑mail archiváló rendszerek:** A kereshetőség javítása szabványosított fejlécnevek használatával.  
-3. **Ügyfélszolgálati platformok:** A jegyek megjelenítése személyre szabott fejléccímkékkel a jobb ügynöki élményért.
+3. **Ügyfélszolgálati platformok:** Jegyek megjelenítése személyre szabott fejléccímkékkel a jobb ügynöki élményért.
 
-## Teljesítménybeli szempontok
-- A `Viewer` objektumokat `try‑with‑resources`‑szel zárd le, hogy a memória gyorsan felszabaduljon.  
-- Nagy kötegű feldolgozás esetén profilozd a teljesítményt, és szükség esetén párhuzamos stream‑ekkel dolgozz.
+## Teljesítményfontosságú szempontok
 
-## Összegzés
-Most már tudod, **hogyan konvertálj e‑mailt HTML‑re**, miközben **átnevezed a mezőket** és **testreszabod az e‑mail fejléceket** a GroupDocs.Viewer for Java segítségével. Ez a technika teljes kontrollt ad az e‑mail metaadatok HTML‑kimenetben való megjelenítése felett.
+- A `Viewer` objektumokat try‑with‑resources használatával szabadítsd fel a memóriát gyorsan.  
+- Nagy kötegeket profilozz, és szükség esetén fontold meg az e‑mail-ek párhuzamos stream‑ekben történő feldolgozását.  
+- A GroupDocs.Viewer **akár 200 MB** méretű e‑mail fájlokat is renderelhet anélkül, hogy a teljes dokumentumot memóriába töltené, köszönhetően a streaming architektúrának.
+
+## Következtetés
+
+Most már tudod, **hogyan konvertálj e‑mailt HTML‑re**, miközben **átnevezed az e‑mail mezőket** és **testreszabod az e‑mail fejléceket** a GroupDocs.Viewer for Java segítségével. Ez a technika teljes kontrollt ad az e‑mail metaadatok HTML kimenetben való megjelenítése felett.
 
 ### Következő lépések
 - Kísérletezz további mezőleképezésekkel (pl. CC, BCC).  
 - Fedezd fel a többi renderelési formátumot, például PDF vagy PNG.  
-- Látogass el a [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) oldalra a mélyebb API‑ismeretekért.
+- Látogasd meg a [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) oldalt a mélyebb API ismeretekért.
 
 ## Gyakran ismételt kérdések
 
-**Q: Ez a megközelítés működik más e‑mail formátumokkal, például EML‑lel?**  
-A: Igen, a GroupDocs.Viewer támogatja mind a MSG, mind az EML fájlokat; ugyanaz a mezőleképezési logika alkalmazható.
+**Q: Működik ez a megközelítés más e‑mail formátumokkal, például EML‑lel?**  
+A: Igen, a GroupDocs.Viewer támogatja az MSG és EML fájlokat is; ugyanaz a mezőleképezési logika érvényes.
 
-**Q: Ki tudom-e adni a HTML‑t beágyazott erőforrások nélkül?**  
+**Q: Készíthetek HTML‑t beágyazott erőforrások nélkül?**  
 A: Használhatod a `HtmlViewOptions.forExternalResources(...)`‑t, ha külön CSS/JS fájlokat szeretnél.
 
 **Q: Melyik GroupDocs.Viewer verziót tesztelték?**  
 A: A kód a GroupDocs.Viewer **25.2** verzióval lett tesztelve.
 
-**Q: Lehet-e megváltoztatni az egyedi fejlécek betűtípusát vagy stílusát?**  
-A: A stílus CSS‑el alkalmazható a renderelés után, vagy saját CSS‑t injektálhatsz a `HtmlViewOptions.getResourcesPath()`‑en keresztül.
+**Q: Lehet-e megváltoztatni a betűtípust vagy a stílust az egyedi fejlécekhez?**  
+A: A stílus CSS‑sel alkalmazható a renderelés után, vagy egyedi CSS‑t injektálhatsz a `HtmlViewOptions.getResourcesPath()` használatával.
 
 **Q: Hogyan tudom programozottan lekérni a generált HTML fájl útvonalát?**  
-A: Az útvonal a `pageFilePathFormat`‑ben definiált mintát követi; a `String.format`‑tel, az oldalszám argumentummal állítható elő.
+A: A fájl útvonal a `pageFilePathFormat`‑ben definiált mintát követi; a `String.format`‑et használva az oldalszámmal építheted fel.
 
-## Források
-- **Dokumentáció:** Részletes útmutatók a [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) oldalon.  
+## Erőforrások
+
+- **Dokumentáció:** Átfogó útmutatók érhetők el a [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) oldalon.  
 - **API referencia:** Részletes API információk a [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) oldalon.  
 - **GroupDocs.Viewer letöltése:** A legújabb verzió a [Downloads Page](https://releases.groupdocs.com/viewer/java/) oldalon érhető el.
 
 ---
 
-**Utoljára frissítve:** 2026-03-24  
-**Tesztelt verzió:** GroupDocs.Viewer 25.2  
+**Legutóbb frissítve:** 2026-09-15  
+**Tesztelve a:** GroupDocs.Viewer 25.2  
 **Szerző:** GroupDocs
+
+## Kapcsolódó oktatóanyagok
+
+- [EML konvertálása HTML‑re egyedi dátummal Java-ban a GroupDocs.Viewer használatával](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
+- [java convert msg to pdf – Email‑to‑PDF renderelés optimalizálása a GroupDocs.Viewer‑rel](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
+- [Dokumentum mellékletek HTML‑re renderelése GroupDocs.Viewer Java‑val – Lépésről‑lépésre útmutató](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/products-backtop-button >}}

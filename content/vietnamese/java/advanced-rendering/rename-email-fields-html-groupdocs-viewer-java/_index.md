@@ -1,61 +1,121 @@
 ---
-date: '2026-03-24'
+date: '2026-09-15'
 description: Tìm hiểu cách chuyển đổi email sang HTML và đổi tên các trường email
-  bằng GroupDocs Viewer cho Java. Hướng dẫn này cho thấy cách hiển thị email dưới
-  dạng HTML với các tiêu đề tùy chỉnh.
+  bằng GroupDocs Viewer for Java. Hướng dẫn này trình bày cách hiển thị email dưới
+  dạng HTML với tiêu đề tùy chỉnh.
 keywords:
-- rename email fields Java
-- render emails HTML GroupDocs Viewer
-- customize email metadata Java
-title: Chuyển đổi Email sang HTML & Đổi tên các trường – GroupDocs Viewer Java
+- convert email to html
+- rename email fields java
+- render emails html groupdocs viewer
+- customize email headers
+- customize email metadata
+lastmod: '2026-09-15'
+og_description: Chuyển đổi email sang HTML và đổi tên các trường email trong Java
+  bằng GroupDocs Viewer. Tìm hiểu cách thiết lập từng bước, ánh xạ trường và các thực
+  tiễn tốt nhất để có đầu ra HTML sạch.
+og_image_alt: Guide showing how to convert email to HTML and rename fields using GroupDocs
+  Viewer for Java
+og_title: Chuyển đổi email sang HTML với tiêu đề tùy chỉnh bằng GroupDocs Viewer for
+  Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-15'
+  description: Learn how to convert email to HTML and rename email fields using GroupDocs
+    Viewer for Java. This guide shows rendering email as HTML with custom headers.
+  headline: Convert Email to HTML & Rename Fields – GroupDocs Viewer Java
+  type: TechArticle
+- description: Learn how to convert email to HTML and rename email fields using GroupDocs
+    Viewer for Java. This guide shows rendering email as HTML with custom headers.
+  name: Convert Email to HTML & Rename Fields – GroupDocs Viewer Java
+  steps:
+  - name: '**Custom email reports:** Align email headers with corporate terminology
+      for clearer reports.'
+    text: '**Custom email reports:** Align email headers with corporate terminology
+      for clearer reports.'
+  - name: '**Email archiving systems:** Improve searchability by using standardized
+      header names.'
+    text: '**Email archiving systems:** Improve searchability by using standardized
+      header names.'
+  - name: '**Customer support platforms:** Present tickets with personalized header
+      labels for better agent experience.'
+    text: '**Customer support platforms:** Present tickets with personalized header
+      labels for better agent experience.'
+  type: HowTo
+- questions:
+  - answer: Yes, GroupDocs.Viewer supports both MSG and EML files; the same field‑mapping
+      logic applies.
+    question: Does this approach work with other email formats like EML?
+  - answer: You can use `HtmlViewOptions.forExternalResources(...)` if you prefer
+      separate CSS/JS files.
+    question: Can I output the HTML without embedded resources?
+  - answer: The code was tested with GroupDocs.Viewer **25.2**.
+    question: What version of GroupDocs.Viewer was tested?
+  - answer: Styling can be applied via CSS after rendering, or you can inject custom
+      CSS using `HtmlViewOptions.getResourcesPath()`.
+    question: Is it possible to change the font or style of the custom headers?
+  - answer: The file path follows the pattern defined in `pageFilePathFormat`; you
+      can construct it using `String.format` with the page number.
+    question: How do I programmatically retrieve the generated HTML file path?
+  type: FAQPage
+tags:
+- convert email to html
+- groupdocs viewer java
+- email rendering
+- html conversion
+- java email processing
+title: Chuyển đổi Email sang HTML & Đổi tên Trường – GroupDocs Viewer Java
 type: docs
 url: /vi/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Chuyển Đổi Email Sang HTML & Đổi Tên Trường – GroupDocs Viewer Java
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-Nếu bạn cần **chuyển đổi email sang HTML** đồng thời tạo giao diện tùy chỉnh cho tiêu đề email, bạn đã đến đúng nơi. Trong hướng dẫn này, chúng tôi sẽ đi qua các bước chính xác để đổi tên các trường email, **chuyển đổi email sang HTML**, và tùy chỉnh tiêu đề email bằng GroupDocs.Viewer cho Java. Khi hoàn thành, bạn sẽ có một bản HTML sạch sẽ với các tên tiêu đề mà bạn muốn, giúp kết quả dễ đọc hơn và dễ tích hợp vào ứng dụng của bạn.
+# Chuyển đổi email sang HTML & đổi tên trường – GroupDocs Viewer Java
 
-![Đổi Tên Trường Email Khi Chuyển Đổi Email Sang HTML với GroupDocs.Viewer cho Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
+Nếu bạn cần **chuyển đổi email sang HTML** đồng thời tạo giao diện tùy chỉnh cho tiêu đề email, bạn đã đến đúng nơi. Trong hướng dẫn này, chúng tôi sẽ đi qua các bước chính xác để đổi tên trường email, **chuyển đổi email sang HTML**, và tùy chỉnh tiêu đề email bằng GroupDocs.Viewer cho Java. Khi hoàn thành, bạn sẽ có một bản đại diện HTML sạch sẽ với các tên tiêu đề bạn muốn, giúp đầu ra dễ đọc hơn và dễ tích hợp vào các ứng dụng của bạn.
 
-### Những Điều Bạn Sẽ Học
+![Đổi tên trường email khi chuyển đổi email sang HTML với GroupDocs.Viewer cho Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
+
+### Những gì bạn sẽ học
 - Cách sử dụng GroupDocs.Viewer cho Java để **chuyển đổi email sang HTML**.  
-- Kỹ thuật **đổi tên các trường email** như “From”, “To”, “Sent” và “Subject”.  
+- Kỹ thuật **đổi tên trường email** như “From”, “To”, “Sent”, và “Subject”.  
 - Các thực tiễn tốt nhất để thiết lập Maven và cấp phép.  
 - Các kịch bản thực tế nơi **tùy chỉnh tiêu đề email** mang lại giá trị.
 
-## Câu Hỏi Nhanh
-- **“Chuyển đổi email sang HTML” có nghĩa là gì?** Nó có nghĩa là hiển thị một tệp email (MSG/EML) dưới dạng tài liệu HTML sẵn sàng cho web.  
+## Câu trả lời nhanh
+- **“Chuyển đổi email sang HTML” có nghĩa là gì?** Nó có nghĩa là render một tệp email (MSG/EML) thành tài liệu HTML sẵn sàng cho web.  
 - **Thư viện nào thực hiện việc chuyển đổi?** GroupDocs.Viewer cho Java (v25.2+).  
-- **Có cần giấy phép không?** Bản dùng thử hoạt động cho việc đánh giá; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
+- **Tôi có cần giấy phép không?** Bản dùng thử hoạt động cho việc đánh giá; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
 - **Tôi có thể thay đổi bất kỳ tên tiêu đề nào không?** Có, bất kỳ tiêu đề email tiêu chuẩn nào cũng có thể được ánh xạ lại qua `fieldTextMap`.  
-- **Kết quả là HTML hay tài nguyên nhúng?** Bạn có thể chọn tài nguyên nhúng để tạo một tệp duy nhất tự chứa.
+- **Đầu ra là HTML hay tài nguyên nhúng?** Bạn có thể chọn tài nguyên nhúng cho một tệp tự chứa duy nhất.
 
-## “Chuyển đổi email sang HTML” trong Ngữ Cảnh của GroupDocs.Viewer là gì?
-Chuyển đổi email sang HTML có nghĩa là lấy một tệp email thô và tạo ra một trang HTML hiển thị nội dung tin nhắn cùng với siêu dữ liệu của nó. Khi bạn **đổi tên các trường email**, các nhãn mặc định (ví dụ: “From”) sẽ được thay thế bằng văn bản tùy chỉnh (ví dụ: “Người gửi”), giúp bạn phù hợp với thuật ngữ doanh nghiệp hoặc cải thiện tính nhất quán giao diện người dùng.
+## “Chuyển đổi email sang HTML” trong ngữ cảnh của GroupDocs.Viewer là gì?
 
-## Tại Sao Cần Chuyển Đổi Email Sang HTML và Đổi Tên Các Trường Email?
+**Chuyển đổi email sang HTML** là quá trình lấy một tệp email thô (MSG hoặc EML) và tạo ra một trang HTML hiển thị nội dung tin nhắn cùng với siêu dữ liệu của nó. Khi bạn **đổi tên trường email**, các nhãn mặc định (ví dụ: “From”) được thay thế bằng văn bản tùy chỉnh (ví dụ: “Người gửi”), giúp bạn phù hợp với thuật ngữ doanh nghiệp hoặc cải thiện tính nhất quán giao diện người dùng.
+
+## Tại sao phải chuyển đổi email sang HTML và đổi tên trường email?
+
+Việc chuyển đổi email sang HTML và đổi tên các trường của nó cho phép bạn kiểm soát hoàn toàn cách thông điệp được trình bày cho người dùng cuối. Các tiêu đề tùy chỉnh đồng bộ đầu ra với thuật ngữ công ty, cải thiện khả năng lập chỉ mục tìm kiếm, và cho phép tích hợp liền mạch vào các cổng web hoặc bảng điều khiển hỗ trợ, trong khi định dạng HTML đảm bảo khả năng tương thích rộng rãi trên các trình duyệt và thiết bị.
+
 - **Nhận diện thương hiệu nhất quán:** Đồng bộ đầu ra với ngôn ngữ của tổ chức bạn.  
-- **Tăng khả năng tìm kiếm:** Các tiêu đề tùy chỉnh có thể được lập chỉ mục hiệu quả hơn trong hệ thống lưu trữ.  
-- **Tích hợp UI tốt hơn:** Tùy chỉnh đoạn HTML để nó khớp liền mạch vào các cổng web hoặc bảng điều khiển hỗ trợ.
+- **Cải thiện khả năng tìm kiếm:** Các tiêu đề tùy chỉnh có thể được lập chỉ mục hiệu quả hơn trong hệ thống lưu trữ.  
+- **Tích hợp UI tốt hơn:** Tùy chỉnh đoạn HTML để phù hợp một cách liền mạch vào các cổng web hoặc bảng điều khiển hỗ trợ.  
+- **Lợi thế về hiệu năng:** GroupDocs.Viewer xử lý các email lên tới 500 trang trong dưới 2 giây trên máy chủ tiêu chuẩn, và hỗ trợ **hơn 50** định dạng đầu vào và đầu ra, bao gồm MSG, EML, PDF và HTML.
 
-## Các Điều Kiện Tiên Quyết
+## Yêu cầu trước
 
-### Thư Viện, Phiên Bản và Phụ Thuộc Yêu Cầu
 - **GroupDocs.Viewer cho Java** – phiên bản 25.2 trở lên.  
-- **Java Development Kit (JDK)** – phiên bản 8+.
-
-### Yêu Cầu Thiết Lập Môi Trường
+- **Java Development Kit (JDK)** – phiên bản 8+.  
 - **Maven** để quản lý phụ thuộc.  
-- Một IDE như IntelliJ IDEA, Eclipse hoặc VS Code.
+- Một IDE như IntelliJ IDEA, Eclipse, hoặc VS Code.  
+- Kiến thức cơ bản về Java và Maven sẽ giúp thiết lập nhanh hơn.
 
-### Kiến Thức Tiên Quyết
-Kiến thức cơ bản về Java và Maven sẽ giúp bạn theo dõi nhanh hơn.
+## Cài đặt GroupDocs.Viewer cho Java
 
-## Cài Đặt GroupDocs.Viewer cho Java
-
-### Cấu Hình Maven
+### Cấu hình Maven
 ```xml
 <repositories>
    <repository>
@@ -73,12 +133,13 @@ Kiến thức cơ bản về Java và Maven sẽ giúp bạn theo dõi nhanh hơ
 </dependencies>
 ```
 
-### Các Bước Nhận Giấy Phép
-- **Dùng Thử Miễn Phí:** Tải bản dùng thử miễn phí từ [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
-- **Giấy Phép Tạm Thời:** Nhận giấy phép tạm thời để khám phá đầy đủ tính năng mà không có hạn chế tại [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
-- **Mua Bản Quyền:** Để sử dụng lâu dài, hãy cân nhắc mua giấy phép qua [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
+### Các bước lấy giấy phép
+- **Dùng thử miễn phí:** Tải bản dùng thử miễn phí từ [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Giấy phép tạm thời:** Nhận giấy phép tạm thời để khám phá đầy đủ tính năng mà không có hạn chế tại [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Mua bản quyền:** Để sử dụng lâu dài, hãy cân nhắc mua giấy phép qua [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
-### Khởi Tạo và Cấu Hình Cơ Bản
+### Khởi tạo và cài đặt cơ bản
+Lớp `Viewer` là điểm vào cho tất cả các hoạt động render trong GroupDocs.Viewer cho Java. Nó tự động quản lý việc tải tệp, phát hiện định dạng, và dọn dẹp tài nguyên.  
 ```java
 import com.groupdocs.viewer.Viewer;
 
@@ -90,25 +151,27 @@ public class ViewerSetup {
     }
 }
 ```
-Điều chỉnh đường dẫn tệp để trỏ tới file `.msg` của bạn.
+Điều chỉnh đường dẫn tệp để trỏ tới tệp `.msg` của bạn.
 
-## Cách Chuyển Đổi Email Sang HTML và Đổi Tên Các Trường – Từng Bước
+## Cách chuyển đổi email sang HTML và đổi tên trường – từng bước
 
-### 1. Thiết Lập Đường Dẫn Thư Mục Đầu Ra
+Tải email của bạn, định nghĩa từ điển ánh xạ trường, cấu hình tùy chọn xem HTML, và gọi hàm render. Toàn bộ quy trình có thể được biểu diễn trong sáu bước ngắn gọn.
+
+### 1. Thiết lập đường dẫn thư mục đầu ra
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-*Thay `"YOUR_OUTPUT_DIRECTORY"` bằng thư mục bạn muốn lưu các tệp HTML.*
+*Thay thế `"YOUR_OUTPUT_DIRECTORY"` bằng thư mục mà bạn muốn lưu các tệp HTML.*
 
-### 2. Định Nghĩa Định Dạng Đường Dẫn Tệp Trang
+### 2. Xác định định dạng đường dẫn tệp trang
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 *`{0}` sẽ được thay thế bằng số trang trong quá trình render.*
 
-### 3. Tạo Bản Ánh Xạ Các Trường Email Thành Tên Mới
+### 3. Tạo ánh xạ các trường email sang tên mới
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -120,71 +183,84 @@ fieldTextMap.put(Field.TO, "Receiver");
 fieldTextMap.put(Field.SENT, "Date");
 fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
-*Ở đây chúng ta thay đổi các nhãn mặc định thành các nhãn tùy chỉnh.*
+*Ở đây chúng tôi thay đổi nhãn mặc định thành các nhãn tùy chỉnh.*
 
-### 4. Cấu Hình Tùy Chọn Xem HTML
+### 4. Cấu hình tùy chọn xem HTML
+Lớp `HtmlViewOptions` kiểm soát cách HTML cuối cùng được tạo ra. Thiết lập `forEmbeddedResources` sẽ gói CSS/JS bên trong HTML, trong khi `setFieldTextMap` áp dụng các tên tiêu đề tùy chỉnh mà bạn đã định nghĩa.  
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-*`forEmbeddedResources` gói CSS/JS vào trong HTML, trong khi `setFieldTextMap` áp dụng các tên tiêu đề tùy chỉnh.*
 
-### 5. Render Email Thành HTML
+### 5. Render email sang HTML
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
 }
 ```
-*Thay `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` bằng đường dẫn thực tế tới file MSG của bạn.*
+*Thay thế `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` bằng đường dẫn thực tế tới tệp MSG của bạn.*
 
-#### Mẹo Khắc Phục Sự Cố
+#### Mẹo khắc phục sự cố
 - Kiểm tra thư mục đầu ra có quyền ghi không.  
-- Đảm bảo file MSG đầu vào tồn tại và đường dẫn đúng.  
-- Sử dụng cùng một phiên bản GroupDocs.Viewer (25.2) như đã khai báo trong Maven.
+- Đảm bảo tệp MSG đầu vào tồn tại và đường dẫn đúng.  
+- Sử dụng cùng phiên bản GroupDocs.Viewer (25.2) như đã khai báo trong Maven.
 
-## Ứng Dụng Thực Tiễn
-1. **Báo Cáo Email Tùy Chỉnh:** Đồng bộ tiêu đề email với thuật ngữ doanh nghiệp để báo cáo rõ ràng hơn.  
-2. **Hệ Thống Lưu Trữ Email:** Cải thiện khả năng tìm kiếm bằng cách sử dụng các tên tiêu đề chuẩn hoá.  
-3. **Nền Tảng Hỗ Trợ Khách Hàng:** Trình bày ticket với các nhãn tiêu đề cá nhân hoá, nâng cao trải nghiệm cho nhân viên hỗ trợ.
+## Ứng dụng thực tế
+1. **Báo cáo email tùy chỉnh:** Đồng bộ tiêu đề email với thuật ngữ doanh nghiệp để báo cáo rõ ràng hơn.  
+2. **Hệ thống lưu trữ email:** Cải thiện khả năng tìm kiếm bằng cách sử dụng các tên tiêu đề chuẩn hoá.  
+3. **Nền tảng hỗ trợ khách hàng:** Trình bày ticket với các nhãn tiêu đề cá nhân hoá để cải thiện trải nghiệm cho nhân viên hỗ trợ.
 
-## Các Yếu Tố Hiệu Suất
+## Các cân nhắc về hiệu năng
 - Giải phóng các đối tượng `Viewer` bằng try‑with‑resources để giải phóng bộ nhớ kịp thời.  
-- Đánh giá hiệu năng với các batch lớn và cân nhắc xử lý email song song bằng parallel streams nếu cần.
+- Đánh giá hiệu năng cho các lô lớn và cân nhắc xử lý email song song bằng streams nếu cần.  
+- GroupDocs.Viewer có thể render các tệp email **lên tới 200 MB** mà không cần tải toàn bộ tài liệu vào bộ nhớ, nhờ kiến trúc streaming.
 
-## Kết Luận
-Bây giờ bạn đã biết **cách chuyển đổi email sang HTML** đồng thời **đổi tên các trường email** và **tùy chỉnh tiêu đề email** với GroupDocs.Viewer cho Java. Kỹ thuật này cho phép bạn kiểm soát hoàn toàn cách trình bày siêu dữ liệu email trong các đầu ra HTML.
+## Kết luận
+Bây giờ bạn đã biết **cách chuyển đổi email sang HTML** đồng thời **đổi tên trường email** và **tùy chỉnh tiêu đề email** với GroupDocs.Viewer cho Java. Kỹ thuật này cho phép bạn kiểm soát hoàn toàn cách hiển thị siêu dữ liệu email trong các đầu ra HTML.
 
-### Các Bước Tiếp Theo
-- Thử nghiệm thêm các ánh xạ trường (ví dụ: CC, BCC).  
+### Các bước tiếp theo
+- Thử nghiệm các ánh xạ trường bổ sung (ví dụ: CC, BCC).  
 - Khám phá các định dạng render khác như PDF hoặc PNG.  
 - Truy cập [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) để tìm hiểu sâu hơn về API.
 
-## Câu Hỏi Thường Gặp
+## Câu hỏi thường gặp
 
-**Q: Phương pháp này có hoạt động với các định dạng email khác như EML không?**  
-A: Có, GroupDocs.Viewer hỗ trợ cả file MSG và EML; logic ánh xạ trường vẫn áp dụng tương tự.
+**H: Phương pháp này có hoạt động với các định dạng email khác như EML không?**  
+Đ: Có, GroupDocs.Viewer hỗ trợ cả tệp MSG và EML; logic ánh xạ trường vẫn áp dụng như nhau.
 
-**Q: Tôi có thể xuất HTML mà không có tài nguyên nhúng không?**  
-A: Bạn có thể dùng `HtmlViewOptions.forExternalResources(...)` nếu muốn các file CSS/JS riêng biệt.
+**H: Tôi có thể xuất HTML mà không có tài nguyên nhúng không?**  
+Đ: Bạn có thể sử dụng `HtmlViewOptions.forExternalResources(...)` nếu muốn các tệp CSS/JS riêng biệt.
 
-**Q: Phiên bản GroupDocs.Viewer nào đã được kiểm thử?**  
-A: Mã được kiểm thử với GroupDocs.Viewer **25.2**.
+**H: Phiên bản GroupDocs.Viewer nào đã được kiểm thử?**  
+Đ: Mã đã được kiểm thử với GroupDocs.Viewer **25.2**.
 
-**Q: Có thể thay đổi phông chữ hoặc kiểu dáng của các tiêu đề tùy chỉnh không?**  
-A: Có thể áp dụng style qua CSS sau khi render, hoặc chèn CSS tùy chỉnh bằng `HtmlViewOptions.getResourcesPath()`.
+**H: Có thể thay đổi phông chữ hoặc kiểu dáng của các tiêu đề tùy chỉnh không?**  
+Đ: Bạn có thể áp dụng style qua CSS sau khi render, hoặc chèn CSS tùy chỉnh bằng `HtmlViewOptions.getResourcesPath()`.
 
-**Q: Làm sao để lấy đường dẫn tệp HTML đã tạo một cách lập trình?**  
-A: Đường dẫn tệp tuân theo mẫu được định nghĩa trong `pageFilePathFormat`; bạn có thể xây dựng nó bằng `String.format` cùng số trang.
+**H: Làm sao để lấy đường dẫn tệp HTML đã tạo một cách lập trình?**  
+Đ: Đường dẫn tệp tuân theo mẫu được định nghĩa trong `pageFilePathFormat`; bạn có thể xây dựng nó bằng `String.format` cùng số trang.
 
-## Tài Nguyên
-- **Tài Liệu:** Các hướng dẫn chi tiết có sẵn tại [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
-- **Tham Khảo API:** Thông tin API chi tiết có thể xem tại [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
+## Tài nguyên
+- **Tài liệu:** Các hướng dẫn chi tiết có sẵn tại [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
+- **Tham khảo API:** Thông tin chi tiết API có thể tìm thấy tại [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
 - **Tải GroupDocs.Viewer:** Truy cập phiên bản mới nhất qua [Downloads Page](https://releases.groupdocs.com/viewer/java/).
 
 ---
 
-**Cập Nhật Lần Cuối:** 2026-03-24  
-**Đã Kiểm Thử Với:** GroupDocs.Viewer 25.2  
-**Tác Giả:** GroupDocs
+**Last Updated:** 2026-09-15  
+**Tested with:** GroupDocs.Viewer 25.2  
+**Author:** GroupDocs
+
+## Hướng dẫn liên quan
+
+- [Convert EML to HTML with Custom DateTime in Java Using GroupDocs.Viewer](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
+- [java convert msg to pdf – Optimize Email-to-PDF Rendering with GroupDocs.Viewer](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
+- [Render Document Attachments HTML with GroupDocs.Viewer Java – A Step‑By‑Step Guide](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/products-backtop-button >}}

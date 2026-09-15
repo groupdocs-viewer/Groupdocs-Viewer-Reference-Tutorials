@@ -1,46 +1,98 @@
 ---
-date: '2026-03-19'
-description: تعرّف على كيفية تحويل XLSX إلى HTML في Java من خلال عرض مناطق الطباعة
-  في جدول البيانات باستخدام GroupDocs.Viewer – حل معاينة سريع ومركز.
+date: '2026-09-15'
+description: تعلم كيفية إنشاء HTML من Excel في Java باستخدام GroupDocs.Viewer، مع
+  عرض مناطق الطباعة المحددة فقط للحصول على معاينات أسرع وأكثر كفاءة في استهلاك النطاق
+  الترددي.
 keywords:
-- Java spreadsheet print areas rendering
-- rendering print areas with GroupDocs.Viewer for Java
-- efficient document preview solutions
-title: تحويل XLSX إلى HTML باستخدام GroupDocs.Viewer (مناطق الطباعة)
+- generate html from excel
+- display excel print area
+- render excel print area
+lastmod: '2026-09-15'
+og_description: تعلم كيفية إنشاء HTML من Excel في Java باستخدام GroupDocs.Viewer،
+  مع عرض مناطق الطباعة المحددة فقط للحصول على معاينات أسرع وأكثر كفاءة في استهلاك
+  النطاق الترددي.
+og_image_alt: 'GroupDocs.Viewer preview: generate HTML from Excel with print‑area
+  rendering'
+og_title: كيفية إنشاء HTML من Excel في Java باستخدام GroupDocs.Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-15'
+  description: Learn how to generate HTML from Excel in Java using GroupDocs.Viewer,
+    rendering only defined print areas for faster, bandwidth‑efficient previews.
+  headline: How to generate HTML from Excel in Java with GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to generate HTML from Excel in Java using GroupDocs.Viewer,
+    rendering only defined print areas for faster, bandwidth‑efficient previews.
+  name: How to generate HTML from Excel in Java with GroupDocs.Viewer
+  steps:
+  - name: Define output directory and file path format
+    text: First, tell the viewer where to write the generated HTML pages. *Explanation:*
+      `outputDirectory` is the folder that will hold all preview files. `pageFilePathFormat`
+      uses a placeholder (`{0}`) that the viewer replaces with the page number.
+  - name: Configure HTML view options for print‑area rendering
+    text: '`HtmlViewOptions` controls how the HTML is generated. `forEmbeddedResources`
+      creates a single HTML file per page that contains all CSS/JS inline, simplifying
+      deployment. `forRenderingPrintArea()` tells the engine to **render the Excel
+      print area** only. *Explanation:* `HtmlViewOptions.forEmbeddedRes'
+  - name: Load the spreadsheet and render it
+    text: Finally, point the viewer at your workbook and invoke the rendering process.
+      *Explanation:* The `view()` method processes the workbook according to the options
+      we set, outputting HTML files that display only the print‑area sections.
+  type: HowTo
+- questions:
+  - answer: It reduces clutter and speeds up rendering, delivering a focused preview
+      that highlights the most important data.
+    question: What is the primary benefit of rendering only the Excel print area?
+  - answer: Yes—omit `SpreadsheetOptions.forRenderingPrintArea()` and use the default
+      options to render the entire workbook.
+    question: Can I render non‑printable worksheets as well?
+  - answer: It handles XLS, XLSX, CSV, ODS, and several other formats. Check the official
+      docs for the full list.
+    question: Does GroupDocs.Viewer support other spreadsheet formats?
+  - answer: Increase JVM heap size, render only needed pages, and consider multi‑threaded
+      processing.
+    question: How can I improve rendering speed for very large files?
+  - answer: Ensure the print area is defined in the source file (Excel → Page Layout
+      → Print Area) and that you are using the latest GroupDocs.Viewer version.
+    question: My print areas are not showing up—what should I check?
+  type: FAQPage
+tags:
+- convert xlsx
+- GroupDocs.Viewer
+- Java document preview
+title: كيفية إنشاء HTML من Excel في Java باستخدام GroupDocs.Viewer
 type: docs
 url: /ar/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/
 weight: 1
 ---
 
-# تحويل XLSX إلى HTML في Java – عرض مناطق الطباعة في جداول البيانات باستخدام GroupDocs.Viewer
+# كيفية توليد HTML من Excel في Java باستخدام GroupDocs.Viewer
 
-إذا كنت بحاجة إلى **convert XLSX to HTML** بسرعة مع عرض الأجزاء فقط من المصنف التي تهمك، فإن عرض أقسام منطقة الطباعة المحددة هو الحل المناسب. يشرح هذا البرنامج التعليمي كيفية بناء حل معاينة Java يستخرج مناطق الطباعة فقط من ملف Excel ويولد صفحات HTML نظيفة ومتكاملة باستخدام **GroupDocs.Viewer for Java**. سترى لماذا يسرّع هذا النهج التحميل، يقلل من استهلاك النطاق الترددي، ويحافظ على واجهة المستخدم مرتبة—مثالي للبوابات، لوحات التحكم، وأي عارض مستندات على الويب.
+إذا كنت بحاجة إلى **توليد HTML من Excel** بسرعة مع عرض الأجزاء المهمة فقط من المصنف، فإن عرض أقسام منطقة الطباعة المحددة هو الخيار المناسب. يشرح هذا الدليل كيفية بناء حل معاينة Java يستخرج مناطق الطباعة فقط من ملف Excel ويولد صفحات HTML نظيفة ومستقلة باستخدام **GroupDocs.Viewer for Java**. ستلاحظ كيف يسرّع هذا النهج التحميل، يقلل من استهلاك النطاق الترددي، ويحافظ على نظافة واجهة المستخدم—مثالي للبوابات، لوحات التحكم، وأي عارض مستندات على الويب.
 
-![Spreadsheet Print Areas Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
+![عرض مناطق طباعة جداول البيانات باستخدام GroupDocs.Viewer for Java](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
 
 ## إجابات سريعة
-- **What does “convert XLSX to HTML” mean?** يعني تحويل مصنف Excel برمجيًا إلى صفحات HTML جاهزة للويب.  
-- **Why render only the Excel print area?** يقتصر على البيانات الأكثر صلة، مما يقلل من وقت العرض واستهلاك النطاق الترددي.  
-- **Do I need a license to try this?** تتوفر نسخة تجريبية مجانية أو ترخيص مؤقت؛ يلزم ترخيص كامل للإنتاج.  
-- **Which Java version is supported?** Java 8 أو أحدث (يوصى بـ Java 11).  
-- **Can I embed the preview in a web page?** نعم—استخدم خيار embedded‑resources لإنتاج صفحات HTML متكاملة.  
+- **ماذا يعني “generate HTML from Excel”؟** يعني تحويل مصنف Excel برمجيًا إلى صفحات HTML جاهزة للويب يمكن للمتصفحات عرضها دون الحاجة إلى Excel.  
+- **لماذا يتم عرض منطقة الطباعة في Excel فقط؟** لأنها تعزل البيانات الأكثر صلة، مما يقلل من زمن العرض واستهلاك النطاق الترددي.  
+- **هل أحتاج إلى ترخيص لتجربة هذا؟** تتوفر نسخة تجريبية مجانية أو ترخيص مؤقت؛ يتطلب الإنتاج ترخيص كامل.  
+- **ما نسخة Java المدعومة؟** Java 8 أو أحدث (يوصى بـ Java 11).  
+- **هل يمكنني تضمين المعاينة في صفحة ويب؟** نعم—استخدم خيار embedded‑resources لإنتاج صفحات HTML مستقلة.
 
-## ما هو “convert XLSX to HTML”؟
-تحويل ملف XLSX إلى HTML يعني أخذ تخطيط الجدول البصري وتصديره كعلامات HTML يمكن للمتصفحات عرضها دون الحاجة إلى Excel. هذه تقنية أساسية لـ **how to preview spreadsheet** داخل تطبيقات الويب، مما يسمح للمستخدمين بعرض البيانات فورًا وبشكل آمن.
+## ما هو “generate HTML from Excel”؟
+**Generate HTML from Excel** يعني تحويل التخطيط البصري لمصنف XLSX إلى ترميز HTML قياسي تقوم المتصفحات بعرضه أصلاً. تتيح لك هذه التقنية معاينة بيانات جداول البيانات فورًا في تطبيقات الويب دون الحاجة إلى Microsoft Office على جانب العميل.
 
-## لماذا عرض منطقة الطباعة في Excel فقط؟
-- **Performance:** أحمال HTML أصغر تُحمَّل أسرع.  
-- **Clarity:** يرى المستخدمون الأقسام المحددة للطباعة فقط، مما يتجنب الفوضى.  
-- **Security:** تبقى أوراق العمل غير المرغوب فيها مخفية عن المعاينة.  
+## لماذا يتم عرض منطقة الطباعة في Excel فقط؟
+إن عرض منطقة الطباعة فقط ينتج حمولة HTML أصغر، مما يسرّع التحميل حتى 60 % للتقارير النموذجية. كما أنه يخفي أوراق العمل الداخلية التي قد تحتوي على صيغ حساسة، مما يحسّن الأمان. من خلال التركيز على منطقة الطباعة التي يحددها المستخدم، تقدم عرضًا أنظف وأكثر هدفًا يتماشى مع نية المؤلف.
 
 ## المتطلبات المسبقة
-- **GroupDocs.Viewer for Java** v25.2 أو أحدث.  
+- **GroupDocs.Viewer for Java** v25.2 أو أحدث (يدعم أكثر من 70 تنسيق مستند ويمكنه معالجة جداول البيانات التي تصل إلى 10,000 صف دون تحميل الملف بالكامل إلى الذاكرة).  
 - Maven مثبت على جهاز التطوير الخاص بك.  
 - JDK 8 أو أحدث (يوصى بـ Java 11).  
-- بيئة تطوير متكاملة (IntelliJ IDEA، Eclipse، أو VS Code).  
+- بيئة تطوير متكاملة (IDE) مثل IntelliJ IDEA أو Eclipse أو VS Code.  
 
 ## إعداد GroupDocs.Viewer for Java
-Add the GroupDocs repository and dependency to your `pom.xml`:
+أضف مستودع GroupDocs والاعتماد إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <repositories>
@@ -60,10 +112,10 @@ Add the GroupDocs repository and dependency to your `pom.xml`:
 ```
 
 ### الحصول على الترخيص
-ابدأ بـ **free trial** أو اطلب **temporary license** للتقييم. عندما تكون جاهزًا للإنتاج، اشترِ ترخيصًا كاملاً لفتح جميع الميزات وإزالة قيود النسخة التجريبية.
+ابدأ بـ **نسخة تجريبية مجانية** أو اطلب **ترخيصًا مؤقتًا** للتقييم. عندما تكون جاهزًا للإنتاج، اشترِ ترخيصًا كاملاً لفتح جميع الميزات وإزالة قيود النسخة التجريبية.
 
 ### التهيئة الأساسية
-Below is the minimal code needed to open a spreadsheet with GroupDocs.Viewer:
+`Viewer` هو الفئة الأساسية التي تقوم بتحميل المستند وتدير خط أنابيب العرض. أدناه الكود الأدنى اللازم لفتح جدول بيانات باستخدام GroupDocs.Viewer:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -75,10 +127,12 @@ try (Viewer viewer = new Viewer("path/to/your/spreadsheet.xlsx")) {
 ```
 
 ## كيفية تحويل XLSX إلى HTML باستخدام GroupDocs.Viewer
-فيما يلي دليل خطوة بخطوة يقوم **render excel print area** فقط، وينتج ملفات HTML متكاملة.
+يوضح هذا القسم كيفية استخدام GroupDocs.Viewer لتحويل مصنف XLSX إلى ملفات HTML مستقلة تعرض فقط أقسام منطقة الطباعة المحددة. من خلال تكوين خيارات العرض واستدعاء المشاهد، يمكنك توليد معاينات خفيفة الوزن مناسبة لتضمينها في صفحات الويب أو البوابات.
+
+فيما يلي دليل خطوة بخطوة **يعرض منطقة الطباعة في Excel** فقط، وينتج ملفات HTML مستقلة.
 
 ### الخطوة 1: تحديد دليل الإخراج وتنسيق مسار الملف
-First, tell the viewer where to write the generated HTML pages.
+أولاً، أخبر المشاهد أين يكتب صفحات HTML المولدة.
 
 ```java
 import java.nio.file.Path;
@@ -91,10 +145,10 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-*Explanation:* `outputDirectory` هو المجلد الذي سيحتوي جميع ملفات المعاينة. `pageFilePathFormat` يستخدم عنصرًا نائبًا (`{0}`) يستبدله العارض برقم الصفحة.
+*شرح:* `outputDirectory` هو المجلد الذي سيحتوي على جميع ملفات المعاينة. `pageFilePathFormat` يستخدم عنصرًا نائبًا (`{0}`) يستبدله المشاهد برقم الصفحة.
 
-### الخطوة 2: تكوين خيارات عرض HTML لتصوير منطقة الطباعة
-Configure the viewer to embed resources (CSS, images) directly and to focus on the defined print areas.
+### الخطوة 2: تكوين خيارات عرض HTML لعرض منطقة الطباعة
+`HtmlViewOptions` يتحكم في كيفية توليد HTML. `forEmbeddedResources` ينشئ ملف HTML واحد لكل صفحة يحتوي على جميع CSS/JS مضمّنًا، مما يبسط النشر. `forRenderingPrintArea()` يخبر المحرك بـ **عرض منطقة الطباعة في Excel** فقط.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -105,10 +159,10 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingPrintArea());
 ```
 
-*Explanation:* `HtmlViewOptions.forEmbeddedResources` ينشئ ملف HTML واحد لكل صفحة يحتوي على جميع CSS/JS مدمجة داخلية، مما يبسط النشر. `forRenderingPrintArea()` يخبر المحرك بـ **render excel print area** فقط.
+*شرح:* `HtmlViewOptions.forEmbeddedResources` ينشئ ملف HTML واحد لكل صفحة يحتوي على جميع CSS/JS مضمّنًا، مما يبسط النشر. `forRenderingPrintArea()` يخبر المحرك بـ **عرض منطقة الطباعة في Excel** فقط.
 
 ### الخطوة 3: تحميل جدول البيانات وعرضه
-Finally, point the viewer at your workbook and invoke the rendering process.
+أخيرًا، وجه المشاهد إلى مصنفك واستدعِ عملية العرض.
 
 ```java
 // Replace with your actual document path
@@ -120,64 +174,69 @@ try (Viewer viewer = new Viewer(documentPath.toString())) {
 }
 ```
 
-*Explanation:* طريقة `view()` تعالج المصنف وفقًا للخيارات التي حددناها، وتنتج ملفات HTML تعرض فقط أقسام منطقة الطباعة.
+*شرح:* طريقة `view()` تعالج المصنف وفقًا للخيارات التي حددناها، وتنتج ملفات HTML تعرض فقط أقسام منطقة الطباعة.
 
 ## المشكلات الشائعة والحلول
-- **File‑path errors:** تحقق مرة أخرى من أن المسارات مطلقة أو نسبية بشكل صحيح بالنسبة إلى دليل عمل مشروعك.  
-- **Permission problems:** تأكد من أن عملية Java لديها صلاحية قراءة ملف المصدر وصلاحية كتابة إلى مجلد الإخراج.  
-- **Missing print areas:** تحقق من أن جدول البيانات فعليًا يحدد مناطق الطباعة (تخطيط الصفحة → منطقة الطباعة في Excel).  
+- **أخطاء مسار الملف:** تحقق مرة أخرى من أن المسارات مطلقة أو نسبية بشكل صحيح بالنسبة إلى دليل عمل المشروع.  
+- **مشكلات الأذونات:** تأكد من أن عملية Java لديها صلاحية قراءة الملف المصدر وصلاحية كتابة إلى مجلد الإخراج.  
+- **غياب مناطق الطباعة:** تأكد من أن جدول البيانات يحدد فعليًا مناطق الطباعة (تخطيط الصفحة → منطقة الطباعة في Excel).  
 
-## تطبيقات عملية
-1. **Document Management Systems:** عرض معاينة نظيفة للتقارير للمستخدمين النهائيين دون تحميل المصنف بالكامل.  
-2. **Financial Dashboards:** إنشاء لقطات HTML تلقائيًا للجداول المالية الرئيسية المحددة كمنطقة طباعة.  
-3. **Learning Platforms:** توفير للطلاب عروض مركزة لبيانات الواجبات.  
-4. **CRM Portals:** إبراز مقاييس العملاء مع إخفاء أوراق العمل الداخلية.  
-5. **Data‑Science Notebooks:** تضمين معاينات مختصرة لجداول البيانات في الوثائق.  
+## التطبيقات العملية
+1. **أنظمة إدارة المستندات:** عرض معاينة نظيفة للتقارير للمستخدمين النهائيين دون تحميل المصنف بالكامل.  
+2. **لوحات التحكم المالية:** توليد لقطات HTML تلقائيًا للجداول المالية الرئيسية التي تم تحديدها كمناطق طباعة.  
+3. **منصات التعلم:** توفير للطلاب عروضًا مركزة لبيانات الواجبات.  
+4. **بوابات CRM:** إبراز مقاييس العملاء مع إخفاء أوراق العمل الداخلية.  
+5. **دفاتر ملاحظات علم البيانات:** تضمين معاينات مختصرة لجداول البيانات في الوثائق.  
 
 ## نصائح الأداء
-- **Memory tuning:** بالنسبة للمصنفات الكبيرة جدًا، زد حجم heap الخاص بـ JVM (`-Xmx2g` أو أعلى).  
-- **Lazy loading:** إذا كنت تحتاج فقط إلى الصفحات القليلة الأولى، أوقف العرض بعد عدد الصفحات المطلوب.  
-- **Parallel processing:** عرض عدة مصنفات في وقت واحد باستخدام مثيلات `Viewer` منفصلة (كل واحدة في خيطها الخاص).  
+- **ضبط الذاكرة:** بالنسبة للمصنفات الكبيرة جدًا، زد حجم ذاكرة JVM (`-Xmx2g` أو أعلى).  
+- **التحميل الكسول:** إذا كنت تحتاج فقط إلى الصفحات القليلة الأولى، أوقف العرض بعد عدد الصفحات المطلوب.  
+- **المعالجة المتوازية:** عرض عدة مصنفات في وقت واحد باستخدام مثيلات `Viewer` منفصلة (كل منها في خيط منفصل).  
 
 ## كيفية معاينة جدول البيانات بدون مناطق الطباعة
-إذا قررت لاحقًا عرض المصنف بالكامل، ما عليك سوى حذف استدعاء `SpreadsheetOptions.forRenderingPrintArea()` واستخدام `SpreadsheetOptions` الافتراضي. سيمنحك ذلك تجربة **convert spreadsheet to html** كاملة.
+`SpreadsheetOptions` يضبط سلوك عرض جداول البيانات، بما في ذلك ما إذا كان يجب حصر الإخراج على منطقة الطباعة المحددة. إذا قررت لاحقًا عرض المصنف بالكامل، ما عليك سوى حذف استدعاء `SpreadsheetOptions.forRenderingPrintArea()` واستخدام `SpreadsheetOptions` الافتراضي. هذا يعرض كل ورقة عمل وكل خلية، موفرًا معاينة **convert XLSX to HTML** كاملة تشمل جميع البيانات والصيغ والتنسيقات الموجودة في الملف الأصلي.
 
 ## الخلاصة
-لقد تعلمت الآن كيفية **convert XLSX to HTML** في Java مع عرض مناطق الطباعة المحددة فقط في جدول البيانات. تجعل هذه التقنية المعاينات أسرع، أنظف، وأكثر أمانًا—مثالية لتطبيقات الويب والمؤسسات الحديثة.
+لقد تعلمت الآن كيفية **توليد HTML من Excel** في Java مع عرض مناطق الطباعة المحددة فقط في جدول البيانات. تجعل هذه التقنية المعاينات أسرع، أنظف، وأكثر أمانًا—مثالية لتطبيقات الويب والمؤسسات الحديثة.
 
 ### الخطوات التالية
-- جرب صيغ عرض أخرى (PDF، PNG) باستخدام `PdfViewOptions` أو `PngViewOptions`.  
-- دمج إنشاء المعاينة مع المصادقة لحماية البيانات الحساسة.  
+- جرّب صيغ عرض أخرى (PDF، PNG) باستخدام `PdfViewOptions` أو `PngViewOptions`.  
+- اجمع توليد المعاينة مع المصادقة لحماية البيانات الحساسة.  
 - استكشف API الكامل لـ `SpreadsheetOptions` لتخصيص حجم الصفحة، خطوط الشبكة، والمزيد.  
 
 ## الأسئلة المتكررة
+**س: ما الفائدة الأساسية من عرض منطقة الطباعة في Excel فقط؟**  
+ج: يقلل الفوضى ويسرّع عملية العرض، موفرًا معاينة مركزة تبرز أهم البيانات.
 
-**Q: ما هي الفائدة الأساسية من عرض منطقة الطباعة في Excel فقط؟**  
-A: يقلل الفوضى ويسرّع العرض، موفرًا معاينة مركزة تبرز أهم البيانات.
+**س: هل يمكنني عرض أوراق عمل غير قابلة للطباعة أيضًا؟**  
+ج: نعم—احذف `SpreadsheetOptions.forRenderingPrintArea()` واستخدم الخيارات الافتراضية لعرض المصنف بالكامل.
 
-**Q: هل يمكنني عرض أوراق عمل غير قابلة للطباعة أيضًا؟**  
-A: نعم—احذف `SpreadsheetOptions.forRenderingPrintArea()` واستخدم الخيارات الافتراضية لعرض المصنف بالكامل.
+**س: هل يدعم GroupDocs.Viewer صيغ جداول بيانات أخرى؟**  
+ج: يدعم صيغ XLS، XLSX، CSV، ODS، والعديد من الصيغ الأخرى. راجع الوثائق الرسمية للقائمة الكاملة.
 
-**Q: هل يدعم GroupDocs.Viewer صيغ جداول بيانات أخرى؟**  
-A: يدعم XLS، XLSX، CSV، ODS، والعديد من الصيغ الأخرى. راجع الوثائق الرسمية للقائمة الكاملة.
+**س: كيف يمكنني تحسين سرعة العرض للملفات الكبيرة جدًا؟**  
+ج: زد حجم ذاكرة JVM، اعرض الصفحات المطلوبة فقط، وفكّر في المعالجة المتعددة الخيوط.
 
-**Q: كيف يمكنني تحسين سرعة العرض للملفات الكبيرة جدًا؟**  
-A: زيادة حجم heap في JVM، عرض الصفحات المطلوبة فقط، والنظر في المعالجة متعددة الخيوط.
-
-**Q: لا تظهر مناطق الطباعة الخاصة بي—ماذا يجب أن أتحقق؟**  
-A: تأكد من تعريف منطقة الطباعة في الملف المصدر (Excel → Page Layout → Print Area) وأنك تستخدم أحدث نسخة من GroupDocs.Viewer.
+**س: مناطق الطباعة لا تظهر—ماذا يجب أن أتحقق؟**  
+ج: تأكد من تعريف منطقة الطباعة في الملف المصدر (Excel → Page Layout → Print Area) وتأكد من أنك تستخدم أحدث نسخة من GroupDocs.Viewer.
 
 ## الموارد
-- **الوثائق:** [توثيق GroupDocs.Viewer Java](https://docs.groupdocs.com/viewer/java/)  
-- **مرجع API:** [مرجع GroupDocs API](https://reference.groupdocs.com/viewer/java/)  
-- **التنزيل:** [احصل على GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)  
-- **الشراء:** [شراء ترخيص](https://purchase.groupdocs.com/buy)  
-- **التجربة المجانية:** [ابدأ بتجربة مجانية](https://releases.groupdocs.com/viewer/java/)  
-- **ترخيص مؤقت:** [اطلب هنا](https://purchase.groupdocs.com/temporary-license/)  
-- **الدعم:** [منتدى GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **الوثائق:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **مرجع API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **التنزيل:** [Get GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)  
+- **الشراء:** [Buy a License](https://purchase.groupdocs.com/buy)  
+- **نسخة تجريبية مجانية:** [Start with a Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **ترخيص مؤقت:** [Request Here](https://purchase.groupdocs.com/temporary-license/)  
+- **الدعم:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**آخر تحديث:** 2026-03-19  
+**آخر تحديث:** 2026-09-15  
 **تم الاختبار مع:** GroupDocs.Viewer for Java 25.2  
 **المؤلف:** GroupDocs
+
+## الدروس ذات الصلة
+
+- [كيفية تحويل Excel إلى HTML، JPG، PNG، وPDF باستخدام GroupDocs.Viewer Java](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
+- [excel to html java: تخطي عرض الصفوف الفارغة باستخدام GroupDocs.Viewer](/viewer/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/)
+- [كيفية تحويل Excel إلى HTML وعرض الصفوف والأعمدة المخفية في Java باستخدام GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)

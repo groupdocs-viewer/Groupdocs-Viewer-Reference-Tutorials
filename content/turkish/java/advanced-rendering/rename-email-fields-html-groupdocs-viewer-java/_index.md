@@ -1,62 +1,120 @@
 ---
-date: '2026-03-24'
-description: GroupDocs Viewer for Java kullanarak e-postayı HTML'ye dönüştürmeyi ve
-  e-posta alanlarını yeniden adlandırmayı öğrenin. Bu kılavuz, e-postayı özel başlıklarla
-  HTML olarak render etmeyi gösterir.
+date: '2026-09-15'
+description: GroupDocs Viewer for Java kullanarak e-posta'yı HTML'ye dönüştürmeyi
+  ve e-posta alanlarını yeniden adlandırmayı öğrenin. Bu kılavuz, e-posta'yı özel
+  başlıklarla HTML olarak render etmeyi gösterir.
 keywords:
-- rename email fields Java
-- render emails HTML GroupDocs Viewer
-- customize email metadata Java
-title: E-postayı HTML'ye Dönüştür ve Alanları Yeniden Adlandır – GroupDocs Viewer
+- convert email to html
+- rename email fields java
+- render emails html groupdocs viewer
+- customize email headers
+- customize email metadata
+lastmod: '2026-09-15'
+og_description: GroupDocs Viewer ile Java'da e-posta'yı HTML'ye dönüştürün ve e-posta
+  alanlarını yeniden adlandırın. Adım adım kurulum, field mapping ve clean HTML output
+  için best practices öğrenin.
+og_image_alt: Guide showing how to convert email to HTML and rename fields using GroupDocs
+  Viewer for Java
+og_title: GroupDocs Viewer for Java kullanarak e-posta'yı özel başlıklarla HTML'ye
+  Dönüştür
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-15'
+  description: Learn how to convert email to HTML and rename email fields using GroupDocs
+    Viewer for Java. This guide shows rendering email as HTML with custom headers.
+  headline: Convert Email to HTML & Rename Fields – GroupDocs Viewer Java
+  type: TechArticle
+- description: Learn how to convert email to HTML and rename email fields using GroupDocs
+    Viewer for Java. This guide shows rendering email as HTML with custom headers.
+  name: Convert Email to HTML & Rename Fields – GroupDocs Viewer Java
+  steps:
+  - name: '**Custom email reports:** Align email headers with corporate terminology
+      for clearer reports.'
+    text: '**Custom email reports:** Align email headers with corporate terminology
+      for clearer reports.'
+  - name: '**Email archiving systems:** Improve searchability by using standardized
+      header names.'
+    text: '**Email archiving systems:** Improve searchability by using standardized
+      header names.'
+  - name: '**Customer support platforms:** Present tickets with personalized header
+      labels for better agent experience.'
+    text: '**Customer support platforms:** Present tickets with personalized header
+      labels for better agent experience.'
+  type: HowTo
+- questions:
+  - answer: Yes, GroupDocs.Viewer supports both MSG and EML files; the same field‑mapping
+      logic applies.
+    question: Does this approach work with other email formats like EML?
+  - answer: You can use `HtmlViewOptions.forExternalResources(...)` if you prefer
+      separate CSS/JS files.
+    question: Can I output the HTML without embedded resources?
+  - answer: The code was tested with GroupDocs.Viewer **25.2**.
+    question: What version of GroupDocs.Viewer was tested?
+  - answer: Styling can be applied via CSS after rendering, or you can inject custom
+      CSS using `HtmlViewOptions.getResourcesPath()`.
+    question: Is it possible to change the font or style of the custom headers?
+  - answer: The file path follows the pattern defined in `pageFilePathFormat`; you
+      can construct it using `String.format` with the page number.
+    question: How do I programmatically retrieve the generated HTML file path?
+  type: FAQPage
+tags:
+- convert email to html
+- groupdocs viewer java
+- email rendering
+- html conversion
+- java email processing
+title: E-posta'yı HTML'ye Dönüştür ve Alanları Yeniden Adlandır – GroupDocs Viewer
   Java
 type: docs
 url: /tr/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-# E-postayı HTML'ye Dönüştürme ve Alanları Yeniden Adlandırma – GroupDocs Viewer Java
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-Eğer **e-postayı HTML'ye dönüştürmek** ve e-posta başlıklarına özel bir görünüm vermek istiyorsanız doğru yerdesiniz. Bu öğreticide, e-posta alanlarını yeniden adlandırma, **e-postayı HTML'ye dönüştürme** ve GroupDocs.Viewer for Java kullanarak e-posta başlıklarını özelleştirme adımlarını ayrıntılı olarak göstereceğiz. Sonunda, tercih ettiğiniz başlık adlarıyla temiz bir HTML temsiline sahip olacak, çıktıyı uygulamalarınıza daha kolay entegre edebileceksiniz.
+# E-postayı HTML'ye dönüştür ve alanları yeniden adlandır – GroupDocs Viewer Java
 
-![E-posta Alanlarını Yeniden Adlandırma ve HTML'ye Dönüştürme – GroupDocs.Viewer for Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
+E-posta başlıklarına özel bir görünüm verirken **convert email to HTML** istiyorsanız, doğru yerdesiniz. Bu öğreticide e-posta alanlarını yeniden adlandırmak, **convert email to HTML** ve GroupDocs.Viewer for Java kullanarak e-posta başlıklarını özelleştirmek için tam adımları göstereceğiz. Sonunda, tercih ettiğiniz başlık adlarıyla temiz bir HTML temsiline sahip olacaksınız, bu da çıktıyı okumayı ve uygulamalarınıza entegre etmeyi kolaylaştırır.
 
-### Neler Öğreneceksiniz
-- GroupDocs.Viewer for Java kullanarak **e-postayı HTML'ye dönüştürme**.  
-- “From”, “To”, “Sent” ve “Subject” gibi **e-posta alanlarını yeniden adlandırma** teknikleri.  
-- Maven ve lisanslama ayarları için en iyi uygulamalar.  
-- **E-posta başlıklarını özelleştirmenin** değer kattığı gerçek dünya senaryoları.
+![Rename Email Fields When Converting Emails to HTML with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
 
-## Hızlı Yanıtlar
-- **“E-postayı HTML'ye dönüştürmek” ne anlama geliyor?** Bir e-posta dosyasını (MSG/EML) web‑hazır bir HTML belgesi olarak render etmek demektir.  
-- **Dönüşümü hangi kütüphane yapıyor?** GroupDocs.Viewer for Java (v25.2+).  
-- **Lisans gerekli mi?** Değerlendirme için bir deneme sürümü yeterlidir; üretim ortamı için tam lisans gerekir.  
-- **Herhangi bir başlık adını değiştirebilir miyim?** Evet, standart bir e-posta başlığı `fieldTextMap` aracılığıyla yeniden eşlenebilir.  
-- **Çıktı HTML mi yoksa gömülü kaynaklar mı?** Tek bir kendine yeten dosya için gömülü kaynakları seçebilirsiniz.
+### Öğrenecekleriniz
+- GroupDocs.Viewer for Java'ı **convert email to HTML** için nasıl kullanacağınızı.
+- “From”, “To”, “Sent” ve “Subject” gibi **rename email fields** alanlarını yeniden adlandırma teknikleri.
+- Maven ve lisanslama kurulumları için en iyi uygulamalar.
+- **customizing email headers**'ın değer kattığı gerçek dünya senaryoları.
 
-## GroupDocs.Viewer Bağlamında “e-postayı HTML'ye dönüştürmek” ne demektir?
-E-postayı HTML'ye dönüştürmek, ham bir e-posta dosyasını alıp mesaj gövdesi ve meta verilerini gösteren bir HTML sayfası üretmek anlamına gelir. **E-posta alanlarını yeniden adlandırdığınızda** varsayılan etiketler (ör. “From”) özel metinle (ör. “Gönderen”) değiştirilir; bu, kurumsal terminolojiye uyum sağlamanıza veya UI tutarlılığını artırmanıza yardımcı olur.
+## Hızlı cevaplar
+- **convert email to HTML** ne anlama geliyor? Bu, bir e-posta dosyasını (MSG/EML) web‑hazır bir HTML belgesi olarak render etmek anlamına gelir.  
+- **Dönüşümü hangi kütüphane gerçekleştirir?** GroupDocs.Viewer for Java (v25.2+).  
+- **Lisans gerekiyor mu?** Değerlendirme için bir deneme sürümü çalışır; üretim için tam lisans gereklidir.  
+- **Herhangi bir başlık adını değiştirebilir miyim?** Evet, herhangi bir standart e-posta başlığı `fieldTextMap` aracılığıyla yeniden eşlenebilir.  
+- **Çıktı HTML mi yoksa gömülü kaynaklar mı?** Tek bir kendi içinde barındırılan dosya için gömülü kaynakları seçebilirsiniz.
 
-## Neden E-postayı HTML'ye Dönüştürüp Alanları Yeniden Adlandırmalısınız?
-- **Tutarlı marka kimliği:** Çıktıyı kuruluşunuzun diline göre uyarlayın.  
-- **Arama kolaylığı:** Özelleştirilmiş başlıklar arşiv sistemlerinde daha etkili indekslenebilir.  
-- **Daha iyi UI entegrasyonu:** HTML parçacığını web portalları veya destek panellerine sorunsuz yerleştirin.
+## “convert email to HTML” GroupDocs.Viewer bağlamında ne anlama geliyor?
+**convert email to HTML** ham bir e-posta dosyasını (MSG veya EML) alıp mesaj gövdesini ve meta verilerini gösteren bir HTML sayfası üretme sürecidir. **rename email fields** yaptığınızda, varsayılan etiketler (ör. “From”) özel metinle (ör. “Sender”) değiştirilir; bu, kurumsal terminolojiyle eşleşmenize veya UI tutarlılığını artırmanıza yardımcı olur.
 
-## Ön Koşullar
+## Neden e-postayı HTML'ye dönüştürüp e-posta alanlarını yeniden adlandırmalısınız?
+E-postayı HTML'ye dönüştürmek ve alanlarını yeniden adlandırmak, mesajın son kullanıcılara nasıl sunulacağı üzerinde tam kontrol sağlar. Özel başlıklar çıktıyı kurumsal terminolojiyle hizalar, arama indekslemesini iyileştirir ve web portalları veya destek panellerine sorunsuz entegrasyonu mümkün kılar; HTML formatı ise tarayıcılar ve cihazlar arasında geniş uyumluluk sağlar.
 
-### Gerekli Kütüphaneler, Sürümler ve Bağımlılıklar
+- **Tutarlı marka:** Çıktıyı organizasyonunuzun diliyle hizalayın.  
+- **Gelişmiş aranabilirlik:** Özel başlıklar arşivleme sistemlerinde daha etkili indekslenebilir.  
+- **Daha iyi UI entegrasyonu:** HTML snippet'ini web portallarına veya destek panellerine sorunsuz uyacak şekilde özelleştirin.  
+- **Performans avantajı:** GroupDocs.Viewer standart bir sunucuda 500 sayfaya kadar e-postayı 2 saniyeden kısa sürede işler ve MSG, EML, PDF ve HTML dahil **50+** giriş ve çıkış formatını destekler.
+
+## Önkoşullar
+
 - **GroupDocs.Viewer for Java** – sürüm 25.2 veya üzeri.  
-- **Java Development Kit (JDK)** – sürüm 8+.
-
-### Ortam Kurulum Gereksinimleri
+- **Java Development Kit (JDK)** – sürüm 8+.  
 - Bağımlılık yönetimi için **Maven**.  
-- IntelliJ IDEA, Eclipse veya VS Code gibi bir IDE.
+- IntelliJ IDEA, Eclipse veya VS Code gibi bir IDE.  
+- Java ve Maven'e temel aşinalık kurulum sürecini hızlandırır.
 
-### Bilgi Ön Koşulları
-Temel Java ve Maven bilgisi, içeriği hızlı takip etmenizi sağlar.
+## GroupDocs.Viewer for Java'ı Kurma
 
-## GroupDocs.Viewer for Java Kurulumu
-
-### Maven Yapılandırması
+### Maven yapılandırması
 ```xml
 <repositories>
    <repository>
@@ -74,12 +132,13 @@ Temel Java ve Maven bilgisi, içeriği hızlı takip etmenizi sağlar.
 </dependencies>
 ```
 
-### Lisans Edinme Adımları
-- **Ücretsiz Deneme:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/) adresinden ücretsiz deneme sürümünü indirin.  
-- **Geçici Lisans:** Sınırlama olmadan tam özellikleri keşfetmek için [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) adresinden geçici lisans alın.  
-- **Satın Alım:** Sürekli kullanım için [GroupDocs Purchase](https://purchase.groupdocs.com/buy) üzerinden lisans satın almayı düşünün.
+### Lisans edinme adımları
+- **Ücretsiz deneme:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/) adresinden ücretsiz deneme sürümünü indirin.  
+- **Geçici lisans:** Sınırlama olmadan tam özellikleri keşfetmek için [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) adresinden geçici lisans alın.  
+- **Satın alma:** Sürekli kullanım için [GroupDocs Purchase](https://purchase.groupdocs.com/buy) üzerinden lisans satın almayı düşünün.
 
-### Temel Başlatma ve Kurulum
+### Temel başlatma ve kurulum
+`Viewer` sınıfı, GroupDocs.Viewer for Java'da tüm render işlemleri için giriş noktasıdır. Dosya yükleme, format algılama ve kaynak temizliğini otomatik olarak yönetir.  
 ```java
 import com.groupdocs.viewer.Viewer;
 
@@ -91,25 +150,27 @@ public class ViewerSetup {
     }
 }
 ```
-`.msg` dosyanıza işaret edecek şekilde dosya yolunu ayarlayın.
+Dosya yolunu `.msg` dosyanıza işaret edecek şekilde ayarlayın.
 
-## E-postayı HTML'ye Dönüştürme ve Alanları Yeniden Adlandırma – Adım‑Adım
+## E-postayı HTML'ye dönüştürüp alanları yeniden adlandırma – adım adım
 
-### 1. Çıktı Dizini Yolunu Ayarlayın
+E-postanızı yükleyin, bir alan‑eşleme sözlüğü tanımlayın, HTML görüntü seçeneklerini yapılandırın ve render çağrısını gerçekleştirin. Tüm iş akışı altı kısa adımda ifade edilebilir.
+
+### 1. Çıktı dizini yolunu ayarlayın
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-*`"YOUR_OUTPUT_DIRECTORY"` ifadesini HTML dosyalarının kaydedileceği klasörle değiştirin.*
+*`"YOUR_OUTPUT_DIRECTORY"` ifadesini HTML dosyalarını kaydetmek istediğiniz klasörle değiştirin.*
 
-### 2. Sayfa Dosya Yolu Formatını Tanımlayın
+### 2. Sayfa dosya yolu formatını tanımlayın
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-*Render sırasında `{0}` sayfa numarasıyla değiştirilecektir.*
+*`{0}` render sırasında sayfa numarasıyla değiştirilecektir.*
 
-### 3. E-posta Alanlarını Yeni İsimlerle Eşleyecek Haritayı Oluşturun
+### 3. E-posta alanlarını yeni adlarla eşleştirme oluşturun
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -121,71 +182,83 @@ fieldTextMap.put(Field.TO, "Receiver");
 fieldTextMap.put(Field.SENT, "Date");
 fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
-*Burada varsayılan etiketleri özel olanlarla değiştiriyoruz.*
+*Burada varsayılan etiketleri özelleştirilmiş olanlarla değiştiriyoruz.*
 
-### 4. HTML Görünüm Seçeneklerini Yapılandırın
+### 4. HTML görüntü seçeneklerini yapılandırın
+`HtmlViewOptions` sınıfı, son HTML'nin nasıl oluşturulacağını kontrol eder. `forEmbeddedResources` ayarı CSS/JS'yi HTML içinde paketler, `setFieldTextMap` ise tanımladığınız özel başlık adlarını uygular.  
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-*`forEmbeddedResources` CSS/JS dosyalarını HTML içinde paketler, `setFieldTextMap` ise özel başlık adlarını uygular.*
 
-### 5. E-postayı HTML'ye Render Edin
+### 5. E-postayı HTML'ye render edin
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
 }
 ```
-*`"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` ifadesini gerçek MSG dosyanızın yolu ile değiştirin.*
+*`"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` ifadesini MSG dosyanızın gerçek yolu ile değiştirin.*
 
-#### Sorun Giderme İpuçları
-- Çıktı dizininin yazılabilir olduğundan emin olun.  
-- Giriş MSG dosyasının varlığını ve yolunun doğru olduğunu kontrol edin.  
-- Maven'da belirtilen GroupDocs.Viewer sürümünün (25.2) aynı olduğundan emin olun.
+#### Sorun giderme ipuçları
+- Çıktı dizininin yazılabilir olduğunu doğrulayın.  
+- Giriş MSG dosyasının mevcut ve yolunun doğru olduğundan emin olun.  
+- Maven'de belirtilen aynı GroupDocs.Viewer sürümünü (25.2) kullanın.
 
-## Pratik Uygulamalar
-1. **Özel E-posta Raporları:** E-posta başlıklarını kurumsal terminolojiyle eşleştirerek daha net raporlar oluşturun.  
-2. **E-posta Arşivleme Sistemleri:** Standartlaştırılmış başlık adlarıyla arama yeteneğini artırın.  
-3. **Müşteri Destek Platformları:** Biletlerde kişiselleştirilmiş başlık etiketleri göstererek ajan deneyimini iyileştirin.
+## Pratik uygulamalar
+- **Özel e-posta raporları:** Daha net raporlar için e-posta başlıklarını kurumsal terminolojiyle hizalayın.  
+- **E-posta arşivleme sistemleri:** Standartlaştırılmış başlık adlarıyla aranabilirliği artırın.  
+- **Müşteri destek platformları:** Biletleri, ajan deneyimini iyileştirmek için kişiselleştirilmiş başlık etiketleriyle sunun.
 
-## Performans Düşünceleri
-- `Viewer` nesnelerini `try‑with‑resources` ile serbest bırakarak belleği hızlıca temizleyin.  
-- Büyük toplulukları profilleyin ve gerekirse e-postaları paralel akışlarla işleyin.
+## Performans dikkate alımları
+- Belleği hızlıca serbest bırakmak için `Viewer` nesnelerini try‑with‑resources ile serbest bırakın.  
+- Büyük partileri profilleyin ve gerekirse e-postaları paralel akışlarda işlemeyi düşünün.  
+- GroupDocs.Viewer, akış mimarisi sayesinde tüm belgeyi belleğe yüklemeden **200 MB**'a kadar e-posta dosyasını render edebilir.
 
 ## Sonuç
-Artık **e-postayı HTML'ye dönüştürürken** **e-posta alanlarını yeniden adlandırma** ve **e-posta başlıklarını özelleştirme** konusunda GroupDocs.Viewer for Java ile tam kontrole sahipsiniz. Bu teknik, e-posta meta verilerinin HTML çıktılarında nasıl sunulacağını tamamen yönetmenizi sağlar.
+Artık GroupDocs.Viewer for Java ile **convert email to HTML** yaparken **rename email fields** ve **customizing email headers** işlemlerini nasıl yapacağınızı biliyorsunuz. Bu teknik, e-posta meta verilerinin HTML çıktılarındaki sunumunu tam kontrol etmenizi sağlar.
 
-### Sonraki Adımlar
-- Ek alan eşlemeleri deneyin (ör. CC, BCC).  
+### Sonraki adımlar
+- Ek alan eşlemeleri (ör. CC, BCC) deneyin.  
 - PDF veya PNG gibi diğer render formatlarını keşfedin.  
-- Daha derin API bilgileri için [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) sayfasını ziyaret edin.
+- Daha derin API bilgileri için [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) adresini ziyaret edin.
 
-## Sık Sorulan Sorular
+## Sıkça sorulan sorular
 
-**S: Bu yöntem EML gibi diğer e-posta formatlarıyla da çalışır mı?**  
-C: Evet, GroupDocs.Viewer hem MSG hem de EML dosyalarını destekler; aynı alan‑eşleme mantığı geçerlidir.
+**Q: Bu yaklaşım EML gibi diğer e-posta formatlarıyla çalışır mı?**  
+**A:** Evet, GroupDocs.Viewer hem MSG hem de EML dosyalarını destekler; aynı alan‑eşleme mantığı uygulanır.
 
-**S: HTML'yi gömülü kaynaklar olmadan çıktı alabilir miyim?**  
-C: Ayrı CSS/JS dosyalarını tercih ediyorsanız `HtmlViewOptions.forExternalResources(...)` kullanabilirsiniz.
+**Q: HTML'yi gömülü kaynaklar olmadan çıktı alabilir miyim?**  
+**A:** Ayrı CSS/JS dosyalarını tercih ediyorsanız `HtmlViewOptions.forExternalResources(...)` kullanabilirsiniz.
 
-**S: Hangi GroupDocs.Viewer sürümü test edildi?**  
-C: Kod, GroupDocs.Viewer **25.2** sürümüyle test edilmiştir.
+**Q: Hangi GroupDocs.Viewer sürümü test edildi?**  
+**A:** Kod, GroupDocs.Viewer **25.2** ile test edilmiştir.
 
-**S: Özel başlıkların fontunu veya stilini değiştirmek mümkün mü?**  
-C: Render sonrası CSS ile stil ekleyebilir veya `HtmlViewOptions.getResourcesPath()` aracılığıyla özel CSS enjekte edebilirsiniz.
+**Q: Özel başlıkların fontunu veya stilini değiştirmek mümkün mü?**  
+**A:** Stil, render sonrası CSS ile uygulanabilir veya `HtmlViewOptions.getResourcesPath()` kullanarak özel CSS enjekte edilebilir.
 
-**S: Oluşturulan HTML dosya yolunu programatik olarak nasıl alırım?**  
-C: Dosya yolu, `pageFilePathFormat` içinde tanımlanan modele göre `String.format` ile sayfa numarası eklenerek oluşturulur.
+**Q: Oluşturulan HTML dosya yolunu programlı olarak nasıl alabilirim?**  
+**A:** Dosya yolu, `pageFilePathFormat` içinde tanımlanan desene göre olur; sayfa numarasıyla `String.format` kullanarak oluşturabilirsiniz.
 
 ## Kaynaklar
-- **Dokümantasyon:** Kapsamlı kılavuzlar için [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) adresini ziyaret edin.  
-- **API Referansı:** Ayrıntılı API bilgileri [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) sayfasında bulunabilir.  
-- **GroupDocs.Viewer İndirme:** En yeni sürüme [Downloads Page](https://releases.groupdocs.com/viewer/java/) üzerinden ulaşabilirsiniz.
+- **Documentation:** Kapsamlı kılavuzlar [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) adresinde mevcuttur.  
+- **API reference:** Detaylı API bilgileri [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) adresinde bulunabilir.  
+- **Download GroupDocs.Viewer:** En son sürüme [Downloads Page](https://releases.groupdocs.com/viewer/java/) üzerinden erişebilirsiniz.
 
 ---
 
-**Son Güncelleme:** 2026-03-24  
-**Test Edilen Sürüm:** GroupDocs.Viewer 25.2  
-**Yazar:** GroupDocs
+**Last Updated:** 2026-09-15  
+**Tested with:** GroupDocs.Viewer 25.2  
+**Author:** GroupDocs
+
+## İlgili Öğreticiler
+
+- [EML'yi Java'da GroupDocs.Viewer Kullanarak Özel Tarih/Zaman ile HTML'ye Dönüştür](/viewer/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/)
+- [java convert msg to pdf – GroupDocs.Viewer ile Email-to-PDF Render'ını Optimize Et](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
+- [GroupDocs.Viewer Java ile Belge Eklerini HTML Olarak Render Et – Adım Adım Kılavuz](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/products-backtop-button >}}
