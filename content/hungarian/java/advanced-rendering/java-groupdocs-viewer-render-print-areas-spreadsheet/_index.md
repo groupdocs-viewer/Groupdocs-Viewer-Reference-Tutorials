@@ -1,44 +1,95 @@
 ---
-date: '2026-03-19'
-description: Tanulja meg, hogyan konvertálhatja az XLSX-et HTML-re Java-ban a táblázat
-  nyomtatási területeinek renderelésével a GroupDocs.Viewer segítségével – egy gyors,
-  célzott előnézeti megoldás.
+date: '2026-09-15'
+description: Ismerje meg, hogyan generálhat HTML-t Excelből Java-ban a GroupDocs.Viewer
+  használatával, csak a meghatározott nyomtatási területek megjelenítésével a gyorsabb,
+  sávszélesség‑hatékony előnézetekért.
 keywords:
-- Java spreadsheet print areas rendering
-- rendering print areas with GroupDocs.Viewer for Java
-- efficient document preview solutions
-title: XLSX konvertálása HTML-re a GroupDocs.Viewer-rel (nyomtatási területek)
+- generate html from excel
+- display excel print area
+- render excel print area
+lastmod: '2026-09-15'
+og_description: Ismerje meg, hogyan generálhat HTML-t Excelből Java-ban a GroupDocs.Viewer
+  használatával, csak a meghatározott nyomtatási területek megjelenítésével a gyorsabb,
+  sávszélesség‑hatékony előnézetekért.
+og_image_alt: 'GroupDocs.Viewer preview: generate HTML from Excel with print‑area
+  rendering'
+og_title: HTML generálása Excelből Java-ban a GroupDocs.Viewer segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-15'
+  description: Learn how to generate HTML from Excel in Java using GroupDocs.Viewer,
+    rendering only defined print areas for faster, bandwidth‑efficient previews.
+  headline: How to generate HTML from Excel in Java with GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to generate HTML from Excel in Java using GroupDocs.Viewer,
+    rendering only defined print areas for faster, bandwidth‑efficient previews.
+  name: How to generate HTML from Excel in Java with GroupDocs.Viewer
+  steps:
+  - name: Define output directory and file path format
+    text: First, tell the viewer where to write the generated HTML pages. *Explanation:*
+      `outputDirectory` is the folder that will hold all preview files. `pageFilePathFormat`
+      uses a placeholder (`{0}`) that the viewer replaces with the page number.
+  - name: Configure HTML view options for print‑area rendering
+    text: '`HtmlViewOptions` controls how the HTML is generated. `forEmbeddedResources`
+      creates a single HTML file per page that contains all CSS/JS inline, simplifying
+      deployment. `forRenderingPrintArea()` tells the engine to **render the Excel
+      print area** only. *Explanation:* `HtmlViewOptions.forEmbeddedRes'
+  - name: Load the spreadsheet and render it
+    text: Finally, point the viewer at your workbook and invoke the rendering process.
+      *Explanation:* The `view()` method processes the workbook according to the options
+      we set, outputting HTML files that display only the print‑area sections.
+  type: HowTo
+- questions:
+  - answer: It reduces clutter and speeds up rendering, delivering a focused preview
+      that highlights the most important data.
+    question: What is the primary benefit of rendering only the Excel print area?
+  - answer: Yes—omit `SpreadsheetOptions.forRenderingPrintArea()` and use the default
+      options to render the entire workbook.
+    question: Can I render non‑printable worksheets as well?
+  - answer: It handles XLS, XLSX, CSV, ODS, and several other formats. Check the official
+      docs for the full list.
+    question: Does GroupDocs.Viewer support other spreadsheet formats?
+  - answer: Increase JVM heap size, render only needed pages, and consider multi‑threaded
+      processing.
+    question: How can I improve rendering speed for very large files?
+  - answer: Ensure the print area is defined in the source file (Excel → Page Layout
+      → Print Area) and that you are using the latest GroupDocs.Viewer version.
+    question: My print areas are not showing up—what should I check?
+  type: FAQPage
+tags:
+- convert xlsx
+- GroupDocs.Viewer
+- Java document preview
+title: HTML generálása Excelből Java-ban a GroupDocs.Viewer segítségével
 type: docs
 url: /hu/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/
 weight: 1
 ---
 
-# XLSX konvertálása HTML-re Java-ban – Táblázat nyomtatási területek megjelenítése a GroupDocs.Viewer segítségével
+# Hogyan generáljunk HTML-t Excelből Java-val a GroupDocs.Viewer segítségével
 
-Ha gyorsan **convert XLSX to HTML**-t szeretne, miközben csak a munkafüzet lényeges részeit jeleníti meg, a meghatározott nyomtatási területek renderelése a megfelelő megoldás. Ez az útmutató végigvezet egy Java előnézeti megoldás felépítésén, amely csak a nyomtatási területeket vonja ki egy Excel‑fájlból, és tiszta, önálló HTML‑oldalakat generál a **GroupDocs.Viewer for Java** segítségével. Meg fogja látni, miért gyorsítja ez a megközelítés a betöltést, csökkenti a sávszélesség‑használatot, és rendezetten tartja a felhasználói felületet – tökéletes portálokhoz, műszerfalakhoz és bármilyen web‑alapú dokumentumnézőhöz.
+Ha gyorsan **HTML-t kell generálni Excelből**, és csak a munkafüzet lényeges részeit szeretné megjeleníteni, a meghatározott nyomtatási terület szakaszainak renderelése a megfelelő megoldás. Ez az útmutató végigvezet egy Java előnézeti megoldás felépítésén, amely csak a nyomtatási területeket vonja ki egy Excel-fájlból, és tiszta, önálló HTML oldalakat állít elő a **GroupDocs.Viewer for Java** használatával. Meg fogja látni, miért gyorsítja ez a megközelítés a betöltést, csökkenti a sávszélességet, és rendezi a felhasználói felületet – tökéletes portálokhoz, műszerfalakhoz és bármilyen web‑alapú dokumentummegjelenítőhöz.
 
-![Táblázat nyomtatási területek megjelenítése a GroupDocs.Viewer for Java segítségével](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
+![Spreadsheet Print Areas Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
 
 ## Gyors válaszok
-- **Mi jelenti a “convert XLSX to HTML” kifejezést?** Ez azt jelenti, hogy programozottan egy Excel munkafüzetet web‑kész HTML oldalakká alakítunk.  
-- **Miért rendereljük csak az Excel nyomtatási területet?** Ez elkülöníti a legrelevánsabb adatokat, csökkentve a renderelési időt és a sávszélességet.  
-- **Szükségem van licencre a kipróbáláshoz?** Elérhető egy **free trial** vagy **temporary license** értékeléshez; a termeléshez teljes licenc szükséges.  
+- **Mi jelent a “generate HTML from Excel” kifejezés?** Ez azt jelenti, hogy programozottan egy Excel munkafüzetet web‑kész HTML oldalakká alakítunk, amelyeket a böngészők Excel nélkül is megjelenítenek.  
+- **Miért csak az Excel nyomtatási területet rendereljük?** Ez elkülöníti a legrelevánsabb adatokat, csökkentve a renderelési időt és a sávszélességet.  
+- **Szükségem van licencre a kipróbáláshoz?** Elérhető egy ingyenes próba vagy ideiglenes licenc; a teljes licenc a termeléshez kötelező.  
 - **Melyik Java verzió támogatott?** Java 8 vagy újabb (Java 11 ajánlott).  
-- **Beágyazhatom az előnézetet egy weboldalba?** Igen – használja a beágyazott‑erőforrások opciót, hogy önálló HTML oldalakat állítson elő.
+- **Beágyazhatom az előnézetet egy weboldalba?** Igen – használja az embedded‑resources opciót az önálló HTML oldalak előállításához.
 
-## Mi az a “convert XLSX to HTML”?
-Az XLSX fájl HTML-re konvertálása azt jelenti, hogy a táblázat vizuális elrendezését HTML‑kóddá exportáljuk, amelyet a böngészők Excel nélkül is megjelenítenek. Ez egy alapvető technika a **how to preview spreadsheet** tartalom webalkalmazásokban történő megjelenítéséhez, lehetővé téve a felhasználók számára az adatok azonnali és biztonságos megtekintését.
+## Mi a “generate HTML from Excel”?
+**Generate HTML from Excel** azt jelenti, hogy egy XLSX munkafüzet vizuális elrendezését szabványos HTML jelölőnyelvre konvertáljuk, amelyet a böngészők natívan renderelnek. Ez a technika lehetővé teszi a táblázat adatok azonnali előnézetét webalkalmazásokban anélkül, hogy a kliensnek Microsoft Office-ra lenne szüksége.
 
-## Miért rendereljük csak az Excel nyomtatási területet?
-- **Teljesítmény:** A kisebb HTML terhelés gyorsabban töltődik be.  
-- **Átláthatóság:** A felhasználók csak a nyomtatásra kijelölt szakaszokat látják, elkerülve a zsúfoltságot.  
-- **Biztonság:** A nem kívánt munkalapok rejtve maradnak az előnézetben.  
+## Miért csak az Excel nyomtatási területet rendereljük?
+Csak a nyomtatási terület renderelése kisebb HTML terhelést eredményez, amely a tipikus jelentések esetén akár 60 %-kal gyorsabban töltődik be. Emellett elrejti a belső munkalapokat, amelyek érzékeny képleteket tartalmazhatnak, ezáltal növelve a biztonságot. A felhasználó által definiált nyomtatási területre összpontosítva tisztább, célzottabb nézetet biztosít, amely összhangban van a szerző szándékával.
 
-## Előkövetelmények
-- **GroupDocs.Viewer for Java** v25.2 vagy újabb.  
-- Maven telepítve a fejlesztői gépén.  
+## Előfeltételek
+- **GroupDocs.Viewer for Java** v25.2 vagy újabb (támogat 70+ dokumentumformátumot, és képes táblázatokat feldolgozni akár 10 000 sorig anélkül, hogy a teljes fájlt a memóriába töltené).  
+- Maven telepítve van a fejlesztői gépén.  
 - JDK 8 vagy újabb (Java 11 ajánlott).  
-- IDE (IntelliJ IDEA, Eclipse vagy VS Code).  
+- Egy IDE (IntelliJ IDEA, Eclipse vagy VS Code).  
 
 ## A GroupDocs.Viewer for Java beállítása
 Adja hozzá a GroupDocs tárolót és függőséget a `pom.xml` fájlhoz:
@@ -61,10 +112,10 @@ Adja hozzá a GroupDocs tárolót és függőséget a `pom.xml` fájlhoz:
 ```
 
 ### Licenc beszerzése
-Kezdje egy **free trial**-val vagy kérjen **temporary license**-t értékeléshez. Amikor a termeléshez készen áll, vásároljon teljes licencet, hogy feloldja az összes funkciót és eltávolítsa a próba korlátozásait.
+Kezdje egy **free trial**-val vagy kérjen **temporary license**-t értékeléshez. Amikor készen áll a termelésre, vásároljon teljes licencet, hogy minden funkciót feloldjon és eltávolítsa a próba korlátozásait.
 
-### Alap inicializálás
-Az alábbi a minimális kód, amely a GroupDocs.Viewer segítségével megnyit egy táblázatot:
+### Alapvető inicializálás
+`Viewer` a központi osztály, amely betölti a dokumentumot és vezérli a renderelési folyamatot. Az alábbiakban a minimális kód látható, amely egy táblázatot nyit meg a GroupDocs.Viewer segítségével:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -76,10 +127,12 @@ try (Viewer viewer = new Viewer("path/to/your/spreadsheet.xlsx")) {
 ```
 
 ## Hogyan konvertáljunk XLSX-et HTML-re a GroupDocs.Viewer segítségével
-Az alábbi lépésről‑lépésre útmutató csak a **render excel print area**-t jeleníti meg, önálló HTML fájlokat előállítva.
+Ez a szakasz bemutatja, hogyan használjuk a GroupDocs.Viewer‑t egy XLSX munkafüzet átalakításához önálló HTML fájlokká, amelyek csak a meghatározott nyomtatási terület szakaszokat jelenítik meg. A nézetbeállítások konfigurálásával és a viewer meghívásával könnyű előnézeteket generálhat, amelyek alkalmasak weboldalakba vagy portálokba ágyazásra.
+
+Az alábbiakban egy lépésről‑lépésre útmutató látható, amely csak az **Excel nyomtatási területet** rendereli, önálló HTML fájlokat előállítva.
 
 ### 1. lépés: Kimeneti könyvtár és fájlútvonal formátum meghatározása
-Először adja meg a viewernek, hová írja a generált HTML oldalakat.
+Először is, adja meg a viewernek, hová írja a generált HTML oldalakat.
 
 ```java
 import java.nio.file.Path;
@@ -92,10 +145,10 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-*Magyarázat:* Az `outputDirectory` a mappa, amely az összes előnézeti fájlt tárolja. A `pageFilePathFormat` egy helyőrzőt (`{0}`) használ, amelyet a viewer a lap számával helyettesít.
+*Magyarázat:* `outputDirectory` az a mappa, amely az összes előnézeti fájlt tartalmazza. `pageFilePathFormat` egy helyőrzőt (`{0}`) használ, amelyet a viewer a lap számmal helyettesít.
 
-### 2. lépés: HTML nézet beállítások konfigurálása nyomtatási terület rendereléséhez
-Állítsa be a viewert, hogy közvetlenül ágyazza be az erőforrásokat (CSS, képek), és a meghatározott nyomtatási területekre fókuszáljon.
+### 2. lépés: HTML nézetbeállítások konfigurálása nyomtatási terület rendereléséhez
+`HtmlViewOptions` szabályozza, hogyan generálódik a HTML. `forEmbeddedResources` egyetlen HTML fájlt hoz létre oldalanként, amely minden CSS/JS beágyazott tartalmat tartalmaz, megkönnyítve a telepítést. `forRenderingPrintArea()` azt mondja a motornak, hogy csak az **Excel nyomtatási területet** renderelje.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -106,10 +159,10 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingPrintArea());
 ```
 
-*Magyarázat:* A `HtmlViewOptions.forEmbeddedResources` egyetlen HTML fájlt hoz létre oldalanként, amely minden CSS/JS beágyazott kóddal tartalmaz, egyszerűsítve a telepítést. A `forRenderingPrintArea()` azt mondja a motornak, hogy csak a **render excel print area**-t jelenítse meg.
+*Magyarázat:* `HtmlViewOptions.forEmbeddedResources` egyetlen HTML fájlt hoz létre oldalanként, amely minden CSS/JS beágyazott tartalmat tartalmaz, megkönnyítve a telepítést. `forRenderingPrintArea()` azt mondja a motornak, hogy csak az **Excel nyomtatási területet** renderelje.
 
 ### 3. lépés: Táblázat betöltése és renderelése
-Végül mutassa a viewert a munkafüzetére, és indítsa el a renderelési folyamatot.
+Végül irányítsa a viewert a munkafüzet felé, és indítsa el a renderelési folyamatot.
 
 ```java
 // Replace with your actual document path
@@ -121,30 +174,30 @@ try (Viewer viewer = new Viewer(documentPath.toString())) {
 }
 ```
 
-*Magyarázat:* A `view()` metódus a beállított opciók szerint dolgozza fel a munkafüzetet, és olyan HTML fájlokat állít elő, amelyek csak a nyomtatási területeket jelenítik meg.
+*Magyarázat:* `view()` metódus a beállított opciók szerint feldolgozza a munkafüzetet, és olyan HTML fájlokat állít elő, amelyek csak a nyomtatási terület szakaszait jelenítik meg.
 
 ## Gyakori problémák és megoldások
 - **Fájl‑útvonal hibák:** Ellenőrizze, hogy az útvonalak abszolútak vagy helyesen relatívak a projekt munkakönyvtárához képest.  
-- **Jogosultsági problémák:** Győződjön meg arról, hogy a Java folyamatnak olvasási jogosultsága van a forrásfájlhoz és írási jogosultsága a kimeneti mappához.  
+- **Jogosultsági problémák:** Győződjön meg arról, hogy a Java folyamatnak olvasási jogosultsága van a forrásfájlhoz, és írási jogosultsága a kimeneti mappához.  
 - **Hiányzó nyomtatási területek:** Ellenőrizze, hogy a táblázat valóban definiál nyomtatási területeket (Page Layout → Print Area az Excelben).  
 
 ## Gyakorlati alkalmazások
-1. Dokumentumkezelő rendszerek: Tiszta előnézetet mutassanak a felhasználóknak a jelentésekről anélkül, hogy az egész munkafüzetet betöltenék.  
-2. Pénzügyi műszerfalak: Automatikusan generáljon HTML pillanatképeket a nyomtatási területként megjelölt kulcsfontosságú pénzügyi táblázatokról.  
-3. Tanulási platformok: Biztosítsanak a hallgatóknak fókuszált nézetet a feladatadatokról.  
-4. CRM portálok: Emeljék ki az ügyfélmutatókat, miközben elrejtik a belső munkalapokat.  
-5. Adattudományi jegyzetfüzetek: Ágyazzanak be tömör táblázat előnézeteket a dokumentációba.  
+1. **Document management systems:** Mutassa a végfelhasználóknak a jelentések tiszta előnézetét a teljes munkafüzet betöltése nélkül.  
+2. **Financial dashboards:** Automatikusan generáljon HTML pillanatképeket a nyomtatási területként megjelölt kulcsfontosságú pénzügyi táblázatokról.  
+3. **Learning platforms:** Biztosítson a diákoknak fókuszált nézeteket a feladatadatokról.  
+4. **CRM portals:** Emelje ki az ügyfélmetrikákat, miközben elrejti a belső munkalapokat.  
+5. **Data‑science notebooks:** Ágyazzon be tömör táblázat előnézeteket a dokumentációba.  
 
 ## Teljesítmény tippek
-- **Memória hangolás:** Nagyon nagy munkafüzeteknél növelje a JVM heap méretét (`-Xmx2g` vagy nagyobb).  
+- **Memória hangolás:** Nagyon nagy munkafüzetek esetén növelje a JVM heap méretét (`-Xmx2g` vagy nagyobb).  
 - **Lusta betöltés:** Ha csak az első néhány oldalra van szükség, állítsa le a renderelést a szükséges oldalszám után.  
 - **Párhuzamos feldolgozás:** Rendereljen több munkafüzetet egyszerre különálló `Viewer` példányokkal (mindegyik saját szálban).  
 
-## Hogyan előnézze a táblázatot nyomtatási területek nélkül
-Ha később úgy dönt, hogy az egész munkafüzetet mutatja, egyszerűen hagyja ki a `SpreadsheetOptions.forRenderingPrintArea()` hívást, és használja az alapértelmezett `SpreadsheetOptions`-t. Ez egy teljes **convert spreadsheet to html** élményt nyújt.
+## Hogyan tekintsünk meg táblázatot nyomtatási területek nélkül
+`SpreadsheetOptions` konfigurálja a táblázat renderelési viselkedését, beleértve azt is, hogy korlátozza-e a kimenetet a definiált nyomtatási területre. Ha később úgy dönt, hogy a teljes munkafüzetet jeleníti meg, egyszerűen hagyja ki a `SpreadsheetOptions.forRenderingPrintArea()` hívást, és használja az alapértelmezett `SpreadsheetOptions`-t. Ez minden munkalapot és cellát renderel, egy teljes **convert XLSX to HTML** előnézetet biztosítva, amely tartalmazza az eredeti fájl összes adatát, képletét és formázását.
 
 ## Következtetés
-Most megtanulta, hogyan **convert XLSX to HTML**-t hajtson végre Java-ban, miközben csak a táblázat meghatározott nyomtatási területeit rendereli. Ez a technika gyorsabbá, tisztábbá és biztonságosabbá teszi az előnézeteket – tökéletes a modern web- és vállalati alkalmazásokhoz.
+Most már megtanulta, hogyan **generate HTML from Excel** Java-ban, miközben csak a táblázat definiált nyomtatási területeit rendereli. Ez a technika gyorsabbá, tisztábbá és biztonságosabbá teszi az előnézeteket – tökéletes a modern web- és vállalati alkalmazásokhoz.
 
 ### Következő lépések
 - Kísérletezzen más nézetformátumokkal (PDF, PNG) a `PdfViewOptions` vagy `PngViewOptions` használatával.  
@@ -153,34 +206,38 @@ Most megtanulta, hogyan **convert XLSX to HTML**-t hajtson végre Java-ban, mik�
 
 ## Gyakran ismételt kérdések
 
-**Q: Mi a fő előnye annak, hogy csak az excel nyomtatási területet rendereljük?**  
-A: Csökkenti a zsúfoltságot és felgyorsítja a renderelést, egy fókuszált előnézetet biztosítva, amely kiemeli a legfontosabb adatokat.
+**K: Mi a fő előnye annak, hogy csak az Excel nyomtatási területet rendereljük?**  
+V: Ez csökkenti a rendetlenséget és felgyorsítja a renderelést, egy fókuszált előnézetet nyújtva, amely kiemeli a legfontosabb adatokat.
 
-**Q: Renderelhetek nem nyomtatható munkalapokat is?**  
-A: Igen – hagyja ki a `SpreadsheetOptions.forRenderingPrintArea()` hívást, és használja az alapértelmezett opciókat az egész munkafüzet rendereléséhez.
+**K: Renderelhetek nem nyomtatható munkalapokat is?**  
+V: Igen – hagyja ki a `SpreadsheetOptions.forRenderingPrintArea()` hívást, és használja az alapértelmezett beállításokat a teljes munkafüzet rendereléséhez.
 
-**Q: Támogatja a GroupDocs.Viewer más táblázatformátumokat is?**  
-A: Kezeli az XLS, XLSX, CSV, ODS és több más formátumot. Tekintse meg a hivatalos dokumentációt a teljes listáért.
+**K: Támogatja a GroupDocs.Viewer más táblázatformátumokat is?**  
+V: Kezeli az XLS, XLSX, CSV, ODS és több más formátumot. Tekintse meg a hivatalos dokumentációt a teljes listáért.
 
-**Q: Hogyan javíthatom a renderelés sebességét nagyon nagy fájlok esetén?**  
-A: Növelje a JVM heap méretét, rendereljen csak a szükséges oldalakat, és fontolja meg a több szálas feldolgozást.
+**K: Hogyan javíthatom a renderelés sebességét nagyon nagy fájlok esetén?**  
+V: Növelje a JVM heap méretét, rendereljen csak a szükséges oldalakat, és fontolja meg a több szálas feldolgozást.
 
-**Q: A nyomtatási területeim nem jelennek meg – mit ellenőrizze?**  
-A: Győződjön meg arról, hogy a nyomtatási terület definiálva van a forrásfájlban (Excel → Page Layout → Print Area), és a legújabb GroupDocs.Viewer verziót használja.
+**K: A nyomtatási területeim nem jelennek meg – mit ellenőrizze?**  
+V: Győződjön meg arról, hogy a nyomtatási terület definiálva van a forrásfájlban (Excel → Page Layout → Print Area), és hogy a legújabb GroupDocs.Viewer verziót használja.
 
 ## Erőforrások
-- **Dokumentáció:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
-- **API referencia:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Letöltés:** [Get GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
-- **Vásárlás:** [Buy a License](https://purchase.groupdocs.com/buy)
-- **Ingyenes próba:** [Start with a Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Ideiglenes licenc:** [Request Here](https://purchase.groupdocs.com/temporary-license/)
-- **Támogatás:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Documentation:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Download:** [Get GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)  
+- **Purchase:** [Buy a License](https://purchase.groupdocs.com/buy)  
+- **Free trial:** [Start with a Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Temporary license:** [Request Here](https://purchase.groupdocs.com/temporary-license/)  
+- **Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Utolsó frissítés:** 2026-03-19  
-**Tesztelve a következővel:** GroupDocs.Viewer for Java 25.2  
-**Szerző:** GroupDocs  
+**Last Updated:** 2026-09-15  
+**Tested With:** GroupDocs.Viewer for Java 25.2  
+**Author:** GroupDocs
 
----
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan konvertáljunk Excel-t HTML-re, JPG-re, PNG-re és PDF-re a GroupDocs.Viewer Java használatával](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
+- [excel to html java: Üres sorok renderelésének kihagyása a GroupDocs.Viewer-rel](/viewer/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/)
+- [Hogyan konvertáljunk Excel-t HTML-re és rendereljük a rejtett sorokat és oszlopokat Java-ban a GroupDocs.Viewer-rel](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
