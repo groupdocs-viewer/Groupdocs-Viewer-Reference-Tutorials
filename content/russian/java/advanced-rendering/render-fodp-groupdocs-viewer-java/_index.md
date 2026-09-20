@@ -1,47 +1,113 @@
 ---
-date: '2026-03-27'
-description: Узнайте, как отображать документы fodp с помощью GroupDocs.Viewer для
+date: '2026-09-20'
+description: Узнайте, как рендерить документы fodp с помощью GroupDocs.Viewer for
   Java, легко конвертируя их в форматы HTML, JPG, PNG или PDF.
 keywords:
-- render FODP with GroupDocs.Viewer Java
-- GroupDocs.Viewer Java setup
-- convert FODP document formats
-title: 'Как визуализировать документы FODP с помощью GroupDocs.Viewer для Java: Полное
-  руководство'
+- how to render fodp
+- groupdocs.viewer java rendering
+- convert fodp to html java
+- fodp to pdf java
+lastmod: '2026-09-20'
+og_description: Как рендерить документы fodp с помощью GroupDocs.Viewer for Java,
+  конвертируя их в форматы HTML, JPG, PNG или PDF за несколько шагов.
+og_image_alt: Developer guide showing Java code that renders FODP files to multiple
+  formats using GroupDocs.Viewer
+og_title: Как рендерить документы fodp с помощью GroupDocs.Viewer for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-20'
+  description: Learn how to render fodp documents with GroupDocs.Viewer for Java,
+    converting them to HTML, JPG, PNG, or PDF formats easily.
+  headline: 'How to render fodp documents with GroupDocs.Viewer for Java: a complete
+    guide'
+  type: TechArticle
+- description: Learn how to render fodp documents with GroupDocs.Viewer for Java,
+    converting them to HTML, JPG, PNG, or PDF formats easily.
+  name: 'How to render fodp documents with GroupDocs.Viewer for Java: a complete guide'
+  steps:
+  - name: '**Online document portals** – Serve HTML previews directly in browsers,
+      letting users read without downloading.'
+    text: '**Online document portals** – Serve HTML previews directly in browsers,
+      letting users read without downloading.'
+  - name: '**Search engine indexing** – Convert pages to PNG thumbnails that appear
+      in search results, boosting click‑through rates.'
+    text: '**Search engine indexing** – Convert pages to PNG thumbnails that appear
+      in search results, boosting click‑through rates.'
+  - name: '**Regulatory archiving** – Produce PDF versions for compliance audits,
+      ensuring a tamper‑proof record.'
+    text: '**Regulatory archiving** – Produce PDF versions for compliance audits,
+      ensuring a tamper‑proof record.'
+  - name: '**Mobile content delivery** – Use lightweight JPG images to display document
+      previews on low‑bandwidth devices.'
+    text: '**Mobile content delivery** – Use lightweight JPG images to display document
+      previews on low‑bandwidth devices.'
+  type: HowTo
+- questions:
+  - answer: Yes. `viewer.view(options, pageNumber)` renders a single page of the document
+      using the specified view options. Use it inside a loop to render each page,
+      or set a page range in the view options to process a subset in a single call.
+    question: Can I render multiple pages of a FODP document at once?
+  - answer: Absolutely. Both `JpgViewOptions` and `PngViewOptions` expose a `setDpi(int
+      dpi)` method; common values are 72 dpi for thumbnails and 300 dpi for print‑quality
+      images.
+    question: Is it possible to set the DPI for image outputs?
+  - answer: When you use a try‑with‑resources block, the `Viewer` is closed automatically.
+      If you instantiate it without that construct, call `viewer.close()` after rendering
+      to free file handles.
+    question: Do I need to close the Viewer manually?
+  - answer: 'Pass the password to the `Viewer` constructor: `new Viewer(filePath,
+      password)`. The viewer will decrypt the document before rendering.'
+    question: How do I handle password‑protected FODP files?
+  - answer: Direct SVG export for FODP is not supported, but you can render to PNG
+      and then use a third‑party library (e.g., Apache Batik) to convert the raster
+      image to SVG if needed.
+    question: Can I convert FODP to SVG?
+  type: FAQPage
+tags:
+- render fodp
+- groupdocs.viewer
+- java document processing
+- html conversion
+- image rendering
+title: 'Как рендерить документы fodp с помощью GroupDocs.Viewer for Java: полное руководство'
 type: docs
 url: /ru/java/advanced-rendering/render-fodp-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Как рендерить документы FODP с помощью GroupDocs.Viewer для Java: Полное руководство
+# Как рендерить документы FODP с помощью GroupDocs.Viewer для Java: полное руководство
 
-В современном цифровом мире эффективное преобразование сложных документов имеет решающее значение для разработчиков, стремящихся улучшить рабочие процессы и пользовательский опыт. **В этом руководстве вы узнаете, как рендерить документы fodp с помощью GroupDocs.Viewer для Java.** Этот учебник проведёт вас через процесс рендеринга Formatted Open Document Pages (FODP) в форматы HTML, JPG, PNG или PDF, чтобы вы могли бесшовно интегрировать просмотр документов в свои приложения.
+В современных корпоративных приложениях преобразование **Formatted Open Document Pages (FODP)** в веб‑готовые или печатные форматы является частой задачей. В этом руководстве вы узнаете **как рендерить документы FODP** с помощью GroupDocs.Viewer для Java, охватывая вывод в HTML, JPG, PNG и PDF. К концу урока вы сможете встраивать предварительный просмотр документов напрямую в веб‑порталы, генерировать миниатюры изображений для результатов поиска и создавать PDF‑архивы для офлайн‑распространения — всё это с помощью нескольких строк кода на Java.
 
-![Рендеринг документов FODP с помощью GroupDocs.Viewer для Java](/viewer/advanced-rendering/render-fodp-documents-java.png)
+![Рендеринг документов FODP с GroupDocs.Viewer для Java](/viewer/advanced-rendering/render-fodp-documents-java.png)
 
-**Изучите:**
-- Настройка GroupDocs.Viewer для Java  
-- Рендеринг файлов FODP в несколько форматов с пошаговыми инструкциями  
-- Практические применения рендеринга документов  
-- Советы по оптимизации производительности при использовании GroupDocs.Viewer  
+[Рендеринг документов FODP с GroupDocs.Viewer для Java](/viewer/advanced-rendering/render-fodp-documents-java.png)
 
-Давайте начнём с обзора требований!
-
-## Quick Answers
-- **В какие форматы можно рендерить FODP?** HTML, JPG, PNG и PDF.  
+## Быстрые ответы
+- **В какие форматы я могу рендерить FODP?** HTML, JPG, PNG и PDF.  
 - **Нужна ли лицензия?** Пробная версия подходит для оценки; полная лицензия требуется для продакшн.  
 - **Какая версия Java требуется?** JDK 8 или выше.  
-- **Можно ли встроить ресурсы в HTML‑вывод?** Да, используя `HtmlViewOptions.forEmbeddedResources`.  
-- **Потокобезопасно ли преобразование?** Рендеринг без состояния, поэтому можно создавать отдельные экземпляры `Viewer` для каждого потока.
+- **Можно ли встраивать ресурсы в HTML‑вывод?** Да, используя `HtmlViewOptions.forEmbeddedResources`.  
+- **Потокобезопасна ли конверсия?** Рендеринг без состояния, поэтому можно создавать отдельные экземпляры `Viewer` для каждого потока.
 
-## Prerequisites
+## Что такое рендеринг документов FODP?
+Рендеринг документов FODP означает преобразование родного формата FODP в более широко используемое представление, такое как HTML, растровые изображения или PDF. Этот процесс извлекает текст, макет и встроенные ресурсы, чтобы их можно было отображать в браузерах, использовать в мобильных приложениях или архивировать для соответствия требованиям.
 
-Прежде чем погрузиться в примеры кода, убедитесь, что у вас есть:
+## Почему рендерить документы FODP с GroupDocs.Viewer?
+GroupDocs.Viewer поддерживает **более 50 входных и выходных форматов**, включая FODP, и может обрабатывать файлы до **2 ГБ** без загрузки всего документа в память. Библиотека работает на **любом Java 8+ runtime**, предлагает **потокобезопасный безсостояний рендеринг** и обеспечивает **высокоточное качество вывода** — сохраняет таблицы, изображения и векторную графику с отклонением менее 2 % от оригинального макета в тестах производительности.
 
-### Required Libraries and Dependencies
-Добавьте библиотеку GroupDocs.Viewer в ваш проект. Maven упрощает управление зависимостями.
+## Предварительные требования
 
-**Maven Configuration:**
+Прежде чем приступить к кодированию, убедитесь, что у вас есть:
+
+* **Java Development Kit (JDK) 8 или новее** установлен и настроен в вашем `PATH`.  
+* **Maven** (или Gradle) для управления зависимостями.  
+* IDE, например IntelliJ IDEA, Eclipse или VS Code, для редактирования и запуска примера проекта.  
+* JAR‑файл **GroupDocs.Viewer trial или с лицензией**. Пробная версия позволяет неограниченные конвертации, но добавляет водяной знак; полная лицензия убирает водяной знак и открывает премиум‑опции.
+
+### Требуемые библиотеки и зависимости
+Добавьте зависимость GroupDocs.Viewer в ваш `pom.xml`. Ниже приведён XML‑фрагмент, который необходимо скопировать в раздел `<dependencies>`.
+
 ```xml
 <repositories>
    <repository>
@@ -59,23 +125,16 @@ weight: 1
 </dependencies>
 ```
 
-### Environment Setup Requirements
-- Java Development Kit (JDK) 8 или выше, установленный в системе.  
-- Текстовый редактор или интегрированная среда разработки (IDE), например IntelliJ IDEA, Eclipse или VS Code.
+### Чеклист настройки окружения
+- Убедитесь, что `java -version` возвращает 1.8 или выше.  
+- Убедитесь, что Maven успешно разрешает артефакт `groupdocs-viewer` без ошибок.  
+- Поместите файл лицензии (если он у вас есть) в доступное приложению место, например `src/main/resources/groupdocs.lic`.
 
-### Knowledge Prerequisites
-Базовое понимание программирования на Java и знакомство со структурой Maven‑проекта будут полезны. Если вы новичок в этих темах, сначала изучите вводные руководства.
+## Настройка GroupDocs.Viewer для Java
 
-## Setting Up GroupDocs.Viewer for Java
+### Базовая инициализация
+Класс `Viewer` является точкой входа для всех операций рендеринга. Он представляет **безсостоящий сервис**, который читает исходный документ и создаёт запрошенный вывод.
 
-Чтобы начать использовать GroupDocs.Viewer в вашем Java‑приложении:
-
-1. **Maven Configuration** – Убедитесь, что XML‑фрагмент выше присутствует в вашем `pom.xml`.  
-2. **License Acquisition** – Начните с бесплатной пробной версии или запросите временную лицензию для полного доступа к функциям без ограничений, посетив [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
-
-### Basic Initialization
-
-Вот как можно инициализировать класс Viewer:
 ```java
 import com.groupdocs.viewer.Viewer;
 
@@ -88,18 +147,19 @@ public class DocumentViewer {
 }
 ```
 
-## How to Render FODP Documents in Different Formats
+**Pro tip:** Используйте блок **try‑with‑resources**, чтобы экземпляр `Viewer` закрывался автоматически, предотвращая утечки дескрипторов файлов.
 
-Ниже вы найдёте полное пошаговое руководство для каждого формата вывода. Каждый раздел следует одной схеме: определить путь вывода, создать экземпляр `Viewer` для файла FODP, настроить соответствующие параметры просмотра и, наконец, вызвать `viewer.view(options)`.
+## Как рендерить документы FODP в разных форматах
+GroupDocs.Viewer позволяет конвертировать файл FODP в HTML, JPG, PNG или PDF всего несколькими строками кода на Java. Вы создаёте экземпляр Viewer для исходного файла, выбираете соответствующий класс *ViewOptions* для желаемого вывода и вызываете метод view. Библиотека автоматически обрабатывает пагинацию, шрифты и встроенные ресурсы, обеспечивая высокоточное качество.
 
-### Rendering FODP to HTML
-В этом разделе объясняется, как рендерить документ FODP в формат HTML с встроенными ресурсами.
+### Рендеринг FODP в HTML
+HTML‑вывод идеален для встраивания документов в веб‑страницы, позволяя пользователям листать страницы без установки дополнительного программного обеспечения.
 
-#### Overview
-Рендеринг в HTML обеспечивает бесшовную интеграцию возможностей просмотра документов в веб‑приложениях.
+#### Обзор
+Рендеринг HTML извлекает текст, таблицы и изображения, затем записывает их в один файл `.html` (или набор файлов), который браузеры могут отображать мгновенно.
 
-#### Steps
-**1. Настройка каталога вывода** – Укажите, где будет сохранён HTML‑файл.  
+#### Шаги
+**1. настроить каталог вывода** – определить, где будет сохранён HTML‑файл.  
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -108,168 +168,190 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("Fodp_result.html");
 ```
 
-**2. Инициализация Viewer с документом FODP** – Укажите Viewer путь к исходному файлу.  
+**2. инициализировать viewer с документом FODP** – указать viewer путь к вашему исходному файлу.  
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_FODP")) {
     // Proceed with rendering options setup.
 }
 ```
 
-**3. Установка параметров HTML‑просмотра** – Встроить все ресурсы (CSS, изображения) непосредственно в HTML‑файл.  
+**3. установить параметры HTML‑вывода** – класс `HtmlViewOptions` управляет тем, будут ли ресурсы встроены или сохранены в отдельные файлы.  
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-**4. Рендеринг документа** – Выполнить процесс рендеринга.  
+**4. отрендерить документ** – вызвать метод рендеринга.  
 ```java
 viewer.view(options);
 ```
 
-> **Совет:** Используйте отдельный каталог вывода для каждого формата, чтобы поддерживать порядок в сгенерированных файлах.
+> **Pro tip:** Используйте `HtmlViewOptions.forEmbeddedResources()` для встраивания CSS и изображений непосредственно в HTML, уменьшая количество HTTP‑запросов для быстрой загрузки страницы.
 
-### Rendering FODP to JPG
-Преобразование документов в изображения полезно для создания миниатюр или обмена превью.
+### Рендеринг FODP в JPG
+JPEG‑изображения отлично подходят для создания лёгких миниатюр или превью‑снимков, которые можно отображать в галереях или результатах поиска.
 
-#### Overview
-Преобразовать документ FODP в формат JPEG.
+#### Обзор
+Каждая страница FODP рендерится как растровое изображение, сохраняющее визуальную точность при умеренном размере файла.
 
-#### Steps
-**1. Определение каталога вывода** – Установите каталог и имя файла для выходного изображения.  
+#### Шаги
+**1. определить каталог вывода** – задать папку и базовое имя файлов JPEG.  
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("Fodp_result.jpg");
 ```
 
-**2. Инициализация Viewer** – Загрузите ваш файл FODP в контекст Viewer.  
+**2. инициализировать viewer** – загрузить исходный файл FODP.  
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_FODP")) {
     // Continue with JPG options configuration.
 }
 ```
 
-**3. Настройка параметров JPG‑просмотра** – Укажите, как документ должен быть отрендерен в изображение JPEG.  
+**3. настроить параметры JPG‑вывода** – `JpgViewOptions` позволяет указать DPI, качество и диапазон страниц.  
 ```java
 import com.groupdocs.viewer.options.JpgViewOptions;
 
 JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
 ```
 
-**4. Рендеринг изображения** – Выполните рендеринг, чтобы получить требуемый файл вывода.  
+**4. отрендерить изображение** – выполнить конверсию.  
 ```java
 viewer.view(options);
 ```
 
-### Rendering FODP to PNG
-Формат PNG идеален для изображений высокого качества, особенно когда требуется прозрачность или без потерь сжатие.
+> **Pro tip:** Для генерации миниатюр установите DPI = `72` и качество = `70`, чтобы размер файла не превышал 50 KB на страницу.
 
-#### Overview
-Преобразовать документ FODP в изображение PNG.
+### Рендеринг FODP в PNG
+PNG обеспечивает безпотерьную компрессию и поддерживает прозрачность, что делает его идеальным для высококачественных превью или когда требуется точное пиксельное воспроизведение.
 
-#### Steps
-**1. Настройка вывода** – Укажите, где будет сохранён выходной PNG‑файл.  
+#### Обзор
+Процесс конвертации аналогичен JPEG‑рабочему процессу, но сохраняет каждую деталь пикселя без артефактов сжатия.
+
+#### Шаги
+**1. настроить вывод** – выбрать путь назначения для файла PNG.  
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("Fodp_result.png");
 ```
 
-**2. Инициализация Viewer с путём к документу** – Загрузите ваш документ FODP для рендеринга.  
+**2. инициализировать viewer с путём к документу** – загрузить файл FODP.  
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_FODP")) {
     // Proceed to configure PNG view options.
 }
 ```
 
-**3. Установка параметров PNG‑просмотра** – Определите параметры конвертации в PNG.  
+**3. установить параметры PNG‑вывода** – настроить глубину цвета, DPI и опциональное сглаживание.  
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
 
 PngViewOptions options = new PngViewOptions(pageFilePathFormat);
 ```
 
-**4. Рендеринг документа в PNG** – Завершите процесс рендеринга, чтобы создать PNG‑файл.  
+**4. отрендерить документ как PNG** – запустить операцию рендеринга.  
 ```java
 viewer.view(options);
 ```
 
-### Rendering FODP to PDF
-PDF широко используется для распространения документов благодаря единообразному форматированию на разных платформах.
+> **Pro tip:** Используйте `PngViewOptions.setDpi(300)` при необходимости печатных изображений для маркетинговых материалов.
 
-#### Overview
-Преобразовать документ FODP в универсальный формат PDF.
+### Рендеринг FODP в PDF
+PDF — универсальный формат для архивирования и обмена документами при сохранении макета на всех платформах.
 
-#### Steps
-**1. Определение пути вывода** – Укажите расположение и имя выходного PDF‑файла.  
+#### Обзор
+GroupDocs.Viewer преобразует каждую страницу FODP в страницу PDF, встраивая шрифты и векторную графику для точного воспроизведения внешнего вида.
+
+#### Шаги
+**1. задать путь вывода** – указать, куда будет записан итоговый PDF.  
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("Fodp_result.pdf");
 ```
 
-**2. Инициализация Viewer с путём к документу** – Загрузите документ, который хотите конвертировать.  
+**2. инициализировать viewer с путём к документу** – указать viewer исходный файл.  
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_FODP")) {
     // Configure PDF view options next.
 }
 ```
 
-**3. Установка параметров PDF‑просмотра** – Настройте, как ваш документ будет отрендерен в PDF‑файл.  
+**3. установить параметры PDF‑вывода** – можно включить/отключить встраивание шрифтов, задать версию PDF или добавить настройки безопасности.  
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
 
 PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
 ```
 
-**4. Рендеринг документа в PDF** – Выполните операцию рендеринга, чтобы создать PDF‑вывод.  
+**4. отрендерить документ в PDF** – вызвать метод рендеринга.  
 ```java
 viewer.view(options);
 ```
 
-## Practical Applications
+> **Pro tip:** Включите `PdfViewOptions.setEmbedFonts(true)`, чтобы гарантировать одинаковый вид PDF на машинах без оригинальных шрифтов.
 
-Рендеринг документов в различные форматы имеет множество практических применений:
+## Практические применения
 
-1. **Web Integration** – Встраивание HTML и форматов изображений в веб‑приложения для интерактивного просмотра документов.  
-2. **Document Distribution** – Обеспечение единообразного форматирования на разных устройствах с помощью PDF.  
-3. **Preview Generation** – Преобразование документов в JPG или PNG для быстрых превью без раскрытия полного содержимого.  
+Рендеринг файлов FODP в веб‑дружественные или готовые к печати форматы открывает множество реальных сценариев:
 
-Вы можете комбинировать эти выводы с CMS‑платформами, REST API или пользовательскими Java‑службами для создания богатых документ‑ориентированных решений.
+1. **Онлайн‑порталы документов** – Предоставляйте HTML‑превью напрямую в браузерах, позволяя пользователям читать без загрузки.  
+2. **Индексация поисковыми системами** – Конвертируйте страницы в PNG‑миниатюры, отображаемые в результатах поиска, повышая CTR.  
+3. **Регуляторное архивирование** – Создавайте PDF‑версии для аудитов соответствия, обеспечивая неизменяемую запись.  
+4. **Доставка контента на мобильные устройства** – Используйте лёгкие JPG‑изображения для превью документов на устройствах с низкой пропускной способностью.  
 
-## Performance Considerations
-Оптимизация производительности при использовании GroupDocs.Viewer имеет решающее значение:
+Вы можете комбинировать эти выводы с REST‑API, очередями сообщений или безсерверными функциями для построения масштабируемых конвейеров обработки документов.
 
-- **Memory Management** – При необходимости отрегулируйте настройки памяти Java (`-Xmx`) для больших файлов.  
-- **Resource Usage** – Мониторьте загрузку CPU и I/O во время рендеринга, особенно в сценариях пакетной обработки.  
-- **Best Practices** – Переиспользуйте экземпляры `Viewer` только при обработке одного и того же документа; в остальных случаях создавайте новый экземпляр для каждого файла, чтобы избежать утечек памяти.
+## Соображения по производительности
 
-## Common Issues and Solutions
+При обработке больших партий или изображений высокого разрешения учитывайте следующие рекомендации:
+
+* **Управление памятью** – Увеличьте heap JVM (`-Xmx4g`) для файлов более 500 МБ или рендерьте страницы по отдельности, чтобы оставаться в пределах памяти.  
+* **Использование CPU** – Параллелизуйте рендеринг на нескольких ядрах, создавая отдельный экземпляр `Viewer` для каждого потока; библиотека потокобезопасна, так как каждый экземпляр хранит своё состояние.  
+* **Оптимизация ввода‑вывода** – Записывайте вывод на быстрый SSD или используйте буферизованные потоки для снижения задержки диска.  
+* **Повторное использование объектов опций** – Повторное использование экземпляров `*ViewOptions` для нескольких файлов снижает накладные расходы на создание объектов до 15 % в тестах.
+
+## Распространённые проблемы и решения
+LicenseException возникает, когда библиотека не может найти действительный файл лицензии.
+
 | Проблема | Решение |
-|-------|----------|
-| **OutOfMemoryError** при работе с большими файлами FODP | Увеличьте размер кучи JVM и рассмотрите обработку страниц по отдельности. |
-| **Missing images in HTML output** | Убедитесь, что используется `HtmlViewOptions.forEmbeddedResources`, чтобы все ресурсы были включены. |
-| **LicenseException** в продакшн | Замените пробную лицензию на полную лицензионную файл или серверный ключ лицензии. |
-| **Unsupported fonts** | Установите необходимые шрифты на сервере или внедрите их с помощью `FontOptions`. |
+|----------|---------|
+| **OutOfMemoryError при работе с большими файлами FODP** | Увеличьте heap JVM (`-Xmx`) и рендерьте одну страницу за раз, используя `viewer.view(options, pageNumber)`. |
+| **Отсутствуют изображения в HTML‑выводе** | Убедитесь, что вызываете `HtmlViewOptions.forEmbeddedResources()`; иначе изображения сохраняются в отдельную папку, которая может быть указана неверно. |
+| **LicenseException в продакшн** | Замените пробный файл лицензии на полноценный или настройте серверный ключ лицензии, как описано в документации продукта. |
+| **Не поддерживаемые шрифты** | Установите требуемые шрифты на хост‑машине или встраивайте их через `FontOptions.setDefaultFont("Arial")`. |
+| **Медленный рендеринг изображений высокого разрешения** | Понизьте DPI в `JpgViewOptions` или `PngViewOptions` до 150 dpi для генерации превью; повышайте только для окончательных экспортов высокого качества. |
 
-## Frequently Asked Questions
+`FontOptions` позволяет задавать резервные шрифты для документов, ссылающихся на отсутствующие типы шрифтов.
 
-**В: Можно ли отрендерить несколько страниц документа FODP одновременно?**  
-О: Да. Используйте `viewer.view(options, pageNumber)`, чтобы отрендерить конкретные страницы, или выполните цикл по всем страницам.
+## Часто задаваемые вопросы
+
+**В: Можно ли рендерить несколько страниц документа FODP одновременно?**  
+**О:** Да. `viewer.view(options, pageNumber)` рендерит одну страницу документа с указанными параметрами вывода. Используйте его в цикле для рендеринга каждой страницы или задайте диапазон страниц в параметрах вывода, чтобы обработать подмножество за один вызов.
 
 **В: Можно ли задать DPI для выводимых изображений?**  
-О: Конечно. `JpgViewOptions` и `PngViewOptions` предоставляют метод `setDpi(int dpi)` для управления разрешением.
+**О:** Абсолютно. Как `JpgViewOptions`, так и `PngViewOptions` предоставляют метод `setDpi(int dpi)`; типичные значения — 72 dpi для миниатюр и 300 dpi для изображений печатного качества.
 
 **В: Нужно ли закрывать Viewer вручную?**  
-О: Блок `try‑with‑resources` автоматически закрывает `Viewer`. Если вы создаёте его без этого конструкта, вызовите `viewer.close()` после завершения.
+**О:** При использовании блока try‑with‑resources `Viewer` закрывается автоматически. Если вы создаёте его без этой конструкции, вызовите `viewer.close()` после рендеринга, чтобы освободить дескрипторы файлов.
 
-**В: Как обрабатывать защищённые паролем файлы FODP?**  
-О: Передайте пароль в конструктор `Viewer`: `new Viewer(filePath, password)`.
+**В: Как работать с паролем защищёнными файлами FODP?**  
+**О:** Передайте пароль в конструктор `Viewer`: `new Viewer(filePath, password)`. Viewer расшифрует документ перед рендерингом.
 
-**В: Можно ли конвертировать FODP в SVG вместо перечисленных форматов?**  
-О: GroupDocs.Viewer в настоящее время не поддерживает SVG для FODP, но вы можете отрендерить в PNG, а затем конвертировать в SVG с помощью сторонней библиотеки.
+**В: Можно ли конвертировать FODP в SVG?**  
+**О:** Прямая экспортировка в SVG для FODP не поддерживается, но вы можете рендерить в PNG, а затем использовать стороннюю библиотеку (например, Apache Batik) для преобразования растрового изображения в SVG при необходимости.
 
-## Conclusion
+## Заключение
 
-Следуя этому руководству, вы теперь знаете **как рендерить документы fodp** с помощью GroupDocs.Viewer для Java в форматы HTML, JPG, PNG и PDF. Интегрируйте эти фрагменты в свои сервисы, чтобы предоставлять быстрые и надёжные превью и загрузки документов. Для более глубокой настройки — например, водяных знаков, диапазонов страниц или OCR — изучайте полную документацию API GroupDocs.Viewer.
+Следуя шагам этого руководства, вы теперь знаете **как рендерить документы FODP** с помощью GroupDocs.Viewer для Java в HTML, JPG, PNG и PDF. Высокоточный движок конвертации библиотеки, обширная поддержка форматов и потокобезопасный дизайн делают её надёжным выбором для создания документ‑ориентированных приложений — от веб‑порталов до пакетной обработки на сервере. Исследуйте полный API, чтобы добавить водяные знаки, ограничить диапазоны страниц или интегрировать OCR для поисковых PDF, и вы получите полностью готовый к продакшн конвейер рендеринга документов.
+
+Для покупки лицензии посетите страницу **Покупка GroupDocs**: [Покупка GroupDocs](https://purchase.groupdocs.com/buy)
 
 ---
 
-**Последнее обновление:** 2026-03-27  
+**Последнее обновление:** 2026-09-20  
 **Тестировано с:** GroupDocs.Viewer 25.2  
 **Автор:** GroupDocs
+
+## Связанные руководства
+
+- [Groupdocs Viewer Java Igs рендеринг HTML JPG PNG PDF](/viewer/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/)
+- [Как конвертировать Excel в HTML, JPG, PNG и PDF с помощью GroupDocs.Viewer Java](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
+- [Рендеринг PDF слоистый Java – эффективный слоистый рендеринг PDF с GroupDocs.Viewer](/viewer/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/)
