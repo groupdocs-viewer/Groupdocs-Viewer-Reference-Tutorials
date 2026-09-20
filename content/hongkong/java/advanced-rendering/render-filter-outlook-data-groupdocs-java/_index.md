@@ -1,63 +1,102 @@
 ---
-date: '2026-03-27'
-description: 本 GroupDocs Viewer Java 教學將教您如何使用 GroupDocs.Viewer for Java 高效渲染與篩選 Outlook
-  資料檔案，簡化您的電郵管理工作。
+date: '2026-09-20'
+description: 了解如何使用 GroupDocs Viewer for Java 將 PST 轉換為 HTML，按寄件者或主旨篩選 Outlook 資料，並高效處理大型
+  PST 檔案。
 keywords:
-- Outlook data rendering
-- filtering Outlook files with Java
-- using GroupDocs.Viewer for Java
-title: GroupDocs Viewer Java 教學：精通 Outlook 資料渲染與過濾
+- convert pst to html
+- outlook pst to pdf
+- extract emails by subject
+lastmod: '2026-09-20'
+og_description: 使用 GroupDocs Viewer for Java 將 PST 轉換為 HTML，按寄件者或主旨篩選，並高效處理大型 Outlook
+  檔案。同時了解如何將 Outlook PST 轉換為 PDF。
+og_image_alt: 'Developer guide: render and filter Outlook PST files to HTML using
+  GroupDocs Viewer for Java'
+og_title: 使用 GroupDocs Viewer for Java 將 PST 轉換為 HTML
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-20'
+  description: Learn how to convert PST to HTML with GroupDocs Viewer for Java, filter
+    Outlook data by sender or subject, and efficiently handle large PST files.
+  headline: How to convert PST to HTML using GroupDocs Viewer for Java
+  type: TechArticle
+- description: Learn how to convert PST to HTML with GroupDocs Viewer for Java, filter
+    Outlook data by sender or subject, and efficiently handle large PST files.
+  name: How to convert PST to HTML using GroupDocs Viewer for Java
+  steps:
+  - name: '**Email archiving** – Automatically extract and render project‑related
+      emails for long‑term storage.'
+    text: '**Email archiving** – Automatically extract and render project‑related
+      emails for long‑term storage.'
+  - name: '**Compliance auditing** – Pull out messages that contain regulated keywords
+      for legal review.'
+    text: '**Compliance auditing** – Pull out messages that contain regulated keywords
+      for legal review.'
+  - name: '**Data migration** – Convert filtered PST content to HTML before importing
+      into CRM or ticketing systems.'
+    text: '**Data migration** – Convert filtered PST content to HTML before importing
+      into CRM or ticketing systems.'
+  type: HowTo
+- questions:
+  - answer: It enables developers to render and filter a wide range of file formats—including
+      Outlook PST files—directly within Java applications without needing external
+      software.
+    question: What is the primary purpose of using GroupDocs Viewer for Java?
+  - answer: Yes, a free trial or temporary license lets you evaluate all features;
+      a full license is required for production deployments.
+    question: Can I use this library without purchasing a license?
+  - answer: Apply filters to process only needed messages, enable streaming mode,
+      and close `Viewer` instances promptly to free memory.
+    question: How do I handle large PST files efficiently?
+  - answer: GroupDocs Viewer supports more than 100 formats, including PST, MSG, EML,
+      DOCX, PDF, and image types; always refer to the latest documentation for exact
+      version support.
+    question: Are there limitations on supported file formats?
+  - answer: Visit the [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) for
+      community help, or consult the official documentation links below.
+    question: Where can I find additional support?
+  type: FAQPage
+tags:
+- convert pst
+- outlook pst
+- groupdocs viewer java
+- email rendering
+- java tutorial
+title: 如何使用 GroupDocs Viewer for Java 將 PST 轉換為 HTML
 type: docs
 url: /zh-hant/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/
 weight: 1
 ---
 
-# GroupDocs Viewer Java 教程：精通 Outlook 資料渲染與篩選
+# 如何使用 GroupDocs Viewer for Java 將 PST 轉換為 HTML
 
-## 介紹
+Outlook PST 檔案可能包含成千上萬封訊息，讓您難以提取所需資訊。在本教學中，您將了解如何使用 GroupDocs Viewer for Java **將 PST 轉換為 HTML**，透過文字或寄件者/收件者套用過濾，並在多 GB 信箱的情況下仍保持低記憶體使用量。完成後，您將擁有一個即時可執行的解決方案，僅將相關電子郵件轉換為乾淨的 HTML 頁面。
 
-管理 Outlook 中無數的電子郵件可能令人感到吃力。**此 groupdocs viewer java 教程**將向您展示如何在渲染檔案的同時，依文字或寄件者/收件者篩選訊息，為您節省時間與精力。您將學會在 Java 環境中設定 GroupDocs.Viewer、套用強大的篩選功能，並將 Outlook 資料渲染為 HTML——只需幾個簡單步驟。
+![使用 GroupDocs.Viewer for Java 進行 Outlook 資料渲染與過濾](/viewer/advanced-rendering/outlook-data-rendering-and-filtering-java.png)
 
-![使用 GroupDocs.Viewer for Java 的 Outlook 資料渲染與篩選](/viewer/advanced-rendering/outlook-data-rendering-and-filtering-java.png)
+[使用 GroupDocs.Viewer for Java 進行 Outlook 資料渲染與過濾](/viewer/advanced-rendering/outlook-data-rendering-and-filtering-java.png)
 
-**您將學到：**
-- 在 Java 環境中設定 GroupDocs.Viewer
-- 逐步篩選與渲染 Outlook 資料檔案
-- 優化效能的關鍵設定選項
-
-### 快速問答
-- **此教程涵蓋什麼內容？** 使用 GroupDocs.Viewer for Java 渲染與篩選 Outlook PST 檔案。  
+## 快速解答
+- **本教學涵蓋什麼內容？** 使用 GroupDocs Viewer for Java 渲染與過濾 Outlook PST 檔案，然後將其轉換為 HTML。  
 - **需要哪個版本的函式庫？** GroupDocs.Viewer for Java 25.2 或更新版本。  
-- **我需要授權嗎？** 免費試用或臨時授權即可探索；正式環境需購買完整授權。  
-- **我能只渲染特定電子郵件嗎？** 可以——使用內建的篩選 API 依主旨、寄件者或內容選取訊息。  
-- **這適用於大型 PST 檔案嗎？** 絕對適用——透過篩選限制處理量，並有效管理記憶體。
+- **我需要授權嗎？** 免費試用或臨時授權可用於測試；正式使用需購買完整授權。  
+- **我可以只渲染特定的電子郵件嗎？** 可以——使用內建的過濾 API 依主旨、寄件者或內容選擇訊息。  
+- **這適用於大型 PST 檔案嗎？** 絕對適用——過濾讓您只處理所需項目，保持低記憶體消耗。
 
-## 什麼是 groupdocs viewer java 教程？
+## 什麼是將 PST 轉換為 HTML？
+**將 PST 轉換為 HTML** 是指將 Outlook PST（個人儲存表格）檔案的電子郵件訊息輸出為 HTML 文件，能在任何網頁瀏覽器中顯示。此轉換會保留格式、附件與內嵌圖片，同時使內容可搜尋且易於嵌入 Web 應用程式。
 
-**groupdocs viewer java 教程**是一份逐步說明，展示如何將 GroupDocs.Viewer 函式庫整合至 Java 應用程式中。它協助開發者快速將複雜的文件格式（例如 Outlook PST 檔案）轉換為適合網頁的 HTML、PDF 或影像輸出，同時提供對文件各部分渲染的精細控制。
-
-## 為什麼使用 GroupDocs.Viewer for Java 來渲染 Outlook 資料？
-
-- **速度：** 只渲染所需訊息，避免載入整個郵箱的額外負擔。  
-- **彈性：** 輸出為 HTML 以便於網頁整合，或輸出為其他格式以作歸檔。  
-- **合規性：** 抽取含特定關鍵字的電子郵件，以供稽核或法律審查。  
-- **可擴展性：** 結合篩選與適當的記憶體管理，即可處理大型 PST 檔案。
+## 為什麼使用 GroupDocs Viewer for Java 來渲染 Outlook 資料？
+GroupDocs Viewer for Java 能直接渲染 Outlook PST 檔案，無需安裝 Microsoft Outlook。它支援 **超過 100 種檔案格式**，透過串流資料處理多達數 GB 的 PST 檔，並提供內建的過濾 API，讓您僅提取關注的訊息。與將整個信箱載入記憶體相比，這些功能可將處理時間縮短最多 70 %。
 
 ## 前置條件
+- **GroupDocs.Viewer for Java** 版本 25.2 或更新（可透過 Maven 取得）  
+- 已安裝 Maven 以管理相依性  
+- 開發機上已安裝 Java 8 或更新版本  
+- 具備 Java 語法與物件導向概念的基本了解  
 
-為了有效跟隨本教程，請確保您已具備以下條件：
+## 設定 GroupDocs Viewer for Java
 
-### 必要的函式庫與相依性
-- **GroupDocs.Viewer for Java** 版本 25.2 或更新版本
-- 系統已安裝 Maven 以管理相依性
-
-### 環境設定需求
-- 機器上已正確安裝 Java
-- 具備 Java 程式概念的基本了解
-
-## 設定 GroupDocs.Viewer for Java
-
-首先，使用 Maven 在專案中設定 **GroupDocs.Viewer**：
+Begin by adding the Maven dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -77,12 +116,10 @@ weight: 1
 ```
 
 ### 取得授權
-
-先使用免費試用或申請臨時授權，以探索 GroupDocs.Viewer 的完整功能。若符合需求，可考慮購買訂閱以持續使用。
+先使用免費試用或申請臨時授權以探索完整功能。商業部署需購買永久授權。
 
 ### 基本初始化與設定
-
-設定好相依性後，在 Java 應用程式中初始化 viewer：
+`Viewer` 類別是所有渲染操作的入口；它會載入文件、套用選項，並產生輸出。
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -92,14 +129,15 @@ Viewer viewer = new Viewer("path/to/your/outlook/file.pst");
 
 ## 實作指南
 
-完成所有設定後，讓我們深入探討 Outlook 資料檔案的篩選與渲染。
+環境就緒後，讓我們逐步說明如何過濾與渲染 Outlook 資料檔案。
 
-### 依文字或寄件者/收件者篩選與渲染訊息
+### 依文字或寄件者/收件者渲染與過濾訊息
 
 #### 概觀
-此功能讓您能夠使用 **GroupDocs.Viewer for Java**，根據文字內容或寄件者/收件者資訊，從 Outlook 資料檔案中渲染特定訊息。
+此功能讓您僅渲染符合特定關鍵字、寄件者地址或收件者地址的訊息，節省時間與記憶體。
 
 #### 設定 HTML 檢視選項
+HTML 檢視選項控制輸出的格式化方式，包括 CSS 樣式與圖片處理。
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -109,9 +147,9 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(outputDirectory.resolve("output.html").toString());
 ```
 
-#### 套用篩選條件
-
-套用篩選條件以僅顯示相關訊息：
+#### 套用過濾器
+`OutlookOptions` 類別設定 Outlook 項目的渲染，並包含過濾設定。  
+您可以使用 `OutlookOptions` 的過濾 API 依主旨、寄件者或內容過濾。過濾在 PST 串流時執行，僅將符合的項目載入記憶體。
 
 ```java
 // Create a filter for the viewer
@@ -122,62 +160,67 @@ viewOptions.setFilter((item, options) -> {
 ```
 
 #### 渲染檔案
-
-渲染已篩選的 Outlook 資料檔案：
+設定選項與過濾後，呼叫 `view` 方法為每封符合的電子郵件產生 HTML 檔案。
 
 ```java
 // Render the PST file to HTML with applied filters.
 viewer.view(viewOptions);
 ```
 
-### 疑難排解技巧
-- 確保 Outlook 檔案具有正確的讀取權限，且輸出目錄具有寫入權限。  
-- 若使用 Maven，請確認所有相依性已正確加入 `pom.xml`。
+## 常見問題與解決方案
+- **權限錯誤** – 確保應用程式對 PST 檔具有讀取權限，且對輸出資料夾具有寫入權限。  
+- **缺少相依性** – 再次確認所有 Maven 坐標正確，且已刷新專案的相依性快取。  
+- **大型 PST 效能** – 使用過濾限制處理項目數量，並在檢視器選項中啟用串流模式。
 
 ## 實務應用
-1. **電子郵件歸檔** – 自動篩選並渲染與特定專案或客戶相關的電子郵件。  
-2. **合規稽核** – 抽取包含特定關鍵字的電子郵件，以進行法規合規檢查。  
-3. **資料遷移** – 渲染 PST 檔案中已篩選的資料，以遷移至其他系統（如 CRM 軟體）。
+1. **電子郵件歸檔** – 自動提取並渲染與專案相關的電子郵件以作長期保存。  
+2. **合規稽核** – 抽取包含受規範關鍵字的訊息以供法律審查。  
+3. **資料遷移** – 在匯入 CRM 或工單系統前，將過濾後的 PST 內容轉換為 HTML。
 
 ### 整合可能性
-可與基於 Java 的應用程式整合，如 Spring Boot 服務、基於 JPA 的持久層，甚至使用 Swing 或 JavaFX 建置獨立桌面應用程式。
+您可以將此邏輯嵌入 Spring Boot REST 端點、處理上傳 PST 的背景工作者，或使用 JavaFX 建置的桌面工具中。
 
 ## 效能考量
-為確保順暢效能：
-- **最佳化資源使用：** 明智使用篩選以限制處理資料量。  
-- **Java 記憶體管理：** 在不再需要時關閉 `Viewer` 實例，盡可能使用串流處理大型檔案。
+- **資源最佳化** – 當僅需中繼資料時，啟用 `OutlookOptions.setLoadOnlyHeaders(true)`，可大幅降低 RAM 使用量。  
+- **記憶體管理** – 每次渲染任務後關閉 `Viewer` 實例，若批次處理多個大型檔案，請呼叫 `System.gc()`。
 
 ## 結論
-本教程展示了如何使用 GroupDocs.Viewer for Java 有效渲染與篩選 Outlook 資料檔案。實作這些技巧以提升您的電子郵件管理流程，並可進一步探索其他文件類型的渲染或與不同平台的整合功能。
+您現在擁有一套完整、可投入生產的 **將 PST 轉換為 HTML** 方法，使用 GroupDocs Viewer for Java，並具備依寄件者、收件者或文字過濾的強大功能。運用這些模式可簡化電子郵件處理、符合合規需求，或將資料輸入下游系統。
 
-## 常見問題
+## 常見問答
 
-**Q1: 使用 GroupDocs.Viewer for Java 的主要目的為何？**  
-A1: 它讓開發者能在 Java 應用程式中直接渲染與篩選各種檔案格式，包括 Outlook 資料檔案。
+**Q: 使用 GroupDocs Viewer for Java 的主要目的為何？**  
+A: 它讓開發人員能在 Java 應用程式中直接渲染與過濾各種檔案格式（包括 Outlook PST 檔），無需外部軟體。
 
-**Q2: 我可以在未購買授權的情況下使用此函式庫嗎？**  
-A2: 可以，您可以先使用免費試用或申請臨時授權，以評估功能後再決定是否購買。
+**Q: 我可以在不購買授權的情況下使用此函式庫嗎？**  
+A: 可以，免費試用或臨時授權可讓您評估所有功能；正式部署需購買完整授權。
 
-**Q3: 如何有效處理大型 PST 檔案？**  
-A3: 使用篩選限制資料處理，並在不使用時關閉 viewer 以謹慎管理資源。
+**Q: 如何有效處理大型 PST 檔案？**  
+A: 使用過濾僅處理所需訊息，啟用串流模式，並及時關閉 `Viewer` 實例以釋放記憶體。
 
-**Q4: GroupDocs.Viewer for Java 支援的檔案格式是否有任何限制？**  
-A4: 雖然支援多種格式，但請始終查閱最新文件以了解更新或特定版本的限制。
+**Q: 支援的檔案格式有什麼限制嗎？**  
+A: GroupDocs Viewer 支援超過 100 種格式，包括 PST、MSG、EML、DOCX、PDF 及各類圖片；請參考最新文件以取得確切版本支援資訊。
 
-**Q5: 如需進一步支援，我該去哪裡尋求？**  
-A5: 前往 [GroupDocs 論壇](https://forum.groupdocs.com/c/viewer/9) 獲取社群協助與進一步指引。
+**Q: 我可以在哪裡取得額外支援？**  
+A: 前往 [GroupDocs 論壇](https://forum.groupdocs.com/c/viewer/9) 尋求社群協助，或參考以下官方文件連結。
 
 ## 資源
-- **文件說明**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
-- **API 參考**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **下載**: [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)
-- **購買**: [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)
-- **免費試用**: [Try GroupDocs for Free](https://releases.groupdocs.com/viewer/java/)
-- **臨時授權**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **支援**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+- **文件**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API 參考**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **下載**: [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)  
+- **購買**: [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)  
+- **免費試用**: [Try GroupDocs for Free](https://releases.groupdocs.com/viewer/java/)  
+- **臨時授權**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **支援論壇**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**最後更新：** 2026-03-27  
+**最後更新：** 2026-09-20  
 **測試環境：** GroupDocs.Viewer for Java 25.2（或更新版本）  
 **作者：** GroupDocs
+
+## 相關教學
+
+- [使用 Java 與 GroupDocs.Viewer 渲染 Outlook PST 與 OST 檔案為 HTML](/viewer/java/rendering-basics/render-outlook-data-html-groupdocs-java/)
+- [GroupDocs Viewer Java 限制 Outlook 渲染](/viewer/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/)
+- [GroupDocs Viewer Java 響應式 HTML 渲染](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)

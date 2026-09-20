@@ -1,64 +1,118 @@
 ---
-date: '2026-03-24'
+date: '2026-09-20'
 description: Μάθετε πώς να μετατρέπετε έγγραφα DOCX σε μορφή HTML χρησιμοποιώντας
-  το GroupDocs.Viewer για Java, συμπεριλαμβανομένης της διαχείρισης εξωτερικών πόρων
+  το GroupDocs.Viewer for Java, συμπεριλαμβανομένης της διαχείρισης εξωτερικών πόρων
   όπως εικόνες και φύλλα στυλ, και ανακαλύψτε τις επιλογές αδειοδότησης του GroupDocs
   Viewer.
 keywords:
-- Convert DOCX to HTML
-- GroupDocs Viewer Java
-- rendering DOCX files
-title: Μετατροπή DOCX σε HTML με εξωτερικούς πόρους χρησιμοποιώντας το GroupDocs.Viewer
-  για Java
+- convert docx to html
+- extract images from docx
+- java convert word to html
+- render docx as html
+lastmod: '2026-09-20'
+og_description: Μετατρέψτε DOCX σε HTML χρησιμοποιώντας το GroupDocs.Viewer for Java,
+  διαχειριζόμενοι εξωτερικούς πόρους όπως εικόνες και CSS. Μάθετε τη ρύθμιση, τις
+  επιλογές και την αδειοδότηση σε αυτόν τον οδηγό βήμα‑βήμα.
+og_image_alt: GroupDocs.Viewer Java tutorial converting DOCX to HTML with external
+  resources
+og_title: Μετατροπή DOCX σε HTML με GroupDocs.Viewer for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-20'
+  description: Learn how to convert DOCX documents to HTML format using GroupDocs.Viewer
+    for Java, including handling external resources like images and stylesheets, and
+    discover groupdocs viewer licensing options.
+  headline: Convert DOCX to HTML with External Resources Using GroupDocs.Viewer for
+    Java
+  type: TechArticle
+- description: Learn how to convert DOCX documents to HTML format using GroupDocs.Viewer
+    for Java, including handling external resources like images and stylesheets, and
+    discover groupdocs viewer licensing options.
+  name: Convert DOCX to HTML with External Resources Using GroupDocs.Viewer for Java
+  steps:
+  - name: '**Web content management:** Auto‑publish Word articles as HTML pages with
+      all images intact.'
+    text: '**Web content management:** Auto‑publish Word articles as HTML pages with
+      all images intact.'
+  - name: '**Document archiving:** Store legal or compliance documents in a universally
+      readable HTML format.'
+    text: '**Document archiving:** Store legal or compliance documents in a universally
+      readable HTML format.'
+  - name: '**Cross‑platform portals:** Deliver the same visual experience on desktop
+      browsers, mobile devices, and embedded web views.'
+    text: '**Cross‑platform portals:** Deliver the same visual experience on desktop
+      browsers, mobile devices, and embedded web views.'
+  type: HowTo
+- questions:
+  - answer: Process the document in smaller chunks, increase the JVM heap (`-Xmx`),
+      and ensure you release the `Viewer` instance promptly.
+    question: How do I handle very large DOCX files?
+  - answer: Yes – PDF, XPS, PPT, and many image formats are supported out of the box.
+    question: Can GroupDocs.Viewer convert other formats to HTML?
+  - answer: Choose a free trial for quick testing, a temporary license for short‑term
+      projects, or purchase a permanent license for unlimited production use.
+    question: What are the options for GroupDocs.Viewer licensing?
+  - answer: The placeholders `{0}` and `{1}` are not being replaced because the output
+      folder pattern is incorrect. Double‑check the `resourceFilePathFormat` and `resourceUrlFormat`
+      strings.
+    question: Why are my resource URLs showing “page_0_0” instead of actual filenames?
+  - answer: Yes – use `HtmlViewOptions.forEmbeddedResources()` if you prefer a single‑file
+      output.
+    question: Is it possible to embed CSS directly into the HTML instead of using
+      external files?
+  type: FAQPage
+tags:
+- convert docx
+- groupdocs viewer
+- java document conversion
+- html rendering
+title: Μετατροπή DOCX σε HTML με εξωτερικούς πόρους χρησιμοποιώντας GroupDocs.Viewer
+  for Java
 type: docs
 url: /el/java/advanced-rendering/render-docx-html-external-resources-groupdocs-java/
 weight: 1
 ---
 
-# Μετατροπή DOCX σε HTML με Εξωτερικούς Πόρους Χρησιμοποιώντας το GroupDocs.Viewer για Java
+# Μετατροπή DOCX σε HTML με Εξωτερικούς Πόρους χρησιμοποιώντας το GroupDocs.Viewer για Java
 
-Η μετατροπή ενός αρχείου DOCX σε HTML ενώ διατηρούνται όλοι οι εξωτερικοί πόροι (εικόνες, φύλλα στυλ, γραμματοσειρές) αμετάβλητοι μπορεί να φαίνεται σαν γρίφος. **Με το GroupDocs.Viewer για Java μπορείτε να μετατρέψετε DOCX σε HTML** με λίγες μόνο γραμμές κώδικα, και η βιβλιοθήκη φροντίζει να εξάγει και να συνδέει κάθε στοιχείο σωστά. Αυτό το καθιστά ιδανικό για δημοσίευση στο web, συστήματα διαχείρισης περιεχομένου ή οποιοδήποτε σενάριο όπου χρειάζεστε μια πιστή αναπαράσταση HTML ενός εγγράφου Word.
+Σε αυτό το σεμινάριο θα μάθετε πώς να **convert docx to html** διατηρώντας κάθε εικόνα, φύλλο στυλ και γραμματοσειρά τέλεια συνδεδεμένα. Το GroupDocs.Viewer for Java κάνει τη βαριά δουλειά με λίγες μόνο γραμμές, καθιστώντας το ιδανικό για πλατφόρμες δημοσίευσης στο web, συστήματα διαχείρισης περιεχομένου ή οποιαδήποτε υπηρεσία που χρειάζεται μια πιστή αναπαράσταση HTML ενός εγγράφου Word.
 
-![Convert DOCX to HTML with External Resources with GroupDocs.Viewer for Java](/viewer/advanced-rendering/convert-docx-to-html-with-external-resources-java.png)
+![Μετατροπή DOCX σε HTML με Εξωτερικούς Πόρους με το GroupDocs.Viewer για Java](/viewer/advanced-rendering/convert-docx-to-html-with-external-resources-java.png)
 
-Σε αυτόν τον οδηγό θα περάσετε από όλα όσα χρειάζεται να γνωρίζετε — από τη ρύθμιση της εξάρτησης Maven μέχρι τη διαμόρφωση του `HtmlViewOptions` για εξωτερικούς πόρους, και τελικά την απόδοση του εγγράφου. Στο τέλος θα είστε έτοιμοι να **μετατρέψετε docx σε html** με τρόπο έτοιμο για παραγωγή.
+[Μετατροπή DOCX σε HTML με Εξωτερικούς Πόρους με το GroupDocs.Viewer για Java](/viewer/advanced-rendering/convert-docx-to-html-with-external-resources-java.png)
 
-## Γρήγορες Απαντήσεις
-- **Τι παράγει πραγματικά η “μετατροπή docx σε html”;** Μια σελίδα HTML (ή σύνολο σελίδων) συν τα ξεχωριστά αρχεία για εικόνες, CSS και γραμματοσειρές.  
+## Γρήγορες απαντήσεις
+- **Τι παράγει πραγματικά το “convert docx to html”;** Μια σελίδα HTML (ή σύνολο σελίδων) συν τα ξεχωριστά αρχεία για εικόνες, CSS και γραμματοσειρές.  
 - **Χρειάζομαι άδεια για να χρησιμοποιήσω το GroupDocs.Viewer;** Ναι – δείτε την ενότητα *groupdocs viewer licensing* για επιλογές δοκιμής, προσωρινής και πλήρους αγοράς.  
 - **Ποια έκδοση της Java απαιτείται;** Java 8 ή νεότερη· η βιβλιοθήκη λειτουργεί με οποιοδήποτε σύγχρονο JDK.  
-- **Μπορώ να προσαρμόσω το φάκελο εξόδου και το μοτίβο URL;** Απόλυτα – το `HtmlViewOptions.forExternalResources` σας επιτρέπει να ορίσετε placeholders ονομάτων αρχείων.  
+- **Μπορώ να προσαρμόσω το φάκελο εξόδου και το μοτίβο URL;** Απόλυτα – `HtmlViewOptions.forExternalResources` σας επιτρέπει να ορίσετε placeholders ονομάτων αρχείων.  
 - **Είναι η μετατροπή αρκετά γρήγορη για μεγάλα έγγραφα;** Με σωστή διαχείριση μνήμης (try‑with‑resources) κλιμακώνεται καλά· δείτε τις συμβουλές απόδοσης παρακάτω.
 
-## Τι είναι η “μετατροπή docx σε html”;
-Όταν **μετατρέπετε DOCX σε HTML**, το κειμενικό περιεχόμενο, τα στυλ παραγράφων, οι πίνακες και τα ενσωματωμένα αντικείμενα μετατρέπονται σε τυπικό web markup. Οι εξωτερικοί πόροι όπως οι εικόνες αποθηκεύονται ως ξεχωριστά αρχεία, και το παραγόμενο HTML τις αναφέρει μέσω των URL που καθορίζετε. Αυτή η προσέγγιση διατηρεί το HTML ελαφρύ και επιτρέπει στα προγράμματα περιήγησης να φορτώνουν τα στοιχεία κατά απαίτηση.
+## Τι είναι το “convert docx to html”;
+*Convert docx to html* μετατρέπει ένα αρχείο Word σε τυπική σήμανση web, εξάγοντας εικόνες, CSS και γραμματοσειρές ως ανεξάρτητους πόρους που αναφέρονται από το παραγόμενο HTML. Αυτό διατηρεί τη σελίδα ελαφριά ενώ διατηρεί την αρχική διάταξη, και επίσης εξασφαλίζει ότι το στυλ και η τυπογραφία παραμένουν συνεπή σε προγράμματα περιήγησης και συσκευές.
 
 ## Γιατί να χρησιμοποιήσετε το GroupDocs.Viewer για αυτή τη μετατροπή;
-- **Μηχανή απόδοσης χωρίς κώδικα** – δεν χρειάζεται να γράψετε τον δικό σας parser.  
-- **Πλήρης πιστότητα** – η έξοδος αντικατοπτρίζει την αρχική διάταξη του Word, συμπεριλαμβανομένων σύνθετων πινάκων και διανυσματικών γραφικών.  
-- **Διαχείριση εξωτερικών πόρων** – εικόνες, CSS και γραμματοσειρές εξάγονται και συνδέονται αυτόματα.  
-- **Διαπλατφορμική** – λειτουργεί σε οποιοδήποτε OS που υποστηρίζει Java, καθιστώντας το ιδανικό για υπηρεσίες cloud ή διακομιστές on‑premise.  
+Το GroupDocs.Viewer υποστηρίζει τη μετατροπή **πάνω από 100 μορφών αρχείων** και μπορεί να αποδώσει έγγραφα με εκατοντάδες σελίδες χωρίς να φορτώνει ολόκληρο το αρχείο στη μνήμη. Η μηχανή παρέχει έξοδο πλήρους πιστότητας, διατηρώντας σύνθετους πίνακες, διανυσματικά γραφικά και ενσωματωμένα αντικείμενα. Επειδή λειτουργεί σε οποιοδήποτε OS που υποστηρίζει Java, μπορείτε να το αναπτύξετε σε cloud containers, σε διακομιστές on‑premise ή σε επιτραπέζιες εφαρμογές με ίση ευκολία.
 
 ## Προαπαιτούμενα
-- **GroupDocs.Viewer** έκδοση βιβλιοθήκης 25.2 ή νεότερη.  
+- **GroupDocs.Viewer** βιβλιοθήκη έκδοση 25.2 ή νεότερη.  
 - Maven για διαχείριση εξαρτήσεων.  
 - JDK 8 ή νεότερο εγκατεστημένο.  
-- Ένα IDE (IntelliJ IDEA, Eclipse, κλπ.) για τη συγγραφή και εκτέλεση του παραδείγματος.  
+- Ένα IDE όπως IntelliJ IDEA ή Eclipse.  
 
-### Απαιτούμενες Βιβλιοθήκες και Εξαρτήσεις
+### Απαιτούμενες βιβλιοθήκες και εξαρτήσεις
 - **GroupDocs.Viewer** (συντεταγμένες Maven φαίνονται παρακάτω).  
 
-### Απαιτήσεις Ρύθμισης Περιβάλλοντος
+### Απαιτήσεις ρύθμισης περιβάλλοντος
 - Java Development Kit (JDK) εγκατεστημένο στο σύστημά σας.  
 - Ένα IDE όπως IntelliJ IDEA ή Eclipse για να γράψετε και να εκτελέσετε τον κώδικά σας.  
 
-### Προαπαιτούμενες Γνώσεις
+### Προαπαιτούμενες γνώσεις
 - Βασικές δεξιότητες προγραμματισμού Java.  
 - Εξοικείωση με τη δομή `pom.xml` του Maven.  
 
-## Ρύθμιση του GroupDocs.Viewer για Java
-
-Προσθέστε το αποθετήριο GroupDocs και την εξάρτηση viewer στο Maven `pom.xml` σας. Αυτό το βήμα εξασφαλίζει ότι το Maven θα κατεβάσει τα σωστά αρχεία JAR.
+## Πώς να ρυθμίσετε το GroupDocs.Viewer για Java
+Πρώτα, προσθέστε το αποθετήριο GroupDocs και την εξάρτηση viewer στο Maven `pom.xml` σας. Αυτό το βήμα εξασφαλίζει ότι το Maven θα κατεβάσει τα σωστά αρχεία JAR και θα κάνει τη βιβλιοθήκη διαθέσιμη στο έργο σας. Μετά την ενημέρωση του `pom.xml`, εκτελέστε `mvn clean install` για να κατεβάσετε τις εξαρτήσεις και να επαληθεύσετε ότι το classpath είναι σωστά διαμορφωμένο για το Viewer API.
 
 ```xml
 <repositories>
@@ -77,20 +131,13 @@ weight: 1
 </dependencies>
 ```
 
-### Απόκτηση Άδειας (groupdocs viewer licensing)
-Το GroupDocs προσφέρει τρεις διαδρομές αδειοδότησης:
-1. **Free Trial** – περιορισμένη χρήση, ιδανική για αξιολόγηση.  
-2. **Temporary License** – κλειδί χωρίς κόστος για βραχυπρόθεσμη δοκιμή.  
-3. **Permanent License** – πλήρες σύνολο λειτουργιών για παραγωγικά φορτία.  
+## Πώς να αποκτήσετε άδεια GroupDocs.Viewer;
+Το GroupDocs προσφέρει τρεις διαδρομές αδειοδότησης για διαφορετικά στάδια ανάπτυξης. Η **δωρεάν δοκιμή** παρέχει περιορισμένη χρήση για γρήγορη αξιολόγηση, η **προσωρινή άδεια** είναι κλειδί χωρίς κόστος για βραχυπρόθεσμο testing, και η **μόνιμη άδεια** ξεκλειδώνει το πλήρες σύνολο λειτουργιών για παραγωγικά φορτία εργασίας. Τοποθετήστε το αρχείο `license.json` (ή `.lic`) σε θέση όπου η εφαρμογή μπορεί να το διαβάσει, ή ορίστε την άδεια προγραμματιστικά όπως περιγράφεται στην επίσημη τεκμηρίωση.
 
-Βεβαιωθείτε ότι τοποθετείτε το `license.json` (ή το αρχείο `.lic`) σε θέση που η εφαρμογή σας μπορεί να διαβάσει, ή ορίστε την άδεια προγραμματιστικά όπως φαίνεται στα επίσημα έγγραφα.
+## Οδηγός υλοποίησης
 
-## Οδηγός Υλοποίησης
-
-Παρακάτω υπάρχει ένας βήμα‑βήμα οδηγός που δείχνει ακριβώς πώς να **μετατρέψετε docx σε html** εξωτερικεύοντας όλα τα στοιχεία.
-
-### Βήμα 1: Ορισμός Διαδρομών Εξόδου
-Πρώτα, αποφασίστε πού θα αποθηκευτούν οι σελίδες HTML και οι σχετικοί πόροι τους. Τα placeholders (`{0}`, `{1}`) αντικαθίστανται κατά την εκτέλεση με αριθμούς σελίδας και δείκτες πόρων.
+### Πώς να ορίσετε διαδρομές εξόδου;
+Πρώτα, αποφασίστε πού θα αποθηκευτούν οι σελίδες HTML και οι σχετικοί πόροι τους. Τα placeholders (`{0}`, `{1}`) αντικαθίστανται κατά την εκτέλεση με αριθμούς σελίδων και δείκτες πόρων, επιτρέποντάς σας να δημιουργήσετε καθαρές, προβλέψιμες ονομασίες αρχείων.
 
 ```java
 String outputDirectory = "YOUR_OUTPUT_DIRECTORY/RenderToHtmlWithExternalResources";
@@ -99,15 +146,17 @@ String resourceFilePathFormat = outputDirectory + "/page_{0}_{1}"; // Pattern fo
 String resourceUrlFormat = outputDirectory + "/page_{0}_{1}"; // URL format in generated HTML
 ```
 
-### Βήμα 2: Διαμόρφωση HtmlViewOptions για Εξωτερικούς Πόρους
-`HtmlViewOptions.forExternalResources` λέει στον viewer να γράψει εικόνες, CSS και γραμματοσειρές σε ξεχωριστά αρχεία χρησιμοποιώντας τα μοτίβα που δώσατε.
+### Πώς να διαμορφώσετε το HtmlViewOptions για εξωτερικούς πόρους;
+`HtmlViewOptions.forExternalResources` λέει στον viewer να γράφει εικόνες, CSS και γραμματοσειρές σε ξεχωριστά αρχεία χρησιμοποιώντας τα μοτίβα που παρέχετε.
+
+Η κλάση `HtmlViewOptions` είναι το κέντρο διαμόρφωσης που ελέγχει πού και πώς εκδίδονται τα HTML assets. Παρέχοντας ένα `resourceFilePathFormat` και ένα αντίστοιχο `resourceUrlFormat`, αποκτάτε πλήρη έλεγχο της δομής φακέλων και του σχήματος URL των παραγόμενων πόρων.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forExternalResources(pageFilePathFormat, resourceFilePathFormat, resourceUrlFormat);
 ```
 
-### Βήμα 3: Απόδοση του Εγγράφου
-Δημιουργήστε μια παρουσία `Viewer`, δείξτε το στο αρχείο DOCX (το αρχείο δείγματος περιλαμβάνεται στο SDK), και καλέστε το `view`. Το μπλοκ try‑with‑resources εγγυάται ότι ο Viewer κλείνει σωστά, απελευθερώνοντας τους εγγενείς πόρους.
+### Πώς να αποδώσετε το έγγραφο;
+Η κλάση `Viewer` είναι το σημείο εισόδου που φορτώνει το πηγαίο έγγραφο και οργανώνει τη διαδικασία μετατροπής. Παρέχει μεθόδους για απόδοση σελίδων, εξαγωγή πόρων και διαχείριση μνήμης. Δημιουργήστε ένα αντικείμενο `Viewer`, δείξτε το στο αρχείο DOCX σας και καλέστε `view`. Η χρήση ενός μπλοκ try‑with‑resources εγγυάται ότι οι εγγενείς πόροι απελευθερώνονται άμεσα.
 
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX)) {
@@ -115,57 +164,57 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX)) {
 }
 ```
 
-### Ανακεφαλαίωση Κύριων Επιλογών Διαμόρφωσης
-- **`forExternalResources`** – διαχωρίζει το HTML από εικόνες/CSS.  
-- **Placeholders διαδρομής** – επιτρέπουν δυναμική ονομασία αρχείων για έγγραφα πολλαπλών σελίδων.  
-
-## Συχνά Προβλήματα και Λύσεις
-| Συμπτωμα | Πιθανή Αιτία | Διόρθωση |
-|---------|--------------|----------|
-| Σπασμένοι σύνδεσμοι εικόνων στην έξοδο HTML | `resourceUrlFormat` δεν ταιριάζει με τη δομή του φακέλου | Επαληθεύστε ότι το μοτίβο URL δείχνει στον ίδιο κατάλογο όπου αποθηκεύονται οι πόροι |
-| Ο `Viewer` πετάει `IOException` κατά την εκκίνηση | Ο φάκελος εξόδου δεν υπάρχει ή δεν έχει δικαιώματα εγγραφής | Δημιουργήστε τον φάκελο εκ των προτέρων ή χορηγήστε δικαιώματα εγγραφής |
+## Συχνά προβλήματα και λύσεις
+| Σύμπτωμα | Πιθανή αιτία | Διόρθωση |
+|----------|--------------|----------|
+| Κατεστραμμένοι σύνδεσμοι εικόνων στην έξοδο HTML | `resourceUrlFormat` δεν ταιριάζει με την πραγματική δομή φακέλου | Επαληθεύστε ότι το μοτίβο URL δείχνει στον ίδιο φάκελο όπου αποθηκεύονται οι πόροι |
+| `Viewer` προκαλεί `IOException` κατά την εκκίνηση | Ο φάκελος εξόδου δεν υπάρχει ή δεν έχει δικαίωμα εγγραφής | Δημιουργήστε τον φάκελο εκ των προτέρων ή δώστε δικαίωμα εγγραφής |
 | Υψηλή χρήση μνήμης σε μεγάλα αρχεία DOCX | Φόρτωση ολόκληρου του εγγράφου ταυτόχρονα | Επεξεργαστείτε το έγγραφο σελίδα‑με‑σελίδα αν είναι δυνατόν, και βεβαιωθείτε ότι το heap της JVM είναι κατάλληλα διαμορφωμένο |
 
-## Σκέψεις Απόδοσης
+## Σκέψεις απόδοσης
 - **Αποδοτικότητα I/O:** Γράψτε αρχεία σε γρήγορο SSD ή χρησιμοποιήστε buffered streams αν προσαρμόζετε την έξοδο.  
-- **Διαχείριση Μνήμης:** Η κλάση `Viewer` υλοποιεί `Closeable`; χρησιμοποιείτε πάντα try‑with‑resources ώστε η JVM να ανακτήσει τη φυσική μνήμη άμεσα.  
-- **Ασφάλεια Νήματος:** Δημιουργήστε ξεχωριστή παρουσία `Viewer` ανά νήμα· η κλάση δεν είναι thread‑safe.  
+- **Διαχείριση μνήμης:** Η κλάση `Viewer` υλοποιεί `Closeable`; χρησιμοποιείτε πάντα try‑with‑resources για να επιτρέψετε στη JVM να ανακτήσει τη φυσική μνήμη άμεσα.  
+- **Ασφάλεια νήματος:** Δημιουργήστε ξεχωριστό αντικείμενο `Viewer` ανά νήμα· η κλάση δεν είναι thread‑safe.
 
-## Πρακτικές Εφαρμογές
-1. **Διαχείριση Περιεχομένου Web:** Αυτόματη δημοσίευση άρθρων Word ως σελίδες HTML με όλες τις εικόνες αμετάβλητες.  
-2. **Αρχειοθέτηση Εγγράφων:** Αποθήκευση νομικών ή συμμορφωτικών εγγράφων σε μορφή HTML που διαβάζεται καθολικά.  
-3. **Διαπλατφορμικές Πύλες:** Παροχή της ίδιας οπτικής εμπειρίας σε προγράμματα περιήγησης επιφάνειας εργασίας, κινητές συσκευές και ενσωματωμένες web προβολές.  
+## Πρακτικές εφαρμογές
+1. **Διαχείριση περιεχομένου web:** Αυτόματη δημοσίευση άρθρων Word ως σελίδες HTML με όλες τις εικόνες ανέπαφες.  
+2. **Αρχειοθέτηση εγγράφων:** Αποθήκευση νομικών ή συμμορφωτικών εγγράφων σε μορφή HTML που διαβάζεται καθολικά.  
+3. **Πύλες πολλαπλών πλατφορμών:** Παράδοση της ίδιας οπτικής εμπειρίας σε προγράμματα περιήγησης desktop, κινητές συσκευές και ενσωματωμένες web προβολές.
 
-## Συχνές Ερωτήσεις
+## Συχνές ερωτήσεις
 
-**Q: Πώς διαχειρίζομαι πολύ μεγάλα αρχεία DOCX;**  
-A: Επεξεργαστείτε το έγγραφο σε μικρότερα τμήματα, αυξήστε το heap της JVM (`-Xmx`), και βεβαιωθείτε ότι απελευθερώνετε την παρουσία `Viewer` άμεσα.
+**Q: Πώς να διαχειριστώ πολύ μεγάλα αρχεία DOCX;**  
+A: Επεξεργαστείτε το έγγραφο σε μικρότερα τμήματα, αυξήστε το heap της JVM (`-Xmx`) και βεβαιωθείτε ότι απελευθερώνετε το αντικείμενο `Viewer` άμεσα.
 
 **Q: Μπορεί το GroupDocs.Viewer να μετατρέψει άλλες μορφές σε HTML;**  
-A: Ναι – PDF, XPS, PPT και πολλές μορφές εικόνας υποστηρίζονται έτοιμες.
+A: Ναι – PDF, XPS, PPT και πολλές μορφές εικόνας υποστηρίζονται αμέσως.
 
-**Q: Ποιες είναι οι επιλογές αδειοδότησης του groupdocs viewer;**  
-A: Επιλέξτε δωρεάν δοκιμή για γρήγορη δοκιμή, προσωρινή άδεια για βραχυπρόθεσμα έργα, ή αγοράστε μόνιμη άδεια για απεριόριστη χρήση σε παραγωγή.
+**Q: Ποιες είναι οι επιλογές αδειοδότησης για το GroupDocs.Viewer;**  
+A: Επιλέξτε μια δωρεάν δοκιμή για γρήγορο testing, μια προσωρινή άδεια για βραχυπρόθεσμα έργα, ή αγοράστε μια μόνιμη άδεια για απεριόριστη παραγωγική χρήση.
 
 **Q: Γιατί τα URLs των πόρων μου εμφανίζουν “page_0_0” αντί για πραγματικά ονόματα αρχείων;**  
 A: Τα placeholders `{0}` και `{1}` δεν αντικαθίστανται επειδή το μοτίβο φακέλου εξόδου είναι λανθασμένο. Ελέγξτε ξανά τις συμβολοσειρές `resourceFilePathFormat` και `resourceUrlFormat`.
 
-**Q: Μπορεί να ενσωματωθεί CSS απευθείας στο HTML αντί για εξωτερικά αρχεία;**  
+**Q: Είναι δυνατόν να ενσωματώσετε το CSS απευθείας στο HTML αντί για εξωτερικά αρχεία;**  
 A: Ναι – χρησιμοποιήστε `HtmlViewOptions.forEmbeddedResources()` αν προτιμάτε έξοδο σε ένα μόνο αρχείο.
 
 ## Πόροι
-- **Τεκμηρίωση:** [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
-- **Αναφορά API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Λήψη:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)
-- **Αγορά Άδειας:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
-- **Δωρεάν Δοκιμή:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Προσωρινή Άδεια:** [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Φόρουμ Υποστήριξης:** [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)
+- **Τεκμηρίωση:** [Τεκμηρίωση GroupDocs Viewer Java](https://docs.groupdocs.com/viewer/java/)  
+- **Αναφορά API:** [Αναφορά API GroupDocs](https://reference.groupdocs.com/viewer/java/)  
+- **Λήψη:** [Λήψεις GroupDocs](https://releases.groupdocs.com/viewer/java/)  
+- **Αγορά άδειας:** [Αγορά Άδειας GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Δωρεάν δοκιμή:** [Δωρεάν Δοκιμή GroupDocs](https://releases.groupdocs.com/viewer/java/)  
+- **Προσωρινή άδεια:** [Προσωρινή Άδεια GroupDocs](https://purchase.groupdocs.com/temporary-license/)  
+- **Φόρουμ υποστήριξης:** [Υποστήριξη GroupDocs](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Τελευταία Ενημέρωση:** 2026-03-24  
-**Δοκιμάστηκε Με:** GroupDocs.Viewer 25.2 for Java  
-**Συγγραφέας:** GroupDocs  
+**Τελευταία ενημέρωση:** 2026-09-20  
+**Δοκιμάστηκε με:** GroupDocs.Viewer 25.2 για Java  
+**Συγγραφέας:** GroupDocs
 
----
+## Σχετικά Μαθήματα
+
+- [Απόδοση Docx Html Ενσωματωμένων Πόρων Groupdocs Java](/viewer/java/export-conversion/render-docx-html-embedded-resources-groupdocs-java/)
+- [Μετατροπή Docx σε Html Groupdocs Viewer Java](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [Groupdocs Viewer Java Ανταποκρινόμενη Απόδοση Html](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)

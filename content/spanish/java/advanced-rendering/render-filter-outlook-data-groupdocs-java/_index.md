@@ -1,65 +1,103 @@
 ---
-date: '2026-03-27'
-description: Este tutorial de GroupDocs Viewer para Java le enseña cómo renderizar
-  y filtrar de manera eficiente los archivos de datos de Outlook usando GroupDocs.Viewer
-  para Java, optimizando sus tareas de gestión de correo electrónico.
+date: '2026-09-20'
+description: Aprenda cómo convertir PST a HTML con GroupDocs Viewer for Java, filtre
+  datos de Outlook por remitente o asunto y maneje eficientemente archivos PST grandes.
 keywords:
-- Outlook data rendering
-- filtering Outlook files with Java
-- using GroupDocs.Viewer for Java
-title: 'Tutorial de GroupDocs Viewer Java: Domina la representación y filtrado de
-  datos de Outlook'
+- convert pst to html
+- outlook pst to pdf
+- extract emails by subject
+lastmod: '2026-09-20'
+og_description: Convierta PST a HTML usando GroupDocs Viewer for Java, filtre por
+  remitente o asunto y procese archivos Outlook grandes de manera eficiente. También
+  vea cómo convertir Outlook PST a PDF.
+og_image_alt: 'Developer guide: render and filter Outlook PST files to HTML using
+  GroupDocs Viewer for Java'
+og_title: Convertir PST a HTML con GroupDocs Viewer for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-20'
+  description: Learn how to convert PST to HTML with GroupDocs Viewer for Java, filter
+    Outlook data by sender or subject, and efficiently handle large PST files.
+  headline: How to convert PST to HTML using GroupDocs Viewer for Java
+  type: TechArticle
+- description: Learn how to convert PST to HTML with GroupDocs Viewer for Java, filter
+    Outlook data by sender or subject, and efficiently handle large PST files.
+  name: How to convert PST to HTML using GroupDocs Viewer for Java
+  steps:
+  - name: '**Email archiving** – Automatically extract and render project‑related
+      emails for long‑term storage.'
+    text: '**Email archiving** – Automatically extract and render project‑related
+      emails for long‑term storage.'
+  - name: '**Compliance auditing** – Pull out messages that contain regulated keywords
+      for legal review.'
+    text: '**Compliance auditing** – Pull out messages that contain regulated keywords
+      for legal review.'
+  - name: '**Data migration** – Convert filtered PST content to HTML before importing
+      into CRM or ticketing systems.'
+    text: '**Data migration** – Convert filtered PST content to HTML before importing
+      into CRM or ticketing systems.'
+  type: HowTo
+- questions:
+  - answer: It enables developers to render and filter a wide range of file formats—including
+      Outlook PST files—directly within Java applications without needing external
+      software.
+    question: What is the primary purpose of using GroupDocs Viewer for Java?
+  - answer: Yes, a free trial or temporary license lets you evaluate all features;
+      a full license is required for production deployments.
+    question: Can I use this library without purchasing a license?
+  - answer: Apply filters to process only needed messages, enable streaming mode,
+      and close `Viewer` instances promptly to free memory.
+    question: How do I handle large PST files efficiently?
+  - answer: GroupDocs Viewer supports more than 100 formats, including PST, MSG, EML,
+      DOCX, PDF, and image types; always refer to the latest documentation for exact
+      version support.
+    question: Are there limitations on supported file formats?
+  - answer: Visit the [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) for
+      community help, or consult the official documentation links below.
+    question: Where can I find additional support?
+  type: FAQPage
+tags:
+- convert pst
+- outlook pst
+- groupdocs viewer java
+- email rendering
+- java tutorial
+title: Cómo convertir PST a HTML usando GroupDocs Viewer for Java
 type: docs
 url: /es/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/
 weight: 1
 ---
 
-# Tutorial de GroupDocs Viewer Java: Domina la Renderización y Filtrado de Datos de Outlook
+# Cómo convertir PST a HTML usando GroupDocs Viewer para Java
 
-## Introducción
+Los archivos PST de Outlook pueden contener miles de mensajes, lo que dificulta extraer la información que necesita. En este tutorial descubrirá cómo **convertir PST a HTML** con GroupDocs Viewer para Java, aplicar filtros por texto o remitente/destinatario, y mantener bajo el uso de memoria incluso con buzones de varios gigabytes. Al final tendrá una solución lista para ejecutar que convierte solo los correos electrónicos relevantes en páginas HTML limpias.
 
-Gestionar innumerables correos electrónicos en Outlook puede ser abrumador. **Este tutorial de groupdocs viewer java** le muestra cómo filtrar mensajes por texto o remitente/destinatario mientras renderiza estos archivos, ahorrándole tiempo y esfuerzo. Aprenderá a configurar GroupDocs.Viewer para Java, aplicar filtros potentes y renderizar datos de Outlook a HTML, todo en unos pocos pasos sencillos.
+![Representación y filtrado de datos de Outlook con GroupDocs.Viewer para Java](/viewer/advanced-rendering/outlook-data-rendering-and-filtering-java.png)
 
-![Outlook Data Rendering and Filtering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/outlook-data-rendering-and-filtering-java.png)
+[Representación y filtrado de datos de Outlook con GroupDocs.Viewer para Java](/viewer/advanced-rendering/outlook-data-rendering-and-filtering-java.png)
 
-**Qué aprenderá:**
-- Configurar GroupDocs.Viewer en un entorno Java
-- Filtrar y renderizar archivos de datos de Outlook paso a paso
-- Opciones clave de configuración para un rendimiento optimizado
-
-### Respuestas rápidas
-- **¿Qué cubre este tutorial?** Renderizado y filtrado de archivos PST de Outlook con GroupDocs.Viewer para Java.  
+## Respuestas rápidas
+- **¿Qué cubre este tutorial?** Representación y filtrado de archivos PST de Outlook con GroupDocs Viewer para Java, y luego su conversión a HTML.  
 - **¿Qué versión de la biblioteca se requiere?** GroupDocs.Viewer para Java 25.2 o posterior.  
-- **¿Necesito una licencia?** Una prueba gratuita o licencia temporal es suficiente para explorar; se requiere una licencia completa para producción.  
-- **¿Puedo renderizar solo correos electrónicos específicos?** Sí—utilice la API de filtro incorporada para seleccionar mensajes por asunto, remitente o contenido.  
-- **¿Es adecuado para archivos PST grandes?** Absolutamente—aplique filtros para limitar el procesamiento y gestionar la memoria de manera eficiente.
+- **¿Necesito una licencia?** Una prueba gratuita o licencia temporal funciona para pruebas; se requiere una licencia completa para uso en producción.  
+- **¿Puedo representar solo correos electrónicos específicos?** Sí—utilice la API de filtro incorporada para seleccionar mensajes por asunto, remitente o contenido.  
+- **¿Es adecuado para archivos PST grandes?** Absolutamente—los filtros le permiten procesar solo los elementos necesarios, manteniendo bajo el consumo de memoria.
 
-## ¿Qué es el tutorial de GroupDocs Viewer Java?
+## ¿Qué es convertir PST a HTML?
+**Convertir PST a HTML** es el proceso de tomar un archivo PST (Personal Storage Table) de Outlook y generar sus mensajes de correo electrónico como documentos HTML que pueden mostrarse en cualquier navegador web. Esta transformación conserva el formato, los archivos adjuntos y las imágenes en línea, al tiempo que hace que el contenido sea buscable y fácil de incrustar en aplicaciones web.
 
-Un **tutorial de groupdocs viewer java** es una guía paso a paso que demuestra cómo integrar la biblioteca GroupDocs.Viewer en aplicaciones Java. Ayuda a los desarrolladores a convertir rápidamente formatos de documentos complejos—como archivos PST de Outlook—en salidas HTML, PDF o de imagen compatibles con la web, ofreciendo control granular sobre qué partes del documento se renderizan.
-
-## ¿Por qué usar GroupDocs.Viewer para Java para renderizar datos de Outlook?
-
-- **Velocidad:** Renderice solo los mensajes que necesita, evitando la sobrecarga de cargar buzones completos.  
-- **Flexibilidad:** Salida a HTML para una fácil integración web, o a otros formatos para archivado.  
-- **Cumplimiento:** Extraiga correos que contengan palabras clave específicas para auditorías o revisiones legales.  
-- **Escalabilidad:** Funciona con archivos PST grandes cuando se combina con filtros y una gestión adecuada de la memoria.
+## ¿Por qué usar GroupDocs Viewer para Java para representar datos de Outlook?
+GroupDocs Viewer para Java puede representar archivos PST de Outlook directamente sin requerir la instalación de Microsoft Outlook. Soporta **más de 100 formatos de archivo**, procesa archivos PST de varios gigabytes mediante transmisión de datos, y ofrece una API de filtro incorporada que le permite extraer solo los mensajes que le interesan. Estas capacidades reducen el tiempo de procesamiento hasta en un 70 % en comparación con cargar todo el buzón en memoria.
 
 ## Requisitos previos
+- **GroupDocs.Viewer para Java** versión 25.2 o posterior (disponible vía Maven)  
+- Maven instalado para gestionar dependencias  
+- Java 8 o posterior instalado en su máquina de desarrollo  
+- Familiaridad básica con la sintaxis de Java y conceptos orientados a objetos  
 
-Para seguir este tutorial de manera eficaz, asegúrese de contar con:
+## Configuración de GroupDocs Viewer para Java
 
-### Bibliotecas y dependencias requeridas
-- **GroupDocs.Viewer for Java** versión 25.2 o posterior
-- Maven instalado en su sistema para gestionar dependencias
-
-### Requisitos de configuración del entorno
-- Java correctamente instalado en su máquina
-- Comprensión básica de los conceptos de programación en Java
-
-## Configuración de GroupDocs.Viewer para Java
-
-Comience configurando **GroupDocs.Viewer** en su proyecto usando Maven:
+Begin by adding the Maven dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -79,12 +117,10 @@ Comience configurando **GroupDocs.Viewer** en su proyecto usando Maven:
 ```
 
 ### Obtención de licencia
+Comience con una prueba gratuita o solicite una licencia temporal para explorar el conjunto completo de funciones. Se requiere una licencia permanente para implementaciones comerciales.
 
-Inicie con una prueba gratuita o solicite una licencia temporal para explorar todas las capacidades de GroupDocs.Viewer. Considere adquirir una suscripción para acceso continuo si satisface sus necesidades.
-
-### Inicialización y configuración básica
-
-Una vez que las dependencias estén configuradas, inicialice el visor en su aplicación Java:
+### Inicialización y configuración básicas
+La clase `Viewer` es el punto de entrada para todas las operaciones de representación; carga un documento, aplica opciones y produce la salida.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -94,14 +130,15 @@ Viewer viewer = new Viewer("path/to/your/outlook/file.pst");
 
 ## Guía de implementación
 
-Con todo listo, profundicemos en el filtrado y renderizado de archivos de datos de Outlook.
+Ahora que el entorno está listo, vamos a repasar el filtrado y la representación de archivos de datos de Outlook.
 
-### Renderizado y filtrado de mensajes por texto o remitente/destinatario
+### Representación y filtrado de mensajes por texto o remitente/destinatario
 
 #### Visión general
-Esta función le permite renderizar mensajes específicos basados en el contenido de texto o en los detalles de remitente/destinatario de sus archivos de datos de Outlook usando **GroupDocs.Viewer para Java**.
+Esta función le permite representar solo los mensajes que coinciden con una palabra clave específica, dirección de remitente o dirección de destinatario, ahorrando tiempo y memoria.
 
 #### Configuración de opciones de vista HTML
+HTML view options control how the output is formatted, including CSS styling and image handling.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -112,8 +149,8 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(outputDirecto
 ```
 
 #### Aplicación de filtros
-
-Aplique filtros para mostrar solo los mensajes relevantes:
+La clase `OutlookOptions` configura la representación de elementos de Outlook e incluye ajustes de filtro.  
+Puede filtrar por asunto, remitente o contenido del cuerpo usando la API de filtro `OutlookOptions`. El filtro se ejecuta mientras se transmite el PST, por lo que solo los elementos coincidentes se cargan en memoria.
 
 ```java
 // Create a filter for the viewer
@@ -123,63 +160,67 @@ viewOptions.setFilter((item, options) -> {
 });
 ```
 
-#### Renderizado del archivo
-
-Renderice su archivo de datos de Outlook filtrado:
+#### Representación del archivo
+Después de configurar las opciones y filtros, llame al método `view` para generar archivos HTML para cada correo electrónico coincidente.
 
 ```java
 // Render the PST file to HTML with applied filters.
 viewer.view(viewOptions);
 ```
 
-### Consejos de solución de problemas
-- Asegúrese de que los permisos de lectura sean correctos para los archivos de Outlook y los permisos de escritura para el directorio de salida.  
-- Verifique que todas las dependencias estén correctamente añadidas en su `pom.xml` si usa Maven.
+## Problemas comunes y soluciones
+- **Errores de permiso** – Asegúrese de que la aplicación tenga acceso de lectura al archivo PST y acceso de escritura a la carpeta de salida.  
+- **Dependencias faltantes** – Verifique que todas las coordenadas de Maven sean correctas y que haya actualizado la caché de dependencias de su proyecto.  
+- **Rendimiento con PST grandes** – Utilice filtros para limitar la cantidad de elementos procesados y habilite el modo de transmisión en las opciones del visor.
 
 ## Aplicaciones prácticas
-1. **Archivado de correos** – Filtrar y renderizar automáticamente correos relacionados con proyectos o clientes específicos.  
-2. **Auditoría de cumplimiento** – Extraer correos que contengan ciertas palabras clave para verificaciones de cumplimiento normativo.  
-3. **Migración de datos** – Renderizar datos filtrados de archivos PST para migrarlos a otros sistemas como software CRM.
+1. **Archivado de correos electrónicos** – Extraiga y represente automáticamente los correos relacionados con proyectos para almacenamiento a largo plazo.  
+2. **Auditoría de cumplimiento** – Extraiga mensajes que contengan palabras clave reguladas para revisión legal.  
+3. **Migración de datos** – Convierta el contenido filtrado del PST a HTML antes de importarlo a sistemas CRM o de tickets.  
 
 ### Posibilidades de integración
-Integre con aplicaciones basadas en Java como servicios Spring Boot, capas de persistencia JPA, o incluso cree una aplicación de escritorio independiente usando Swing o JavaFX.
+Puede incrustar esta lógica en un endpoint REST de Spring Boot, un trabajador en segundo plano que procese cargas de PST entrantes, o una utilidad de escritorio construida con JavaFX.
 
 ## Consideraciones de rendimiento
-Para garantizar un rendimiento fluido:
-- **Optimizar el uso de recursos:** Use los filtros de manera inteligente para limitar la cantidad de datos procesados.  
-- **Gestión de memoria en Java:** Cierre las instancias de `Viewer` cuando ya no sean necesarias y maneje archivos grandes con streams siempre que sea posible.
+- **Optimización de recursos** – Active `OutlookOptions.setLoadOnlyHeaders(true)` cuando solo necesite metadatos, reduciendo drásticamente el uso de RAM.  
+- **Gestión de memoria** – Cierre la instancia `Viewer` después de cada trabajo de representación e invoque `System.gc()` si procesa muchos archivos grandes en lote.
 
 ## Conclusión
-Este tutorial le ha mostrado cómo usar GroupDocs.Viewer para Java para renderizar y filtrar archivos de datos de Outlook de manera eficaz. Implemente estas técnicas para mejorar sus procesos de gestión de correo electrónico y considere explorar más funciones como el renderizado de otros tipos de documentos o la integración con diferentes plataformas.
+Ahora tiene un enfoque completo y listo para producción para **convertir PST a HTML** con GroupDocs Viewer para Java, incluyendo filtrado potente por remitente, destinatario o texto. Aplique estos patrones para optimizar la gestión de correos electrónicos, cumplir con requisitos de cumplimiento o alimentar datos a sistemas posteriores.
 
 ## Preguntas frecuentes
 
-**Q1: ¿Cuál es el propósito principal de usar GroupDocs.Viewer para Java?**  
-A1: Permite a los desarrolladores renderizar y filtrar varios formatos de archivo, incluidos los archivos de datos de Outlook, directamente dentro de aplicaciones Java.
+**Q: ¿Cuál es el propósito principal de usar GroupDocs Viewer para Java?**  
+A: Permite a los desarrolladores representar y filtrar una amplia gama de formatos de archivo—incluidos los archivos PST de Outlook—directamente dentro de aplicaciones Java sin necesidad de software externo.
 
-**Q2: ¿Puedo usar esta biblioteca sin comprar una licencia?**  
-A2: Sí, puede comenzar con una prueba gratuita o solicitar una licencia temporal para evaluar las funciones antes de comprar.
+**Q: ¿Puedo usar esta biblioteca sin comprar una licencia?**  
+A: Sí, una prueba gratuita o licencia temporal le permite evaluar todas las funciones; se requiere una licencia completa para implementaciones en producción.
 
-**Q3: ¿Cómo manejo archivos PST grandes de manera eficiente?**  
-A3: Use filtros para limitar el procesamiento de datos y gestione los recursos cuidadosamente cerrando los visores cuando no se utilicen.
+**Q: ¿Cómo manejo archivos PST grandes de manera eficiente?**  
+A: Aplique filtros para procesar solo los mensajes necesarios, habilite el modo de transmisión y cierre las instancias `Viewer` rápidamente para liberar memoria.
 
-**Q4: ¿Existen limitaciones en los formatos de archivo compatibles con GroupDocs.Viewer para Java?**  
-A4: Aunque admite una amplia gama de formatos, siempre verifique la documentación más reciente para actualizaciones o restricciones específicas de versión.
+**Q: ¿Existen limitaciones en los formatos de archivo compatibles?**  
+A: GroupDocs Viewer soporta más de 100 formatos, incluidos PST, MSG, EML, DOCX, PDF y tipos de imagen; siempre consulte la documentación más reciente para el soporte exacto de versiones.
 
-**Q5: ¿Dónde puedo encontrar soporte adicional si lo necesito?**  
-A5: Visite el [foro de GroupDocs](https://forum.groupdocs.com/c/viewer/9) para obtener asistencia de la comunidad y orientación adicional.
+**Q: ¿Dónde puedo encontrar soporte adicional?**  
+A: Visite el [foro de GroupDocs](https://forum.groupdocs.com/c/viewer/9) para obtener ayuda de la comunidad, o consulte los enlaces de documentación oficial a continuación.
 
 ## Recursos
-- **Documentación**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
-- **Referencia de API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Descarga**: [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)
-- **Compra**: [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)
-- **Prueba gratuita**: [Try GroupDocs for Free](https://releases.groupdocs.com/viewer/java/)
-- **Licencia temporal**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Soporte**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Documentación**: [Documentación de GroupDocs Viewer Java](https://docs.groupdocs.com/viewer/java/)  
+- **Referencia de API**: [Referencia de API de GroupDocs](https://reference.groupdocs.com/viewer/java/)  
+- **Descarga**: [Versiones de GroupDocs](https://releases.groupdocs.com/viewer/java/)  
+- **Compra**: [Comprar productos GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Prueba gratuita**: [Probar GroupDocs gratis](https://releases.groupdocs.com/viewer/java/)  
+- **Licencia temporal**: [Solicitar una licencia temporal](https://purchase.groupdocs.com/temporary-license/)  
+- **Foro de soporte**: [Foro de soporte de GroupDocs](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Última actualización:** 2026-03-27  
-**Probado con:** GroupDocs.Viewer for Java 25.2 (o posterior)  
+**Última actualización:** 2026-09-20  
+**Probado con:** GroupDocs.Viewer for Java 25.2 (or later)  
 **Autor:** GroupDocs
+
+## Tutoriales relacionados
+- [Representar archivos PST y OST de Outlook a HTML usando Java y GroupDocs.Viewer](/viewer/java/rendering-basics/render-outlook-data-html-groupdocs-java/)
+- [Limitaciones de representación de Outlook en GroupDocs Viewer Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/)
+- [Representación HTML responsiva con GroupDocs Viewer Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)

@@ -1,64 +1,105 @@
 ---
-date: '2026-03-27'
-description: Tento tutoriál GroupDocs Viewer pro Javu vás naučí, jak efektivně vykreslovat
-  a filtrovat soubory Outlook pomocí GroupDocs.Viewer pro Javu, což zjednoduší vaše
-  úkoly správy e‑mailů.
+date: '2026-09-20'
+description: Zjistěte, jak převést PST na HTML pomocí GroupDocs Viewer for Java, filtrovat
+  data Outlook podle odesílatele nebo předmětu a efektivně zpracovávat velké soubory
+  PST.
 keywords:
-- Outlook data rendering
-- filtering Outlook files with Java
-- using GroupDocs.Viewer for Java
-title: 'Návod GroupDocs Viewer Java: Ovládněte renderování a filtrování dat Outlooku'
+- convert pst to html
+- outlook pst to pdf
+- extract emails by subject
+lastmod: '2026-09-20'
+og_description: Převod PST na HTML pomocí GroupDocs Viewer for Java, filtrujte podle
+  odesílatele nebo předmětu a efektivně zpracovávejte velké soubory Outlook. Také
+  se podívejte, jak převést Outlook PST na PDF.
+og_image_alt: 'Developer guide: render and filter Outlook PST files to HTML using
+  GroupDocs Viewer for Java'
+og_title: Převod PST na HTML s GroupDocs Viewer for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-20'
+  description: Learn how to convert PST to HTML with GroupDocs Viewer for Java, filter
+    Outlook data by sender or subject, and efficiently handle large PST files.
+  headline: How to convert PST to HTML using GroupDocs Viewer for Java
+  type: TechArticle
+- description: Learn how to convert PST to HTML with GroupDocs Viewer for Java, filter
+    Outlook data by sender or subject, and efficiently handle large PST files.
+  name: How to convert PST to HTML using GroupDocs Viewer for Java
+  steps:
+  - name: '**Email archiving** – Automatically extract and render project‑related
+      emails for long‑term storage.'
+    text: '**Email archiving** – Automatically extract and render project‑related
+      emails for long‑term storage.'
+  - name: '**Compliance auditing** – Pull out messages that contain regulated keywords
+      for legal review.'
+    text: '**Compliance auditing** – Pull out messages that contain regulated keywords
+      for legal review.'
+  - name: '**Data migration** – Convert filtered PST content to HTML before importing
+      into CRM or ticketing systems.'
+    text: '**Data migration** – Convert filtered PST content to HTML before importing
+      into CRM or ticketing systems.'
+  type: HowTo
+- questions:
+  - answer: It enables developers to render and filter a wide range of file formats—including
+      Outlook PST files—directly within Java applications without needing external
+      software.
+    question: What is the primary purpose of using GroupDocs Viewer for Java?
+  - answer: Yes, a free trial or temporary license lets you evaluate all features;
+      a full license is required for production deployments.
+    question: Can I use this library without purchasing a license?
+  - answer: Apply filters to process only needed messages, enable streaming mode,
+      and close `Viewer` instances promptly to free memory.
+    question: How do I handle large PST files efficiently?
+  - answer: GroupDocs Viewer supports more than 100 formats, including PST, MSG, EML,
+      DOCX, PDF, and image types; always refer to the latest documentation for exact
+      version support.
+    question: Are there limitations on supported file formats?
+  - answer: Visit the [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) for
+      community help, or consult the official documentation links below.
+    question: Where can I find additional support?
+  type: FAQPage
+tags:
+- convert pst
+- outlook pst
+- groupdocs viewer java
+- email rendering
+- java tutorial
+title: Jak převést PST na HTML pomocí GroupDocs Viewer for Java
 type: docs
 url: /cs/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/
 weight: 1
 ---
 
-# GroupDocs Viewer Java Tutorial: Ovládněte vykreslování a filtrování dat Outlooku
+# Jak převést PST na HTML pomocí GroupDocs Viewer pro Java
 
-## Úvod
+Soubory Outlook PST mohou obsahovat tisíce zpráv, což ztěžuje získání potřebných informací. V tomto tutoriálu se dozvíte, jak **převést PST na HTML** pomocí GroupDocs Viewer pro Java, použít filtry podle textu nebo odesílatele/příjemce a udržet nízkou spotřebu paměti i u poštovních schránek o velikosti několika gigabajtů. Na konci budete mít připravené řešení, které převádí pouze relevantní e‑maily na čisté HTML stránky.
 
-Správa nesčetných e‑mailů v Outlooku může být náročná. **This groupdocs viewer java tutorial** vám ukáže, jak filtrovat zprávy podle textu nebo odesílatele/příjemce při vykreslování těchto souborů, čímž ušetříte čas i úsilí. Naučíte se nastavit GroupDocs.Viewer pro Java, použít výkonné filtry a vykreslit data Outlooku do HTML — vše během několika jednoduchých kroků.
+![Vykreslování a filtrování Outlook dat pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/outlook-data-rendering-and-filtering-java.png)
 
-![Vykreslování a filtrování dat Outlooku pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/outlook-data-rendering-and-filtering-java.png)
+[Outlook Data Rendering and Filtering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/outlook-data-rendering-and-filtering-java.png)
 
-**Co se naučíte:**
-- Nastavení GroupDocs.Viewer v prostředí Java
-- Filtrování a vykreslování souborů s daty Outlooku krok za krokem
-- Klíčové konfigurační možnosti pro optimalizovaný výkon
+## Rychlé odpovědi
+- **Co tento tutoriál pokrývá?** Vykreslování a filtrování souborů Outlook PST pomocí GroupDocs Viewer pro Java a následné převádění do HTML.  
+- **Která verze knihovny je vyžadována?** GroupDocs.Viewer pro Java 25.2 nebo novější.  
+- **Potřebuji licenci?** Bezplatná zkušební verze nebo dočasná licence stačí pro testování; pro produkční použití je vyžadována plná licence.  
+- **Mohu vykreslovat jen konkrétní e‑maily?** Ano — použijte vestavěné API filtrů pro výběr zpráv podle předmětu, odesílatele nebo obsahu.  
+- **Je to vhodné pro velké soubory PST?** Rozhodně — filtry vám umožní zpracovat jen potřebné položky a udržet nízkou spotřebu paměti.
 
-### Rychlé odpovědi
-- **Co tento tutoriál pokrývá?** Vykreslování a filtrování souborů Outlook PST pomocí GroupDocs.Viewer pro Java.  
-- **Jaká verze knihovny je vyžadována?** GroupDocs.Viewer pro Java 25.2 nebo novější.  
-- **Potřebuji licenci?** Prozkoumání stačí s bezplatnou zkušební nebo dočasnou licencí; pro produkční nasazení je vyžadována plná licence.  
-- **Mohu vykreslit jen konkrétní e‑maily?** Ano — použijte vestavěné API filtrů k výběru zpráv podle předmětu, odesílatele nebo obsahu.  
-- **Je to vhodné pro velké PST soubory?** Rozhodně — použijte filtry k omezení zpracování a efektivnímu řízení paměti.
+## Co je převod PST na HTML?
+**Převod PST na HTML** je proces převzetí souboru Outlook PST (Personal Storage Table) a výstupu jeho e‑mailových zpráv jako HTML dokumentů, které lze zobrazit v libovolném webovém prohlížeči. Tato transformace zachovává formátování, přílohy a vložené obrázky a zároveň umožňuje prohledávat obsah a snadno jej vložit do webových aplikací.
 
-## Co je groupdocs viewer java tutorial?
+## Proč použít GroupDocs Viewer pro Java k vykreslení Outlook dat?
+GroupDocs Viewer pro Java dokáže přímo vykreslovat soubory Outlook PST bez nutnosti instalace Microsoft Outlook. Podporuje **více než 100 formátů souborů**, zpracovává soubory PST až do několika gigabajtů pomocí streamování dat a poskytuje vestavěné API filtrů, které vám umožní extrahovat jen zprávy, o které máte zájem. Tyto možnosti snižují dobu zpracování až o 70 % ve srovnání s načítáním celé poštovní schránky do paměti.
 
-**groupdocs viewer java tutorial** je krok‑za‑krokem průvodce, který ukazuje, jak integrovat knihovnu GroupDocs.Viewer do Java aplikací. Pomáhá vývojářům rychle převádět složité formáty dokumentů — například soubory Outlook PST — na web‑přátelské výstupy v HTML, PDF nebo obrázcích, přičemž poskytuje podrobnou kontrolu nad tím, které části dokumentu jsou vykresleny.
+## Požadavky
 
-## Proč použít GroupDocs.Viewer pro Java k vykreslení dat Outlooku?
+- **GroupDocs.Viewer pro Java** verze 25.2 nebo novější (k dispozici přes Maven)  
+- Maven nainstalovaný pro správu závislostí  
+- Java 8 nebo novější nainstalované na vašem vývojovém počítači  
+- Základní znalost syntaxe Java a objektově orientovaných konceptů  
 
-- **Rychlost:** Vykreslete pouze zprávy, které potřebujete, a vyhněte se zátěži načítání celých poštovních schránek.  
-- **Flexibilita:** Výstup do HTML pro snadnou integraci na web, nebo do jiných formátů pro archivaci.  
-- **Soulad:** Extrahujte e‑maily obsahující konkrétní klíčová slova pro audit nebo právní revizi.  
-- **Škálovatelnost:** Funguje s velkými PST soubory při kombinaci filtrů a správného nakládání s pamětí.
+## Nastavení GroupDocs Viewer pro Java
 
-## Předpoklady
-
-Abyste mohli tento tutoriál úspěšně sledovat, ujistěte se, že máte:
-
-### Požadované knihovny a závislosti
-- **GroupDocs.Viewer pro Java** verze 25.2 nebo novější
-- Maven nainstalovaný ve vašem systému pro správu závislostí
-
-### Požadavky na nastavení prostředí
-- Java správně nainstalovaná na vašem počítači
-- Základní pochopení konceptů programování v Javě
-
-## Nastavení GroupDocs.Viewer pro Java
-
-Začněte nastavením **GroupDocs.Viewer** ve vašem projektu pomocí Maven:
+Začněte přidáním Maven závislosti do vašeho `pom.xml`:
 
 ```xml
 <repositories>
@@ -78,12 +119,10 @@ Začněte nastavením **GroupDocs.Viewer** ve vašem projektu pomocí Maven:
 ```
 
 ### Získání licence
-
-Začněte s bezplatnou zkušební verzí nebo požádejte o dočasnou licenci pro prozkoumání plných možností GroupDocs.Viewer. Zvažte zakoupení předplatného pro trvalý přístup, pokud vám vyhovuje.
+Začněte s bezplatnou zkušební verzí nebo požádejte o dočasnou licenci pro vyzkoušení kompletní sady funkcí. Pro komerční nasazení je vyžadována trvalá licence.
 
 ### Základní inicializace a nastavení
-
-Po nastavení závislostí inicializujte viewer ve vaší Java aplikaci:
+Třída `Viewer` je vstupním bodem pro všechny operace vykreslování; načte dokument, použije možnosti a vytvoří výstup.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -93,14 +132,15 @@ Viewer viewer = new Viewer("path/to/your/outlook/file.pst");
 
 ## Průvodce implementací
 
-Po nastavení všeho se ponořme do filtrování a vykreslování souborů s daty Outlooku.
+Nyní, když je prostředí připravené, projděme filtrování a vykreslování souborů s Outlook daty.
 
 ### Vykreslování a filtrování zpráv podle textu nebo odesílatele/příjemce
 
 #### Přehled
-Tato funkce vám umožňuje vykreslit konkrétní zprávy na základě textového obsahu nebo údajů o odesílateli/příjemci z vašich souborů s daty Outlooku pomocí **GroupDocs.Viewer pro Java**.
+Tato funkce vám umožní vykreslit jen zprávy, které odpovídají konkrétnímu klíčovému slovu, adrese odesílatele nebo příjemce, čímž šetří čas i paměť.
 
 #### Nastavení možností HTML zobrazení
+Možnosti HTML zobrazení řídí, jak je výstup formátován, včetně stylování CSS a zpracování obrázků.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -110,9 +150,9 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(outputDirectory.resolve("output.html").toString());
 ```
 
-#### Aplikace filtrů
-
-Použijte filtry k zobrazení pouze relevantních zpráv:
+#### Použití filtrů
+Třída `OutlookOptions` konfiguruje vykreslování Outlook položek a zahrnuje nastavení filtrů.  
+Můžete filtrovat podle předmětu, odesílatele nebo obsahu těla zprávy pomocí API filtrů `OutlookOptions`. Filtr běží během streamování PST, takže do paměti jsou načteny jen odpovídající položky.
 
 ```java
 // Create a filter for the viewer
@@ -123,62 +163,67 @@ viewOptions.setFilter((item, options) -> {
 ```
 
 #### Vykreslení souboru
-
-Vykreslete váš filtrovaný soubor s daty Outlooku:
+Po nastavení možností a filtrů zavolejte metodu `view`, která vygeneruje HTML soubory pro každý odpovídající e‑mail.
 
 ```java
 // Render the PST file to HTML with applied filters.
 viewer.view(viewOptions);
 ```
 
-### Tipy pro řešení problémů
-- Zajistěte správná oprávnění pro čtení souborů Outlook a oprávnění pro zápis do výstupního adresáře.  
-- Ověřte, že jsou všechny závislosti správně přidány ve vašem `pom.xml`, pokud používáte Maven.
+## Časté problémy a řešení
+- **Chyby oprávnění** – Ujistěte se, že aplikace má právo číst soubor PST a zapisovat do výstupní složky.  
+- **Chybějící závislosti** – Zkontrolujte, že všechny Maven souřadnice jsou správné a že jste obnovili cache závislostí projektu.  
+- **Výkon při velkých PST** – Použijte filtry k omezení počtu zpracovávaných položek a povolte režim streamování v možnostech vieweru.
 
 ## Praktické aplikace
-1. **Archivace e‑mailů** — automaticky filtrovat a vykreslovat e‑maily související s konkrétními projekty nebo klienty.  
-2. **Audit souladu** — extrahovat e‑maily obsahující určité klíčové slovo pro kontrolu souladu s předpisy.  
-3. **Migrace dat** — vykreslit filtrovaná data ze souborů PST pro migraci do jiných systémů, jako je CRM software.
+1. **Archivace e‑mailů** – Automaticky extrahovat a vykreslovat e‑maily související s projektem pro dlouhodobé ukládání.  
+2. **Audit souladu** – Vyjmout zprávy obsahující regulované klíčové slovo pro právní revizi.  
+3. **Migrace dat** – Před importem do CRM nebo ticketovacích systémů převést filtrovaný obsah PST na HTML.
 
 ### Možnosti integrace
-Integrujte s aplikacemi založenými na Javě, jako jsou služby Spring Boot, perzistenční vrstvy založené na JPA, nebo dokonce vytvořte samostatnou desktopovou aplikaci pomocí Swing nebo JavaFX.
+Tuto logiku můžete vložit do Spring Boot REST endpointu, background workeru, který zpracovává nahrané PST soubory, nebo do desktopové utility postavené na JavaFX.
 
 ## Úvahy o výkonu
-Pro zajištění plynulého výkonu:
-- **Optimalizace využití zdrojů:** Rozumně používejte filtry k omezení množství zpracovávaných dat.  
-- **Správa paměti v Javě:** Uzavřete instance `Viewer`, když již nejsou potřeba, a pokud možno pracujte s velkými soubory pomocí streamů.
+- **Optimalizace zdrojů** – Aktivujte `OutlookOptions.setLoadOnlyHeaders(true)`, pokud potřebujete jen metadata, což dramaticky snižuje využití RAM.  
+- **Správa paměti** – Po každém vykreslovacím úkolu zavřete instanci `Viewer` a v případě zpracování mnoha velkých souborů najednou zavolejte `System.gc()`.
 
 ## Závěr
-Tento tutoriál vám ukázal, jak použít GroupDocs.Viewer pro Java k efektivnímu vykreslování a filtrování souborů s daty Outlooku. Implementujte tyto techniky pro zlepšení vašich procesů správy e‑mailů a zvažte prozkoumání dalších funkcí, jako je vykreslování jiných typů dokumentů nebo integrace s různými platformami.
+Nyní máte kompletní, připravený přístup pro **převod PST na HTML** pomocí GroupDocs Viewer pro Java, včetně výkonného filtrování podle odesílatele, příjemce nebo textu. Použijte tyto vzory ke zjednodušení zpracování e‑mailů, splnění požadavků na soulad nebo předávání dat do následných systémů.
 
 ## Často kladené otázky
 
-**Q1: Jaký je hlavní účel používání GroupDocs.Viewer pro Java?**  
-A1: Umožňuje vývojářům vykreslovat a filtrovat různé formáty souborů, včetně souborů s daty Outlooku, přímo v Java aplikacích.
+**Q: Jaký je hlavní účel používání GroupDocs Viewer pro Java?**  
+A: Umožňuje vývojářům přímo v Java aplikacích vykreslovat a filtrovat širokou škálu formátů souborů — včetně souborů Outlook PST — bez potřeby externího softwaru.
 
-**Q2: Mohu tuto knihovnu používat bez zakoupení licence?**  
-A2: Ano, můžete začít s bezplatnou zkušební verzí nebo požádat o dočasnou licenci pro vyhodnocení funkcí před zakoupením.
+**Q: Mohu tuto knihovnu používat bez zakoupení licence?**  
+A: Ano, bezplatná zkušební verze nebo dočasná licence vám umožní vyzkoušet všechny funkce; pro produkční nasazení je vyžadována plná licence.
 
-**Q3: Jak efektivně zacházet s velkými PST soubory?**  
-A3: Používejte filtry k omezení zpracování dat a pečlivě spravujte zdroje tím, že uzavřete viewery, když nejsou používány.
+**Q: Jak efektivně zacházet s velkými soubory PST?**  
+A: Použijte filtry k zpracování jen potřebných zpráv, povolte režim streamování a rychle uzavřete instance `Viewer`, aby se uvolnila paměť.
 
-**Q4: Existují nějaká omezení formátů souborů podporovaných GroupDocs.Viewer pro Java?**  
-A4: I když podporuje širokou škálu formátů, vždy si ověřte nejnovější dokumentaci pro aktualizace nebo konkrétní omezení verzí.
+**Q: Existují omezení podporovaných formátů souborů?**  
+A: GroupDocs Viewer podporuje více než 100 formátů, včetně PST, MSG, EML, DOCX, PDF a typů obrázků; vždy se podívejte do nejnovější dokumentace pro přesnou podporu verzí.
 
-**Q5: Kde mohu najít další podporu, pokud ji potřebuji?**  
-A5: Navštivte [GroupDocs fórum](https://forum.groupdocs.com/c/viewer/9) pro komunitní pomoc a další pokyny.
+**Q: Kde mohu najít další podporu?**  
+A: Navštivte [GroupDocs fórum](https://forum.groupdocs.com/c/viewer/9) pro komunitní pomoc nebo si prostudujte oficiální dokumentační odkazy níže.
 
 ## Zdroje
-- **Dokumentace**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
-- **Reference API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Stáhnout**: [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)
-- **Nákup**: [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)
-- **Bezplatná zkušební verze**: [Try GroupDocs for Free](https://releases.groupdocs.com/viewer/java/)
-- **Dočasná licence**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Podpora**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentace**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Reference API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Stáhnout**: [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)  
+- **Koupit**: [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)  
+- **Bezplatná zkušební verze**: [Try GroupDocs for Free](https://releases.groupdocs.com/viewer/java/)  
+- **Dočasná licence**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Fórum podpory**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Poslední aktualizace:** 2026-03-27  
-**Testováno s:** GroupDocs.Viewer pro Java 25.2 (nebo novější)  
+**Poslední aktualizace:** 2026-09-20  
+**Testováno s:** GroupDocs.Viewer pro Java 25.2 (or later)  
 **Autor:** GroupDocs
+
+## Související tutoriály
+
+- [Vykreslení souborů Outlook PST a OST do HTML pomocí Java a GroupDocs.Viewer](/viewer/java/rendering-basics/render-outlook-data-html-groupdocs-java/)
+- [Omezení vykreslování Outlook v GroupDocs Viewer Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/)
+- [Responzivní HTML vykreslování v GroupDocs Viewer Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
