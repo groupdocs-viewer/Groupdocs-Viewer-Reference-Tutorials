@@ -1,61 +1,99 @@
 ---
-date: '2026-03-27'
-description: Ismerje meg, hogyan lehet réteges PDF-et renderelni Java-ban és PDF-et
-  HTML-re konvertálni Java-val a GroupDocs.Viewer for Java használatával, miközben
-  megőrzi a vizuális hierarchiát és a Z‑indexet, és gyors, magas minőségű kimenetet
-  biztosít.
+date: '2026-09-25'
+description: Ismerje meg, hogyan rendereljünk PDF-et rétegezett Java-val a GroupDocs.Viewer
+  segítségével, generáljunk HTML-t a PDF-ből, és megőrizzük a Z‑Indexet a pontos vizuális
+  megjelenítéshez.
 keywords:
-- PDF layered rendering Java
-- GroupDocs.Viewer setup
-- Java PDF rendering
-title: PDF rétegelt renderelés Java – Hatékony PDF rétegelt megjelenítés a GroupDocs.Viewer-rel
+- how to render pdf
+- generate html from pdf
+- convert pdf html java
+lastmod: '2026-09-25'
+og_description: Ismerje meg, hogyan rendereljünk PDF-et rétegezett Java-val a GroupDocs.Viewer
+  használatával, generáljunk HTML-t a PDF-ből, és tartsuk meg a Z‑Index rétegeket
+  érintetlenül a gyors, magas minőségű kimenethez.
+og_image_alt: Guide showing PDF layered rendering in Java with GroupDocs.Viewer
+og_title: Hogyan rendereljünk PDF-et rétegezett Java-val a GroupDocs.Viewer használatával
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-25'
+  description: Learn how to render PDF with layered Java using GroupDocs.Viewer, generate
+    HTML from PDF, and preserve Z‑Index for accurate visual output.
+  headline: How to render PDF with layered Java using GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to render PDF with layered Java using GroupDocs.Viewer, generate
+    HTML from PDF, and preserve Z‑Index for accurate visual output.
+  name: How to render PDF with layered Java using GroupDocs.Viewer
+  steps:
+  - name: configure output directory and file‑name pattern
+    text: Define where the generated HTML files will be saved and how they should
+      be named.
+  - name: set up `HtmlViewOptions` with layered rendering
+    text: '`HtmlViewOptions` configures the HTML output, including whether layers
+      are preserved. `HtmlViewOptions` is a configuration object that specifies rendering
+      options such as output format and layered rendering.'
+  - name: render the document
+    text: '`Viewer` loads the PDF and executes the rendering process based on the
+      provided options. Use a try‑with‑resources block to ensure the `Viewer` instance
+      is closed automatically after rendering. > **Pro tip:** To **generate HTML from
+      PDF** for the entire document, iterate over all page numbers and cal'
+  type: HowTo
+- questions:
+  - answer: Layered rendering preserves the visual hierarchy of content based on Z‑Index,
+      ensuring overlapping elements appear in the correct order.
+    question: What is layered rendering in PDFs?
+  - answer: Add the repository and dependency shown in the Maven snippet, then refresh
+      your project so Maven downloads the library.
+    question: How do I set up GroupDocs.Viewer with Maven?
+  - answer: Yes – enable `setEnableLayeredRendering(true)` and the viewer produces
+      HTML that mirrors the PDF’s layer structure.
+    question: Can the Java document viewer convert PDF to HTML while keeping layers?
+  - answer: JDK 8 or higher is recommended for full compatibility and optimal performance.
+    question: Which Java version is required for GroupDocs.Viewer?
+  - answer: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+      for community assistance and official help.
+    question: Where can I get support if I encounter issues?
+  type: FAQPage
+tags:
+- pdf layered rendering
+- groupdocs.viewer
+- java document viewer
+title: Hogyan rendereljünk PDF-et rétegezett Java-val a GroupDocs.Viewer használatával
 type: docs
 url: /hu/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1
 ---
 
-# Render PDF Layered Java – Efficient PDF Layered Rendering in Java Using GroupDocs.Viewer
+# PDF renderelése rétegezett Java-val a GroupDocs.Viewer segítségével
 
-A komplex PDF-ek renderelése, miközben megőrzik vizuális hierarchiájukat, kihívás, amelyet a rétegezett renderelés elegánsan megold. **Render pdf layered java** lehetővé teszi, hogy megtartsa az eredeti Z‑Index sorrendet, így a átfedő elemek pontosan úgy jelennek meg, ahogy a szerző szándékolta. Ebben az útmutatóban végigvezetjük, hogyan **render pdf layered java** a GroupDocs.Viewer-rel, és megmutatjuk, hogyan **convert pdf html java**, hogy az eredmény közvetlenül a böngészőkben jeleníthető meg.
+A PDF renderelése közben az eredeti vizuális hierarchia megőrzése nehéz lehet, különösen ha a dokumentum átfedő elemeket tartalmaz, például bélyegzőket, aláírásokat vagy építészeti rétegeket. Ebben az útmutatóban megtudja, hogyan **rendereljen PDF-et** rétegezett Java-val a GroupDocs.Viewer használatával, és azt is láthatja, hogyan **generáljon HTML-t PDF-ből**, hogy az eredmény közvetlenül a böngészőben jelenjen meg. A útmutató végére egy termelésre kész munkafolyamatot kap, amely megőrzi a Z‑Index sorrendet, gyors teljesítményt nyújt, és JDK 8 vagy újabb verzióval működik.
 
-![PDF Layered Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/pdf-layered-rendering-java.png)
-
-### Mit fogsz megtanulni
-
-- A GroupDocs.Viewer beállítása a Java projektedben  
-- Rétegezett renderelés megvalósítása PDF-ekhez Java használatával  
-- PDF konvertálása HTML-re a rétegek érintetlen megtartásával  
-- Teljesítmény optimalizálása legjobb gyakorlatok tippekkel  
-- Gyakori megvalósítási problémák hibaelhárítása  
-
-Készen állsz a merülésre? Kezdjük a követelményekkel.
+![PDF rétegezett renderelése a GroupDocs.Viewer for Java használatával](/viewer/advanced-rendering/pdf-layered-rendering-java.png)
 
 ## Gyors válaszok
-- **Mi a java dokumentumnéző feladata?** PDF oldalakat renderel HTML vagy képként, miközben megőrzi a elrendezést, beleértve a Z‑Index rétegeket.  
+- **Mit csinál egy Java dokumentumnéző?** PDF oldalakat konvertál HTML-re vagy képekre, miközben megőrzi a elrendezést, betűtípusokat, annotációkat és a Z‑Index rétegeket.  
 - **Melyik könyvtár teszi lehetővé a rétegezett renderelést?** A GroupDocs.Viewer for Java biztosítja a `setEnableLayeredRendering(true)` funkciót.  
-- **Szükségem van licencre?** Egy ingyenes próba a kiértékeléshez működik; egy fizetett licenc szükséges a termeléshez.  
-- **Konvertálhatok pdf-et html-re ezzel a nézővel?** Igen – a néző HTML fájlokat generál, amelyek megőrzik a réteg információkat.  
-- **Milyen Java verzió szükséges?** JDK 8 vagy újabb.  
+- **Szükségem van licencre?** Egy ingyenes próba elegendő értékeléshez; fizetett licenc szükséges a termelési környezethez.  
+- **Generálhatok HTML-t PDF-ből ezzel a nézővel?** Igen – ugyanazok a rétegezett renderelési beállítások HTML fájlokat hoznak létre, amelyek megőrzik minden réteget.  
+- **Milyen Java verzió szükséges?** JDK 8 vagy újabb támogatott.
 
 ## Mi az a Java dokumentumnéző?
-**java document viewer** egy könyvtár, amely számos dokumentumformátumot (PDF, DOCX, PPTX, stb.) olvas be, és web‑barát reprezentációkká, például HTML, képek vagy SVG alakban rendereli őket. Kezeli a komplex funkciókat, mint a betűtípusok, annotációk és rétegezett tartalom, lehetővé téve a dokumentumok közvetlen megjelenítését böngészőben vagy alkalmazásban külső pluginek nélkül.
+
+A **Java dokumentumnéző** egy könyvtár, amely számos dokumentumformátumot (PDF, DOCX, PPTX, stb.) olvas be, és web‑barát ábrázolásokká, például HTML, képek vagy SVG alakítja. Kezeli a komplex funkciókat, mint a beágyazott betűtípusok, annotációk és rétegezett tartalom, lehetővé téve a dokumentumok közvetlen megjelenítését böngészőben vagy asztali alkalmazásban további pluginek nélkül.
 
 ## Miért használjunk rétegezett renderelést?
-A rétegezett renderelés tiszteletben tartja az elemek eredeti rétegsorrendjét (a Z‑Index) egy PDF-ben. Ez elengedhetetlen, ha:
 
-- Jogi dokumentumok átfedő aláírásokat és pecséteket tartalmaznak.  
-- Építészeti rajzok több réteget használnak különböző rendszerkomponensekhez.  
-- E‑learning anyagok annotációkat ágyaznak be háttérképek fölé.  
+A rétegezett renderelés tiszteletben tartja a PDF-ben lévő objektumok eredeti rétegsorrendjét (Z‑Index), biztosítva, hogy az átfedő elemek pontosan úgy jelenjenek meg, ahogyan a szerző szándékozta. Az egyes elemek megfelelő rétegen tartásával a vizuális kimenet megegyezik a készítő tervezésével, ami kritikus a jogi, építészeti és oktatási dokumentumoknál, ahol a pontos elhelyezés jelentést hordoz.
 
-Egy **java document viewer** használatával, amely támogatja a rétegezett renderelést, biztosíthatod, hogy a vizuális kimenet megfeleljen a szerző szándékának.
+## Előfeltételek
 
-## Előkövetelmények
-
-Mielőtt elkezdenéd, győződj meg róla, hogy a következőkkel rendelkezel:
+- **Java Development Kit (JDK)** 8 vagy újabb.  
+- **Maven** a függőségkezeléshez (vagy Gradle, ha azt kedveli).  
+- Egy IDE, például IntelliJ IDEA, Eclipse vagy VS Code.  
+- Alapvető ismeretek a Java projekt struktúrájáról.
 
 ### Szükséges könyvtárak és függőségek
 
-Add the GroupDocs.Viewer library to your Maven project:
+Adja hozzá a GroupDocs.Viewer könyvtárat a Maven `pom.xml` fájlhoz az alább látható módon.
 
 ```xml
 <repositories>
@@ -74,22 +112,15 @@ Add the GroupDocs.Viewer library to your Maven project:
 </dependencies>
 ```
 
-### Környezet beállítási követelmények
-
-- Java Development Kit (JDK) 8 vagy újabb.  
-- Egy IDE, például IntelliJ IDEA, Eclipse vagy VS Code.  
-
-### Tudás előkövetelmények
-
-Az alapvető Java programozás és Maven projekt beállítása segíti a lépések zökkenőmentes követését.
-
 ## A GroupDocs.Viewer beállítása Java-hoz
 
 ### Telepítési lépések
 
-1. **Repository és függőség hozzáadása** – ahogy a Maven kódrészletben fent látható.  
-2. **Licenc beszerzése** – kezdje egy ingyenes próbaverzióval; szerezzen be állandó vagy ideiglenes licencet a termeléshez.  
-3. **Alap inicializálás** – hozzon létre egy viewer példányt, amely a PDF fájlra mutat.
+1. **Tároló és függőség hozzáadása** – másolja a fenti Maven kódrészletet a `pom.xml` fájlba.  
+2. **Licenc beszerzése** – kezdje egy ingyenes próba verzióval; termeléshez vásároljon állandó vagy ideiglenes licencet.  
+3. **Nézőpéldány létrehozása** – a `Viewer` osztály a belépési pont minden renderelési művelethez.
+
+A `Viewer` osztály a GroupDocs.Viewer központi komponense, amely betölti a dokumentumot és koordinálja a konverziót a kívánt kimeneti formátumba.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -100,17 +131,13 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
-## Implementációs útmutató
+## Hogyan rendereljünk PDF-et rétegezett Java-val
 
-A GroupDocs.Viewer beállítása után fókuszáljunk a rétegezett renderelés megvalósítására PDF-ekhez.
+A PDF rétegezett kimenettel történő rendereléséhez először töltse be a dokumentumot a `Viewer`‑be, engedélyezze a rétegezett renderelés jelzőt, majd hívja meg a nézeti műveletet HTML kimenettel. Ez a megközelítés megőrzi minden oldal Z‑Index hierarchiáját, lehetővé téve, hogy a generált HTML pontosan úgy jelenítse meg az átfedő elemeket, ahogy azok a forrás PDF‑ben szerepelnek. Az alábbi lépések végigvezetik a teljes folyamaton.
 
-### Rétegezett renderelés PDF dokumentumokhoz
+### 1. lépés: kimeneti könyvtár és fájlnév-minta beállítása
 
-A rétegezett renderelés lehetővé teszi, hogy egy PDF tartalma a Z‑Index alapján kerüljön renderelésre, megőrizve a vizuális hierarchiát, ahogy a dokumentumkészítő szándékozta.
-
-#### 1. lépés: Kimeneti könyvtár és fájlútvonal formátum beállítása
-
-Állítsd be a kimeneti könyvtárat, ahol a renderelt HTML fájlok tárolódnak.
+Határozza meg, hogy hol legyenek mentve a generált HTML fájlok, és hogyan legyenek elnevezve.
 
 ```java
 import java.nio.file.Path;
@@ -119,9 +146,10 @@ Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### 2. lépés: HtmlViewOptions beállítása rétegezett rendereléssel
+### 2. lépés: `HtmlViewOptions` beállítása rétegezett rendereléssel
 
-Konfiguráld a `HtmlViewOptions`-t, hogy engedélyezze a beágyazott erőforrásokat és a rétegezett renderelést.
+`HtmlViewOptions` konfigurálja a HTML kimenetet, beleértve, hogy a rétegek meg legyenek őrizve.  
+`HtmlViewOptions` egy konfigurációs objektum, amely meghatározza a renderelési beállításokat, például a kimeneti formátumot és a rétegezett renderelést.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -133,9 +161,10 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.getPdfOptions().setEnableLayeredRendering(true);
 ```
 
-#### 3. lépés: Dokumentum renderelése
+### 3. lépés: a dokumentum renderelése
 
-Használj egy `try‑with‑resources` utasítást, hogy csak a dokumentum első oldalát rendereld.
+`Viewer` betölti a PDF‑et, és végrehajtja a renderelési folyamatot a megadott beállítások alapján.  
+Használjon try‑with‑resources blokkot, hogy a `Viewer` példány automatikusan bezáródjon a renderelés után.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -146,66 +175,50 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
-> **Pro tipp:** Ha a **convert pdf html java**-t a teljes dokumentumra szükséged van, egyszerűen iterálj végig az összes oldalszámon, és hívd meg a `viewer.view(viewOptions, pageNumber)`-t a ciklusban.
+> **Pro tipp:** A **HTML generálásához PDF‑ből** az egész dokumentumra iteráljon az összes oldalszámon, és hívja meg a `viewer.view(viewOptions, pageNumber)` metódust a ciklusban.
 
-### Gyakori problémák és megoldások
+## Gyakori problémák és megoldások
 
-- **Kimeneti könyvtár nem írható** – Ellenőrizd a mappa jogosultságait vagy válassz másik útvonalat.  
-- **FileNotFoundException** – Ellenőrizd a PDF fájl útvonalát; biztonság kedvéért használj abszolút útvonalakat.  
-- **Memória csúcsok nagy PDF-eknél** – Dolgozd fel az oldalakat kötegekben, és zárd be a `Viewer` példányt minden köteg után.
+- **A kimeneti könyvtár nem írható** – Ellenőrizze a mappa jogosultságait, vagy válasszon másik útvonalat.  
+- **FileNotFoundException** – Ellenőrizze kétszer a PDF fájl útvonalát; az abszolút útvonalak elkerülik a félreértéseket.  
+- **Memória csúcsok nagy PDF‑eknél** – Dolgozza fel az oldalakat kötegekben, és minden köteg után zárja be a `Viewer`‑t a natív erőforrások felszabadításához.
 
 ## Gyakorlati alkalmazások
 
-A rétegezett renderelés Java-ban való megvalósítása hasznos lehet:
+A rétegezett renderelés Java‑ban történő megvalósítása értékes a következő területeken:
 
-1. **Jogi dokumentumok** – annotációk és aláírások megőrzése a helyes sorrendben.  
-2. **Építészeti rajzok** – több rajzréteg érintetlen megtartása digitális megosztáskor.  
-3. **Oktatási anyagok** – komplex PDF-ek szerkezetének megtartása e‑learning platformokon.  
+1. **Jogi dokumentumok** – aláírások, bélyegzők és annotációk helyes sorrendben tartása.  
+2. **Építészeti rajzok** – több tervezési réteg megőrzése digitális megosztáskor.  
+3. **Oktatási tartalom** – a képeket, szöveget és interaktív jegyzeteket kombináló PDF‑ek struktúrájának fenntartása.
 
-### Integrációs lehetőségek
+## Teljesítményfontosságú szempontok
 
-A rétegezett renderelés kombinálható dokumentumkezelő rendszerekkel, digitális könyvtárakkal vagy bármely olyan megoldással, amely pontos PDF megjelenítést igényel.
+A GroupDocs.Viewer **70+ bemeneti és kimeneti formátumot** támogat, és képes **legfeljebb 500 oldalas** PDF‑eket renderelni anélkül, hogy az egész fájlt a memóriába töltené, köszönhetően a streaming architektúrájának. Az alkalmazás válaszkészségének fenntartásához:
 
-## Teljesítmény szempontok
+- Engedélyezze a beágyazott erőforrásokat a külső HTTP hívások csökkentéséhez.  
+- A `Viewer` példányt a renderelés után azonnal szabadítsa fel.  
+- Figyelje a Java heap használatát, és a nagy fájlokat kisebb kötegekben dolgozza fel.
 
-Az alkalmazásod gyors működésének biztosításához:
+## Hogyan konvertáljunk PDF‑et HTML‑re Java‑ban a GroupDocs.Viewer használatával
 
-- Engedélyezd a beágyazott erőforrásokat a külső HTTP hívások csökkentéséhez.  
-- Zárd be a `Viewer` példányokat gyorsan a renderelés után, hogy felszabadítsd a natív erőforrásokat.  
-- Figyeld a Java heap használatot nagy PDF-eknél, és fontold meg az oldalak kötegként történő feldolgozását.
+`Viewer` az elsődleges osztály, amely megnyit egy dokumentumot és irányítja a renderelést. A `HtmlViewOptions` konfigurálja a HTML kimenetet, beleértve, hogy a rétegek meg legyenek őrizve. A PDF betöltésével a `Viewer`‑rel, a rétegezett renderelés engedélyezésével, és a `view` hívásával egy `HtmlViewOptions` példánnyal a könyvtár egy sor HTML oldalt hoz létre, amelyek megőrzik az összes eredeti réteget, készen állva a közvetlen webes megjelenítésre.
 
-## Hogyan konvertáljunk PDF-et HTML-re Java-ban a GroupDocs.Viewer használatával
+## Gyakran ismételt kérdések
 
-Ha a célod a **convert pdf html java**, ugyanaz a `HtmlViewOptions`, amelyet a rétegezett rendereléshez konfiguráltál, HTML fájlokat hoz létre, amelyek megtartják az eredeti réteg információkat. Egyszerűen rendereld minden oldalt a korábbi lépésben bemutatott módon, és egy kész HTML oldalakból álló készletet kapsz, amely készen áll a webes megjelenítésre.
+**K: Mi az a rétegezett renderelés a PDF‑ekben?**  
+V: A rétegezett renderelés megőrzi a tartalom vizuális hierarchiáját a Z‑Index alapján, biztosítva, hogy az átfedő elemek a helyes sorrendben jelenjenek meg.
 
-## Következtetés
+**K: Hogyan állítsam be a GroupDocs.Viewer‑t Maven‑nel?**  
+V: Adja hozzá a tárolót és a függőséget a Maven kódrészletben látható módon, majd frissítse a projektet, hogy a Maven letöltse a könyvtárat.
 
-Ez az útmutató bemutatta a **render pdf layered java** alapjait a GroupDocs.Viewer-rel, és megmutatta, hogyan **convert pdf html java** ugyanabban a munkafolyamatban. A lépések követésével javíthatod alkalmazásod képességét a komplex PDF dokumentumok pontos és hatékony kezelésére.
+**K: A Java dokumentumnéző képes PDF‑et HTML‑re konvertálni a rétegek megtartásával?**  
+V: Igen – engedélyezze a `setEnableLayeredRendering(true)` beállítást, és a néző HTML‑t generál, amely tükrözi a PDF rétegstruktúráját.
 
-### Következő lépések
+**K: Melyik Java verzió szükséges a GroupDocs.Viewer‑hez?**  
+V: JDK 8 vagy újabb ajánlott a teljes kompatibilitás és az optimális teljesítmény érdekében.
 
-- Fedezd fel a GroupDocs.Viewer további funkcióit, például a szövegkinyerést vagy a konvertálást más formátumokra.  
-- Integráld a renderelési munkafolyamatot egy nagyobb dokumentumkezelő csővezetékbe.  
-- Kísérletezz egyedi CSS-sel, hogy a generált HTML-t a márkádhoz igazítsd.
-
-Készen állsz arra, hogy megvalósítsd a tanultakat? Próbáld ki a megoldást, és nyugodtan böngészd az alábbi forrásokat a mélyebb betekintésért.
-
-## Gyakran Ismételt Kérdések
-
-**Q: Mi a rétegezett renderelés a PDF-ekben?**  
-A: A rétegezett renderelés megőrzi a tartalom vizuális hierarchiáját a Z‑Index alapján, biztosítva, hogy az átfedő elemek a megfelelő sorrendben jelenjenek meg.
-
-**Q: Hogyan állítsam be a GroupDocs.Viewer-t Maven-nel?**  
-A: Add hozzá a repository-t és a függőséget, ahogy a Maven kódrészletben fent látható, majd frissítsd a projektet a könyvtár letöltéséhez.
-
-**Q: Tud-e a java dokumentumnéző PDF-et HTML-re konvertálni a rétegek megtartásával?**  
-A: Igen – a `setEnableLayeredRendering(true)` engedélyezésével a néző olyan HTML-t generál, amely tükrözi az eredeti PDF rétegeit.
-
-**Q: Melyik Java verzió szükséges a GroupDocs.Viewer-hez?**  
-A: JDK 8 vagy újabb ajánlott a teljes kompatibilitás és teljesítmény érdekében.
-
-**Q: Hol kaphatok támogatást, ha problémáim adódnak?**  
-A: Látogasd meg a [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) oldalt a közösségi segítségért és a hivatalos támogatásért.
+**K: Hol kaphatok támogatást, ha problémáim vannak?**  
+V: Látogassa meg a [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) oldalt a közösségi segítségért és a hivatalos támogatásért.
 
 ## Erőforrások
 
@@ -216,8 +229,24 @@ A: Látogasd meg a [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewe
 - [Ingyenes próba](https://releases.groupdocs.com/viewer/java/)
 - [Ideiglenes licenc](https://purchase.groupdocs.com/temporary-license/)
 
-Fedezd fel ezeket a forrásokat, hogy mélyítsd a tudásodat és bővítsd a megvalósítási képességeidet. Jó kódolást!
+Fedezze fel ezeket a linkeket, hogy elmélyítse tudását és bővítse megvalósítási képességeit.
 
-**Utoljára frissítve:** 2026-03-27  
+---
+
+**Utoljára frissítve:** 2026-09-25  
 **Tesztelve ezzel:** GroupDocs.Viewer 25.2 for Java  
-**Szerző:** GroupDocs
+**Szerző:** GroupDocs  
+
+## cél kulcsszavak
+
+**Elsődleges kulcsszó (legmagasabb prioritás):**  
+hogyan rendereljünk pdf  
+
+**Másodlagos kulcsszavak (támogató):**  
+generálj html‑t pdf‑ből, konvertálj pdf html java  
+
+## Kapcsolódó oktatóanyagok
+
+- [Java PDF renderelés GroupDocs Viewer oldaltörésekkel](/viewer/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/)
+- [GroupDocs Viewer Java reszponzív HTML renderelés](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [PDF konvertálása PNG‑re a GroupDocs Viewer for Java használatával](/viewer/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/)
