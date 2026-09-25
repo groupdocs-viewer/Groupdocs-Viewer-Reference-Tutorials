@@ -1,60 +1,98 @@
 ---
-date: '2026-03-27'
-description: تعلم كيفية عرض ملفات PDF بطبقات في Java وتحويل PDF إلى HTML باستخدام
-  GroupDocs.Viewer for Java، مع الحفاظ على التسلسل البصري ومؤشر Z‑Index، وتقديم مخرجات
-  سريعة وعالية الجودة.
+date: '2026-09-25'
+description: تعلم كيفية عرض PDF باستخدام Java متعدد الطبقات مع GroupDocs.Viewer، وإنشاء
+  HTML من PDF، والحفاظ على Z‑Index للحصول على مخرجات بصرية دقيقة.
 keywords:
-- PDF layered rendering Java
-- GroupDocs.Viewer setup
-- Java PDF rendering
-title: عرض PDF متعدد الطبقات Java – عرض PDF متعدد الطبقات بكفاءة باستخدام GroupDocs.Viewer
+- how to render pdf
+- generate html from pdf
+- convert pdf html java
+lastmod: '2026-09-25'
+og_description: تعلم كيفية عرض PDF باستخدام Java متعدد الطبقات مع GroupDocs.Viewer،
+  وإنشاء HTML من PDF، والحفاظ على طبقات Z‑Index سليمة للحصول على مخرجات سريعة وعالية
+  الجودة.
+og_image_alt: Guide showing PDF layered rendering in Java with GroupDocs.Viewer
+og_title: كيفية عرض PDF باستخدام Java متعدد الطبقات مع GroupDocs.Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-25'
+  description: Learn how to render PDF with layered Java using GroupDocs.Viewer, generate
+    HTML from PDF, and preserve Z‑Index for accurate visual output.
+  headline: How to render PDF with layered Java using GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to render PDF with layered Java using GroupDocs.Viewer, generate
+    HTML from PDF, and preserve Z‑Index for accurate visual output.
+  name: How to render PDF with layered Java using GroupDocs.Viewer
+  steps:
+  - name: configure output directory and file‑name pattern
+    text: Define where the generated HTML files will be saved and how they should
+      be named.
+  - name: set up `HtmlViewOptions` with layered rendering
+    text: '`HtmlViewOptions` configures the HTML output, including whether layers
+      are preserved. `HtmlViewOptions` is a configuration object that specifies rendering
+      options such as output format and layered rendering.'
+  - name: render the document
+    text: '`Viewer` loads the PDF and executes the rendering process based on the
+      provided options. Use a try‑with‑resources block to ensure the `Viewer` instance
+      is closed automatically after rendering. > **Pro tip:** To **generate HTML from
+      PDF** for the entire document, iterate over all page numbers and cal'
+  type: HowTo
+- questions:
+  - answer: Layered rendering preserves the visual hierarchy of content based on Z‑Index,
+      ensuring overlapping elements appear in the correct order.
+    question: What is layered rendering in PDFs?
+  - answer: Add the repository and dependency shown in the Maven snippet, then refresh
+      your project so Maven downloads the library.
+    question: How do I set up GroupDocs.Viewer with Maven?
+  - answer: Yes – enable `setEnableLayeredRendering(true)` and the viewer produces
+      HTML that mirrors the PDF’s layer structure.
+    question: Can the Java document viewer convert PDF to HTML while keeping layers?
+  - answer: JDK 8 or higher is recommended for full compatibility and optimal performance.
+    question: Which Java version is required for GroupDocs.Viewer?
+  - answer: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+      for community assistance and official help.
+    question: Where can I get support if I encounter issues?
+  type: FAQPage
+tags:
+- pdf layered rendering
+- groupdocs.viewer
+- java document viewer
+title: كيفية عرض PDF باستخدام Java متعدد الطبقات مع GroupDocs.Viewer
 type: docs
 url: /ar/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1
 ---
 
-# Render PDF Layered Java – عرض PDF متعدد الطبقات في Java بكفاءة باستخدام GroupDocs.Viewer
+# كيفية عرض PDF باستخدام Java متعدد الطبقات باستخدام GroupDocs.Viewer
 
-Rendering complex PDFs while preserving their visual hierarchy is a challenge that layered rendering solves elegantly. **Render pdf layered java** lets you keep the original Z‑Index order so overlapping elements appear exactly as the author intended. In this tutorial we’ll walk through how to **render pdf layered java** with GroupDocs.Viewer, and also show you how to **convert pdf html java** so the result can be displayed directly in browsers.
+قد يكون عرض ملف PDF مع الحفاظ على التسلسل البصري الأصلي له أمرًا صعبًا، خاصةً عندما يحتوي المستند على عناصر متداخلة مثل الطوابع، التوقيعات، أو طبقات معمارية. في هذا الدرس ستكتشف **كيفية عرض PDF** باستخدام Java متعدد الطبقات عبر GroupDocs.Viewer، وسترى أيضًا كيفية **إنشاء HTML من PDF** بحيث يمكن عرض النتيجة مباشرةً في المتصفح. بنهاية الدليل ستحصل على سير عمل جاهز للإنتاج يحافظ على ترتيب Z‑Index، ويوفر أداءً سريعًا، ويعمل مع JDK 8 أو أحدث.
 
-![عرض PDF متعدد الطبقات باستخدام GroupDocs.Viewer لـ Java](/viewer/advanced-rendering/pdf-layered-rendering-java.png)
-
-### ما ستتعلمه
-
-- إعداد GroupDocs.Viewer في مشروع Java الخاص بك  
-- تنفيذ العرض المتعدد الطبقات لملفات PDF باستخدام Java  
-- تحويل PDF إلى HTML مع الحفاظ على الطبقات بشكل سليم  
-- تحسين الأداء باستخدام نصائح أفضل الممارسات  
-- استكشاف الأخطاء الشائعة في التنفيذ  
-
-هل أنت مستعد للغوص في التفاصيل؟ لنبدأ بالمتطلبات المسبقة.
+![عرض PDF متعدد الطبقات باستخدام GroupDocs.Viewer للـ Java](/viewer/advanced-rendering/pdf-layered-rendering-java.png)
 
 ## إجابات سريعة
-- **What does a java document viewer do?** يقوم بعرض صفحات PDF كـ HTML أو صور مع الحفاظ على التخطيط، بما في ذلك طبقات Z‑Index.  
-- **Which library enables layered rendering?** توفر GroupDocs.Viewer for Java الدالة `setEnableLayeredRendering(true)`.  
-- **Do I need a license?** نسخة تجريبية مجانية تكفي للتقييم؛ تحتاج إلى ترخيص مدفوع للإنتاج.  
-- **Can I convert pdf to html with this viewer?** نعم – ينتج العارض ملفات HTML تحتفظ بمعلومات الطبقات.  
-- **What Java version is required?** JDK 8 أو أعلى.  
+- **ماذا يفعل عارض المستندات Java؟** يقوم بتحويل صفحات PDF إلى HTML أو صور مع الحفاظ على التخطيط، الخطوط، التعليقات التوضيحية، وطبقات Z‑Index.  
+- **ما المكتبة التي تمكّن العرض متعدد الطبقات؟** توفر GroupDocs.Viewer للـ Java الدالة `setEnableLayeredRendering(true)`.  
+- **هل أحتاج إلى ترخيص؟** الإصدار التجريبي المجاني يكفي للتقييم؛ يلزم الحصول على ترخيص مدفوع للنشر في بيئات الإنتاج.  
+- **هل يمكنني إنشاء HTML من PDF باستخدام هذا العارض؟** نعم – خيارات العرض متعدد الطبقات نفسها تنتج ملفات HTML تحتفظ بكل طبقة.  
+- **ما نسخة Java المطلوبة؟** يتم دعم JDK 8 أو أعلى.
 
 ## ما هو عارض المستندات Java؟
-إن **java document viewer** هو مكتبة تقرأ العديد من صيغ المستندات (PDF، DOCX، PPTX، إلخ) وتعرضها بصيغ صديقة للويب مثل HTML أو الصور أو SVG. تتعامل مع ميزات معقدة مثل الخطوط، التعليقات التوضيحية، والمحتوى متعدد الطبقات، مما يتيح لك عرض المستندات مباشرة في المتصفح أو التطبيق دون الحاجة إلى إضافات طرف ثالث.
 
-## لماذا نستخدم العرض المتعدد الطبقات؟
-العرض المتعدد الطبقات يحافظ على ترتيب تكديس العناصر الأصلي (Z‑Index) داخل ملف PDF. وهذا أمر أساسي عندما:
+إن **عارض المستندات Java** هو مكتبة تقرأ العديد من صيغ المستندات (PDF، DOCX، PPTX، إلخ) وتعرضها بصيغ صديقة للويب مثل HTML، الصور، أو SVG. يتعامل مع ميزات معقدة مثل الخطوط المدمجة، التعليقات التوضيحية، والمحتوى متعدد الطبقات، مما يتيح لك عرض المستندات مباشرةً في المتصفح أو تطبيق سطح المكتب دون الحاجة إلى إضافات إضافية.
 
-- تحتوي المستندات القانونية على توقيعات وختمات متداخلة.  
-- تستخدم الرسومات المعمارية طبقات متعددة لمكونات النظام المختلفة.  
-- تدمج مواد التعلم الإلكتروني تعليقات توضيحية فوق الصور الخلفية.  
+## لماذا نستخدم العرض متعدد الطبقات؟
 
-باستخدام **java document viewer** يدعم العرض المتعدد الطبقات، تضمن أن المخرجات البصرية تتطابق مع نية المُنشئ.
+يعتمد العرض متعدد الطبقات على ترتيب التكديس الأصلي (Z‑Index) للكائنات داخل ملف PDF، مما يضمن ظهور العناصر المتداخلة بالضبط كما قصده المؤلف. من خلال إبقاء كل عنصر في طبقته المناسبة، يتطابق المخرج البصري مع تصميم المنشئ، وهو أمر حاسم للمستندات القانونية، المعمارية، والتعليمية حيث يعكس الترتيب الدقيق المعنى.
 
 ## المتطلبات المسبقة
 
-قبل البدء، تأكد من وجود ما يلي:
+- **Java Development Kit (JDK)** 8 أو أحدث.  
+- **Maven** لإدارة التبعيات (أو Gradle إذا كنت تفضل).  
+- بيئة تطوير متكاملة (IDE) مثل IntelliJ IDEA أو Eclipse أو VS Code.  
+- إلمام أساسي ببنية مشروع Java.
 
 ### المكتبات والاعتمادات المطلوبة
 
-Add the GroupDocs.Viewer library to your Maven project:
+أضف مكتبة GroupDocs.Viewer إلى ملف `pom.xml` الخاص بـ Maven كما هو موضح أدناه.
 
 ```xml
 <repositories>
@@ -73,22 +111,15 @@ Add the GroupDocs.Viewer library to your Maven project:
 </dependencies>
 ```
 
-### متطلبات إعداد البيئة
-
-- مجموعة تطوير جافا (JDK) 8 أو أعلى.  
-- بيئة تطوير متكاملة (IDE) مثل IntelliJ IDEA أو Eclipse أو VS Code.  
-
-### متطلبات المعرفة المسبقة
-
-ستساعدك معرفة أساسية ببرمجة Java وإعداد مشروع Maven على متابعة الخطوات بسلاسة.
-
-## إعداد GroupDocs.Viewer لـ Java
+## إعداد GroupDocs.Viewer للـ Java
 
 ### خطوات التثبيت
 
-1. **Add Repository and Dependency** – كما هو موضح في مقتطف Maven أعلاه.  
-2. **License Acquisition** – ابدأ بنسخة تجريبية مجانية؛ احصل على ترخيص دائم أو مؤقت للاستخدام في الإنتاج.  
-3. **Basic Initialization** – أنشئ كائن viewer يشير إلى ملف PDF الخاص بك.
+1. **إضافة المستودع والاعتماد** – انسخ مقتطف Maven أعلاه إلى ملف `pom.xml` الخاص بك.  
+2. **الحصول على ترخيص** – ابدأ بالإصدار التجريبي المجاني؛ للإنتاج، اشترِ ترخيصًا دائمًا أو مؤقتًا.  
+3. **إنشاء مثال للعارض** – فئة `Viewer` هي نقطة الدخول لجميع عمليات العرض.
+
+فئة `Viewer` هي المكوّن الأساسي في GroupDocs.Viewer الذي يحمل المستند وينسق التحويل إلى صيغة الإخراج المطلوبة.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -99,17 +130,13 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
-## دليل التنفيذ
+## كيفية عرض PDF باستخدام Java متعدد الطبقات
 
-مع إعداد GroupDocs.Viewer، دعنا نركز على تنفيذ العرض المتعدد الطبقات لملفات PDF.
+لعرض ملف PDF بإخراج متعدد الطبقات، قم أولاً بتحميل المستند إلى `Viewer`، فعّل علامة العرض متعدد الطبقات، ثم استدعِ عملية العرض مع تحديد إخراج HTML. هذه الطريقة تحافظ على تسلسل Z‑Index لكل صفحة، مما يسمح للـ HTML المُولد بعرض العناصر المتداخلة تمامًا كما تظهر في PDF الأصلي. الخطوات التالية تقودك عبر العملية الكاملة.
 
-### العرض المتعدد الطبقات لمستندات PDF
+### الخطوة 1: تكوين دليل الإخراج ونمط اسم الملف
 
-يتيح العرض المتعدد الطبقات محتوى PDF أن يُعرض بناءً على Z‑Index الخاص به، مع الحفاظ على التسلسل الهرمي البصري كما قصده مُنشئ المستند.
-
-#### الخطوة 1: تكوين دليل الإخراج وتنسيق مسار الملف
-
-قم بإعداد دليل الإخراج حيث سيتم تخزين ملفات HTML المُعرضة.
+حدد مكان حفظ ملفات HTML المُولدة وكيفية تسميتها.
 
 ```java
 import java.nio.file.Path;
@@ -118,9 +145,10 @@ Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### الخطوة 2: إعداد HtmlViewOptions مع العرض المتعدد الطبقات
+### الخطوة 2: إعداد `HtmlViewOptions` مع العرض متعدد الطبقات
 
-قم بتكوين `HtmlViewOptions` لتمكين الموارد المدمجة والعرض المتعدد الطبقات.
+`HtmlViewOptions` يضبط إخراج HTML، بما في ذلك ما إذا كانت الطبقات محفوظة.  
+`HtmlViewOptions` هو كائن تكوين يحدد خيارات العرض مثل صيغة الإخراج والعرض متعدد الطبقات.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -132,9 +160,10 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.getPdfOptions().setEnableLayeredRendering(true);
 ```
 
-#### الخطوة 3: عرض المستند
+### الخطوة 3: عرض المستند
 
-استخدم عبارة `try‑with‑resources` لعرض الصفحة الأولى فقط من المستند.
+`Viewer` يحمل ملف PDF وينفّذ عملية العرض بناءً على الخيارات المقدمة.  
+استخدم كتلة try‑with‑resources لضمان إغلاق مثال `Viewer` تلقائيًا بعد العرض.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -145,82 +174,78 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
-> **نصيحة احترافية:** إذا كنت بحاجة إلى **convert pdf html java** للمستند بأكمله، ما عليك سوى تكرار جميع أرقام الصفحات واستدعاء `viewer.view(viewOptions, pageNumber)` داخل الحلقة.
+> **نصيحة احترافية:** لإنشاء **HTML من PDF** لكامل المستند، قم بالتكرار على جميع أرقام الصفحات واستدعِ `viewer.view(viewOptions, pageNumber)` داخل الحلقة.
 
-### المشكلات الشائعة والحلول
+## المشكلات الشائعة والحلول
 
-- **Output directory not writable** – تحقق من أذونات المجلد أو اختر مسارًا مختلفًا.  
-- **FileNotFoundException** – تحقق مرة أخرى من مسار ملف PDF؛ استخدم مسارات مطلقة للسلامة.  
-- **Memory spikes on large PDFs** – عالج الصفحات على دفعات وأغلق كائن `Viewer` بعد كل دفعة.
+- **دليل الإخراج غير قابل للكتابة** – تحقق من أذونات المجلد أو اختر مسارًا مختلفًا.  
+- **FileNotFoundException** – تحقق مرة أخرى من مسار ملف PDF؛ المسارات المطلقة تجنّب الغموض.  
+- **ارتفاع الذاكرة عند ملفات PDF الكبيرة** – عالج الصفحات على دفعات وأغلق `Viewer` بعد كل دفعة لتحرير الموارد الأصلية.
 
 ## التطبيقات العملية
 
-يمكن أن يكون تنفيذ العرض المتعدد الطبقات في Java مفيدًا لـ:
+تنفيذ العرض متعدد الطبقات في Java ذو قيمة لـ:
 
-1. **Legal Documents** – الحفاظ على التعليقات التوضيحية والتوقيعات بالترتيب الصحيح.  
-2. **Architectural Drawings** – الحفاظ على طبقات الرسومات المتعددة بشكل سليم عند مشاركتها رقمياً.  
-3. **Educational Materials** – الحفاظ على بنية ملفات PDF المعقدة المستخدمة في منصات التعلم الإلكتروني.  
-
-### إمكانيات التكامل
-
-يمكن دمج العرض المتعدد الطبقات مع أنظمة إدارة المستندات، المكتبات الرقمية، أو أي حل يتطلب عرض PDF دقيق.
+1. **المستندات القانونية** – الحفاظ على التوقيعات، الطوابع، والتعليقات التوضيحية بالترتيب الصحيح.  
+2. **الرسومات المعمارية** – الحفاظ على طبقات التصميم المتعددة عند المشاركة رقمياً.  
+3. **المحتوى التعليمي** – الحفاظ على بنية ملفات PDF التي تجمع بين الصور والنصوص والملاحظات التفاعلية.
 
 ## اعتبارات الأداء
 
-لجعل تطبيقك سريع الاستجابة:
+يدعم GroupDocs.Viewer **أكثر من 70 صيغة إدخال وإخراج** ويمكنه عرض ملفات PDF **حتى 500 صفحة** دون تحميل الملف بالكامل إلى الذاكرة، بفضل بنية البث الخاصة به. للحفاظ على استجابة تطبيقك:
 
-- تمكين الموارد المدمجة لتقليل طلبات HTTP الخارجية.  
-- إغلاق كائنات `Viewer` فورًا بعد العرض لتحرير الموارد الأصلية.  
-- مراقبة استهلاك الذاكرة heap في Java للملفات الكبيرة والنظر في معالجة الصفحات على دفعات.
+- فعّل الموارد المدمجة لتقليل طلبات HTTP الخارجية.  
+- تخلص من مثال `Viewer` فورًا بعد العرض.  
+- راقب استهلاك heap في Java وعالج الملفات الكبيرة على دفعات أصغر.
 
 ## كيفية تحويل PDF إلى HTML في Java باستخدام GroupDocs.Viewer
 
-إذا كان هدفك هو **convert pdf html java**، فإن `HtmlViewOptions` نفسها التي قمت بتكوينها للعرض المتعدد الطبقات ستنتج ملفات HTML تحتفظ بمعلومات الطبقة الأصلية. ما عليك سوى عرض كل صفحة كما هو موضح في الخطوة السابقة، وستحصل على مجموعة من صفحات HTML جاهزة للعرض على الويب.
-
-## الخلاصة
-
-يغطي هذا الدليل أساسيات **render pdf layered java** باستخدام GroupDocs.Viewer ويظهر لك كيفية **convert pdf html java** في نفس سير العمل. باتباع هذه الخطوات، يمكنك تحسين قدرة تطبيقك على معالجة مستندات PDF المعقدة بدقة وكفاءة.
-
-### الخطوات التالية
-
-- استكشف ميزات GroupDocs.Viewer الإضافية مثل استخراج النص أو التحويل إلى صيغ أخرى.  
-- دمج سير عمل العرض في خط أنابيب إدارة مستندات أكبر.  
-- جرب CSS مخصص لتصميم HTML المُولد وفقًا لهويتك التجارية.  
-
-هل أنت مستعد لتطبيق ما تعلمته؟ جرّب الحل، ولا تتردد في استكشاف الموارد أدناه للحصول على رؤى أعمق.
+`Viewer` هي الفئة الأساسية التي تفتح المستند وتنسق عملية العرض. `HtmlViewOptions` يضبط إخراج HTML، بما في ذلك ما إذا كانت الطبقات محفوظة. من خلال تحميل PDF الخاص بك باستخدام `Viewer`، وتفعيل العرض متعدد الطبقات، واستدعاء `view` مع مثال `HtmlViewOptions`، تُنتج المكتبة مجموعة من صفحات HTML التي تحتفظ بكل طبقة أصلية، جاهزة للعرض الفوري على الويب.
 
 ## الأسئلة المتكررة
 
-**Q: ما هو العرض المتعدد الطبقات في ملفات PDF؟**  
-A: العرض المتعدد الطبقات يحافظ على التسلسل الهرمي البصري للمحتوى بناءً على Z‑Index، مما يضمن ظهور العناصر المتداخلة بالترتيب الصحيح.
+**س: ما هو العرض متعدد الطبقات في ملفات PDF؟**  
+ج: العرض متعدد الطبقات يحافظ على التسلسل البصري للمحتوى بناءً على Z‑Index، مما يضمن ظهور العناصر المتداخلة بالترتيب الصحيح.
 
-**Q: كيف أقوم بإعداد GroupDocs.Viewer باستخدام Maven؟**  
-A: أضف المستودع والاعتماد الموضحين في مقتطف Maven أعلاه، ثم قم بتحديث مشروعك لتنزيل المكتبة.
+**س: كيف أقوم بإعداد GroupDocs.Viewer باستخدام Maven؟**  
+ج: أضف المستودع والاعتماد الموضحين في مقتطف Maven، ثم قم بتحديث مشروعك لكي يقوم Maven بتحميل المكتبة.
 
-**Q: هل يمكن لعارض المستندات java تحويل pdf إلى html مع الحفاظ على الطبقات؟**  
-A: نعم – من خلال تمكين `setEnableLayeredRendering(true)` ينتج العارض HTML يعكس طبقات PDF الأصلية.
+**س: هل يمكن لعارض المستندات Java تحويل PDF إلى HTML مع الحفاظ على الطبقات؟**  
+ج: نعم – فعّل `setEnableLayeredRendering(true)` وسيقوم العارض بإنتاج HTML يعكس بنية طبقات PDF.
 
-**Q: أي نسخة من Java مطلوبة لـ GroupDocs.Viewer؟**  
-A: يوصى بـ JDK 8 أو أعلى للحصول على توافق كامل وأداء جيد.
+**س: ما نسخة Java المطلوبة لـ GroupDocs.Viewer؟**  
+ج: يوصى باستخدام JDK 8 أو أعلى لتحقيق التوافق الكامل والأداء المثالي.
 
-**Q: أين يمكنني الحصول على الدعم إذا واجهت مشكلات؟**  
-A: زر [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) للحصول على مساعدة المجتمع والدعم الرسمي.
+**س: أين يمكنني الحصول على الدعم إذا واجهت مشاكل؟**  
+ج: قم بزيارة [منتدى دعم GroupDocs](https://forum.groupdocs.com/c/viewer/9) للحصول على مساعدة المجتمع والدعم الرسمي.
 
 ## الموارد
 
-- [التوثيق](https://docs.groupdocs.com/viewer/java/)
+- [الوثائق](https://docs.groupdocs.com/viewer/java/)
 - [مرجع API](https://reference.groupdocs.com/viewer/java/)
 - [تحميل GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- [شراء الترخيص](https://purchase.groupdocs.com/buy)
-- [نسخة تجريبية مجانية](https://releases.groupdocs.com/viewer/java/)
+- [شراء ترخيص](https://purchase.groupdocs.com/buy)
+- [إصدار تجريبي مجاني](https://releases.groupdocs.com/viewer/java/)
 - [ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
 
-استكشف هذه الموارد لتعميق فهمك وتوسيع قدراتك في التنفيذ. برمجة سعيدة!
+استكشف هذه الروابط لتعميق معرفتك وتوسيع قدراتك في التنفيذ.
 
 ---
 
-**آخر تحديث:** 2026-03-27  
+**آخر تحديث:** 2026-09-25  
 **تم الاختبار مع:** GroupDocs.Viewer 25.2 for Java  
 **المؤلف:** GroupDocs  
 
----
+## الكلمات المفتاحية المستهدفة
+
+**الكلمة المفتاحية الأساسية (أعلى أولوية):**  
+how to render pdf  
+
+**الكلمات المفتاحية الثانوية (دعم):**  
+generate html from pdf, convert pdf html java
+
+## دروس ذات صلة
+
+- [عرض PDF باستخدام Java في Groupdocs Viewer مع فواصل الصفحات](/viewer/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/)
+- [عرض HTML المتجاوب في Groupdocs Viewer للـ Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [تحويل PDF إلى PNG باستخدام GroupDocs Viewer للـ Java](/viewer/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/)

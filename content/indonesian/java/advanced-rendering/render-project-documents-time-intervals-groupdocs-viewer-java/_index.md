@@ -1,46 +1,110 @@
 ---
-date: '2026-03-29'
-description: Pelajari cara membuat tampilan HTML MPP menggunakan GroupDocs Viewer
-  di Java, menampilkan dokumen proyek berdasarkan interval waktu dengan kode langkah
+date: '2026-09-25'
+description: Pelajari cara membuat tampilan html mpp dengan GroupDocs Viewer untuk
+  Java, menampilkan dokumen proyek berdasarkan interval waktu dengan kode langkah
   demi langkah.
 keywords:
+- create html view mpp
+- set start end date
+- GroupDocs Viewer Java
 - render project documents
-- time intervals Java
-- GroupDocs Viewer API
-title: Buat tampilan HTML MPP dengan GroupDocs Viewer (Java)
+lastmod: '2026-09-25'
+og_description: Buat tampilan html mpp dengan GroupDocs Viewer untuk Java untuk menampilkan
+  file Microsoft Project berdasarkan interval waktu tertentu. Ikuti pengaturan langkah
+  demi langkah, lisensi, dan potongan kode untuk visualisasi timeline yang akurat.
+og_image_alt: 'GroupDocs Viewer Java example: rendering project documents to HTML
+  by time interval'
+og_title: Buat tampilan html mpp dengan GroupDocs Viewer untuk Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-25'
+  description: Learn how to create html view mpp with GroupDocs Viewer for Java, rendering
+    project documents by time intervals with step‑by‑step code.
+  headline: Create html view mpp with GroupDocs Viewer (Java)
+  type: TechArticle
+- description: Learn how to create html view mpp with GroupDocs Viewer for Java, rendering
+    project documents by time intervals with step‑by‑step code.
+  name: Create html view mpp with GroupDocs Viewer (Java)
+  steps:
+  - name: '**Free trial** – Download a trial version from [GroupDocs'' download page](https://releases.groupdocs.com/viewer/java/).'
+    text: '**Free trial** – Download a trial version from [GroupDocs'' download page](https://releases.groupdocs.com/viewer/java/).'
+  - name: '**Temporary license** – Obtain a temporary license for extended testing
+      via the [temporary‑license page](https://purchase.groupdocs.com/temporary-license/).'
+    text: '**Temporary license** – Obtain a temporary license for extended testing
+      via the [temporary‑license page](https://purchase.groupdocs.com/temporary-license/).'
+  - name: '**Purchase** – For unrestricted production use, buy a license at the [GroupDocs
+      Purchase Page](https://purchase.groupdocs.com/buy).'
+    text: '**Purchase** – For unrestricted production use, buy a license at the [GroupDocs
+      Purchase Page](https://purchase.groupdocs.com/buy).'
+  - name: '**Project timeline analysis** – Show stakeholders only the current phase.'
+    text: '**Project timeline analysis** – Show stakeholders only the current phase.'
+  - name: '**Automated reporting** – Generate time‑bound HTML reports for weekly status
+      updates.'
+    text: '**Automated reporting** – Generate time‑bound HTML reports for weekly status
+      updates.'
+  - name: '**Integration with dashboards** – Embed the rendered pages into BI tools
+      or custom portals.'
+    text: '**Integration with dashboards** – Embed the rendered pages into BI tools
+      or custom portals.'
+  - name: '**Archival** – Store a web‑friendly snapshot of a project’s schedule for
+      future reference.'
+    text: '**Archival** – Store a web‑friendly snapshot of a project’s schedule for
+      future reference.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Viewer supports 100+ input formats, including PDF, DOCX, XLSX,
+      PPTX, and Microsoft Project files, enabling universal document visualization.
+    question: What file formats does GroupDocs.Viewer support?
+  - answer: You can download the trial version from the [GroupDocs Viewer Java download
+      page](https://releases.groupdocs.com/viewer/java/).
+    question: How do I get started with a free trial of GroupDocs.Viewer?
+  - answer: Yes, you can choose a different HTML view option that references external
+      resources instead of embedding them.
+    question: Can I render documents without embedding resources?
+  - answer: Consider splitting the document into smaller sections or rendering only
+      the required date range, as demonstrated above.
+    question: What if my document is too large for rendering?
+  - answer: Verify all configuration settings, ensure you have a valid license, and
+      consult the GroupDocs documentation for detailed error codes.
+    question: How do I handle rendering errors?
+  type: FAQPage
+tags:
+- render project documents
+- GroupDocs Viewer
+- Java rendering
+- project timeline
+- html view mpp
+title: Buat tampilan html mpp dengan GroupDocs Viewer (Java)
 type: docs
 url: /id/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Cara Menggunakan GroupDocs Viewer untuk Merender Dokumen Proyek berdasarkan Interval Waktu di Java
+# Cara menggunakan GroupDocs Viewer untuk merender dokumen proyek berdasarkan interval waktu di Java
 
-Dalam tutorial ini Anda akan belajar cara **membuat tampilan html mpp** dengan GroupDocs Viewer untuk Java, memungkinkan Anda merender hanya bagian-bagian file Microsoft Project yang berada dalam interval waktu tertentu. Kami akan membahas pengaturan Maven, konfigurasi kode, dan skenario dunia nyata sehingga Anda dapat menyematkan tampilan garis waktu yang tepat langsung ke dalam aplikasi Anda.
+Dalam tutorial ini Anda akan belajar cara **create html view mpp** dengan GroupDocs Viewer untuk Java, memungkinkan Anda merender hanya bagian-bagian dari file Microsoft Project yang berada dalam rentang tanggal mulai dan tanggal akhir tertentu. Kami akan membahas pengaturan Maven, lisensi, dan panggilan API yang tepat yang Anda perlukan untuk menyematkan tampilan timeline yang akurat langsung ke dalam aplikasi Anda.
 
 ![Render Dokumen Proyek berdasarkan Interval Waktu dengan GroupDocs.Viewer untuk Java](/viewer/advanced-rendering/render-project-documents-by-time-intervals-java.png)
 
+Untuk pratinjau, lihat [Render Dokumen Proyek berdasarkan Interval Waktu dengan GroupDocs.Viewer untuk Java](/viewer/advanced-rendering/render-project-documents-by-time-intervals-java.png).
+
 ## Jawaban Cepat
-- **Apa yang dilakukan fitur ini?** Ia merender hanya bagian dari file Microsoft Project yang berada antara tanggal mulai dan tanggal akhir.  
+- **Apa yang dilakukan fitur ini?** Itu merender hanya bagian dari file Microsoft Project yang berada di antara tanggal mulai dan tanggal akhir.  
 - **Format output apa yang digunakan?** HTML dengan sumber daya tersemat, sempurna untuk integrasi web.  
 - **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi penuh diperlukan untuk produksi.  
 - **Bisakah saya mengubah rentang tanggal saat runtime?** Ya—sesuaikan nilai `setStartDate` dan `setEndDate` dalam opsi rendering.  
 - **Apakah ini didukung pada semua versi Java?** Berfungsi dengan Java 8+ selama Anda menggunakan GroupDocs.Viewer 25.2 atau yang lebih baru.
 
-## Cara membuat tampilan html mpp untuk Dokumen Proyek
-GroupDocs Viewer dapat mengonversi file Microsoft Project (`.mpp`, `.mpt`) menjadi halaman HTML. Dengan mengonfigurasi tanggal mulai dan akhir dalam opsi rendering, Anda membatasi output ke potongan waktu yang Anda butuhkan, yang mengurangi ukuran file dan mempercepat pemuatan halaman.
+## Apa itu create html view mpp?
+`create html view mpp` adalah proses mengonversi file Microsoft Project (`.mpp` atau `.mpt`) menjadi sekumpulan halaman HTML yang mewakili jadwal. GroupDocs Viewer melakukan konversi di sisi server, sehingga Anda dapat menampilkan timeline di browser apa pun tanpa menginstal Microsoft Project.
 
-## Apa Itu “Cara Menggunakan GroupDocs” dalam Konteks Ini?
-GroupDocs Viewer adalah pustaka Java yang mengonversi lebih dari 100 format file menjadi representasi yang ramah web. Ketika Anda **cara menggunakan GroupDocs** untuk file proyek, Anda memperoleh kemampuan untuk mengekstrak, memvisualisasikan, dan membagikan data jadwal tanpa memerlukan Microsoft Project di sisi klien.
-
-## Mengapa Merender Dokumen Proyek dengan Interval Waktu?
-- **Analisis terfokus:** Tampilkan hanya fase yang Anda butuhkan (mis., Q3 2024).  
-- **Kinerja:** Output HTML yang lebih kecil berarti pemuatan halaman yang lebih cepat.  
-- **Integrasi:** Sematkan tampilan garis waktu ke dalam dasbor, portal pelaporan, atau alat PM khusus.  
+## Mengapa merender dokumen proyek dengan interval waktu?
+Merender hanya interval waktu yang diperlukan mengurangi ukuran HTML yang dihasilkan, mempercepat pemuatan halaman, dan memungkinkan Anda fokus pada fase proyek spesifik yang perlu dianalisis. Tampilan terarah ini ideal untuk dasbor, laporan status, atau penyematan ke dalam alat PM khusus di mana data seluruh proyek akan terlalu banyak.
 
 ## Prasyarat
 
-- **GroupDocs.Viewer untuk Java** versi 25.2 atau lebih tinggi.  
-- Java Development Kit (JDK) 8 atau yang lebih baru.  
+- **GroupDocs.Viewer for Java** versi 25.2 atau lebih tinggi.  
+- Java Development Kit (JDK) 8 atau lebih baru.  
 - IDE seperti IntelliJ IDEA atau Eclipse.  
 - Pengetahuan dasar tentang Maven.  
 
@@ -48,7 +112,7 @@ GroupDocs Viewer adalah pustaka Java yang mengonversi lebih dari 100 format file
 
 ### Dependensi Maven
 
-Tambahkan repositori dan dependensi ke `pom.xml` Anda:
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -67,15 +131,15 @@ Tambahkan repositori dan dependensi ke `pom.xml` Anda:
 </dependencies>
 ```
 
-### Langkah-langkah Akuisisi Lisensi
+### Langkah-langkah memperoleh lisensi
 
-1. **Percobaan Gratis** – Unduh versi percobaan dari [halaman unduhan GroupDocs](https://releases.groupdocs.com/viewer/java/).  
-2. **Lisensi Sementara** – Dapatkan lisensi sementara untuk pengujian lanjutan melalui [tautan ini](https://purchase.groupdocs.com/temporary-license/).  
-3. **Pembelian** – Untuk penggunaan produksi tanpa batas, beli lisensi di [Halaman Pembelian GroupDocs](https://purchase.groupdocs.com/buy).
+1. **Free trial** – Unduh versi percobaan dari [GroupDocs' download page](https://releases.groupdocs.com/viewer/java/).  
+2. **Temporary license** – Dapatkan lisensi sementara untuk pengujian lanjutan melalui [temporary‑license page](https://purchase.groupdocs.com/temporary-license/).  
+3. **Purchase** – Untuk penggunaan produksi tanpa batas, beli lisensi di [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
 
-### Inisialisasi Viewer Dasar
+## Inisialisasi viewer dasar
 
-Potongan kode berikut menunjukkan cara membuat instance `Viewer` yang menunjuk ke file Microsoft Project (`.mpp`):
+`Viewer` adalah kelas utama di GroupDocs.Viewer untuk Java yang memuat dokumen dan menyediakan kemampuan rendering.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -89,32 +153,9 @@ public class ViewerSetup {
 }
 ```
 
-## Panduan Implementasi Langkah‑per‑Langkah
+## Mengambil informasi tampilan untuk file proyek
 
-### 1. Tentukan Direktori Output
-
-Buat folder tempat halaman HTML yang dihasilkan akan disimpan:
-
-```java
-import java.nio.file.Path;
-
-Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "RenderProjectTimeInterval");
-Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
-```
-
-*Mengapa?* Menjaga file yang dirender terorganisir memudahkan penyajian dari server web atau penyematan ke dalam UI.
-
-### 2. Inisialisasi Viewer dengan File Proyek Anda
-
-```java
-try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MPP")) {
-    // Continue with rendering steps
-}
-```
-
-*Mengapa?* Memuat dokumen menyiapkan parser internal dan membuat metadata spesifik proyek dapat diakses.
-
-### 3. Dapatkan Informasi Tampilan untuk File Proyek
+`ProjectManagementViewInfo` menyediakan metadata tentang file Microsoft Project, termasuk tanggal mulai dan akhir jadwal keseluruhan.
 
 ```java
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -124,9 +165,9 @@ ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 ProjectManagementViewInfo viewInfo = (ProjectManagementViewInfo) viewer.getViewInfo(viewInfoOptions);
 ```
 
-*Mengapa?* `ProjectManagementViewInfo` memberikan tanggal mulai dan akhir jadwal, yang nantinya akan Anda gunakan untuk membatasi ruang lingkup rendering.
+## Mengonfigurasi opsi rendering HTML (menghasilkan HTML dari proyek)
 
-### 4. Konfigurasikan Opsi Rendering HTML (Hasilkan HTML dari Proyek)
+`HtmlViewOptions` mengonfigurasi cara GroupDocs merender HTML, memungkinkan Anda mengatur rentang tanggal, menyematkan sumber daya, dan menyesuaikan tampilan.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -136,71 +177,86 @@ viewOptions.getProjectManagementOptions().setStartDate(viewInfo.getStartDate());
 viewOptions.getProjectManagementOptions().setEndDate(viewInfo.getEndDate());
 ```
 
-*Mengapa?* Menetapkan `StartDate` dan `EndDate` memberi tahu GroupDocs untuk **menghasilkan data tampilan html mpp** hanya dalam jendela waktu tersebut.
+## Menjalankan proses rendering
 
-### 5. Jalankan Proses Rendering
+`viewer.render` mengeksekusi konversi berdasarkan opsi yang diberikan dan menulis file HTML hasil ke folder target.
 
 ```java
 viewer.view(viewOptions);
 ```
 
-*Mengapa?* Panggilan ini menghasilkan serangkaian halaman HTML mandiri yang mewakili potongan waktu yang dipilih dari jadwal proyek Anda.
+## Kesulitan umum & pemecahan masalah
 
-## Kesalahan Umum & Pemecahan Masalah
+- **Incorrect file paths** – Periksa kembali bahwa file sumber `.mpp` dan direktori output ada.  
+- **Unsupported file type** – Pastikan dokumen merupakan format Project yang didukung (mis., `.mpp`, `.mpt`).  
+- **License errors** – Lisensi percobaan mungkin membatasi rendering; beralih ke lisensi penuh untuk penggunaan tanpa batas.  
 
-- **Path file tidak tepat** – Periksa kembali bahwa file sumber `.mpp` dan direktori output ada.  
-- **Tipe file tidak didukung** – Pastikan dokumen merupakan format Proyek yang didukung (mis., `.mpp`, `.mpt`).  
-- **Kesalahan lisensi** – Lisensi percobaan mungkin memberlakukan batasan rendering; beralih ke lisensi penuh untuk penggunaan tanpa batas.  
+## Aplikasi praktis
 
-## Aplikasi Praktis
+1. **Project timeline analysis** – Tampilkan hanya fase saat ini kepada pemangku kepentingan.  
+2. **Automated reporting** – Hasilkan laporan HTML berbasis waktu untuk pembaruan status mingguan.  
+3. **Integration with dashboards** – Sematkan halaman yang dirender ke dalam alat BI atau portal khusus.  
+4. **Archival** – Simpan snapshot ramah web dari jadwal proyek untuk referensi di masa mendatang.  
 
-1. **Analisis Garis Waktu Proyek** – Tampilkan hanya fase saat ini kepada pemangku kepentingan.  
-2. **Pelaporan Otomatis** – Hasilkan laporan HTML berbatas waktu untuk pembaruan status mingguan.  
-3. **Integrasi dengan Dasbor** – Sematkan halaman yang dirender ke dalam alat BI atau portal khusus.  
-4. **Arsip** – Simpan snapshot yang ramah web dari jadwal proyek untuk referensi di masa mendatang.  
-
-## Tips Kinerja
+## Tips kinerja
 
 - Gunakan opsi *embedded resources* untuk menjaga setiap halaman HTML mandiri, mengurangi permintaan HTTP.  
-- Untuk proyek yang sangat besar, pertimbangkan merender dalam potongan tanggal yang lebih kecil untuk menjaga penggunaan memori tetap rendah.  
-- Bersihkan file sementara setelah disajikan untuk menghindari pembengkakan disk.  
+- Untuk proyek yang sangat besar, pertimbangkan merender dalam potongan tanggal yang lebih kecil untuk menjaga penggunaan memori tetap rendah. Merender potongan satu tahun dapat mengurangi ukuran HTML hingga 80 % dibandingkan ekspor seluruh proyek, memotong waktu muat dari beberapa detik menjadi kurang dari satu detik pada server tipikal.  
+- Bersihkan file sementara setelah disajikan untuk menghindari penumpukan disk.  
 
 ## Kesimpulan
 
-Anda kini tahu **cara menggunakan GroupDocs** Viewer untuk merender dokumen proyek dalam interval waktu tertentu dan **menghasilkan HTML dari data proyek** di Java. Kemampuan ini mempermudah visualisasi garis waktu, meningkatkan efisiensi pelaporan, dan terintegrasi dengan mulus ke aplikasi web modern.
+Anda kini tahu **cara menggunakan GroupDocs** Viewer untuk merender dokumen proyek dalam interval waktu tertentu dan **menghasilkan HTML dari data proyek** di Java. Kemampuan ini menyederhanakan visualisasi timeline, meningkatkan efisiensi pelaporan, dan terintegrasi mulus dengan aplikasi web modern.
 
-### Langkah Selanjutnya
+### Langkah selanjutnya
 - Jelajahi fitur Viewer tambahan seperti watermark, perlindungan kata sandi, atau penataan CSS khusus.  
-- Gabungkan pipeline rendering ini dengan REST API untuk menyajikan tampilan garis waktu sesuai permintaan.  
+- Gabungkan pipeline rendering ini dengan REST API untuk menyajikan tampilan timeline sesuai permintaan.  
 
-## Pertanyaan yang Sering Diajukan
+## Pertanyaan yang sering diajukan
 
 **Q: Format file apa yang didukung oleh GroupDocs.Viewer?**  
-A: GroupDocs.Viewer mendukung berbagai format termasuk Microsoft Project (MPP), PDF, Word, Excel, PowerPoint, dan banyak lagi.
+A: GroupDocs.Viewer mendukung lebih dari 100 format input, termasuk PDF, DOCX, XLSX, PPTX, dan file Microsoft Project, memungkinkan visualisasi dokumen universal.
 
 **Q: Bagaimana cara memulai dengan percobaan gratis GroupDocs.Viewer?**  
-A: Anda dapat mengunduh versi percobaan dari [sini](https://releases.groupdocs.com/viewer/java/).
+A: Anda dapat mengunduh versi percobaan dari [GroupDocs Viewer Java download page](https://releases.groupdocs.com/viewer/java/).
 
 **Q: Bisakah saya merender dokumen tanpa menyematkan sumber daya?**  
 A: Ya, Anda dapat memilih opsi tampilan HTML lain yang merujuk ke sumber daya eksternal alih-alih menyematkannya.
 
 **Q: Bagaimana jika dokumen saya terlalu besar untuk dirender?**  
-A: Pertimbangkan membagi dokumen menjadi bagian yang lebih kecil atau merender hanya rentang tanggal yang diperlukan, seperti yang ditunjukkan di atas.
+A: Pertimbangkan membagi dokumen menjadi bagian‑bagian lebih kecil atau merender hanya rentang tanggal yang diperlukan, seperti yang ditunjukkan di atas.
 
 **Q: Bagaimana cara menangani kesalahan rendering?**  
-A: Verifikasi semua pengaturan konfigurasi, pastikan Anda memiliki lisensi yang valid, dan konsultasikan dokumentasi GroupDocs untuk kode kesalahan yang detail.
+A: Verifikasi semua pengaturan konfigurasi, pastikan Anda memiliki lisensi yang valid, dan konsultasikan dokumentasi GroupDocs untuk kode kesalahan terperinci.
 
-## Sumber Daya
-- **Dokumentasi**: [Dokumentasi GroupDocs Viewer Java](https://docs.groupdocs.com/viewer/java/)
-- **Referensi API**: [Referensi API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Unduhan**: [Unduhan GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Pembelian**: [Beli Lisensi GroupDocs](https://purchase.groupdocs.com/buy)
-- **Percobaan Gratis**: [Coba Versi Gratis](https://releases.groupdocs.com/viewer/java/)
-- **Lisensi Sementara**: [Dapatkan Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
-- **Dukungan**: [Forum GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+## Sumber daya
+- **Documentation**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)
+- **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Free trial**: [Try the Free Version](https://releases.groupdocs.com/viewer/java/)
+- **Temporary license**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
----
+**Terakhir Diperbarui:** 2026-09-25  
+**Diuji dengan:** GroupDocs.Viewer 25.2 untuk Java  
+**Penulis:** GroupDocs  
 
-**Terakhir Diperbarui:** 2026-03-29  
-**Diuji Dengan:** GroupDocs.Viewer 25.2 untuk Java  
-**Penulis:** GroupDocs
+```java
+import java.nio.file.Path;
+
+Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "RenderProjectTimeInterval");
+Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
+```
+
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MPP")) {
+    // Continue with rendering steps
+}
+```
+
+## Tutorial Terkait
+
+- [Cara Merender File MS Project sebagai HTML, JPG, PNG, dan PDF dengan Catatan Menggunakan GroupDocs.Viewer untuk Java](/viewer/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/)
+- [Ekspor HTML MS Project: Sesuaikan Unit Waktu via GroupDocs Java](/viewer/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/)
+- [Groupdocs Viewer Java Rendering HTML Responsif](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)

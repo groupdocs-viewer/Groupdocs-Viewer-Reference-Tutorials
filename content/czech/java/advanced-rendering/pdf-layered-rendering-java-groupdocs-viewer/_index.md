@@ -1,60 +1,98 @@
 ---
-date: '2026-03-27'
-description: Naučte se, jak v Javě renderovat vrstvené PDF a převádět PDF do HTML
-  pomocí GroupDocs.Viewer pro Javu, přičemž zachováte vizuální hierarchii a Z‑Index
-  a zajistíte rychlý, vysoce kvalitní výstup.
+date: '2026-09-25'
+description: Naučte se, jak renderovat PDF s vrstveným Java pomocí GroupDocs.Viewer,
+  generovat HTML z PDF a zachovat Z‑Index pro přesný vizuální výstup.
 keywords:
-- PDF layered rendering Java
-- GroupDocs.Viewer setup
-- Java PDF rendering
-title: Render PDF vrstvený Java – Efektivní vrstvené vykreslování PDF pomocí GroupDocs.Viewer
+- how to render pdf
+- generate html from pdf
+- convert pdf html java
+lastmod: '2026-09-25'
+og_description: Naučte se, jak renderovat PDF s vrstveným Java pomocí GroupDocs.Viewer,
+  generovat HTML z PDF a udržet vrstvy Z‑Index nedotčené pro rychlý, vysoce kvalitní
+  výstup.
+og_image_alt: Guide showing PDF layered rendering in Java with GroupDocs.Viewer
+og_title: Jak renderovat PDF s vrstveným Java pomocí GroupDocs.Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-25'
+  description: Learn how to render PDF with layered Java using GroupDocs.Viewer, generate
+    HTML from PDF, and preserve Z‑Index for accurate visual output.
+  headline: How to render PDF with layered Java using GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to render PDF with layered Java using GroupDocs.Viewer, generate
+    HTML from PDF, and preserve Z‑Index for accurate visual output.
+  name: How to render PDF with layered Java using GroupDocs.Viewer
+  steps:
+  - name: configure output directory and file‑name pattern
+    text: Define where the generated HTML files will be saved and how they should
+      be named.
+  - name: set up `HtmlViewOptions` with layered rendering
+    text: '`HtmlViewOptions` configures the HTML output, including whether layers
+      are preserved. `HtmlViewOptions` is a configuration object that specifies rendering
+      options such as output format and layered rendering.'
+  - name: render the document
+    text: '`Viewer` loads the PDF and executes the rendering process based on the
+      provided options. Use a try‑with‑resources block to ensure the `Viewer` instance
+      is closed automatically after rendering. > **Pro tip:** To **generate HTML from
+      PDF** for the entire document, iterate over all page numbers and cal'
+  type: HowTo
+- questions:
+  - answer: Layered rendering preserves the visual hierarchy of content based on Z‑Index,
+      ensuring overlapping elements appear in the correct order.
+    question: What is layered rendering in PDFs?
+  - answer: Add the repository and dependency shown in the Maven snippet, then refresh
+      your project so Maven downloads the library.
+    question: How do I set up GroupDocs.Viewer with Maven?
+  - answer: Yes – enable `setEnableLayeredRendering(true)` and the viewer produces
+      HTML that mirrors the PDF’s layer structure.
+    question: Can the Java document viewer convert PDF to HTML while keeping layers?
+  - answer: JDK 8 or higher is recommended for full compatibility and optimal performance.
+    question: Which Java version is required for GroupDocs.Viewer?
+  - answer: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+      for community assistance and official help.
+    question: Where can I get support if I encounter issues?
+  type: FAQPage
+tags:
+- pdf layered rendering
+- groupdocs.viewer
+- java document viewer
+title: Jak renderovat PDF s vrstveným Java pomocí GroupDocs.Viewer
 type: docs
 url: /cs/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1
 ---
 
-# Render PDF Layered Java – Efektivní vrstvené vykreslování PDF v Javě pomocí GroupDocs.Viewer
+# Jak renderovat PDF s vrstveným Java pomocí GroupDocs.Viewer
 
-Vykreslování složitých PDF při zachování jejich vizuální hierarchie je výzva, kterou vrstvené vykreslování elegantně řeší. **Render pdf layered java** vám umožní zachovat původní pořadí Z‑Index, takže se překrývající prvky zobrazí přesně tak, jak je autor zamýšlel. V tomto tutoriálu vás provedeme, jak **render pdf layered java** s GroupDocs.Viewer, a také vám ukážeme, jak **convert pdf html java**, aby výsledek mohl být zobrazen přímo v prohlížečích.
+Renderování PDF při zachování jeho původní vizuální hierarchie může být obtížné, zejména když dokument obsahuje překrývající se prvky, jako jsou razítka, podpisy nebo architektonické vrstvy. V tomto tutoriálu objevíte **jak renderovat PDF** s vrstveným Java pomocí GroupDocs.Viewer a také uvidíte, jak **generovat HTML z PDF**, aby výsledek mohl být zobrazen přímo v prohlížeči. Na konci průvodce budete mít připravený workflow připravený pro produkci, který zachovává pořadí Z‑Index, poskytuje vysoký výkon a funguje s JDK 8 nebo novějším.
 
-![PDF Layered Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/pdf-layered-rendering-java.png)
-
-### Co se naučíte
-
-- Nastavení GroupDocs.Viewer ve vašem Java projektu  
-- Implementace vrstveného vykreslování PDF pomocí Javy  
-- Převod PDF do HTML při zachování vrstev  
-- Optimalizace výkonu pomocí tipů z osvědčených postupů  
-- Řešení běžných problémů při implementaci  
-
-Připraveni ponořit se? Začněme s předpoklady.
+![Vrstvené renderování PDF pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/pdf-layered-rendering-java.png)
 
 ## Rychlé odpovědi
-- **Co dělá java dokumentový prohlížeč?** Vykresluje stránky PDF jako HTML nebo obrázky při zachování rozvržení, včetně vrstev Z‑Index.  
-- **Která knihovna umožňuje vrstvené vykreslování?** GroupDocs.Viewer pro Java poskytuje `setEnableLayeredRendering(true)`.  
-- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro hodnocení; placená licence je vyžadována pro produkci.  
-- **Mohu pomocí tohoto prohlížeče převést pdf na html?** Ano – prohlížeč vytváří soubory HTML, které zachovávají informace o vrstvách.  
-- **Jaká verze Javy je požadována?** JDK 8 nebo vyšší.  
+- **Co dělá Java prohlížeč dokumentů?** Převádí stránky PDF do HTML nebo obrázků při zachování rozvržení, fontů, anotací a vrstev Z‑Index.  
+- **Která knihovna umožňuje vrstvené renderování?** GroupDocs.Viewer pro Java poskytuje `setEnableLayeredRendering(true)`.  
+- **Potřebuji licenci?** Bezplatná zkušební verze stačí pro hodnocení; placená licence je vyžadována pro nasazení do produkce.  
+- **Mohu pomocí tohoto prohlížeče generovat HTML z PDF?** Ano – stejné možnosti vrstveného renderování vytvářejí HTML soubory, které zachovávají každou vrstvu.  
+- **Jaká verze Javy je vyžadována?** Je podporována JDK 8 nebo vyšší.
 
-## Co je Java dokumentový prohlížeč?
-**java dokumentový prohlížeč** je knihovna, která čte mnoho formátů dokumentů (PDF, DOCX, PPTX, atd.) a vykresluje je do web‑přátelských reprezentací, jako jsou HTML, obrázky nebo SVG. Zpracovává složité funkce, jako jsou písma, anotace a vrstvený obsah, což vám umožňuje zobrazovat dokumenty přímo v prohlížeči nebo aplikaci bez pluginů třetích stran.
+## Co je Java prohlížeč dokumentů?
 
-## Proč používat vrstvené vykreslování?
-Vrstvené vykreslování respektuje původní pořadí překrývání prvků (Z‑Index) v PDF. To je nezbytné, když:
+**Java prohlížeč dokumentů** je knihovna, která čte mnoho formátů dokumentů (PDF, DOCX, PPTX, atd.) a renderuje je do web‑přátelských reprezentací, jako jsou HTML, obrázky nebo SVG. Zpracovává složité funkce, jako jsou vložené fonty, anotace a vrstvený obsah, což vám umožňuje zobrazovat dokumenty přímo v prohlížeči nebo desktopové aplikaci bez dalších pluginů.
 
-- Právní dokumenty obsahují překrývající se podpisy a razítka.  
-- Architektonické výkresy používají více vrstev pro různé komponenty systému.  
-- E‑learningové materiály vkládají anotace nad obrázky na pozadí.  
+## Proč použít vrstvené renderování?
 
-Použitím **java dokumentového prohlížeče**, který podporuje vrstvené vykreslování, zajistíte, že vizuální výstup odpovídá záměru tvůrce.
+Vrstvené renderování respektuje původní pořadí vrstvení (Z‑Index) objektů v PDF, což zajišťuje, že překrývající se prvky se zobrazí přesně tak, jak je autor zamýšlel. Udržením každého prvku na jeho správné vrstvě výstup odpovídá designu tvůrce, což je zásadní pro právní, architektonické a vzdělávací dokumenty, kde přesné umístění předává význam.
 
-## Předpoklady
+## Požadavky
 
-Před zahájením se ujistěte, že máte:
+- **Java Development Kit (JDK)** 8 nebo novější.  
+- **Maven** pro správu závislostí (nebo Gradle, pokud dáváte přednost).  
+- IDE, jako je IntelliJ IDEA, Eclipse nebo VS Code.  
+- Základní znalost struktury Java projektu.
 
 ### Požadované knihovny a závislosti
 
-Přidejte knihovnu GroupDocs.Viewer do svého Maven projektu:
+Přidejte knihovnu GroupDocs.Viewer do vašeho Maven `pom.xml` podle níže uvedeného příkladu.
 
 ```xml
 <repositories>
@@ -73,22 +111,15 @@ Přidejte knihovnu GroupDocs.Viewer do svého Maven projektu:
 </dependencies>
 ```
 
-### Požadavky na nastavení prostředí
-
-- Java Development Kit (JDK) 8 nebo vyšší.  
-- IDE, jako je IntelliJ IDEA, Eclipse nebo VS Code.  
-
-### Předpoklady znalostí
-
-Základní programování v Javě a nastavení Maven projektu vám pomůže plynule sledovat kroky.
-
 ## Nastavení GroupDocs.Viewer pro Java
 
 ### Kroky instalace
 
-1. **Přidat úložiště a závislost** – jak je ukázáno v Maven úryvku výše.  
-2. **Získání licence** – začněte s bezplatnou zkušební verzí; získejte trvalou nebo dočasnou licenci pro produkční použití.  
-3. **Základní inicializace** – vytvořte instanci viewer, která ukazuje na váš PDF soubor.
+1. **Přidejte repozitář a závislost** – zkopírujte výše uvedený Maven úryvek do vašeho `pom.xml`.  
+2. **Získejte licenci** – začněte s bezplatnou zkušební verzí; pro produkci zakupte trvalou nebo dočasnou licenci.  
+3. **Vytvořte instanci prohlížeče** – třída `Viewer` je vstupním bodem pro všechny operace renderování.
+
+Třída `Viewer` je hlavní komponentou GroupDocs.Viewer, která načítá dokument a koordinuje konverzi do požadovaného výstupního formátu.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -99,17 +130,13 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
-## Průvodce implementací
+## Jak renderovat PDF s vrstveným Java
 
-Po nastavení GroupDocs.Viewer se zaměříme na implementaci vrstveného vykreslování PDF.
+Pro renderování PDF s vrstveným výstupem nejprve načtěte dokument do `Viewer`, povolte příznak vrstveného renderování a poté zavolejte operaci view s určením HTML výstupu. Tento přístup zachovává hierarchii Z‑Index každé stránky, což umožňuje vygenerovanému HTML zobrazit překrývající se prvky přesně tak, jak jsou v původním PDF. Následující kroky vás provedou celým procesem.
 
-### Vrstvené vykreslování pro PDF dokumenty
+### Krok 1: nakonfigurujte výstupní adresář a vzor názvu souboru
 
-Vrstvené vykreslování umožňuje, aby obsah v PDF byl vykreslen na základě jeho Z‑Index, čímž zachovává vizuální hierarchii podle záměru tvůrce dokumentu.
-
-#### Krok 1: Nastavení výstupního adresáře a formátu cesty souboru
-
-Nastavte výstupní adresář, kde budou uloženy vykreslené HTML soubory.
+Definujte, kde budou uloženy vygenerované HTML soubory a jak budou pojmenovány.
 
 ```java
 import java.nio.file.Path;
@@ -118,9 +145,9 @@ Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### Krok 2: Nastavení HtmlViewOptions s vrstveným vykreslováním
+### Krok 2: nastavení `HtmlViewOptions` s vrstveným renderováním
 
-Nakonfigurujte `HtmlViewOptions`, aby povolil vložené zdroje a vrstvené vykreslování.
+`HtmlViewOptions` konfiguruje HTML výstup, včetně toho, zda jsou vrstvy zachovány. `HtmlViewOptions` je konfigurační objekt, který určuje možnosti renderování, jako je výstupní formát a vrstvené renderování.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -132,9 +159,9 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.getPdfOptions().setEnableLayeredRendering(true);
 ```
 
-#### Krok 3: Vykreslení dokumentu
+### Krok 3: renderujte dokument
 
-Použijte příkaz `try‑with‑resources` k vykreslení pouze první stránky vašeho dokumentu.
+`Viewer` načte PDF a provede proces renderování na základě poskytnutých možností. Použijte blok try‑with‑resources, aby byla instance `Viewer` po renderování automaticky uzavřena.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -145,63 +172,47 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
-> **Tip:** Pokud potřebujete **convert pdf html java** pro celý dokument, jednoduše projděte všechny čísla stránek a zavolejte `viewer.view(viewOptions, pageNumber)` uvnitř smyčky.
+> **Tip:** Pro **generování HTML z PDF** pro celý dokument iterujte přes všechna čísla stránek a uvnitř smyčky zavolejte `viewer.view(viewOptions, pageNumber)`.
 
-### Běžné problémy a řešení
+## Časté problémy a řešení
 
-- **Výstupní adresář není zapisovatelný** – Ověřte oprávnění složky nebo vyberte jinou cestu.  
-- **FileNotFoundException** – Zkontrolujte cestu k PDF souboru; pro bezpečnost použijte absolutní cesty.  
-- **Nárazové zvýšení paměti u velkých PDF** – Zpracovávejte stránky po dávkách a po každé dávce zavřete instanci `Viewer`.
+- **Výstupní adresář není zapisovatelný** – Ověřte oprávnění složky nebo zvolte jinou cestu.  
+- **FileNotFoundException** – Zkontrolujte cestu k PDF souboru; absolutní cesty zabraňují nejasnostem.  
+- **Nárazové zvýšení paměti u velkých PDF** – Zpracovávejte stránky po dávkách a po každé dávce zavřete `Viewer`, aby se uvolnily nativní zdroje.
 
 ## Praktické aplikace
 
-Implementace vrstveného vykreslování v Javě může být prospěšná pro:
+Implementace vrstveného renderování v Javě je užitečná pro:
 
-1. **Právní dokumenty** – zachování anotací a podpisů ve správném pořadí.  
-2. **Architektonické výkresy** – zachování více vrstev výkresů při digitálním sdílení.  
-3. **Vzdělávací materiály** – udržení struktury složitých PDF používaných na e‑learningových platformách.  
-
-### Možnosti integrace
-
-Vrstvené vykreslování lze kombinovat se systémy pro správu dokumentů, digitálními knihovnami nebo jakýmkoli řešením, které vyžaduje přesnou prezentaci PDF.
+1. **Právní dokumenty** – zachovejte podpisy, razítka a anotace ve správném pořadí.  
+2. **Architektonické výkresy** – zachovejte více návrhových vrstev při digitálním sdílení.  
+3. **Vzdělávací obsah** – udržujte strukturu PDF, které kombinují obrázky, text a interaktivní poznámky.
 
 ## Úvahy o výkonu
 
-Aby vaše aplikace zůstala rychlá:
+GroupDocs.Viewer podporuje **více než 70 vstupních a výstupních formátů** a může renderovat PDF s **až 500 stránkami** bez načítání celého souboru do paměti, díky své streamovací architektuře. Aby vaše aplikace zůstala responzivní:
 
-- Povolit vložené zdroje pro snížení externích HTTP požadavků.  
-- Po vykreslení okamžitě uzavřete instance `Viewer`, aby se uvolnily nativní zdroje.  
-- Sledujte využití Java heapu u velkých PDF a zvažte zpracování stránek po dávkách.
+- Povolte vložené zdroje, aby se snížil počet externích HTTP požadavků.  
+- Okamžitě po renderování uvolněte instanci `Viewer`.  
+- Sledujte využití haldy Java a zpracovávejte velké soubory v menších dávkách.
 
-## Jak převést PDF do HTML v Javě pomocí GroupDocs.Viewer
+## Jak převést PDF na HTML v Javě pomocí GroupDocs.Viewer
 
-Pokud je vaším cílem **convert pdf html java**, stejné `HtmlViewOptions`, které jste nakonfigurovali pro vrstvené vykreslování, vytvoří HTML soubory, které zachovávají původní informace o vrstvách. Stačí vykreslit každou stránku, jak je ukázáno v předchozím kroku, a získáte sadu HTML stránek připravených k zobrazení na webu.
-
-## Závěr
-
-Tento průvodce pokryl základy **render pdf layered java** s GroupDocs.Viewer a ukázal vám, jak **convert pdf html java** ve stejném pracovním postupu. Dodržením těchto kroků můžete zlepšit schopnost vaší aplikace přesně a efektivně zpracovávat složité PDF dokumenty.
-
-### Další kroky
-
-- Prozkoumejte další funkce GroupDocs.Viewer, jako je extrakce textu nebo konverze do jiných formátů.  
-- Integrujte workflow vykreslování do většího pipeline pro správu dokumentů.  
-- Experimentujte s vlastním CSS pro stylování generovaného HTML podle vaší značky.
-
-Připraveni implementovat to, co jste se naučili? Vyzkoušejte řešení a neváhejte prozkoumat níže uvedené zdroje pro hlubší poznatky.
+`Viewer` je hlavní třída, která otevírá dokument a orchestruje renderování. `HtmlViewOptions` konfiguruje HTML výstup, včetně toho, zda jsou vrstvy zachovány. Načtením vašeho PDF pomocí `Viewer`, povolením vrstveného renderování a voláním `view` s instancí `HtmlViewOptions` knihovna vytvoří sadu HTML stránek, které zachovávají každou původní vrstvu, připravené k okamžitému zobrazení na webu.
 
 ## Často kladené otázky
 
-**Q: Co je vrstvené vykreslování v PDF?**  
-A: Vrstvené vykreslování zachovává vizuální hierarchii obsahu na základě Z‑Index, což zajišťuje, že překrývající se prvky se zobrazí ve správném pořadí.
+**Q: Co je vrstvené renderování v PDF?**  
+A: Vrstvené renderování zachovává vizuální hierarchii obsahu na základě Z‑Index, což zajišťuje, že překrývající se prvky se zobrazí ve správném pořadí.
 
 **Q: Jak nastavit GroupDocs.Viewer pomocí Maven?**  
-A: Přidejte úložiště a závislost uvedenou v Maven úryvku výše, poté obnovte projekt, aby se stáhla knihovna.
+A: Přidejte repozitář a závislost uvedenou v Maven úryvku, poté obnovte projekt, aby Maven stáhl knihovnu.
 
-**Q: Může java dokumentový prohlížeč převést pdf na html při zachování vrstev?**  
-A: Ano – povolením `setEnableLayeredRendering(true)` prohlížeč vytváří HTML, které odráží původní vrstvy PDF.
+**Q: Může Java prohlížeč dokumentů převést PDF na HTML při zachování vrstev?**  
+A: Ano – povolte `setEnableLayeredRendering(true)` a prohlížeč vytvoří HTML, které odráží strukturu vrstev PDF.
 
-**Q: Jaká verze Javy je požadována pro GroupDocs.Viewer?**  
-A: JDK 8 nebo vyšší se doporučuje pro plnou kompatibilitu a výkon.
+**Q: Jaká verze Javy je vyžadována pro GroupDocs.Viewer?**  
+A: JDK 8 nebo vyšší je doporučena pro plnou kompatibilitu a optimální výkon.
 
 **Q: Kde mohu získat podporu, pokud narazím na problémy?**  
 A: Navštivte [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) pro komunitní pomoc a oficiální podporu.
@@ -215,12 +226,26 @@ A: Navštivte [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) 
 - [Bezplatná zkušební verze](https://releases.groupdocs.com/viewer/java/)
 - [Dočasná licence](https://purchase.groupdocs.com/temporary-license/)
 
-Prozkoumejte tyto zdroje, abyste prohloubili své znalosti a rozšířili své implementační schopnosti. Šťastné kódování!
+Prozkoumejte tyto odkazy, abyste prohloubili své znalosti a rozšířili své možnosti implementace.
 
 ---
 
-**Poslední aktualizace:** 2026-03-27  
-**Testováno s:** GroupDocs.Viewer 25.2 pro Java  
+**Poslední aktualizace:** 2026-09-25  
+**Testováno s:** GroupDocs.Viewer 25.2 for Java  
 **Autor:** GroupDocs  
 
 ---
+
+## cílová klíčová slova
+
+**Primární klíčové slovo (nejvyšší priorita):**  
+how to render pdf  
+
+**Sekundární klíčová slova (podporující):**  
+generate html from pdf, convert pdf html java
+
+## Související tutoriály
+
+- [Java PDF renderování GroupDocs Viewer rozdělení stránek](/viewer/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/)
+- [GroupDocs Viewer Java responzivní HTML renderování](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [Převod PDF na PNG pomocí GroupDocs Viewer pro Java](/viewer/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/)

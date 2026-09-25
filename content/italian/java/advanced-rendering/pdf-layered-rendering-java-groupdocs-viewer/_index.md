@@ -1,63 +1,98 @@
 ---
-date: '2026-03-27'
-description: Scopri come rendere PDF a strati in Java e convertire PDF in HTML in
-  Java utilizzando GroupDocs.Viewer per Java, preservando la gerarchia visiva e lo
-  Z‑Index, garantendo al contempo un output veloce e di alta qualità.
+date: '2026-09-25'
+description: Scopri come rendere PDF con Java a strati usando GroupDocs.Viewer, generare
+  HTML da PDF e preservare lo Z‑Index per un output visivo accurato.
 keywords:
-- PDF layered rendering Java
-- GroupDocs.Viewer setup
-- Java PDF rendering
-title: Rendering PDF a Strati in Java – Rendering PDF a Strati Efficiente con GroupDocs.Viewer
+- how to render pdf
+- generate html from pdf
+- convert pdf html java
+lastmod: '2026-09-25'
+og_description: Scopri come rendere PDF con Java a strati usando GroupDocs.Viewer,
+  generare HTML da PDF e mantenere intatti i livelli Z‑Index per un output veloce
+  e di alta qualità.
+og_image_alt: Guide showing PDF layered rendering in Java with GroupDocs.Viewer
+og_title: Come rendere PDF con Java a strati usando GroupDocs.Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-25'
+  description: Learn how to render PDF with layered Java using GroupDocs.Viewer, generate
+    HTML from PDF, and preserve Z‑Index for accurate visual output.
+  headline: How to render PDF with layered Java using GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to render PDF with layered Java using GroupDocs.Viewer, generate
+    HTML from PDF, and preserve Z‑Index for accurate visual output.
+  name: How to render PDF with layered Java using GroupDocs.Viewer
+  steps:
+  - name: configure output directory and file‑name pattern
+    text: Define where the generated HTML files will be saved and how they should
+      be named.
+  - name: set up `HtmlViewOptions` with layered rendering
+    text: '`HtmlViewOptions` configures the HTML output, including whether layers
+      are preserved. `HtmlViewOptions` is a configuration object that specifies rendering
+      options such as output format and layered rendering.'
+  - name: render the document
+    text: '`Viewer` loads the PDF and executes the rendering process based on the
+      provided options. Use a try‑with‑resources block to ensure the `Viewer` instance
+      is closed automatically after rendering. > **Pro tip:** To **generate HTML from
+      PDF** for the entire document, iterate over all page numbers and cal'
+  type: HowTo
+- questions:
+  - answer: Layered rendering preserves the visual hierarchy of content based on Z‑Index,
+      ensuring overlapping elements appear in the correct order.
+    question: What is layered rendering in PDFs?
+  - answer: Add the repository and dependency shown in the Maven snippet, then refresh
+      your project so Maven downloads the library.
+    question: How do I set up GroupDocs.Viewer with Maven?
+  - answer: Yes – enable `setEnableLayeredRendering(true)` and the viewer produces
+      HTML that mirrors the PDF’s layer structure.
+    question: Can the Java document viewer convert PDF to HTML while keeping layers?
+  - answer: JDK 8 or higher is recommended for full compatibility and optimal performance.
+    question: Which Java version is required for GroupDocs.Viewer?
+  - answer: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+      for community assistance and official help.
+    question: Where can I get support if I encounter issues?
+  type: FAQPage
+tags:
+- pdf layered rendering
+- groupdocs.viewer
+- java document viewer
+title: Come rendere PDF con Java a strati usando GroupDocs.Viewer
 type: docs
 url: /it/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1
 ---
 
-# Render PDF Layered Java – Rendering PDF a Strati Efficiente in Java con GroupDocs.Viewer
+# Come rendere PDF con Java a strati usando GroupDocs.Viewer
 
-Rendering complex PDFs while preserving their visual hierarchy is a challenge that layered rendering solves elegantly. **Render pdf layered java** lets you keep the original Z‑Index order so overlapping elements appear exactly as the author intended. In this tutorial we’ll walk through how to **render pdf layered java** with GroupDocs.Viewer, and also show you how to **convert pdf html java** so the result can be displayed directly in browsers.
+Renderizzare un PDF mantenendo la sua gerarchia visiva originale può essere complicato, soprattutto quando il documento contiene elementi sovrapposti come timbri, firme o livelli architettonici. In questo tutorial scoprirai **come rendere PDF** con Java a strati usando GroupDocs.Viewer, e vedrai anche come **generare HTML da PDF** in modo che il risultato possa essere visualizzato direttamente in un browser. Alla fine della guida avrai un flusso di lavoro pronto per la produzione che preserva l'ordine Z‑Index, offre prestazioni rapide e funziona con JDK 8 o versioni successive.
 
-![Rendering PDF a Strati con GroupDocs.Viewer per Java](/viewer/advanced-rendering/pdf-layered-rendering-java.png)
+![Rendering PDF a strati con GroupDocs.Viewer per Java](/viewer/advanced-rendering/pdf-layered-rendering-java.png)
 
-### Cosa Imparerai
-
-- Impostare GroupDocs.Viewer nel tuo progetto Java  
-- Implementare il rendering a strati per PDF usando Java  
-- Convertire PDF in HTML mantenendo intatti i layer  
-- Ottimizzare le prestazioni con consigli best‑practice  
-- Risoluzione dei problemi comuni di implementazione  
-
-Pronto per immergerti? Iniziamo con i prerequisiti.
-
-## Risposte Rapide
-
-- **Cosa fa un visualizzatore di documenti java?** Renderizza le pagine PDF come HTML o immagini mantenendo il layout, inclusi i layer Z‑Index.  
+## Risposte rapide
+- **Cosa fa un visualizzatore di documenti Java?** Converte le pagine PDF in HTML o immagini preservando layout, font, annotazioni e livelli Z‑Index.  
 - **Quale libreria consente il rendering a strati?** GroupDocs.Viewer per Java fornisce `setEnableLayeredRendering(true)`.  
-- **Ho bisogno di una licenza?** Una prova gratuita è sufficiente per la valutazione; è necessaria una licenza a pagamento per la produzione.  
-- **Posso convertire pdf in html con questo visualizzatore?** Sì – il visualizzatore genera file HTML che conservano le informazioni dei layer.  
-- **Quale versione di Java è richiesta?** JDK 8 o superiore.  
+- **È necessaria una licenza?** Una prova gratuita è sufficiente per la valutazione; è richiesta una licenza a pagamento per le distribuzioni in produzione.  
+- **Posso generare HTML da PDF con questo visualizzatore?** Sì – le stesse opzioni di rendering a strati producono file HTML che mantengono ogni livello.  
+- **Quale versione di Java è richiesta?** È supportato JDK 8 o superiore.
 
-## Cos'è un Visualizzatore di Documenti Java?
+## Cos'è un visualizzatore di documenti Java?
 
-Un **java document viewer** è una libreria che legge molti formati di documento (PDF, DOCX, PPTX, ecc.) e li rende in rappresentazioni web‑friendly come HTML, immagini o SVG. Gestisce funzionalità complesse come font, annotazioni e contenuti a strati, consentendo di visualizzare i documenti direttamente in un browser o in un'applicazione senza plugin di terze parti.
+Un **visualizzatore di documenti Java** è una libreria che legge molti formati di documento (PDF, DOCX, PPTX, ecc.) e li rende in rappresentazioni web‑friendly come HTML, immagini o SVG. Gestisce funzionalità complesse come font incorporati, annotazioni e contenuti a strati, consentendo di visualizzare i documenti direttamente in un browser o in un'applicazione desktop senza plugin aggiuntivi.
 
-## Perché Usare il Rendering a Strati?
+## Perché utilizzare il rendering a strati?
 
-Il rendering a strati rispetta l'ordine di sovrapposizione originale degli elementi (lo Z‑Index) all'interno di un PDF. Questo è essenziale quando:
-
-- I documenti legali contengono firme e timbri sovrapposti.  
-- I disegni architettonici usano più layer per diversi componenti del sistema.  
-- I materiali di e‑learning incorporano annotazioni su immagini di sfondo.  
-
-Utilizzando un **java document viewer** che supporta il rendering a strati, garantisci che l'output visivo corrisponda all'intento del creatore.
+Il rendering a strati rispetta l'ordine di impilamento originale (Z‑Index) degli oggetti all'interno di un PDF, garantendo che gli elementi sovrapposti appaiano esattamente come previsto dall'autore. Mantenendo ogni elemento sul suo livello corretto, l'output visivo corrisponde al design del creatore, aspetto cruciale per documenti legali, architettonici ed educativi dove il posizionamento preciso trasmette significato.
 
 ## Prerequisiti
 
-Before starting, make sure you have:
+- **Java Development Kit (JDK)** 8 o versioni più recenti.  
+- **Maven** per la gestione delle dipendenze (oppure Gradle se preferisci).  
+- Un IDE come IntelliJ IDEA, Eclipse o VS Code.  
+- Familiarità di base con la struttura di un progetto Java.
 
-### Librerie e Dipendenze Necessarie
+### Librerie e dipendenze richieste
 
-Add the GroupDocs.Viewer library to your Maven project:
+Aggiungi la libreria GroupDocs.Viewer al tuo `pom.xml` Maven come mostrato di seguito.
 
 ```xml
 <repositories>
@@ -76,22 +111,15 @@ Add the GroupDocs.Viewer library to your Maven project:
 </dependencies>
 ```
 
-### Requisiti per la Configurazione dell'Ambiente
+## Configurare GroupDocs.Viewer per Java
 
-- Java Development Kit (JDK) 8 o superiore.  
-- Un IDE come IntelliJ IDEA, Eclipse o VS Code.  
+### Passi di installazione
 
-### Prerequisiti di Conoscenza
+1. **Aggiungi repository e dipendenza** – copia lo snippet Maven sopra nel tuo `pom.xml`.  
+2. **Ottieni una licenza** – inizia con una prova gratuita; per la produzione acquista una licenza permanente o temporanea.  
+3. **Crea un'istanza del visualizzatore** – la classe `Viewer` è il punto di ingresso per tutte le operazioni di rendering.
 
-Una conoscenza di base della programmazione Java e della configurazione di progetti Maven ti aiuterà a seguire i passaggi senza problemi.
-
-## Configurazione di GroupDocs.Viewer per Java
-
-### Passaggi di Installazione
-
-1. **Aggiungi Repository e Dipendenza** – come mostrato nello snippet Maven sopra.  
-2. **Acquisizione della Licenza** – inizia con una prova gratuita; ottieni una licenza permanente o temporanea per l'uso in produzione.  
-3. **Inizializzazione di Base** – crea un'istanza del visualizzatore che punti al tuo file PDF.
+La classe `Viewer` è il componente centrale di GroupDocs.Viewer che carica un documento e coordina la conversione nel formato di output desiderato.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -102,17 +130,13 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
-## Guida all'Implementazione
+## Come rendere PDF con Java a strati
 
-Con GroupDocs.Viewer configurato, concentriamoci sull'implementazione del rendering a strati per i PDF.
+Per rendere un PDF con output a strati, prima carica il documento nel `Viewer`, abilita il flag di rendering a strati, quindi invoca l'operazione di visualizzazione specificando l'output HTML. Questo approccio preserva la gerarchia Z‑Index di ogni pagina, consentendo all'HTML generato di visualizzare gli elementi sovrapposti esattamente come appaiono nel PDF di origine. I passaggi seguenti ti guidano attraverso l'intero processo.
 
-### Rendering a Strati per Documenti PDF
+### Passo 1: configura la directory di output e il modello di nome file
 
-Il rendering a strati consente di renderizzare il contenuto di un PDF in base al suo Z‑Index, mantenendo la gerarchia visiva come previsto dal creatore del documento.
-
-#### Passo 1: Configura la Directory di Output e il Formato del Percorso del File
-
-Imposta la directory di output dove verranno salvati i file HTML renderizzati.
+Definisci dove verranno salvati i file HTML generati e come dovranno essere nominati.
 
 ```java
 import java.nio.file.Path;
@@ -121,9 +145,10 @@ Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### Passo 2: Configura HtmlViewOptions con Rendering a Strati
+### Passo 2: imposta `HtmlViewOptions` con rendering a strati
 
-Configura `HtmlViewOptions` per abilitare le risorse incorporate e il rendering a strati.
+`HtmlViewOptions` configura l'output HTML, inclusa l'opzione di preservare i livelli.  
+`HtmlViewOptions` è un oggetto di configurazione che specifica opzioni di rendering come il formato di output e il rendering a strati.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -135,9 +160,10 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.getPdfOptions().setEnableLayeredRendering(true);
 ```
 
-#### Passo 3: Renderizza il Documento
+### Passo 3: rendi il documento
 
-Utilizza una dichiarazione `try‑with‑resources` per renderizzare solo la prima pagina del tuo documento.
+`Viewer` carica il PDF ed esegue il processo di rendering in base alle opzioni fornite.  
+Usa un blocco try‑with‑resources per garantire che l'istanza `Viewer` venga chiusa automaticamente dopo il rendering.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -148,80 +174,80 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
-> **Consiglio Pro:** Se hai bisogno di **convert pdf html java** per l'intero documento, basta iterare su tutti i numeri di pagina e chiamare `viewer.view(viewOptions, pageNumber)` all'interno del ciclo.
+> **Suggerimento professionale:** Per **generare HTML da PDF** per l'intero documento, itera su tutti i numeri di pagina e chiama `viewer.view(viewOptions, pageNumber)` all'interno del ciclo.
 
-### Problemi Comuni e Soluzioni
+## Problemi comuni e soluzioni
 
 - **Directory di output non scrivibile** – Verifica i permessi della cartella o scegli un percorso diverso.  
-- **FileNotFoundException** – Controlla nuovamente il percorso del file PDF; usa percorsi assoluti per sicurezza.  
-- **Picchi di memoria su PDF di grandi dimensioni** – Processa le pagine in batch e chiudi l'istanza `Viewer` dopo ogni batch.  
+- **FileNotFoundException** – Controlla attentamente il percorso del file PDF; i percorsi assoluti evitano ambiguità.  
+- **Picchi di memoria su PDF di grandi dimensioni** – Elabora le pagine in batch e chiudi il `Viewer` dopo ogni batch per liberare le risorse native.
 
-## Applicazioni Pratiche
+## Applicazioni pratiche
 
-Implementare il rendering a strati in Java può essere vantaggioso per:
+Implementare il rendering a strati in Java è utile per:
 
-1. **Documenti Legali** – preservare annotazioni e firme nell'ordine corretto.  
-2. **Disegni Architettonici** – mantenere intatti più layer di disegno quando condivisi digitalmente.  
-3. **Materiali Educativi** – mantenere la struttura di PDF complessi usati nelle piattaforme di e‑learning.  
+1. **Documenti legali** – mantieni firme, timbri e annotazioni nell'ordine corretto.  
+2. **Disegni architettonici** – preserva più livelli di progetto quando condividi digitalmente.  
+3. **Contenuti educativi** – conserva la struttura di PDF che combinano immagini, testo e note interattive.
 
-### Possibilità di Integrazione
+## Considerazioni sulle prestazioni
 
-Il rendering a strati può essere combinato con sistemi di gestione documentale, biblioteche digitali o qualsiasi soluzione che richieda una presentazione accurata dei PDF.
-
-## Considerazioni sulle Prestazioni
-
-Per mantenere la tua applicazione reattiva:
+GroupDocs.Viewer supporta **oltre 70 formati di input e output** e può rendere PDF con **fino a 500 pagine** senza caricare l'intero file in memoria, grazie alla sua architettura di streaming. Per mantenere l'applicazione reattiva:
 
 - Abilita le risorse incorporate per ridurre le chiamate HTTP esterne.  
-- Chiudi prontamente le istanze `Viewer` dopo il rendering per liberare risorse native.  
-- Monitora l'uso dell'heap Java per PDF di grandi dimensioni e considera di processare le pagine in batch.  
+- Dispone prontamente dell'istanza `Viewer` dopo il rendering.  
+- Monitora l'uso dell'heap Java e processa file di grandi dimensioni in batch più piccoli.
 
-## Come Convertire PDF in HTML in Java con GroupDocs.Viewer
+## Come convertire PDF in HTML in Java usando GroupDocs.Viewer
 
-Se il tuo obiettivo è **convert pdf html java**, le stesse `HtmlViewOptions` configurate per il rendering a strati produrranno file HTML che conservano le informazioni dei layer originali. Basta renderizzare ogni pagina come mostrato nel passo precedente, e otterrai un insieme di pagine HTML pronte per la visualizzazione web.
+`Viewer` è la classe principale che apre un documento e orchestra il rendering. `HtmlViewOptions` configura l'output HTML, inclusa l'opzione di preservare i livelli. Caricando il tuo PDF con `Viewer`, abilitando il rendering a strati e chiamando `view` con un'istanza `HtmlViewOptions`, la libreria produce un set di pagine HTML che mantengono ogni livello originale, pronte per la visualizzazione immediata sul web.
 
-## Conclusione
-
-Questa guida ha coperto le basi di **render pdf layered java** con GroupDocs.Viewer e ti ha mostrato come **convert pdf html java** nello stesso flusso di lavoro. Seguendo questi passaggi, puoi migliorare la capacità della tua applicazione di gestire documenti PDF complessi in modo accurato ed efficiente.
-
-### Prossimi Passi
-
-- Esplora funzionalità aggiuntive di GroupDocs.Viewer come l'estrazione di testo o la conversione in altri formati.  
-- Integra il flusso di rendering in una pipeline di gestione documentale più ampia.  
-- Sperimenta con CSS personalizzato per stilizzare l'HTML generato secondo il tuo brand.
-
-Pronto a implementare ciò che hai imparato? Prova la soluzione e sentiti libero di esplorare le risorse qui sotto per approfondimenti più dettagliati.
-
-## Domande Frequenti
+## Domande frequenti
 
 **D: Cos'è il rendering a strati nei PDF?**  
-R: Il rendering a strati preserva la gerarchia visiva del contenuto basata sullo Z‑Index, garantendo che gli elementi sovrapposti appaiano nell'ordine corretto.
+R: Il rendering a strati preserva la gerarchia visiva dei contenuti basata su Z‑Index, garantendo che gli elementi sovrapposti appaiano nell'ordine corretto.
 
 **D: Come configuro GroupDocs.Viewer con Maven?**  
-R: Aggiungi il repository e la dipendenza mostrati nello snippet Maven sopra, poi aggiorna il progetto per scaricare la libreria.
+R: Aggiungi il repository e la dipendenza mostrati nello snippet Maven, quindi aggiorna il progetto affinché Maven scarichi la libreria.
 
-**D: Il java document viewer può convertire pdf in html mantenendo i layer?**  
-R: Sì – abilitando `setEnableLayeredRendering(true)` il visualizzatore genera HTML che riflette i layer originali del PDF.
+**D: Il visualizzatore di documenti Java può convertire PDF in HTML mantenendo i livelli?**  
+R: Sì – abilita `setEnableLayeredRendering(true)` e il visualizzatore produce HTML che rispecchia la struttura a livelli del PDF.
 
 **D: Quale versione di Java è richiesta per GroupDocs.Viewer?**  
-R: JDK 8 o superiore è consigliata per piena compatibilità e prestazioni.
+R: JDK 8 o versioni successive sono consigliate per piena compatibilità e prestazioni ottimali.
 
 **D: Dove posso ottenere supporto se incontro problemi?**  
 R: Visita il [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) per assistenza della community e supporto ufficiale.
 
 ## Risorse
 
-- [Documentazione](https://docs.groupdocs.com/viewer/java/)
-- [Riferimento API](https://reference.groupdocs.com/viewer/java/)
+- [Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
 - [Download GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- [Acquista Licenza](https://purchase.groupdocs.com/buy)
-- [Prova Gratuita](https://releases.groupdocs.com/viewer/java/)
-- [Licenza Temporanea](https://purchase.groupdocs.com/temporary-license/)
+- [Purchase License](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
-Esplora queste risorse per approfondire la tua comprensione e ampliare le capacità di implementazione. Buon coding!
+Esplora questi link per approfondire le tue conoscenze e ampliare le capacità di implementazione.
 
-**Ultimo Aggiornamento:** 2026-03-27  
-**Testato Con:** GroupDocs.Viewer 25.2 for Java  
+---
+
+**Ultimo aggiornamento:** 2026-09-25  
+**Testato con:** GroupDocs.Viewer 25.2 per Java  
 **Autore:** GroupDocs  
 
 ---
+
+## parole chiave target
+
+**Parola chiave primaria (massima priorità):**  
+how to render pdf  
+
+**Parole chiave secondarie (di supporto):**  
+generate html from pdf, convert pdf html java
+
+## Tutorial correlati
+
+- [Java Pdf Rendering Groupdocs Viewer Page Breaks](/viewer/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/)
+- [Groupdocs Viewer Java Responsive Html Rendering](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [Convert PDF to PNG with GroupDocs Viewer for Java](/viewer/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/)

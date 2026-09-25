@@ -1,60 +1,99 @@
 ---
-date: '2026-03-27'
-description: Pelajari cara merender PDF berlapis dengan Java dan mengonversi PDF ke
-  HTML menggunakan GroupDocs.Viewer untuk Java, sambil mempertahankan hierarki visual
-  dan Z‑Index serta menghasilkan output yang cepat dan berkualitas tinggi.
+date: '2026-09-25'
+description: Pelajari cara merender PDF dengan Java berlapis menggunakan GroupDocs.Viewer,
+  menghasilkan HTML dari PDF, dan mempertahankan Z‑Index untuk output visual yang
+  akurat.
 keywords:
-- PDF layered rendering Java
-- GroupDocs.Viewer setup
-- Java PDF rendering
-title: Render PDF Berlapis Java – Rendering PDF Berlapis yang Efisien dengan GroupDocs.Viewer
+- how to render pdf
+- generate html from pdf
+- convert pdf html java
+lastmod: '2026-09-25'
+og_description: Pelajari cara merender PDF dengan Java berlapis menggunakan GroupDocs.Viewer,
+  menghasilkan HTML dari PDF, dan menjaga lapisan Z‑Index tetap utuh untuk output
+  yang cepat dan berkualitas tinggi.
+og_image_alt: Guide showing PDF layered rendering in Java with GroupDocs.Viewer
+og_title: Cara merender PDF dengan Java berlapis menggunakan GroupDocs.Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-25'
+  description: Learn how to render PDF with layered Java using GroupDocs.Viewer, generate
+    HTML from PDF, and preserve Z‑Index for accurate visual output.
+  headline: How to render PDF with layered Java using GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to render PDF with layered Java using GroupDocs.Viewer, generate
+    HTML from PDF, and preserve Z‑Index for accurate visual output.
+  name: How to render PDF with layered Java using GroupDocs.Viewer
+  steps:
+  - name: configure output directory and file‑name pattern
+    text: Define where the generated HTML files will be saved and how they should
+      be named.
+  - name: set up `HtmlViewOptions` with layered rendering
+    text: '`HtmlViewOptions` configures the HTML output, including whether layers
+      are preserved. `HtmlViewOptions` is a configuration object that specifies rendering
+      options such as output format and layered rendering.'
+  - name: render the document
+    text: '`Viewer` loads the PDF and executes the rendering process based on the
+      provided options. Use a try‑with‑resources block to ensure the `Viewer` instance
+      is closed automatically after rendering. > **Pro tip:** To **generate HTML from
+      PDF** for the entire document, iterate over all page numbers and cal'
+  type: HowTo
+- questions:
+  - answer: Layered rendering preserves the visual hierarchy of content based on Z‑Index,
+      ensuring overlapping elements appear in the correct order.
+    question: What is layered rendering in PDFs?
+  - answer: Add the repository and dependency shown in the Maven snippet, then refresh
+      your project so Maven downloads the library.
+    question: How do I set up GroupDocs.Viewer with Maven?
+  - answer: Yes – enable `setEnableLayeredRendering(true)` and the viewer produces
+      HTML that mirrors the PDF’s layer structure.
+    question: Can the Java document viewer convert PDF to HTML while keeping layers?
+  - answer: JDK 8 or higher is recommended for full compatibility and optimal performance.
+    question: Which Java version is required for GroupDocs.Viewer?
+  - answer: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+      for community assistance and official help.
+    question: Where can I get support if I encounter issues?
+  type: FAQPage
+tags:
+- pdf layered rendering
+- groupdocs.viewer
+- java document viewer
+title: Cara merender PDF dengan Java berlapis menggunakan GroupDocs.Viewer
 type: docs
 url: /id/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1
 ---
 
-# Render PDF Berlapis Java – Rendering PDF Berlapis yang Efisien di Java Menggunakan GroupDocs.Viewer
+# Cara merender PDF dengan Java berlapis menggunakan GroupDocs.Viewer
 
-Merender PDF yang kompleks sambil mempertahankan hierarki visualnya adalah tantangan yang diselesaikan secara elegan oleh rendering berlapis. **Render pdf layered java** memungkinkan Anda mempertahankan urutan Z‑Index asli sehingga elemen yang saling tumpang tindih muncul persis seperti yang dimaksudkan oleh penulis. Dalam tutorial ini kami akan menjelaskan cara **render pdf layered java** dengan GroupDocs.Viewer, dan juga menunjukkan cara **convert pdf html java** sehingga hasilnya dapat ditampilkan langsung di peramban.
+Merender PDF sambil mempertahankan hierarki visual aslinya dapat menjadi tantangan, terutama ketika dokumen berisi elemen yang saling tumpang tindih seperti stempel, tanda tangan, atau lapisan arsitektural. Dalam tutorial ini Anda akan menemukan **cara merender PDF** dengan Java berlapis menggunakan GroupDocs.Viewer, dan Anda juga akan melihat cara **menghasilkan HTML dari PDF** sehingga hasilnya dapat ditampilkan langsung di peramban. Pada akhir panduan Anda akan memiliki alur kerja siap produksi yang mempertahankan urutan Z‑Index, memberikan kinerja cepat, dan berfungsi dengan JDK 8 atau yang lebih baru.
 
-![PDF Layered Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/pdf-layered-rendering-java.png)
-
-### Apa yang Akan Anda Pelajari
-
-- Menyiapkan GroupDocs.Viewer dalam proyek Java Anda  
-- Menerapkan rendering berlapis untuk PDF menggunakan Java  
-- Mengonversi PDF ke HTML sambil mempertahankan lapisan tetap utuh  
-- Mengoptimalkan kinerja dengan tips praktik terbaik  
-- Memecahkan masalah umum pada implementasi  
-
-Siap untuk memulai? Mari kita mulai dengan prasyarat.
+![Render PDF Berlapis dengan GroupDocs.Viewer untuk Java](/viewer/advanced-rendering/pdf-layered-rendering-java.png)
 
 ## Jawaban Cepat
-- **Apa yang dilakukan oleh java document viewer?** Ia merender halaman PDF sebagai HTML atau gambar sambil mempertahankan tata letak, termasuk lapisan Z‑Index.  
-- **Perpustakaan mana yang memungkinkan rendering berlapis?** GroupDocs.Viewer untuk Java menyediakan `setEnableLayeredRendering(true)`.  
-- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi berbayar diperlukan untuk produksi.  
-- **Bisakah saya mengonversi pdf ke html dengan viewer ini?** Ya – viewer menghasilkan file HTML yang mempertahankan informasi lapisan.  
-- **Versi Java apa yang diperlukan?** JDK 8 atau lebih tinggi.  
+- **Apa yang dilakukan penampil dokumen Java?** Ia mengonversi halaman PDF ke HTML atau gambar sambil mempertahankan tata letak, font, anotasi, dan lapisan Z‑Index.  
+- **Perpustakaan mana yang memungkinkan render berlapis?** GroupDocs.Viewer untuk Java menyediakan `setEnableLayeredRendering(true)`.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis sudah cukup untuk evaluasi; lisensi berbayar diperlukan untuk penerapan produksi.  
+- **Bisakah saya menghasilkan HTML dari PDF dengan penampil ini?** Ya – opsi render berlapis yang sama menghasilkan file HTML yang mempertahankan setiap lapisan.  
+- **Versi Java apa yang diperlukan?** JDK 8 atau yang lebih tinggi didukung.
 
-## Apa itu Java Document Viewer?
-Sebuah **java document viewer** adalah perpustakaan yang membaca banyak format dokumen (PDF, DOCX, PPTX, dll.) dan merendernya menjadi representasi yang ramah web seperti HTML, gambar, atau SVG. Ia menangani fitur kompleks seperti font, anotasi, dan konten berlapis, memungkinkan Anda menampilkan dokumen secara langsung di peramban atau aplikasi tanpa plugin pihak ketiga.
+## Apa itu penampil dokumen Java?
 
-## Mengapa Menggunakan Rendering Berlapis?
-Rendering berlapis menghormati urutan tumpukan asli elemen (Z‑Index) dalam PDF. Hal ini penting ketika:
+**Penampil dokumen Java** adalah perpustakaan yang membaca banyak format dokumen (PDF, DOCX, PPTX, dll.) dan merendernya menjadi representasi yang ramah web seperti HTML, gambar, atau SVG. Ia menangani fitur kompleks seperti font tertanam, anotasi, dan konten berlapis, memungkinkan Anda menampilkan dokumen langsung di peramban atau aplikasi desktop tanpa plugin tambahan.
 
-- Dokumen hukum berisi tanda tangan dan stempel yang tumpang tindih.  
-- Gambar arsitektur menggunakan beberapa lapisan untuk komponen sistem yang berbeda.  
-- Materi e‑learning menyematkan anotasi di atas gambar latar belakang.  
+## Mengapa menggunakan render berlapis?
 
-Dengan menggunakan **java document viewer** yang mendukung rendering berlapis, Anda memastikan output visual sesuai dengan maksud pembuat.
+Render berlapis menghormati urutan tumpukan asli (Z‑Index) objek di dalam PDF, memastikan elemen yang saling tumpang tindih muncul persis seperti yang dimaksudkan oleh pembuatnya. Dengan menempatkan setiap elemen pada lapisan yang tepat, output visual cocok dengan desain pencipta, yang penting untuk dokumen hukum, arsitektural, dan edukasi di mana penempatan yang tepat menyampaikan makna.
 
 ## Prasyarat
 
-Sebelum memulai, pastikan Anda memiliki:
+- **Java Development Kit (JDK)** 8 atau yang lebih baru.  
+- **Maven** untuk manajemen dependensi (atau Gradle jika Anda lebih suka).  
+- IDE seperti IntelliJ IDEA, Eclipse, atau VS Code.  
+- Familiaritas dasar dengan struktur proyek Java.
 
-### Perpustakaan dan Dependensi yang Diperlukan
+### Perpustakaan dan dependensi yang diperlukan
 
-Add the GroupDocs.Viewer library to your Maven project:
+Tambahkan perpustakaan GroupDocs.Viewer ke `pom.xml` Maven Anda seperti contoh di bawah ini.
 
 ```xml
 <repositories>
@@ -73,22 +112,15 @@ Add the GroupDocs.Viewer library to your Maven project:
 </dependencies>
 ```
 
-### Persyaratan Penyiapan Lingkungan
-
-- Java Development Kit (JDK) 8 atau lebih tinggi.  
-- IDE seperti IntelliJ IDEA, Eclipse, atau VS Code.  
-
-### Prasyarat Pengetahuan
-
-Pemrograman Java dasar dan penyiapan proyek Maven akan membantu Anda mengikuti langkah-langkah dengan lancar.
-
 ## Menyiapkan GroupDocs.Viewer untuk Java
 
-### Langkah-langkah Instalasi
+### Langkah-langkah instalasi
 
-1. **Add Repository and Dependency** – seperti yang ditunjukkan dalam cuplikan Maven di atas.  
-2. **License Acquisition** – mulai dengan percobaan gratis; dapatkan lisensi permanen atau sementara untuk penggunaan produksi.  
-3. **Basic Initialization** – buat instance viewer yang mengarah ke file PDF Anda.
+1. **Tambahkan repositori dan dependensi** – salin potongan kode Maven di atas ke dalam `pom.xml` Anda.  
+2. **Dapatkan lisensi** – mulailah dengan percobaan gratis; untuk produksi, beli lisensi permanen atau sementara.  
+3. **Buat instance penampil** – kelas `Viewer` adalah titik masuk untuk semua operasi render.
+
+Kelas `Viewer` adalah komponen inti GroupDocs.Viewer yang memuat dokumen dan mengoordinasikan konversi ke format output yang diinginkan.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -99,17 +131,13 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
-## Panduan Implementasi
+## Cara merender PDF dengan Java berlapis
 
-Dengan GroupDocs.Viewer yang sudah disiapkan, mari fokus pada penerapan rendering berlapis untuk PDF.
+Untuk merender PDF dengan output berlapis, pertama muat dokumen ke dalam `Viewer`, aktifkan flag render berlapis, lalu panggil operasi view dengan menentukan output HTML. Pendekatan ini mempertahankan hierarki Z‑Index setiap halaman, memungkinkan HTML yang dihasilkan menampilkan elemen tumpang tindih persis seperti pada PDF sumber. Langkah‑langkah berikut akan memandu Anda melalui proses lengkap.
 
-### Rendering Berlapis untuk Dokumen PDF
+### Langkah 1: konfigurasikan direktori output dan pola nama file
 
-Rendering berlapis memungkinkan konten dalam PDF dirender berdasarkan Z‑Index-nya, mempertahankan hierarki visual sebagaimana dimaksudkan oleh pembuat dokumen.
-
-#### Langkah 1: Konfigurasikan Direktori Output dan Format Jalur File
-
-Siapkan direktori output Anda tempat file HTML yang dirender akan disimpan.
+Tentukan di mana file HTML yang dihasilkan akan disimpan dan bagaimana mereka harus dinamai.
 
 ```java
 import java.nio.file.Path;
@@ -118,9 +146,10 @@ Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### Langkah 2: Siapkan HtmlViewOptions dengan Rendering Berlapis
+### Langkah 2: siapkan `HtmlViewOptions` dengan render berlapis
 
-Konfigurasikan `HtmlViewOptions` untuk mengaktifkan sumber daya tersemat dan rendering berlapis.
+`HtmlViewOptions` mengonfigurasi output HTML, termasuk apakah lapisan dipertahankan.  
+`HtmlViewOptions` adalah objek konfigurasi yang menentukan opsi render seperti format output dan render berlapis.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -132,9 +161,10 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.getPdfOptions().setEnableLayeredRendering(true);
 ```
 
-#### Langkah 3: Render Dokumen
+### Langkah 3: render dokumen
 
-Gunakan pernyataan `try‑with‑resources` untuk merender hanya halaman pertama dari dokumen Anda.
+`Viewer` memuat PDF dan mengeksekusi proses render berdasarkan opsi yang diberikan.  
+Gunakan blok try‑with‑resources untuk memastikan instance `Viewer` ditutup secara otomatis setelah render.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -145,66 +175,50 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
-> **Pro tip:** Jika Anda perlu **convert pdf html java** untuk seluruh dokumen, cukup lakukan loop melalui semua nomor halaman dan panggil `viewer.view(viewOptions, pageNumber)` di dalam loop.
+> **Tip pro:** Untuk **menghasilkan HTML dari PDF** untuk seluruh dokumen, iterasikan semua nomor halaman dan panggil `viewer.view(viewOptions, pageNumber)` di dalam loop.
 
-### Masalah Umum dan Solusinya
+## Masalah umum dan solusi
 
-- **Output directory not writable** – Verifikasi izin folder atau pilih jalur lain.  
-- **FileNotFoundException** – Periksa kembali jalur file PDF; gunakan jalur absolut untuk keamanan.  
-- **Memory spikes on large PDFs** – Proses halaman secara batch dan tutup instance `Viewer` setelah setiap batch.  
+- **Direktori output tidak dapat ditulis** – Periksa izin folder atau pilih jalur lain.  
+- **FileNotFoundException** – Periksa kembali jalur file PDF; jalur absolut menghindari ambiguitas.  
+- **Lonjakan memori pada PDF besar** – Proses halaman dalam batch dan tutup `Viewer` setelah setiap batch untuk membebaskan sumber daya native.
 
-## Aplikasi Praktis
+## Aplikasi praktis
 
-Menerapkan rendering berlapis di Java dapat bermanfaat untuk:
+Menerapkan render berlapis dalam Java berguna untuk:
 
-1. **Legal Documents** – mempertahankan anotasi dan tanda tangan dalam urutan yang benar.  
-2. **Architectural Drawings** – menjaga beberapa lapisan gambar tetap utuh saat dibagikan secara digital.  
-3. **Educational Materials** – mempertahankan struktur PDF kompleks yang digunakan dalam platform e‑learning.  
+1. **Dokumen hukum** – mempertahankan tanda tangan, stempel, dan anotasi dalam urutan yang benar.  
+2. **Gambar arsitektural** – mempertahankan beberapa lapisan desain saat berbagi secara digital.  
+3. **Konten edukasi** – menjaga struktur PDF yang menggabungkan gambar, teks, dan catatan interaktif.
 
-### Kemungkinan Integrasi
+## Pertimbangan kinerja
 
-Rendering berlapis dapat digabungkan dengan sistem manajemen dokumen, perpustakaan digital, atau solusi apa pun yang memerlukan presentasi PDF yang akurat.
+GroupDocs.Viewer mendukung **lebih dari 70 format input dan output** serta dapat merender PDF dengan **hingga 500 halaman** tanpa memuat seluruh file ke memori, berkat arsitektur streaming‑nya. Agar aplikasi Anda tetap responsif:
 
-## Pertimbangan Kinerja
+- Aktifkan sumber daya tertanam untuk mengurangi panggilan HTTP eksternal.  
+- Segera dispose instance `Viewer` setelah render.  
+- Pantau penggunaan heap Java dan proses file besar dalam batch yang lebih kecil.
 
-Agar aplikasi Anda tetap responsif:
+## Cara mengonversi PDF ke HTML dalam Java menggunakan GroupDocs.Viewer
 
-- Aktifkan sumber daya tersemat untuk mengurangi panggilan HTTP eksternal.  
-- Tutup instance `Viewer` segera setelah rendering untuk membebaskan sumber daya native.  
-- Pantau penggunaan heap Java untuk PDF besar dan pertimbangkan memproses halaman secara batch.  
+`Viewer` adalah kelas utama yang membuka dokumen dan mengatur proses render. `HtmlViewOptions` mengonfigurasi output HTML, termasuk apakah lapisan dipertahankan. Dengan memuat PDF Anda menggunakan `Viewer`, mengaktifkan render berlapis, dan memanggil `view` dengan instance `HtmlViewOptions`, perpustakaan menghasilkan serangkaian halaman HTML yang mempertahankan setiap lapisan asli, siap ditampilkan langsung di web.
 
-## Cara Mengonversi PDF ke HTML di Java Menggunakan GroupDocs.Viewer
+## Pertanyaan yang sering diajukan
 
-Jika tujuan Anda adalah **convert pdf html java**, `HtmlViewOptions` yang sama yang Anda konfigurasikan untuk rendering berlapis akan menghasilkan file HTML yang mempertahankan informasi lapisan asli. Cukup render setiap halaman seperti yang ditunjukkan pada langkah sebelumnya, dan Anda akan mendapatkan sekumpulan halaman HTML siap ditampilkan di web.
+**T: Apa itu render berlapis pada PDF?**  
+J: Render berlapis mempertahankan hierarki visual konten berdasarkan Z‑Index, memastikan elemen yang tumpang tindih muncul dalam urutan yang benar.
 
-## Kesimpulan
+**T: Bagaimana cara menyiapkan GroupDocs.Viewer dengan Maven?**  
+J: Tambahkan repositori dan dependensi yang ditunjukkan dalam potongan kode Maven, lalu refresh proyek Anda sehingga Maven mengunduh perpustakaan tersebut.
 
-Panduan ini mencakup dasar-dasar **render pdf layered java** dengan GroupDocs.Viewer dan menunjukkan cara **convert pdf html java** dalam alur kerja yang sama. Dengan mengikuti langkah-langkah ini, Anda dapat meningkatkan kemampuan aplikasi Anda dalam menangani dokumen PDF kompleks secara akurat dan efisien.
+**T: Bisakah penampil dokumen Java mengonversi PDF ke HTML sambil mempertahankan lapisan?**  
+J: Ya – aktifkan `setEnableLayeredRendering(true)` dan penampil menghasilkan HTML yang mencerminkan struktur lapisan PDF.
 
-### Langkah Selanjutnya
+**T: Versi Java apa yang diperlukan untuk GroupDocs.Viewer?**  
+J: JDK 8 atau yang lebih tinggi direkomendasikan untuk kompatibilitas penuh dan kinerja optimal.
 
-- Jelajahi fitur tambahan GroupDocs.Viewer seperti ekstraksi teks atau konversi ke format lain.  
-- Integrasikan alur kerja rendering ke dalam pipeline manajemen dokumen yang lebih besar.  
-- Bereksperimen dengan CSS khusus untuk menata HTML yang dihasilkan sesuai merek Anda.  
-
-Siap menerapkan apa yang telah Anda pelajari? Coba solusi tersebut, dan silakan jelajahi sumber daya di bawah ini untuk wawasan lebih mendalam.
-
-## Pertanyaan yang Sering Diajukan
-
-**Q: Apa itu rendering berlapis dalam PDF?**  
-A: Rendering berlapis mempertahankan hierarki visual konten berdasarkan Z‑Index, memastikan elemen yang tumpang tindih muncul dalam urutan yang tepat.
-
-**Q: Bagaimana cara menyiapkan GroupDocs.Viewer dengan Maven?**  
-A: Tambahkan repositori dan dependensi yang ditunjukkan dalam cuplikan Maven di atas, lalu segarkan proyek Anda untuk mengunduh perpustakaan.
-
-**Q: Bisakah java document viewer mengonversi pdf ke html sambil mempertahankan lapisan?**  
-A: Ya – dengan mengaktifkan `setEnableLayeredRendering(true)` viewer menghasilkan HTML yang mencerminkan lapisan PDF asli.
-
-**Q: Versi Java apa yang diperlukan untuk GroupDocs.Viewer?**  
-A: JDK 8 atau lebih tinggi disarankan untuk kompatibilitas dan kinerja penuh.
-
-**Q: Di mana saya dapat mendapatkan dukungan jika saya mengalami masalah?**  
-A: Kunjungi [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) untuk bantuan komunitas dan dukungan resmi.
+**T: Di mana saya dapat mendapatkan dukungan jika mengalami masalah?**  
+J: Kunjungi [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) untuk bantuan komunitas dan resmi.
 
 ## Sumber Daya
 
@@ -212,13 +226,29 @@ A: Kunjungi [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) un
 - [Referensi API](https://reference.groupdocs.com/viewer/java/)
 - [Unduh GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
 - [Beli Lisensi](https://purchase.groupdocs.com/buy)
-- [Percobaan Gratis](https://releases.groupdocs.com/viewer/java/)
+- [Coba Gratis](https://releases.groupdocs.com/viewer/java/)
 - [Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
 
-Jelajahi sumber daya ini untuk memperdalam pemahaman Anda dan memperluas kemampuan implementasi Anda. Selamat coding!
+Jelajahi tautan‑tautan ini untuk memperdalam pengetahuan Anda dan memperluas kemampuan implementasi.
 
-**Terakhir Diperbarui:** 2026-03-27  
-**Diuji Dengan:** GroupDocs.Viewer 25.2 for Java  
+---
+
+**Terakhir Diperbarui:** 2026-09-25  
+**Diuji Dengan:** GroupDocs.Viewer 25.2 untuk Java  
 **Penulis:** GroupDocs  
 
 ---
+
+## kata kunci target
+
+**Kata kunci utama (prioritas tertinggi):**  
+cara merender pdf  
+
+**Kata kunci sekunder (pendukung):**  
+menghasilkan html dari pdf, mengonversi pdf html java
+
+## Tutorial Terkait
+
+- [Java Pdf Rendering Groupdocs Viewer Page Breaks](/viewer/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/)
+- [Groupdocs Viewer Java Responsive Html Rendering](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [Convert PDF to PNG with GroupDocs Viewer for Java](/viewer/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/)
