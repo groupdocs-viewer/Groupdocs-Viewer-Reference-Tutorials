@@ -71,10 +71,6 @@ url: /ar/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-view
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # إنشاء html من docx وعرض التغييرات المتعقبة في Java
 
 في هذا الدليل ستتعلم كيفية **إنشاء html من docx** مع الحفاظ على كل تعديل متعقب يظهر في ملف Word الأصلي. سواءً كنت تبني بوابة لمراجعة العقود، أو نظام إدارة قضايا قانونية، أو واجهة تحرير تعاونية، فإن عرض التغييرات المتعقبة كـ HTML يتيح للمستخدمين رؤية ما تم إضافته أو إزالته أو التعليق عليه بالضبط—دون الحاجة إلى تثبيت Microsoft Word. يشرح البرنامج التعليمي تكوين Maven، والترخيص، وكود Java الكامل اللازم لإنتاج صفحات HTML نظيفة وقابلة للتنقل.
@@ -225,8 +221,3 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WIT
 - [دورة GroupDocs Viewer Java - تحويل Word إلى HTML وعرض المستندات مع التعليقات](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
 - [تحويل Docx إلى Html باستخدام Groupdocs Viewer Java](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
 - [عرض HTML استجابي باستخدام Groupdocs Viewer Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

@@ -71,10 +71,6 @@ url: /ko/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-view
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # docx에서 HTML을 생성하고 Java에서 추적된 변경 사항을 렌더링
 
 이 가이드에서는 소스 Word 파일에 나타나는 모든 추적된 수정 사항을 보존하면서 **docx에서 HTML을 생성**하는 방법을 배웁니다. 계약 검토 포털, 법률 사건 관리 시스템, 또는 협업 편집 UI를 구축하든, 추적된 변경 사항을 HTML로 렌더링하면 사용자가 추가, 삭제, 주석된 내용을 정확히 확인할 수 있으며 Microsoft Word를 설치할 필요가 없습니다. 이 튜토리얼은 Maven 설정, 라이선스 및 깔끔하고 탐색 가능한 HTML 페이지를 출력하는 데 필요한 전체 Java 코드를 단계별로 안내합니다.
@@ -223,8 +219,3 @@ A: 예, GroupDocs 포럼, 공식 문서 및 라이선스 고객을 위한 직접
 - [GroupDocs Viewer Java 튜토리얼 - Word를 HTML로 변환하고 주석이 있는 문서 렌더링](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
 - [Docx를 HTML로 변환 Groupdocs Viewer Java](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
 - [Groupdocs Viewer Java 반응형 HTML 렌더링](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

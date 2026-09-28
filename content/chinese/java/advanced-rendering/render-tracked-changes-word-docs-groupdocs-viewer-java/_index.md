@@ -71,10 +71,6 @@ url: /zh/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-view
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # 从 docx 生成 HTML 并在 Java 中渲染跟踪更改
 
 在本指南中，您将学习如何 **generate html from docx**，同时保留源 Word 文件中出现的所有跟踪修订。无论您是在构建合同审查门户、法律案件管理系统，还是协作编辑界面，将跟踪更改渲染为 HTML 都能让用户准确看到添加、删除或评论的内容——无需安装 Microsoft Word。教程将带您了解 Maven 配置、授权以及生成干净、可导航的 HTML 页面所需的完整 Java 代码。
@@ -224,8 +220,3 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WIT
 - [GroupDocs Viewer Java 教程 - 将 Word 转换为 HTML 并渲染带注释的文档](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
 - [将 Docx 转换为 Html - Groupdocs Viewer Java](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
 - [Groupdocs Viewer Java 响应式 HTML 渲染](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

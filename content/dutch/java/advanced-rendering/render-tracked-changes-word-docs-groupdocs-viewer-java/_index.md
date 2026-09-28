@@ -71,10 +71,6 @@ url: /nl/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-view
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Genereer html van docx en render tracked changes in Java
 
 In deze gids leer je hoe je **html genereert van docx** terwijl je elke tracked revisie behoudt die in het bron‑Word‑bestand voorkomt. Of je nu een contract‑review portal, een juridisch case‑management systeem, of een collaboratieve bewerkings‑UI bouwt, het renderen van tracked changes als HTML laat gebruikers precies zien wat is toegevoegd, verwijderd of becommentarieerd—zonder dat Microsoft Word geïnstalleerd hoeft te zijn. De tutorial leidt je door Maven‑configuratie, licenties, en de volledige Java‑code die nodig is om schone, navigeerbare HTML‑pagina's te produceren.
@@ -225,9 +221,3 @@ A: Ja, je kunt hulp krijgen via het GroupDocs‑forum, de officiële documentati
 - [GroupDocs Viewer Java Tutorial - Converteer Word naar HTML en render documenten met opmerkingen](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
 - [Converteer Docx naar Html met Groupdocs Viewer Java](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
 - [Responsieve HTML-rendering met Groupdocs Viewer Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
