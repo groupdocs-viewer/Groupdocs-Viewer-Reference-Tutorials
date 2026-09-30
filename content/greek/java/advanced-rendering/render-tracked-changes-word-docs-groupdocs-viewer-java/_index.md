@@ -73,10 +73,6 @@ url: /el/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-view
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Δημιουργία html από docx και απόδοση παρακολουθούμενων αλλαγών σε Java
 
 Σε αυτόν τον οδηγό θα μάθετε πώς να **δημιουργήσετε html από docx** διατηρώντας κάθε παρακολουθούμενη αναθεώρηση που εμφανίζεται στο αρχικό αρχείο Word. Είτε δημιουργείτε μια πύλη ελέγχου συμβάσεων, ένα σύστημα διαχείρισης νομικών υποθέσεων ή ένα περιβάλλον συνεργατικής επεξεργασίας, η απόδοση των παρακολουθούμενων αλλαγών ως HTML επιτρέπει στους χρήστες να βλέπουν ακριβώς τι προστέθηκε, αφαιρέθηκε ή σχολιάστηκε—χωρίς να χρειάζεται εγκατεστημένο το Microsoft Word. Το σεμινάριο σας καθοδηγεί μέσω της διαμόρφωσης Maven, της αδειοδότησης και του πλήρους κώδικα Java που απαιτείται για την παραγωγή καθαρών, πλοηγήσιμων σελίδων HTML.
@@ -225,9 +221,3 @@ A: Ναι, μπορείτε να λάβετε βοήθεια μέσω του φ�
 - [Οδηγός GroupDocs Viewer Java - Μετατροπή Word σε HTML και Απόδοση Εγγράφων με Σχόλια](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
 - [Μετατροπή Docx σε Html με GroupDocs Viewer Java](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
 - [GroupDocs Viewer Java Ανταποκρινόμενη Απόδοση Html](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

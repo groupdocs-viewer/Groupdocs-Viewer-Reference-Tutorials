@@ -71,10 +71,6 @@ url: /vi/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-view
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Tạo html từ docx và hiển thị các thay đổi được theo dõi trong Java
 
 Trong hướng dẫn này, bạn sẽ học cách **generate html from docx** trong khi vẫn giữ nguyên mọi phiên bản được theo dõi xuất hiện trong tệp Word nguồn. Cho dù bạn đang xây dựng một cổng thông tin xem xét hợp đồng, một hệ thống quản lý vụ kiện pháp lý, hoặc giao diện chỉnh sửa cộng tác, việc hiển thị các thay đổi được theo dõi dưới dạng HTML cho phép người dùng thấy chính xác những gì đã được thêm, xóa hoặc bình luận—mà không cần cài đặt Microsoft Word. Bài hướng dẫn sẽ đưa bạn qua cấu hình Maven, cấp phép, và toàn bộ mã Java cần thiết để xuất ra các trang HTML sạch sẽ, dễ điều hướng.
@@ -224,9 +220,3 @@ A: Có, bạn có thể nhận trợ giúp qua diễn đàn GroupDocs, tài li�
 - [Hướng dẫn GroupDocs Viewer Java - Chuyển đổi Word sang HTML và Render Tài liệu với Bình luận](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
 - [Chuyển đổi Docx sang Html với Groupdocs Viewer Java](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
 - [Render Html đáp ứng với Groupdocs Viewer Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

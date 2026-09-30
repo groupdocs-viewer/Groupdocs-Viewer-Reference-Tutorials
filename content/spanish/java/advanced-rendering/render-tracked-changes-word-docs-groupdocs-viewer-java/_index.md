@@ -73,10 +73,6 @@ url: /es/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-view
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Generar html a partir de docx y renderizar cambios rastreados en Java
 
 En esta guía aprenderá cómo **generar html a partir de docx** mientras preserva cada revisión rastreada que aparece en el archivo Word original. Ya sea que esté construyendo un portal de revisión de contratos, un sistema de gestión de casos legales o una interfaz de edición colaborativa, renderizar los cambios rastreados como HTML permite a los usuarios ver exactamente qué se añadió, eliminó o comentó, sin necesidad de tener Microsoft Word instalado. El tutorial le guía a través de la configuración de Maven, la licencia y el código Java completo necesario para generar páginas HTML limpias y navegables.
@@ -225,8 +221,3 @@ R: Sí, puede obtener ayuda a través del foro de GroupDocs, la documentación o
 - [Tutorial de GroupDocs Viewer Java - Convertir Word a HTML y renderizar documentos con comentarios](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
 - [Convertir Docx a Html con GroupDocs Viewer Java](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
 - [Renderizado HTML responsivo con GroupDocs Viewer Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

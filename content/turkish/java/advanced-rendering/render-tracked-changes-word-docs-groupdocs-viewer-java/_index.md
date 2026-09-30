@@ -73,10 +73,6 @@ url: /tr/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-view
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Docx'ten HTML oluşturma ve Java'da izlenen değişiklikleri render etme
 
 Bu kılavuzda, kaynak Word dosyasında bulunan tüm izlenen revizyonları koruyarak **docx'ten html oluşturma** işlemini öğreneceksiniz. İster bir sözleşme inceleme portalı, ister bir hukuk davası yönetim sistemi, ister işbirlikçi düzenleme UI'si geliştirin, izlenen değişikliklerin HTML olarak render edilmesi, kullanıcıların eklenen, kaldırılan veya yorum yapılan öğeleri Microsoft Word yüklü olmadan görmesini sağlar. Eğitim, Maven yapılandırması, lisanslama ve temiz, gezilebilir HTML sayfaları üretmek için gereken tam Java kodunu adım adım gösterir.
@@ -227,9 +223,3 @@ C: Evet, GroupDocs forumu, resmi dokümantasyon ve lisanslı müşteriler için 
 - [GroupDocs Viewer Java Eğitimi - Word'ü HTML'ye Dönüştürme ve Yorumlarla Belgeleri Renderlama](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
 - [Docx'i Html'e Dönüştürme Groupdocs Viewer Java](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
 - [Groupdocs Viewer Java Duyarlı Html Renderlama](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

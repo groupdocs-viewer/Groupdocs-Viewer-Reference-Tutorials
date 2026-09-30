@@ -72,10 +72,6 @@ url: /cs/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-view
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Generovat html z docx a vykreslit sledované změny v Javě
 
 V tomto průvodci se naučíte, jak **generovat html z docx** a zachovat každou sledovanou revizi, která se objeví ve zdrojovém souboru Word. Ať už vytváříte portál pro revizi smluv, systém pro správu právních případů nebo rozhraní pro spolupráci na úpravách, vykreslování sledovaných změn jako HTML umožňuje uživatelům přesně vidět, co bylo přidáno, odebráno nebo okomentováno — aniž by bylo nutné mít nainstalovaný Microsoft Word. Tutoriál vás provede konfigurací Maven, licencováním a kompletním Java kódem potřebným k vytvoření čistých, procházetelných HTML stránek.
@@ -223,9 +219,3 @@ A: Ano, můžete získat pomoc prostřednictvím fóra GroupDocs, oficiální do
 - [GroupDocs Viewer Java Tutoriál – Převod Wordu na HTML a vykreslení dokumentů s komentáři](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
 - [Převod Docx na Html Groupdocs Viewer Java](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
 - [Groupdocs Viewer Java Responsivní HTML vykreslování](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

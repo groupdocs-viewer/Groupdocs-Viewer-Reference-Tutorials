@@ -73,10 +73,6 @@ url: /ru/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-view
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Генерация HTML из DOCX и отображение отслеживаемых изменений в Java
 
 В этом руководстве вы узнаете, как **генерировать HTML из DOCX**, сохраняя каждую отслеживаемую правку, присутствующую в исходном файле Word. Независимо от того, создаёте ли вы портал для проверки контрактов, систему управления юридическими делами или интерфейс совместного редактирования, рендеринг отслеживаемых изменений в виде HTML позволяет пользователям видеть точно, что было добавлено, удалено или прокомментировано, без необходимости установки Microsoft Word. Руководство проведёт вас через настройку Maven, лицензирование и полный Java‑код, необходимый для получения чистых, навигационных HTML‑страниц.
@@ -225,9 +221,3 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WIT
 - [Руководство GroupDocs Viewer Java — Конвертация Word в HTML и рендеринг документов с комментариями](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
 - [Конвертация Docx в HTML с помощью GroupDocs Viewer Java](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
 - [Responsive HTML рендеринг в GroupDocs Viewer Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

@@ -74,10 +74,6 @@ url: /hu/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-view
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # HTML generálása docx-ből és a nyomon követett módosítások megjelenítése Java-ban
 
 Ebben az útmutatóban megtanulja, hogyan **generate html from docx** úgy, hogy megőrzi a forrás Word fájlban megjelenő minden nyomon követett revíziót. Akár szerződés‑ellenőrző portált, jogi ügykezelő rendszert vagy együttműködő szerkesztő felületet épít, a nyomon követett módosítások HTML‑ként történő megjelenítése lehetővé teszi a felhasználók számára, hogy pontosan lássák, mi lett hozzáadva, eltávolítva vagy megjegyzve – anélkül, hogy a Microsoft Word telepítve lenne. A tutorial végigvezeti a Maven konfiguráción, a licencelésen és a teljes Java kódon, amely tiszta, navigálható HTML oldalakat állít elő.
@@ -226,9 +222,3 @@ A: Igen, segítséget kaphat a GroupDocs fórumon, a hivatalos dokumentációban
 - [GroupDocs Viewer Java Tutorial - Convert Word to HTML and Render Documents with Comments](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
 - [Convert Docx To Html Groupdocs Viewer Java](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
 - [Groupdocs Viewer Java Responsive Html Rendering](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
