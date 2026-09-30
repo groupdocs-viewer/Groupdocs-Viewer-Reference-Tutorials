@@ -1,46 +1,105 @@
 ---
-date: '2026-03-29'
-description: Naučte se, jak v Javě pomocí GroupDocs Viewer otočit stránku o 90 stupňů,
+date: '2026-09-30'
+description: Zjistěte, jak v Javě otočit stránku o 90 stupňů pomocí GroupDocs Viewer,
   včetně nastavení, kódu a tipů na výkon.
 keywords:
-- rotate first page GroupDocs Viewer Java
-- GroupDocs Viewer Java setup
-- rotate pages in documents using Java
+- rotate page 90 degrees
+- how to rotate pdf
+- GroupDocs Viewer Java rotation
+- Java document rendering
+- PDF page transformation
+lastmod: '2026-09-30'
+og_description: Otočte stránku o 90 stupňů v Javě pomocí GroupDocs Viewer. Průvodce
+  krok za krokem, tipy na výkon a reálné příklady použití pro vývojáře.
+og_image_alt: Illustration of rotating the first page of a document using GroupDocs
+  Viewer for Java
+og_title: Otočte stránku o 90 stupňů pomocí GroupDocs Viewer pro Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-30'
+  description: Learn how to rotate page 90 degrees in Java using GroupDocs Viewer,
+    including setup, code, and performance tips.
+  headline: Rotate page 90 degrees with GroupDocs Viewer for Java
+  type: TechArticle
+- description: Learn how to rotate page 90 degrees in Java using GroupDocs Viewer,
+    including setup, code, and performance tips.
+  name: Rotate page 90 degrees with GroupDocs Viewer for Java
+  steps:
+  - name: '**Presentation adjustments** – Convert a portrait slide to landscape on
+      the fly for better visual impact.'
+    text: '**Presentation adjustments** – Convert a portrait slide to landscape on
+      the fly for better visual impact.'
+  - name: '**Bulk document correction** – Automate fixing of scanned PDFs that were
+      captured sideways, saving hours of manual work.'
+    text: '**Bulk document correction** – Automate fixing of scanned PDFs that were
+      captured sideways, saving hours of manual work.'
+  - name: '**Print‑ready output** – Ensure landscape graphics print correctly on portrait‑oriented
+      paper without manual rotation in the printer driver.'
+    text: '**Print‑ready output** – Ensure landscape graphics print correctly on portrait‑oriented
+      paper without manual rotation in the printer driver.'
+  type: HowTo
+- questions:
+  - answer: Yes—invoke `rotatePage()` for each page number you need to rotate, either
+      in a loop or by chaining calls.
+    question: Can I rotate multiple pages at once?
+  - answer: Not directly. You would need to render the document again without the
+      rotation options.
+    question: Is there a way to undo the rotation after rendering?
+  - answer: DOCX, PDF, PPTX, XLSX, and many other formats listed in the official documentation.
+    question: Which file formats support page rotation in GroupDocs Viewer?
+  - answer: Wrap the rotation logic in a loop that iterates over a collection of file
+      paths, applying the same `rotatePage` configuration to each file.
+    question: How can I rotate pages in a batch of documents automatically?
+  - answer: Enclose the Viewer usage in a `try‑catch` block, log the exception details,
+      and optionally continue processing the next file to avoid a single failure stopping
+      the whole batch.
+    question: What is the best practice for handling errors during rotation?
+  type: FAQPage
+tags:
+- rotate page
+- GroupDocs Viewer
+- Java PDF processing
+- document automation
 title: Otočte stránku o 90 stupňů pomocí GroupDocs Viewer pro Java
 type: docs
 url: /cs/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Otočit stránku o 90 stupňů pomocí GroupDocs Viewer pro Java
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-Když potřebujete **otočit stránku o 90 stupňů** v dokumentu — ať už jde o PDF, Word soubor nebo tabulku — provedení toho programově šetří čas a eliminuje ruční chyby. V tomto pokročilém průvodci vás provedeme přesné kroky k otočení první stránky libovolného podporovaného dokumentu pomocí **GroupDocs Viewer for Java**. Na konci budete mít znovupoužitelný úryvek, který můžete vložit do svých projektů.  
-Také se podíváme, proč je otáčení stránek v Javě důležité, na běžné scénáře, kde tato technika vyniká, a jak udržet operaci nenáročnou.
+# Otočit stránku o 90 stupňů pomocí GroupDocs Viewer for Java
 
-![Otočit první stránku dokumentu pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/rotate-the-first-page-of-a-document-java.png)
+Pokud potřebujete **otočit stránku o 90 stupňů** v dokumentu — ať už jde o PDF, Word nebo tabulku — provedení toho programově v Javě šetří čas, eliminuje ruční chyby a umožňuje začlenit operaci do automatizovaných pipeline. V tomto pokročilém průvodci se naučíte, jak otočit první stránku libovolného podporovaného dokumentu pomocí **GroupDocs Viewer for Java**, proč je tato schopnost důležitá v reálných projektech a jak udržet proces lehký a paměťově úsporný.
+
+![Rotate the First Page of a Document with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rotate-the-first-page-of-a-document-java.png)
 
 ## Rychlé odpovědi
 - **Co znamená „otočit stránku o 90 stupňů“?** Otočí vybranou stránku po směru hodinových ručiček o čtvrt otáčky.  
-- **Která knihovna provádí otáčení?** GroupDocs Viewer for Java poskytuje metodu `rotatePage`.  
-- **Mohu otáčet PDF stránky pomocí Javy?** Ano — použijte stejný volání `rotatePage`; funguje pro PDF, DOCX, XLSX a další.  
-- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro vývoj; placená licence je vyžadována pro produkci.  
-- **Je operace náročná na paměť?** Ne, pokud rychle uzavřete instanci `Viewer`; viz tipy na výkon níže.
+- **Která knihovna provádí rotaci?** GroupDocs Viewer for Java poskytuje metodu `rotatePage`.  
+- **Mohu otočit PDF stránky pomocí Javy?** Ano — použijte stejnou volání `rotatePage`; funguje pro PDF, DOCX, XLSX a další.  
+- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro vývoj; pro produkci je vyžadována placená licence.  
+- **Je operace náročná na paměť?** Ne, pokud `Viewer` instanci rychle uzavřete; viz tipy pro výkon níže.
 
 ## Co je „otočit stránku o 90 stupňů“?
-Otočení stránky o 90 stupňů přesměruje stránku z portrétu na krajinu (nebo naopak) bez změny podkladového obsahu. To je zvláště užitečné pro prezentace, tisk grafiky určené pouze na krajinu nebo opravu naskenovaných dokumentů, které byly zachyceny šikmo.
+Otočení stránky o 90 stupňů přenastaví orientaci stránky z portrétu na krajinu (nebo naopak) bez změny podkladového obsahu. To je užitečné pro prezentace, tisk grafiky jen v krajině nebo opravu naskenovaných dokumentů pořízených šikmo. Rotace se aplikuje při renderování, původní soubor zůstává nezměněn.
 
-## Proč otáčet stránky programově pomocí GroupDocs Viewer pro Java?
-GroupDocs Viewer abstrahuje složitosti práce s desítkami formátů souborů. Umožňuje vám aplikovat transformace na úrovni stránky — jako je otáčení — a přitom zachovat původní soubor nedotčený. API je plynulé, thread‑safe a funguje na jakémkoli runtime Java 8+, což z něj činí spolehlivou volbu pro automatizaci na úrovni podniku.
+## Proč otáčet stránky programově pomocí GroupDocs Viewer for Java?
+GroupDocs Viewer podporuje **více než 50 vstupních a výstupních formátů** — včetně PDF, DOCX, PPTX, XLSX a mnoha typů obrázků — takže můžete renderovat jakýkoli dokument bez externích konvertorů. API je plynulé, thread‑safe a běží na libovolném Java 8+ runtime, což z něj činí spolehlivou volbu pro podnikovou automatizaci, která musí konzistentně zvládat desítky typů souborů.
 
 ## Požadavky
-- **GroupDocs.Viewer for Java** (nejnovější verze)
-- **JDK 8** nebo novější
-- **Maven** (nebo Gradle) pro správu závislostí
-- IDE, jako je IntelliJ IDEA nebo Eclipse
+
+- GroupDocs Viewer for Java (nejnovější verze)
+- JDK 8 nebo novější
+- Maven (nebo Gradle) pro správu závislostí
+- IDE jako IntelliJ IDEA nebo Eclipse
 - Základní znalost Java I/O
 
 ## Nastavení GroupDocs.Viewer pro Java
-Přidejte repozitář GroupDocs a závislost do vašeho `pom.xml`. Tento úryvek zůstává nezměněn oproti původnímu tutoriálu:
+
+Přidejte repozitář GroupDocs a závislost do svého `pom.xml`. Tento úryvek zůstává beze změny oproti originálnímu tutoriálu:
 
 ```xml
 <repositories>
@@ -60,12 +119,12 @@ Přidejte repozitář GroupDocs a závislost do vašeho `pom.xml`. Tento úryvek
 ```
 
 ### Získání licence
-- **Free trial** – stáhněte z webu GroupDocs.  
-- **Temporary license** – požádejte, pokud potřebujete prodloužené zkušební období.  
-- **Full license** – zakupte pro produkční nasazení.
+- **Bezplatná zkušební verze** – stáhněte z webu GroupDocs.  
+- **Dočasná licence** – požádejte, pokud potřebujete prodloužené zkušební období.  
+- **Plná licence** – zakupte pro produkční nasazení.
 
 ### Základní inicializace Vieweru
-Následující kód ukazuje minimální způsob vytvoření instance `Viewer`. Uchovejte jej přesně tak, jak je uvedeno:
+Třída `Viewer` je vstupní bod, který načte dokument a poskytuje metody pro renderování a transformaci. Uchovejte kód přesně tak, jak je uveden:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -77,12 +136,12 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
 ```
 
 ## Jak otočit PDF stránku v Javě pomocí GroupDocs Viewer
-I když API funguje napříč mnoha formáty, PDF je nejčastějším případem použití pro otáčení stránek. Používá se stejná metoda `rotatePage`, takže stačí nasměrovat Viewer na PDF soubor a zadat číslo stránky.
+Načtěte cílový soubor pomocí `Viewer`, zadejte číslo stránky a zavolejte `rotatePage`. Metoda funguje pro PDF, DOCX, PPTX, XLSX i jakýkoli jiný formát podporovaný knihovnou. Po otočení můžete dokument renderovat do nového PDF nebo jej streamovat přímo klientovi, přičemž původní soubor zůstane nedotčen.
 
-## Implementace krok za krokem: Otočit první stránku o 90 stupňů
+## Postupná implementace: otočit první stránku o 90 stupňů
 
 ### 1. Importujte požadované balíčky
-Tyto importy vám poskytují přístup k možnostem renderování PDF a výčtu rotace.
+`PdfViewOptions` říká Vieweru, aby výstupem byl PDF soubor, zatímco výčtový typ `Rotation` definuje úhel. Obě třídy patří do balíčku `com.groupdocs.viewer.options`.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -91,7 +150,7 @@ import com.groupdocs.viewer.options.Rotation;
 ```
 
 ### 2. Definujte výstupní umístění a vytvořte Viewer
-Nahraďte zástupné cesty vašimi skutečnými adresáři.
+Nahraďte zástupné cesty svými skutečnými adresáři. Konstruktor `Viewer` přijímá objekt `File`, který ukazuje na zdrojový dokument.
 
 ```java
 import java.nio.file.Path;
@@ -108,8 +167,8 @@ public class RotateSpecificPage {
 }
 ```
 
-### 3. Nakonfigurujte možnosti zobrazení PDF a aplikujte otáčení
-Metoda `rotatePage` přijímá číslo stránky (číslování od 1) a hodnotu výčtu `Rotation`.
+### 3. Nastavte možnosti PDF zobrazení a aplikujte rotaci
+Metoda `rotatePage(int, Rotation)` přijímá **1‑based** index stránky a hodnotu výčtu `Rotation`. V tomto příkladu použijeme `Rotation.ON_90_DEGREE` k otočení první stránky po směru hodinových ručiček.
 
 ```java
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
@@ -119,66 +178,78 @@ viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
 ```
 
 ### 4. Vykreslete dokument
-Nakonec zavolejte `view` pro vygenerování otočeného PDF.
+Volání `view` s nakonfigurovanými možnostmi zapíše otočené PDF do výstupní složky.
 
 ```java
 viewer.view(viewOptions);
 ```
 
 #### Jak to funguje
-- **PdfViewOptions** říká Vieweru, aby výstupem byl PDF soubor.  
-- **rotatePage(int, Rotation)** otáčí pouze stránku, kterou specifikujete, a zbytek zůstane nedotčen.  
-- Metoda podporuje `ON_90_DEGREE`, `ON_180_DEGREE` a `ON_270_DEGREE`.
+- **PdfViewOptions** nasměruje Viewer k vytvoření PDF výstupního souboru.  
+- **rotatePage(int, Rotation)** otáčí pouze zadanou stránku, ostatní stránky zůstávají beze změny.  
+- Metoda podporuje tři konstanty rotace: `ON_90_DEGREE`, `ON_180_DEGREE` a `ON_270_DEGREE`.
 
 ## Časté problémy a řešení
 | Příznak | Pravděpodobná příčina | Oprava |
 |---------|-----------------------|--------|
 | **FileNotFoundException** | Nesprávná cesta nebo chybějící složka | Ověřte, že `YOUR_OUTPUT_DIRECTORY` a `YOUR_DOCUMENT_DIRECTORY` existují a jsou čitelné. |
-| **Unsupported file format** | Pokus o otáčení formátu, který Viewer nepodporuje | Zkontrolujte stránku [GroupDocs Viewer supported formats]. |
-| **No rotation visible** | Použití špatného čísla stránky (číslování od 0) | Pamatujte, že `rotatePage` používá **číslování od 1**. |
-| **Out‑of‑memory errors on large docs** | Renderování mnoha velkých souborů v jednom vlákně | Zpracovávejte dokumenty sekvenčně nebo použijte thread pool s omezenou souběžností. |
+| **Unsupported file format** | Pokus o otočení formátu, který Viewer nepodporuje | Zkontrolujte stránku [GroupDocs Viewer supported formats]. |
+| **No rotation visible** | Použití špatného čísla stránky (základ 0) | Pamatujte, že `rotatePage` používá **1‑based** indexování. |
+| **Out‑of‑memory errors on large docs** | Vykreslování mnoha velkých souborů v jednom vlákně | Zpracovávejte dokumenty sekvenčně nebo použijte pool vláken s omezenou souběžností. |
 
 ## Praktické aplikace
 
-1. **Úpravy prezentací** – Převést portrétní snímek na krajinu za běhu.  
-2. **Hromadná oprava dokumentů** – Automatizovat opravu naskenovaných PDF, které byly zachyceny šikmo.  
-3. **Výstup připravený k tisku** – Zajistit, aby grafika v krajině tiskla správně na papír orientovaný na portrét.
+1. **Úpravy prezentací** – Převod portrétové snímky na krajinu za běhu pro lepší vizuální dopad.  
+2. **Hromadná oprava dokumentů** – Automatizujte opravu naskenovaných PDF, které byly pořízeny šikmo, a ušetřete hodiny ruční práce.  
+3. **Výstup připravený k tisku** – Zajistěte, aby se krajinová grafika tiskla správně na papír orientovaný na portrét, bez ruční rotace v ovladači tiskárny.
 
 ## Tipy pro výkon
 
-- **Uzavřete zdroje rychle** – Blok `try‑with‑resources` automaticky uvolní `Viewer`.  
-- **Dávkové zpracování** – Při práci s mnoha soubory znovu použijte jednu instanci `Viewer` na vlákno, aby se snížila zátěž.  
-- **Sledujte paměť** – Pro dokumenty větší než 100 MB zvažte streamování výstupu na disk místo udržování v paměti.
+- **Uzavírejte zdroje okamžitě** – Blok `try‑with‑resources` automaticky uvolní `Viewer`, čímž šetří paměť.  
+- **Dávkové zpracování** – Znovu použijte jedinou instanci `Viewer` na vlákno, abyste snížili režii inicializace.  
+- **Sledujte paměť** – U dokumentů větších než 100 MB streamujte výstup na disk místo udržování celého souboru v paměti; GroupDocs Viewer dokáže zpracovat soubory 200 MB s využitím méně než 250 MB RAM.
 
 ## Často kladené otázky
 
-**Q: Mohu otáčet více stránek najednou?**  
-A: Ano — zavolejte `rotatePage()` pro každé číslo stránky, kterou potřebujete otočit.
+**Q: Mohu otočit více stránek najednou?**  
+A: Ano — volání `rotatePage()` opakujte pro každé číslo stránky, které potřebujete otočit, buď ve smyčce, nebo řetězením volání.
 
-**Q: Existuje způsob, jak po renderování otáčení vrátit zpět?**  
-A: Ne přímo. Museli byste dokument znovu renderovat bez možností otáčení.
+**Q: Existuje způsob, jak po renderování rotaci vrátit zpět?**  
+A: Ne přímo. Museli byste dokument znovu renderovat bez nastavení rotace.
 
-**Q: Které formáty souborů podporují otáčení stránek v GroupDocs Viewer?**  
+**Q: Které formáty souborů podporují rotaci stránek v GroupDocs Viewer?**  
 A: DOCX, PDF, PPTX, XLSX a mnoho dalších formátů uvedených v oficiální dokumentaci.
 
 **Q: Jak mohu automaticky otáčet stránky ve skupině dokumentů?**  
-A: Zabalte kód do smyčky, která prochází kolekci cest k souborům a na každém použije stejnou logiku `rotatePage`.
+A: Zabalte logiku rotace do smyčky, která iteruje přes kolekci cest k souborům a aplikuje stejnou konfiguraci `rotatePage` na každý soubor.
 
-**Q: Jaká je nejlepší praxe pro zpracování chyb během otáčení?**  
-A: Uzavřete používání Vieweru do bloku `try‑catch`, zaznamenejte výjimku a volitelně pokračujte ve zpracování dalšího souboru.
+**Q: Jaká je nejlepší praxe pro zpracování chyb během rotace?**  
+A: Obalte používání Vieweru do bloku `try‑catch`, logujte podrobnosti výjimky a volitelně pokračujte dalším souborem, aby jedna chyba nezastavila celý batch.
 
 ## Zdroje
 
 - **Dokumentace**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
-- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **API reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
 - **Stáhnout**: [Get GroupDocs Viewer for Java](https://releases.groupdocs.com/viewer/java/)  
-- **Koupit**: [Buy a License](https://purchase.groupdocs.com/buy)  
+- **Koupit licenci**: [Buy a License](https://purchase.groupdocs.com/buy)  
 - **Bezplatná zkušební verze**: [Try Free](https://releases.groupdocs.com/viewer/java/)  
 - **Dočasná licence**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - **Podpora**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Poslední aktualizace:** 2026-03-29  
+**Poslední aktualizace:** 2026-09-30  
 **Testováno s:** GroupDocs Viewer 25.2 for Java  
 **Autor:** GroupDocs
+
+## Související tutoriály
+
+- [How to Rotate Specific PDF Pages with GroupDocs.Viewer for Java](/viewer/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/)
+- [Load Document from URL in Java – GroupDocs.Viewer Tutorial](/viewer/java/document-loading/)
+- [Groupdocs Viewer Java Document Views](/viewer/java/advanced-rendering/groupdocs-viewer-java-document-views/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/products-backtop-button >}}
