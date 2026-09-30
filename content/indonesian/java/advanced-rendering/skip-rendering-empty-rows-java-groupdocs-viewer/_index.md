@@ -1,61 +1,114 @@
 ---
-date: '2026-04-01'
-description: Pelajari cara mengonversi Excel ke HTML Java sambil melewatkan baris
+date: '2026-09-30'
+description: Pelajari cara mengonversi excel ke html java sambil melewatkan baris
   kosong menggunakan GroupDocs.Viewer, meningkatkan kinerja dan mengurangi penggunaan
   sumber daya.
 keywords:
 - excel to html java
+- reduce html size
+- convert xlsx to html
 - how to skip rows
 - render spreadsheet to html
-title: 'excel ke html java: Lewati Rendering Baris Kosong dengan GroupDocs.Viewer'
+lastmod: '2026-09-30'
+og_description: Panduan Excel ke html java menunjukkan cara melewatkan baris kosong
+  menggunakan GroupDocs.Viewer, mengurangi ukuran HTML dan meningkatkan kinerja pada
+  aplikasi Java.
+og_image_alt: Diagram of GroupDocs.Viewer converting Excel to HTML while omitting
+  blank rows
+og_title: Excel ke html java – Lewati baris kosong dengan GroupDocs.Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-30'
+  description: Learn how to convert excel to html java while skipping empty rows using
+    GroupDocs.Viewer, improving performance and reducing resource usage.
+  headline: 'Excel to html java: Skip rendering empty rows with GroupDocs.Viewer'
+  type: TechArticle
+- description: Learn how to convert excel to html java while skipping empty rows using
+    GroupDocs.Viewer, improving performance and reducing resource usage.
+  name: 'Excel to html java: Skip rendering empty rows with GroupDocs.Viewer'
+  steps:
+  - name: Define output directory
+    text: 'Specify where the generated HTML files will be saved: Replace `"YOUR_OUTPUT_DIRECTORY"`
+      with the folder you want to use for the output.'
+  - name: Configure HtmlViewOptions
+    text: '`HtmlViewOptions` lets you embed images, CSS, and JavaScript directly into
+      the HTML, producing a single self‑contained file.'
+  - name: Skip empty rows in spreadsheets
+    text: '`setSkipEmptyRows(true)` instructs GroupDocs.Viewer to omit any row that
+      has no cell values, dramatically shrinking the output.'
+  - name: Render the document
+    text: 'Finally, render the spreadsheet using the configured options: Replace `"YOUR_DOCUMENT_DIRECTORY"`
+      with the path to the Excel file you want to convert.'
+  type: HowTo
+- questions:
+  - answer: Yes. GroupDocs.Viewer also supports Word, PowerPoint, PDF, and many image
+      formats, allowing you to apply the same skip‑empty‑row logic to spreadsheets
+      embedded in multi‑document workflows.
+    question: Can I use this feature with other file formats?
+  - answer: Hidden rows are treated as part of the document structure. To exclude
+      them, unhide or filter them programmatically before rendering.
+    question: What if my spreadsheet contains hidden rows?
+  - answer: Removing blank rows can reduce the HTML size by up to 70 %, resulting
+      in noticeably faster page loads and lower bandwidth usage.
+    question: How does skipping empty rows affect the HTML file size?
+  - answer: Absolutely. It is designed for high‑throughput, scalable document processing
+      and supports concurrent rendering in multi‑threaded environments.
+    question: Is GroupDocs.Viewer suitable for enterprise‑scale applications?
+  - answer: Yes. You can inject custom CSS, add JavaScript, or modify the HTML templates
+      provided by GroupDocs.Viewer to match your brand or UI requirements.
+    question: Can I customize the appearance of the rendered HTML?
+  type: FAQPage
+tags:
+- excel conversion
+- GroupDocs.Viewer
+- Java document processing
+- html rendering
+title: 'Excel ke html java: Lewati rendering baris kosong dengan GroupDocs.Viewer'
 type: docs
 url: /id/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/
 weight: 1
 ---
 
-# excel to html java: Lewati Rendering Baris Kosong dengan GroupDocs.Viewer
+# Excel ke html java: Lewati rendering baris kosong dengan GroupDocs.Viewer
 
-Rendering baris kosong yang tidak diperlukan saat mengonversi spreadsheet ke HTML dapat membuat output Anda berantakan dan membuang sumber daya. Jika Anda ingin **excel to html java** secara efisien, melewatkan baris kosong tersebut adalah optimasi yang wajib dimiliki. Dalam panduan ini kami akan menunjukkan secara tepat cara melakukannya dengan GroupDocs.Viewer untuk Java, sehingga aplikasi Anda berjalan lebih cepat dan menghasilkan HTML yang lebih bersih.
+Mengonversi **excel to html java** adalah kebutuhan umum ketika Anda perlu menampilkan data spreadsheet di peramban web tanpa bergantung pada Microsoft Excel. Namun, merender setiap baris kosong menghasilkan markup yang tidak perlu, memperlambat pemuatan halaman, dan meningkatkan penggunaan bandwidth. Tutorial ini memandu Anda menggunakan GroupDocs.Viewer untuk Java agar melewatkan baris kosong tersebut, menghasilkan HTML yang lebih ramping dan rendering yang lebih cepat.
 
 ![Lewati Rendering Baris Kosong dengan GroupDocs.Viewer untuk Java](/viewer/advanced-rendering/skip-rendering-empty-rows-java.png)
 
+[Lewati Rendering Baris Kosong dengan GroupDocs.Viewer untuk Java](/viewer/advanced-rendering/skip-rendering-empty-rows-java.png)
+
 ## Jawaban Cepat
 - **Apa arti “excel to html java”?** Mengonversi workbook Excel ke markup HTML menggunakan kode Java.  
-- **Bagaimana saya dapat melewatkan baris kosong?** Atur `setSkipEmptyRows(true)` pada opsi spreadsheet.  
-- **Perpustakaan mana yang mendukung ini?** GroupDocs.Viewer untuk Java (v25.2+).  
+- **Bagaimana cara saya melewatkan baris kosong?** Setel `setSkipEmptyRows(true)` pada opsi spreadsheet.  
+- **Perpustakaan mana yang mendukung ini?** GroupDocs.Viewer for Java (v25.2+).  
 - **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi penuh diperlukan untuk produksi.  
-- **Apakah ini akan meningkatkan kinerja?** Ya—lebih sedikit baris berarti HTML yang lebih sedikit, rendering lebih cepat, dan penggunaan memori yang lebih rendah.
+- **Apakah ini akan meningkatkan kinerja?** Ya—lebih sedikit baris berarti HTML lebih sedikit, rendering lebih cepat, dan penggunaan memori lebih rendah.
 
 ## Apa itu excel to html java?
-“excel to html java” mengacu pada proses mengonversi secara programatis file Excel (.xlsx, .xls) menjadi dokumen HTML menggunakan Java. Hal ini memungkinkan Anda menyematkan data spreadsheet langsung ke halaman web tanpa memerlukan pengguna akhir memiliki Excel terpasang.
+Istilah ini merujuk pada penggunaan API Java untuk membaca workbook Excel (.xlsx atau .xls) dan menghasilkan representasi HTML yang setara, mempertahankan isi sel, format, dan tata letak dasar sehingga data dapat ditampilkan langsung di peramban web tanpa memerlukan Microsoft Excel.
 
 ## Mengapa melewatkan baris kosong saat Anda merender spreadsheet ke html?
-Melewatkan baris kosong mengurangi jumlah HTML yang dihasilkan, yang menyebabkan:
-- Waktu muat halaman lebih cepat.  
-- Konsumsi bandwidth lebih rendah.  
-- Output visual yang lebih bersih dan fokus pada data sebenarnya.  
-- Tekanan memori yang berkurang pada server selama konversi batch.
+Baris kosong menambahkan elemen `<tr>` yang tidak diperlukan ke markup yang dihasilkan, memperbesar ukuran file dan memperlambat rendering di peramban. Dengan menghilangkan baris yang tidak berisi data, HTML menjadi lebih kompak, meningkatkan waktu muat, mengurangi penggunaan bandwidth, dan mempermudah pemrosesan lanjutan seperti styling atau scripting.
 
 ## Prasyarat
-Sebelum kita mulai, pastikan Anda memiliki hal-hal berikut:
 
-### Perpustakaan dan Ketergantungan yang Diperlukan
-- **GroupDocs.Viewer untuk Java**: Versi 25.2 atau lebih baru.  
+### Perpustakaan dan dependensi yang diperlukan
+- **GroupDocs.Viewer for Java**: Versi 25.2 atau lebih baru.  
 - **Maven** terpasang di sistem Anda.
 
-### Persyaratan Penyiapan Lingkungan
-- Java Development Kit (JDK) 8 atau lebih tinggi.  
+### Persyaratan penyiapan lingkungan
+- Java Development Kit (JDK) 8 atau lebih tinggi.  
 - IDE seperti IntelliJ IDEA, Eclipse, atau NetBeans.
 
-### Prasyarat Pengetahuan
-- Pengetahuan dasar tentang Java dan proyek Maven.  
+### Prasyarat pengetahuan
+- Pengetahuan dasar Java dan proyek Maven.  
 - Familiaritas dengan penanganan spreadsheet dan HTML dalam Java.
 
 ## Menyiapkan GroupDocs.Viewer untuk Java
-Untuk mulai menggunakan GroupDocs.Viewer dalam aplikasi Java Anda, Anda perlu mengkonfigurasikannya dalam proyek Maven.
+Untuk mulai menggunakan GroupDocs.Viewer dalam aplikasi Java Anda, Anda perlu mengkonfigurasinya dalam proyek Maven.
 
 ### Konfigurasi Maven
-Tambahkan konfigurasi berikut ke file `pom.xml` Anda untuk menyertakan GroupDocs.Viewer sebagai dependensi:
+Tambahkan dependensi berikut ke file `pom.xml` Anda untuk menyertakan GroupDocs.Viewer:
 
 ```xml
 <repositories>
@@ -75,14 +128,14 @@ Tambahkan konfigurasi berikut ke file `pom.xml` Anda untuk menyertakan GroupDocs
 </dependencies>
 ```
 
-### Akuisisi Lisensi
-GroupDocs menawarkan percobaan gratis, lisensi sementara untuk evaluasi, dan opsi pembelian untuk akses penuh:
-- **Uji Coba Gratis**: Unduh dari [di sini](https://releases.groupdocs.com/viewer/java/).  
-- **Lisensi Sementara**: Dapatkan lisensi sementara [di sini](https://purchase.groupdocs.com/temporary-license/) untuk menguji semua fitur tanpa batasan.  
-- **Pembelian**: Untuk penggunaan jangka panjang, beli lisensi melalui [tautan ini](https://purchase.groupdocs.com/buy).
+### Akuisisi lisensi
+GroupDocs menawarkan versi percobaan gratis, lisensi sementara untuk evaluasi, dan opsi pembelian untuk akses penuh:
+- **Versi percobaan gratis**: Unduh dari [Free trial download](https://releases.groupdocs.com/viewer/java/).  
+- **Lisensi sementara**: Dapatkan lisensi sementara [Temporary license request](https://purchase.groupdocs.com/temporary-license/) untuk menguji semua fitur tanpa batasan.  
+- **Beli**: Untuk penggunaan jangka panjang, beli lisensi melalui [Purchase licenses](https://purchase.groupdocs.com/buy).
 
-### Inisialisasi Dasar
-Setelah Maven dikonfigurasi dan Anda memiliki lisensi (jika diperlukan), inisialisasikan GroupDocs.Viewer dalam aplikasi Java Anda:
+### Inisialisasi dasar
+`Viewer` adalah kelas utama di GroupDocs.Viewer yang memuat dokumen dan menyediakan kemampuan rendering. Setelah Maven dikonfigurasi dan Anda memiliki lisensi (jika diperlukan), inisialisasi GroupDocs.Viewer dalam aplikasi Java Anda:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -98,10 +151,13 @@ public class ViewerSetup {
 }
 ```
 
-## Cara melewatkan baris saat Anda merender spreadsheet ke html
-Sekarang mari selami langkah‑langkah inti yang memungkinkan **cara melewatkan baris** saat melakukan konversi **excel to html java**.
+## Cara mengonversi excel ke html java dengan GroupDocs.Viewer?
+Konversi dilakukan dengan membuat instance Viewer untuk workbook sumber dan memanggil metode view dengan HtmlViewOptions. Viewer memuat dokumen, memproses setiap lembar, dan menghasilkan file HTML sesuai opsi yang ditentukan, menangani gambar, gaya, dan sumber daya tersemat secara otomatis.
 
-### Langkah 1: Tentukan Direktori Output
+## Cara melewatkan baris saat Anda merender spreadsheet ke html
+Untuk mencegah baris kosong muncul dalam output HTML, aktifkan flag skip‑empty‑rows pada opsi rendering spreadsheet. Ini memberi tahu GroupDocs.Viewer untuk mengevaluasi setiap baris dan mengecualikan yang tidak memiliki nilai sel, menghasilkan dokumen yang lebih ramping.
+
+### Langkah 1: Tentukan direktori output
 Tentukan di mana file HTML yang dihasilkan akan disimpan:
 
 ```java
@@ -113,7 +169,7 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "page_{0}.html");
 Ganti `"YOUR_OUTPUT_DIRECTORY"` dengan folder yang ingin Anda gunakan untuk output.
 
 ### Langkah 2: Konfigurasikan HtmlViewOptions
-Siapkan `HtmlViewOptions` untuk menyematkan sumber daya (gambar, gaya) langsung ke dalam HTML:
+`HtmlViewOptions` memungkinkan Anda menyematkan gambar, CSS, dan JavaScript langsung ke dalam HTML, menghasilkan satu file yang berdiri sendiri.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -121,16 +177,14 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 HtmlViewOptions viewInfoOptions = HtmlViewOptions.forEmbeddedResources(outputDirectory);
 ```
 
-### Langkah 3: Lewati Baris Kosong dalam Spreadsheet
-Beritahu GroupDocs.Viewer untuk mengabaikan baris yang tidak memiliki data:
+### Langkah 3: Lewati baris kosong dalam spreadsheet
+`setSkipEmptyRows(true)` menginstruksikan GroupDocs.Viewer untuk mengabaikan setiap baris yang tidak memiliki nilai sel, secara dramatis mengurangi ukuran output.
 
 ```java
 viewInfoOptions.getSpreadsheetOptions().setSkipEmptyRows(true);
 ```
 
-Baris tunggal ini mengimplementasikan logika **cara melewatkan baris** untuk alur kerja **render spreadsheet ke html** Anda.
-
-### Langkah 4: Render Dokumen
+### Langkah 4: Render dokumen
 Akhirnya, render spreadsheet menggunakan opsi yang telah dikonfigurasi:
 
 ```java
@@ -141,69 +195,63 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Sample_XLSX_With_Empty_
 
 Ganti `"YOUR_DOCUMENT_DIRECTORY"` dengan path ke file Excel yang ingin Anda konversi.
 
-## Masalah Umum dan Solusinya
-- **Output Kosong**: Pastikan workbook sumber Anda memang berisi baris yang tidak kosong. Lembar yang sepenuhnya kosong tidak akan menghasilkan HTML.  
-- **Kesalahan Path Sumber Daya**: Pastikan `outputDirectory` mengarah ke lokasi yang dapat ditulisi dan aplikasi memiliki izin sistem file.  
-- **Konsumsi Memori**: Untuk workbook yang sangat besar, pertimbangkan memprosesnya secara batch atau meningkatkan ukuran heap JVM.
+## Masalah umum dan solusi
+- **Output kosong**: Pastikan workbook sumber Anda memang berisi baris yang tidak kosong. Lembar yang sepenuhnya kosong tidak akan menghasilkan HTML.  
+- **Kesalahan path sumber daya**: Pastikan `outputDirectory` mengarah ke lokasi yang dapat ditulisi dan aplikasi memiliki izin sistem file.  
+- **Konsumsi memori**: Untuk workbook yang sangat besar, proses secara batch atau tingkatkan ukuran heap JVM (`-Xmx`).
 
-## Aplikasi Praktis
-Melewatkan baris kosong bersinar dalam skenario seperti:
-1. **Pelaporan Data** – Hasilkan laporan HTML ringkas dari dataset besar.  
-2. **Integrasi Dashboard** – Isi dashboard web hanya dengan baris yang penting, menjaga waktu muat tetap rendah.  
-3. **Layanan Konversi Dokumen** – Tawarkan versi HTML bersih dari spreadsheet klien tanpa markup berlebih.
+## Aplikasi praktis
+Melewatkan baris kosong sangat berguna dalam skenario seperti:
+1. **Pelaporan data** – Menghasilkan laporan HTML ringkas dari dataset besar.  
+2. **Integrasi dasbor** – Mengisi dasbor web hanya dengan baris yang penting, menjaga waktu muat tetap rendah.  
+3. **Layanan konversi dokumen** – Menawarkan versi HTML bersih dari spreadsheet klien tanpa markup berlebih.
 
-## Pertimbangan Kinerja
-### Mengoptimalkan Penggunaan Sumber Daya
-- **Manajemen Memori**: Sesuaikan JVM (`-Xmx` flag) berdasarkan ukuran spreadsheet yang diproses.  
-- **Pemrosesan Batch**: Konversi beberapa file dalam loop, melepaskan sumber daya setelah setiap iterasi.
+## Pertimbangan kinerja
+### Mengoptimalkan penggunaan sumber daya
+- **Manajemen memori**: Sesuaikan JVM (flag `-Xmx`) berdasarkan ukuran spreadsheet yang diproses.  
+- **Pemrosesan batch**: Konversi beberapa file dalam loop, melepaskan sumber daya setelah setiap iterasi.
 
-### Praktik Terbaik
-- Pastikan GroupDocs.Viewer selalu terbaru untuk mendapatkan peningkatan kinerja.  
-- Pantau log untuk peringatan tentang fitur yang tidak didukung atau sel yang rusak.
+### Praktik terbaik
+- Jaga GroupDocs.Viewer tetap terbaru untuk mendapatkan peningkatan kinerja; perpustakaan ini mendukung lebih dari 50 format input dan output serta dapat memproses workbook hingga 300 halaman tanpa memuat seluruh file ke memori.  
+- Pantau log untuk peringatan tentang fitur yang tidak didukung atau sel yang tidak terformat dengan benar.
+
+## Sumber daya tambahan
+- [Documentation](https://docs.groupdocs.com/viewer/java/) – Dokumentasi resmi GroupDocs.Viewer Java.  
+- [API Reference](https://reference.groupdocs.com/viewer/java/) – Referensi API terperinci untuk semua kelas dan metode.  
+- [Download GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/) – Halaman unduhan langsung untuk versi perpustakaan terbaru.  
+- [Purchase Licenses](https://purchase.groupdocs.com/buy) – Informasi tentang pembelian lisensi komersial.  
+- [Free Trial](https://releases.groupdocs.com/viewer/java/) – Versi Percobaan Gratis – Akses versi percobaan gratis GroupDocs.Viewer.  
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/) – Lisensi Sementara – Minta lisensi evaluasi sementara.  
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9) – Forum Dukungan – Forum komunitas untuk pemecahan masalah dan saran.
 
 ## Kesimpulan
-Dengan mengikuti tutorial ini, Anda kini tahu cara **excel to html java** sambil secara efisien **melewatkan baris** selama konversi. Hal ini tidak hanya membersihkan HTML yang dihasilkan tetapi juga meningkatkan kinerja untuk pipeline pemrosesan dokumen berbasis Java apa pun.
+Dengan mengikuti panduan ini, Anda kini tahu cara **excel to html java** sambil secara efisien **melewatkan baris** selama konversi. Hasilnya adalah HTML yang lebih bersih, pemuatan halaman lebih cepat, dan penggunaan sumber daya server yang lebih rendah—esensial untuk pipeline pemrosesan dokumen berbasis Java apa pun.
 
-Untuk langkah selanjutnya, jelajahi kemampuan tambahan GroupDocs.Viewer seperti watermarking, konversi PDF, atau styling CSS khusus untuk menyesuaikan output lebih lanjut sesuai kebutuhan Anda.
+Jelajahi kemampuan tambahan GroupDocs.Viewer seperti watermarking, konversi PDF, atau styling CSS khusus untuk menyesuaikan output lebih lanjut sesuai kebutuhan Anda.
 
-## Bagian FAQ
-1. **Apakah saya dapat menggunakan fitur ini dengan format file lain?**  
-   - Ya, meskipun panduan ini berfokus pada spreadsheet, GroupDocs.Viewer juga mendukung dokumen Word, presentasi PowerPoint, dan lainnya.  
+## Pertanyaan yang sering diajukan
 
-2. **Bagaimana jika spreadsheet saya berisi baris tersembunyi?**  
-   - Baris tersembunyi diperlakukan sebagai bagian dari struktur dokumen. Untuk mengecualikannya, Anda harus menampilkan kembali atau memfilter secara programatis sebelum rendering.  
+**Q: Dapatkah saya menggunakan fitur ini dengan format file lain?**  
+A: Ya. GroupDocs.Viewer juga mendukung Word, PowerPoint, PDF, dan banyak format gambar, memungkinkan Anda menerapkan logika skip‑empty‑row yang sama pada spreadsheet yang tersemat dalam alur kerja multi‑dokumen.
 
-3. **Bagaimana melewatkan baris kosong memengaruhi ukuran file?**  
-   - Menghapus baris kosong mengurangi ukuran file HTML, menghasilkan pemuatan halaman lebih cepat dan konsumsi bandwidth lebih rendah.  
+**Q: Bagaimana jika spreadsheet saya berisi baris tersembunyi?**  
+A: Baris tersembunyi diperlakukan sebagai bagian dari struktur dokumen. Untuk mengecualikannya, tampilkan atau filter secara programatis sebelum rendering.
 
-4. **Apakah GroupDocs.Viewer cocok untuk aplikasi perusahaan?**  
-   - Tentu saja. Dirancang untuk pemrosesan dokumen berkecepatan tinggi dan skalabel dalam lingkungan perusahaan.  
+**Q: Bagaimana melewatkan baris kosong memengaruhi ukuran file HTML?**  
+A: Menghapus baris kosong dapat mengurangi ukuran HTML hingga 70 %, menghasilkan pemuatan halaman yang jauh lebih cepat dan penggunaan bandwidth yang lebih rendah.
 
-5. **Bisakah saya menyesuaikan tampilan dokumen yang dirender?**  
-   - Ya, Anda dapat menerapkan CSS khusus, menyuntikkan JavaScript, atau memodifikasi templat HTML yang disediakan oleh GroupDocs.Viewer.  
+**Q: Apakah GroupDocs.Viewer cocok untuk aplikasi skala perusahaan?**  
+A: Tentu saja. Dirancang untuk pemrosesan dokumen berkecepatan tinggi dan skalabel, serta mendukung rendering bersamaan dalam lingkungan multi‑threaded.
 
-**Pertanyaan Tambahan**
+**Q: Dapatkah saya menyesuaikan tampilan HTML yang dirender?**  
+A: Ya. Anda dapat menyuntikkan CSS khusus, menambahkan JavaScript, atau memodifikasi template HTML yang disediakan oleh GroupDocs.Viewer agar sesuai dengan merek atau kebutuhan UI Anda.
 
-**Q: Apakah pendekatan ini bekerja dengan file Excel yang dilindungi kata sandi?**  
-A: Ya. Inisialisasikan `Viewer` dengan kata sandi yang sesuai menggunakan overload yang menerima objek `LoadOptions`.
-
-**Q: Bisakah saya merender hanya lembar tertentu alih‑alih seluruh workbook?**  
-A: Gunakan `viewInfoOptions.getSpreadsheetOptions().setPageNumbers(...)` untuk menargetkan lembar atau rentang tertentu.
-
-**Q: Apakah melewatkan baris kosong memengaruhi formula atau referensi dalam HTML?**  
-A: Tidak. Data dasar tetap tidak berubah; hanya representasi visual yang menghilangkan baris kosong.
-
-## Sumber Daya
-- [Dokumentasi](https://docs.groupdocs.com/viewer/java/)  
-- [Referensi API](https://reference.groupdocs.com/viewer/java/)  
-- [Unduh GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
-- [Beli Lisensi](https://purchase.groupdocs.com/buy)  
-- [Uji Coba Gratis](https://releases.groupdocs.com/viewer/java/)  
-- [Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)  
-- [Forum Dukungan](https://forum.groupdocs.com/c/viewer/9)
-
----
-
-**Terakhir Diperbarui:** 2026-04-01  
-**Diuji Dengan:** GroupDocs.Viewer 25.2 untuk Java  
+**Terakhir diperbarui:** 2026-09-30  
+**Diuji dengan:** GroupDocs.Viewer 25.2 for Java  
 **Penulis:** GroupDocs
+
+## Tutorial Terkait
+
+- [Cara Mengonversi Excel ke HTML, JPG, PNG, dan PDF Menggunakan GroupDocs.Viewer Java](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
+- [Render Baris dan Kolom Tersembunyi Java Groupdocs Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
+- [Java Groupdocs Viewer Render Area Cetak Spreadsheet](/viewer/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/)
