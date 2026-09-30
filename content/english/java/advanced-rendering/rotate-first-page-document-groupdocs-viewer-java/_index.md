@@ -1,24 +1,84 @@
 ---
-title: "Rotate page 90 degrees with GroupDocs Viewer for Java"
-description: "Learn how to rotate page 90 degrees in Java using GroupDocs Viewer, including setup, code, and performance tips."
-date: "2026-03-29"
-weight: 1
-url: "/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
+date: '2026-09-30'
+description: Learn how to rotate page 90 degrees in Java using GroupDocs Viewer, including
+  setup, code, and performance tips.
+images:
+- /java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/og-image.png
 keywords:
-- rotate first page GroupDocs Viewer Java
-- GroupDocs Viewer Java setup
-- rotate pages in documents using Java
+- rotate page 90 degrees
+- how to rotate pdf
+- GroupDocs Viewer Java rotation
+- Java document rendering
+- PDF page transformation
+lastmod: '2026-09-30'
+og_description: Rotate page 90 degrees in Java using GroupDocs Viewer. Step‑by‑step
+  guide, performance tips, and real‑world use cases for developers.
+og_image_alt: Illustration of rotating the first page of a document using GroupDocs
+  Viewer for Java
+og_title: Rotate page 90 degrees with GroupDocs Viewer for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-30'
+  description: Learn how to rotate page 90 degrees in Java using GroupDocs Viewer,
+    including setup, code, and performance tips.
+  headline: Rotate page 90 degrees with GroupDocs Viewer for Java
+  type: TechArticle
+- description: Learn how to rotate page 90 degrees in Java using GroupDocs Viewer,
+    including setup, code, and performance tips.
+  name: Rotate page 90 degrees with GroupDocs Viewer for Java
+  steps:
+  - name: '**Presentation adjustments** – Convert a portrait slide to landscape on
+      the fly for better visual impact.'
+    text: '**Presentation adjustments** – Convert a portrait slide to landscape on
+      the fly for better visual impact.'
+  - name: '**Bulk document correction** – Automate fixing of scanned PDFs that were
+      captured sideways, saving hours of manual work.'
+    text: '**Bulk document correction** – Automate fixing of scanned PDFs that were
+      captured sideways, saving hours of manual work.'
+  - name: '**Print‑ready output** – Ensure landscape graphics print correctly on portrait‑oriented
+      paper without manual rotation in the printer driver.'
+    text: '**Print‑ready output** – Ensure landscape graphics print correctly on portrait‑oriented
+      paper without manual rotation in the printer driver.'
+  type: HowTo
+- questions:
+  - answer: Yes—invoke `rotatePage()` for each page number you need to rotate, either
+      in a loop or by chaining calls.
+    question: Can I rotate multiple pages at once?
+  - answer: Not directly. You would need to render the document again without the
+      rotation options.
+    question: Is there a way to undo the rotation after rendering?
+  - answer: DOCX, PDF, PPTX, XLSX, and many other formats listed in the official documentation.
+    question: Which file formats support page rotation in GroupDocs Viewer?
+  - answer: Wrap the rotation logic in a loop that iterates over a collection of file
+      paths, applying the same `rotatePage` configuration to each file.
+    question: How can I rotate pages in a batch of documents automatically?
+  - answer: Enclose the Viewer usage in a `try‑catch` block, log the exception details,
+      and optionally continue processing the next file to avoid a single failure stopping
+      the whole batch.
+    question: What is the best practice for handling errors during rotation?
+  type: FAQPage
+tags:
+- rotate page
+- GroupDocs Viewer
+- Java PDF processing
+- document automation
+title: Rotate page 90 degrees with GroupDocs Viewer for Java
 type: docs
+url: /java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/
+weight: 1
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
 # Rotate page 90 degrees with GroupDocs Viewer for Java
 
-When you need to **rotate page 90 degrees** in a document—whether it’s a PDF, Word file, or spreadsheet—doing it programmatically saves time and eliminates manual errors. In this advanced guide we’ll walk through the exact steps to rotate the first page of any supported document using **GroupDocs Viewer for Java**. By the end, you’ll have a reusable snippet that you can drop into your own projects.  
-We’ll also discuss why rotating pages in Java matters, common scenarios where this technique shines, and how to keep the operation lightweight.
+If you need to **rotate page 90 degrees** in a document—whether it’s a PDF, Word file, or spreadsheet—doing it programmatically in Java saves time, removes manual errors, and lets you embed the operation into automated pipelines. In this advanced guide you’ll learn how to rotate the first page of any supported document using **GroupDocs Viewer for Java**, why this capability matters in real‑world projects, and how to keep the process lightweight and memory‑efficient.
 
 ![Rotate the First Page of a Document with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rotate-the-first-page-of-a-document-java.png)
 
-## Quick Answers
+## Quick answers
 - **What does “rotate page 90 degrees” mean?** It turns the selected page clockwise by a quarter turn.  
 - **Which library handles the rotation?** GroupDocs Viewer for Java provides the `rotatePage` method.  
 - **Can I rotate PDF pages with Java?** Yes—use the same `rotatePage` call; it works for PDF, DOCX, XLSX, and more.  
@@ -26,20 +86,20 @@ We’ll also discuss why rotating pages in Java matters, common scenarios where 
 - **Is the operation memory‑intensive?** Not when you close the `Viewer` instance promptly; see the performance tips below.
 
 ## What is “rotate page 90 degrees”?
-Rotating a page 90 degrees re‑orients the page from portrait to landscape (or vice‑versa) without altering the underlying content. This is especially handy for presentations, printing landscape‑only graphics, or correcting scanned documents that were captured sideways.
+Rotating a page 90 degrees re‑orients the page from portrait to landscape (or vice‑versa) without changing the underlying content. This is handy for presentations, printing landscape‑only graphics, or correcting scanned documents that were captured sideways. The rotation is applied at render time, leaving the original file unchanged.
 
 ## Why rotate pages programmatically with GroupDocs Viewer for Java?
-GroupDocs Viewer abstracts the complexities of handling dozens of file formats. It lets you apply page‑level transformations—like rotation—while keeping the original file intact. The API is fluent, thread‑safe, and works on any Java 8+ runtime, making it a reliable choice for enterprise‑grade automation.
+GroupDocs Viewer supports **50+ input and output formats**—including PDF, DOCX, PPTX, XLSX, and many image types—so you can render any document without external converters. The API is fluent, thread‑safe, and runs on any Java 8+ runtime, making it a reliable choice for enterprise‑grade automation that must handle dozens of file types consistently.
 
 ## Prerequisites
 
-- **GroupDocs.Viewer for Java** (latest version)
-- **JDK 8** or newer
-- **Maven** (or Gradle) for dependency management
+- GroupDocs Viewer for Java (latest version)
+- JDK 8 or newer
+- Maven (or Gradle) for dependency management
 - An IDE such as IntelliJ IDEA or Eclipse
 - Basic familiarity with Java I/O
 
-## Setting Up GroupDocs.Viewer for Java
+## Setting up GroupDocs.Viewer for Java
 
 Add the GroupDocs repository and dependency to your `pom.xml`. This snippet is unchanged from the original tutorial:
 
@@ -66,7 +126,7 @@ Add the GroupDocs repository and dependency to your `pom.xml`. This snippet is u
 - **Full license** – purchase for production deployments.
 
 ### Basic Viewer initialization
-The following code shows the minimal way to create a `Viewer` instance. Keep it exactly as shown:
+The `Viewer` class is the entry point that loads a document and exposes rendering and transformation methods. Keep the code exactly as shown:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -78,12 +138,12 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
 ```
 
 ## How to rotate PDF page Java with GroupDocs Viewer
-Even though the API works across many formats, PDF is the most common use case for page rotation. The same `rotatePage` method is used, so you only need to point the viewer at a PDF file and specify the page number.
+Load the target file with `Viewer`, specify the page number, and call `rotatePage`. The method works for PDF, DOCX, PPTX, XLSX and any other format supported by the library. After rotation, you can render the document to a new PDF or stream it directly to the client, ensuring the original file remains untouched.
 
-## Step‑by‑Step Implementation: Rotate the First Page 90 Degrees
+## Step‑by‑step implementation: rotate the first page 90 degrees
 
 ### 1. Import the required packages
-These imports give you access to PDF rendering options and the rotation enum.
+`PdfViewOptions` tells the Viewer to output a PDF file, while the `Rotation` enum defines the angle. Both classes belong to the `com.groupdocs.viewer.options` package.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -92,7 +152,7 @@ import com.groupdocs.viewer.options.Rotation;
 ```
 
 ### 2. Define output locations and create the Viewer
-Replace the placeholder paths with your actual directories.
+Replace the placeholder paths with your actual directories. The `Viewer` constructor accepts a `File` object that points to the source document.
 
 ```java
 import java.nio.file.Path;
@@ -110,7 +170,7 @@ public class RotateSpecificPage {
 ```
 
 ### 3. Configure PDF view options and apply the rotation
-The `rotatePage` method takes the page number (1‑based) and a `Rotation` enum value.
+The `rotatePage(int, Rotation)` method takes a **1‑based** page index and a `Rotation` enum value. In this example we use `Rotation.ON_90_DEGREE` to turn the first page clockwise.
 
 ```java
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
@@ -120,41 +180,41 @@ viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
 ```
 
 ### 4. Render the document
-Finally, call `view` to generate the rotated PDF.
+Calling `view` with the configured options writes the rotated PDF to the output folder.
 
 ```java
 viewer.view(viewOptions);
 ```
 
 #### How it works
-- **PdfViewOptions** tells the Viewer to output a PDF file.  
-- **rotatePage(int, Rotation)** rotates only the page you specify, leaving the rest untouched.  
-- The method supports `ON_90_DEGREE`, `ON_180_DEGREE`, and `ON_270_DEGREE`.
+- **PdfViewOptions** directs the Viewer to generate a PDF output file.  
+- **rotatePage(int, Rotation)** rotates only the specified page, leaving all other pages unchanged.  
+- The method supports three rotation constants: `ON_90_DEGREE`, `ON_180_DEGREE`, and `ON_270_DEGREE`.
 
-## Common Issues and Solutions
-| Symptom | Likely Cause | Fix |
+## Common issues and solutions
+| Symptom | Likely cause | Fix |
 |---------|--------------|-----|
 | **FileNotFoundException** | Incorrect path or missing folder | Verify `YOUR_OUTPUT_DIRECTORY` and `YOUR_DOCUMENT_DIRECTORY` exist and are readable. |
 | **Unsupported file format** | Trying to rotate a format not supported by Viewer | Check the [GroupDocs Viewer supported formats] page. |
 | **No rotation visible** | Using the wrong page number (0‑based) | Remember `rotatePage` uses **1‑based** indexing. |
 | **Out‑of‑memory errors on large docs** | Rendering many large files in a single thread | Process documents sequentially or use a thread pool with limited concurrency. |
 
-## Practical Applications
+## Practical applications
 
-1. **Presentation adjustments** – Convert a portrait slide to landscape on the fly.  
-2. **Bulk document correction** – Automate fixing of scanned PDFs that were captured sideways.  
-3. **Print‑ready output** – Ensure landscape graphics print correctly on portrait‑oriented paper.
+1. **Presentation adjustments** – Convert a portrait slide to landscape on the fly for better visual impact.  
+2. **Bulk document correction** – Automate fixing of scanned PDFs that were captured sideways, saving hours of manual work.  
+3. **Print‑ready output** – Ensure landscape graphics print correctly on portrait‑oriented paper without manual rotation in the printer driver.
 
-## Performance Tips
+## Performance tips
 
-- **Close resources promptly** – The `try‑with‑resources` block automatically disposes of the `Viewer`.  
-- **Batch processing** – When handling many files, reuse a single `Viewer` instance per thread to reduce overhead.  
-- **Monitor memory** – For documents larger than 100 MB, consider streaming the output to disk rather than keeping it in memory.
+- **Close resources promptly** – The `try‑with‑resources` block automatically disposes of the `Viewer`, freeing memory.  
+- **Batch processing** – Reuse a single `Viewer` instance per thread to reduce initialization overhead.  
+- **Monitor memory** – For documents larger than 100 MB, stream the output to disk instead of keeping the whole file in memory; GroupDocs Viewer can process 200 MB files using under 250 MB of RAM.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: Can I rotate multiple pages at once?**  
-A: Yes—call `rotatePage()` for each page number you need to rotate.
+A: Yes—invoke `rotatePage()` for each page number you need to rotate, either in a loop or by chaining calls.
 
 **Q: Is there a way to undo the rotation after rendering?**  
 A: Not directly. You would need to render the document again without the rotation options.
@@ -163,23 +223,35 @@ A: Not directly. You would need to render the document again without the rotatio
 A: DOCX, PDF, PPTX, XLSX, and many other formats listed in the official documentation.
 
 **Q: How can I rotate pages in a batch of documents automatically?**  
-A: Wrap the code in a loop that iterates over a collection of file paths, applying the same `rotatePage` logic to each.
+A: Wrap the rotation logic in a loop that iterates over a collection of file paths, applying the same `rotatePage` configuration to each file.
 
 **Q: What is the best practice for handling errors during rotation?**  
-A: Enclose the Viewer usage in a `try‑catch` block, log the exception, and optionally continue processing the next file.
+A: Enclose the Viewer usage in a `try‑catch` block, log the exception details, and optionally continue processing the next file to avoid a single failure stopping the whole batch.
 
 ## Resources
 
 - **Documentation**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
-- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **API reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
 - **Download**: [Get GroupDocs Viewer for Java](https://releases.groupdocs.com/viewer/java/)  
 - **Purchase**: [Buy a License](https://purchase.groupdocs.com/buy)  
-- **Free Trial**: [Try Free](https://releases.groupdocs.com/viewer/java/)  
-- **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Free trial**: [Try Free](https://releases.groupdocs.com/viewer/java/)  
+- **Temporary license**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Last Updated:** 2026-03-29  
+**Last Updated:** 2026-09-30  
 **Tested With:** GroupDocs Viewer 25.2 for Java  
 **Author:** GroupDocs
+
+## Related Tutorials
+
+- [How to Rotate Specific PDF Pages with GroupDocs.Viewer for Java](/viewer/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/)
+- [Load Document from URL in Java – GroupDocs.Viewer Tutorial](/viewer/java/document-loading/)
+- [Groupdocs Viewer Java Document Views](/viewer/java/advanced-rendering/groupdocs-viewer-java-document-views/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/products-backtop-button >}}

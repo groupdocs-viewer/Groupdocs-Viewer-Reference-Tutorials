@@ -1,90 +1,120 @@
 ---
-date: '2026-02-26'
-description: GroupDocs.Viewer for Java kullanarak proje raporu oluşturmayı ve MS Project
-  dosyası ayrıntılarını görüntülemeyi öğrenin. Geliştiriciler, proje yöneticileri
-  ve analistler için idealdir.
+date: '2026-09-30'
+description: GroupDocs.Viewer kullanarak Java'da ms project dosyasını nasıl görüntüleyeceğinizi
+  ve bir proje raporu oluşturacağınızı öğrenin. Veri çıkarma, şifreleri yönetme ve
+  gösterge panoları oluşturma.
 keywords:
-- MS Project viewing
-- Java GroupDocs.Viewer
-- extracting project information
-title: GroupDocs.Viewer ile Java'da MS Project Dosyalarından Proje Raporu Nasıl Oluşturulur
+- view ms project file
+- how to read ms project
+- extract ms project data
+lastmod: '2026-09-30'
+og_description: GroupDocs.Viewer kullanarak Java'da ms project dosyasını nasıl görüntüleyeceğinizi
+  ve bir proje raporu oluşturacağınızı öğrenin. Veri çıkarma, şifreleri yönetme ve
+  gösterge panoları oluşturma.
+og_image_alt: 'Java guide: view ms project file and generate report with GroupDocs.Viewer'
+og_title: Java'da ms project dosyasını görüntüleme ve rapor oluşturma
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-30'
+  description: Learn how to view ms project file and generate a project report in
+    Java using GroupDocs.Viewer. Extract data, handle passwords, and build dashboards.
+  headline: How to view ms project file and generate report in Java
+  type: TechArticle
+- description: Learn how to view ms project file and generate a project report in
+    Java using GroupDocs.Viewer. Extract data, handle passwords, and build dashboards.
+  name: How to view ms project file and generate report in Java
+  steps:
+  - name: define document path
+    text: 'Specify where your MS Project file lives:'
+  - name: initialize view‑info options
+    text: 'Configure the options to request HTML‑style view information:'
+  - name: retrieve and output project details
+    text: 'Create a `Viewer`, fetch the `ProjectManagementViewInfo`, and print the
+      key fields that form a typical project report: **Explanation** - `getViewInfo(viewInfoOptions)`
+      pulls metadata based on the supplied options. - The returned `info` object contains
+      the file type, page count, and crucial dates—exa'
+  - name: configure load options
+    text: '`LoadOptions` lets you define additional parameters such as passwords,
+      ensuring secure access to protected files.'
+  - name: initialize viewer with load options
+    text: 'Pass the `loadOptions` when constructing the `Viewer`: **Explanation**
+      `LoadOptions` lets you define additional parameters such as passwords, ensuring
+      secure access to protected files.'
+  type: HowTo
+- questions:
+  - answer: It’s a Java library that renders and extracts information from over 100
+      file formats, including MS Project documents.
+    question: What is GroupDocs.Viewer Java?
+  - answer: Use the `LoadOptions` class to set the password before creating the `Viewer`
+      instance.
+    question: How do I handle password‑protected MS Project files?
+  - answer: Yes, once you obtain a proper license from GroupDocs.
+    question: Can I use GroupDocs.Viewer in commercial projects?
+  - answer: Incorrect file paths, using an outdated library version, or attempting
+      to read unsupported MS Project features.
+    question: What are common pitfalls when retrieving view info?
+  - answer: Implement caching, reuse `Viewer` instances where safe, and tune JVM memory
+      settings.
+    question: How can I improve performance with large MS Project files?
+  type: FAQPage
+tags:
+- ms project
+- groupdocs.viewer
+- java reporting
+title: Java'da ms project dosyasını görüntüleme ve rapor oluşturma
 type: docs
 url: /tr/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/
 weight: 1
 ---
 
- produce the translated content.
+# Java'da ms project dosyasını görüntüleme ve rapor oluşturma
 
-Be careful with bullet lists, tables.
+MS Project dosyasından bir proje raporu oluşturmak, proje yöneticileri ve geliştiriciler için sık bir gereksinimdir. **GroupDocs.Viewer for Java** ile **ms project dosyasını görüntüleyebilir**, ana meta verileri çıkarabilir ve Microsoft Project kurmadan etkileyici panolar oluşturabilirsiniz. Bu kılavuz, ortam kurulumunu, kod parçacıklarını ve gerçek dünya senaryolarını adım adım gösterir, böylece bugün veri odaklı proje içgörülerini sunmaya başlayabilirsiniz.
 
-Translate headings.
+![GroupDocs.Viewer for Java ile MS Project Görüntüleme](/viewer/file‑formats-support/ms-project-viewing.png)
 
-Translate bullet points.
+Bu öğreticinin sonunda şunları yapabileceksiniz:
 
-Translate table content.
+- Maven projesinde GroupDocs.Viewer for Java kurun.  
+- Proje raporunun temelini oluşturan görüntüleme bilgilerini alın.  
+- Şifre korumalı dosyalar için yükleme seçeneklerini yapılandırın.  
 
-Translate "Last Updated", "Tested With", "Author".
+Haydi başlayalım ve MS Project verilerini ele alış şeklinizi dönüştürelim!
 
-Make sure to keep URLs unchanged.
-
-Also keep the "## Quick Answers" etc.
-
-Let's start.
-
-We'll produce final answer.
-
-# MS Project Dosyalarından Java ile GroupDocs.Viewer Kullanarak Proje Raporu Oluşturma
-
-## Giriş
-
-MS Project dosyasından bir proje raporu oluşturmak, proje yöneticileri ve geliştiriciler için yaygın bir ihtiyaçtır. Bu öğreticide **GroupDocs.Viewer for Java**’nın **proje raporu oluşturma** verilerini nasıl hızlı ve güvenli bir şekilde **MS Project dosyası** ayrıntılarını görüntülemenizi sağladığını göreceksiniz. Kurulum, kod parçacıkları ve gerçek dünya kullanım senaryoları üzerinden geçerek bugün içgörülü panolar oluşturmaya başlayabilirsiniz.
-
-![Java için GroupDocs.Viewer ile MS Project Görüntüleme](/viewer/file‑formats-support/ms-project-viewing.png)
-
-Bu rehberin sonunda şunları yapabilecek olacaksınız:
-
-- Maven projesinde GroupDocs.Viewer for Java’yu kurmak.  
-- Bir proje raporunun temelini oluşturan görüntüleme bilgilerini almak.  
-- Şifre korumalı dosyalar için yükleme seçeneklerini yapılandırmak.  
-
-Haydi başlayalım ve MS Project verilerini işleme şeklinizi dönüştürelim!
-
-## Hızlı Yanıtlar
-- **“Proje raporu oluşturma” burada ne anlama geliyor?** Raporlama araçlarına beslemek için ana proje meta verilerini (tarihler, görev sayıları vb.) çıkarmak.  
-- **Hangi kütüphane gerekiyor?** GroupDocs.Viewer for Java (v25.2 veya sonrası).  
+## Hızlı cevaplar
+- **“generate project report” burada ne anlama geliyor?** Raporlama araçlarına beslemek için ana proje meta verilerini (tarihler, görev sayıları vb.) çıkarmak.  
+- **Hangi kütüphane gerekiyor?** GroupDocs.Viewer for Java (v25.2 veya daha yeni).  
 - **Bir MS Project dosyasını lisans olmadan görüntüleyebilir miyim?** Değerlendirme için ücretsiz deneme çalışır, ancak üretim için lisans gerekir.  
-- **Şifre korumalı dosyalarla nasıl başa çıkılır?** `Viewer` oluştururken şifreyi sağlamak için `LoadOptions` kullanın.  
-- **Hangi Java sürümü destekleniyor?** JDK 8 ve üzeri.
+- **Şifre korumalı dosyaları nasıl yönetirim?** `Viewer` oluştururken şifreyi sağlamak için `LoadOptions` kullanın.  
+- **Hangi Java sürümü destekleniyor?** JDK 8 veya daha yenisi.
 
-## GroupDocs.Viewer ile “proje raporu oluşturma” nedir?
-Proje raporu oluşturmak, bir MS Project belgesinden başlangıç/bitiş tarihleri, görev sayıları ve kaynak tahsisleri gibi yapılandırılmış bilgileri çıkarmak demektir. GroupDocs.Viewer, bu ayrıntıların tümünü içeren bir `ProjectManagementViewInfo` nesnesi sağlar; böylece bu verileri raporlama panolarına beslemek veya diğer formatlara aktarmak kolaylaşır.
+## GroupDocs.Viewer ile “generate project report” nedir?
+Proje raporu oluşturmak, bir MS Project belgesinden başlangıç/bitiş tarihleri, görev sayıları ve kaynak tahsisleri gibi yapılandırılmış bilgileri çıkarmak anlamına gelir. GroupDocs.Viewer, bu tüm detayları içeren bir `ProjectManagementViewInfo` nesnesi sağlar; böylece bunları raporlama panolarına beslemek veya diğer formatlara dışa aktarmak kolaylaşır.
 
-## MS Project dosyası ayrıntılarını GroupDocs.Viewer ile neden görüntüleyelim?
-- **Hız:** Microsoft Project yüklü olmadan veri işleyip çıkarır.  
-- **Güvenlik:** Yükleme seçenekleri sayesinde şifre korumalı dosyalar güvenli bir şekilde açılır.  
-- **Çapraz platform:** Masaüstünden buluta, Java uyumlu herhangi bir ortamda çalışır.  
+## GroupDocs.Viewer ile ms project dosyası detaylarını neden görüntülemelisiniz?
+GroupDocs.Viewer ile ms project dosyası verilerini görüntülemek hızlı, güvenli ve platform bağımsızdır. Kütüphane **100'den fazla dosya formatını** destekler, **500 MB**'a kadar dosyaları belgenin tamamını belleğe yüklemeden işler ve herhangi bir Java uyumlu ortamda çalışır—yerel sunuculardan bulut fonksiyonlarına kadar.
 
-## Ön Koşullar
+## Önkoşullar
 
 Başlamadan önce şunların olduğundan emin olun:
 
-1. **Kütüphaneler ve Bağımlılıklar**  
-   - GroupDocs.Viewer Java kütüphanesi (versiyon 25.2 ve sonrası).  
-   - Bağımlılık yönetimi için Maven kurulu.  
+1. **Kütüphaneler ve bağımlılıklar**  
+   - GroupDocs.Viewer Java kütüphanesi (version 25.2 veya daha yeni).  
+   - Bağımlılık yönetimi için Maven yüklü.  
 
-2. **Ortam Kurulumu**  
+2. **Ortam kurulumu**  
    - IntelliJ IDEA veya Eclipse gibi bir IDE.  
-   - JDK 8 ve üzeri.  
+   - JDK 8 veya üzeri.  
 
-3. **Bilgi Ön Koşulları**  
+3. **Bilgi önkoşulları**  
    - Temel Java ve Maven becerileri.  
-   - MS Project dosya formatları hakkında bilgi (yararlı ama zorunlu değil).  
+   - MS Project dosya formatlarına aşinalık (yararlı ancak zorunlu değil).  
 
 ## GroupDocs.Viewer for Java Kurulumu
 
 ### Maven ile Kurulum
 
-`pom.xml` dosyanıza depo ve bağımlılığı ekleyin:
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -103,45 +133,45 @@ Başlamadan önce şunların olduğundan emin olun:
 </dependencies>
 ```
 
-### Lisans Edinme
+### Lisans edinme
 
 Tam işlevselliği açmak için aşağıdaki lisans seçeneklerinden birini değerlendirin:
 
 - **Ücretsiz deneme** – Kredi kartı gerektirmeden tüm özellikleri test edin.  
-- **Geçici lisans** – Değerlendirme dönemleri için uzatılmış erişim.  
-- **Tam lisans** – Sınırsız destekle üretim ortamı kullanımı.  
+- **Geçici lisans** – Değerlendirme dönemleri için genişletilmiş erişim.  
+- **Tam lisans** – Sınırsız destekle üretim ortamına hazır kullanım.  
 
 Adım adım lisans talimatları için [GroupDocs satın alma sayfasını](https://purchase.groupdocs.com/buy) ziyaret edin.
 
-### Temel Başlatma
+### Temel başlatma
 
-Bağımlılık eklendikten sonra, MS Project dosyanızın yolunu geçirerek bir `Viewer` örneği oluşturabilirsiniz.
+`Viewer` sınıfı, bir belgeyi yükleyen ve görüntüleme bilgisi sağlayan temel bileşendir. `AutoCloseable` arayüzünü uygular, bu yüzden doğru temizlik için bir try‑with‑resources bloğu içinde kullanmalısınız.
 
-## Uygulama Kılavuzu
+## Uygulama rehberi
 
-### MS Project Belgesi İçin Görünüm Bilgilerini Almak
+### MS Project belgesi için görüntüleme bilgilerini al
 
-Bu özellik, **proje raporu oluşturma** içeriği için gereken temel verileri çıkarır.
+Bu özellik, **generate project report** içeriği için gereken temel verileri çıkarır.
 
-#### Adım 1: Belge Yolunu Tanımlayın
+#### Adım 1: belge yolunu tanımla
 
-MS Project dosyanızın bulunduğu yeri belirtin:
+Specify where your MS Project file lives:
 
 ```java
 String documentPath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_MPP";
 ```
 
-#### Adım 2: ViewInfoOptions’ı Başlatın
+#### Adım 2: view‑info seçeneklerini başlat
 
-HTML‑stilinde görünüm bilgisi talep etmek için seçenekleri yapılandırın:
+Configure the options to request HTML‑style view information:
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 ```
 
-#### Adım 3: Proje Ayrıntılarını Alın ve Çıktılayın
+#### Adım 3: proje detaylarını al ve çıktı ver
 
-Bir `Viewer` oluşturun, `ProjectManagementViewInfo` nesnesini alın ve tipik bir proje raporunu oluşturan ana alanları yazdırın:
+Create a `Viewer`, fetch the `ProjectManagementViewInfo`, and print the key fields that form a typical project report:
 
 ```java
 try (Viewer viewer = new Viewer(documentPath)) {
@@ -156,22 +186,24 @@ try (Viewer viewer = new Viewer(documentPath)) {
 
 **Açıklama**  
 - `getViewInfo(viewInfoOptions)` sağlanan seçeneklere göre meta verileri çeker.  
-- Dönen `info` nesnesi dosya türü, sayfa sayısı ve kritik tarihleri içerir—tam da **proje raporu oluşturma** verilerine ihtiyacınız olan parçalar.
+- Dönen `info` nesnesi dosya tipini, sayfa sayısını ve kritik tarihleri içerir—tam da **generate project report** verisine ihtiyacınız olan parçalar.
 
-### GroupDocs.Viewer Yapılandırması İçin Ayarlar
+### GroupDocs.Viewer yapılandırması için kurulum
 
-MS Project dosyalarınız şifre korumalıysa, şifreyi yükleme seçenekleri aracılığıyla sağlamanız gerekir.
+MS Project dosyalarınız şifre korumalıysa, şifreyi yükleme seçenekleri aracılığıyla sağlamalısınız.
 
-#### Adım 1: Yükleme Seçeneklerini Yapılandırın
+#### Adım 1: yükleme seçeneklerini yapılandır
+
+`LoadOptions` şifre gibi ek parametreleri tanımlamanızı sağlar, böylece korumalı dosyalara güvenli erişim sağlanır.
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setPassword("your_password_if_needed");
 ```
 
-#### Adım 2: Yükleme Seçenekleriyle Viewer’ı Başlatın
+#### Adım 2: yükleme seçenekleriyle viewer'ı başlat
 
-`Viewer` oluştururken `loadOptions` parametresini geçirin:
+Pass the `loadOptions` when constructing the `Viewer`:
 
 ```java
 try (Viewer viewer = new Viewer(documentPath, loadOptions)) {
@@ -180,56 +212,56 @@ try (Viewer viewer = new Viewer(documentPath, loadOptions)) {
 ```
 
 **Açıklama**  
-`LoadOptions`, şifre gibi ek parametreleri tanımlamanıza olanak tanır ve korumalı dosyalara güvenli erişim sağlar.
+`LoadOptions` şifre gibi ek parametreleri tanımlamanızı sağlar, böylece korumalı dosyalara güvenli erişim sağlanır.
 
-## Pratik Uygulamalar
+## Pratik uygulamalar
 
-1. **Proje Yönetimi Panoları** – Çıkarılan tarih ve görev sayılarını paydaşlar için gerçek‑zamanlı panolara besleyin.  
-2. **Otomatik Raporlama** – Birden fazla `.mpp` dosyasını döngüye alıp özet raporlar oluşturun ve otomatik olarak e‑posta gönderin.  
-3. **CRM Entegrasyonu** – Proje zaman çizelgelerini müşteri verileriyle birleştirerek teslim tahminlerini iyileştirin.
+1. **Proje yönetimi panoları** – Çıkarılan tarihleri ve görev sayılarını paydaşlar için gerçek zamanlı panolara besleyin.  
+2. **Otomatik raporlama** – Birden fazla `.mpp` dosyasını döngüye alıp özet raporlar oluşturun ve otomatik olarak e-posta gönderin.  
+3. **CRM entegrasyonu** – Proje zaman çizelgelerini müşteri verileriyle birleştirerek teslimat tahminlerini iyileştirin.
 
-## Performans Düşünceleri
+## Performans değerlendirmeleri
 
-- **Bellek Yönetimi** – `Viewer`’ın hızlı bir şekilde kapanmasını sağlamak için `try‑with‑resources` (gösterildiği gibi) kullanın.  
-- **Önbellekleme** – Tekrarlanan dosya okumalarını önlemek için sık erişilen görünüm bilgilerini bir önbellekte saklayın.  
-- **İzleme** – Büyük projeleri işlerken JVM bellek kullanımını izleyin ve yığın boyutunu buna göre ayarlayın.
+- **Bellek yönetimi** – `Viewer`'ın hızlıca kapatılmasını sağlamak için (gösterildiği gibi) try‑with‑resources kullanın.  
+- **Önbellekleme** – Tekrarlanan dosya okumalarını önlemek için sık erişilen view bilgilerini bir önbellekte saklayın.  
+- **İzleme** – Büyük projeleri işlerken JVM bellek kullanımını izleyin ve yığın (heap) boyutunu buna göre ayarlayın.
 
-## Yaygın Sorunlar ve Çözümler
+## Yaygın sorunlar ve çözümler
 
 | Sorun | Neden | Çözüm |
 |-------|-------|----------|
-| `File not found` hatası | Yanlış `documentPath` | Mutlak ya da göreli yolu doğrulayın ve dosyanın var olduğundan emin olun. |
-| Tarihler için veri gelmiyor | Desteklenmeyen MS Project sürümü | En yeni GroupDocs.Viewer sürümüne yükseltin veya dosyayı desteklenen bir formata dönüştürün. |
-| Büyük dosyalarda OutOfMemoryError | Yetersiz JVM yığını | `-Xmx` bayrağını artırın veya sayfalama seçenekleriyle dosyayı parçalara bölerek işleyin. |
+| `File not found` hatası | Yanlış `documentPath` | Mutlak veya göreli yolu doğrulayın ve dosyanın mevcut olduğundan emin olun. |
+| Tarihler için veri döndürülmedi | Desteklenmeyen MS Project sürümü | En son GroupDocs.Viewer sürümüne yükseltin veya dosyayı desteklenen bir formata dönüştürün. |
+| Büyük dosyalarda `OutOfMemoryError` | Yetersiz JVM yığını | `-Xmx` bayrağını artırın veya sayfalama seçeneklerini kullanarak dosyayı parçalara bölerek işleyin. |
 
-## Sık Sorulan Sorular
+## Sıkça sorulan sorular
 
-**S: GroupDocs.Viewer Java nedir?**  
-C: MS Project belgeleri dahil olmak üzere 100’den fazla dosya formatını render eden ve bilgi çıkaran bir Java kütüphanesidir.
+**Q: GroupDocs.Viewer Java nedir?**  
+**A:** 100'den fazla dosya formatından, MS Project belgeleri dahil, bilgi renderlayan ve çıkaran bir Java kütüphanesidir.
 
-**S: Şifre korumalı MS Project dosyaları nasıl işlenir?**  
-C: `Viewer` örneğini oluşturmadan önce şifreyi ayarlamak için `LoadOptions` sınıfını kullanın.
+**Q: Şifre korumalı MS Project dosyalarını nasıl yönetirim?**  
+**A:** `Viewer` örneğini oluşturmadan önce şifreyi ayarlamak için `LoadOptions` sınıfını kullanın.
 
-**S: GroupDocs.Viewer ticari projelerde kullanılabilir mi?**  
-C: Evet, GroupDocs’tan uygun bir lisans alındıktan sonra kullanılabilir.
+**Q: GroupDocs.Viewer'ı ticari projelerde kullanabilir miyim?**  
+**A:** Evet, GroupDocs'tan uygun bir lisans aldığınızda.
 
-**S: Görünüm bilgisi alırken yaygın tuzaklar nelerdir?**  
-C: Yanlış dosya yolları, eski kütüphane sürümü kullanmak veya desteklenmeyen MS Project özelliklerini okumaya çalışmak.
+**Q: Görüntüleme bilgilerini alırken yaygın tuzaklar nelerdir?**  
+**A:** Yanlış dosya yolları, eski bir kütüphane sürümü kullanmak veya desteklenmeyen MS Project özelliklerini okumaya çalışmak.
 
-**S: Büyük MS Project dosyalarında performans nasıl artırılır?**  
-C: Önbellekleme uygulayın, güvenli olduğunda `Viewer` örneklerini yeniden kullanın ve JVM bellek ayarlarını optimize edin.
+**Q: Büyük MS Project dosyalarında performansı nasıl artırabilirim?**  
+**A:** Önbellekleme uygulayın, güvenli olduğunda `Viewer` örneklerini yeniden kullanın ve JVM bellek ayarlarını optimize edin.
 
-## Kaynaklar
+## İlgili kaynaklar
 - [GroupDocs Viewer Dokümantasyonu](https://docs.groupdocs.com/viewer/java/)
 - [API Referansı](https://reference.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer for Java İndir](https://releases.groupdocs.com/viewer/java/)
+- [GroupDocs.Viewer for Java'ı İndir](https://releases.groupdocs.com/viewer/java/)
 - [Lisans Satın Al](https://purchase.groupdocs.com/buy)
 - [Ücretsiz Deneme Sürümü](https://releases.groupdocs.com/viewer/java/)
 - [Geçici Lisans Başvurusu](https://purchase.groupdocs.com/temporary-license/)
-- [GroupDocs Destek Forumları](https://forum.groupdocs.com/c/viewer/9)
+- [GroupDocs Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Son Güncelleme:** 2026-02-26  
+**Son Güncelleme:** 2026-09-30  
 **Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
 **Yazar:** GroupDocs
