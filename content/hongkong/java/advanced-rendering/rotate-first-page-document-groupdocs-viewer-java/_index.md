@@ -64,9 +64,6 @@ url: /zh-hant/java/advanced-rendering/rotate-first-page-document-groupdocs-viewe
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # 將頁面旋轉 90 度（使用 GroupDocs Viewer for Java）
 
@@ -249,9 +246,3 @@ A: 將 Viewer 的使用包在 `try‑catch` 區塊中，記錄例外細節，並
 - [如何使用 GroupDocs.Viewer for Java 旋轉特定 PDF 頁面](/viewer/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/)
 - [在 Java 中從 URL 載入文件 – GroupDocs.Viewer 教學](/viewer/java/document-loading/)
 - [GroupDocs Viewer Java 文件檢視](/viewer/java/advanced-rendering/groupdocs-viewer-java-document-views/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

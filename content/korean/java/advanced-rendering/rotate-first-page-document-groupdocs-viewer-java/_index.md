@@ -66,9 +66,6 @@ url: /ko/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-jav
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # GroupDocs Viewer for Java로 페이지를 90도 회전하기
 
@@ -240,9 +237,3 @@ A: `Viewer` 사용을 `try‑catch` 블록으로 감싸고 예외 세부 정보�
 - [GroupDocs.Viewer for Java로 특정 PDF 페이지 회전하기](/viewer/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/)
 - [Java에서 URL로 문서 로드 – GroupDocs.Viewer 튜토리얼](/viewer/java/document-loading/)
 - [GroupDocs Viewer Java 문서 보기](/viewer/java/advanced-rendering/groupdocs-viewer-java-document-views/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

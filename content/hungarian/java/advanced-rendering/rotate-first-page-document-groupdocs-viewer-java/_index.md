@@ -67,9 +67,6 @@ url: /hu/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-jav
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # Oldal 90 fokos elforgatása a GroupDocs Viewer for Java segítségével
 
@@ -249,8 +246,3 @@ A: A Viewer használatát `try‑catch` blokkba kell helyezni, naplózni a kivé
 - [Hogyan forgassuk el a konkrét PDF oldalakat a GroupDocs.Viewer for Java segítségével](/viewer/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/)
 - [Dokumentum betöltése URL-ről Java-ban – GroupDocs.Viewer oktatóanyag](/viewer/java/document-loading/)
 - [Groupdocs Viewer Java dokumentum nézetek](/viewer/java/advanced-rendering/groupdocs-viewer-java-document-views/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

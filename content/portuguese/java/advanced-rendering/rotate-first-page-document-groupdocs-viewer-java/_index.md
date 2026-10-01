@@ -66,9 +66,6 @@ url: /pt/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-jav
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # Rotacionar página 90 graus com GroupDocs Viewer para Java
 
@@ -248,9 +245,3 @@ A: Envolva o uso do Viewer em um bloco `try‑catch`, registre os detalhes da ex
 - [Como rotacionar páginas PDF específicas com GroupDocs.Viewer para Java](/viewer/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/)
 - [Carregar documento a partir de URL em Java – Tutorial GroupDocs.Viewer](/viewer/java/document-loading/)
 - [Visualizações de documentos do GroupDocs Viewer Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-document-views/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
