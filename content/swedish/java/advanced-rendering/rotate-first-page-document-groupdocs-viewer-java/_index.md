@@ -66,9 +66,6 @@ url: /sv/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-jav
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # Rotera sidan 90 grader med GroupDocs Viewer för Java
 
@@ -247,9 +244,3 @@ A: Omge Viewer‑användningen med ett `try‑catch`‑block, logga undantagsdet
 - [Hur man roterar specifika PDF‑sidor med GroupDocs.Viewer för Java](/viewer/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/)
 - [Ladda dokument från URL i Java – GroupDocs.Viewer‑handledning](/viewer/java/document-loading/)
 - [GroupDocs Viewer Java Dokumentvyer](/viewer/java/advanced-rendering/groupdocs-viewer-java-document-views/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

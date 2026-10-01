@@ -66,9 +66,6 @@ url: /vi/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-jav
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # Xoay trang 90 độ với GroupDocs Viewer cho Java
 
@@ -247,9 +244,3 @@ viewer.view(viewOptions);
 - [Cách xoay các trang PDF cụ thể với GroupDocs.Viewer cho Java](/viewer/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/)
 - [Tải tài liệu từ URL trong Java – Hướng dẫn GroupDocs.Viewer](/viewer/java/document-loading/)
 - [Các chế độ xem tài liệu Java của GroupDocs Viewer](/viewer/java/advanced-rendering/groupdocs-viewer-java-document-views/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
