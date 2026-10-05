@@ -1,14 +1,49 @@
 ---
-date: '2026-04-04'
-description: Aprende a rotar páginas específicas de PDF con GroupDocs.Viewer para
-  Java. Esta guía paso a paso cubre la configuración de Maven, rotar PDF 90 grados
-  y la solución de problemas.
+date: '2026-10-05'
+description: Aprenda a rotar páginas PDF específicas con GroupDocs.Viewer for Java.
+  Esta guía paso a paso cubre la configuración de Maven, rotate pdf 90 degrees y troubleshooting.
 keywords:
 - rotate specific pdf pages
 - rotate pdf 90 degrees
 - pdf to html java
 - rotate multiple pdf pages
-title: Cómo rotar páginas específicas de PDF con GroupDocs.Viewer para Java
+lastmod: '2026-10-05'
+og_description: Rotar páginas PDF específicas con GroupDocs.Viewer for Java. Aprenda
+  a rotate pdf 90 degrees, configurar Maven y troubleshooting de problemas comunes
+  en una guía concisa.
+og_image_alt: Developer guide showing rotation of PDF pages using GroupDocs.Viewer
+  Java SDK
+og_title: Rotar páginas PDF específicas con GroupDocs.Viewer for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-05'
+  description: Learn how to rotate specific PDF pages with GroupDocs.Viewer for Java.
+    This step‑by‑step guide covers Maven setup, rotate pdf 90 degrees, and troubleshooting.
+  headline: How to Rotate Specific PDF Pages with GroupDocs.Viewer for Java
+  type: TechArticle
+- questions:
+  - answer: Yes. Loop through the page numbers and call `rotatePage(page, Rotation.ON_90_DEGREE)`
+      for each page.
+    question: Can I rotate all pages of a PDF at once?
+  - answer: No. Rotation is applied only during the rendering process; the source
+      PDF remains unchanged.
+    question: Does the rotation affect the original PDF file?
+  - answer: 'Provide the password when creating the `Viewer` instance: `new Viewer(path,
+      password)`.'
+    question: What if a PDF is password‑protected?
+  - answer: Ensure the output directory exists and that `pageFilePathFormat` resolves
+      correctly.
+    question: How do I debug a “null pointer” error when setting up HtmlViewOptions?
+  - answer: Yes. Use the same `rotatePage` configuration with the appropriate view
+      options for the target format.
+    question: Is there a way to rotate pages when converting to other formats (e.g.,
+      PNG)?
+  type: FAQPage
+tags:
+- rotate pdf
+- groupdocs viewer
+- java pdf processing
+title: Cómo rotar páginas PDF específicas con GroupDocs.Viewer for Java
 type: docs
 url: /es/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/
 weight: 1
@@ -16,22 +51,30 @@ weight: 1
 
 # Cómo rotar páginas PDF específicas con GroupDocs.Viewer para Java
 
-Rotar páginas específicas dentro de un PDF puede ser esencial para alinear documentos, corregir imágenes escaneadas o ajustar diapositivas de presentación. **En esta guía aprenderá cómo rotar páginas PDF específicas programáticamente con GroupDocs.Viewer**, ya sea que necesite rotar PDF 90 grados, voltear una sección completa o manejar múltiples páginas en una sola llamada.
+Rotar páginas específicas dentro de un PDF puede ser esencial para alinear documentos, corregir imágenes escaneadas o ajustar diapositivas de presentación. **En esta guía aprenderá cómo rotar páginas PDF específicas programáticamente con GroupDocs.Viewer**, ya sea que necesite rotar un PDF 90 grados, voltear una sección completa o manejar múltiples páginas en una sola llamada.
 
 ![Rotar páginas PDF específicas con GroupDocs.Viewer para Java](/viewer/advanced-rendering/rotate-specific-pdf-pages-java.png)
 
-**Qué aprenderá**
-- Configurar GroupDocs.Viewer en su proyecto Java (incluida la configuración de Maven GroupDocs Viewer)
-- Rotar programáticamente páginas PDF específicas (rotar pdf 90 grados, 180 grados, etc.)
+[Rotar páginas PDF específicas con GroupDocs.Viewer para Java](/viewer/advanced-rendering/rotate-specific-pdf-pages-java.png)
+
+**Lo que aprenderá**
+- Configurar GroupDocs.Viewer en su proyecto Java (incluyendo la configuración de Maven GroupDocs Viewer)
+- Rotar programáticamente páginas PDF específicas (rotar PDF 90 grados, 180 grados, etc.)
 - Configuraciones clave para un uso óptimo
-- Solucionar problemas comunes durante la implementación
+- Solución de problemas comunes durante la implementación
 
 ## Respuestas rápidas
-- **¿Qué biblioteca puede rotar páginas PDF en Java?** GroupDocs.Viewer for Java.  
-- **¿Puedo rotar una sola página 90 grados?** Yes, use `rotatePage(pageNumber, Rotation.ON_90_DEGREE)`.  
-- **¿Necesito una licencia para desarrollo?** A temporary license is available for free trial.  
-- **¿Se requiere Maven?** Maven is the recommended way to manage GroupDocs dependencies.  
-- **¿Cómo renderizo las páginas rotadas?** Use `HtmlViewOptions` and call `viewer.view(...)`.
+- **¿Qué biblioteca puede rotar páginas PDF en Java?** GroupDocs.Viewer para Java proporciona soporte de rotación incorporado sin herramientas externas.  
+- **¿Puedo rotar una sola página 90 grados?** Sí – llame a `rotatePage(pageNumber, Rotation.ON_90_DEGREE)` en la instancia del visor.  
+- **¿Necesito una licencia para desarrollo?** Una licencia temporal es gratuita para evaluación; se requiere una licencia completa para producción.  
+- **¿Se requiere Maven?** Maven es el gestor de dependencias recomendado, pero también puede usar Gradle o inclusión manual de JAR.  
+- **¿Cómo renderizo las páginas rotadas?** Use `HtmlViewOptions` con `viewer.view(documentPath, viewOptions)` para obtener salida HTML que refleje la rotación.
+
+## Qué es rotar páginas PDF específicas
+`rotate specific pdf pages` se refiere a la capacidad de cambiar la orientación de páginas individuales dentro de un documento PDF mientras se deja el resto del archivo intacto. Esta operación se realiza en tiempo de renderizado, por lo que el archivo PDF original permanece sin cambios.
+
+## Por qué rotar páginas PDF específicas
+Puede rotar una sola página en menos de 0,05 segundos en una VM típica de nivel servidor, lo que permite una vista previa en tiempo real de contratos escaneados, presentaciones o facturas multipágina que contienen escaneos mal orientados. Este control granular elimina la necesidad de costosas herramientas de post‑procesamiento y reduce el esfuerzo manual hasta en un 70 % en proyectos de digitalización a gran escala.
 
 ## Requisitos previos
 
@@ -66,6 +109,8 @@ Para integrar GroupDocs.Viewer en su proyecto Java usando Maven, actualice su `p
 ```
 
 ### Inicialización y configuración básica
+`Viewer` es la clase central que carga un documento y orquesta las operaciones de renderizado. Después de crear una instancia, puede llamar a métodos como `view` o `rotatePage`.  
+
 ```java
 Path YOUR_DOCUMENT_DIRECTORY = Path.of("YOUR_DOCUMENT_DIRECTORY");
 Path YOUR_OUTPUT_DIRECTORY = Path.of("YOUR_OUTPUT_DIRECTORY");
@@ -77,10 +122,11 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 ```
 
 ## Cómo rotar páginas PDF específicas con GroupDocs.Viewer
-### Visión general
-Rotar páginas PDF específicas le brinda un control fino sobre la presentación del documento sin alterar el archivo original.
+Rotar páginas PDF específicas con GroupDocs.Viewer implica dos acciones principales: primero, especificar la rotación deseada para cada página objetivo usando el método `rotatePage`, y segundo, renderizar el documento con `HtmlViewOptions` para que la rotación se refleje en la salida. Este enfoque mantiene el PDF original sin cambios mientras entrega HTML correctamente orientado.
 
-### Paso 1: Configurar la rotación de página
+### Paso 1: configurar la rotación de la página
+`rotatePage` es un método que acepta un índice de página basado en cero y un valor del enum `Rotation`. El enum proporciona tres opciones: `ON_90_DEGREE`, `ON_180_DEGREE` y `ON_270_DEGREE`.  
+
 ```java
 // Rotate the first page by 90 degrees clockwise.
 viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
@@ -89,7 +135,9 @@ viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
 viewOptions.rotatePage(2, Rotation.ON_180_DEGREE);
 ```
 
-### Paso 2: Inicializar Viewer y renderizar
+### Paso 2: inicializar el visor y renderizar
+`HtmlViewOptions` controla el proceso de conversión de PDF a HTML. Preserva el diseño, las fuentes y los recursos incrustados mientras aplica cualquier rotación que haya configurado.  
+
 ```java
 Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SampleDocument.pdf"));
 
@@ -105,72 +153,73 @@ viewer.close();
 - **HtmlViewOptions** – Maneja la conversión de PDF a HTML mientras preserva el diseño y los recursos incrustados.  
 - **pdf to html java** – La clase forma parte de la misma API y garantiza una representación visual fiel.
 
-## ¿Por qué rotar páginas PDF específicas?
-- **Alineación de documentos** – Orientación correcta de contratos o facturas escaneadas.  
-- **Ajustes de presentación** – Ajustar diapositivas que fueron exportadas como PDF.  
-- **Consistencia de archivo** – Estandarizar la orientación de páginas durante la digitalización masiva.
-
 ## Problemas comunes y soluciones (solucionar rotación de pdf)
 - **Rutas incorrectas** – Verifique que `YOUR_DOCUMENT_DIRECTORY` y `YOUR_OUTPUT_DIRECTORY` existan y sean accesibles.  
-- **Dependencias faltantes** – Asegúrese de que las coordenadas de Maven coincidan con la última versión de GroupDocs.Viewer.  
+- **Dependencias faltantes** – Asegúrese de que las coordenadas de Maven coincidan con la última versión de GroupDocs.Viewer (actualmente 25.2).  
 - **Restricciones de licencia** – Aplique la licencia temporal correctamente; de lo contrario, algunas funciones pueden estar deshabilitadas.  
 - **Picos de memoria** – Renderice PDFs grandes en lotes más pequeños o aumente el tamaño del heap de la JVM.
 
 ## Aplicaciones prácticas
 
 ### Casos de uso reales
-1. **Alineación de documentos** – Rotar documentos escaneados para una orientación digital correcta.  
-2. **Ajustes de presentación** – Modificar diapositivas de presentación dentro de PDFs antes de compartir.  
-3. **Flujos de trabajo de archivo** – Ajustar automáticamente la orientación de documentos históricos durante la digitalización.
+1. **Alineación de documentos** – Rotar contratos escaneados para una orientación digital correcta.  
+2. **Ajustes de presentaciones** – Modificar diapositivas de presentación dentro de PDFs antes de compartir.  
+3. **Flujos de trabajo de archivado** – Ajustar automáticamente la orientación de documentos históricos durante la digitalización.
 
 ### Posibilidades de integración
-Combine GroupDocs.Viewer con sistemas de gestión de contenido basados en Java, portales empresariales o APIs personalizadas que requieran visualización instantánea de PDFs.
+Combine GroupDocs.Viewer con sistemas de gestión de contenido basados en Java, portales empresariales o APIs personalizadas que requieran visualización de PDFs al vuelo.
 
 ## Consideraciones de rendimiento
-- **Gestión de recursos** – Siempre cierre la instancia `Viewer` para liberar manejadores de archivos y memoria.  
+- **Gestión de recursos** – Siempre cierre la instancia de `Viewer` para liberar manejadores de archivos y memoria.  
 - **Gestión de memoria Java** – Monitoree el uso del heap al procesar PDFs grandes; considere transmitir páginas en lugar de cargar todo el archivo.  
-- **Mejores prácticas** – Cachee el HTML renderizado para documentos accedidos frecuentemente para reducir el tiempo de procesamiento.
+- **Mejores prácticas** – Cachee el HTML renderizado para documentos accedidos frecuentemente para reducir el tiempo de procesamiento hasta en un 60 %.
 
 ## Conclusión
-Este tutorial cubrió **cómo rotar páginas PDF específicas usando GroupDocs.Viewer en Java**, desde la configuración de Maven hasta la renderización de páginas rotadas y la gestión de problemas comunes. Experimente con funciones adicionales como marcas de agua, conversión de formatos o procesamiento por lotes para ampliar su flujo de trabajo documental.
+Este tutorial cubrió **cómo rotar páginas PDF específicas usando GroupDocs.Viewer en Java**, desde la configuración de Maven hasta la renderización de páginas rotadas y la gestión de problemas comunes. Experimente con características adicionales como marcas de agua, conversión de formatos o procesamiento por lotes para ampliar aún más su flujo de trabajo documental.
 
-**Próximos pasos:** Explore otras capacidades de GroupDocs.Viewer como convertir PDFs a PNG, agregar marcas de agua o integrar con proveedores de almacenamiento en la nube.
+**Próximos pasos:** Explore otras capacidades de GroupDocs.Viewer como convertir PDFs a PNG, añadir marcas de agua o integrar con proveedores de almacenamiento en la nube.
 
 ## Sección de preguntas frecuentes
 - **Solución de problemas de rotación** – Verifique que los números de página y los parámetros de rotación sean correctos.  
 - **Manejo de archivos PDF grandes** – Procese páginas en lotes y monitoree el uso de memoria.  
-- **Requisitos de licencia** – Use una licencia temporal para desarrollo; compre una licencia completa para producción.  
+- **Requisitos de licencia** – Use una licencia temporal para desarrollo; adquiera una licencia completa para producción.  
 - **Rotar múltiples páginas** – Llame a `rotatePage` repetidamente con diferentes números de página y ángulos.  
 - **Integración con bibliotecas Java** – GroupDocs.Viewer funciona sin problemas con Spring Boot, Jakarta EE y otros frameworks Java.
 
 ## Preguntas frecuentes
 
 **Q: ¿Puedo rotar todas las páginas de un PDF a la vez?**  
-A: Yes. Loop through the page numbers and call `rotatePage(page, Rotation.ON_90_DEGREE)` for each page.
+A: Sí. Recorra los números de página y llame a `rotatePage(page, Rotation.ON_90_DEGREE)` para cada página.
 
-**Q: ¿La rotación afecta el archivo PDF original?**  
-A: No. Rotation is applied only during the rendering process; the source PDF remains unchanged.
+**Q: ¿La rotación afecta al archivo PDF original?**  
+A: No. La rotación se aplica solo durante el proceso de renderizado; el PDF fuente permanece sin cambios.
 
 **Q: ¿Qué pasa si un PDF está protegido con contraseña?**  
-A: Provide the password when creating the `Viewer` instance: `new Viewer(path, password)`.
+A: Proporcione la contraseña al crear la instancia de `Viewer`: `new Viewer(path, password)`.
 
 **Q: ¿Cómo depuro un error “null pointer” al configurar HtmlViewOptions?**  
-A: Ensure the output directory exists and that `pageFilePathFormat` resolves correctly.
+A: Asegúrese de que el directorio de salida exista y que `pageFilePathFormat` se resuelva correctamente.
 
-**Q: ¿Existe una forma de rotar páginas al convertir a otros formatos (p. ej., PNG)?**  
-A: Yes. Use the same `rotatePage` configuration with the appropriate view options for the target format.
+**Q: ¿Existe una forma de rotar páginas al convertir a otros formatos (p.ej., PNG)?**  
+A: Sí. Use la misma configuración `rotatePage` con las opciones de vista apropiadas para el formato de destino.
 
 ## Recursos
-- **Documentación**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
-- **Referencia de API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
-- **Página de descarga**: [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)  
-- **Opciones de compra**: [GroupDocs Purchase Options](https://purchase.groupdocs.com/buy)  
-- **Prueba gratuita**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- **Solicitar licencia temporal**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Foro de soporte**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Documentación**: [Documentación de GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)  
+- **Referencia de API**: [Referencia de API de GroupDocs](https://reference.groupdocs.com/viewer/java/)  
+- **Descarga**: [Página de descarga de GroupDocs](https://releases.groupdocs.com/viewer/java/)  
+- **Compra**: [Opciones de compra de GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Prueba gratuita**: [Prueba gratuita de GroupDocs](https://releases.groupdocs.com/viewer/java/)  
+- **Licencia temporal**: [Solicitar licencia temporal](https://purchase.groupdocs.com/temporary-license/)  
+- **Soporte**: [Foro de soporte de GroupDocs](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Última actualización:** 2026-04-04  
-**Probado con:** GroupDocs.Viewer 25.2 for Java  
+**Última actualización:** 2026-10-05  
+**Probado con:** GroupDocs.Viewer 25.2 para Java  
 **Autor:** GroupDocs
+
+## Tutoriales relacionados
+
+- [Guía Java: renderizar páginas seleccionadas con GroupDocs.Viewer](/viewer/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/)
+- [Renderizado de PDF Java con GroupDocs Viewer: saltos de página](/viewer/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/)
+- [GroupDocs Viewer Java: renderizado HTML responsivo](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)

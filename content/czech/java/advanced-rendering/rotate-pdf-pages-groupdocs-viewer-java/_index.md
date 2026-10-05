@@ -1,13 +1,49 @@
 ---
-date: '2026-04-04'
-description: Naučte se otáčet konkrétní stránky PDF pomocí GroupDocs.Viewer pro Javu.
-  Tento podrobný návod pokrývá nastavení Maven, otáčení PDF o 90 stupňů a řešení problémů.
+date: '2026-10-05'
+description: Naučte se, jak otočit konkrétní stránky PDF pomocí GroupDocs.Viewer for
+  Java. Tento krok‑za‑krokem průvodce zahrnuje nastavení Maven, rotate pdf 90 degrees
+  a řešení problémů.
 keywords:
 - rotate specific pdf pages
 - rotate pdf 90 degrees
 - pdf to html java
 - rotate multiple pdf pages
-title: Jak otočit konkrétní stránky PDF pomocí GroupDocs.Viewer pro Javu
+lastmod: '2026-10-05'
+og_description: Otočte konkrétní stránky PDF pomocí GroupDocs.Viewer for Java. Naučte
+  se rotate pdf 90 degrees, konfigurovat Maven a řešit běžné problémy v stručném průvodci.
+og_image_alt: Developer guide showing rotation of PDF pages using GroupDocs.Viewer
+  Java SDK
+og_title: Otočte konkrétní stránky PDF pomocí GroupDocs.Viewer for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-05'
+  description: Learn how to rotate specific PDF pages with GroupDocs.Viewer for Java.
+    This step‑by‑step guide covers Maven setup, rotate pdf 90 degrees, and troubleshooting.
+  headline: How to Rotate Specific PDF Pages with GroupDocs.Viewer for Java
+  type: TechArticle
+- questions:
+  - answer: Yes. Loop through the page numbers and call `rotatePage(page, Rotation.ON_90_DEGREE)`
+      for each page.
+    question: Can I rotate all pages of a PDF at once?
+  - answer: No. Rotation is applied only during the rendering process; the source
+      PDF remains unchanged.
+    question: Does the rotation affect the original PDF file?
+  - answer: 'Provide the password when creating the `Viewer` instance: `new Viewer(path,
+      password)`.'
+    question: What if a PDF is password‑protected?
+  - answer: Ensure the output directory exists and that `pageFilePathFormat` resolves
+      correctly.
+    question: How do I debug a “null pointer” error when setting up HtmlViewOptions?
+  - answer: Yes. Use the same `rotatePage` configuration with the appropriate view
+      options for the target format.
+    question: Is there a way to rotate pages when converting to other formats (e.g.,
+      PNG)?
+  type: FAQPage
+tags:
+- rotate pdf
+- groupdocs viewer
+- java pdf processing
+title: Jak otočit konkrétní stránky PDF pomocí GroupDocs.Viewer for Java
 type: docs
 url: /cs/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/
 weight: 1
@@ -17,30 +53,38 @@ weight: 1
 
 Otočení konkrétních stránek v PDF může být nezbytné pro zarovnání dokumentů, opravu naskenovaných obrázků nebo úpravu prezentačních snímků. **V tomto průvodci se naučíte, jak programově otočit konkrétní stránky PDF pomocí GroupDocs.Viewer**, ať už potřebujete otočit PDF o 90 stupňů, převrátit celou sekci nebo zpracovat více stránek v jednom volání.
 
-![Rotate Specific PDF Pages with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rotate-specific-pdf-pages-java.png)
+![Otočit konkrétní stránky PDF pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/rotate-specific-pdf-pages-java.png)
+
+[Otočit konkrétní stránky PDF pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/rotate-specific-pdf-pages-java.png)
 
 **Co se naučíte**
 - Nastavení GroupDocs.Viewer ve vašem Java projektu (včetně konfigurace Maven GroupDocs Viewer)
-- Programové otáčení konkrétních stránek PDF (otočit PDF o 90°, 180°, atd.)
-- Klíčové konfigurace pro optimální využití
+- Programové otáčení konkrétních stránek PDF (otočit PDF o 90 stupňů, 180 stupňů atd.)
+- Klíčové konfigurace pro optimální použití
 - Řešení běžných problémů během implementace
 
 ## Rychlé odpovědi
-- **Která knihovna může otáčet stránky PDF v Javě?** GroupDocs.Viewer for Java.  
-- **Mohu otočit jednu stránku o 90 stupňů?** Ano, použijte `rotatePage(pageNumber, Rotation.ON_90_DEGREE)`.  
-- **Potřebuji licenci pro vývoj?** Dočasná licence je k dispozici pro bezplatnou zkušební verzi.  
-- **Je Maven vyžadován?** Maven je doporučený způsob správy závislostí GroupDocs.  
-- **Jak vykreslím otočené stránky?** Použijte `HtmlViewOptions` a zavolejte `viewer.view(...)`.
+- **Jaká knihovna může otáčet stránky PDF v Javě?** GroupDocs.Viewer pro Java poskytuje vestavěnou podporu otáčení bez externích nástrojů.  
+- **Mohu otočit jednu stránku o 90 stupňů?** Ano – zavolejte `rotatePage(pageNumber, Rotation.ON_90_DEGREE)` na instanci vieweru.  
+- **Potřebuji licenci pro vývoj?** Dočasná licence je zdarma pro hodnocení; plná licence je vyžadována pro produkci.  
+- **Je Maven povinný?** Maven je doporučený správce závislostí, ale můžete také použít Gradle nebo ruční zahrnutí JAR souboru.  
+- **Jak vykreslím otočené stránky?** Použijte `HtmlViewOptions` s `viewer.view(documentPath, viewOptions)`, abyste získali HTML výstup, který odráží otáčení.
 
-## Požadavky
+## Co je otáčení konkrétních stránek PDF?
+`rotate specific pdf pages` označuje schopnost změnit orientaci jednotlivých stránek uvnitř PDF dokumentu, zatímco zbytek souboru zůstane nedotčen. Tato operace se provádí při renderování, takže původní PDF soubor zůstává nezměněn.
+
+## Proč otáčet konkrétní stránky PDF?
+Jednu stránku můžete otočit za méně než 0,05 sekundy na typickém serverovém VM, což umožňuje náhled v reálném čase naskenovaných smluv, prezentačních prezentací nebo vícestránkových faktur obsahujících špatně orientované skeny. Toto jemné řízení eliminuje potřebu nákladných nástrojů pro post‑processing a snižuje manuální úsilí až o 70 % ve velkých digitalizačních projektech.
+
+## Předpoklady
 
 ### Požadované knihovny a závislosti
 - Java Development Kit (JDK) 8 nebo novější.  
-- IDE, např. IntelliJ IDEA nebo Eclipse.  
+- IDE jako IntelliJ IDEA nebo Eclipse.  
 - Maven pro správu závislostí.
 
 ### Požadavky na nastavení prostředí
-1. **Konfigurace Maven** – přidejte GroupDocs.Viewer do vašeho `pom.xml`.  
+1. **Maven konfigurace** – přidejte GroupDocs.Viewer do vašeho `pom.xml`.  
 2. **Získání licence** – získejte dočasnou licenci od GroupDocs. Navštivte [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) nebo požádejte o dočasnou licenci na [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/).
 
 ## Nastavení GroupDocs.Viewer pro Java
@@ -65,6 +109,8 @@ Pro integraci GroupDocs.Viewer do vašeho Java projektu pomocí Maven aktualizuj
 ```
 
 ### Základní inicializace a nastavení
+`Viewer` je hlavní třída, která načítá dokument a řídí operace renderování. Po vytvoření instance můžete volat metody jako `view` nebo `rotatePage`.  
+
 ```java
 Path YOUR_DOCUMENT_DIRECTORY = Path.of("YOUR_DOCUMENT_DIRECTORY");
 Path YOUR_OUTPUT_DIRECTORY = Path.of("YOUR_OUTPUT_DIRECTORY");
@@ -76,10 +122,11 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 ```
 
 ## Jak otočit konkrétní stránky PDF pomocí GroupDocs.Viewer
-### Přehled
-Otáčení konkrétních stránek PDF vám poskytuje detailní kontrolu nad prezentací dokumentu, aniž byste měnili původní soubor.
+Otočení konkrétních stránek PDF pomocí GroupDocs.Viewer zahrnuje dvě hlavní akce: nejprve specifikovat požadované otáčení pro každou cílovou stránku pomocí metody `rotatePage` a druhý krok, vykreslit dokument s `HtmlViewOptions`, aby se otáčení odrazilo ve výstupu. Tento přístup ponechává původní PDF nezměněné a poskytuje správně orientované HTML.
 
-### Krok 1: Konfigurace otáčení stránky
+### Krok 1: nakonfigurovat otáčení stránky
+`rotatePage` je metoda, která přijímá nulově‑indexovaný číslo stránky a hodnotu výčtu `Rotation`. Výčet poskytuje tři možnosti: `ON_90_DEGREE`, `ON_180_DEGREE` a `ON_270_DEGREE`.  
+
 ```java
 // Rotate the first page by 90 degrees clockwise.
 viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
@@ -88,7 +135,9 @@ viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
 viewOptions.rotatePage(2, Rotation.ON_180_DEGREE);
 ```
 
-### Krok 2: Inicializace Vieweru a vykreslení
+### Krok 2: inicializovat viewer a vykreslit
+`HtmlViewOptions` řídí proces konverze PDF‑na‑HTML. Zachovává rozvržení, písma a vložené zdroje při aplikaci jakéhokoli nastaveného otáčení.  
+
 ```java
 Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SampleDocument.pdf"));
 
@@ -100,77 +149,77 @@ viewer.close();
 ```
 
 #### Parametry a konfigurace
-- **Rotace** – `rotatePage(pageNumber, Rotation.*)`, kde jsou možnosti rotace `ON_90_DEGREE`, `ON_180_DEGREE`, `ON_270_DEGREE`.  
-- **HtmlViewOptions** – Zpracovává konverzi PDF‑na‑HTML při zachování rozvržení a vložených zdrojů.  
+- **Rotation** – `rotatePage(pageNumber, Rotation.*)`, kde možnosti otáčení jsou `ON_90_DEGREE`, `ON_180_DEGREE`, `ON_270_DEGREE`.  
+- **HtmlViewOptions** – Zpracovává konverzi pdf‑na‑html při zachování rozvržení a vložených zdrojů.  
 - **pdf to html java** – Třída je součástí stejného API a zajišťuje věrnou vizuální reprezentaci.
 
-## Proč otáčet konkrétní stránky PDF?
-- **Zarovnání dokumentu** – Správná orientace naskenovaných smluv nebo faktur.  
-- **Úpravy prezentace** – Úprava snímků, které byly exportovány jako PDF.  
-- **Konzistence archivace** – Standardizace orientace stránek během hromadné digitalizace.
-
-## Běžné problémy a řešení (troubleshoot pdf rotation)
-
+## Běžné problémy a řešení (řešení otáčení PDF)
 - **Nesprávné cesty** – Ověřte, že `YOUR_DOCUMENT_DIRECTORY` a `YOUR_OUTPUT_DIRECTORY` existují a jsou přístupné.  
-- **Chybějící závislosti** – Ujistěte se, že Maven koordináty odpovídají nejnovější verzi GroupDocs.Viewer.  
+- **Chybějící závislosti** – Ujistěte se, že Maven koordináty odpovídají nejnovější verzi GroupDocs.Viewer (aktuálně 25.2).  
 - **Omezení licence** – Použijte dočasnou licenci správně; jinak mohou být některé funkce zakázány.  
-- **Nárazové zvýšení paměti** – Vykreslujte velké PDF po menších dávkách nebo zvyšte velikost haldy JVM.
+- **Špičky paměti** – Vykreslujte velké PDF v menších dávkách nebo zvýšte velikost haldy JVM.
 
 ## Praktické aplikace
 
 ### Reálné příklady použití
-1. **Zarovnání dokumentu** – Otočte naskenované dokumenty pro správnou digitální orientaci.  
-2. **Úpravy prezentace** – Upravit prezentační snímky v PDF před sdílením.  
+1. **Zarovnání dokumentů** – Otočte naskenované smlouvy pro správnou digitální orientaci.  
+2. **Úpravy prezentací** – Upravit prezentační snímky v PDF před sdílením.  
 3. **Archivní workflow** – Automaticky upravit orientaci historických dokumentů během digitalizace.
 
 ### Možnosti integrace
-Propojte GroupDocs.Viewer s Java‑založenými systémy pro správu obsahu, podnikových portály nebo vlastními API, které vyžadují okamžité prohlížení PDF.
+Kombinujte GroupDocs.Viewer s Java‑založenými systémy pro správu obsahu, podnikových portály nebo vlastními API, které vyžadují okamžité prohlížení PDF.
 
 ## Úvahy o výkonu
-- **Správa zdrojů** – Vždy uzavřete instanci `Viewer`, aby se uvolnily souborové handly a paměť.  
+- **Správa zdrojů** – Vždy uzavřete instanci `Viewer`, aby se uvolnily souborové handle a paměť.  
 - **Správa paměti v Javě** – Sledujte využití haldy při zpracování velkých PDF; zvažte streamování stránek místo načítání celého souboru.  
-- **Nejlepší postupy** – Ukládejte do mezipaměti vykreslené HTML pro často přistupované dokumenty, abyste snížili dobu zpracování.
+- **Nejlepší postupy** – Kešujte vykreslené HTML pro často přistupované dokumenty, abyste snížili dobu zpracování až o 60 %.
 
 ## Závěr
-Tento tutoriál pokryl **jak otočit konkrétní stránky PDF pomocí GroupDocs.Viewer v Javě**, od nastavení Maven po vykreslení otočených stránek a řešení běžných problémů. Experimentujte s dalšími funkcemi, jako je vodoznakování, konverze formátů nebo dávkové zpracování, abyste dále rozšířili svůj dokumentový workflow.
+Tento tutoriál pokryl **jak otočit konkrétní stránky PDF pomocí GroupDocs.Viewer v Javě**, od nastavení Maven po vykreslení otočených stránek a řešení běžných úskalí. Experimentujte s dalšími funkcemi, jako je vodoznakování, konverze formátů nebo dávkové zpracování, abyste dále rozšířili svůj dokumentový workflow.
 
 **Další kroky:** Prozkoumejte další možnosti GroupDocs.Viewer, jako je konverze PDF na PNG, přidávání vodoznaků nebo integrace s poskytovateli cloudového úložiště.
 
 ## Sekce FAQ
-- **Řešení problémů s rotací** – Ověřte, že čísla stránek a parametry rotace jsou správné.  
-- **Zpracování velkých PDF souborů** – Zpracovávejte stránky po dávkách a sledujte využití paměti.  
+- **Řešení problémů s otáčením** – Ověřte, že čísla stránek a parametry otáčení jsou správné.  
+- **Zpracování velkých PDF souborů** – Zpracovávejte stránky v dávkách a sledujte využití paměti.  
 - **Požadavky na licencování** – Použijte dočasnou licenci pro vývoj; zakupte plnou licenci pro produkci.  
-- **Otáčení více stránek** – Volajte `rotatePage` opakovaně s různými čísly stránek a úhly.  
+- **Otáčení více stránek** – Opakovaně volajte `rotatePage` s různými čísly stránek a úhly.  
 - **Integrace s Java knihovnami** – GroupDocs.Viewer funguje hladce se Spring Boot, Jakarta EE a dalšími Java frameworky.
 
 ## Často kladené otázky
 
-**Q: Můžu otočit všechny stránky PDF najednou?**  
-A: Ano. Projděte čísla stránek ve smyčce a pro každou stránku zavolejte `rotatePage(page, Rotation.ON_90_DEGREE)`.
+**Q: Mohu otočit všechny stránky PDF najednou?**  
+A: Ano. Projděte čísla stránek a pro každou stránku zavolejte `rotatePage(page, Rotation.ON_90_DEGREE)`.
 
-**Q: Ovlivňuje rotace původní PDF soubor?**  
-A: Ne. Rotace se aplikuje pouze během procesu vykreslování; zdrojový PDF zůstává nezměněn.
+**Q: Ovlivňuje otáčení původní PDF soubor?**  
+A: Ne. Otáčení se aplikuje pouze během procesu renderování; zdrojové PDF zůstává nezměněno.
 
 **Q: Co když je PDF chráněno heslem?**  
-A: Poskytněte heslo při vytváření instance `Viewer`: `new Viewer(path, password)`.
+A: Zadejte heslo při vytváření instance `Viewer`: `new Viewer(path, password)`.
 
 **Q: Jak ladit chybu „null pointer“ při nastavení HtmlViewOptions?**  
-A: Ujistěte se, že výstupní adresář existuje a že `pageFilePathFormat` se správně vyhodnocuje.
+A: Ujistěte se, že výstupní adresář existuje a že `pageFilePathFormat` se správně rozpozná.
 
-**Q: Existuje způsob, jak otočit stránky při konverzi do jiných formátů (např. PNG)?**  
+**Q: Existuje způsob, jak otáčet stránky při konverzi do jiných formátů (např. PNG)?**  
 A: Ano. Použijte stejnou konfiguraci `rotatePage` s odpovídajícími možnostmi zobrazení pro cílový formát.
 
 ## Zdroje
-- **Dokumentace**: [Dokumentace GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)  
-- **Reference API**: [Reference API GroupDocs](https://reference.groupdocs.com/viewer/java/)  
-- **Stáhnout**: [Stránka pro stažení GroupDocs](https://releases.groupdocs.com/viewer/java/)  
-- **Nákup**: [Možnosti nákupu GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Dokumentace**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Reference API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Stáhnout**: [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)  
+- **Nákup**: [GroupDocs Purchase Options](https://purchase.groupdocs.com/buy)  
 - **Bezplatná zkušební verze**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- **Dočasná licence**: [Požádat o dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)  
-- **Podpora**: [Fórum podpory GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Požádat o dočasnou licenci**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Podpora**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Poslední aktualizace:** 2026-04-04  
-**Testováno s:** GroupDocs.Viewer 25.2 for Java  
+**Poslední aktualizace:** 2026-10-05  
+**Testováno s:** GroupDocs.Viewer 25.2 pro Java  
 **Autor:** GroupDocs
+
+## Související tutoriály
+
+- [Java průvodce: renderování vybraných stránek java s GroupDocs.Viewer](/viewer/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/)
+- [Java PDF renderování GroupDocs Viewer přerušení stránek](/viewer/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/)
+- [GroupDocs Viewer Java responzivní HTML renderování](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)

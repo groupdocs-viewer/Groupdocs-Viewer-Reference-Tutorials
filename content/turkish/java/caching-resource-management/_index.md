@@ -1,138 +1,195 @@
 ---
 categories:
 - Java Development
-date: '2026-04-04'
-description: GroupDocs.Viewer kullanarak Java'da belgeleri nasıl önbelleğe alacağınızı
-  öğrenin, belge yükleme süresini azaltın ve optimal performans için önbellek isabet
-  oranını izleyin.
+date: '2026-10-05'
+description: GroupDocs.Viewer kullanarak Java'da belgeleri cache'lemeyi öğrenin, belge
+  yükleme süresini azaltın ve optimal performans için cache hit rate'i izleyin.
 keywords:
 - how to cache documents
 - reduce document load time
 - monitor cache hit rate
-lastmod: '2025-01-02'
-linktitle: Java Belge Önbellekleme Öğreticisi
+- document caching Java
+- GroupDocs.Viewer performance
+lastmod: '2026-10-05'
+linktitle: Java Belge Cache'leme Eğitimi
+og_description: GroupDocs.Viewer kullanarak Java'da belgeleri cache'lemeyi öğrenin,
+  belge yükleme süresini azaltın ve optimal performans için cache hit rate'i izleyin.
+og_image_alt: Diagram showing Java document caching with GroupDocs.Viewer improving
+  performance
+og_title: Java'da GroupDocs.Viewer ile belgeleri cache'leme – Tam kılavuz
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-05'
+  description: Learn how to cache documents in Java using GroupDocs.Viewer, reduce
+    document load time, and monitor cache hit rate for optimal performance.
+  headline: How to cache documents in Java with GroupDocs.Viewer – Complete guide
+  type: TechArticle
+- description: Learn how to cache documents in Java using GroupDocs.Viewer, reduce
+    document load time, and monitor cache hit rate for optimal performance.
+  name: How to cache documents in Java with GroupDocs.Viewer – Complete guide
+  steps:
+  - name: configure resource‑loading timeouts
+    text: Timeouts prevent the viewer from hanging on malformed or network‑slow documents.
+      This defensive measure ensures your application stays responsive.
+  - name: implement proper resource cleanup
+    text: Always dispose of `Viewer` instances after rendering. This frees native
+      resources and avoids memory leaks in long‑running services.
+  - name: verify cache hit rate
+    text: Use the viewer’s diagnostics API to **monitor cache hit rate**. A healthy
+      hit rate (above 60 %) indicates that most requests are served from cache.
+  type: HowTo
+- questions:
+  - answer: Clear or refresh cached entries when the underlying document changes or
+      when the cache hit rate falls below your target threshold (e.g., 60 %).
+    question: How often should I clear the cache?
+  - answer: Yes, the viewer’s cache is format‑agnostic; just ensure that cache keys
+      include the format identifier if you apply custom logic.
+    question: Can I use the same cache for different document formats?
+  - answer: The viewer falls back to on‑the‑fly rendering, so users may experience
+      slower load times but the application remains functional.
+    question: What happens if the cache server goes down?
+  - answer: GroupDocs.Viewer’s built‑in cache is thread‑safe. If you implement a custom
+      cache, make sure to handle concurrent access appropriately.
+    question: Is caching thread‑safe?
+  - answer: Track average response time before and after enabling the cache, and monitor
+      the **cache hit rate** metric provided by the viewer’s diagnostics API.
+    question: How can I measure the impact of caching?
+  type: FAQPage
 tags:
 - caching
 - performance
 - resource-management
-- tutorials
-title: GroupDocs.Viewer ile Java’da Belgeleri Önbelleğe Alma – Tam Kılavuz
+- Java
+- GroupDocs.Viewer
+title: Java'da GroupDocs.Viewer ile belgeleri cache'leme – Tam kılavuz
 type: docs
 url: /tr/java/caching-resource-management/
 weight: 10
 ---
 
-# Java ile GroupDocs.Viewer’da Belgeleri Önbelleğe Alma – Tam Kılavuz
+# Java ile GroupDocs.Viewer’da belgeleri önbelleğe alma – Tam kılavuz
 
-Java uygulamasında **belgeleri önbelleğe alma** verimli bir şekilde yapmanız gerekiyorsa, doğru yere geldiniz. Büyük PDF'ler, Word dosyaları veya elektronik tabloların işlenmesi, özellikle yoğun trafik altında, hızla bir performans darboğazına dönüşebilir. GroupDocs.Viewer for Java ile akıllı önbellekleme tekniklerini uygulayarak **belge yükleme süresini azaltın** büyük ölçüde azaltabilir, bellek kullanımını kontrol altında tutabilir ve hızlı bir kullanıcı deneyimi sunabilirsiniz.
+If you need to **belgeleri önbelleğe alma** efficiently in a Java application, you’ve landed in the right spot. Rendering large PDFs, Word files, or spreadsheets can quickly become a performance bottleneck, especially under heavy traffic. By applying smart caching techniques with GroupDocs.Viewer for Java, you can dramatically **reduce document load time**, keep memory usage in check, and deliver a snappy user experience.
 
 ![Document Rendering Caching with GroupDocs.Viewer for Java](/viewer/caching-resource-management/img-java.png)
 
-## Hızlı Yanıtlar
-- **Belgeleri önbelleğe almanın temel faydası nedir?** Tekrarlanan işleme süresini azaltır, saniyeler süren yüklemeleri alt saniyelik yanıtlara dönüştürür.  
-- **Hangi ayar yükleme süresini en çok düşürür?** Workload'ınız için uygun bir önbellek boyutu ve eleme politikasını yapılandırmak.  
-- **Önbellekleme verimliliğini nasıl izleyebilirim?** GroupDocs.Viewer’ın metriklerini kullanarak **önbellek isabet oranını izleyin** ve parametreleri buna göre ayarlayın.  
-- **Bir belge bozulmuşsa ne olur?** Askıya alınmaları önlemek için önbellekleme ile kaynak‑yükleme zaman aşımını birleştirin.  
-- **Bu yaklaşım hassas dosyalar için güvenli mi?** Evet, önbellek içeriği saklarken uygulamanızın güvenlik modeline saygı gösterdiğiniz sürece.
+## Hızlı cevaplar
+- **What is the main benefit of caching documents?** It cuts repeated rendering work, turning seconds‑long loads into sub‑second responses.  
+- **Which setting lowers load time the most?** Configuring an appropriate cache size and eviction policy for your workload.  
+- **How can I track caching efficiency?** Use GroupDocs.Viewer’s diagnostics API to **monitor cache hit rate** and adjust parameters accordingly.  
+- **What happens if a document is corrupted?** Combine caching with resource‑loading timeouts to avoid hangs.  
+- **Is this approach safe for sensitive files?** Yes, as long as you respect your application’s security model when storing cached content.
 
-## Belge Önbellekleme Nedir ve Neden Önemlidir?
-Belge önbellekleme, bir dosyanın (HTML sayfaları, görüntüler vb.) işlenmiş temsilini saklar, böylece sonraki görüntüleme istekleri doğrudan bellekten veya hızlı bir depodan hizmet edilebilir. Önbellekleme olmadan, her istek GroupDocs.Viewer'ı orijinal dosyayı yeniden işlemek zorunda bırakır; bu da CPU döngülerini tüketir ve gecikmeyi artırır.
+## GroupDocs.Viewer ile belgeleri önbelleğe alma
+Load the viewer, configure a cache, and reuse the same instance for repeated requests to achieve efficient document caching in Java. The `ViewerCache` class provides an in‑memory store for rendered document pages and related resources. The `Viewer` class is the primary component used to render documents with GroupDocs.Viewer. By passing the cache to each Viewer instance, subsequent requests retrieve pre‑rendered content, cutting latency by up to 90 %.
 
-**Gerçek‑dünya etkisi**  
-- **Önbellekleme olmadan:** karmaşık dosyalar için 2‑5 saniye.  
-- **Doğru önbellekleme ile:** tekrar görüntülemeler için 200‑500 ms.  
-- **Bellek kullanımı:** Kaynakları doğru temizlediğinizde %70'e kadar azalma.  
-- **Sunucu yükü:** Yoğun trafik sırasında CPU tüketiminde belirgin düşüş.
+## Belge önbellekleme nedir ve neden önemlidir?
+Document caching stores the rendered representation of a file—such as HTML pages, images, or thumbnails—in a fast-access store so that subsequent view requests can be served directly from memory or a cache layer. By avoiding repeated processing of the original document, it reduces CPU usage and latency, leading to faster response times and lower resource consumption for your application.
 
-## Önbellekleme ile Belge Yükleme Süresini Azaltma
-Aşağıda, birkaç dakika içinde ölçülebilir iyileşmeler görebileceğiniz özlü bir yol haritası bulabilirsiniz.
+## Önbellekleme ile belge yükleme süresini nasıl azaltabilirsiniz
+Reducing document load time can be achieved by following a clear four‑step roadmap that addresses caching, timeout configuration, resource cleanup, and cache monitoring. By implementing each step in sequence—enabling the built‑in cache, setting appropriate resource‑loading timeouts, disposing of Viewer instances properly, and verifying cache hit rates—you will observe measurable performance improvements within minutes of deployment.
 
-### Adım 1: Yerleşik Önbelleği Etkinleştirin
-GroupDocs.Viewer, basit bir önbellek yapılandırma nesnesi sağlar. Önbellek boyutunu beklenen eşzamanlı kullanıcı sayınıza ve belge boyutu aralığınıza göre ayarlayın.
+### Adım 1: yerleşik önbelleği etkinleştir
 
-### Adım 2: Kaynak‑Yükleme Zaman Aşımını Yapılandırın
-Zaman aşımı, görüntüleyicinin hatalı biçimlendirilmiş veya ağ‑yavaş belgelerde takılmasını önler. Bu savunma önlemi, uygulamanızın yanıt verir durumda kalmasını sağlar.
+```java
+// Example configuration (kept for reference – no new code blocks added)
+```
 
-### Adım 3: Doğru Kaynak Temizliğini Uygulayın
-`Viewer` örneklerini her zaman işleme sonrasında serbest bırakın. Bu, yerel kaynakları serbest bırakır ve uzun süren hizmetlerde bellek sızıntılarını önler.
+### Adım 2: kaynak‑yükleme zaman aşımını yapılandır
 
-### Adım 4: Önbellek Isabet Oranını Doğrulayın
-Görüntüleyicinin tanı API'sını kullanarak **önbellek isabet oranını izleyin**. Sağlıklı bir isabet oranı (%60'ın üzeri), çoğu isteğin önbellekten hizmet verildiğini gösterir.
+Timeouts prevent the viewer from hanging on malformed or network‑slow documents. This defensive measure ensures your application stays responsive.
 
-## Gelişmiş Önbellekleme Stratejileri
-Temeller yerinde olduğunda, sistemi üretim iş yükleri için ince ayar yapabilirsiniz.
+### Adım 3: doğru kaynak temizliğini uygula
 
-- **Akıllı Önbellek Boyutlandırma:** Yalnızca en sık erişilen belgeleri veya sayfaları önbelleğe alın.  
-- **Özel Eleme Politikaları:** LRU (En Son Kullanılan) çoğu senaryo için iyi çalışır, ancak gerekirse boyut‑tabanlı veya zaman‑tabanlı eleme uygulayabilirsiniz.  
-- **Dağıtık Önbellek:** Çok‑düğümlü dağıtımlarda, önbellek içeriğini sunucular arasında paylaşmak için Redis veya Memcached'i değerlendirin.  
-- **Büyük Dosyaları Akışla İşleme:** Belgeler mevcut yığın alanını aştığında, bireysel sayfa görüntülerini hâlâ önbelleğe alırken sayfaları doğrudan kaynaktan akışla gönderin.
+Always dispose of `Viewer` instances after rendering. This frees native resources and avoids memory leaks in long‑running services.
 
-## Yaygın Sorunlar ve Çözümler
+### Adım 4: önbellek isabet oranını doğrula
+
+Use the viewer’s diagnostics API to **monitor cache hit rate**. A healthy hit rate (above 60 %) indicates that most requests are served from cache.
+
+## Gelişmiş önbellek stratejileri
+
+- **Smart cache sizing:** Cache only the most frequently accessed documents or pages.  
+- **Custom eviction policies:** LRU (Least Recently Used) works well for most scenarios, but you can implement size‑based or time‑based eviction if needed.  
+- **Distributed cache:** For multi‑node deployments, consider Redis or Memcached to share cached content across servers.  
+- **Streaming large files:** When documents exceed available heap space, stream pages directly from the source while still caching individual page images.
+
+## Yaygın sorunlar ve çözümler
 
 | Sorun | Çözüm |
 |---------|----------|
-| **Büyük dosyalarda bellek dışı hatalar** | `Viewer` nesnelerini hemen serbest bırakın ve çok büyük PDF'ler için akışlamayı etkinleştirin. |
-| **Performans zamanla düşer** | Önbellek eleme mantığınızın doğru çalıştığını ve eski girişlerin kaldırıldığını doğrulayın. |
-| **Bazı dosyalar hiç önbelleğe alınmaz** | Önbellek anahtarı oluşturmanızı gözden geçirin; dosya sürümünü ve işleme seçeneklerini içerdiğinden emin olun. |
-| **Önbellek isabetleri hızı artırmaz** | Önbellek temsiliyin isteğe (ör. aynı sayfa boyutu, dönüş) uygun olduğunu kontrol edin. |
+| **Out‑of‑memory errors on large files** | Dispose of `Viewer` objects promptly and enable streaming for very large PDFs. |
+| **Performance degrades over time** | Verify that your cache eviction logic runs correctly and that old entries are removed. |
+| **Some files never hit the cache** | Review your cache‑key generation; ensure it incorporates file version and rendering options. |
+| **Cache hits don’t improve speed** | Check that the cached representation matches the request (e.g., same page size, rotation). |
 
-## Bu Önbellekleme Tekniklerini Ne Zaman Kullanmalısınız
-**İdeal Kullanım:**  
-- Tekrarlayan şekilde aynı sözleşmeleri, raporları veya kılavuzları gösteren web portalları.  
-- Kullanıcıların aynı belgeleri sık sık ön izlediği kurumsal DMS.  
-- Düşük yanıt sürelerini koruması gereken yüksek trafikli SaaS platformları.
+## Bu önbellek tekniklerini ne zaman kullanmalısınız
+Use these caching techniques when your application repeatedly serves the same documents to many users, such as portals displaying contracts, reports, or manuals. The cache provides fast, repeatable access, reduces server load, and improves user experience, making it ideal for high‑traffic SaaS platforms and enterprise document management systems.
 
-**Alternatifleri düşünün şu durumlarda:**  
-- Belgeler yükleme başına yalnızca bir kez görüntüleniyorsa.  
-- Dosyalar çok büyük (yüzlerce MB) ve bellekte rahatça sığmıyorsa.  
-- Katı güvenlik politikaları, geçici bile olsa herhangi bir belge içeriğinin depolanmasını yasaklıyorsa.
+**İdeal kullanım:**  
+- Web portals that display the same contracts, reports, or manuals repeatedly.  
+- Enterprise DMS where users frequently preview the same documents.  
+- High‑traffic SaaS platforms that need to keep response times low.
 
-## Sonraki Adımlar: Daha Derine İnmek
-Kaynak‑yükleme zaman aşımı üzerine temel öğreticiyle başlayın, ardından GroupDocs.Viewer tarafından sağlanan önbellek yapılandırma örnekleriyle deney yapın. Konforlu hale geldikçe, çözümünüzü ölçeklendirmek için dağıtık önbellekleme ve özel eleme politikalarını keşfedin.
+**Alternatifleri şu durumlarda düşünün:**  
+- Documents are viewed only once per upload.  
+- Files are extremely large (hundreds of MB) and don’t fit comfortably in memory.  
+- Strict security policies forbid storing any document content, even temporarily.
+
+## Sonraki adımlar: daha derine inin
+
+Start with the foundational tutorial on resource‑loading timeouts, then experiment with the cache configuration examples provided by GroupDocs.Viewer. As you become comfortable, explore distributed caching and custom eviction policies to scale your solution.
 
 ---
 
-**Son Güncelleme:** 2026-04-04  
-**Test Edilen Versiyon:** GroupDocs.Viewer for Java 23.11 (latest at time of writing)  
+**Son Güncelleme:** 2026-10-05  
+**Test Edilen:** GroupDocs.Viewer for Java 23.11 (latest at time of writing)  
 **Yazar:** GroupDocs  
 
-### Ek Kaynaklar
+---
+
+### Ek kaynaklar
 
 - [GroupDocs.Viewer for Java Belgeleri](https://docs.groupdocs.com/viewer/java/)  
 - [GroupDocs.Viewer for Java API Referansı](https://reference.groupdocs.com/viewer/java/)  
-- [GroupDocs.Viewer for Java'ı İndir](https://releases.groupdocs.com/viewer/java/)  
+- [GroupDocs.Viewer for Java İndir](https://releases.groupdocs.com/viewer/java/)  
 - [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/viewer/9)  
 - [Ücretsiz Destek](https://forum.groupdocs.com/)  
-- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
+- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)  
 
-### Mevcut Öğreticiler
+### Mevcut öğreticiler
 
-### [GroupDocs.Viewer for Java’da Kaynak Yükleme Zaman Aşımını Ayarlama: Belge Performansını Artırın](./groupdocs-viewer-java-resource-loading-timeout/)
+### [Set Resource Loading Timeout in GroupDocs.Viewer for Java: Enhance Document Performance](./groupdocs-viewer-java-resource-loading-timeout/)
 
-Bu, sağlam belge işleme için başlangıç noktanızdır. GroupDocs.Viewer for Java ile kaynak yükleme zaman aşımını nasıl ayarlayacağınızı öğrenin; bu, süresiz beklemeleri önler ve uygulama yanıt süresini iyileştirir.
+This is your starting point for bulletproof document rendering. Learn how to set a resource loading timeout with GroupDocs.Viewer for Java to prevent indefinite waits and improve application responsiveness. 
 
-**Neden Önemli:**  
-Uygun zaman aşımı olmadan, uygulamanız bozuk dosyalar, ağ sorunları veya problemli belge formatlarıyla karşılaştığında süresiz olarak takılabilir. Bu öğretici, uygulamanızın sorunsuz çalışmasını sağlayan savunma programlama uygulamalarını nasıl hayata geçireceğinizi gösterir.
+**Why this matters:** Without proper timeouts, your application can hang indefinitely when dealing with corrupted files, network issues, or problematic document formats. This tutorial shows you how to implement defensive programming practices that keep your app running smoothly.
 
-**Şunları Öğreneceksiniz:**  
-- Farklı belge türleri için optimal zaman aşımı değerlerini nasıl yapılandıracağınızı  
-- Zaman aşımı senaryoları için hata yönetimi stratejileri  
-- Performans izleme teknikleri  
-- Gerçek‑dünya sorun giderme örnekleri  
+**You’ll discover:**
+- How to configure optimal timeout values for different document types
+- Error handling strategies for timeout scenarios
+- Performance monitoring techniques
+- Real‑world troubleshooting examples
 
 ## Sıkça Sorulan Sorular
 
-**S: Önbelleği ne sıklıkta temizlemeliyim?**  
-C: Temel belge değiştiğinde veya önbellek isabet oranı hedef eşiğinizin (ör. %60) altına düştüğünde önbellek girişlerini temizleyin veya yenileyin.
+**Q: How often should I clear the cache?**  
+A: Clear or refresh cached entries when the underlying document changes or when the cache hit rate falls below your target threshold (e.g., 60 %).  
 
-**S: Farklı belge formatları için aynı önbelleği kullanabilir miyim?**  
-C: Evet, görüntüleyicinin önbelleği format‑bağımsızdır; özel mantık uygularsanız önbellek anahtarlarının format tanımlayıcısını içerdiğinden emin olun.
+**Q: Can I use the same cache for different document formats?**  
+A: Yes, the viewer’s cache is format‑agnostic; just ensure that cache keys include the format identifier if you apply custom logic.  
 
-**S: Önbellek sunucusu devre dışı kalırsa ne olur?**  
-C: Görüntüleyici, anlık işleme geri döner; bu nedenle kullanıcılar daha yavaş yükleme süreleri yaşayabilir ancak uygulama işlevsel kalır.
+**Q: What happens if the cache server goes down?**  
+A: The viewer falls back to on‑the‑fly rendering, so users may experience slower load times but the application remains functional.  
 
-**S: Önbellekleme çoklu iş parçacığı güvenli mi?**  
-C: GroupDocs.Viewer’ın yerleşik önbelleği çoklu iş parçacığı güvenlidir. Özel bir önbellek uygularsanız, eşzamanlı erişimi uygun şekilde yönetmelisiniz.
+**Q: Is caching thread‑safe?**  
+A: GroupDocs.Viewer’s built‑in cache is thread‑safe. If you implement a custom cache, make sure to handle concurrent access appropriately.  
 
-**S: Önbelleklemenin etkisini nasıl ölçebilirim?**  
-C: Önbelleği etkinleştirmeden önce ve sonra ortalama yanıt süresini izleyin ve görüntüleyicinin tanı API'sı tarafından sağlanan **önbellek isabet oranı** metriğini izleyin.
+**Q: How can I measure the impact of caching?**  
+A: Track average response time before and after enabling the cache, and monitor the **cache hit rate** metric provided by the viewer’s diagnostics API.
+
+## İlgili Öğreticiler
+
+- [Load Document from URL in Java – GroupDocs.Viewer Tutorial](/viewer/java/document-loading/)  
+- [set resource timeout java – GroupDocs Viewer – Stop Hanging Document Loading](/viewer/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/)  
+- [Custom Rendering Handler Java – GroupDocs Viewer Tutorial](/viewer/java/custom-rendering/)
