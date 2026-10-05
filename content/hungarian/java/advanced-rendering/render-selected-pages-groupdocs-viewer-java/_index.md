@@ -1,57 +1,108 @@
 ---
-date: '2026-04-04'
-description: Tudja meg, hogyan konvertálhat DOCX-et HTML-re Java-ban a GroupDocs.Viewer
-  segítségével, hogyan renderelhet PDF oldalakat Java-ban, és hogyan generálhat HTML-t
-  dokumentumokból. Ez az útmutató a beállítást, a konfigurációt és a gyakorlati integrációt
-  tárgyalja.
+date: '2026-10-05'
+description: Ismerje meg, hogyan generálhat HTML-t DOCX-ből Java-ban a GroupDocs.Viewer
+  használatával, hogyan renderelhet kiválasztott oldalakat, és hogyan ágyazhat be
+  erőforrásokat a gyors webmegjelenítéshez.
 keywords:
-- convert docx to html java
-- render pdf pages java
-- generate html from document java
-title: DOCX konvertálása HTML-re Java – Oldalak a GroupDocs.Viewer-rel
+- generate html from docx
+- convert pdf to html java
+- how to convert docx to html
+lastmod: '2026-10-05'
+og_description: HTML generálása DOCX-ből Java-ban a GroupDocs.Viewer segítségével.
+  Ismerje meg lépésről lépésre a kiválasztott oldalak renderelését, az erőforrások
+  beágyazását és a webes kiszolgálás optimalizálását.
+og_image_alt: Screenshot of rendered HTML pages from a DOCX using GroupDocs.Viewer
+  for Java
+og_title: HTML generálása DOCX-ből Java-ban a GroupDocs.Viewer segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-05'
+  description: Learn how to generate HTML from DOCX in Java using GroupDocs.Viewer,
+    render selected pages, and embed resources for fast web display.
+  headline: How to generate HTML from DOCX in Java with GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to generate HTML from DOCX in Java using GroupDocs.Viewer,
+    render selected pages, and embed resources for fast web display.
+  name: How to generate HTML from DOCX in Java with GroupDocs.Viewer
+  steps:
+  - name: configure output path
+    text: '- **Explanation**: `outputDirectory` is where the generated HTML files
+      will be saved. - **Naming**: `page_{0}.html` creates a separate file for each
+      rendered page.'
+  - name: set up HTML view options
+    text: '`HtmlViewOptions` defines how the Viewer outputs HTML, allowing you to
+      embed resources, set page size, and control CSS generation. - **Explanation**:
+      `forEmbeddedResources()` bundles images, CSS, and fonts directly inside each
+      HTML file, removing external dependencies.'
+  - name: render the desired pages
+    text: '- **Explanation**: The `view()` method receives the `HtmlViewOptions` and
+      a list of page numbers. In this example, only the first and third pages are
+      rendered.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Viewer for Java is a library that enables rendering of over
+      90 document formats (PDF, DOCX, PPT, etc.) directly within Java applications.
+    question: What is GroupDocs.Viewer for Java?
+  - answer: Yes – the Viewer API supports PDFs alongside many other formats.
+    question: Can I render PDF pages using this method?
+  - answer: Render only the pages you need and employ caching to avoid repeated processing.
+    question: How do I handle large documents efficiently?
+  - answer: It creates a single self‑contained file per page, simplifying deployment
+      and eliminating external asset loading.
+    question: What is the benefit of embedding resources in HTML files?
+  type: FAQPage
+tags:
+- convert docx
+- GroupDocs.Viewer
+- Java document rendering
+title: HTML generálása DOCX-ből Java-ban a GroupDocs.Viewer segítségével
 type: docs
 url: /hu/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/
 weight: 1
 ---
 
-# DOCX konvertálása HTML-re Java – Oldalak a GroupDocs.Viewer-rel
+# Hogyan generáljunk HTML-t DOCX-ből Java-ban a GroupDocs.Viewer segítségével
 
-Ha **convert DOCX to HTML Java**-ra van szükséged, miközben csak a dokumentum lényeges részeit mutatod, ez a tutorial neked szól. Végigvezetünk a kiválasztott oldalak renderelésén, az összes erőforrás beágyazásán, és egy könnyű HTML biztosításán, amely közvetlenül beilleszthető a webes felhasználói felületbe. Akár szerződés‑ellenőrző portált, e‑learning modult vagy jelentés‑dashboardot építesz, az alábbi lépések gyors és megbízható módot adnak a DOCX (vagy PDF, PPT stb.) kész‑megjeleníthető HTML-re konvertálásához.
+Ebben az útmutatóban **HTML-t generálunk DOCX-ből Java-ban** a GroupDocs.Viewer használatával, a szükséges oldalak megjelenítésére összpontosítva. Akár szerződés‑áttekintő portált, e‑tanulási modult vagy jelentés‑dashboardot épít, az alábbi lépések megmutatják, hogyan készíthet könnyű, önálló HTML-t, amely közvetlenül beilleszthető bármely webes felhasználói felületbe.
 
 ## Gyors válaszok
-- **Mi jelent a “render pages”?** Kiválasztott dokumentumoldalak konvertálása megjeleníthető formátumba, például HTML-be.  
-- **Milyen formátum jön létre?** HTML beágyazott erőforrásokkal (képek, CSS, betűkészletek).  
-- **Szükségem van licencre?** A próba verzió értékelésre használható; a teljes licenc szükséges a termeléshez.  
-- **Választhatok nem egymást követő oldalakat?** Igen – megadhatod a szükséges oldalszámokat.  
-- **Ajánlott a gyorsítótárazás?** Teljesen, a renderelt HTML gyorsítótárazása csökkenti a betöltési időt a gyakran elért oldalaknál.  
+- **Mit jelent a „render pages” (oldalak renderelése)?** A kiválasztott dokumentumoldalak átalakítása megjeleníthető formátumba, például HTML-be.  
+- **Milyen formátum jön létre?** HTML beágyazott erőforrásokkal (képek, CSS, betűtípusok).  
+- **Szükségem van licencre?** A próba verzió értékelésre használható; a teljes licenc a termeléshez kötelező.  
+- **Választhatok nem egymást követő oldalakat?** Igen – megadhatja a szükséges oldal számokat.  
+- **Ajánlott a gyorsítótárazás?** Teljesen, a renderelt HTML gyorsítótárazása csökkenti a gyakran elért oldalak betöltési idejét.  
 
-![Render Selected Pages of a Document with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-selected-pages-of-a-document-java.png)
+![Kiválasztott oldalak renderelése egy dokumentumból a GroupDocs.Viewer for Java segítségével](/viewer/advanced-rendering/render-selected-pages-of-a-document-java.png)
 
-### Amit megtanulsz
-- A GroupDocs.Viewer beállítása a Java környezetedben  
+[**Kiválasztott oldalak renderelése egy dokumentumból a GroupDocs.Viewer for Java segítségével**](/viewer/advanced-rendering/render-selected-pages-of-a-document-java.png)
+
+### Amit megtanul
+- A GroupDocs.Viewer beállítása a Java környezetben  
 - Specifikus dokumentumoldalak renderelése a Viewer API használatával  
-- HTML nézet beállítások konfigurálása az optimális megjelenítéshez  
+- HTML nézet beállításainak konfigurálása az optimális megjelenítéshez  
 - Gyakorlati felhasználási esetek és integrációs forgatókönyvek  
 
-## Mi a kiválasztott oldalak renderelése?
-A kiválasztott oldalak renderelése azt jelenti, hogy csak a megadott oldalakat vonod ki egy forrásdokumentumból (DOCX, PDF, PPT stb.), és konvertálod egy olyan formátumba, amely webböngészőben megjeleníthető. Ez a megközelítés csökkenti a sávszélességet, felgyorsítja az oldalbetöltést, és javítja a végfelhasználói élményt azáltal, hogy csak a releváns tartalmat mutatja.
+## Mi az a kiválasztott oldalak renderelése?
+A kiválasztott oldalak renderelése csak a forrásdokumentumból a megadott oldalakat vonja ki, és minden egyes oldalt önálló HTML-fájllá konvertál. Ez lehetővé teszi, hogy csak a releváns szakaszokat szolgáltassa, csökkentve a sávszélességet és a betöltési időt, miközben megőrzi az elrendezést, képeket és betűtípusokat.
 
 ## Miért konvertáljuk a DOCX-et HTML-re Java-ban?
-A DOCX-ből HTML generálása egy könnyű, platform‑független ábrázolást biztosít, amely böngészők között működik külső megjelenítő vagy bővítmény nélkül. Az erőforrások (képek, betűk, CSS) közvetlen beágyazása a HTML fájlba egyszerűsíti a telepítést és megszünteti a cross‑origin problémákat, így tökéletes a modern webalkalmazásokhoz.
+A DOCX HTML-re konvertálása Java-ban könnyű, böngésző‑kész ábrázolást hoz létre, amely külső bővítmények nélkül működik, így ideális webportálok, e‑tanulás és jelentés‑dashboardok számára. A beágyazott erőforrások biztosítják, hogy az oldal minden böngészőben helyesen jelenjen meg, kiküszöbölve a cross‑origin problémákat.
 
 ## Előkövetelmények
 
-Győződj meg róla, hogy a fejlesztői környezeted megfelel ezeknek a követelményeknek:
+Győződjön meg róla, hogy fejlesztői környezete megfelel ezeknek a követelményeknek:
 
-1. **Required Libraries** – Add a GroupDocs.Viewer for Java (25.2 vagy újabb verzió) a projektedhez.  
-2. **Environment** – JDK 8 vagy újabb; IDE, például IntelliJ IDEA vagy Eclipse.  
-3. **Knowledge** – Alap Java programozás és Maven függőségkezelés.
+1. **Szükséges könyvtárak** – Tartalmazza a GroupDocs.Viewer for Java (25.2 vagy újabb verzió) könyvtárat a projektjében.  
+2. **Környezet** – JDK 8 vagy újabb; IDE, például IntelliJ IDEA vagy Eclipse.  
+3. **Ismeretek** – Alapvető Java programozás és Maven függőségkezelés.
 
 ## A GroupDocs.Viewer beállítása Java-hoz
 
+`GroupDocs.Viewer for Java` egy szerver‑oldali könyvtár, amely több mint 90 dokumentumformátumot renderel, beleértve a DOCX, PDF és PPT formátumokat, HTML‑be, PDF‑be vagy képekbe.
+
 ### Telepítés Maven segítségével
 
-Add hozzá a tárolót és a függőséget a `pom.xml`-hez:
+Adja hozzá a tárolót és a függőséget a `pom.xml` fájlhoz:
 
 ```xml
 <repositories>
@@ -71,11 +122,11 @@ Add hozzá a tárolót és a függőséget a `pom.xml`-hez:
 ```
 
 ### Licenc beszerzése
-- **Free Trial** – Fedezd fel az összes funkciót költség nélkül.  
-- **Temporary License** – Hosszabbítsd a tesztelést a próbaidőn túl.  
-- **Full Purchase** – Szükséges a termelési környezetben való telepítéshez.
+- **Ingyenes próba** – Fedezze fel az összes funkciót költség nélkül.  
+- **Ideiglenes licenc** – Hosszabbítsa a tesztelést a próbaidőn túl.  
+- **Teljes vásárlás** – Szükséges a termelési környezethez.
 
-#### Alap inicializálás és beállítás
+#### Alapvető inicializálás és beállítás
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -89,9 +140,14 @@ public class DocumentViewer {
 }
 ```
 
-## Hogyan konvertáljuk a DOCX-et HTML-re Java-val kiválasztott oldalakon
+## Hogyan konvertáljunk DOCX-et HTML-re Java-ban kiválasztott oldalakkal
 
-### 1. lépés: Kimeneti útvonal beállítása
+`HtmlViewOptions` beállítja, hogyan rendereli a Viewer a HTML kimenetet, beleértve az erőforrások beágyazását és az oldalelrendezést.  
+`view()` a megadott beállítások szerint rendereli a dokumentumot, és visszaadja a generált fájlokat.
+
+Töltse be a DOCX-et a GroupDocs.Viewer segítségével, konfigurálja a `HtmlViewOptions`‑t beágyazott erőforrásokhoz, és adja át az oldal számok listáját a `view()` metódusnak. Ez csak a megadott oldalakat rendereli egyedi HTML fájlokként, mindegyik beágyazott képeket és CSS‑t tartalmazva a gyors megjelenítéshez.
+
+### 1. lépés: kimeneti útvonal beállítása
 
 ```java
 import java.nio.file.Path;
@@ -101,10 +157,12 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-- **Explanation**: `outputDirectory` az a hely, ahová a generált HTML fájlok mentésre kerülnek.  
-- **Naming**: `page_{0}.html` külön fájlt hoz létre minden renderelt oldalhoz.
+- **Magyarázat**: az `outputDirectory` a hely, ahová a generált HTML fájlok mentésre kerülnek.  
+- **Elnevezés**: a `page_{0}.html` külön fájlt hoz létre minden renderelt oldalhoz.
 
 ### 2. lépés: HTML nézet beállítások konfigurálása
+
+`HtmlViewOptions` meghatározza, hogyan adja ki a Viewer a HTML-t, lehetővé téve erőforrások beágyazását, oldalméret beállítását és a CSS generálás szabályozását.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -112,9 +170,9 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-- **Explanation**: `forEmbeddedResources()` a képeket, CSS-t és betűket közvetlenül minden HTML fájlba ágyazza be, eltávolítva a külső függőségeket.
+- **Magyarázat**: a `forEmbeddedResources()` közvetlenül minden HTML fájlba csomagolja a képeket, CSS‑t és betűtípusokat, eltávolítva a külső függőségeket.
 
-### 3. lépés: A kívánt oldalak renderelése
+### 3. lépés: a kívánt oldalak renderelése
 
 ```java
 try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
@@ -122,61 +180,66 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
 }
 ```
 
-- **Explanation**: A `view()` metódus megkapja a `HtmlViewOptions`-t és egy oldalszámok listáját. Ebben a példában csak az első és a harmadik oldal kerül renderelésre.
+- **Magyarázat**: a `view()` metódus megkapja a `HtmlViewOptions`‑t és egy oldal számok listáját. Ebben a példában csak az első és a harmadik oldal kerül renderelésre.
 
 ## Gyakorlati alkalmazások
 
-A kiválasztott oldalak renderelése sok helyzetben hasznos:
+A kiválasztott oldalak renderelése számos helyzetben hasznos:
 
-1. **Legal Documents** – Csak a szerződés releváns záradékait jeleníti meg.  
-2. **Educational Platforms** – Lehetővé teszi a diákok számára, hogy konkrét fejezeteket tekintsenek meg anélkül, hogy az egész tankönyvet letöltenék.  
-3. **Business Reports** – Rövid összefoglalókat nyújt az érintetteknek a jelentés kulcsfontosságú részeinek megjelenítésével.
+1. **Jogi dokumentumok** – Csak a szerződés releváns záradékait jeleníti meg.  
+2. **Oktatási platformok** – Lehetővé teszi a hallgatók számára, hogy egyes fejezeteket előnézzenek a teljes tankönyv letöltése nélkül.  
+3. **Üzleti jelentések** – Rövid összefoglalókat nyújt a résztvevőknek a jelentés kulcsfontosságú szakaszainak megjelenítésével.
 
 ## Teljesítmény szempontok
 
-- **Memory Management** – Használd a try‑with‑resources (ahogy látható) a Viewer erőforrások gyors felszabadításához.  
-- **Caching** – Tárold a renderelt HTML-t egy gyorsítótárban (pl. Redis vagy memória) a gyakran elért oldalakhoz.  
-- **Resource Minimization** – A beágyazott erőforrások kissé növelik a fájlméretet; fontold meg a HTML kimenet tömörítését, ha a sávszélesség aggály.
+- **Memóriakezelés** – Használjon try‑with‑resources (ahogy a példában látható) a Viewer erőforrások gyors felszabadításához.  
+- **Gyorsítótárazás** – Tárolja a renderelt HTML-t gyorsítótárban (pl. Redis vagy memória) a gyakran elért oldalakhoz.  
+- **Erőforrás minimalizálás** – A beágyazott erőforrások kissé növelik a fájlméretet; fontolja meg a HTML kimenet tömörítését, ha a sávszélesség aggály.  
+- **Skálázhatóság** – A GroupDocs.Viewer akár 500 oldalas dokumentumokat is kezel anélkül, hogy a teljes fájlt memóriába töltené, köszönhetően a streaming architektúrának.
 
 ## Gyakori problémák és megoldások
 
-| Issue | Solution |
-|-------|----------|
-| **File not found** | Ellenőrizd az abszolút/relatív útvonalat, és győződj meg róla, hogy a fájl létezik. |
-| **Out‑of‑memory for large docs** | Rendereld csak a szükséges oldalakat, vagy növeld a JVM heap méretét (`-Xmx`). |
-| **Missing images in HTML** | Ellenőrizd, hogy a `forEmbeddedResources` használatban van‑e; ellenkező esetben a képek külön kerülnek mentésre. |
-| **License error** | Helyezz egy érvényes `GroupDocs.Viewer.lic` fájlt az alkalmazás gyökerébe, vagy programozottan add meg az elérési útját. |
+| Probléma | Megoldás |
+|----------|----------|
+| **Fájl nem található** | Ellenőrizze az abszolút/relatív útvonalat, és győződjön meg róla, hogy a fájl létezik. |
+| **Memóriahiány nagy dokumentumoknál** | Renderelje csak a szükséges oldalakat, vagy növelje a JVM heap méretét (`-Xmx`). |
+| **Hiányzó képek a HTML-ben** | Ellenőrizze, hogy a `forEmbeddedResources` használatban van‑e; egyébként a képek külön kerülnek mentésre. |
+| **Licenc hiba** | Helyezzen egy érvényes `GroupDocs.Viewer.lic` fájlt az alkalmazás gyökerébe, vagy adja meg az útvonalát programozottan. |
 
-## Gyakran Ismételt Kérdések
+## Gyakran ismételt kérdések
 
-**Q: Mi az a GroupDocs.Viewer for Java?**  
-A: Egy könyvtár, amely lehetővé teszi több mint 90 dokumentumformátum (PDF, DOCX, PPT stb.) renderelését közvetlenül Java alkalmazásokban.
+**K: Mi a GroupDocs.Viewer for Java?**  
+V: A GroupDocs.Viewer for Java egy könyvtár, amely lehetővé teszi több mint 90 dokumentumformátum (PDF, DOCX, PPT stb.) renderelését közvetlenül Java alkalmazásokban.
 
-**Q: Renderelhetek PDF oldalakat ezzel a módszerrel?**  
-A: Igen – a Viewer API támogatja a PDF-eket számos más formátummal együtt.
+**K: Renderelhetek PDF oldalakat ezzel a módszerrel?**  
+V: Igen – a Viewer API támogatja a PDF‑eket más számos formátummal együtt.
 
-**Q: Hogyan kezeljem hatékonyan a nagy dokumentumokat?**  
-A: Rendereld csak a szükséges oldalakat, és használj gyorsítótárat az ismételt feldolgozás elkerülése érdekében.
+**K: Hogyan kezeljem hatékonyan a nagy dokumentumokat?**  
+V: Renderelje csak a szükséges oldalakat, és használjon gyorsítótárat az ismételt feldolgozás elkerülésére.
 
-**Q: Mi a beágyazott erőforrások HTML fájlokba helyezésének előnye?**  
-A: Egy önálló, egyetlen fájlt hoz létre oldalanként, egyszerűsítve a telepítést és megszüntetve a külső eszközök betöltését.
+**K: Miért előnyös az erőforrások beágyazása HTML fájlokba?**  
+V: Egy önálló fájlt hoz létre oldalanként, egyszerűsítve a telepítést és kiküszöbölve a külső eszközök betöltését.
 
-**Q: Hol találok további információkat a GroupDocs.Viewer for Java-ról?**  
-A: - **Documentation**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
-   - **API Reference**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
+**K: Hol találok további információkat a GroupDocs.Viewer for Java‑ról?**  
+- **Dokumentáció**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API referencia**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
 
 ## Erőforrások
 
-- **Documentation**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
-- **API Reference**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
-- **Download**: [GroupDocs.Viewer Download Page](https://releases.groupdocs.com/viewer/java/)  
-- **Purchase**: [Buy GroupDocs.Viewer](https://purchase.groupdocs.com/buy)  
-- **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentáció**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API referencia**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
+- **Letöltés**: [GroupDocs.Viewer Download Page](https://releases.groupdocs.com/viewer/java/)  
+- **Megvásárlás**: [Buy GroupDocs.Viewer](https://purchase.groupdocs.com/buy)  
+- **Ingyenes próba**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Ideiglenes licenc**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Támogatás**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
----
-
-**Utoljára frissítve:** 2026-04-04  
+**Utolsó frissítés:** 2026-10-05  
 **Tesztelve ezzel:** GroupDocs.Viewer 25.2  
-**Szerző:** GroupDocs
+**Szerző:** GroupDocs  
+
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan konvertáljunk DOCX-et HTML-re és állítsuk be a fájltípust a dokumentumok renderelésekor a GroupDocs.Viewer for Java használatával](/viewer/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/)
+- [DOCX HTML külső erőforrások renderelése Groupdocs Java](/viewer/java/advanced-rendering/render-docx-html-external-resources-groupdocs-java/)
+- [Java útmutató: kiválasztott oldalak renderelése Java-val a GroupDocs.Viewer segítségével](/viewer/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/)
