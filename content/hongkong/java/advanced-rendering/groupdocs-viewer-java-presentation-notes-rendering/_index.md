@@ -1,30 +1,30 @@
 ---
-date: '2026-08-03'
-description: 了解如何使用 GroupDocs Viewer for Java 將 pptx 轉換為 html，內容包括將 PowerPoint 轉換為
-  html、GroupDocs Viewer 授權，以及 Java 轉換簡報為 html 的方法。
+date: '2026-10-10'
+description: 了解如何使用 GroupDocs Viewer for Java 從 PowerPoint 建立 HTML，涵蓋轉換、授權及嵌入選項。
+images:
+- /java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/og-image.png
 keywords:
+- create html from powerpoint
 - convert pptx to html
-- display powerpoint in browser
-- render powerpoint with notes
-- java convert presentation html
-lastmod: '2026-08-03'
-og_description: 使用 GroupDocs Viewer for Java 將 pptx 轉換為 html。了解逐步轉換流程、註記渲染、授權資訊，以及在網頁中嵌入
+- display powerpoint notes
+- embed resources html
+- render powerpoint in browser
+lastmod: '2026-10-10'
+og_description: 使用 GroupDocs Viewer for Java 從 PowerPoint 建立 HTML。逐步指南展示轉換、註記渲染、授權及在網頁中嵌入
   HTML 的方法。
 og_image_alt: GroupDocs Viewer Java rendering PowerPoint slides with speaker notes
   to HTML
-og_title: 使用 GroupDocs Viewer for Java 將 pptx 轉換為 html – 快速網頁渲染
+og_title: 使用 GroupDocs Viewer for Java 從 PowerPoint 建立 HTML
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-03'
-  description: Learn how to convert pptx to html using GroupDocs Viewer for Java,
-    covering convert powerpoint to html, groupdocs viewer licensing, and java convert
-    presentation html.
-  headline: convert pptx to html with GroupDocs Viewer for Java
+  dateModified: '2026-10-10'
+  description: Learn how to create html from powerpoint using GroupDocs Viewer for
+    Java, covering conversion, licensing, and embedding options.
+  headline: Create html from powerpoint with GroupDocs Viewer for Java
   type: TechArticle
-- description: Learn how to convert pptx to html using GroupDocs Viewer for Java,
-    covering convert powerpoint to html, groupdocs viewer licensing, and java convert
-    presentation html.
-  name: convert pptx to html with GroupDocs Viewer for Java
+- description: Learn how to create html from powerpoint using GroupDocs Viewer for
+    Java, covering conversion, licensing, and embedding options.
+  name: Create html from powerpoint with GroupDocs Viewer for Java
   steps:
   - name: define output directory and file format
     text: 'Set the folder where the generated HTML pages will be saved:'
@@ -59,37 +59,40 @@ tags:
 - groupdocs viewer
 - java presentation rendering
 - html conversion
-title: 使用 GroupDocs Viewer for Java 將 pptx 轉換為 html
+- create html from powerpoint
+title: 使用 GroupDocs Viewer for Java 從 PowerPoint 建立 HTML
 type: docs
 url: /zh-hant/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/
 weight: 1
 ---
 
-# 將 pptx 轉換為 html 使用 GroupDocs Viewer for Java
+# 使用 GroupDocs Viewer for Java 從 PowerPoint 建立 html
 
-在本教學中，您將學習如何使用 GroupDocs Viewer for Java **將 pptx 轉換為 html**，同時渲染 PowerPoint 簡報及其講者備註。將 PPTX 轉換為 HTML 可讓您即時在任何現代瀏覽器中顯示投影片，非常適合 e‑learning 平台、企業培訓門戶或需要無需安裝 Microsoft Office 即可網頁預覽的文件管理系統。
+在本教學中，您將學習如何使用 GroupDocs Viewer for Java **從 PowerPoint 建立 html**。將 PPTX 檔案轉換為 HTML 可讓您即時在任何現代瀏覽器中顯示投影片，非常適合 e‑learning 平台、企業培訓入口網站或需要在不安裝 Microsoft Office 的情況下提供網頁即時預覽的文件管理系統。本指南將帶您完成設定、授權、含講者備註的渲染，以及將產生的 HTML 嵌入網頁的步驟。
 
 ![使用 GroupDocs.Viewer for Java 渲染含備註的簡報](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
 
-## 快速解答
-- **GroupDocs.Viewer 能將 PPTX 轉換為 HTML 嗎？** 是 – 它提供一步完成的 PPTX 轉 HTML 轉換，並可選擇渲染備註。  
-- **在正式環境使用是否需要授權？** 商業部署需要有效的 GroupDocs Viewer 授權；試用授權會加上浮水印。  
-- **需要哪個 Java 版本？** JDK 8 或更高版本受支援；建議使用 JDK 11 以上以獲得更佳效能。  
-- **支援哪些輸出格式？** 支援 HTML、PDF 以及影像格式（PNG、JPEG），開箱即用。  
-- **Maven 是唯一加入此函式庫的方式嗎？** Maven 是最常見的方式，但您也可以使用 Gradle 或手動加入 JAR 檔案。  
-- **如何在網頁中嵌入產生的 HTML？** 使用 `HtmlViewOptions.forEmbeddedResources()` 產生自包含的 HTML 檔案，並在 `<iframe>` 或 `<div>` 中引用第一頁（例如 `page_0.html`）。
+## 快速答案
+- **GroupDocs.Viewer 能將 PPTX 轉換為 HTML 嗎？** 是 – 它提供一步完成的 PPTX 轉 HTML 轉換，並支援可選的備註渲染。  
+- **在正式環境使用是否需要授權？** 商業部署需要有效的 GroupDocs Viewer 授權；試用授權會加入浮水印。  
+- **需要哪個版本的 Java？** 支援 JDK 8 或更高版本；建議使用 JDK 11 以上以提升效能。  
+- **支援哪些輸出格式？** 預設支援 HTML、PDF 以及影像格式（PNG、JPEG）。  
+- **Maven 是唯一的加入函式庫方式嗎？** Maven 最常用，但也可以使用 Gradle 或手動加入 JAR 檔案。  
+- **如何將產生的 HTML 嵌入網頁？** 使用 `HtmlViewOptions.forEmbeddedResources()` 產生自包含的 HTML 檔案，並在 `<iframe>` 或 `<div>` 中引用第一頁（例如 `page_0.html`）。
 
-## 什麼是將 pptx 轉換為 html？
-`convert pptx to html` 是將 PowerPoint 簡報檔案 (PPTX) 轉換為一組可直接在網頁瀏覽器中呈現的 HTML 頁面的過程。此轉換會保留投影片版面配置、圖片、字型，並可選擇性保留講者備註，免除伺服器上安裝 Office 的需求。
+## 什麼是將 PPTX 轉換為 HTML？
+`convert pptx to html` 是將 PowerPoint 簡報檔案（PPTX）轉換為一組可直接在網頁瀏覽器中呈現的 HTML 頁面的過程。此轉換會保留投影片版面、影像、字型，並可選擇性保留講者備註，免除伺服器上安裝 Office 的需求。此技術可讓 **display powerpoint notes**（顯示 PowerPoint 備註）與投影片同時呈現，並 **embed resources html**（嵌入資源為 HTML）以實現無縫整合。
 
-## 如何使用 GroupDocs Viewer 將 PowerPoint 轉換為 HTML？
-`Viewer` 是載入文件並將其渲染為選定輸出格式的核心類別。載入您的 PPTX 檔案，設定視圖選項以嵌入資源並渲染備註，然後呼叫 `Viewer` API 產生 HTML 檔案。完成設定函式庫後，整個轉換僅需三行程式碼即可執行。
+## 如何使用 GroupDocs Viewer 從 PowerPoint 建立 html？
+您可以透過將 PPTX 載入 `Viewer` 實例，設定 `HtmlViewOptions` 以嵌入資源並渲染備註，然後呼叫 view 方法產生一系列 HTML 檔案，將 PowerPoint 轉換為 HTML。只要將函式庫加入專案，整個工作流程通常只需三行簡潔的 Java 程式碼。
+
+`Viewer` 是 GroupDocs Viewer 的核心類別，用於載入文件並將其渲染為選定的輸出格式。`HtmlViewOptions` 是控制 HTML 產出方式的設定物件，包括是否包含講者備註，以及是否將所有資源（影像、CSS、字型）直接嵌入 HTML 檔案中。
 
 ### 前置條件
 - **Java Development Kit (JDK)** – 版本 8 或更新。  
-- **IDE** – IntelliJ IDEA、Eclipse 或任何相容 Java 的編輯器。  
+- **IDE** – IntelliJ IDEA、Eclipse，或任何相容 Java 的編輯器。  
 - **Maven** – 用於相依性管理（Gradle 亦可使用）。  
-- 具備基本的 Java 專案結構知識。
+- 具備 Java 專案結構的基本認識。
 
 ### 設定 GroupDocs.Viewer for Java
 
@@ -115,7 +118,7 @@ weight: 1
 ```
 
 #### 取得授權
-從官方商店取得免費試用或永久授權。若未持有有效授權，輸出可能會有浮水印或僅限前幾張投影片。前往 [GroupDocs Purchase](https://purchase.groupdocs.com/buy) 了解授權選項。
+取得免費試用或永久授權，請前往官方商店。若未取得有效授權，輸出可能會有浮水印或僅限前幾張投影片。前往 [GroupDocs Purchase](https://purchase.groupdocs.com/buy) 了解授權選項。
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -126,13 +129,13 @@ try (Viewer viewer = new Viewer("path/to/your/document.pptx")) {
 }
 ```
 
-## 了解 GroupDocs Viewer for Java 的授權機制
-GroupDocs Viewer 的授權決定了可解鎖的功能。未授權的實例會在每個渲染的頁面上插入「Powered by GroupDocs」浮水印，且限制批次處理。請在應用程式啟動時盡早載入授權檔案，以避免這些限制。
+## 了解 GroupDocs Viewer for Java 的授權
+GroupDocs Viewer 的授權決定可解鎖的功能。未授權的實例會在每個渲染頁面上插入「Powered by GroupDocs」浮水印，且限制批次處理。請在應用程式啟動時盡早載入授權檔，以避免這些限制。
 
 ## 實作指南
 
 ### 功能：渲染含備註的簡報
-本節示範如何將 PPTX 檔案渲染為 HTML，並包含講者備註。
+本節示範如何將 PPTX 檔案渲染為 HTML 並包含講者備註，這對於 **render powerpoint in browser**（在瀏覽器中渲染 PowerPoint）情境至關重要，因為需要將演講者的說明隨投影片一起傳遞。
 
 #### 步驟 1：定義輸出目錄與檔案格式
 設定產生的 HTML 頁面要儲存的資料夾：
@@ -145,8 +148,8 @@ Path YOUR_DOCUMENT_DIRECTORY = Paths.get("YOUR_DOCUMENT_DIRECTORY");
 Path pageFilePathFormat = YOUR_OUTPUT_DIRECTORY.resolve("page_{0}.html");
 ```
 
-#### 步驟 2：設定視圖選項
-`HtmlViewOptions` 設定 HTML 渲染選項，例如資源嵌入與備註包含。建立可嵌入資源並啟用備註渲染的視圖選項：
+#### 步驟 2：設定檢視選項
+`HtmlViewOptions` 設定 HTML 渲染選項，例如資源嵌入與備註包含。建立可嵌入資源並啟用備註渲染的檢視選項：
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -158,7 +161,7 @@ viewOptions.setRenderNotes(true); // Enable note rendering
 > **專業提示：** `forEmbeddedResources` 產生自包含的 HTML，簡化了部署至 Web 伺服器的流程。
 
 #### 步驟 3：載入並渲染文件
-最後，使用設定好的選項渲染 PPTX 檔案：
+最後，使用已設定的選項渲染 PPTX 檔案：
 
 ```java
 try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_WITH_NOTES"))) {
@@ -170,59 +173,59 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_
 **故障排除提示：** 確認來源檔案路徑存在且可讀取。缺少檔案會拋出 `FileNotFoundException`。
 
 ## Java 轉換簡報網頁：嵌入結果
-上述程式碼產生的 HTML 檔案可直接由您的 Web 應用程式提供。由於資源已嵌入，只需將輸出資料夾複製到 static‑content 目錄，並在 `<iframe>` 或普通 `<div>` 中引用第一個 `page_0.html` 檔案即可。
+上述程式碼產生的 HTML 檔案可直接由您的 Web 應用程式提供服務。由於資源已嵌入，只需將輸出資料夾複製到 static‑content 目錄，並在 `<iframe>` 或普通的 `<div>` 中引用第一個 `page_0.html` 檔案。
 
 ## 實務應用
-- **線上學習平台** – 顯示課程投影片及講師備註，提供更豐富的學習體驗。  
+- **線上學習平台** – 顯示課程投影片與講師備註，提供更豐富的學習體驗。  
 - **企業培訓模組** – 在每張投影片旁嵌入培訓師的說明，適用於自訂進度的課程。  
-- **文件管理系統** – 即時提供網頁可用的簡報預覽，且保留所有註解。
+- **文件管理系統** – 提供即時的網頁預覽簡報，同時保留所有註解。
 
 ## 效能考量
 - 使用 **try‑with‑resources** 自動關閉 `Viewer` 實例並釋放記憶體。  
-- 為常用的簡報快取已渲染的 HTML，以減少 CPU 負載。  
-- 處理大型 PPTX 檔案時監控 JVM 堆積使用情況；若出現 `OutOfMemoryError`，請增加堆積大小。  
-- GroupDocs Viewer 可在一般 4 核心伺服器上於 2 秒內處理 **100 頁簡報**（量化聲明）。
+- 為常被存取的簡報快取已渲染的 HTML，以降低 CPU 負載。  
+- 監控 JVM 堆積使用量，處理大型 PPTX 檔案時若出現 `OutOfMemoryError`，請增大堆積大小。  
+- GroupDocs Viewer 能在典型的 4 核心伺服器上於 2 秒內處理 **100 頁簡報**，顯示其適用於高吞吐量環境。
 
 ## 常見問題與解決方案
 
 | 問題 | 解決方案 |
-|------|----------|
-| **備註未顯示** | 確保在渲染前呼叫 `viewOptions.setRenderNotes(true)`。 |
-| **大型檔案渲染緩慢** | 啟用快取，並按需渲染頁面，而非一次渲染全部。 |
-| **檔案路徑錯誤** | 使用 `Paths.get(...)`，並再次確認相對與絕對路徑。 |
+|-------|----------|
+| **Notes not appearing** | 確認在渲染前已呼叫 `viewOptions.setRenderNotes(true)`。 |
+| **Slow rendering on large files** | 啟用快取，並按需渲染頁面，而非一次全部渲染。 |
+| **File path errors** | 使用 `Paths.get(...)`，並再次確認相對路徑與絕對路徑。 |
 
 ## 常見問答
 
 **Q: 我可以使用 GroupDocs Viewer Java 渲染帶備註的 PDF 文件嗎？**  
-A: 可以 – 相同的 `HtmlViewOptions` API 能渲染帶有嵌入註解的 PDF。
+A: 可以 – 相同的 `HtmlViewOptions` API 能渲染帶嵌入註解的 PDF。
 
 **Q: GroupDocs Viewer 是否相容於較舊的 Java 版本？**  
 A: 官方支援從 JDK 8 開始；較舊版本可能缺少新功能的渲染特性。
 
 **Q: 如何處理非常大的簡報檔案？**  
-A: 逐張投影片渲染，重複使用單一 `HtmlViewOptions` 實例，並快取 HTML，以降低記憶體使用。
+A: 將每張投影片分別渲染，重複使用單一 `HtmlViewOptions` 實例，並快取 HTML 以降低記憶體使用。
 
 **Q: GroupDocs Viewer 有哪些授權選項？**  
-A: 包括免費試用、臨時評估授權，以及正式環境的完整購買授權。詳情請參閱授權頁面。
+A: 包括免費試用、臨時評估授權，以及用於正式環境的完整購買授權。詳情請參閱授權頁面。
 
 **Q: 在哪裡可以找到更進階的使用範例？**  
 A: 前往 [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) 取得深入文件與程式碼範例。
 
 ## 資源
-- **Documentation**: 前往 [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) 探索完整指南。  
-- **API reference**: 詳細的 API 資訊可在 [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) 取得。  
-- **Download**: 從 [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/) 取得最新版本。  
+- **Documentation**: 在 [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) 探索完整指南。  
+- **API reference**: 詳細的 API 資訊請參閱 [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)。  
+- **Download**: 從 [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/) 取得最新發行版本。  
 - **Purchase and trial**: 在 [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) 了解授權資訊，或於 [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) 開始免費試用。  
 - **Support**: 如有問題，請前往 [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)。
 
----
-
-**最後更新:** 2026-08-03  
-**測試環境:** GroupDocs.Viewer 25.2  
-**作者:** GroupDocs
-
 ## 相關教學
 
-- [GroupDocs Viewer Java 教學 - 將 Word 轉換為 HTML 並渲染帶註解的文件](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
-- [如何將 Excel 轉換為 HTML 並在 Java 中渲染隱藏的列與欄位（使用 GroupDocs.Viewer）](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
-- [如何使用 GroupDocs.Viewer for Java 將 MS Project 檔案渲染為 HTML、JPG、PNG 與 PDF（含備註）](/viewer/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/)
+- [GroupDocs Viewer Java 教學 - 將 Word 轉換為 HTML 並渲染含註解的文件](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
+- [如何在 Java 中使用 GroupDocs.Viewer 將 Excel 轉換為 HTML 並渲染隱藏的列與欄](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
+- [如何使用 GroupDocs.Viewer for Java 渲染 MS Project 檔案為 HTML、JPG、PNG 與 PDF，並附帶備註](/viewer/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/)
+
+---
+
+**最後更新：** 2026-10-10  
+**測試版本：** GroupDocs.Viewer 25.2  
+**作者：** GroupDocs

@@ -1,32 +1,32 @@
 ---
-date: '2026-08-03'
-description: Pelajari cara mengonversi pptx ke html menggunakan GroupDocs Viewer for
-  Java, mencakup konversi PowerPoint ke html, lisensi GroupDocs Viewer, dan konversi
-  presentasi Java ke html.
+date: '2026-10-10'
+description: Pelajari cara membuat html dari powerpoint menggunakan GroupDocs Viewer
+  for Java, mencakup konversi, lisensi, dan opsi penyematan.
+images:
+- /java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/og-image.png
 keywords:
+- create html from powerpoint
 - convert pptx to html
-- display powerpoint in browser
-- render powerpoint with notes
-- java convert presentation html
-lastmod: '2026-08-03'
-og_description: konversi pptx ke html menggunakan GroupDocs Viewer for Java. Pelajari
-  langkah demi langkah konversi, rendering catatan, lisensi, dan penyematan HTML di
-  halaman web.
+- display powerpoint notes
+- embed resources html
+- render powerpoint in browser
+lastmod: '2026-10-10'
+og_description: Buat html dari powerpoint dengan GroupDocs Viewer for Java. Panduan
+  langkah demi langkah menunjukkan konversi, rendering catatan, lisensi, dan penyematan
+  HTML di halaman web.
 og_image_alt: GroupDocs Viewer Java rendering PowerPoint slides with speaker notes
   to HTML
-og_title: konversi pptx ke html dengan GroupDocs Viewer for Java – rendering web cepat
+og_title: Buat html dari powerpoint dengan GroupDocs Viewer for Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-03'
-  description: Learn how to convert pptx to html using GroupDocs Viewer for Java,
-    covering convert powerpoint to html, groupdocs viewer licensing, and java convert
-    presentation html.
-  headline: convert pptx to html with GroupDocs Viewer for Java
+  dateModified: '2026-10-10'
+  description: Learn how to create html from powerpoint using GroupDocs Viewer for
+    Java, covering conversion, licensing, and embedding options.
+  headline: Create html from powerpoint with GroupDocs Viewer for Java
   type: TechArticle
-- description: Learn how to convert pptx to html using GroupDocs Viewer for Java,
-    covering convert powerpoint to html, groupdocs viewer licensing, and java convert
-    presentation html.
-  name: convert pptx to html with GroupDocs Viewer for Java
+- description: Learn how to create html from powerpoint using GroupDocs Viewer for
+    Java, covering conversion, licensing, and embedding options.
+  name: Create html from powerpoint with GroupDocs Viewer for Java
   steps:
   - name: define output directory and file format
     text: 'Set the folder where the generated HTML pages will be saved:'
@@ -61,42 +61,45 @@ tags:
 - groupdocs viewer
 - java presentation rendering
 - html conversion
-title: konversi pptx ke html dengan GroupDocs Viewer for Java
+- create html from powerpoint
+title: Buat html dari powerpoint dengan GroupDocs Viewer for Java
 type: docs
 url: /id/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/
 weight: 1
 ---
 
-# konversi pptx ke html dengan GroupDocs Viewer untuk Java
+# Buat html dari powerpoint dengan GroupDocs Viewer untuk Java
 
-Dalam tutorial ini Anda akan belajar cara **mengonversi pptx ke html** dengan GroupDocs Viewer untuk Java, menampilkan presentasi PowerPoint bersama catatan pembicara mereka. Mengonversi PPTX ke HTML memungkinkan Anda menampilkan slide secara instan di browser modern apa pun, yang ideal untuk platform e‑learning, portal pelatihan korporat, atau sistem manajemen dokumen yang memerlukan pratinjau siap web tanpa menginstal Microsoft Office.
+Pada tutorial ini Anda akan belajar cara **membuat html dari powerpoint** menggunakan GroupDocs Viewer untuk Java. Mengonversi file PPTX ke HTML memungkinkan Anda menampilkan slide secara instan di browser modern mana pun, yang sangat cocok untuk platform e‑learning, portal pelatihan korporat, atau sistem manajemen dokumen yang memerlukan pratinjau siap web tanpa harus menginstal Microsoft Office. Panduan ini akan memandu Anda melalui pengaturan, lisensi, rendering dengan catatan pembicara, dan menyematkan HTML yang dihasilkan ke dalam halaman web.
 
-![Render Presentations with Notes with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
+![Render Presentasi dengan Catatan menggunakan GroupDocs.Viewer untuk Java](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
 
 ## Jawaban Cepat
-- **Apakah GroupDocs.Viewer dapat mengonversi PPTX ke HTML?** Ya – ia menyediakan konversi PPTX‑ke‑HTML satu‑langkah dan rendering catatan opsional.  
-- **Apakah saya memerlukan lisensi untuk penggunaan produksi?** Lisensi GroupDocs Viewer yang valid diperlukan untuk penyebaran komersial; lisensi percobaan menambahkan watermark.  
+- **Apakah GroupDocs.Viewer dapat mengonversi PPTX ke HTML?** Ya – ia menyediakan konversi PPTX‑to‑HTML satu langkah dan rendering catatan opsional.  
+- **Apakah saya memerlukan lisensi untuk penggunaan produksi?** Lisensi GroupDocs Viewer yang valid diperlukan untuk penerapan komersial; lisensi percobaan menambahkan watermark.  
 - **Versi Java mana yang diperlukan?** JDK 8 atau lebih tinggi didukung; JDK 11+ direkomendasikan untuk kinerja yang lebih baik.  
 - **Format output apa yang tersedia?** HTML, PDF, dan format gambar (PNG, JPEG) didukung secara bawaan.  
 - **Apakah Maven satu‑satunya cara untuk menambahkan pustaka?** Maven adalah yang paling umum, tetapi Anda juga dapat menggunakan Gradle atau menambahkan file JAR secara manual.  
-- **Bagaimana cara menyematkan HTML yang dihasilkan ke dalam halaman web?** Gunakan `HtmlViewOptions.forEmbeddedResources()` untuk membuat file HTML yang berdiri sendiri dan referensikan halaman pertama (misalnya, `page_0.html`) dalam sebuah `<iframe>` atau `<div>`.
+- **Bagaimana cara menyematkan HTML yang dihasilkan ke dalam halaman web?** Gunakan `HtmlViewOptions.forEmbeddedResources()` untuk membuat file HTML yang mandiri dan referensikan halaman pertama (misalnya, `page_0.html`) dalam `<iframe>` atau `<div>`.
 
 ## Apa itu konversi pptx ke html?
-`convert pptx to html` adalah proses mengubah file presentasi PowerPoint (PPTX) menjadi sekumpulan halaman HTML yang dapat ditampilkan langsung di peramban web. Konversi ini mempertahankan tata letak slide, gambar, font, dan secara opsional catatan pembicara, menghilangkan kebutuhan instalasi Office di server.
+`convert pptx to html` adalah proses mengubah file presentasi PowerPoint (PPTX) menjadi sekumpulan halaman HTML yang dapat dirender langsung di browser web. Konversi ini mempertahankan tata letak slide, gambar, font, dan secara opsional catatan pembicara, menghilangkan kebutuhan instalasi Office di server. Teknik ini memungkinkan **menampilkan catatan powerpoint** bersamaan dengan slide dan **menyematkan sumber daya html** untuk integrasi yang mulus.
 
-## Cara mengonversi PowerPoint ke HTML dengan GroupDocs Viewer?
-`Viewer` adalah kelas inti yang memuat dokumen dan merendernya ke format output yang dipilih. Muat file PPTX Anda, konfigurasikan opsi tampilan untuk menyematkan sumber daya dan merender catatan, kemudian panggil API `Viewer` untuk menghasilkan file HTML. Konversi lengkap dilakukan hanya dalam tiga baris kode setelah pustaka diatur.
+## Cara membuat html dari powerpoint dengan GroupDocs Viewer?
+Anda mengonversi PowerPoint ke HTML dengan memuat PPTX ke dalam instance `Viewer`, mengonfigurasi `HtmlViewOptions` untuk menyematkan sumber daya dan merender catatan, lalu memanggil metode view untuk menghasilkan serangkaian file HTML. Seluruh alur kerja biasanya dapat diselesaikan dalam tiga baris kode Java yang singkat setelah pustaka ditambahkan ke proyek Anda.
+
+`Viewer` adalah kelas inti GroupDocs Viewer yang memuat dokumen dan merendernya ke format output yang dipilih. `HtmlViewOptions` adalah objek konfigurasi yang mengontrol cara HTML dihasilkan, termasuk apakah catatan pembicara disertakan dan apakah semua sumber daya (gambar, CSS, font) disematkan langsung ke dalam file HTML.
 
 ### Prasyarat
 - **Java Development Kit (JDK)** – versi 8 atau lebih baru.  
-- **IDE** – IntelliJ IDEA, Eclipse, atau editor kompatibel Java apa pun.  
+- **IDE** – IntelliJ IDEA, Eclipse, atau editor Java yang kompatibel.  
 - **Maven** – untuk manajemen dependensi (Gradle juga dapat digunakan).  
-- Pemahaman dasar tentang struktur proyek Java.
+- Familiaritas dasar dengan struktur proyek Java.
 
 ### Menyiapkan GroupDocs.Viewer untuk Java
 
 #### Konfigurasi Maven
-Add the GroupDocs repository and dependency to your `pom.xml`:
+Tambahkan repositori GroupDocs dan dependensi ke `pom.xml` Anda:
 
 ```xml
 <repositories>
@@ -116,8 +119,8 @@ Add the GroupDocs repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 
-#### Perolehan Lisensi
-Peroleh percobaan gratis atau lisensi permanen dari toko resmi. Tanpa lisensi yang valid, output dapat berisi watermark atau terbatas pada beberapa slide pertama. Kunjungi [GroupDocs Purchase](https://purchase.groupdocs.com/buy) untuk opsi lisensi.
+#### Akuisisi Lisensi
+Dapatkan percobaan gratis atau lisensi permanen dari toko resmi. Tanpa lisensi yang valid, output dapat berisi watermark atau dibatasi pada beberapa slide pertama. Kunjungi [GroupDocs Purchase](https://purchase.groupdocs.com/buy) untuk opsi lisensi.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -129,15 +132,15 @@ try (Viewer viewer = new Viewer("path/to/your/document.pptx")) {
 ```
 
 ## Memahami lisensi GroupDocs Viewer untuk Java
-Lisensi GroupDocs Viewer menentukan fitur mana yang dibuka. Instansi tanpa lisensi akan menyisipkan watermark “Powered by GroupDocs” pada setiap halaman yang dirender dan membatasi pemrosesan batch. Muat file lisensi Anda di awal aplikasi untuk menghindari batasan ini.
+Lisensi GroupDocs Viewer menentukan fitur mana yang dibuka. Instance tanpa lisensi akan menyisipkan watermark “Powered by GroupDocs” pada setiap halaman yang dirender dan membatasi pemrosesan batch. Muat file lisensi Anda di awal aplikasi untuk menghindari keterbatasan ini.
 
 ## Panduan Implementasi
 
 ### Fitur: merender presentasi dengan catatan
-Bagian ini menunjukkan cara merender file PPTX ke HTML sambil menyertakan catatan pembicara.
+Bagian ini menunjukkan cara merender file PPTX ke HTML sambil menyertakan catatan pembicara, yang penting untuk skenario **render powerpoint di browser** di mana komentar presenter harus menyertai slide.
 
 #### Langkah 1: tentukan direktori output dan format file
-Tetapkan folder tempat halaman HTML yang dihasilkan akan disimpan:
+Tentukan folder tempat halaman HTML yang dihasilkan akan disimpan:
 
 ```java
 import java.nio.file.Path;
@@ -157,7 +160,7 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.setRenderNotes(true); // Enable note rendering
 ```
 
-> **Tip pro:** `forEmbeddedResources` menghasilkan HTML yang berdiri sendiri, yang menyederhanakan penyebaran ke server web.
+> **Tips pro:** `forEmbeddedResources` menghasilkan HTML mandiri, yang menyederhanakan penyebaran ke server web.
 
 #### Langkah 3: muat dan render dokumen
 Akhirnya, render file PPTX menggunakan opsi yang telah dikonfigurasi:
@@ -169,21 +172,21 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_
 }
 ```
 
-**Tip pemecahan masalah:** Pastikan bahwa jalur file sumber ada dan dapat dibaca. File yang hilang akan memicu `FileNotFoundException`.
+**Tips pemecahan masalah:** Pastikan jalur file sumber ada dan dapat dibaca. File yang hilang akan memicu `FileNotFoundException`.
 
-## Java konversi presentasi web: menyematkan hasil
-File HTML yang dihasilkan oleh kode di atas dapat disajikan langsung dari aplikasi web Anda. Karena sumber daya disematkan, Anda hanya perlu menyalin folder output ke direktori konten statis Anda dan merujuk file `page_0.html` pertama dalam sebuah `<iframe>` atau `<div>` biasa.
+## Java mengonversi presentasi web: menyematkan hasilnya
+File HTML yang dihasilkan oleh kode di atas dapat disajikan langsung dari aplikasi web Anda. Karena sumber daya disematkan, Anda hanya perlu menyalin folder output ke direktori konten statis Anda dan merujuk ke file `page_0.html` pertama dalam `<iframe>` atau `<div>` biasa.
 
 ## Aplikasi Praktis
-- **Platform pembelajaran online** – Tampilkan slide kuliah bersama catatan instruktur untuk pengalaman belajar yang lebih kaya.  
-- **Modul pelatihan korporat** – Sematkan komentar pelatih di samping setiap slide untuk kursus yang dapat dipelajari secara mandiri.  
-- **Sistem manajemen dokumen** – Sediakan pratinjau web‑siap instan dari presentasi sambil mempertahankan semua anotasi.
+- **Platform pembelajaran online** – Tampilkan slide kuliah bersama dengan catatan instruktur untuk pengalaman belajar yang lebih kaya.  
+- **Modul pelatihan korporat** – Sematkan komentar pelatih bersamaan dengan setiap slide untuk kursus yang dapat dipelajari secara mandiri.  
+- **Sistem manajemen dokumen** – Sediakan pratinjau siap web instan dari presentasi sambil mempertahankan semua anotasi.
 
 ## Pertimbangan Kinerja
 - Gunakan **try‑with‑resources** untuk secara otomatis menutup instance `Viewer` dan membebaskan memori.  
 - Cache HTML yang dirender untuk presentasi yang sering diakses guna mengurangi beban CPU.  
-- Pantau penggunaan heap JVM saat memproses file PPTX besar; tingkatkan ukuran heap jika Anda menemui `OutOfMemoryError`.  
-- GroupDocs Viewer dapat memproses **presentasi 100‑halaman dalam kurang dari 2 detik** pada server 4‑core tipikal (klaim terkuantifikasi).
+- Pantau penggunaan heap JVM saat memproses file PPTX besar; tingkatkan ukuran heap jika Anda mengalami `OutOfMemoryError`.  
+- GroupDocs Viewer dapat memproses **presentasi 100‑halaman dalam kurang dari 2 detik** pada server 4‑core tipikal, menunjukkan kesesuaiannya untuk lingkungan dengan throughput tinggi.
 
 ## Masalah Umum & Solusi
 | Masalah | Solusi |
@@ -200,8 +203,8 @@ A: Ya – API `HtmlViewOptions` yang sama dapat merender PDF dengan anotasi yang
 **Q: Apakah GroupDocs Viewer kompatibel dengan versi Java yang lebih lama?**  
 A: Dukungan resmi dimulai dari JDK 8; versi yang lebih lama mungkin tidak memiliki fitur rendering terbaru.
 
-**Q: Bagaimana cara menangani file presentasi yang sangat besar?**  
-A: Render setiap slide secara terpisah, gunakan kembali satu instance `HtmlViewOptions`, dan cache HTML untuk menjaga penggunaan memori tetap rendah.
+**Q: Bagaimana saya harus menangani file presentasi yang sangat besar?**  
+A: Render setiap slide secara individual, gunakan kembali satu instance `HtmlViewOptions`, dan cache HTML untuk menjaga penggunaan memori tetap rendah.
 
 **Q: Opsi lisensi apa yang tersedia untuk GroupDocs Viewer?**  
 A: Opsi meliputi percobaan gratis, lisensi evaluasi sementara, dan lisensi pembelian penuh untuk produksi. Lihat halaman lisensi untuk detailnya.
@@ -216,14 +219,14 @@ A: Kunjungi [GroupDocs API Reference](https://reference.groupdocs.com/viewer/jav
 - **Pembelian dan percobaan**: Pelajari tentang lisensi di [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) atau mulai percobaan gratis di [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
 - **Dukungan**: Untuk pertanyaan, kunjungi [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9).
 
----
-
-**Terakhir Diperbarui:** 2026-08-03  
-**Diuji Dengan:** GroupDocs.Viewer 25.2  
-**Penulis:** GroupDocs
-
 ## Tutorial Terkait
 
-- [Tutorial GroupDocs Viewer Java - Konversi Word ke HTML dan Render Dokumen dengan Komentar](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
-- [Cara Mengonversi Excel ke HTML dan Render Baris & Kolom Tersembunyi di Java dengan GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
+- [Tutorial GroupDocs Viewer Java - Mengonversi Word ke HTML dan Merender Dokumen dengan Komentar](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
+- [Cara Mengonversi Excel ke HTML dan Merender Baris & Kolom Tersembunyi di Java dengan GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
 - [Cara Merender File MS Project sebagai HTML, JPG, PNG, dan PDF dengan Catatan Menggunakan GroupDocs.Viewer untuk Java](/viewer/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/)
+
+---
+
+**Terakhir Diperbarui:** 2026-10-10  
+**Diuji Dengan:** GroupDocs.Viewer 25.2  
+**Penulis:** GroupDocs

@@ -1,31 +1,31 @@
 ---
-date: '2026-08-03'
-description: Leer hoe u pptx naar html kunt converteren met GroupDocs Viewer for Java,
-  inclusief het converteren van PowerPoint naar html, GroupDocs Viewer-licenties en
-  Java-presentatie‑html conversie.
+date: '2026-10-10'
+description: Leer hoe u HTML maakt van PowerPoint met GroupDocs Viewer for Java, met
+  uitleg over conversie, licenties en inbeddingsopties.
+images:
+- /java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/og-image.png
 keywords:
+- create html from powerpoint
 - convert pptx to html
-- display powerpoint in browser
-- render powerpoint with notes
-- java convert presentation html
-lastmod: '2026-08-03'
-og_description: pptx naar html converteren met GroupDocs Viewer for Java. Leer stap‑voor‑stap
-  conversie, notitie‑rendering, licenties en het insluiten van HTML in webpagina's.
+- display powerpoint notes
+- embed resources html
+- render powerpoint in browser
+lastmod: '2026-10-10'
+og_description: HTML maken van PowerPoint met GroupDocs Viewer for Java. Een stap-voor-stap
+  gids toont conversie, note rendering, licenties en het insluiten van HTML in webpagina's.
 og_image_alt: GroupDocs Viewer Java rendering PowerPoint slides with speaker notes
   to HTML
-og_title: pptx naar html converteren met GroupDocs Viewer for Java – snelle webrendering
+og_title: HTML maken van PowerPoint met GroupDocs Viewer for Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-03'
-  description: Learn how to convert pptx to html using GroupDocs Viewer for Java,
-    covering convert powerpoint to html, groupdocs viewer licensing, and java convert
-    presentation html.
-  headline: convert pptx to html with GroupDocs Viewer for Java
+  dateModified: '2026-10-10'
+  description: Learn how to create html from powerpoint using GroupDocs Viewer for
+    Java, covering conversion, licensing, and embedding options.
+  headline: Create html from powerpoint with GroupDocs Viewer for Java
   type: TechArticle
-- description: Learn how to convert pptx to html using GroupDocs Viewer for Java,
-    covering convert powerpoint to html, groupdocs viewer licensing, and java convert
-    presentation html.
-  name: convert pptx to html with GroupDocs Viewer for Java
+- description: Learn how to create html from powerpoint using GroupDocs Viewer for
+    Java, covering conversion, licensing, and embedding options.
+  name: Create html from powerpoint with GroupDocs Viewer for Java
   steps:
   - name: define output directory and file format
     text: 'Set the folder where the generated HTML pages will be saved:'
@@ -60,31 +60,34 @@ tags:
 - groupdocs viewer
 - java presentation rendering
 - html conversion
-title: pptx naar html converteren met GroupDocs Viewer for Java
+- create html from powerpoint
+title: HTML maken van PowerPoint met GroupDocs Viewer for Java
 type: docs
 url: /nl/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/
 weight: 1
 ---
 
-# pptx naar html converteren met GroupDocs Viewer voor Java
+# Maak html van PowerPoint met GroupDocs Viewer voor Java
 
-In deze tutorial leer je hoe je **pptx naar html** kunt converteren met GroupDocs Viewer voor Java, waarbij PowerPoint‑presentaties worden weergegeven samen met hun spreker‑notities. Het converteren van PPTX naar HTML stelt je in staat om dia's direct weer te geven in elke moderne browser, wat ideaal is voor e‑learningplatforms, corporate‑trainingsportalen of document‑beheersystemen die een web‑klare preview nodig hebben zonder Microsoft Office te installeren.
+In deze tutorial leer je hoe je **html van PowerPoint maken** met GroupDocs Viewer voor Java. Het converteren van een PPTX‑bestand naar HTML stelt je in staat om dia's direct weer te geven in elke moderne browser, wat perfect is voor e‑learning‑platformen, bedrijfs‑trainingsportalen of document‑beheersystemen die een web‑klare preview nodig hebben zonder Microsoft Office te installeren. De gids leidt je door de installatie, licenties, weergave met spreker‑notities en het insluiten van de gegenereerde HTML in een webpagina.
 
 ![Presentaties renderen met notities met GroupDocs.Viewer voor Java](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
 
 ## Snelle antwoorden
-- **Kan GroupDocs.Viewer PPTX naar HTML converteren?** Ja – het biedt een één‑staps PPTX‑naar‑HTML conversie en optionele notitie‑rendering.  
+- **Kan GroupDocs.Viewer PPTX naar HTML converteren?** Ja – het biedt een‑stap PPTX‑naar‑HTML conversie en optionele notitie‑rendering.  
 - **Heb ik een licentie nodig voor productiegebruik?** Een geldige GroupDocs Viewer‑licentie is vereist voor commerciële implementaties; proeflicenties voegen watermerken toe.  
 - **Welke Java‑versie is vereist?** JDK 8 of hoger wordt ondersteund; JDK 11+ wordt aanbevolen voor betere prestaties.  
 - **Welke uitvoerformaten zijn beschikbaar?** HTML, PDF en beeldformaten (PNG, JPEG) worden standaard ondersteund.  
 - **Is Maven de enige manier om de bibliotheek toe te voegen?** Maven is het meest gebruikelijk, maar je kunt ook Gradle gebruiken of de JAR‑bestanden handmatig toevoegen.  
-- **Hoe kan ik de gegenereerde HTML in een webpagina insluiten?** Gebruik `HtmlViewOptions.forEmbeddedResources()` om zelf‑containende HTML‑bestanden te maken en verwijs naar de eerste pagina (bijv. `page_0.html`) in een `<iframe>` of `<div>`.
+- **Hoe kan ik de gegenereerde HTML in een webpagina insluiten?** Gebruik `HtmlViewOptions.forEmbeddedResources()` om zelfstandige HTML‑bestanden te maken en verwijs naar de eerste pagina (bijv. `page_0.html`) in een `<iframe>` of `<div>`.
 
-## Wat is pptx naar html converteren?
-`convert pptx to html` is het proces van het omzetten van een PowerPoint‑presentatiebestand (PPTX) naar een reeks HTML‑pagina's die direct in een webbrowser kunnen worden weergegeven. De conversie behoudt dia‑indelingen, afbeeldingen, lettertypen en optioneel spreker‑notities, waardoor de noodzaak voor Office‑installaties op de server wordt geëlimineerd.
+## Wat is convert pptx naar html?
+`convert pptx to html` is het proces van het omzetten van een PowerPoint‑presentatiebestand (PPTX) naar een reeks HTML‑pagina's die direct in een webbrowser kunnen worden weergegeven. De conversie behoudt dia‑lay-outs, afbeeldingen, lettertypen en optioneel spreker‑notities, waardoor de noodzaak voor Office‑installaties op de server wegvalt. Deze techniek maakt **display powerpoint notes** mogelijk naast dia's en **embed resources html** voor naadloze integratie.
 
-## Hoe PowerPoint naar HTML converteren met GroupDocs Viewer?
-`Viewer` is de kernklasse die een document laadt en rendert naar het gekozen uitvoerformaat. Laad je PPTX‑bestand, configureer weergave‑opties om bronnen in te sluiten en notities te renderen, en roep vervolgens de `Viewer`‑API aan om HTML‑bestanden te genereren. De volledige conversie wordt uitgevoerd in slechts drie regels code zodra de bibliotheek is ingesteld.
+## Hoe html van PowerPoint maken met GroupDocs Viewer?
+Je converteert PowerPoint naar HTML door de PPTX te laden in een `Viewer`‑instantie, `HtmlViewOptions` te configureren om bronnen in te sluiten en notities te renderen, en vervolgens de view‑methode aan te roepen om een reeks HTML‑bestanden te genereren. De volledige workflow past meestal in drie beknopte regels Java‑code zodra de bibliotheek aan je project is toegevoegd.
+
+`Viewer` is de kernklasse van GroupDocs Viewer die een document laadt en rendert naar het gekozen uitvoerformaat. `HtmlViewOptions` is het configuratie‑object dat bepaalt hoe de HTML wordt geproduceerd, inclusief of spreker‑notities worden opgenomen en of alle bronnen (afbeeldingen, CSS, lettertypen) direct in de HTML‑bestanden worden ingesloten.
 
 ### Vereisten
 - **Java Development Kit (JDK)** – versie 8 of nieuwer.  
@@ -95,7 +98,7 @@ In deze tutorial leer je hoe je **pptx naar html** kunt converteren met GroupDoc
 ### GroupDocs.Viewer voor Java instellen
 
 #### Maven‑configuratie
-Voeg de GroupDocs‑repository en afhankelijkheid toe aan je `pom.xml`:
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -127,16 +130,16 @@ try (Viewer viewer = new Viewer("path/to/your/document.pptx")) {
 }
 ```
 
-## Inzicht in GroupDocs Viewer‑licensering voor Java
-GroupDocs Viewer‑licensering bepaalt welke functies worden ontgrendeld. Een niet‑gelicentieerde instantie voegt een “Powered by GroupDocs” watermerk toe aan elke gerenderde pagina en beperkt batch‑verwerking. Laad je licentiebestand vroeg in de applicatie om deze beperkingen te vermijden.
+## Inzicht in GroupDocs Viewer‑licenties voor Java
+GroupDocs Viewer‑licenties bepalen welke functies worden ontgrendeld. Een niet‑gelicentieerde instantie voegt een “Powered by GroupDocs” watermerk toe aan elke gerenderde pagina en beperkt batch‑verwerking. Laad je licentiebestand vroeg in de applicatie om deze beperkingen te vermijden.
 
 ## Implementatie‑gids
 
 ### Functie: een presentatie renderen met notities
-Deze sectie toont het renderen van een PPTX‑bestand naar HTML met inbegrip van spreker‑notities.
+Deze sectie toont het renderen van een PPTX‑bestand naar HTML met inbegrepen spreker‑notities, wat essentieel is voor **render powerpoint in browser** scenario's waarbij de commentaar van de presentator met de dia's moet meereizen.
 
 #### Stap 1: output‑directory en bestandsformaat definiëren
-Stel de map in waar de gegenereerde HTML‑pagina's worden opgeslagen:
+Set the folder where the generated HTML pages will be saved:
 
 ```java
 import java.nio.file.Path;
@@ -147,7 +150,7 @@ Path pageFilePathFormat = YOUR_OUTPUT_DIRECTORY.resolve("page_{0}.html");
 ```
 
 #### Stap 2: weergave‑opties configureren
-`HtmlViewOptions` configureert HTML‑renderopties zoals het insluiten van bronnen en het opnemen van notities. Maak weergave‑opties die bronnen insluiten en notitie‑rendering inschakelen:
+`HtmlViewOptions` configures HTML rendering options such as resource embedding and note inclusion. Create view options that embed resources and enable note rendering:
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -156,10 +159,10 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.setRenderNotes(true); // Enable note rendering
 ```
 
-> **Pro tip:** `forEmbeddedResources` produceert zelf‑containende HTML, wat de inzet op webservers vereenvoudigt.
+> **Pro tip:** `forEmbeddedResources` produceert zelfstandige HTML, wat de inzet op webservers vereenvoudigt.
 
 #### Stap 3: document laden en renderen
-Render tenslotte het PPTX‑bestand met de geconfigureerde opties:
+Finally, render the PPTX file using the configured options:
 
 ```java
 try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_WITH_NOTES"))) {
@@ -168,59 +171,60 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_
 }
 ```
 
-**Probleemoplossingstip:** Controleer of het bronbestandspad bestaat en leesbaar is. Een ontbrekend bestand veroorzaakt `FileNotFoundException`.
+**Probleemoplossingstip:** Controleer of het bron‑bestandspad bestaat en leesbaar is. Een ontbrekend bestand veroorzaakt `FileNotFoundException`.
 
-## Java presentatie web converteren: resultaat insluiten
-De HTML‑bestanden die door de bovenstaande code worden gegenereerd, kunnen direct vanuit je webapplicatie worden geserveerd. Omdat bronnen zijn ingesloten, hoef je alleen de output‑map naar je static‑content‑directory te kopiëren en de eerste `page_0.html`‑file te refereren in een `<iframe>` of een gewone `<div>`.
+## Java convert presentation web: resultaat insluiten
+De HTML‑bestanden die door de bovenstaande code worden gegenereerd, kunnen direct vanuit je webapplicatie worden geserveerd. Omdat bronnen zijn ingesloten, hoef je alleen de output‑map naar je static‑content‑directory te kopiëren en te verwijzen naar het eerste `page_0.html`‑bestand in een `<iframe>` of een gewone `<div>`.
 
 ## Praktische toepassingen
-- **Online leerplatformen** – Toon lezing‑dia's samen met instructeur‑notities voor een rijkere leerervaring.  
-- **Corporate‑trainingsmodules** – Voeg trainer‑commentaar toe naast elke dia voor zelf‑gestuurde cursussen.  
+- **Online leerplatformen** – Toon leesslides samen met instructeurs‑notities voor een rijkere leerervaring.  
+- **Bedrijfs‑trainingsmodules** – Voeg trainer‑commentaar toe naast elke dia voor zelf‑gestuurde cursussen.  
 - **Document‑beheersystemen** – Bied directe web‑klare previews van presentaties terwijl alle annotaties behouden blijven.
 
 ## Prestatie‑overwegingen
 - Gebruik **try‑with‑resources** om de `Viewer`‑instantie automatisch te sluiten en geheugen vrij te maken.  
 - Cache gerenderde HTML voor vaak geraadpleegde presentaties om de CPU‑belasting te verminderen.  
-- Monitor het JVM‑heap‑gebruik bij het verwerken van grote PPTX‑bestanden; vergroot de heap‑grootte als je een `OutOfMemoryError` tegenkomt.  
-- GroupDocs Viewer kan **100‑dia‑presentaties in minder dan 2 seconden** verwerken op een typische 4‑core server (gekwantificeerde claim).
+- Houd het JVM‑heap‑gebruik in de gaten bij het verwerken van grote PPTX‑bestanden; vergroot de heap‑grootte als je een `OutOfMemoryError` tegenkomt.  
+- GroupDocs Viewer kan **100‑pagina‑presentaties in minder dan 2 seconden** verwerken op een typische 4‑core server, wat de geschiktheid voor omgevingen met hoge doorvoersnelheid aantoont.
 
 ## Veelvoorkomende problemen & oplossingen
 | Probleem | Oplossing |
 |----------|-----------|
 | **Notities verschijnen niet** | Zorg ervoor dat `viewOptions.setRenderNotes(true)` wordt aangeroepen vóór het renderen. |
-| **Trage weergave bij grote bestanden** | Schakel caching in en render pagina's on‑demand in plaats van allemaal tegelijk. |
-| **Bestandspad‑fouten** | Gebruik `Paths.get(...)` en controleer relatieve versus absolute paden dubbel. |
+| **Trage rendering bij grote bestanden** | Schakel caching in en render pagina's on‑demand in plaats van allemaal tegelijk. |
+| **Bestandspad‑fouten** | Gebruik `Paths.get(...)` en controleer dubbel of paden relatief of absoluut zijn. |
 
 ## Veelgestelde vragen
 
-**Q: Kan ik PDF‑documenten met notities renderen met GroupDocs Viewer Java?**  
+**Q: Kan ik PDF‑documenten renderen met notities met GroupDocs Viewer Java?**  
 A: Ja – dezelfde `HtmlViewOptions`‑API kan PDF’s renderen met ingesloten annotaties.
 
 **Q: Is GroupDocs Viewer compatibel met oudere Java‑versies?**  
-A: Officiële ondersteuning begint bij JDK 8; oudere versies missen mogelijk nieuwere render‑functies.
+A: Officiële ondersteuning begint bij JDK 8; oudere versies missen mogelijk nieuwere renderingsfuncties.
 
 **Q: Hoe moet ik omgaan met zeer grote presentaties?**  
-A: Render elke dia afzonderlijk, hergebruik één `HtmlViewOptions`‑instantie, en cache de HTML om het geheugenverbruik laag te houden.
+A: Render elke dia afzonderlijk, hergebruik een enkele `HtmlViewOptions`‑instantie, en cache de HTML om het geheugenverbruik laag te houden.
 
 **Q: Welke licentie‑opties zijn beschikbaar voor GroupDocs Viewer?**  
 A: Opties omvatten gratis proefversies, tijdelijke evaluatielicenties en volledige aankooplicenties voor productie. Zie de licentiepagina voor details.
 
-**Q: Waar kan ik meer geavanceerde gebruiksvoorbeelden vinden?**  
-A: Bezoek de [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) voor uitgebreide documentatie en code‑voorbeelden.
+**Q: Waar vind ik meer geavanceerde gebruiksvoorbeelden?**  
+A: Bezoek de [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) voor diepgaande documentatie en code‑samples.
 
 ## Bronnen
 - **Documentatie**: Verken uitgebreide handleidingen op [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
 - **API‑referentie**: Gedetailleerde API‑informatie is beschikbaar op [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
-- **Download**: Haal de nieuwste releases op van [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/).  
-- **Aankoop en proefversie**: Kom meer te weten over licenties op de [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) of start een gratis proefversie op [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
+- **Download**: Haal de nieuwste releases op via [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/).  
+- **Aankoop en proefversie**: Lees meer over licenties op de [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) of start een gratis proefversie op [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
 - **Ondersteuning**: Voor vragen, bezoek het [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9).
 
-**Laatst bijgewerkt:** 2026-08-03  
-**Getest met:** GroupDocs.Viewer 25.2  
-**Auteur:** GroupDocs
-
 ## Gerelateerde tutorials
-
 - [GroupDocs Viewer Java Tutorial - Word naar HTML converteren en documenten renderen met opmerkingen](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
 - [Hoe Excel naar HTML converteren en verborgen rijen & kolommen renderen in Java met GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
 - [Hoe MS Project‑bestanden renderen als HTML, JPG, PNG en PDF met notities met GroupDocs.Viewer voor Java](/viewer/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/)
+
+---
+
+**Laatst bijgewerkt:** 2026-10-10  
+**Getest met:** GroupDocs.Viewer 25.2  
+**Auteur:** GroupDocs
