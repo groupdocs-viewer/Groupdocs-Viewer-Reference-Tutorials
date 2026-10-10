@@ -1,22 +1,20 @@
 ---
-date: '2026-08-03'
-description: 了解如何使用 GroupDocs.Viewer Java 将 zip 转换为 html，设置 items per page，embed resources
-  html，并高效 batch convert archives。
+date: '2026-10-10'
+description: 了解如何使用 GroupDocs.Viewer Java 将 zip 转换为 html，设置每页项目数，嵌入资源 html，并高效批量转换归档文件。
+images:
+- /java/export-conversion/groupdocs-viewer-java-convert-archives-html/og-image.png
 keywords:
-- convert zip to html
-- how to batch convert
-- embed resources html
-- batch convert archives
-- how to convert archives
-lastmod: '2026-08-03'
-og_description: 了解如何使用 GroupDocs.Viewer Java 将 zip 转换为 html，设置 items per page，embed
-  resources html，并高效 batch convert archives。遵循 step‑by‑step code 和 performance tips。
-og_image_alt: 'Guide: convert zip to html with GroupDocs.Viewer Java, showing pagination
-  and embedded resources'
-og_title: 使用 GroupDocs.Viewer Java 将 zip 转换为 html 并设置 items per page
+- how to convert zip
+- convert archive to html
+- java convert zip html
+lastmod: '2026-10-10'
+og_description: 了解如何使用 GroupDocs.Viewer Java 将 zip 转换为 html，嵌入资源，设置每页项目数，并批量处理归档文件，以实现快速、便携的网页预览。
+og_image_alt: 'Developer guide: convert zip to HTML with GroupDocs.Viewer Java, showing
+  pagination and embedded resources'
+og_title: 使用 GroupDocs.Viewer Java 将 zip 转换为 HTML 并实现分页
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-03'
+  dateModified: '2026-10-10'
   description: Learn how to convert zip to html using GroupDocs.Viewer Java, set items
     per page, embed resources html, and batch convert archives efficiently.
   headline: Convert zip to html and set items per page with GroupDocs.Viewer Java
@@ -44,40 +42,44 @@ tags:
 - Java archive conversion
 - html rendering
 - batch conversion
-title: 使用 GroupDocs.Viewer Java 将 zip 转换为 html 并设置 items per page
+title: 使用 GroupDocs.Viewer Java 将 zip 转换为 html 并设置每页项目数
 type: docs
 url: /zh/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
 # 将 zip 转换为 html 并使用 GroupDocs.Viewer Java 设置每页项目数
 
-在许多 Web 应用程序中，您需要直接在浏览器中显示 ZIP 或 RAR 存档的内容。使用 GroupDocs.Viewer for Java，您可以在一步完成 **convert zip to html**，控制每页显示的存档条目数量，嵌入所有支持的图像和 CSS，甚至批量处理数十个存档。本教程将带您完整了解工作流，从 Maven 设置到多页渲染，并解释每个设置对性能和可用性的影响。
+在许多 Web 应用程序中，您需要直接在浏览器中显示 ZIP 或 RAR 存档的内容。**如何将 zip 文件**转换为 HTML 使用 GroupDocs.Viewer for Java 是一个常见需求，且该库允许您嵌入图像、CSS 和字体，从而得到一个单一的可移植页面。本教程将带您逐步了解所有内容——从 Maven 设置到多页渲染——并解释每个选项为何对性能和可用性至关重要。
 
-![Convert Archives to HTML with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-archives-to-html-java.png)
+![使用 GroupDocs.Viewer for Java 将存档转换为 HTML](/viewer/export-conversion/convert-archives-to-html-java.png)
 
 ## 快速答案
-- **“set items per page” 控制什么？** 它决定每个生成的 HTML 页面上显示多少个来自存档的文件或文件夹。  
-- **我可以直接在 HTML 中嵌入图像和 CSS 吗？** 可以 — 使用 `forEmbeddedResources` 选项将资源嵌入 HTML。  
-- **批量转换可能吗？** 完全可以；您可以遍历存档集合，并使用相同的设置渲染每个存档。  
-- **使用 GroupDocs.Viewer 是否需要 Maven？** 是的，按如下所示添加 `groupdocs-viewer` Maven 依赖。  
-- **支持哪些输出格式？** 单页 HTML 和多页 HTML 均可用，且库支持 50 多种输入存档类型。
+- **“set items per page” 控制什么？** 它决定了每个生成的 HTML 页面上显示多少个来自存档的文件或文件夹。  
+- **我可以直接在 HTML 中嵌入图像和 CSS 吗？** 是的——使用 `forEmbeddedResources` 选项将资源嵌入 HTML。  
+- **批量转换是否可行？** 当然可以；您可以遍历存档集合并使用相同的设置渲染每个存档。  
+- **使用 GroupDocs.Viewer 是否需要 Maven？** 是的，按下面所示添加 `groupdocs-viewer` Maven 依赖。  
+- **支持哪些输出格式？** 单页 HTML 和多页 HTML 均可用，且该库支持 50 多种输入存档类型。
 
-## “set items per page” 在 GroupDocs.Viewer 中是什么？
-**set items per page** 设置属于存档渲染选项。它告诉查看器在生成多页 HTML 文档时，每个 HTML 页面上应显示多少个存档条目（文件或文件夹）。调整此值有助于在页面大小和导航速度之间取得平衡，尤其是对于大型存档。
+## GroupDocs.Viewer 中的 “set items per page” 是什么？
+它告诉查看器在生成多页文档时，每个 HTML 页面上应显示多少个存档条目（文件或文件夹）。调整此值有助于在大型存档中平衡页面大小和导航速度，通过限制每页加载的数据量并减少终端用户的渲染时间。
 
-## 为什么嵌入资源 html？
-将资源（图像、CSS、字体）直接嵌入 HTML 文件内部，可创建单一可移植的文档，无需外部文件即可打开。这对于电子邮件附件、离线查看或将输出嵌入其他网页非常理想。这种方式还简化了部署，因为无需管理外部资源路径。
+## 为什么要嵌入资源 html？
+将资源（图像、CSS、字体）直接嵌入 HTML 文件会创建一个单一的可移植文档，无需外部文件即可打开。这对于电子邮件附件、离线查看或将输出嵌入其他网页非常理想。它还消除了管理外部资源路径的需求。
 
-## 前提条件
+## 先决条件
 
-- **Required libraries:** 包含 GroupDocs.Viewer 版本 25.2 或更高。  
-- **Environment:** 已安装并配置 Java Development Kit (JDK)。  
-- **Knowledge:** 基本的 Java 和 Maven 依赖管理。  
+- **必需的库：** 包括 GroupDocs.Viewer 版本 25.2 或更高。  
+- **环境：** 已安装并配置 Java Development Kit（JDK）。  
+- **知识：** 基本的 Java 和 Maven 依赖管理。  
 
 ## Maven GroupDocs Viewer 设置
 
-Add the GroupDocs repository and the viewer dependency to your `pom.xml`:
+将 GroupDocs 仓库和查看器依赖添加到您的 `pom.xml` 中：
 
 ```xml
 <repositories>
@@ -97,11 +99,11 @@ Add the GroupDocs repository and the viewer dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### 许可证获取
-GroupDocs.Viewer 提供 **free trial link**、临时许可证或完整购买选项。请选择适合您项目时间表的方案。
+### 获取许可证
+GroupDocs.Viewer 提供 **免费试用链接**、临时许可证或完整购买选项。请选择最适合您项目时间表的方案。
 
-### 基本初始化
-After the Maven setup, bring the viewer into your code:
+## 基本初始化
+`Viewer` 类是渲染文档和存档的入口点。完成 Maven 设置后，将查看器引入代码中：
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -109,9 +111,9 @@ import com.groupdocs.viewer.Viewer;
 ```
 
 ## 如何将存档渲染为单页 html
-Viewer 是用于加载文档或存档进行渲染的核心类。
+`HtmlViewOptions` 类定义了 HTML 输出的设置，例如嵌入资源。加载存档，配置 HTML 选项以嵌入资源，并将所有内容渲染到一个自包含页面中。这会生成一个包含所有文件、图像、CSS 和字体的单个 HTML 文件，适用于离线使用或电子邮件附件。
 
-要生成包含整个存档的单个 HTML 文件，需为 ZIP 文件创建 `Viewer` 实例，并使用 `HtmlViewOptions.forEmbeddedResources()` 嵌入所有图像、CSS 和字体。使用这些选项渲染存档会生成一个自包含的页面，适用于电子邮件或离线使用。
+**直接答案：** 为 ZIP 文件创建 `Viewer` 实例，调用 `HtmlViewOptions.forEmbeddedResources()`，并执行 `viewer.view(documentPath, options)`。这会生成一个包含所有文件、图像、CSS 和字体的单个 HTML 文件，适用于离线使用或电子邮件附件。
 
 ### 步骤 1：定义输出目录
 ```java
@@ -123,7 +125,7 @@ Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result.html");
 ```
 
-### 步骤 3：初始化 Viewer
+### 步骤 3：初始化查看器
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
     // Further configuration steps follow
@@ -131,6 +133,8 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
 ```
 
 ### 步骤 4：配置渲染选项（嵌入资源 html）
+`HtmlViewOptions` 类定义了 HTML 输出的设置，例如嵌入资源。使用 `forEmbeddedResources()` 将所有内容打包成一个文件。
+
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
@@ -142,9 +146,9 @@ viewer.view(options);
 ```
 
 ## 如何将存档渲染为多页 html 并设置每页项目数
-`HtmlViewOptions` 配置查看器渲染 HTML 输出的方式，包括分页和资源嵌入。
+`HtmlViewOptions` 类同样支持分页。通过调用 `options.setItemsPerPage(N)`，您指示查看器将存档拆分为多个 HTML 文件，每个文件显示最多 **N** 条目。这种方法在保持每页轻量的同时，提高了大型存档的导航速度。
 
-要将存档拆分为多个页面，创建 `HtmlViewOptions.forEmbeddedResources()` 并使用 `options.setItemsPerPage(20)` 设置所需的页面大小。查看器将生成多个 HTML 文件，每个文件显示最多指定数量的条目，这可提升大型存档的导航体验并确保更快的加载速度。
+**直接答案：** 使用 `HtmlViewOptions.forEmbeddedResources()`，调用 `options.setItemsPerPage(N)`，并渲染存档。查看器将生成多个 HTML 文件——每页一个——每个文件包含最多 **N** 条目，从而加快大存档的导航速度。
 
 ### 步骤 1：复用输出目录
 ```java
@@ -156,7 +160,7 @@ Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result_page_{0}.html");
 ```
 
-### 步骤 3：再次初始化 Viewer
+### 步骤 3：再次初始化查看器
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
     // Continue with multi‑page configuration
@@ -168,7 +172,7 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-### 步骤 5：设置每页项目数（操作中的主要关键字）
+### 步骤 5：设置每页项目数（操作中的主要关键词）
 ```java
 options.getArchiveOptions().setItemsPerPage(10); // Default is 16
 viewer.view(options);
@@ -176,15 +180,15 @@ viewer.view(options);
 
 ## 实际应用
 
-- **Document management systems:** 添加存档预览功能，无需安装额外的查看器。  
-- **Web portals:** 为用户提供快速、无需下载的方式来浏览打包的文档。  
-- **Collaboration tools:** 让团队直接在浏览器中检查共享的存档。  
+- **文档管理系统：** 在无需安装额外查看器的情况下添加存档预览功能。  
+- **Web 门户：** 为用户提供快速、无需下载的方式来浏览打包的文档。  
+- **协作工具：** 让团队直接在浏览器中检查共享的存档。  
 
-## 性能考虑
+## 性能考虑因素
 
-- **Resource management:** 通过流式处理存档保持低内存使用；查看器可处理高达 500 MB 的存档，而无需将整个文件加载到内存中。  
-- **Batch convert archives:** 循环遍历存档文件列表并调用相同的渲染逻辑，以最大化吞吐量。  
-- **Caching strategy:** 如果同一存档被频繁访问，将渲染后的 HTML 存入缓存，可将重复处理时间降低最多 70 %。  
+- **资源管理：** 通过流式处理存档来保持低内存使用；查看器可处理高达 500 MB 的存档，而无需将整个文件加载到内存中。  
+- **批量转换存档：** 遍历存档文件列表并调用相同的渲染逻辑，以最大化吞吐量。  
+- **缓存策略：** 如果同一存档被频繁访问，将渲染后的 HTML 存入缓存，可将重复处理时间降低至 70 %。  
 
 ## 常见问题
 
@@ -195,7 +199,7 @@ A: GroupDocs.Viewer Java 是一个服务器端库，可将 50 多种文档和存
 A: 访问 [free trial link](https://releases.groupdocs.com/viewer/java/) 下载并测试。
 
 **Q: 我可以转换除存档之外的其他文档类型吗？**  
-A: 可以，查看器支持 PDF、Word、Excel、PowerPoint 以及另外 35 种以上的格式。
+A: 是的，查看器支持 PDF、Word、Excel、PowerPoint 以及另外 35 种以上的格式。
 
 **Q: 如果渲染速度慢该怎么办？**  
 A: 减少每页项目数，启用流式处理，或将存档分成更小的批次处理以提升速度。
@@ -204,27 +208,36 @@ A: 减少每页项目数，启用流式处理，或将存档分成更小的批�
 A: 通过 [support forum](https://forum.groupdocs.com/c/viewer/9) 联系我们。
 
 **Q: 是否可以直接在 HTML 中嵌入 CSS 和图像？**  
-A: 完全可以 — 如示例所示，使用 `HtmlViewOptions.forEmbeddedResources`。
+A: 完全可以——如示例所示，使用 `HtmlViewOptions.forEmbeddedResources`。
 
-**Q: 如何批量转换一个存档文件夹？**  
+**Q: 如何批量转换文件夹中的存档？**  
 A: 使用 `for` 循环遍历每个文件，对每次迭代应用相同的 `Viewer` 和 `HtmlViewOptions` 配置。
+
+**Q: 我可以在哪里与其他用户讨论问题？**  
+A: 访问 [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) 进行社区讨论。
 
 ## 资源
 
-- **Documentation:** 通过 [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/) 深入了解功能。  
-- **API reference:** 在 [GroupDocs API](https://reference.groupdocs.com/viewer/java/) 查看完整 API。  
-- **Download:** 从 [download page](https://releases.groupdocs.com/viewer/java/) 获取最新二进制文件。  
-- **Purchase and licensing:** 在 [purchase page](https://purchase.groupdocs.com/buy) 查看选项。  
-- **Support and community:** 加入 [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) 讨论。
+- **文档：** 深入了解功能，请参阅 [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/)。  
+- **API 参考：** 在 [GroupDocs API](https://reference.groupdocs.com/viewer/java/) 查看完整 API。  
+- **下载：** 从 [download page](https://releases.groupdocs.com/viewer/java/) 获取最新二进制文件。  
+- **购买和许可：** 在 [purchase page](https://purchase.groupdocs.com/buy) 查看选项。  
+- **支持与社区：** 在 [support forum](https://forum.groupdocs.com/c/viewer/9) 加入讨论。  
+- **GroupDocs 论坛：** 访问 [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) 获取社区帮助。
 
 ---
 
-**最后更新：** 2026-08-03  
-**测试环境：** GroupDocs.Viewer 25.2  
+**最后更新：** 2026-10-10  
+**测试版本：** GroupDocs.Viewer 25.2  
 **作者：** GroupDocs
 
 ## 相关教程
 
 - [如何使用 GroupDocs.Viewer 将 zip 转换为 HTML 并在 Java 中渲染 zip 文件夹](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
 - [使用 GroupDocs.Viewer Java 将 zip 转换为 pdf - 自定义文件名](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
-- [使用 GroupDocs.Viewer for Java 将 DOCX 转换为 HTML 的分步指南](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [如何使用 GroupDocs.Viewer for Java 将 DOCX 转换为 HTML：分步指南](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/products-backtop-button >}}

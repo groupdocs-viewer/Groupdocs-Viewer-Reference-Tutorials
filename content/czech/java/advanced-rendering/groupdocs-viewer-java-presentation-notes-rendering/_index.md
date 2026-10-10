@@ -1,32 +1,32 @@
 ---
-date: '2026-08-03'
-description: Naučte se, jak převést pptx na html pomocí GroupDocs Viewer for Java,
-  zahrnující převod PowerPoint na html, licencování GroupDocs Viewer a java převod
-  prezentace html.
+date: '2026-10-10'
+description: Naučte se, jak vytvořit HTML z PowerPointu pomocí GroupDocs Viewer for
+  Java, včetně konverze, licencování a možností vkládání.
+images:
+- /java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/og-image.png
 keywords:
+- create html from powerpoint
 - convert pptx to html
-- display powerpoint in browser
-- render powerpoint with notes
-- java convert presentation html
-lastmod: '2026-08-03'
-og_description: Převod pptx na html pomocí GroupDocs Viewer for Java. Naučte se krok
-  za krokem konverzi, renderování poznámek, licencování a vkládání HTML do webových
-  stránek.
+- display powerpoint notes
+- embed resources html
+- render powerpoint in browser
+lastmod: '2026-10-10'
+og_description: Vytvořte HTML z PowerPointu pomocí GroupDocs Viewer for Java. Průvodce
+  krok za krokem ukazuje konverzi, vykreslování poznámek, licencování a vkládání HTML
+  do webových stránek.
 og_image_alt: GroupDocs Viewer Java rendering PowerPoint slides with speaker notes
   to HTML
-og_title: Převod pptx na html pomocí GroupDocs Viewer for Java – rychlé webové renderování
+og_title: Vytvořte HTML z PowerPointu pomocí GroupDocs Viewer for Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-03'
-  description: Learn how to convert pptx to html using GroupDocs Viewer for Java,
-    covering convert powerpoint to html, groupdocs viewer licensing, and java convert
-    presentation html.
-  headline: convert pptx to html with GroupDocs Viewer for Java
+  dateModified: '2026-10-10'
+  description: Learn how to create html from powerpoint using GroupDocs Viewer for
+    Java, covering conversion, licensing, and embedding options.
+  headline: Create html from powerpoint with GroupDocs Viewer for Java
   type: TechArticle
-- description: Learn how to convert pptx to html using GroupDocs Viewer for Java,
-    covering convert powerpoint to html, groupdocs viewer licensing, and java convert
-    presentation html.
-  name: convert pptx to html with GroupDocs Viewer for Java
+- description: Learn how to create html from powerpoint using GroupDocs Viewer for
+    Java, covering conversion, licensing, and embedding options.
+  name: Create html from powerpoint with GroupDocs Viewer for Java
   steps:
   - name: define output directory and file format
     text: 'Set the folder where the generated HTML pages will be saved:'
@@ -61,31 +61,34 @@ tags:
 - groupdocs viewer
 - java presentation rendering
 - html conversion
-title: Převod pptx na html pomocí GroupDocs Viewer for Java
+- create html from powerpoint
+title: Vytvořte HTML z PowerPointu pomocí GroupDocs Viewer for Java
 type: docs
 url: /cs/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/
 weight: 1
 ---
 
-# převod pptx na html pomocí GroupDocs Viewer pro Java
+# Vytvořit html z powerpointu pomocí GroupDocs Viewer pro Java
 
-V tomto tutoriálu se naučíte, jak **převést pptx na html** pomocí GroupDocs Viewer pro Java, vykreslovat PowerPoint prezentace spolu s jejich poznámkami přednášejícího. Převod PPTX na HTML vám umožní okamžitě zobrazit snímky v libovolném moderním prohlížeči, což je ideální pro e‑learning platformy, firemní výukové portály nebo systémy pro správu dokumentů, které potřebují webový náhled bez instalace Microsoft Office.
+V tomto tutoriálu se naučíte, jak **vytvořit html z powerpointu** pomocí GroupDocs Viewer pro Java. Převod souboru PPTX do HTML vám umožní okamžitě zobrazit snímky v libovolném moderním prohlížeči, což je ideální pro e‑learningové platformy, firemní výukové portály nebo systémy pro správu dokumentů, které potřebují web‑připravený náhled bez instalace Microsoft Office. Průvodce vás provede nastavením, licencováním, vykreslováním s poznámkami přednášejícího a vložením vygenerovaného HTML do webové stránky.
 
-![Zobrazit prezentace s poznámkami pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
+![Render Presentations with Notes with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
 
 ## Rychlé odpovědi
-- **Může GroupDocs.Viewer převést PPTX na HTML?** Ano – poskytuje jednorázový převod PPTX‑na‑HTML a volitelné vykreslování poznámek.  
-- **Potřebuji licenci pro produkční použití?** Platná licence GroupDocs Viewer je vyžadována pro komerční nasazení; zkušební licence přidávají vodoznaky.  
-- **Jaká verze Javy je vyžadována?** JDK 8 nebo vyšší je podporováno; JDK 11+ se doporučuje pro lepší výkon.  
+- **Může GroupDocs.Viewer převést PPTX na HTML?** Ano – it provides one‑step PPTX‑to‑HTML conversion and optional note rendering.  
+- **Potřebuji licenci pro produkční použití?** Je vyžadována platná licence GroupDocs Viewer pro komerční nasazení; zkušební licence přidávají vodoznaky.  
+- **Která verze Javy je vyžadována?** JDK 8 nebo vyšší je podporováno; JDK 11+ se doporučuje pro lepší výkon.  
 - **Jaké výstupní formáty jsou k dispozici?** HTML, PDF a formáty obrázků (PNG, JPEG) jsou podporovány přímo.  
 - **Je Maven jediný způsob, jak přidat knihovnu?** Maven je nejčastější, ale můžete také použít Gradle nebo ručně přidat soubory JAR.  
 - **Jak mohu vložit vygenerované HTML do webové stránky?** Použijte `HtmlViewOptions.forEmbeddedResources()` k vytvoření samostatných HTML souborů a odkažte na první stránku (např. `page_0.html`) v `<iframe>` nebo `<div>`.
 
-## Co je převod pptx na html?
-`convert pptx to html` je proces transformace souboru PowerPoint prezentace (PPTX) na sadu HTML stránek, které lze přímo vykreslit ve webovém prohlížeči. Převod zachovává rozvržení snímků, obrázky, písma a volitelně poznámky přednášejícího, čímž odstraňuje potřebu instalace Office na serveru.
+## Co je převod PPTX na HTML?
+`convert pptx to html` je proces transformace souboru prezentace PowerPoint (PPTX) na sadu HTML stránek, které lze přímo vykreslit v webovém prohlížeči. Převod zachovává rozvržení snímků, obrázky, písma a volitelně poznámky přednášejícího, čímž eliminuje potřebu instalace Office na serveru. Tato technika umožňuje **zobrazit poznámky k powerpointu** vedle snímků a **vložit zdroje html** pro bezproblémovou integraci.
 
-## Jak převést PowerPoint na HTML pomocí GroupDocs Viewer?
-`Viewer` je hlavní třída, která načte dokument a vykreslí jej do zvoleného výstupního formátu. Načtěte svůj PPTX soubor, nakonfigurujte možnosti zobrazení pro vložení zdrojů a vykreslení poznámek, poté zavolejte `Viewer` API k vygenerování HTML souborů. Kompletní převod se provede během pouhých tří řádků kódu po nastavení knihovny.
+## Jak vytvořit html z powerpointu pomocí GroupDocs Viewer?
+PowerPoint převádíte na HTML načtením PPTX do instance `Viewer`, nastavením `HtmlViewOptions` pro vložení zdrojů a vykreslení poznámek a následným voláním metody view, která vygeneruje sérii HTML souborů. Celý pracovní postup se obvykle vejde do tří stručných řádků Java kódu, jakmile je knihovna přidána do vašeho projektu.
+
+`Viewer` je jádrová třída GroupDocs Viewer, která načítá dokument a vykresluje jej do zvoleného výstupního formátu. `HtmlViewOptions` je konfigurační objekt, který řídí, jak je HTML vytvářeno, včetně toho, zda jsou zahrnuty poznámky přednášejícího a zda jsou všechny zdroje (obrázky, CSS, písma) vloženy přímo do HTML souborů.
 
 ### Požadavky
 - **Java Development Kit (JDK)** – verze 8 nebo novější.  
@@ -117,7 +120,7 @@ Add the GroupDocs repository and dependency to your `pom.xml`:
 ```
 
 #### Získání licence
-Obtain a free trial or a permanent license from the official store. Without a valid license, output may contain watermarks or be limited to the first few slides. Visit [GroupDocs Purchase](https://purchase.groupdocs.com/buy) for licensing options.
+Získejte bezplatnou zkušební verzi nebo trvalou licenci z oficiálního obchodu. Bez platné licence může výstup obsahovat vodoznaky nebo být omezen na prvních několik snímků. Navštivte [GroupDocs Purchase](https://purchase.groupdocs.com/buy) pro možnosti licencování.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -128,13 +131,13 @@ try (Viewer viewer = new Viewer("path/to/your/document.pptx")) {
 }
 ```
 
-## Porozumění licencování GroupDocs Viewer pro Java
-GroupDocs Viewer licensing determines which features are unlocked. An unlicensed instance will insert a “Powered by GroupDocs” watermark on each rendered page and restrict batch processing. Load your license file early in the application to avoid these limitations.
+## Pochopení licencování GroupDocs Viewer pro Java
+Licencování GroupDocs Viewer určuje, které funkce jsou odemčeny. Instance bez licence vloží na každou vykreslenou stránku vodoznak „Powered by GroupDocs“ a omezí hromadné zpracování. Načtěte soubor licence co nejdříve v aplikaci, abyste se vyhnuli těmto omezením.
 
 ## Průvodce implementací
 
 ### Funkce: vykreslit prezentaci s poznámkami
-This section demonstrates rendering a PPTX file to HTML while including speaker notes.
+Tato sekce demonstruje vykreslení souboru PPTX do HTML s zahrnutím poznámek přednášejícího, což je nezbytné pro scénáře **render powerpoint in browser**, kde komentář prezentujícího musí být součástí snímků.
 
 #### Krok 1: definovat výstupní adresář a formát souboru
 Set the folder where the generated HTML pages will be saved:
@@ -169,61 +172,61 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_
 }
 ```
 
-**Tip pro řešení problémů:** Verify that the source file path exists and is readable. A missing file triggers `FileNotFoundException`.
+**Tip pro řešení problémů:** Ověřte, že cesta ke zdrojovému souboru existuje a je čitelná. Chybějící soubor vyvolá `FileNotFoundException`.
 
-## Java převod prezentace pro web: vložení výsledku
-The HTML files generated by the code above can be served directly from your web application. Because resources are embedded, you only need to copy the output folder to your static‑content directory and reference the first `page_0.html` file in an `<iframe>` or a regular `<div>`.
+## Java převod prezentace web: vložení výsledku
+HTML soubory vygenerované výše uvedeným kódem lze naservírovat přímo z vaší webové aplikace. Protože jsou zdroje vloženy, stačí zkopírovat výstupní složku do adresáře statického obsahu a odkazovat na první soubor `page_0.html` v `<iframe>` nebo běžném `<div>`.
 
 ## Praktické aplikace
-- **Online learning platforms** – Zobrazit přednáškové snímky spolu s poznámkami lektora pro bohatší učební zážitek.  
-- **Corporate training modules** – Vložit komentáře školitele vedle každého snímku pro samostatné kurzy.  
-- **Document management systems** – Poskytnout okamžité webové náhledy prezentací při zachování všech anotací.
+- **Online learning platforms** – Zobrazte přednáškové snímky spolu s poznámkami instruktora pro bohatší učební zážitek.  
+- **Corporate training modules** – Vložte komentáře školitele vedle každého snímku pro samostatně řízené kurzy.  
+- **Document management systems** – Poskytněte okamžité web‑připravené náhledy prezentací při zachování všech anotací.
 
 ## Úvahy o výkonu
 - Použijte **try‑with‑resources** k automatickému uzavření instance `Viewer` a uvolnění paměti.  
-- Ukládejte vykreslené HTML do cache pro často přistupované prezentace, aby se snížilo zatížení CPU.  
-- Sledujte využití haldy JVM při zpracování velkých souborů PPTX; zvětšete velikost haldy, pokud narazíte na `OutOfMemoryError`.  
-- GroupDocs Viewer dokáže zpracovat **100‑stránkové prezentace za méně než 2 sekundy** na typickém 4‑jádrovém serveru (kvantifikované tvrzení).
+- Kešujte vykreslené HTML pro často přistupované prezentace, aby se snížilo zatížení CPU.  
+- Sledujte využití haldy JVM při zpracování velkých PPTX souborů; zvětšete velikost haldy, pokud narazíte na `OutOfMemoryError`.  
+- GroupDocs Viewer dokáže zpracovat **100‑stránkové prezentace za méně než 2 sekundy** na typickém 4‑jádrovém serveru, což dokazuje jeho vhodnost pro prostředí s vysokým propustností.
 
 ## Časté problémy a řešení
 | Problém | Řešení |
 |-------|----------|
 | **Poznámky se nezobrazují** | Ujistěte se, že `viewOptions.setRenderNotes(true)` je zavoláno před vykreslením. |
-| **Pomalé vykreslování u velkých souborů** | Povolte cache a vykreslujte stránky na požádání místo najednou. |
-| **Chyby cesty k souboru** | Použijte `Paths.get(...)` a dvakrát zkontrolujte relativní vs. absolutní cesty. |
+| **Pomalé vykreslování u velkých souborů** | Povolte kešování a vykreslujte stránky na požádání místo najednou. |
+| **Chyby cesty k souboru** | Použijte `Paths.get(...)` a dvakrát zkontrolujte relativní a absolutní cesty. |
 
 ## Často kladené otázky
 
 **Q: Mohu pomocí GroupDocs Viewer Java vykreslovat PDF dokumenty s poznámkami?**  
-A: Ano – stejné API `HtmlViewOptions` může vykreslovat PDF s vloženými anotacemi.
+A: Ano – stejná API `HtmlViewOptions` může vykreslovat PDF s vloženými anotacemi.
 
 **Q: Je GroupDocs Viewer kompatibilní se staršími verzemi Javy?**  
-A: Oficiální podpora začíná u JDK 8; starší verze mohou postrádat novější funkce vykreslování.
+A: Oficiální podpora začíná od JDK 8; starší verze mohou postrádat novější funkce vykreslování.
 
 **Q: Jak mám zacházet s velmi velkými soubory prezentací?**  
-A: Vykreslujte každý snímek samostatně, znovu použijte jedinou instanci `HtmlViewOptions` a cacheujte HTML, aby byl nízký odběr paměti.
+A: Vykreslete každý snímek samostatně, znovu použijte jedinou instanci `HtmlViewOptions` a kešujte HTML, aby byl nízký odběr paměti.
 
 **Q: Jaké licenční možnosti jsou k dispozici pro GroupDocs Viewer?**  
-A: Možnosti zahrnují bezplatné zkušební verze, dočasné evaluační licence a plně placené licence pro produkci. Viz stránka s licencemi pro podrobnosti.
+A: Možnosti zahrnují bezplatné zkušební verze, dočasné evaluační licence a plné licence pro produkci. Podrobnosti najdete na stránce s licencováním.
 
-**Q: Kde najdu pokročilejší příklady použití?**  
-A: Navštivte [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) pro podrobnou dokumentaci a ukázky kódu.
+**Q: Kde mohu najít pokročilejší příklady použití?**  
+A: Navštivte [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) pro podrobnou dokumentaci a ukázkové kódy.
 
 ## Zdroje
-- **Dokumentace**: Prozkoumejte komplexní průvodce na [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
+- **Documentation**: Prozkoumejte komplexní průvodce na [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
 - **API reference**: Podrobné informace o API jsou k dispozici na [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
-- **Stáhnout**: Získejte nejnovější verze z [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/).  
-- **Nákup a zkušební verze**: Learn about licensing on the [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) or start a free trial at [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
-- **Podpora**: For questions, visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9).
-
----
-
-**Poslední aktualizace:** 2026-08-03  
-**Testováno s:** GroupDocs.Viewer 25.2  
-**Autor:** GroupDocs
+- **Download**: Získejte nejnovější verze z [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/).  
+- **Purchase and trial**: Zjistěte více o licencování na [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) nebo zahajte bezplatnou zkušební verzi na [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
+- **Support**: Pro dotazy navštivte [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9).
 
 ## Související tutoriály
 
-- [GroupDocs Viewer Java tutoriál – převod Wordu na HTML a vykreslení dokumentů s komentáři](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
-- [Jak převést Excel na HTML a vykreslit skryté řádky a sloupce v Javě s GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
+- [GroupDocs Viewer Java tutoriál – převod Wordu do HTML a vykreslení dokumentů s komentáři](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
+- [Jak převést Excel do HTML a vykreslit skryté řádky a sloupce v Javě pomocí GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
 - [Jak vykreslit soubory MS Project jako HTML, JPG, PNG a PDF s poznámkami pomocí GroupDocs.Viewer pro Java](/viewer/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/)
+
+---
+
+**Poslední aktualizace:** 2026-10-10  
+**Testováno s:** GroupDocs.Viewer 25.2  
+**Autor:** GroupDocs
