@@ -1,25 +1,24 @@
 ---
-date: '2026-08-03'
-description: Dowiedz się, jak konwertować zip do html przy użyciu GroupDocs.Viewer
+date: '2026-10-10'
+description: Dowiedz się, jak konwertować zip na html przy użyciu GroupDocs.Viewer
   Java, ustawiać liczbę elementów na stronę, osadzać zasoby html oraz efektywnie konwertować
   archiwa wsadowo.
+images:
+- /java/export-conversion/groupdocs-viewer-java-convert-archives-html/og-image.png
 keywords:
-- convert zip to html
-- how to batch convert
-- embed resources html
-- batch convert archives
-- how to convert archives
-lastmod: '2026-08-03'
-og_description: Dowiedz się, jak konwertować zip do html przy użyciu GroupDocs.Viewer
-  Java, ustawiać liczbę elementów na stronę, osadzać zasoby html oraz efektywnie konwertować
-  archiwa wsadowo. Follow step-by-step code and performance tips.
-og_image_alt: 'Guide: convert zip to html with GroupDocs.Viewer Java, showing pagination
-  and embedded resources'
-og_title: Konwertuj zip do html i ustaw liczbę elementów na stronę z GroupDocs.Viewer
-  Java
+- how to convert zip
+- convert archive to html
+- java convert zip html
+lastmod: '2026-10-10'
+og_description: Dowiedz się, jak konwertować zip na html przy pomocy GroupDocs.Viewer
+  Java, osadzać zasoby, ustawiać liczbę elementów na stronę oraz przetwarzać archiwa
+  wsadowo, aby uzyskać szybkie i przenośne podglądy w sieci.
+og_image_alt: 'Developer guide: convert zip to HTML with GroupDocs.Viewer Java, showing
+  pagination and embedded resources'
+og_title: Konwertuj zip na HTML z paginacją przy użyciu GroupDocs.Viewer Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-03'
+  dateModified: '2026-10-10'
   description: Learn how to convert zip to html using GroupDocs.Viewer Java, set items
     per page, embed resources html, and batch convert archives efficiently.
   headline: Convert zip to html and set items per page with GroupDocs.Viewer Java
@@ -47,31 +46,35 @@ tags:
 - Java archive conversion
 - html rendering
 - batch conversion
-title: Konwertuj zip do html i ustaw liczbę elementów na stronę z GroupDocs.Viewer
+title: Konwertuj plik zip na html i ustaw liczbę elementów na stronę za pomocą GroupDocs.Viewer
   Java
 type: docs
 url: /pl/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
-# Konwertuj zip do html i ustaw liczbę elementów na stronę za pomocą GroupDocs.Viewer Java
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-W wielu aplikacjach internetowych trzeba wyświetlać zawartość archiwum ZIP lub RAR bezpośrednio w przeglądarce. Dzięki GroupDocs.Viewer for Java możesz **convert zip to html** w jednym kroku, kontrolować liczbę wpisów archiwum wyświetlanych na każdej stronie, osadzać wszystkie obrazy i CSS oraz przetwarzać hurtowo dziesiątki archiwów. Ten samouczek przeprowadzi Cię przez pełny przepływ pracy, od konfiguracji Maven po renderowanie wielostronicowe, i wyjaśni, dlaczego każde ustawienie ma znaczenie dla wydajności i użyteczności.
+# Konwertuj zip do html i ustaw liczbę elementów na stronę przy użyciu GroupDocs.Viewer Java
 
-![Convert Archives to HTML with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-archives-to-html-java.png)
+W wielu aplikacjach internetowych trzeba wyświetlać zawartość archiwum ZIP lub RAR bezpośrednio w przeglądarce. **Jak konwertować zip** na HTML przy użyciu GroupDocs.Viewer dla Java jest powszechnym wymaganiem, a biblioteka umożliwia osadzanie obrazów, CSS i czcionek, dzięki czemu wynik to pojedyncza, przenośna strona. Ten samouczek przeprowadzi Cię przez wszystko — od konfiguracji Maven po renderowanie wielostronicowe — wyjaśniając, dlaczego każda opcja ma znaczenie dla wydajności i użyteczności.
+
+![Konwertuj archiwa do HTML przy użyciu GroupDocs.Viewer dla Java](/viewer/export-conversion/convert-archives-to-html-java.png)
 
 ## Szybkie odpowiedzi
-- **Co kontroluje „set items per page”?** Określa, ile plików lub folderów z archiwum pojawia się na każdej wygenerowanej stronie HTML.  
+- **Co kontroluje „set items per page”?** Określa, ile plików lub folderów z archiwum ma się pojawić na każdej wygenerowanej stronie HTML.  
 - **Czy mogę osadzić obrazy i CSS bezpośrednio w HTML?** Tak – użyj opcji `forEmbeddedResources`, aby osadzić zasoby w HTML.  
-- **Czy konwersja wsadowa jest możliwa?** Zdecydowanie; możesz iterować po kolekcji archiwów i renderować każde z tymi samymi ustawieniami.  
-- **Czy potrzebuję Maven, aby używać GroupDocs.Viewer?** Tak, dodaj zależność Maven `groupdocs-viewer`, jak pokazano poniżej.  
-- **Jakie formaty wyjściowe są obsługiwane?** Dostępne są zarówno jednopostaciowy HTML, jak i wielostronicowy HTML, a biblioteka obsługuje ponad 50 typów archiwów wejściowych.
+- **Czy konwersja wsadowa jest możliwa?** Absolutnie; możesz iterować po kolekcji archiwów i renderować każde z tymi samymi ustawieniami.  
+- **Czy potrzebuję Maven, aby używać GroupDocs.Viewer?** Tak, dodaj zależność `groupdocs-viewer` Maven, jak pokazano poniżej.  
+- **Jakie formaty wyjściowe są obsługiwane?** Dostępne są HTML jednostronicowy i wielostronicowy, a biblioteka obsługuje ponad 50 typów archiwów wejściowych.
 
-## Co to jest „set items per page” w GroupDocs.Viewer?
-Ustawienie **set items per page** należy do opcji renderowania archiwum. Informuje podgląd, ile wpisów archiwum (plików lub folderów) powinno być wyświetlanych na każdej stronie HTML przy generowaniu dokumentu HTML wielostronicowego. Dostosowanie tej wartości pomaga zrównoważyć rozmiar strony i szybkość nawigacji, szczególnie w przypadku dużych archiwów.
+## Co oznacza „set items per page” w GroupDocs.Viewer?
+Określa, ile wpisów archiwum (plików lub folderów) powinno być wyświetlanych na każdej stronie HTML przy generowaniu dokumentu wielostronicowego. Dostosowanie tej wartości pomaga zbalansować rozmiar strony i szybkość nawigacji, szczególnie w przypadku dużych archiwów, ograniczając ilość danych ładowanych na jedną stronę i skracając czas renderowania dla użytkowników końcowych.
 
-## Dlaczego osadzać zasoby w HTML?
-Osadzanie zasobów (obrazów, CSS, czcionek) bezpośrednio w pliku HTML tworzy pojedynczy, przenośny dokument, który można otworzyć bez plików zewnętrznych. Jest to idealne rozwiązanie dla załączników e‑mail, przeglądania offline lub osadzania wyniku w innych stronach internetowych. To podejście upraszcza również wdrażanie, ponieważ nie trzeba zarządzać zewnętrznymi ścieżkami zasobów.
+## Dlaczego osadzać zasoby html?
+Osadzanie zasobów (obrazów, CSS, czcionek) bezpośrednio w pliku HTML tworzy pojedynczy, przenośny dokument, który można otworzyć bez plików zewnętrznych. Jest to idealne rozwiązanie dla załączników e‑mail, przeglądania offline lub wstawiania wyniku do innych stron internetowych. Eliminuje także konieczność zarządzania zewnętrznymi ścieżkami zasobów.
 
 ## Wymagania wstępne
 
@@ -79,7 +82,7 @@ Osadzanie zasobów (obrazów, CSS, czcionek) bezpośrednio w pliku HTML tworzy p
 - **Środowisko:** Zainstalowany i skonfigurowany Java Development Kit (JDK).  
 - **Wiedza:** Podstawowa znajomość Javy i zarządzania zależnościami Maven.  
 
-## Konfiguracja Maven GroupDocs Viewer
+## Konfiguracja Maven dla GroupDocs Viewer
 
 Dodaj repozytorium GroupDocs oraz zależność viewer do swojego `pom.xml`:
 
@@ -102,27 +105,28 @@ Dodaj repozytorium GroupDocs oraz zależność viewer do swojego `pom.xml`:
 ```
 
 ### Uzyskanie licencji
-GroupDocs.Viewer oferuje **link do wersji próbnej**, tymczasową licencję lub pełną opcję zakupu. Wybierz tę, która pasuje do harmonogramu Twojego projektu.
+GroupDocs.Viewer oferuje **free trial link**, tymczasową licencję lub pełną opcję zakupu. Wybierz tę, która pasuje do harmonogramu Twojego projektu.
 
-### Podstawowa inicjalizacja
-Po konfiguracji Maven, wprowadź viewer do swojego kodu:
+## Podstawowa inicjalizacja
+Klasa `Viewer` jest punktem wejścia do renderowania dokumentów i archiwów. Po konfiguracji Maven wprowadź viewer do swojego kodu:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 // Your initialization code here
 ```
 
-## Jak renderować archiwa do jednopostaciowego html
-Viewer jest klasą podstawową, która ładuje dokument lub archiwum do renderowania.
+## Jak renderować archiwa do jednostronicowego html
 
-Aby wygenerować pojedynczy plik HTML zawierający całe archiwum, utwórz instancję `Viewer` dla pliku ZIP i użyj `HtmlViewOptions.forEmbeddedResources()`, aby osadzić wszystkie obrazy, CSS i czcionki. Renderowanie archiwum z tymi opcjami tworzy jedną samodzielną stronę odpowiednią do e‑maila lub użytku offline.
+Klasa `HtmlViewOptions` definiuje ustawienia wyjścia HTML, takie jak osadzanie zasobów. Załaduj archiwum, skonfiguruj opcje HTML, aby osadzić zasoby, i renderuj wszystko do jednej samodzielnej strony. Powoduje to utworzenie jednego pliku HTML zawierającego wszystkie pliki, obrazy, CSS i czcionki, gotowego do użycia offline lub jako załącznik e‑mail.
+
+**Direct answer:** Utwórz instancję `Viewer` dla pliku ZIP, wywołaj `HtmlViewOptions.forEmbeddedResources()`, a następnie `viewer.view(documentPath, options)`. To generuje pojedynczy plik HTML zawierający wszystkie pliki, obrazy, CSS i czcionki, gotowy do użycia offline lub jako załącznik e‑mail.
 
 ### Krok 1: Zdefiniuj katalog wyjściowy
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-### Krok 2: Ustaw nazwę pliku dla jednopostaciowego wyjścia
+### Krok 2: Ustaw nazwę pliku dla jednostronicowego wyjścia
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result.html");
 ```
@@ -134,7 +138,9 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
 }
 ```
 
-### Krok 4: Skonfiguruj opcje renderowania (osadzanie zasobów w html)
+### Krok 4: Skonfiguruj opcje renderowania (osadzanie zasobów html)
+Klasa `HtmlViewOptions` definiuje ustawienia wyjścia HTML, takie jak osadzanie zasobów. Użyj `forEmbeddedResources()`, aby spakować wszystko w jeden plik.
+
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
@@ -146,9 +152,10 @@ viewer.view(options);
 ```
 
 ## Jak renderować archiwa do wielostronicowego html i ustawić liczbę elementów na stronę
-`HtmlViewOptions` konfiguruje sposób, w jaki viewer renderuje wyjście HTML, w tym paginację i osadzanie zasobów.
 
-Aby podzielić archiwum na wiele stron, utwórz `HtmlViewOptions.forEmbeddedResources()` i ustaw żądany rozmiar strony za pomocą `options.setItemsPerPage(20)`. Viewer wygeneruje oddzielne pliki HTML, z których każdy wyświetli do określonej liczby wpisów, co poprawia nawigację w dużych archiwach i zapewnia szybsze ładowanie.
+Klasa `HtmlViewOptions` obsługuje także paginację. Wywołując `options.setItemsPerPage(N)`, instruujesz viewer, aby podzielił archiwum na kilka plików HTML, z których każdy wyświetla maksymalnie **N** wpisów. To podejście przyspiesza nawigację w dużych archiwach, jednocześnie utrzymując każdą stronę lekką.
+
+**Direct answer:** Użyj `HtmlViewOptions.forEmbeddedResources()`, wywołaj `options.setItemsPerPage(N)`, i renderuj archiwum. Viewer wygeneruje osobne pliki HTML — po jednym na stronę — każdy zawierający do **N** wpisów, co przyspiesza nawigację w dużych archiwach.
 
 ### Krok 1: Ponownie użyj katalogu wyjściowego
 ```java
@@ -167,12 +174,14 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
 }
 ```
 
-### Krok 4: Skonfiguruj opcje wielostronicowe (osadzanie zasobów w html)
+### Krok 4: Skonfiguruj opcje wielostronicowe (osadzanie zasobów html)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
 ### Krok 5: Ustaw liczbę elementów na stronę (główne słowo kluczowe w akcji)
+`options.setItemsPerPage(20); // how to convert zip archives with 20 entries per page`
+
 ```java
 options.getArchiveOptions().setItemsPerPage(10); // Default is 16
 viewer.view(options);
@@ -180,55 +189,64 @@ viewer.view(options);
 
 ## Praktyczne zastosowania
 
-- **Systemy zarządzania dokumentami:** Dodaj funkcję podglądu archiwum bez instalowania dodatkowych przeglądarek.  
-- **Portale internetowe:** Zapewnij użytkownikom szybki, bezpobieralny sposób przeglądania zgrupowanych dokumentów.  
-- **Narzędzia współpracy:** Pozwól zespołom przeglądać współdzielone archiwa bezpośrednio w przeglądarce.
+- **Systemy zarządzania dokumentami:** Dodaj podgląd archiwów bez instalowania dodatkowych przeglądarek.  
+- **Portale internetowe:** Oferuj użytkownikom szybki, bezpobieralny sposób przeglądania zgrupowanych dokumentów.  
+- **Narzędzia współpracy:** Pozwól zespołom przeglądać udostępnione archiwa bezpośrednio w przeglądarce.
 
 ## Rozważania dotyczące wydajności
 
-- **Zarządzanie zasobami:** Utrzymuj niskie zużycie pamięci, przetwarzając archiwa w strumieniach; viewer może obsługiwać archiwa do 500 MB bez wczytywania całego pliku do pamięci.  
-- **Konwersja wsadowa archiwów:** Przejdź przez listę plików archiwów i wywołaj tę samą logikę renderowania, aby zmaksymalizować przepustowość.  
-- **Strategia buforowania:** Przechowuj renderowany HTML w pamięci podręcznej, jeśli to samo archiwum jest często dostępne, co skraca czas ponownego przetwarzania nawet o 70 %.
+- **Zarządzanie zasobami:** Utrzymuj niskie zużycie pamięci, przetwarzając archiwa w strumieniach; viewer radzi sobie z archiwami do 500 MB bez ładowania całego pliku do pamięci.  
+- **Konwersja wsadowa archiwów:** Przejdź przez listę plików archiwów i wywołaj tę samą logikę renderowania, aby maksymalizować przepustowość.  
+- **Strategia buforowania:** Przechowuj wygenerowany HTML w pamięci podręcznej, jeśli to samo archiwum jest często wywoływane, skracając czas ponownego przetwarzania nawet o 70 %.
 
 ## Najczęściej zadawane pytania
 
-**P: Co to jest GroupDocs.Viewer Java?**  
-A: GroupDocs.Viewer Java jest biblioteką po stronie serwera, która renderuje ponad 50 formatów dokumentów i archiwów — w tym ZIP i RAR — do HTML, PDF lub plików graficznych, bez potrzeby używania zewnętrznych aplikacji.
+**Q: What is GroupDocs.Viewer Java?**  
+A: GroupDocs.Viewer Java to biblioteka po stronie serwera, która renderuje ponad 50 formatów dokumentów i archiwów — w tym ZIP i RAR — do HTML, PDF lub plików graficznych, bez potrzeby zewnętrznych aplikacji.
 
-**P: Jak mogę uzyskać darmową wersję próbną GroupDocs.Viewer?**  
+**Q: How can I obtain a free trial of GroupDocs.Viewer?**  
 A: Odwiedź [free trial link](https://releases.groupdocs.com/viewer/java/), aby pobrać i przetestować.
 
-**P: Czy mogę konwertować inne typy dokumentów oprócz archiwów?**  
-A: Tak, viewer obsługuje PDF-y, Word, Excel, PowerPoint oraz ponad 35 dodatkowych formatów.
+**Q: Can I convert other document types besides archives?**  
+A: Tak, viewer obsługuje PDF‑y, Word, Excel, PowerPoint oraz ponad 35 dodatkowych formatów.
 
-**P: Co zrobić, gdy renderowanie jest wolne?**  
+**Q: What should I do if rendering is slow?**  
 A: Zmniejsz liczbę elementów na stronę, włącz strumieniowanie lub przetwarzaj archiwa w mniejszych partiach, aby zwiększyć szybkość.
 
-**P: Gdzie mogę uzyskać pomoc lub wsparcie?**  
+**Q: Where can I get help or support?**  
 A: Skontaktuj się poprzez [support forum](https://forum.groupdocs.com/c/viewer/9).
 
-**P: Czy można osadzić CSS i obrazy bezpośrednio w HTML?**  
-A: Zdecydowanie — użyj `HtmlViewOptions.forEmbeddedResources`, jak pokazano w przykładach.
+**Q: Is it possible to embed CSS and images directly in the HTML?**  
+A: Absolutnie — użyj `HtmlViewOptions.forEmbeddedResources`, jak pokazano w przykładach.
 
-**P: Jak wykonać konwersję wsadową folderu archiwów?**  
-A: Iteruj po każdym pliku za pomocą pętli `for`, stosując tę samą konfigurację `Viewer` i `HtmlViewOptions` dla każdej iteracji.
+**Q: How do I batch convert a folder of archives?**  
+A: Iteruj po każdym pliku w pętli `for`, stosując tę samą konfigurację `Viewer` i `HtmlViewOptions` dla każdej iteracji.
+
+**Q: Where can I discuss issues with other users?**  
+A: Odwiedź [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) w celu dyskusji społecznościowych.
 
 ## Zasoby
 
-- **Dokumentacja:** Zagłęb się w funkcjonalność z [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/).  
-- **Referencja API:** Przeglądaj pełne API na [GroupDocs API](https://reference.groupdocs.com/viewer/java/).  
-- **Pobieranie:** Pobierz najnowsze pliki binarne ze [download page](https://releases.groupdocs.com/viewer/java/).  
-- **Zakup i licencjonowanie:** Przejrzyj opcje na [purchase page](https://purchase.groupdocs.com/buy).  
-- **Wsparcie i społeczność:** Dołącz do dyskusji na [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9).
+- **Documentation:** Zagłęb się w funkcjonalności dzięki [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/).  
+- **API reference:** Przeglądaj pełne API na [GroupDocs API](https://reference.groupdocs.com/viewer/java/).  
+- **Download:** Pobierz najnowsze binaria z [download page](https://releases.groupdocs.com/viewer/java/).  
+- **Purchase and licensing:** Zapoznaj się z opcjami na [purchase page](https://purchase.groupdocs.com/buy).  
+- **Support and community:** Dołącz do dyskusji na [support forum](https://forum.groupdocs.com/c/viewer/9).  
+- **GroupDocs forum:** Uzyskaj pomoc społeczności na [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9).
 
 ---
 
-**Ostatnia aktualizacja:** 2026-08-03  
+**Ostatnia aktualizacja:** 2026-10-10  
 **Testowano z:** GroupDocs.Viewer 25.2  
 **Autor:** GroupDocs
 
 ## Powiązane samouczki
 
-- [Jak konwertować zip do HTML i renderować foldery zip w Javie za pomocą GroupDocs.Viewer](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
-- [konwertować zip do pdf za pomocą GroupDocs.Viewer Java - Niestandardowe nazwy plików](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
+- [Jak konwertować zip do HTML i renderować foldery zip w Javie przy użyciu GroupDocs.Viewer](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
+- [konwertuj zip do pdf przy użyciu GroupDocs.Viewer Java – niestandardowe nazwy plików](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
 - [Jak konwertować DOCX do HTML przy użyciu GroupDocs.Viewer dla Java: Przewodnik krok po kroku](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/products-backtop-button >}}

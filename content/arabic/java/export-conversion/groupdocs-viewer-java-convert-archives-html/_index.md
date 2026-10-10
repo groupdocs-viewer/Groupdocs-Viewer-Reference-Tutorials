@@ -1,24 +1,23 @@
 ---
-date: '2026-08-03'
-description: تعلم كيفية تحويل zip إلى html باستخدام GroupDocs.Viewer Java، وتحديد
-  عدد العناصر لكل صفحة، وتضمين موارد html، وتحويل الأرشيفات دفعة واحدة بكفاءة.
+date: '2026-10-10'
+description: تعرف على كيفية تحويل zip إلى html باستخدام GroupDocs.Viewer Java، وتعيين
+  عدد العناصر لكل صفحة، وتضمين موارد html، وتحويل الأرشيفات دفعةً واحدةً بكفاءة.
+images:
+- /java/export-conversion/groupdocs-viewer-java-convert-archives-html/og-image.png
 keywords:
-- convert zip to html
-- how to batch convert
-- embed resources html
-- batch convert archives
-- how to convert archives
-lastmod: '2026-08-03'
-og_description: تعلم كيفية تحويل zip إلى html باستخدام GroupDocs.Viewer Java، وتحديد
-  عدد العناصر لكل صفحة، وتضمين موارد html، وتحويل الأرشيفات دفعة واحدة بكفاءة. تابع
-  التعليمات البرمجية خطوة بخطوة ونصائح الأداء.
-og_image_alt: 'Guide: convert zip to html with GroupDocs.Viewer Java, showing pagination
-  and embedded resources'
-og_title: تحويل zip إلى html وتحديد عدد العناصر لكل صفحة باستخدام GroupDocs.Viewer
-  Java
+- how to convert zip
+- convert archive to html
+- java convert zip html
+lastmod: '2026-10-10'
+og_description: تعرف على كيفية تحويل zip إلى html باستخدام GroupDocs.Viewer Java،
+  وتضمين الموارد، وتعيين عدد العناصر لكل صفحة، ومعالجة الأرشيفات دفعةً واحدةً للحصول
+  على معاينات ويب سريعة ومحمولة.
+og_image_alt: 'Developer guide: convert zip to HTML with GroupDocs.Viewer Java, showing
+  pagination and embedded resources'
+og_title: تحويل zip إلى HTML مع الترميز الصفحي باستخدام GroupDocs.Viewer Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-03'
+  dateModified: '2026-10-10'
   description: Learn how to convert zip to html using GroupDocs.Viewer Java, set items
     per page, embed resources html, and batch convert archives efficiently.
   headline: Convert zip to html and set items per page with GroupDocs.Viewer Java
@@ -46,38 +45,43 @@ tags:
 - Java archive conversion
 - html rendering
 - batch conversion
-title: تحويل zip إلى html وتحديد عدد العناصر لكل صفحة باستخدام GroupDocs.Viewer Java
+title: تحويل ملف zip إلى html وتعيين عدد العناصر لكل صفحة باستخدام GroupDocs.Viewer
+  Java
 type: docs
 url: /ar/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
 # تحويل zip إلى html وتعيين عدد العناصر لكل صفحة باستخدام GroupDocs.Viewer Java
 
-في العديد من تطبيقات الويب تحتاج إلى عرض محتويات أرشيف ZIP أو RAR مباشرةً في المتصفح. مع GroupDocs.Viewer for Java يمكنك **تحويل zip إلى html** في خطوة واحدة، التحكم في عدد مدخلات الأرشيف التي تظهر في كل صفحة، تضمين جميع الصور وCSS الداعمة، وحتى معالجة مجموعة من الأرشيفات دفعةً. يشرح هذا البرنامج التعليمي سير العمل الكامل، من إعداد Maven إلى العرض متعدد الصفحات، ويوضح لماذا كل إعداد مهم للأداء وسهولة الاستخدام.
+في العديد من تطبيقات الويب تحتاج إلى عرض محتويات أرشيف ZIP أو RAR مباشرةً في المتصفح. **How to convert zip** إلى HTML باستخدام GroupDocs.Viewer for Java هو طلب شائع، وتتيح المكتبة تضمين الصور وCSS والخطوط بحيث يكون الناتج صفحة واحدة محمولة. يشرح هذا الدرس كل شيء—من إعداد Maven إلى العرض متعدد الصفحات—مع توضيح سبب أهمية كل خيار للأداء وسهولة الاستخدام.
 
-![تحويل الأرشيفات إلى HTML باستخدام GroupDocs.Viewer for Java](/viewer/export-conversion/convert-archives-to-html-java.png)
+![Convert Archives to HTML with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-archives-to-html-java.png)
 
 ## إجابات سريعة
-- **ما الذي يتحكم فيه “set items per page”?** يحدد عدد الملفات أو المجلدات من الأرشيف التي تظهر في كل صفحة HTML تم إنشاؤها.  
-- **هل يمكنني تضمين الصور وCSS مباشرةً في HTML؟** نعم – استخدم خيار `forEmbeddedResources` لتضمين الموارد في HTML.  
-- **هل التحويل الجماعي ممكن؟** بالطبع؛ يمكنك التكرار عبر مجموعة من الأرشيفات وعرض كل واحدة باستخدام نفس الإعدادات.  
-- **هل أحتاج إلى Maven لاستخدام GroupDocs.Viewer؟** نعم، أضف تبعية Maven `groupdocs-viewer` كما هو موضح أدناه.  
-- **ما صيغ الإخراج المدعومة؟** HTML بصفحة واحدة وHTML متعدد الصفحات كلاهما متاح، وتدعم المكتبة أكثر من 50 نوعًا من أنواع الأرشيفات المدخلة.
+- **What does “set items per page” control?** يحدد عدد الملفات أو المجلدات من الأرشيف التي تظهر في كل صفحة HTML مُولَّدة.  
+- **Can I embed images and CSS directly in the HTML?** نعم – استخدم خيار `forEmbeddedResources` لتضمين الموارد داخل HTML.  
+- **Is batch conversion possible?** بالتأكيد؛ يمكنك تكرار العملية على مجموعة من الأرشيفات وعرض كل واحدة بالإعدادات نفسها.  
+- **Do I need Maven to use GroupDocs.Viewer?** نعم، أضف تبعية `groupdocs-viewer` في Maven كما هو موضح أدناه.  
+- **Which output formats are supported?** كل من HTML صفحة واحدة وHTML متعدد الصفحات متاحان، وتدعم المكتبة أكثر من 50 نوعًا من أنواع الأرشيفات المدخلة.
 
 ## ما هو “set items per page” في GroupDocs.Viewer؟
-إعداد **set items per page** يندرج تحت خيارات عرض الأرشيف. يخبر المشاهد بعدد مدخلات الأرشيف (ملفات أو مجلدات) التي يجب عرضها في كل صفحة HTML عند إنشاء مستند HTML متعدد الصفحات. تعديل هذه القيمة يساعدك على موازنة حجم الصفحة وسرعة التنقل، خاصةً للأرشيفات الكبيرة.
+يخبر المشاهد بعدد إدخالات الأرشيف (ملفات أو مجلدات) التي يجب عرضها في كل صفحة HTML عند إنشاء مستند متعدد الصفحات. يساعد ضبط هذه القيمة على موازنة حجم الصفحة وسرعة التنقل، خاصةً للأرشيفات الكبيرة، من خلال الحد من كمية البيانات المحمَّلة لكل صفحة وتقليل وقت العرض للمستخدم النهائي.
 
-## لماذا يتم تضمين الموارد في HTML؟
-تضمين الموارد (الصور، CSS، الخطوط) مباشرةً داخل ملف HTML يخلق مستندًا واحدًا محمولًا يمكن فتحه دون ملفات خارجية. هذا مثالي لمرفقات البريد الإلكتروني، العرض دون اتصال، أو تضمين النتيجة في صفحات ويب أخرى. كما يبسط هذا النهج عملية النشر لأنه لا حاجة لإدارة مسارات أصول خارجية.
+## لماذا تضمين الموارد html؟
+تضمين الموارد (الصور، CSS، الخطوط) مباشرة داخل ملف HTML يُنشئ مستندًا واحدًا محمولًا يمكن فتحه دون ملفات خارجية. هذا مثالي لمرفقات البريد الإلكتروني، العرض دون اتصال، أو تضمين الناتج في صفحات ويب أخرى. كما أنه يلغي الحاجة لإدارة مسارات الأصول الخارجية.
 
 ## المتطلبات المسبقة
 
 - **المكتبات المطلوبة:** تضمين GroupDocs.Viewer الإصدار 25.2 أو أحدث.  
-- **البيئة:** مجموعة تطوير جافا (JDK) مثبتة ومُكوَّنة.  
-- **المعرفة:** جافا أساسية وإدارة تبعيات Maven.  
+- **البيئة:** تثبيت وتكوين Java Development Kit (JDK).  
+- **المعرفة:** أساسيات Java وإدارة تبعيات Maven.  
 
-## إعداد Maven لـ GroupDocs Viewer
+## إعداد Maven لمكتبة GroupDocs Viewer
 
 أضف مستودع GroupDocs وتبعية المشاهد إلى ملف `pom.xml` الخاص بك:
 
@@ -100,27 +104,27 @@ weight: 1
 ```
 
 ### الحصول على الترخيص
-يقدم GroupDocs.Viewer **رابط تجربة مجانية**، ترخيصًا مؤقتًا، أو خيار شراء كامل. اختر ما يناسب جدول مشروعك الزمني.
+يقدم GroupDocs.Viewer **رابط تجربة مجانية**، ترخيصًا مؤقتًا، أو خيار شراء كامل. اختر ما يناسب جدول مشروعك.
 
-### التهيئة الأساسية
-بعد إعداد Maven، أدخل المشاهد في الكود الخاص بك:
+## التهيئة الأساسية
+فئة `Viewer` هي نقطة الدخول لعرض المستندات والأرشيفات. بعد إعداد Maven، استدعِ المشاهد في الكود الخاص بك:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 // Your initialization code here
 ```
 
-## كيفية عرض الأرشيفات إلى HTML بصفحة واحدة
-Viewer هو الفئة الأساسية التي تقوم بتحميل مستند أو أرشيف للعرض.
+## كيفية تحويل الأرشيفات إلى html صفحة واحدة
+تحدد فئة `HtmlViewOptions` إعدادات إخراج HTML، مثل تضمين الموارد. حمِّل الأرشيف، اضبط خيارات HTML لتضمين الموارد، وعرض كل شيء في صفحة واحدة ذاتية المحتوى. ينتج عن ذلك ملف HTML واحد يحتوي على جميع الملفات، الصور، CSS، والخطوط، جاهز للاستخدام دون اتصال أو كمرفق بريد إلكتروني.
 
-لإنشاء ملف HTML واحد يحتوي على الأرشيف بالكامل، أنشئ مثيل `Viewer` لملف ZIP واستخدم `HtmlViewOptions.forEmbeddedResources()` لتضمين جميع الصور وCSS والخطوط. عرض الأرشيف بهذه الخيارات ينتج صفحة واحدة متكاملة مناسبة للبريد الإلكتروني أو الاستخدام دون اتصال.
+**Direct answer:** أنشئ كائن `Viewer` لملف ZIP، استدعِ `HtmlViewOptions.forEmbeddedResources()`، ثم نفّذ `viewer.view(documentPath, options)`. ينتج ملف HTML واحد يحتوي على جميع الملفات، الصور، CSS، والخطوط، جاهز للاستخدام دون اتصال أو كمرفق بريد إلكتروني.
 
 ### الخطوة 1: تحديد دليل الإخراج
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-### الخطوة 2: تعيين اسم الملف لإخراج صفحة واحدة
+### الخطوة 2: تعيين اسم الملف للإخراج صفحة واحدة
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result.html");
 ```
@@ -132,7 +136,7 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
 }
 ```
 
-### الخطوة 4: تكوين خيارات العرض (تضمين الموارد في HTML)
+### الخطوة 4: تكوين خيارات العرض (تضمين الموارد html)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
@@ -143,10 +147,10 @@ options.setRenderToSinglePage(true);
 viewer.view(options);
 ```
 
-## كيفية عرض الأرشيفات إلى HTML متعدد الصفحات وتعيين عدد العناصر لكل صفحة
-`HtmlViewOptions` يكوّن كيفية عرض المشاهد لمخرجات HTML، بما في ذلك التقسيم إلى صفحات وتضمين الموارد.
+## كيفية تحويل الأرشيفات إلى html متعدد الصفحات وتعيين عدد العناصر لكل صفحة
+تدعم فئة `HtmlViewOptions` أيضًا الترقيم. عبر استدعاء `options.setItemsPerPage(N)`، تُخبر المشاهد بتقسيم الأرشيف إلى عدة ملفات HTML، كل منها يعرض حتى **N** إدخالات. يحسن هذا من سرعة التنقل للأرشيفات الكبيرة مع الحفاظ على خفة كل صفحة.
 
-لتقسيم أرشيف إلى صفحات متعددة، أنشئ `HtmlViewOptions.forEmbeddedResources()` وحدد حجم الصفحة المطلوب باستخدام `options.setItemsPerPage(20)`. سيولد المشاهد ملفات HTML منفصلة، كل منها يعرض حتى عدد المدخلات المحدد، مما يحسن التنقل للأرشيفات الكبيرة ويضمن تحميلًا أسرع.
+**Direct answer:** استخدم `HtmlViewOptions.forEmbeddedResources()`، استدعِ `options.setItemsPerPage(N)`، وعرض الأرشيف. سيولد المشاهد ملفات HTML منفصلة—واحدة لكل صفحة—كل منها يحتوي على ما يصل إلى **N** إدخالات، مما يسرّع التنقل في الأرشيفات الكبيرة.
 
 ### الخطوة 1: إعادة استخدام دليل الإخراج
 ```java
@@ -165,68 +169,79 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
 }
 ```
 
-### الخطوة 4: تكوين خيارات متعددة الصفحات (تضمين الموارد في HTML)
+### الخطوة 4: تكوين خيارات متعددة الصفحات (تضمين الموارد html)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
 ### الخطوة 5: تعيين عدد العناصر لكل صفحة (الكلمة المفتاحية الأساسية في الإجراء)
+`options.setItemsPerPage(20); // كيفية تحويل أرشيفات zip مع 20 مدخلًا لكل صفحة`
+
 ```java
 options.getArchiveOptions().setItemsPerPage(10); // Default is 16
 viewer.view(options);
 ```
 
-## تطبيقات عملية
+## التطبيقات العملية
 
-- **أنظمة إدارة المستندات:** أضف وظيفة معاينة الأرشيف دون تثبيت مشاهدات إضافية.  
-- **بوابات الويب:** وفر للمستخدمين طريقة سريعة، بدون تحميل، لاستكشاف المستندات المجمعة.  
-- **أدوات التعاون:** السماح للفرق بفحص الأرشيفات المشتركة مباشرةً في المتصفح.
+- **أنظمة إدارة المستندات:** إضافة وظيفة معاينة الأرشيفات دون تثبيت عارضات إضافية.  
+- **بوابات الويب:** تقديم طريقة سريعة للمستخدمين لاستكشاف المستندات المجمعة دون تحميل.  
+- **أدوات التعاون:** تمكين الفرق من فحص الأرشيفات المشتركة مباشرةً في المتصفح.
 
 ## اعتبارات الأداء
 
 - **إدارة الموارد:** حافظ على انخفاض استهلاك الذاكرة بمعالجة الأرشيفات عبر التدفقات؛ يمكن للمشاهد التعامل مع أرشيفات تصل إلى 500 ميغابايت دون تحميل الملف بالكامل في الذاكرة.  
-- **تحويل الأرشيفات دفعةً:** تكرار عبر قائمة ملفات الأرشيف واستدعاء نفس منطق العرض لتعظيم الإنتاجية.  
-- **استراتيجية التخزين المؤقت:** احفظ HTML المُعرض في ذاكرة مؤقتة إذا تم الوصول إلى نفس الأرشيف بشكل متكرر، مما يقلل وقت المعالجة المتكرر حتى 70 %.
+- **تحويل دفعي للأرشيفات:** كرّر العملية عبر قائمة من ملفات الأرشيف واستدعِ نفس منطق العرض لتعظيم الإنتاجية.  
+- **استراتيجية التخزين المؤقت:** احفظ HTML المُحوَّل في ذاكرة مؤقتة إذا تم الوصول إلى نفس الأرشيف بشكل متكرر، مما يقلل وقت المعالجة المتكرر حتى 70 %.
 
 ## الأسئلة المتكررة
 
 **س: ما هو GroupDocs.Viewer Java؟**  
-ج: GroupDocs.Viewer Java هي مكتبة على الخادم تقوم بتحويل أكثر من 50 تنسيق مستند وأرشيف — بما في ذلك ZIP و RAR — إلى HTML أو PDF أو ملفات صور دون الحاجة إلى تطبيقات خارجية.
+ج: GroupDocs.Viewer Java هي مكتبة خادم تُحوِّل أكثر من 50 تنسيق مستند وأرشيف — بما في ذلك ZIP وRAR — إلى HTML أو PDF أو ملفات صور دون الحاجة لتطبيقات خارجية.
 
-**س: كيف يمكنني الحصول على نسخة تجريبية مجانية من GroupDocs.Viewer؟**  
-ج: قم بزيارة [رابط التجربة المجانية](https://releases.groupdocs.com/viewer/java/) للتنزيل والاختبار.
+**س: كيف يمكنني الحصول على تجربة مجانية من GroupDocs.Viewer؟**  
+ج: زر [free trial link](https://releases.groupdocs.com/viewer/java/) للتحميل والتجربة.
 
 **س: هل يمكنني تحويل أنواع مستندات أخرى غير الأرشيفات؟**  
-ج: نعم، يدعم المشاهد ملفات PDF، Word، Excel، PowerPoint، وأكثر من 35 تنسيقًا إضافيًا.
+ج: نعم، يدعم المشاهد ملفات PDF وWord وExcel وPowerPoint وأكثر من 35 تنسيقًا إضافيًا.
 
 **س: ماذا أفعل إذا كان العرض بطيئًا؟**  
 ج: قلل عدد العناصر لكل صفحة، فعّل التدفق، أو عالج الأرشيفات على دفعات أصغر لتحسين السرعة.
 
-**س: أين يمكنني الحصول على المساعدة أو الدعم؟**  
-ج: تواصل عبر [منتدى الدعم](https://forum.groupdocs.com/c/viewer/9).
+**س: أين يمكنني الحصول على مساعدة أو دعم؟**  
+ج: تواصل عبر [support forum](https://forum.groupdocs.com/c/viewer/9).
 
-**س: هل من الممكن تضمين CSS والصور مباشرةً في HTML؟**  
-ج: بالطبع—استخدم `HtmlViewOptions.forEmbeddedResources` كما هو موضح في الأمثلة.
+**س: هل يمكن تضمين CSS والصور مباشرة في HTML؟**  
+ج: بالتأكيد — استخدم `HtmlViewOptions.forEmbeddedResources` كما هو موضح في الأمثلة.
 
-**س: كيف يمكنني تحويل مجلد من الأرشيفات دفعةً؟**  
-ج: قم بالتكرار على كل ملف باستخدام حلقة `for`، مع تطبيق نفس تكوين `Viewer` و `HtmlViewOptions` لكل تكرار.
+**س: كيف أقوم بتحويل دفعي لمجلد من الأرشيفات؟**  
+ج: كرّر عبر كل ملف باستخدام حلقة `for`، مع تطبيق نفس تكوين `Viewer` و`HtmlViewOptions` لكل تكرار.
+
+**س: أين يمكنني مناقشة المشكلات مع مستخدمين آخرين؟**  
+ج: زر [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) للمناقشات المجتمعية.
 
 ## الموارد
 
-- **التوثيق:** استكشف الوظائف بعمق مع [توثيق GroupDocs](https://docs.groupdocs.com/viewer/java/).  
-- **مرجع API:** استكشف الـ API الكامل على [GroupDocs API](https://reference.groupdocs.com/viewer/java/).  
-- **التنزيل:** احصل على أحدث الملفات الثنائية من [صفحة التنزيل](https://releases.groupdocs.com/viewer/java/).  
-- **الشراء والترخيص:** راجع الخيارات على [صفحة الشراء](https://purchase.groupdocs.com/buy).  
-- **الدعم والمجتمع:** انضم إلى المناقشات على [منتدى GroupDocs](https://forum.groupdocs.com/c/viewer/9).
+- **Documentation:** استكشف المزيد من الوظائف عبر [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/).  
+- **API reference:** تصفح API الكامل على [GroupDocs API](https://reference.groupdocs.com/viewer/java/).  
+- **Download:** احصل على أحدث الثنائيات من [download page](https://releases.groupdocs.com/viewer/java/).  
+- **Purchase and licensing:** راجع الخيارات على [purchase page](https://purchase.groupdocs.com/buy).  
+- **Support and community:** انضم إلى المناقشات عبر [support forum](https://forum.groupdocs.com/c/viewer/9).  
+- **GroupDocs forum:** احصل على مساعدة المجتمع في [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9).
 
 ---
 
-**آخر تحديث:** 2026-08-03  
-**تم الاختبار مع:** GroupDocs.Viewer 25.2  
-**المؤلف:** GroupDocs
+**آخر تحديث:** 2026-10-10  
+**Tested With:** GroupDocs.Viewer 25.2  
+**Author:** GroupDocs
 
-## دروس ذات صلة
+## الدروس ذات الصلة
 
-- [كيفية تحويل zip إلى HTML وعرض مجلدات zip في Java باستخدام GroupDocs.Viewer](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
-- [تحويل zip إلى pdf باستخدام GroupDocs.Viewer Java - أسماء ملفات مخصصة](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
-- [كيفية تحويل DOCX إلى HTML باستخدام GroupDocs.Viewer for Java: دليل خطوة بخطوة](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [How to convert zip to HTML and render zip folders in Java with GroupDocs.Viewer](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
+- [convert zip to pdf with GroupDocs.Viewer Java - Custom Filenames](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
+- [How to Convert DOCX to HTML Using GroupDocs.Viewer for Java: A Step‑By‑Step Guide](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/products-backtop-button >}}

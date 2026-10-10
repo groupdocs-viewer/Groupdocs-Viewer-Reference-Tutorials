@@ -1,25 +1,23 @@
 ---
-date: '2026-08-03'
+date: '2026-10-10'
 description: Learn how to convert zip to html using GroupDocs.Viewer Java, set items
   per page, embed resources html, and batch convert archives efficiently.
 images:
 - /java/export-conversion/groupdocs-viewer-java-convert-archives-html/og-image.png
 keywords:
-- convert zip to html
-- how to batch convert
-- embed resources html
-- batch convert archives
-- how to convert archives
-lastmod: '2026-08-03'
-og_description: Learn how to convert zip to html using GroupDocs.Viewer Java, set
-  items per page, embed resources html, and batch convert archives efficiently. Follow
-  step‑by‑step code and performance tips.
-og_image_alt: 'Guide: convert zip to html with GroupDocs.Viewer Java, showing pagination
-  and embedded resources'
-og_title: Convert zip to html and set items per page with GroupDocs.Viewer Java
+- how to convert zip
+- convert archive to html
+- java convert zip html
+lastmod: '2026-10-10'
+og_description: Learn how to convert zip to html with GroupDocs.Viewer Java, embed
+  resources, set items per page, and batch‑process archives for fast, portable web
+  previews.
+og_image_alt: 'Developer guide: convert zip to HTML with GroupDocs.Viewer Java, showing
+  pagination and embedded resources'
+og_title: Convert zip to HTML with pagination GroupDocs.Viewer Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-03'
+  dateModified: '2026-10-10'
   description: Learn how to convert zip to html using GroupDocs.Viewer Java, set items
     per page, embed resources html, and batch convert archives efficiently.
   headline: Convert zip to html and set items per page with GroupDocs.Viewer Java
@@ -53,9 +51,13 @@ url: /java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
 # Convert zip to html and set items per page with GroupDocs.Viewer Java
 
-In many web applications you need to show the contents of a ZIP or RAR archive directly in a browser. With GroupDocs.Viewer for Java you can **convert zip to html** in a single step, control how many archive entries appear on each page, embed all supporting images and CSS, and even batch‑process dozens of archives. This tutorial walks you through the complete workflow, from Maven setup to multi‑page rendering, and explains why each setting matters for performance and usability.
+In many web applications you need to show the contents of a ZIP or RAR archive directly in a browser. **How to convert zip** files into HTML using GroupDocs.Viewer for Java is a common requirement, and the library lets you embed images, CSS, and fonts so the result is a single, portable page. This tutorial walks you through everything—from Maven setup to multi‑page rendering—while explaining why each option matters for performance and usability.
 
 ![Convert Archives to HTML with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-archives-to-html-java.png)
 
@@ -67,10 +69,10 @@ In many web applications you need to show the contents of a ZIP or RAR archive d
 - **Which output formats are supported?** Single‑page HTML and multi‑page HTML are both available, and the library supports 50+ input archive types.
 
 ## What is “set items per page” in GroupDocs.Viewer?
-The **set items per page** setting belongs to the archive rendering options. It tells the viewer how many archive entries (files or folders) should be displayed on each HTML page when you generate a multi‑page HTML document. Adjusting this value helps you balance page size and navigation speed, especially for large archives.
+It tells the viewer how many archive entries (files or folders) should be displayed on each HTML page when you generate a multi‑page document. Adjusting this value helps you balance page size and navigation speed, especially for large archives, by limiting the amount of data loaded per page and reducing rendering time for end users.
 
 ## Why embed resources html?
-Embedding resources (images, CSS, fonts) directly inside the HTML file creates a single, portable document that can be opened without external files. This is ideal for email attachments, offline viewing, or embedding the output into other web pages. This approach also simplifies deployment because no external asset paths need to be managed.
+Embedding resources (images, CSS, fonts) directly inside the HTML file creates a single, portable document that can be opened without external files. This is ideal for email attachments, offline viewing, or embedding the output into other web pages. It also removes the need to manage external asset paths.
 
 ## Prerequisites
 
@@ -103,8 +105,8 @@ Add the GroupDocs repository and the viewer dependency to your `pom.xml`:
 ### License acquisition
 GroupDocs.Viewer offers a **free trial link**, a temporary license, or a full purchase option. Choose the one that fits your project timeline.
 
-### Basic initialization
-After the Maven setup, bring the viewer into your code:
+## Basic initialization
+The `Viewer` class is the entry point for rendering documents and archives. After the Maven setup, bring the viewer into your code:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -112,9 +114,9 @@ import com.groupdocs.viewer.Viewer;
 ```
 
 ## How to render archives to single‑page html
-Viewer is the core class that loads a document or archive for rendering.
+The `HtmlViewOptions` class defines settings for HTML output, such as embedding resources. Load the archive, configure HTML options to embed resources, and render everything into one self‑contained page. This produces a single HTML file that contains all files, images, CSS, and fonts, ready for offline use or email attachment.
 
-To generate a single HTML file that contains the entire archive, create a `Viewer` instance for the ZIP file and use `HtmlViewOptions.forEmbeddedResources()` to embed all images, CSS, and fonts. Rendering the archive with these options produces one self‑contained page suitable for email or offline use.
+**Direct answer:** Create a `Viewer` instance for the ZIP file, call `HtmlViewOptions.forEmbeddedResources()`, and invoke `viewer.view(documentPath, options)`. This produces a single HTML file that contains all files, images, CSS, and fonts, ready for offline use or email attachment.
 
 ### Step 1: Define output directory
 ```java
@@ -134,6 +136,8 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
 ```
 
 ### Step 4: Configure rendering options (embed resources html)
+The `HtmlViewOptions` class defines settings for HTML output, such as embedding resources. Use `forEmbeddedResources()` to bundle everything into one file.
+
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
@@ -145,9 +149,9 @@ viewer.view(options);
 ```
 
 ## How to render archives to multi‑page html and set items per page
-`HtmlViewOptions` configures how the viewer renders HTML output, including pagination and resource embedding.
+The `HtmlViewOptions` class also supports pagination. By calling `options.setItemsPerPage(N)`, you instruct the viewer to split the archive into several HTML files, each showing up to **N** entries. This approach improves navigation speed for large archives while keeping each page lightweight.
 
-To split an archive into multiple pages, create `HtmlViewOptions.forEmbeddedResources()` and set the desired page size with `options.setItemsPerPage(20)`. The viewer will generate separate HTML files, each showing up to the specified number of entries, which improves navigation for large archives and ensures faster loading.
+**Direct answer:** Use `HtmlViewOptions.forEmbeddedResources()`, call `options.setItemsPerPage(N)`, and render the archive. The viewer will generate separate HTML files—one per page—each containing up to **N** entries, which speeds up navigation for big archives.
 
 ### Step 1: Reuse the output directory
 ```java
@@ -172,6 +176,8 @@ HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathForma
 ```
 
 ### Step 5: Set items per page (primary keyword in action)
+`options.setItemsPerPage(20); // how to convert zip archives with 20 entries per page`
+
 ```java
 options.getArchiveOptions().setItemsPerPage(10); // Default is 16
 viewer.view(options);
@@ -212,22 +218,31 @@ A: Absolutely—use `HtmlViewOptions.forEmbeddedResources` as shown in the examp
 **Q: How do I batch convert a folder of archives?**  
 A: Iterate over each file with a `for` loop, applying the same `Viewer` and `HtmlViewOptions` configuration for each iteration.
 
+**Q: Where can I discuss issues with other users?**  
+A: Visit the [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) for community discussions.
+
 ## Resources
 
 - **Documentation:** Dive deeper into functionality with the [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/).  
 - **API reference:** Explore the full API at the [GroupDocs API](https://reference.groupdocs.com/viewer/java/).  
 - **Download:** Get the latest binaries from the [download page](https://releases.groupdocs.com/viewer/java/).  
 - **Purchase and licensing:** Review options on the [purchase page](https://purchase.groupdocs.com/buy).  
-- **Support and community:** Join discussions on the [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9).
+- **Support and community:** Join discussions on the [support forum](https://forum.groupdocs.com/c/viewer/9).  
+- **GroupDocs forum:** Access community help at the [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9).
 
 ---
 
-**Last Updated:** 2026-08-03  
+**Last Updated:** 2026-10-10  
 **Tested With:** GroupDocs.Viewer 25.2  
 **Author:** GroupDocs
 
-## Related Tutorials
+## Related tutorials
 
 - [How to convert zip to HTML and render zip folders in Java with GroupDocs.Viewer](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
 - [convert zip to pdf with GroupDocs.Viewer Java - Custom Filenames](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
 - [How to Convert DOCX to HTML Using GroupDocs.Viewer for Java: A Step‑By‑Step Guide](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/products-backtop-button >}}

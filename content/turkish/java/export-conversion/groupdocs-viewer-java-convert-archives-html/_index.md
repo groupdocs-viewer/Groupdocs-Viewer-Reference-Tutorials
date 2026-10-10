@@ -1,26 +1,24 @@
 ---
-date: '2026-08-03'
+date: '2026-10-10'
 description: GroupDocs.Viewer Java kullanarak zip'i html'ye nasıl dönüştüreceğinizi,
-  sayfa başına öğe sayısını nasıl ayarlayacağınızı, html kaynaklarını nasıl gömeceğinizi
-  ve arşivleri verimli bir şekilde toplu olarak nasıl dönüştüreceğinizi öğrenin.
+  sayfa başına öğe sayısını nasıl ayarlayacağınızı, embed resources html ve arşivleri
+  verimli bir şekilde toplu olarak nasıl dönüştüreceğinizi öğrenin.
+images:
+- /java/export-conversion/groupdocs-viewer-java-convert-archives-html/og-image.png
 keywords:
-- convert zip to html
-- how to batch convert
-- embed resources html
-- batch convert archives
-- how to convert archives
-lastmod: '2026-08-03'
-og_description: GroupDocs.Viewer Java kullanarak zip'i html'ye nasıl dönüştüreceğinizi,
-  sayfa başına öğe sayısını nasıl ayarlayacağınızı, html kaynaklarını nasıl gömeceğinizi
-  ve arşivleri verimli bir şekilde toplu olarak nasıl dönüştüreceğinizi öğrenin. Adım
-  adım kod ve performans ipuçlarını izleyin.
-og_image_alt: 'Guide: convert zip to html with GroupDocs.Viewer Java, showing pagination
-  and embedded resources'
-og_title: GroupDocs.Viewer Java ile zip'i html'ye dönüştürün ve sayfa başına öğe sayısını
-  ayarlayın
+- how to convert zip
+- convert archive to html
+- java convert zip html
+lastmod: '2026-10-10'
+og_description: GroupDocs.Viewer Java ile zip'i html'ye nasıl dönüştüreceğinizi, embed
+  resources, sayfa başına öğe sayısını nasıl ayarlayacağınızı ve fast, portable web
+  previews için arşivleri batch‑process nasıl yapacağınızı öğrenin.
+og_image_alt: 'Developer guide: convert zip to HTML with GroupDocs.Viewer Java, showing
+  pagination and embedded resources'
+og_title: GroupDocs.Viewer Java ile sayfalama özelliğiyle zip'i HTML'ye dönüştürün
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-03'
+  dateModified: '2026-10-10'
   description: Learn how to convert zip to html using GroupDocs.Viewer Java, set items
     per page, embed resources html, and batch convert archives efficiently.
   headline: Convert zip to html and set items per page with GroupDocs.Viewer Java
@@ -55,33 +53,38 @@ url: /tr/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
-# ZIP'i HTML'ye dönüştürün ve sayfa başına öğe sayısını GroupDocs.Viewer Java ile ayarlayın
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-Birçok web uygulamasında ZIP veya RAR arşivinin içeriğini doğrudan tarayıcıda göstermeniz gerekir. GroupDocs.Viewer for Java ile **zip'i html'ye dönüştür** tek bir adımda, her sayfada kaç arşiv girdisinin görüneceğini kontrol edebilir, tüm destekleyici resimleri ve CSS'yi gömebilir ve hatta onlarca arşivi toplu olarak işleyebilirsiniz. Bu öğretici, Maven kurulumundan çok sayfalı renderlamaya kadar tam iş akışını adım adım gösterir ve her ayarın performans ve kullanılabilirlik açısından neden önemli olduğunu açıklar.
+# ZIP'i HTML'e dönüştür ve sayfa başına öğe sayısını GroupDocs.Viewer Java ile ayarla
 
-![GroupDocs.Viewer for Java ile Arşivleri HTML'ye Dönüştür](/viewer/export-conversion/convert-archives-to-html-java.png)
+Birçok web uygulamasında bir ZIP veya RAR arşivinin içeriğini doğrudan tarayıcıda göstermeniz gerekir. **ZIP dosyalarını** HTML'e dönüştürmek için GroupDocs.Viewer for Java kullanmak yaygın bir gereksinimdir ve kütüphane, görüntüleri, CSS'i ve yazı tiplerini gömmenize olanak tanır, böylece sonuç tek, taşınabilir bir sayfa olur. Bu öğretici, Maven kurulumundan çok sayfalı render’a kadar her şeyi adım adım anlatırken, her seçeneğin performans ve kullanılabilirlik açısından neden önemli olduğunu açıklar.
+
+![GroupDocs.Viewer for Java ile Arşivleri HTML'e Dönüştür](/viewer/export-conversion/convert-archives-to-html-java.png)
 
 ## Hızlı cevaplar
-- **“set items per page” neyi kontrol eder?** Arşivden kaç dosya veya klasörün her oluşturulan HTML sayfasında görüneceğini belirler.  
-- **HTML içinde doğrudan resim ve CSS gömebilir miyim?** Evet – kaynakları HTML içinde gömmek için `forEmbeddedResources` seçeneğini kullanın.  
-- **Toplu dönüşüm mümkün mü?** Kesinlikle; arşiv koleksiyonunu döngüye alabilir ve her birini aynı ayarlarla renderlayabilirsiniz.  
-- **GroupDocs.Viewer kullanmak için Maven'e ihtiyacım var mı?** Evet, aşağıda gösterildiği gibi `groupdocs-viewer` Maven bağımlılığını ekleyin.  
-- **Hangi çıktı formatları destekleniyor?** Tek sayfalık HTML ve çok sayfalı HTML her ikisi de mevcuttur ve kütüphane 50+ giriş arşiv türünü destekler.
+- **“Sayfa başına öğe sayısı” kontrolü ne işe yarar?** Bir arşivdeki kaç dosya veya klasörün her oluşturulan HTML sayfasında görüneceğini belirler.  
+- **Görüntüleri ve CSS'i doğrudan HTML içinde gömebilir miyim?** Evet – kaynakları gömmek için `forEmbeddedResources` seçeneğini kullanın.  
+- **Toplu dönüşüm mümkün mü?** Kesinlikle; bir arşiv koleksiyonunu döngüye alabilir ve aynı ayarlarla her birini render edebilirsiniz.  
+- **GroupDocs.Viewer kullanmak için Maven gerekli mi?** Evet, aşağıda gösterildiği gibi `groupdocs-viewer` Maven bağımlılığını ekleyin.  
+- **Hangi çıktı formatları destekleniyor?** Tek‑sayfa HTML ve çok‑sayfa HTML her ikisi de mevcuttur ve kütüphane 50+ giriş arşiv türünü destekler.
 
-## GroupDocs.Viewer'da “set items per page” nedir?
-**set items per page** ayarı arşiv renderleme seçeneklerine aittir. Çok sayfalı bir HTML belgesi oluşturduğunuzda, görüntüleyiciye her HTML sayfasında kaç arşiv girdisinin (dosya veya klasör) gösterileceğini söyler. Bu değeri ayarlamak, özellikle büyük arşivlerde sayfa boyutu ve gezinme hızını dengelemenize yardımcı olur.
+## GroupDocs.Viewer'da “sayfa başına öğe sayısı” nedir?
+Bu ayar, çok‑sayfalı bir belge oluştururken her HTML sayfasında kaç arşiv girdisinin (dosya veya klasör) gösterileceğini belirler. Bu değeri ayarlamak, özellikle büyük arşivlerde sayfa boyutunu ve gezinme hızını dengelemeye yardımcı olur; sayfa başına yüklenen veri miktarını sınırlayarak son kullanıcıların render süresini azaltır.
 
-## Neden kaynakları HTML içinde gömüyoruz?
-Kaynakları (resimler, CSS, fontlar) doğrudan HTML dosyasının içine gömmek, harici dosyalar olmadan açılabilen tek bir taşınabilir belge oluşturur. Bu, e-posta ekleri, çevrim dışı görüntüleme veya çıktıyı diğer web sayfalarına gömmek için idealdir. Bu yaklaşım ayrıca dağıtımı basitleştirir çünkü harici varlık yollarını yönetmek gerekmez.
+## Neden kaynakları HTML içinde gömülür?
+Kaynakları (görüntüler, CSS, yazı tipleri) doğrudan HTML dosyasına gömmek, harici dosyalar olmadan açılabilen tek bir taşınabilir belge oluşturur. Bu, e‑posta ekleri, çevrim dışı görüntüleme veya çıktıyı diğer web sayfalarına gömme senaryoları için idealdir. Ayrıca harici varlık yollarını yönetme ihtiyacını ortadan kaldırır.
 
 ## Önkoşullar
-- **Gerekli kütüphaneler:** GroupDocs.Viewer sürüm 25.2 veya üzeri dahil edin.  
-- **Ortam:** Java Development Kit (JDK) yüklü ve yapılandırılmış.  
-- **Bilgi:** Temel Java ve Maven bağımlılık yönetimi.  
+
+- **Gerekli kütüphaneler:** GroupDocs.Viewer sürüm 25.2 veya daha yenisi.  
+- **Ortam:** Java Development Kit (JDK) kurulu ve yapılandırılmış.  
+- **Bilgi:** Temel Java ve Maven bağımlılık yönetimi bilgisi.  
 
 ## Maven GroupDocs Viewer kurulumu
 
-`pom.xml` dosyanıza GroupDocs deposunu ve viewer bağımlılığını ekleyin:
+`pom.xml` dosyanıza GroupDocs deposunu ve görüntüleyici bağımlılığını ekleyin:
 
 ```xml
 <repositories>
@@ -101,129 +104,147 @@ Kaynakları (resimler, CSS, fontlar) doğrudan HTML dosyasının içine gömmek,
 </dependencies>
 ```
 
-### Lisans edinme
-GroupDocs.Viewer bir **ücretsiz deneme bağlantısı**, geçici bir lisans veya tam satın alma seçeneği sunar. Proje zaman çizelgenize uyanı seçin.
+### Lisans edinimi
+GroupDocs.Viewer bir **ücretsiz deneme bağlantısı**, geçici lisans veya tam satın alma seçeneği sunar. Proje zaman çizelgenize uygun olanı seçin.
 
-### Temel başlatma
-Maven kurulumu sonrası, viewer'ı kodunuza ekleyin:
+## Temel başlatma
+`Viewer` sınıfı, belgeleri ve arşivleri render etmek için giriş noktasıdır. Maven kurulumu tamamlandıktan sonra görüntüleyiciyi kodunuza dahil edin:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 // Your initialization code here
 ```
 
-## Arşivleri tek sayfalık HTML'ye nasıl renderlayabilirsiniz
-Viewer, bir belgeyi veya arşivi renderlamak için yükleyen temel sınıftır.
+## Arşivleri tek sayfalı HTML'e nasıl render ederiz
+`HtmlViewOptions` sınıfı, HTML çıktısı için gömme kaynaklar gibi ayarları tanımlar. Arşivi yükleyin, HTML seçeneklerini kaynakları gömmek üzere yapılandırın ve her şeyi tek bir kendi içinde barındıran sayfaya render edin. Bu, tüm dosyaları, görüntüleri, CSS'i ve yazı tiplerini içeren tek bir HTML dosyası üretir; çevrim dışı kullanım veya e‑posta eki için hazırdır.
 
-Tüm arşivi içeren tek bir HTML dosyası oluşturmak için ZIP dosyası için bir `Viewer` örneği oluşturun ve tüm resimleri, CSS'i ve fontları gömmek için `HtmlViewOptions.forEmbeddedResources()` kullanın. Bu seçeneklerle arşivi renderlamak, e-posta veya çevrim dışı kullanım için uygun tek bir bağımsız sayfa üretir.
+**Doğrudan cevap:** ZIP dosyası için bir `Viewer` örneği oluşturun, `HtmlViewOptions.forEmbeddedResources()` çağırın ve `viewer.view(documentPath, options)` metodunu çalıştırın. Bu, tüm dosyaları, görüntüleri, CSS'i ve yazı tiplerini içeren tek bir HTML dosyası üretir; çevrim dışı kullanım veya e‑posta eki için hazırdır.
 
-### Adım 1: Çıktı dizinini tanımlayın
+### Adım 1: Çıktı dizinini tanımla
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-### Adım 2: Tek sayfalık çıktı için dosya adını ayarlayın
+### Adım 2: Tek sayfalı çıktı için dosya adını ayarla
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result.html");
 ```
 
-### Adım 3: Viewer'ı başlatın
+### Adım 3: Görüntüleyiciyi başlat
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
     // Further configuration steps follow
 }
 ```
 
-### Adım 4: Render seçeneklerini yapılandırın (kaynakları HTML içinde gömün)
+### Adım 4: Render seçeneklerini yapılandır (kaynakları HTML içinde göm)
+`HtmlViewOptions` sınıfı, HTML çıktısı için gömme kaynaklar gibi ayarları tanımlar. Her şeyi tek bir dosyada birleştirmek için `forEmbeddedResources()` kullanın.
+
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-### Adım 5: Tek sayfa olarak renderlayın
+### Adım 5: Tek sayfa olarak render et
 ```java
 options.setRenderToSinglePage(true);
 viewer.view(options);
 ```
 
-## Arşivleri çok sayfalı HTML'ye nasıl renderlayıp sayfa başına öğe sayısını ayarlarsınız
-`HtmlViewOptions`, görüntüleyicinin HTML çıktısını nasıl renderlayacağını yapılandırır; sayfalama ve kaynak gömme dahil.
+## Arşivleri çok sayfalı HTML'e nasıl render eder ve sayfa başına öğe sayısını ayarlar
+`HtmlViewOptions` sınıfı aynı zamanda sayfalama desteği sunar. `options.setItemsPerPage(N)` çağrısıyla, arşivi birkaç HTML dosyasına bölerek her birinin **N** girişe kadar göstermesini sağlarsınız. Bu yaklaşım, büyük arşivlerde gezinme hızını artırırken her sayfayı hafif tutar.
 
-Bir arşivi birden fazla sayfaya bölmek için `HtmlViewOptions.forEmbeddedResources()` oluşturun ve istenen sayfa boyutunu `options.setItemsPerPage(20)` ile ayarlayın. Viewer, her biri belirtilen giriş sayısına kadar gösteren ayrı HTML dosyaları oluşturacak; bu, büyük arşivlerde gezinmeyi iyileştirir ve daha hızlı yükleme sağlar.
+**Doğrudan cevap:** `HtmlViewOptions.forEmbeddedResources()` kullanın, `options.setItemsPerPage(N)` çağırın ve arşivi render edin. Görüntüleyici, her biri **N** girişe kadar içeren ayrı HTML dosyaları (sayfa başına bir dosya) oluşturur; bu da büyük arşivlerde gezinmeyi hızlandırır.
 
-### Adım 1: Çıktı dizinini yeniden kullanın
+### Adım 1: Çıktı dizinini yeniden kullan
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-### Adım 2: Çoklu sayfalar için dosya adı formatını tanımlayın
+### Adım 2: Çoklu sayfalar için dosya adı formatını tanımla
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result_page_{0}.html");
 ```
 
-### Adım 3: Viewer'ı tekrar başlatın
+### Adım 3: Görüntüleyiciyi tekrar başlat
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
     // Continue with multi‑page configuration
 }
 ```
 
-### Adım 4: Çok sayfalı seçenekleri yapılandırın (kaynakları HTML içinde gömün)
+### Adım 4: Çok sayfalı seçenekleri yapılandır (kaynakları HTML içinde göm)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-### Adım 5: Sayfa başına öğe sayısını ayarlayın (eylemdeki anahtar kelime)
+### Adım 5: Sayfa başına öğe sayısını ayarla (eylemdeki anahtar kelime)
+`options.setItemsPerPage(20); // how to convert zip archives with 20 entries per page`
+
 ```java
 options.getArchiveOptions().setItemsPerPage(10); // Default is 16
 viewer.view(options);
 ```
 
 ## Pratik uygulamalar
+
 - **Belge yönetim sistemleri:** Ek görüntüleyiciler kurmadan arşiv önizleme işlevi ekleyin.  
-- **Web portalları:** Kullanıcılara paketlenmiş belgeleri hızlı ve indirme gerektirmeden keşfetme imkanı sunun.  
-- **İş birliği araçları:** Takımların paylaşılan arşivleri doğrudan tarayıcıda incelemesine izin verin.
+- **Web portalları:** Kullanıcılara paketlenmiş belgeleri indirmeden hızlı bir şekilde keşfetme imkanı sunun.  
+- **İş birliği araçları:** Takımların paylaşılan arşivleri doğrudan tarayıcıda incelemesini sağlayın.
 
 ## Performans değerlendirmeleri
-- **Kaynak yönetimi:** Arşivleri akış olarak işleyerek bellek kullanımını düşük tutun; viewer, tüm dosyayı belleğe yüklemeden 500 MB'a kadar arşivleri işleyebilir.  
-- **Arşivleri toplu dönüştürme:** Arşiv dosyaları listesini döngüye alıp aynı render mantığını çağırarak verimliliği maksimize edin.  
-- **Önbellekleme stratejisi:** Aynı arşive sık erişiliyorsa renderlanmış HTML'i önbellekte saklayın, tekrar işleme süresini %70'e kadar azaltın.
 
-## Sıkça Sorulan Sorular
+- **Kaynak yönetimi:** Arşivleri akış olarak işleyerek bellek kullanımını düşük tutun; görüntüleyici, tüm dosyayı belleğe yüklemeden 500 MB’a kadar arşivleri işleyebilir.  
+- **Toplu arşiv dönüştürme:** Bir dizi arşiv dosyasını döngüye alıp aynı render mantığını çağırarak verimliliği maksimize edin.  
+- **Önbellek stratejisi:** Aynı arşiv sık erişiliyorsa render edilmiş HTML’i önbellekte saklayın; bu, tekrar işleme süresini %70’e kadar azaltabilir.
+
+## Sıkça sorulan sorular
+
 **S: GroupDocs.Viewer Java nedir?**  
-C: GroupDocs.Viewer Java, ZIP ve RAR dahil 50'den fazla belge ve arşiv formatını HTML, PDF veya görüntü dosyalarına dış uygulamalara ihtiyaç duymadan renderlayan bir sunucu‑tarafı kütüphanedir.
+C: GroupDocs.Viewer Java, ZIP ve RAR dahil 50’den fazla belge ve arşiv formatını HTML, PDF veya görüntü dosyalarına dış uygulamalara ihtiyaç duymadan render eden bir sunucu‑tarafı kütüphanedir.
 
 **S: GroupDocs.Viewer'ın ücretsiz deneme sürümünü nasıl elde edebilirim?**  
-C: İndirmek ve denemek için [ücretsiz deneme bağlantısını](https://releases.groupdocs.com/viewer/java/) ziyaret edin.
+C: [ücretsiz deneme bağlantısı](https://releases.groupdocs.com/viewer/java/) üzerinden indirip test edin.
 
 **S: Arşivlerin dışında başka belge türlerini dönüştürebilir miyim?**  
-C: Evet, viewer PDF'ler, Word, Excel, PowerPoint ve 35+ ek formatı destekler.
+C: Evet, görüntüleyici PDF, Word, Excel, PowerPoint ve 35+ ek formatı destekler.
 
-**S: Renderlama yavaşsa ne yapmalıyım?**  
-C: Sayfa başına öğe sayısını azaltın, akışı etkinleştirin veya hızı artırmak için arşivleri daha küçük partilerde işleyin.
+**S: Render yavaşsa ne yapmalıyım?**  
+C: Sayfa başına öğe sayısını azaltın, akışı etkinleştirin veya arşivleri daha küçük partiler halinde işleyerek hızı artırın.
 
-**S: Yardım veya destek nereden alabilirim?**  
-C: [destek forumu](https://forum.groupdocs.com/c/viewer/9) üzerinden ulaşabilirsiniz.
+**S: Yardım veya destek nereden alınabilir?**  
+C: [destek forumu](https://forum.groupdocs.com/c/viewer/9) üzerinden iletişime geçin.
 
-**S: CSS ve resimleri doğrudan HTML içinde gömmek mümkün mü?**  
+**S: CSS ve görüntüleri doğrudan HTML içinde gömmek mümkün mü?**  
 C: Kesinlikle—örneklerde gösterildiği gibi `HtmlViewOptions.forEmbeddedResources` kullanın.
 
-**S: Bir klasördeki arşivleri toplu olarak nasıl dönüştürürüm?**  
-C: Her dosyayı bir `for` döngüsüyle yineleyin ve her yineleme için aynı `Viewer` ve `HtmlViewOptions` yapılandırmasını uygulayın.
+**S: Bir klasördeki arşivleri toplu olarak nasıl dönüştürebilirim?**  
+C: `for` döngüsüyle her dosyayı yineleyin, aynı `Viewer` ve `HtmlViewOptions` yapılandırmasını her yinelemede uygulayın.
+
+**S: Diğer kullanıcılarla sorunları nerede tartışabilirim?**  
+C: [GroupDocs forumu](https://forum.groupdocs.com/c/viewer/9) üzerinden topluluk tartışmalarına katılın.
 
 ## Kaynaklar
-- **Dokümantasyon:** [GroupDocs dokümantasyonu](https://docs.groupdocs.com/viewer/java/) ile işlevselliği daha derinlemesine inceleyin.  
-- **API referansı:** Tam API'yi [GroupDocs API](https://reference.groupdocs.com/viewer/java/) adresinde keşfedin.  
-- **İndirme:** En son ikili dosyaları [indirme sayfasından](https://releases.groupdocs.com/viewer/java/) alın.  
-- **Satın alma ve lisanslama:** [satın alma sayfasında](https://purchase.groupdocs.com/buy) seçenekleri inceleyin.  
-- **Destek ve topluluk:** [GroupDocs forumunda](https://forum.groupdocs.com/c/viewer/9) tartışmalara katılın.
+
+- **Dokümantasyon:** İşlevselliği daha derinlemesine incelemek için [GroupDocs belgeleri](https://docs.groupdocs.com/viewer/java/) adresini ziyaret edin.  
+- **API referansı:** Tam API’yı [GroupDocs API](https://reference.groupdocs.com/viewer/java/) üzerinden keşfedin.  
+- **İndirme:** En yeni ikili dosyaları [indirme sayfası](https://releases.groupdocs.com/viewer/java/) üzerinden alın.  
+- **Satın alma ve lisanslama:** Seçenekleri [satın alma sayfası](https://purchase.groupdocs.com/buy) üzerinden gözden geçirin.  
+- **Destek ve topluluk:** Tartışmalara [destek forumu](https://forum.groupdocs.com/c/viewer/9) üzerinden katılın.  
+- **GroupDocs forumu:** Topluluk yardımı için [GroupDocs forumu](https://forum.groupdocs.com/c/viewer/9) adresini kullanın.
 
 ---
 
-**Son Güncelleme:** 2026-08-03  
+**Son Güncelleme:** 2026-10-10  
 **Test Edilen Versiyon:** GroupDocs.Viewer 25.2  
 **Yazar:** GroupDocs
 
-## İlgili Öğreticiler
-- [ZIP'i HTML'ye dönüştürme ve ZIP klasörlerini Java'da GroupDocs.Viewer ile renderleme](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
-- [GroupDocs.Viewer Java ile ZIP'i PDF'ye dönüştürme - Özel Dosya Adları](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
-- [GroupDocs.Viewer for Java kullanarak DOCX'i HTML'ye dönüştürme: Adım Adım Kılavuz](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+## İlgili öğreticiler
+
+- [Java ile GroupDocs.Viewer kullanarak zip'i HTML'e dönüştür ve zip klasörlerini render et](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
+- [GroupDocs.Viewer Java ile zip'i pdf'e dönüştür - Özel Dosya Adları](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
+- [GroupDocs.Viewer for Java ile DOCX'i HTML'e Dönüştürme: Adım Adım Kılavuz](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/products-backtop-button >}}
