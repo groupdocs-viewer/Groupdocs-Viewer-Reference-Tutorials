@@ -53,9 +53,6 @@ url: /hu/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # ZIP fájl konvertálása HTML-re és elemek oldalanként beállítása a GroupDocs.Viewer Java-val
 
@@ -243,8 +240,3 @@ A: Látogassa meg a [GroupDocs fórumot](https://forum.groupdocs.com/c/viewer/9)
 - [Hogyan konvertáljunk zip-et HTML-re és jelenítsünk meg zip mappákat Java-val a GroupDocs.Viewer segítségével](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
 - [zip konvertálása PDF-re a GroupDocs.Viewer Java-val – egyedi fájlnevek](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
 - [Hogyan konvertáljunk DOCX-et HTML-re a GroupDocs.Viewer for Java segítségével: Lépésről‑lépésre útmutató](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

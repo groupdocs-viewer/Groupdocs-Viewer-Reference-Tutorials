@@ -52,9 +52,6 @@ url: /hi/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # ZIP को HTML में बदलें और GroupDocs.Viewer Java के साथ प्रति पृष्ठ आइटम सेट करें
 
@@ -242,8 +239,3 @@ A: कम्युनिटी डिस्कशन के लिए [GroupDocs
 - [GroupDocs.Viewer के साथ Java में ZIP को HTML में बदलें और ZIP फ़ोल्डर्स रेंडर करें](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
 - [GroupDocs.Viewer Java के साथ ZIP को PDF में बदलें - कस्टम फ़ाइलनाम](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
 - [GroupDocs.Viewer for Java का उपयोग करके DOCX को HTML में बदलने का चरण‑दर‑चरण गाइड](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

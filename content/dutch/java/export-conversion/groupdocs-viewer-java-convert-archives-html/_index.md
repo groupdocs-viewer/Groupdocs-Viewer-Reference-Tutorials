@@ -52,9 +52,6 @@ url: /nl/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # Zip converteren naar html en items per pagina instellen met GroupDocs.Viewer Java
 
@@ -240,8 +237,3 @@ A: Bezoek het [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) voor com
 - [Hoe zip te converteren naar HTML en zip‑mappen te renderen in Java met GroupDocs.Viewer](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
 - [zip naar pdf converteren met GroupDocs.Viewer Java - Aangepaste bestandsnamen](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
 - [Hoe DOCX naar HTML te converteren met GroupDocs.Viewer voor Java: Een stapsgewijze handleiding](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

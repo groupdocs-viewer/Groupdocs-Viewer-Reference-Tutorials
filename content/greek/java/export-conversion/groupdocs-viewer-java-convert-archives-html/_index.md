@@ -53,9 +53,6 @@ url: /el/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # Μετατροπή zip σε html και ορισμός στοιχείων ανά σελίδα με GroupDocs.Viewer Java
 
@@ -241,8 +238,3 @@ A: Επισκεφθείτε το [φόρουμ GroupDocs](https://forum.groupdoc
 - [Πώς να μετατρέψετε zip σε HTML και να αποτυπώσετε φακέλους zip σε Java με GroupDocs.Viewer](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
 - [μετατροπή zip σε pdf με GroupDocs.Viewer Java - Προσαρμοσμένα ονόματα αρχείων](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
 - [Πώς να μετατρέψετε DOCX σε HTML χρησιμοποιώντας το GroupDocs.Viewer για Java: Οδηγός βήμα‑βήμα](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
