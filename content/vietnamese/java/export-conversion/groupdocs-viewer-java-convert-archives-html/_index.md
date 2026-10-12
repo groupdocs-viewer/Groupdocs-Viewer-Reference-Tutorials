@@ -52,9 +52,6 @@ url: /vi/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # Chuyển đổi zip sang html và đặt số mục mỗi trang với GroupDocs.Viewer Java
 
@@ -235,8 +232,3 @@ A: Truy cập [diễn đàn GroupDocs](https://forum.groupdocs.com/c/viewer/9) �
 - [Cách chuyển đổi zip sang HTML và render thư mục zip trong Java với GroupDocs.Viewer](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
 - [chuyển đổi zip sang pdf với GroupDocs.Viewer Java - Tên tệp tùy chỉnh](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
 - [Cách chuyển đổi DOCX sang HTML bằng GroupDocs.Viewer cho Java: Hướng dẫn chi tiết](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

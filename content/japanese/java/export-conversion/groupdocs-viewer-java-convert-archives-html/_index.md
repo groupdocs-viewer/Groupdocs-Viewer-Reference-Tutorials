@@ -50,9 +50,6 @@ url: /ja/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # ZIP を HTML に変換し、GroupDocs.Viewer Java でページあたりの項目数を設定する
 
@@ -238,8 +235,3 @@ A: コミュニティディスカッションは [GroupDocs forum](https://forum
 - [GroupDocs.Viewer を使用して Java で ZIP を HTML に変換し、ZIP フォルダーをレンダリングする方法](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
 - [GroupDocs.Viewer Java で ZIP を PDF に変換 - カスタムファイル名](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
 - [GroupDocs.Viewer for Java を使用して DOCX を HTML に変換する方法：ステップバイステップガイド](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

@@ -48,9 +48,6 @@ url: /zh/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # 将 zip 转换为 html 并使用 GroupDocs.Viewer Java 设置每页项目数
 
@@ -236,8 +233,3 @@ A: 访问 [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) 进行社区
 - [如何使用 GroupDocs.Viewer 将 zip 转换为 HTML 并在 Java 中渲染 zip 文件夹](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
 - [使用 GroupDocs.Viewer Java 将 zip 转换为 pdf - 自定义文件名](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
 - [如何使用 GroupDocs.Viewer for Java 将 DOCX 转换为 HTML：分步指南](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

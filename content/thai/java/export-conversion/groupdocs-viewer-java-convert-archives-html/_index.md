@@ -50,9 +50,6 @@ url: /th/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
 
 # แปลง zip เป็น html และตั้งค่ารายการต่อหน้าโดยใช้ GroupDocs.Viewer Java
 
@@ -231,8 +228,3 @@ A: ไปที่ [ฟอรั่ม GroupDocs](https://forum.groupdocs.com/c/
 - [วิธีแปลง zip เป็น HTML และเรนเดอร์โฟลเดอร์ zip ใน Java ด้วย GroupDocs.Viewer](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
 - [แปลง zip เป็น pdf ด้วย GroupDocs.Viewer Java - ชื่อไฟล์กำหนดเอง](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
 - [วิธีแปลง DOCX เป็น HTML ด้วย GroupDocs.Viewer for Java: คู่มือขั้นตอนโดยละเอียด](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
