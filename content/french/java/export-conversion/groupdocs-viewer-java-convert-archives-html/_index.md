@@ -53,10 +53,6 @@ url: /fr/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Convertir zip en html et définir le nombre d'éléments par page avec GroupDocs.Viewer Java
 
 Dans de nombreuses applications web, vous devez afficher le contenu d’une archive ZIP ou RAR directement dans le navigateur. **Comment convertir des fichiers zip** en HTML à l’aide de GroupDocs.Viewer pour Java est une exigence courante, et la bibliothèque vous permet d’intégrer des images, du CSS et des polices afin que le résultat soit une page unique et portable. Ce tutoriel vous guide à travers tout—de la configuration Maven au rendu multi‑pages—tout en expliquant pourquoi chaque option est importante pour les performances et la convivialité.
@@ -241,8 +237,3 @@ R : Visitez le [forum GroupDocs](https://forum.groupdocs.com/c/viewer/9) pour 
 - [Comment convertir zip en HTML et rendre les dossiers zip en Java avec GroupDocs.Viewer](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
 - [convertir zip en pdf avec GroupDocs.Viewer Java - Noms de fichiers personnalisés](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
 - [Comment convertir DOCX en HTML avec GroupDocs.Viewer pour Java : guide étape par étape](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
