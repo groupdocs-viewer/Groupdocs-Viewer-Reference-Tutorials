@@ -1,18 +1,23 @@
 ---
-date: '2026-05-16'
-description: دليل خطوة بخطوة لعرض مستندات النص المشفرة بـ Shift_JIS باستخدام GroupDocs.Viewer
-  لـ Java، يتضمن إعداد Maven، وتكوين charset، ونصائح عملية.
+date: '2026-10-15'
+description: عرض نص shift_jis في Java باستخدام GroupDocs.Viewer. يوضح هذا الدليل خطوة
+  بخطوة إعداد Maven وتكوين charset ونصائح عملية للحصول على عرض دقيق للنص الياباني.
 keywords:
 - render shift_jis text java
 - groupdocs viewer java setup
 - shift_jis encoding java
+lastmod: '2026-10-15'
+og_description: عرض نص shift_jis في Java باستخدام GroupDocs.Viewer. تعلّم إعداد Maven
+  وتكوين charset وأفضل الممارسات للحصول على عرض دقيق للنص الياباني في دقائق.
+og_image_alt: Screenshot of Shift_JIS text rendering output using GroupDocs.Viewer
+  for Java
+og_title: عرض نص Shift_JIS في Java باستخدام GroupDocs.Viewer – دليل سريع
 schemas:
 - author: GroupDocs
-  dateModified: '2026-05-16'
-  description: Step‑by‑step guide to render Shift_JIS encoded text documents using
-    GroupDocs.Viewer for Java, covering Maven setup, charset configuration, and real‑world
-    tips.
-  headline: Render Shift_JIS Text in Java with GroupDocs.Viewer
+  dateModified: '2026-10-15'
+  description: Render shift_jis text Java using GroupDocs.Viewer. Step‑by‑step guide
+    covering Maven setup, charset configuration, and practical tips.
+  headline: Render Shift_JIS text Java with GroupDocs.Viewer
   type: TechArticle
 - questions:
   - answer: Set the appropriate `FileType` in `LoadOptions` (e.g., `FileType.CSV`)
@@ -39,32 +44,32 @@ weight: 1
 
 # عرض نص Shift_JIS في Java باستخدام GroupDocs.Viewer
 
-إذا كنت بحاجة إلى **render shift_jis text java** ملفات في تطبيق Java، فقد وصلت إلى المكان الصحيح. في هذا الدرس سنستعرض كل ما تحتاجه—من إعداد Maven إلى عرض المستند كـ HTML—حتى تتمكن من عرض المحتوى المشفر باليابانية بشكل صحيح في مشاريعك. ستتعرف على سبب أهمية معالجة مجموعة الأحرف بشكل صحيح، وكيفية تكوين GroupDocs.Viewer، ونصائح عملية لتجنب المشكلات الشائعة.
+إذا كنت بحاجة إلى **render shift_jis text java** ملفات في تطبيق Java، فقد وصلت إلى المكان الصحيح. في هذا الدليل سنستعرض كل ما تحتاجه—من إعداد Maven إلى عرض المستند كـ HTML—حتى تتمكن من عرض المحتوى المشفر باليابانية بشكل صحيح في مشاريعك. ستتعرف على أهمية معالجة مجموعة الأحرف بشكل صحيح، وكيفية تكوين GroupDocs.Viewer، ونصائح عملية لتجنب المشكلات الشائعة.
 
-![عرض مستندات النص في Shift_JIS باستخدام GroupDocs.Viewer لـ Java](/viewer/advanced-rendering/render-text-documents-in-shift-jis-java.png)
+![عرض مستندات النص في Shift_JIS باستخدام GroupDocs.Viewer للـ Java](/viewer/advanced-rendering/render-text-documents-in-shift-jis-java.png)
 
 ## إجابات سريعة
 - **ما المكتبة المطلوبة؟** GroupDocs.Viewer for Java (v25.2+).  
 - **ما مجموعة الأحرف التي يجب تحديدها؟** `shift_jis`.  
-- **هل يمكنني عرض صيغ أخرى؟** نعم، يدعم Viewer صيغ PDF، DOCX، HTML، والعديد غيرها.  
-- **هل أحتاج إلى ترخيص للإنتاج؟** يلزم وجود ترخيص GroupDocs صالح للاستخدام غير التجريبي.  
-- **ما نسخة Java المدعومة؟** JDK 8 أو أحدث.
+- **هل يمكنني عرض صيغ أخرى؟** Yes, the Viewer supports over 60 input formats, including PDF, DOCX, HTML, and many more.  
+- **هل أحتاج إلى ترخيص للإنتاج؟** A valid GroupDocs license is required for non‑trial use.  
+- **ما نسخة Java المدعومة؟** JDK 8 or newer.
 
 ## ما هو Shift_JIS ولماذا يتم عرضه؟
 
-Shift_JIS هو ترميز أحرف ياباني قديم يربط البايتات بالكانا والكانجي ورموز ASCII. عرض نص Shift_JIS بشكل صحيح يمنع ظهور أحرف مشوهة ويضمن أن تقارير الأعمال، صفحات الويب المترجمة، وسجلات تحليل البيانات تحتفظ بمعناها المقصود. استخدام مجموعة الأحرف المناسبة يزيل مشكلة “???” أو mojibake التي تظهر غالبًا عندما يُفترض Unicode للملفات القديمة.
+Shift_JIS هو ترميز ياباني قديم يربط البايتات بالكانا والكانجي ورموز ASCII. يضمن عرض Shift_JIS بشكل صحيح ظهور النص الياباني دون أحرف مشوشة، مع الحفاظ على معنى تقارير الأعمال، صفحات الويب المترجمة، وملفات السجلات. القضاء على مشكلة “???” أو mojibake التي تظهر غالبًا عندما يُفترض Unicode للملفات القديمة.
 
 ## كيف يتم عرض نص Shift_JIS في Java؟
 
-حمّل ملفك المشفر بـ Shift_JIS باستخدام `new File("sample_shift_jis.txt")`، وقم بتكوين `LoadOptions` لاستخدام مجموعة الأحرف `shift_jis`، ثم استدعِ `viewer.view()` مع `HtmlViewOptions`. هذه العملية تقرأ الملف، وتفسّر البايتات باستخدام مجموعة الأحرف المحددة، وتنتج مخرجات HTML يمكن تضمينها في أي واجهة ويب. العملية تعمل مع أي مستند نص عادي، بغض النظر عن حجمه، وتتطلب فقط بضع أسطر من الشيفرة. `viewer.view()` ينفّذ عملية العرض ويعيد صفحات HTML المُولدة.
+قم بتحميل ملفك المشفر بـ Shift_JIS باستخدام `new File("sample_shift_jis.txt")`، قم بتكوين `LoadOptions` لاستخدام مجموعة الأحرف `shift_jis`، واستدعِ `viewer.view()` مع `HtmlViewOptions`. يقرأ هذا التدفق الملف، يفسر البايتات باستخدام مجموعة الأحرف المحددة، وينتج مخرجات HTML يمكن تضمينها في أي واجهة ويب. العملية تعمل مع أي مستند نصي عادي، بغض النظر عن حجمه، وتحتاج فقط إلى بضع أسطر من الشيفرة.
 
 ### المتطلبات المسبقة
 - Java Development Kit 8 أو أحدث  
 - Maven (أو أداة بناء أخرى)  
-- مكتبة GroupDocs.Viewer for Java (v25.2+)  
+- مكتبة GroupDocs.Viewer للـ Java (v25.2+)  
 - ملف نصي مشفر بـ Shift_JIS (مثال: `sample_shift_jis.txt`)
 
-### إعداد GroupDocs.Viewer لـ Java
+### إعداد GroupDocs.Viewer للـ Java
 
 أضف مستودع Maven الخاص بـ GroupDocs والاعتماد إلى ملف `pom.xml` الخاص بك:
 
@@ -85,7 +90,7 @@ Shift_JIS هو ترميز أحرف ياباني قديم يربط البايتا
 </dependencies>
 ```
 
-**نصيحة الترخيص:** ابدأ بتجربة مجانية لاستكشاف الميزات، ثم قدّم طلبًا للحصول على ترخيص مؤقت أو اشترِ ترخيصًا كاملًا من موقع GroupDocs.
+**نصيحة الترخيص:** ابدأ بتجربة مجانية لاستكشاف الميزات، ثم قدّم طلبًا للحصول على ترخيص مؤقت أو اشترِ ترخيصًا كاملاً من موقع GroupDocs.
 
 ### دليل التنفيذ
 
@@ -97,20 +102,20 @@ Shift_JIS هو ترميز أحرف ياباني قديم يربط البايتا
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT_SHIFT_JS_ENCODED";
 ```
 
-#### 2. إعداد دليل الإخراج
+#### 2. إعداد مجلد الإخراج
 
-أنشئ مجلدًا حيث سيتم حفظ صفحات HTML المُولدة:
+أنشئ مجلدًا حيث سيتم حفظ صفحات HTML المولدة:
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### 3. تكوين LoadOptions باستخدام مجموعة أحرف Shift_JIS
+#### 3. تكوين LoadOptions مع مجموعة أحرف Shift_JIS
 
-`LoadOptions` يخبر Viewer أي مجموعة أحرف يجب استخدامها عند قراءة الملف.  
+`LoadOptions` يخبر الـ Viewer أي مجموعة أحرف يجب استخدامها عند قراءة الملف.  
 
-**مرساة التعريف:** `LoadOptions` هو كائن تكوين في GroupDocs.Viewer يتحكم في طريقة فتح المستند المصدر، بما في ذلك مجموعة الأحرف، كلمة المرور، وإعدادات نطاق الصفحات.
+**مرساة التعريف:** `LoadOptions` هو كائن تكوين في GroupDocs.Viewer يتحكم في كيفية فتح مستند المصدر، بما في ذلك مجموعة الأحرف، كلمة المرور، وإعدادات نطاق الصفحات.
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
@@ -118,9 +123,9 @@ loadOptions.setFileType(FileType.TXT);
 loadOptions.setCharset(Charset.forName("shift_jis"));
 ```
 
-#### 4. تحضير HtmlViewOptions للموارد المدمجة
+#### 4. تحضير HtmlViewOptions للموارد المضمنة
 
-`HtmlViewOptions` يتيح لك تضمين الصور، CSS، والسكريبتات مباشرةً في مخرجات HTML، مما ينتج ملفًا واحدًا مستقلًا لكل صفحة.
+`HtmlViewOptions` يتيح لك تضمين الصور، CSS، والسكربتات مباشرةً في مخرجات HTML، مما ينتج ملفًا واحدًا مستقلًا لكل صفحة.
 
 **مرساة التعريف:** `HtmlViewOptions` يمثل إعدادات العرض لمخرجات HTML، مثل تضمين الموارد، حجم الصفحة، ومعالجة الهوامش.
 
@@ -130,7 +135,9 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 
 #### 5. تحميل وعرض المستند
 
-أخيرًا، عرض ملف النص كـ HTML. `Viewer` هو الفئة الأساسية في GroupDocs التي تقوم بتحميل المستند وتنفيذ العرض. يضمن كتلة `try‑with‑resources` إغلاق كائن `Viewer` بشكل صحيح:
+**مرساة التعريف:** `Viewer` هو الفئة الأساسية في GroupDocs التي تقوم بتحميل المستند وتنفيذ عمليات العرض.  
+
+حمّل ملفك المشفر بـ Shift_JIS باستخدام `new File("sample_shift_jis.txt")`، قم بتكوين مجموعة الأحرف، واستدعِ طريقة `view`. الشيفرة التالية تعرض ملف النص إلى HTML وتكتب النتيجة في مجلد الإخراج الذي أنشأته مسبقًا:
 
 ```java
 try (Viewer viewer = new Viewer(filePath, loadOptions)) {
@@ -138,9 +145,9 @@ try (Viewer viewer = new Viewer(filePath, loadOptions)) {
 }
 ```
 
-### تكوين دليل الإخراج للعرض (مقتطف قابل لإعادة الاستخدام)
+### تكوين مجلد الإخراج للعرض (مقتطف قابل لإعادة الاستخدام)
 
-إذا كنت بحاجة إلى إعادة استخدام تكوين دليل الإخراج في مكان آخر، احتفظ بهذا المقتطف في متناول يدك:
+إذا كنت بحاجة إلى إعادة استخدام تكوين مجلد الإخراج في مكان آخر، احتفظ بهذا المقتطف في متناول يدك:
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
@@ -149,36 +156,36 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 ## تطبيقات عملية
 
-- **تقارير الأعمال:** تحويل تقارير اللغة اليابانية إلى HTML جاهز للويب للإنترانت.  
-- **المواقع المترجمة:** تقديم محتوى ياباني دقيق دون تحويل من جانب العميل.  
+- **تقارير الأعمال:** تحويل التقارير المكتوبة باليابانية إلى HTML جاهز للويب للإنترانت.  
+- **مواقع الويب المترجمة:** تقديم محتوى ياباني دقيق دون تحويل على جانب العميل.  
 - **تنقيب البيانات:** معالجة سجلات Shift_JIS مسبقًا قبل إدخالها في خطوط التحليل.
 
 ## اعتبارات الأداء
 
 - قصر عدد خيوط العرض المتزامنة لتجنب استهلاك الذاكرة الزائد.  
-- تخلص من كائنات `Viewer` بسرعة (كما هو موضح باستخدام `try‑with‑resources`).  
-- استخدم واجهات برمجة التطبيقات المتدفقة للملفات الكبيرة جدًا للحفاظ على استهلاك الذاكرة منخفضًا.  
+- التخلص من كائنات `Viewer` بسرعة (كما هو موضح باستخدام `try‑with‑resources`).  
+- استخدام واجهات برمجة التطبيقات المتدفقة للملفات الكبيرة جدًا للحفاظ على استهلاك الذاكرة منخفضًا.  
 
 ## الأسئلة المتكررة
 
-**س: ماذا لو لم يكن مستندي ملف `.txt` ولكنه لا يزال يستخدم Shift_JIS؟**  
-A: قم بتعيين `FileType` المناسب في `LoadOptions` (مثال: `FileType.CSV`) مع الحفاظ على مجموعة الأحرف كـ `shift_jis`.
+**س: ماذا لو لم يكن مستندي ملف `.txt` لكنه لا يزال يستخدم Shift_JIS؟**  
+ج: حدد `FileType` المناسب في `LoadOptions` (مثال: `FileType.CSV`) مع الحفاظ على مجموعة الأحرف كـ `shift_jis`.
 
 **س: هل يمكنني عرض ملفات متعددة دفعة واحدة؟**  
-A: نعم، قم بالتكرار على مسارات الملفات وإنشاء كائن `Viewer` جديد لكل منها، مع إعادة استخدام نفس `HtmlViewOptions` إذا كان مجلد الإخراج مشتركًا.
+ج: نعم، قم بالتكرار على مسارات الملفات وإنشاء كائن `Viewer` جديد لكل ملف، مع إعادة استخدام نفس `HtmlViewOptions` إذا كان مجلد الإخراج مشتركًا.
 
 **س: هل هناك حد لحجم مستند Shift_JIS؟**  
-A: لا يوجد حد ثابت، لكن الملفات الكبيرة جدًا (> 500 ميغابايت) قد تحتاج إلى مزيد من ذاكرة الـ heap؛ فكر في المعالجة صفحة بصفحة.
+ج: لا حد ثابت، لكن الملفات الكبيرة جدًا (> 500 ميغابايت) قد تحتاج إلى مزيد من الذاكرة؛ فكر في المعالجة صفحة بصفحة.
 
-**س: كيف يمكنني استكشاف مشكلة الأحرف المشوهة؟**  
-A: تحقق من ترميز الملف المصدر باستخدام أداة مثل `iconv` وتأكد من أن `Charset.forName("shift_jis")` يطابقه تمامًا.
+**س: كيف يمكنني استكشاف مشكلة الأحرف المشوشة؟**  
+ج: تحقق من ترميز الملف المصدر باستخدام أداة مثل `iconv` وتأكد من أن `Charset.forName("shift_jis")` يطابق تمامًا.
 
 **س: هل يدعم GroupDocs.Viewer ترميزات آسيوية أخرى؟**  
-A: بالطبع—تُدعم الترميزات مثل `EUC-JP`، `GB18030`، و`Big5` عبر نفس طريقة `setCharset`.
+ج: بالطبع—الترميزات مثل `EUC-JP`، `GB18030`، و `Big5` مدعومة عبر نفس طريقة `setCharset`.
 
 ## الخلاصة
 
-أنت الآن تعرف **how to render shift_jis text java** المستندات باستخدام GroupDocs.Viewer لـ Java. باتباع الخطوات السابقة، يمكنك دمج عرض اللغة اليابانية بشكل موثوق في أي نظام مبني على Java، سواء كان بوابة ويب، خدمة تقارير، أو خط أنابيب لمعالجة البيانات. الجمع بين تكوين مجموعة الأحرف الصحيح وتضمين HTML يمنحك مخرجات نظيفة وقابلة للبحث دون عناء التحويل اليدوي.
+أنت الآن تعرف **how to render shift_jis text java** المستندات باستخدام GroupDocs.Viewer للـ Java. باتباع الخطوات أعلاه، يمكنك دمج عرض موثوق للنص الياباني في أي نظام مبني على Java، سواء كان بوابة ويب، خدمة تقارير، أو خط معالجة بيانات. يجمع تكوين مجموعة الأحرف بشكل صحيح مع تضمين HTML لتمنحك مخرجات نظيفة وقابلة للبحث دون عناء التحويل اليدوي.
 
 **الموارد**  
 - [التوثيق](https://docs.groupdocs.com/viewer/java/)  
@@ -191,12 +198,12 @@ A: بالطبع—تُدعم الترميزات مثل `EUC-JP`، `GB18030`، و
 
 ---
 
-**آخر تحديث:** 2026-05-16  
+**آخر تحديث:** 2026-10-15  
 **تم الاختبار مع:** GroupDocs.Viewer for Java 25.2  
 **المؤلف:** GroupDocs
 
 ## دروس ذات صلة
 
-- [كيفية إعداد التراخيص في GroupDocs.Viewer Java: دليل إعداد الملف والرابط](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)
-- [العرض المتجاوب لـ HTML باستخدام GroupDocs.Viewer لـ Java: دليل شامل](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [كيفية إعداد التراخيص في GroupDocs.Viewer Java: دليل إعداد الملفات وعناوين URL](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)
+- [العرض المتجاوب لـ HTML باستخدام GroupDocs.Viewer للـ Java: دليل شامل](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
 - [كيفية إضافة خط مخصص إلى HTML في Java باستخدام GroupDocs.Viewer: دليل خطوة بخطوة](/viewer/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/)

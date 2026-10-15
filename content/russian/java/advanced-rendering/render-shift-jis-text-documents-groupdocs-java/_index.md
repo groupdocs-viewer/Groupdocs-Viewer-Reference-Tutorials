@@ -1,19 +1,26 @@
 ---
-date: '2026-05-16'
-description: Пошаговое руководство по отображению текстовых документов в кодировке
-  Shift_JIS с использованием GroupDocs.Viewer для Java, охватывающее настройку Maven,
-  конфигурацию charset и практические советы.
+date: '2026-10-15'
+description: Отображение текста shift_jis в Java с использованием GroupDocs.Viewer.
+  Это пошаговое руководство показывает настройку Maven, конфигурацию charset и практические
+  советы для точного отображения японского текста.
 keywords:
 - render shift_jis text java
 - groupdocs viewer java setup
 - shift_jis encoding java
+lastmod: '2026-10-15'
+og_description: Отображение текста shift_jis в Java с использованием GroupDocs.Viewer.
+  Узнайте о настройке Maven, конфигурации charset и лучших практиках для точного отображения
+  японского текста за считанные минуты.
+og_image_alt: Screenshot of Shift_JIS text rendering output using GroupDocs.Viewer
+  for Java
+og_title: Отображение текста Shift_JIS в Java с помощью GroupDocs.Viewer – Краткое
+  руководство
 schemas:
 - author: GroupDocs
-  dateModified: '2026-05-16'
-  description: Step‑by‑step guide to render Shift_JIS encoded text documents using
-    GroupDocs.Viewer for Java, covering Maven setup, charset configuration, and real‑world
-    tips.
-  headline: Render Shift_JIS Text in Java with GroupDocs.Viewer
+  dateModified: '2026-10-15'
+  description: Render shift_jis text Java using GroupDocs.Viewer. Step‑by‑step guide
+    covering Maven setup, charset configuration, and practical tips.
+  headline: Render Shift_JIS text Java with GroupDocs.Viewer
   type: TechArticle
 - questions:
   - answer: Set the appropriate `FileType` in `LoadOptions` (e.g., `FileType.CSV`)
@@ -38,36 +45,36 @@ url: /ru/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/
 weight: 1
 ---
 
-# Отображение текста Shift_JIS в Java с помощью GroupDocs.Viewer
+# Отображение Shift_JIS текста Java с помощью GroupDocs.Viewer
 
-Если вам нужно **render shift_jis text java** файлы в Java‑приложении, вы попали в нужное место. В этом руководстве мы пройдем всё необходимое — от настройки Maven до рендеринга документа в HTML — чтобы вы могли корректно отображать контент, закодированный в японском, в своих проектах. Вы увидите, почему правильная работа с набором символов важна, как настроить GroupDocs.Viewer и практические советы по избежанию распространённых ошибок.
+Если вам нужно **отображать shift_jis текст Java** файлы в Java‑приложении, вы попали в нужное место. В этом руководстве мы пройдем всё, что вам нужно — от настройки Maven до рендеринга документа в HTML — чтобы вы могли корректно отображать контент, закодированный в японском, в своих проектах. Вы увидите, почему правильная работа с набором символов важна, как настроить GroupDocs.Viewer и практические советы по избежанию распространённых ошибок.
 
-![Render Text Documents in Shift_JIS with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-text-documents-in-shift-jis-java.png)
+![Отображение текстовых документов в Shift_JIS с помощью GroupDocs.Viewer для Java](/viewer/advanced-rendering/render-text-documents-in-shift-jis-java.png)
 
 ## Быстрые ответы
-- **Какая библиотека требуется?** GroupDocs.Viewer for Java (v25.2+).  
+- **Какой библиотека требуется?** GroupDocs.Viewer for Java (v25.2+).  
 - **Какой набор символов необходимо указать?** `shift_jis`.  
-- **Могу ли я рендерить другие форматы?** Да, Viewer поддерживает PDF, DOCX, HTML и многие другие.  
-- **Нужна ли лицензия для продакшн?** Для использования без пробного периода требуется действующая лицензия GroupDocs.  
+- **Могу ли я отображать другие форматы?** Да, Viewer поддерживает более 60 входных форматов, включая PDF, DOCX, HTML и многие другие.  
+- **Нужна ли лицензия для продакшн?** Для использования не в режиме пробной версии требуется действующая лицензия GroupDocs.  
 - **Какая версия Java поддерживается?** JDK 8 или новее.
 
-## Что такое Shift_JIS и почему его нужно отображать?
+## Что такое Shift_JIS и почему его отображать?
 
-Shift_JIS — это устаревшая японская кодировка символов, которая сопоставляет байты с kana, kanji и символами ASCII. Корректное отображение текста Shift_JIS предотвращает искажение символов и гарантирует, что бизнес‑отчёты, локализованные веб‑страницы и журналы анализа данных сохраняют свой смысл. Использование правильного набора символов устраняет проблему «???» или mojibake, часто возникающую при предположении Unicode для старых файлов.
+Shift_JIS — это устаревшая японская кодировка символов, которая сопоставляет байты с кана, кандзи и символами ASCII. Корректное отображение Shift_JIS гарантирует, что японский текст отображается без искажённых символов, сохраняя смысл бизнес‑отчётов, локализованных веб‑страниц и файлов журналов. Правильный рендеринг устраняет проблему «???» или mojibake, которая часто возникает, когда для старых файлов предполагается Unicode.
 
-## Как отобразить Shift_JIS текст в Java?
+## Как отображать Shift_JIS текст Java?
 
-Загрузите ваш файл, закодированный в Shift_JIS, с помощью `new File("sample_shift_jis.txt")`, настройте `LoadOptions` для использования кодировки `shift_jis` и вызовите `viewer.view()` с `HtmlViewOptions`. Этот процесс читает файл, интерпретирует байты согласно указанной кодировке и генерирует HTML‑вывод, который можно встроить в любой веб‑интерфейс. Процесс работает с любым простым текстовым документом независимо от размера и требует всего несколько строк кода. `viewer.view()` выполняет рендеринг и возвращает сгенерированные HTML‑страницы.
+Загрузите ваш файл, закодированный в Shift_JIS, с помощью `new File("sample_shift_jis.txt")`, настройте `LoadOptions` для использования набора символов `shift_jis` и вызовите `viewer.view()` с `HtmlViewOptions`. Этот процесс читает файл, интерпретирует байты с указанным набором символов и генерирует HTML‑вывод, который можно встроить в любой веб‑интерфейс. Процесс работает с любым текстовым документом, независимо от размера, и требует всего несколько строк кода.
 
-### Требования
-- Java Development Kit 8 или новее  
-- Maven (или другой инструмент сборки)  
-- GroupDocs.Viewer for Java (v25.2+)  
+### Предварительные требования
+- Java Development Kit 8 или новее
+- Maven (или другой инструмент сборки)
+- GroupDocs.Viewer for Java library (v25.2+)
 - Текстовый файл, закодированный в Shift_JIS (например, `sample_shift_jis.txt`)
 
 ### Настройка GroupDocs.Viewer для Java
 
-Add the GroupDocs Maven repository and dependency to your `pom.xml`:
+Добавьте репозиторий GroupDocs Maven и зависимость в ваш `pom.xml`:
 
 ```xml
 <repositories>
@@ -90,9 +97,9 @@ Add the GroupDocs Maven repository and dependency to your `pom.xml`:
 
 ### Руководство по реализации
 
-#### 1. Укажите путь к входному файлу
+#### 1. Определите путь к входному файлу
 
-The `File` class points to the Shift_JIS‑encoded text file you want to render:
+Класс `File` указывает на текстовый файл, закодированный в Shift_JIS, который вы хотите отобразить:
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT_SHIFT_JS_ENCODED";
@@ -100,18 +107,18 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT_SHIFT_JS_ENCODED";
 
 #### 2. Настройте каталог вывода
 
-Create a folder where the generated HTML pages will be saved:
+Создайте папку, в которой будут сохраняться сгенерированные HTML‑страницы:
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### 3. Настройте LoadOptions с кодировкой Shift_JIS
+#### 3. Настройте LoadOptions с набором символов Shift_JIS
 
-`LoadOptions` tells the Viewer which charset to use when reading the file.  
+`LoadOptions` указывает Viewer, какой набор символов использовать при чтении файла.  
 
-**Definition anchor:** `LoadOptions` is a GroupDocs.Viewer configuration object that controls how a source document is opened, including charset, password, and page range settings.
+**Определение:** `LoadOptions` — объект конфигурации GroupDocs.Viewer, который управляет тем, как открывается исходный документ, включая набор символов, пароль и настройки диапазона страниц.
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
@@ -121,17 +128,19 @@ loadOptions.setCharset(Charset.forName("shift_jis"));
 
 #### 4. Подготовьте HtmlViewOptions для встроенных ресурсов
 
-`HtmlViewOptions` lets you embed images, CSS, and scripts directly into the HTML output, producing a single self‑contained file per page.
+`HtmlViewOptions` позволяет встраивать изображения, CSS и скрипты непосредственно в HTML‑вывод, создавая один автономный файл на страницу.
 
-**Definition anchor:** `HtmlViewOptions` represents rendering settings for HTML output, such as embedding resources, page size, and margin handling.
+**Определение:** `HtmlViewOptions` представляет настройки рендеринга для HTML‑вывода, такие как встраивание ресурсов, размер страницы и обработка отступов.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### 5. Загрузите и отрендерите документ
+#### 5. Загрузите и отобразите документ
 
-Finally, render the text file to HTML. `Viewer` is the core GroupDocs class that loads a document and performs rendering. The `try‑with‑resources` block guarantees that the `Viewer` instance is closed properly:
+**Определение:** `Viewer` — основной класс GroupDocs, который загружает документ и выполняет операции рендеринга.  
+
+Загрузите ваш файл, закодированный в Shift_JIS, с помощью `new File("sample_shift_jis.txt")`, настройте набор символов и вызовите метод `view`. Следующий код рендерит текстовый файл в HTML и записывает результат в каталог вывода, который вы создали ранее:
 
 ```java
 try (Viewer viewer = new Viewer(filePath, loadOptions)) {
@@ -141,7 +150,7 @@ try (Viewer viewer = new Viewer(filePath, loadOptions)) {
 
 ### Настройка каталога вывода для рендеринга (повторно используемый фрагмент)
 
-If you need to reuse the output‑directory configuration elsewhere, keep this snippet handy:
+Если вам нужно повторно использовать конфигурацию каталога вывода в другом месте, сохраните этот фрагмент под рукой:
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
@@ -150,9 +159,9 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 ## Практические применения
 
-- **Бизнес‑отчёты:** Преобразуйте отчёты на японском языке в готовый к веб‑использованию HTML для интранет‑сайтов.  
+- **Бизнес‑отчёты:** Преобразуйте отчёты на японском языке в готовый к веб‑использованию HTML для интранет‑сетей.  
 - **Локализованные веб‑сайты:** Предоставляйте точный японский контент без клиентской конвертации.  
-- **Data Mining:** Предобрабатывайте журналы Shift_JIS перед передачей их в аналитические конвейеры.  
+- **Data mining:** Предобрабатывайте журналы Shift_JIS перед передачей их в аналитические конвейеры.  
 
 ## Соображения по производительности
 
@@ -162,24 +171,24 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 ## Часто задаваемые вопросы
 
-**Q: Что делать, если мой документ не является файлом `.txt`, но всё равно использует Shift_JIS?**  
-A: Установите соответствующий `FileType` в `LoadOptions` (например, `FileType.CSV`), оставив кодировку `shift_jis`.
+**Q: Что если мой документ не является файлом `.txt`, но всё равно использует Shift_JIS?**  
+A: Установите соответствующий `FileType` в `LoadOptions` (например, `FileType.CSV`), сохраняя набор символов `shift_jis`.
 
-**Q: Могу ли я рендерить несколько файлов пакетно?**  
-A: Да, выполните цикл по путям к файлам и создавайте новый экземпляр `Viewer` для каждого, повторно используя тот же `HtmlViewOptions`, если папка вывода общая.
+**Q: Могу ли я отобразить несколько файлов пакетно?**  
+A: Да, выполните цикл по путям к файлам и создайте новый экземпляр `Viewer` для каждого, повторно используя тот же `HtmlViewOptions`, если каталог вывода общий.
 
 **Q: Есть ли ограничение размера документа Shift_JIS?**  
-A: Жёсткого ограничения нет, но очень большие файлы (> 500 MB) могут потребовать больше памяти heap; рекомендуется обрабатывать их постранично.
+A: Жёсткого ограничения нет, но очень большие файлы (> 500 МБ) могут потребовать больше памяти кучи; рассмотрите обработку постранично.
 
 **Q: Как устранить проблему искажённых символов?**  
 A: Проверьте кодировку исходного файла с помощью инструмента, например `iconv`, и убедитесь, что `Charset.forName("shift_jis")` точно соответствует.
 
 **Q: Поддерживает ли GroupDocs.Viewer другие азиатские кодировки?**  
-A: Абсолютно — кодировки такие как `EUC-JP`, `GB18030` и `Big5` поддерживаются через тот же метод `setCharset`.
+A: Да — кодировки такие как `EUC-JP`, `GB18030` и `Big5` поддерживаются через тот же метод `setCharset`.
 
 ## Заключение
 
-Теперь вы знаете **how to render shift_jis text java** документы с помощью GroupDocs.Viewer for Java. Следуя описанным шагам, вы сможете интегрировать надёжное отображение японского текста в любую Java‑систему, будь то веб‑портал, сервис отчётности или конвейер обработки данных. Комбинация правильной настройки кодировки и встраивания HTML даёт чистый, индексируемый вывод без проблем ручного преобразования.
+Теперь вы знаете **как отображать shift_jis текст Java** документы с помощью GroupDocs.Viewer для Java. Следуя приведённым выше шагам, вы сможете интегрировать надёжное отображение японского языка в любую систему на базе Java, будь то веб‑портал, сервис отчётности или конвейер обработки данных. Комбинация правильной настройки набора символов и встраивания HTML даёт чистый, индексируемый вывод без проблем ручного преобразования.
 
 **Ресурсы**  
 - [Документация](https://docs.groupdocs.com/viewer/java/)  
@@ -192,12 +201,12 @@ A: Абсолютно — кодировки такие как `EUC-JP`, `GB1803
 
 ---
 
-**Последнее обновление:** 2026-05-16  
+**Последнее обновление:** 2026-10-15  
 **Тестировано с:** GroupDocs.Viewer for Java 25.2  
 **Автор:** GroupDocs
 
 ## Связанные руководства
 
-- [Как установить лицензии в GroupDocs.Viewer Java: руководство по настройке файлов и URL](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)  
-- [Адаптивный HTML‑рендеринг с GroupDocs.Viewer для Java: полное руководство](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)  
+- [Как установить лицензии в GroupDocs.Viewer Java: руководство по настройке файлов и URL](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)
+- [Адаптивный HTML‑рендеринг с GroupDocs.Viewer для Java: полное руководство](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
 - [Как добавить пользовательский шрифт HTML в Java с GroupDocs.Viewer: пошаговое руководство](/viewer/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/)
