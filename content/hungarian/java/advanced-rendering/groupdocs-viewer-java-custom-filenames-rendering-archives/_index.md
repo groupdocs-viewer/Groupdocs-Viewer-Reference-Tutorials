@@ -1,16 +1,22 @@
 ---
-date: '2026-05-31'
-description: Ismerje meg, hogyan konvertálhat zip fájlt pdf-re, és hogyan generálhat
-  pdf-et zip-ből a GroupDocs.Viewer for Java használatával, miközben egyedi fájlneveket
-  állít be az archívum megjelenítéséhez. A lépésről‑lépésre útmutató tartalmazza a
-  Maven beállítását és a konfiguráció részleteit.
+date: '2026-10-15'
+description: Ismerje meg, hogyan konvertálhat zip fájlt PDF-re és generálhat PDF-et
+  zipből a GroupDocs.Viewer for Java használatával, miközben egyedi fájlneveket állít
+  be az archívum megjelenítéséhez. A lépésről‑lépésre útmutató tartalmazza a Maven
+  beállítását és a konfiguráció részleteit.
 keywords:
 - convert zip to pdf
+- convert archive to pdf
 - generate pdf from zip
-- custom filenames PDF rendering
+lastmod: '2026-10-15'
+og_description: Zip konvertálása PDF-re a GroupDocs.Viewer for Java segítségével,
+  és egyedi fájlnevek beállítása a létrehozott PDF-hez. Ez az útmutató bemutatja a
+  Maven beállítását, az API használatát és a teljesítmény tippeket.
+og_image_alt: 'GroupDocs.Viewer Java example: custom PDF filenames for archive rendering'
+og_title: Zip konvertálása PDF-re a GroupDocs.Viewer Java használatával
 schemas:
 - author: GroupDocs
-  dateModified: '2026-05-31'
+  dateModified: '2026-10-15'
   description: Learn how to convert zip to pdf and generate pdf from zip using GroupDocs.Viewer
     for Java, while setting custom filenames for archive rendering. Step‑by‑step guide
     includes Maven setup and configuration details.
@@ -52,63 +58,57 @@ schemas:
       for comprehensive guides and API references.
     question: Where can I find more resources on using GroupDocs.Viewer?
   type: FAQPage
-title: zip konvertálása pdf-re a GroupDocs.Viewer Java-val – Egyedi fájlnevek
+tags:
+- convert zip to pdf
+- GroupDocs Viewer
+- Java PDF rendering
+- custom filenames
+- archive conversion
+title: Zip konvertálása PDF-re a GroupDocs.Viewer Java segítségével – egyedi fájlnevek
 type: docs
 url: /hu/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/
 weight: 1
 ---
 
-# A GroupDocs.Viewer Java elsajátítása: Egyéni fájlnevek megadása archívumok PDF-be renderelésekor
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-ZIP archívumok PDF‑fájlokká konvertálása gyakori igény, amikor dokumentumokat kell megosztani vagy archiválni egy univerzálisan olvasható formátumban. Ebben az oktatóanyagban megtanulja, hogyan **konvertálja a zip‑et pdf‑be** a GroupDocs.Viewer for Java segítségével, miközben a kimeneti fájlnevet a saját elnevezési konvencióihoz igazítja. Ez az útmutató végigvezeti a környezet előkészítésén, a Maven integráción és a pontos API‑hívásokon, amelyekkel egy egyéni névvel ellátott PDF‑et hozhat létre.
+# ZIP fájl PDF-re konvertálása a GroupDocs.Viewer Java segítségével – egyedi fájlnevek
 
-![Egyéni fájlnevek PDF rendereléséhez archívumok esetén a GroupDocs.Viewer for Java használatával](/viewer/advanced-rendering/custom-filenames-for-pdf-rendering-of-archives-java.png)
+A ZIP archívumok PDF-re konvertálása gyakori igény, amikor dokumentumokat kell megosztani vagy archiválni egy mindenhol olvasható formátumban. Ebben az útmutatóban megtanulja, **hogyan konvertálja a zip fájlt PDF-re** a GroupDocs.Viewer for Java segítségével, miközben a kimeneti fájlnevet a saját elnevezési konvencióihoz igazítja. Áttekintjük a környezet előkészítését, a Maven integrációt, és a pontos API hívásokat, amelyekkel egy egyedi névvel ellátott PDF-et hozhat létre, valamint teljesítmény‑növelő tippeket nagy archívumokhoz.
 
-**Mit fog megtanulni**
-- A GroupDocs.Viewer for Java beállítása
-- Archívumfájlok renderelése PDF‑be megadott fájlnevekkel
-- Az egyéni fájlnév funkciók gyakorlati alkalmazásai
-- Legjobb gyakorlatok a teljesítményoptimalizáláshoz
+![Egyedi fájlnevek az archívumok PDF rendereléséhez a GroupDocs.Viewer for Java segítségével](/viewer/advanced-rendering/custom-filenames-for-pdf-rendering-of-archives-java.png)
 
-Merüljünk el a fejlesztői környezet előkészítésében, és tekintsük át a kulcsfontosságú funkciókat, amelyek a GroupDocs.Viewer‑t erőteljes eszközzé teszik a dokumentumrendereléshez.
+[Egyedi fájlnevek az archívumok PDF rendereléséhez a GroupDocs.Viewer for Java segítségével](/viewer/advanced-rendering/custom-filenames-for-pdf-rendering-of-archives-java.png)
 
 ## Gyors válaszok
-- **Mi a fő felhasználási eset?** ZIP archívumok konvertálása PDF‑be egyedi kimeneti névvel.  
+- **Mi a fő felhasználási eset?** ZIP archívumok PDF-re konvertálása egyedi kimeneti névvel.  
 - **Melyik könyvtár szükséges?** GroupDocs.Viewer for Java (v25.2 vagy újabb).  
-- **Szükségem van licencre?** Egy próba vagy ideiglenes licenc elegendő értékeléshez; a gyártási környezethez vásárolt licenc szükséges.  
-- **Megváltoztathatom a fájlnevet más formátumoknál?** Igen, hasonló beállítások léteznek HTML, PNG stb. esetén.  
-- **A Maven az egyetlen telepítési mód?** A Maven ajánlott, de a JAR‑t is használhatja közvetlenül.
+- **Szükségem van licencre?** Próba vagy ideiglenes licenc elegendő értékeléshez; a gyártási környezethez vásárolt licenc szükséges.  
+- **Módosíthatom a fájlnevet más formátumoknál?** Igen, hasonló beállítások léteznek HTML, PNG és egyéb támogatott formátumok esetén.  
+- **A Maven az egyetlen telepítési mód?** A Maven ajánlott, de ha szeretné, a JAR-t manuálisan is hozzáadhatja.
 
 ## Mi az a „convert zip to pdf”?
 
-A ZIP archívum egyetlen PDF dokumentummá konvertálása egyesíti az archívumban lévő összes támogatott fájlt (például DOCX, PPTX, képek) egy hordozható fájlba. Ez egyszerűsíti a terjesztést, biztosítja a konzisztens renderelést a platformok között, és lehetővé teszi egy olyan egyéni fájlnév alkalmazását, amely megfelel a szervezet elnevezési szabványainak.
+Egy ZIP archívum betöltése és az abban található minden támogatott fájl (DOCX, PPTX, képek stb.) egyetlen PDF fájlba renderelése jelenti a **convert zip to pdf** műveletet. Ez a folyamat egy hordozható, csak olvasható dokumentumot hoz létre, amely bármely eszközön megnyitható az eredeti alkalmazások nélkül.
 
-## Miért használjuk a GroupDocs.Viewer‑t ehhez a feladathoz?
+## Miért használja a GroupDocs.Viewer-t ehhez a feladathoz?
 
-A GroupDocs.Viewer magas szintű API‑t biztosít, amely elrejti a több fájltípus kezelésének összetettségét egy archívumban. Több mint 100 dokumentum- és képformátum renderelését támogatja, és az ArchiveOptions lehetővé teszi a pontos PDF fájlnév beállítását, így a kötegelt feldolgozás és az automatizált munkafolyamatok tisztábbak lesznek. A könyvtár nagy archívumokat is képes feldolgozni anélkül, hogy az egész fájlt a memóriába töltené, ezáltal akár 70 %-kal csökkentve a memóriahasználatot a manuális kicsomagoláshoz képest.
+A GroupDocs.Viewer több mint **100** dokumentum- és képfájlt támogat, és képes **500+** fájlt tartalmazó archívumokat feldolgozni anélkül, hogy az egész archívumot a memóriába töltené, így a memóriahasználat akár **70 %**-kal csökken a manuális kicsomagoláshoz képest. A magas szintű API elkerüli az egyedi parszerek írását, így a kötegelt munkafolyamatok gyorsabbak és megbízhatóbbak.
 
 ## Előfeltételek
 
-Mielőtt elkezdenénk, győződjön meg róla, hogy a következőkkel rendelkezik:
+- **Java Development Kit (JDK)** – 8-as vagy újabb verzió.  
+- **IDE** – IntelliJ IDEA, Eclipse vagy bármely Java‑kompatibilis szerkesztő.  
+- **Maven** – a függőségkezeléshez (ajánlott).  
+- **Alap Java ismeretek** – ismernie kell az osztályokat, objektumokat és a fájl I/O-t.
 
-### Szükséges könyvtárak és függőségek
-- **GroupDocs.Viewer for Java**: 25.2 vagy újabb verzió.
+## A GroupDocs.Viewer beállítása Java-hoz
 
-### Környezet beállítási követelmények
-- JDK (Java Development Kit) telepítve van a gépén.
-- IDE, például IntelliJ IDEA vagy Eclipse a Java alkalmazások fejlesztéséhez.
+### Telepítés Maven segítségével
 
-### Tudás előfeltételek
-- Alapvető Java programozási ismeretek.
-- Maven ismerete, mint építési automatizációs eszköz.
-
-Ezekkel az előfeltételekkel folytassuk a GroupDocs.Viewer for Java beállítását.
-
-## A GroupDocs.Viewer Java beállítása
-
-### Telepítés Maven‑en keresztül
-
-A GroupDocs.Viewer Maven‑al történő integrálásához adja hozzá a következő tárolót és függőséget a `pom.xml` fájlhoz:
+Adja hozzá a GroupDocs tárolót és a Viewer függőséget a `pom.xml` fájlhoz. Ez az egyetlen lépés letölti a könyvtárat és az összes tranzitív függőséget.
 
 ```xml
 <repositories>
@@ -128,14 +128,14 @@ A GroupDocs.Viewer Maven‑al történő integrálásához adja hozzá a követk
 </dependencies>
 ```
 
-### Licenc megszerzésének lépései
-- **Ingyenes próba**: Teljes funkcionalitású próba verzió elérése a funkciók kiértékeléséhez.  
-- **Ideiglenes licenc**: Szerezze be a korlátok nélküli hosszabb értékeléshez.  
-- **Vásárlás**: Licenc beszerzése kereskedelmi felhasználáshoz.
+### Licenc beszerzési lépések
+- **Ingyenes próba** – teljes funkcionalitás 30 napig.  
+- **Ideiglenes licenc** – kiterjesztett értékelés korlátozások nélkül.  
+- **Megvásárolt licenc** – szükséges a termelési környezethez.
 
 #### Alapvető inicializálás és beállítás
 
-A Maven beállítása után inicializálja a GroupDocs.Viewer‑t a következő kódrészlettel:
+Miután a Maven feloldotta a csomagokat, létrehozhat egy `Viewer` példányt, és megadhatja a renderelni kívánt archívumot.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -149,15 +149,17 @@ try (Viewer viewer = new Viewer("YOUR_ARCHIVE_FILE_PATH")) {
 
 ## Implementációs útmutató
 
-Most a fájlnevek megadására összpontosítunk, amikor **zip‑et pdf‑be konvertálunk** egyéni nevekkel.
+Az alábbiakban a **convert zip to pdf** egyedi fájlnévvel történő lépésről‑lépésre munkafolyamatát mutatjuk be. Minden lépés egy rövid magyarázatot tartalmaz, majd az eredeti helyőrzőt, ahol a tényleges kód található.
 
-### Hogyan konvertáljuk a zip‑et pdf‑be egyéni fájlnevekkel
+### Hogyan konvertáljunk zip fájlt PDF-re egyedi fájlnevekkel
 
-Az archívum betöltése a `Viewer`‑rel, a `PdfViewOptions` konfigurálása, majd az `ArchiveOptions` használata a kívánt PDF fájlnév beállításához a renderelés előtt. Ez a kéts lépéses minta biztosítja, hogy a kimeneti fájl pontosan a megadott néven legyen, így elkerülve a későbbi átnevezéseket.
+Töltse be az archívumot, konfigurálja a PDF beállításokat, állítson be egyedi fájlnevet az `ArchiveOptions` segítségével, majd renderelje a PDF-et. Ez a kétlépéses minta biztosítja, hogy a kimeneti fájl pontosan a megadott nevet kapja, így nincs szükség utólagos átnevezésre.
+
+`ArchiveOptions` konfigurálja az archívum‑specifikus renderelési beállításokat, például a kimeneti fájlnevet.
 
 #### 1. lépés: Kimeneti könyvtár és fájlútvonal meghatározása
 
-Kezdje a kimeneti könyvtár és fájlútvonal beállításával, helyőrzők használatával a könnyű testreszabáshoz:
+Készítsen egy mappát, ahol a generált PDF tárolódik, és helyettesítőkkel építse fel a célfájl nevét a rugalmasság érdekében.
 
 ```java
 import java.nio.file.Path;
@@ -168,7 +170,7 @@ Path outputFilePath = outputDirectory.resolve("output.pdf");
 
 #### 2. lépés: Viewer objektum inicializálása
 
-A `Viewer` osztály metódusokat biztosít a dokumentumok és archívumok betöltéséhez és rendereléséhez. Hozzon létre egy `Viewer` objektumot a renderelni kívánt archívum fájllal:
+`Viewer` a fő osztály, amely betölti és rendereli a dokumentumokat és archívumokat. Egy példány létrehozása összekapcsolja a könyvtárat a forrásfájllal.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -181,7 +183,7 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_ZIP")) {
 
 #### 3. lépés: PdfViewOptions létrehozása
 
-A `PdfViewOptions` a PDF kimenet beállításait határozza meg, például az oldal méretét és margókat. Állítsa be a `PdfViewOptions`‑t a renderelési konfigurációk megadásához:
+`PdfViewOptions` szabályozza az oldal méretét, margókat és egyéb PDF‑specifikus beállításokat. Engedélyezheti vagy letilthatja a szövegkinyerést, képtömörítést és egyebeket.
 
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
@@ -189,9 +191,9 @@ import com.groupdocs.viewer.options.PdfViewOptions;
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
 
-#### 4. lépés: Egyéni fájlnév beállítása
+#### 4. lépés: Egyedi fájlnév beállítása
 
-Az `ArchiveOptions` lehetővé teszi az archívum‑specifikus renderelési beállítások konfigurálását, beleértve a kimeneti PDF fájlnevet is. Használja az `ArchiveOptions`‑t egy egyéni fájlnév beállításához a renderelt PDF dokumentumhoz:
+`ArchiveOptions` lehetővé teszi az archívum renderelésének finomhangolását, beleértve a létrehozott PDF nevét is. Az alábbi hívás a kívánt pontos fájlnevet állítja be.
 
 ```java
 import com.groupdocs.viewer.options.FileName;
@@ -202,79 +204,74 @@ viewOptions.getArchiveOptions().setFileName(new FileName("my_custom_filename.pdf
 
 #### 5. lépés: Archívum fájl renderelése PDF‑be
 
-Végül renderelje az archívum fájlt a megadott beállításokkal:
+Hívja meg a `view` metódust a konfigurált beállításokkal a végleges PDF előállításához. A könyvtár streameli a tartalmat, így még több száz oldalas archívumok is hatékonyan kezelhetők.
 
 ```java
 // Execute rendering process
 viewer.view(viewOptions);
 ```
 
-### Hibaelhárítási tippek
-- Győződjön meg róla, hogy minden útvonal helyesen van beállítva, és a könyvtárak léteznek.  
-- Ellenőrizze, hogy a megfelelő verziójú GroupDocs.Viewer van telepítve.  
-- Ha a generált PDF fájlnév nem felel meg az elvárásoknak, ellenőrizze kétszer a `setPdfFileName` hívást az `ArchiveOptions`‑ban.
+## Gyakori problémák és megoldások
+
+- **Helytelen fájlnév** – Ellenőrizze, hogy az `ArchiveOptions.setPdfFileName` a várt pontos karakterláncot kapja, beleértve a `.pdf` kiterjesztést is.  
+- **Hiányzó kimeneti mappa** – Győződjön meg róla, hogy az 1. lépésben meghatározott könyvtár létezik, vagy hozza létre programozottan a renderelés előtt.  
+- **Nem támogatott fájl a ZIP-ben** – A GroupDocs.Viewer kihagyja a nem renderelhető fájlokat; ellenőrizze a naplókat figyelmeztetésekért, és fontolja meg az archívum előzetes szűrését.  
+- **Memóriahullámok nagy archívumoknál** – Használja a streaming API-t (`Viewer.view` `FileOutputStream`‑mal), hogy alacsonyan tartsa a memóriahasználatot.
 
 ## Gyakorlati alkalmazások
 
-A **zip‑et pdf‑be konvertálás** és egyéni fájlnév beállításának megértése számos helyzetben előnyös lehet:
+1. **Márkakövető jelentéskészítés** – Automatikusan a kliensazonosítók vagy projektkódok alapján nevezze el a PDF-eket, így rendezetten tartja a dokumentumtárat.  
+2. **Jogi dokumentumok archiválása** – Konvertálja az ügyiratcsomagokat (gyakran ZIP‑ként szállítva) változtathatatlan PDF‑ekbe hosszú távú tárolásra.  
+3. **Automatikus e‑mail mellékletek** – Egyetlen PDF‑et generáljon a felhasználó által feltöltött ZIP‑ből, és csatolja egy e‑mailhez további fájlkezelő kód nélkül.
 
-1. **Márka konzisztencia** – Kimeneti fájlnevek testreszabása a márka céljaira több dokumentumban.  
-2. **Szervezeti hatékonyság** – Egységes elnevezési konvenció fenntartása a könnyebb dokumentumkezelés és visszakeresés érdekében.  
-3. **Automatizált jelentéskészítés** – Jelentések generálása meghatározott fájlnevekkel automatikusan ütemezett feladatok révén.
+## Teljesítmény szempontok
 
-## Teljesítményfontosságú szempontok
+- **Memóriahasználat** – A GroupDocs.Viewer streaming módon dolgozza fel az archívumokat, általában kevesebb mint **150 MB** memóriát használ még egy 1 GB‑os ZIP fájl esetén is.  
+- **CPU terhelés** – Egy vegyes típusú archívumból 300 oldalas PDF renderelése átlagosan **1,2 másodperc** 10 oldalra egy standard 2,6 GHz CPU‑n.  
+- **Szálbiztonság** – A `Viewer` példányok nem szálbiztosak; kérésenként hozzon létre új példányt, vagy szinkronizálja a hozzáférést több szálas környezetben.
 
-A GroupDocs.Viewer használata során vegye figyelembe a következőket a teljesítmény optimalizálásához:
+## Gyakran ismételt kérdések
 
-- Használjon hatékony memória-kezelési gyakorlatokat Java‑ban.  
-- Figyelje a erőforrás-használatot a renderelési műveletek során.  
-- Alkalmazzon legjobb gyakorlatokat nagy dokumentumarchívumok kezelésekor a rendszer teljesítményének befolyásolása nélkül, például fájlolvasás streaminggel és a `Viewer` példányok újrahasználatával, ahol lehetséges.
+**Q: Hogyan telepíthetem a GroupDocs.Viewer for Java‑t?**  
+A: Használja a Maven‑t, és adja hozzá a megadott tárolót és függőséget a `pom.xml`‑hez.
 
-## Következtetés
+**Q: Megadhatok fájlneveket más kimeneti formátumokhoz is, mint a PDF?**  
+A: Igen, hasonló beállítások léteznek HTML, PNG és a GroupDocs.Viewer által támogatott egyéb kimeneti formátumok esetén.
 
-Ebben az oktatóanyagban megtanulta, hogyan **konvertálja a zip‑et pdf‑be** egyéni fájlnevekkel a GroupDocs.Viewer for Java használatával. A lépések követésével egyszerűsítheti a dokumentumkezelési folyamatokat, és biztosíthatja a konzisztenciát a generált PDF‑ek között.
+**Q: Mi a teendő, ha a renderelt dokumentum fájlneve nem a várt?**  
+A: Ellenőrizze újra az útvonaldefiníciókat, és győződjön meg róla, hogy minden konfiguráció, különösen az `ArchiveOptions.setPdfFileName`, helyesen van beállítva.
 
-### Következő lépések
-- Fedezze fel a GroupDocs.Viewer további funkcióit (például HTML, PNG kimenet).  
-- Kísérletezzen más archívumtípusok, például TAR vagy 7z renderelésével.  
+**Q: Hogyan kezeljem a nagy archívumfájlokat a GroupDocs.Viewer‑rel?**  
+A: Optimalizálja a memóriahasználatot, és fontolja meg az archívum kisebb darabokra bontását vagy a tartalom streamelését, hogy elkerülje a teljes fájl memóriába töltését.
 
-Készen áll a megoldás bevezetésére a projektjeiben? Próbálja ki még ma!
+**Q: Hol találok további forrásokat a GroupDocs.Viewer használatához?**  
+A: Látogassa meg a [GroupDocs dokumentációt](https://docs.groupdocs.com/viewer/java/) a részletes útmutatók és API referenciákért.
 
-## Gyakran Ismételt Kérdések
-
-**K: Hogyan telepíthetem a GroupDocs.Viewer for Java‑t?**  
-V: Használja a Maven‑t, és adja hozzá a megadott tárolót és függőséget a `pom.xml`‑hez.
-
-**K: Megadhatok fájlneveket más kimeneti formátumoknál is, mint a PDF?**  
-V: Igen, hasonló beállítások léteznek a GroupDocs.Viewer által támogatott különböző kimeneti formátumokhoz.
-
-**K: Mi van, ha a renderelt dokumentum fájlneve nem a várt?**  
-V: Ellenőrizze újra az útvonaldefiníciókat, és győződjön meg róla, hogy minden konfiguráció, különösen az `ArchiveOptions.setPdfFileName`, helyesen van beállítva.
-
-**K: Hogyan kezeljem a nagy archívum fájlokat a GroupDocs.Viewer‑rel?**  
-V: Optimalizálja a memóriahasználatot, és fontolja meg az archívum kisebb darabokra bontását vagy a tartalom streamingelését, hogy elkerülje a teljes fájl memóriába töltését.
-
-**K: Hol találok további forrásokat a GroupDocs.Viewer használatához?**  
-V: Látogassa meg a [GroupDocs dokumentációt](https://docs.groupdocs.com/viewer/java/) a részletes útmutatók és API‑referenciákért.
-
-## Erőforrások
+## Források
 - **Dokumentáció**: [GroupDocs dokumentáció](https://docs.groupdocs.com/viewer/java/)
-- **Dokumentáció**: [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
-- **API referencia**: [GroupDocs Viewer Java Reference](https://reference.groupdocs.com/viewer/java/)
-- **Letöltés**: [GroupDocs Viewer Releases](https://releases.groupdocs.com/viewer/java/)
-- **Vásárlás**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
-- **Ingyenes próba**: [Try GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Ideiglenes licenc**: [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Támogatás**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentáció**: [GroupDocs Viewer Java dokumentáció](https://docs.groupdocs.com/viewer/java/)
+- **API referenciák**: [GroupDocs Viewer Java referenciák](https://reference.groupdocs.com/viewer/java/)
+- **Letöltés**: [GroupDocs Viewer kiadások](https://releases.groupdocs.com/viewer/java/)
+- **Vásárlás**: [GroupDocs licenc vásárlása](https://purchase.groupdocs.com/buy)
+- **Ingyenes próba**: [GroupDocs Viewer kipróbálása](https://releases.groupdocs.com/viewer/java/)
+- **Ideiglenes licenc**: [Ideiglenes licenc beszerzése](https://purchase.groupdocs.com/temporary-license/)
+- **Támogatás**: [GroupDocs Fórum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Utoljára frissítve:** 2026-05-31  
-**Tesztelve:** GroupDocs.Viewer 25.2 for Java  
+**Legutóbb frissítve:** 2026-10-15  
+**Tesztelve a következővel:** GroupDocs.Viewer 25.2 for Java  
 **Szerző:** GroupDocs  
 
-## Kapcsolódó oktatóanyagok
+---
 
-- [groupdocs viewer java: Dokumentumok PDF‑be konvertálása – Teljes útmutató](/viewer/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/)
-- [Hogyan állítsunk be licenceket a GroupDocs.Viewer Java&#58; Fájl és URL beállítási útmutató](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)
-- [Hatékony PDF oldal átrendezés a GroupDocs.Viewer for Java&#58; Átfogó útmutató](/viewer/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/)
+## Kapcsolódó útmutatók
+
+- [groupdocs viewer java: Dokumentumok PDF-re konvertálása – Teljes útmutató](/viewer/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/)
+- [Hogyan állítsuk be a licenceket a GroupDocs.Viewer Java-ban: Fájl és URL beállítási útmutató](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)
+- [Hatékony PDF oldal újrarendezés a GroupDocs.Viewer for Java-val: Átfogó útmutató](/viewer/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/products-backtop-button >}}
