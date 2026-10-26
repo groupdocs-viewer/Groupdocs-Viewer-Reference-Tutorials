@@ -1,27 +1,26 @@
 ---
 additionalTitle: GroupDocs API References
-date: 2026-07-14
-description: สำรวจ GroupDocs Viewer tutorial สำหรับการ rendering, caching, watermarks,
-  และ document rendering ครอบคลุมกว่า 170+ รูปแบบใน .NET และ Java.
+date: 2026-10-26
+description: บทเรียนการ render GroupDocs Viewer ช่วยให้คุณ render, cache, และ watermark
+  เอกสารในรูปแบบกว่า 170+ รูปแบบบน .NET และ Java.
 is_root: true
 keywords:
-- groupdocs viewer tutorial
+- groupdocs viewer rendering tutorial
 - document rendering
 - file format support
-lastmod: 2026-07-14
-linktitle: GroupDocs Viewer บทเรียน
-og_description: GroupDocs Viewer tutorial ช่วยให้คุณ render, cache, และ watermark
-  เอกสารครอบคลุมกว่า 170+ รูปแบบใน .NET และ Java, ส่งมอบการ viewing ที่มีความละเอียดสูงสำหรับ
-  web, desktop, และ mobile apps.
+lastmod: 2026-10-26
+linktitle: บทเรียน GroupDocs Viewer
+og_description: บทเรียนการ render GroupDocs Viewer แสดงวิธีการ render, cache, และ
+  watermark เอกสารในรูปแบบกว่า 170+ รูปแบบบน .NET และ Java สำหรับ high‑fidelity viewing.
 og_image_alt: 'Guide: Render and display documents with GroupDocs Viewer in .NET and
   Java'
-og_title: GroupDocs Viewer บทเรียน – Render & display documents
+og_title: บทเรียนการ render GroupDocs Viewer – render documents
 schemas:
 - author: GroupDocs
-  dateModified: '2026-07-14'
-  description: Explore the GroupDocs Viewer tutorial for rendering, caching, watermarks,
+  dateModified: '2026-10-26'
+  description: GroupDocs Viewer rendering tutorial covers rendering, caching, watermarks,
     and document rendering across 170+ formats in .NET and Java.
-  headline: GroupDocs Viewer tutorial – Render & display documents
+  headline: GroupDocs Viewer rendering tutorial – render documents
   type: TechArticle
 - questions:
   - answer: No external software is required; the API handles all rendering internally.
@@ -44,115 +43,117 @@ tags:
 - .net
 - java
 - file formats
-title: GroupDocs Viewer บทเรียน – Render & display documents
+title: บทเรียนการ render GroupDocs Viewer – render documents
 type: docs
 url: /th/
 weight: 11
 ---
 
-# คู่มือ GroupDocs Viewer – การแสดงผลและแสดงเอกสาร
+# บทแนะนำการแสดงผล GroupDocs Viewer – การแสดงเอกสาร
 
-Welcome to the **GroupDocs Viewer tutorial** hub. In this tutorial you’ll find a comprehensive collection of guides that help you master our powerful document viewer APIs for .NET and Java. Whether you’re building a web app, a desktop solution, or a mobile experience, GroupDocs Viewer enables you to seamlessly render and display a wide variety of document formats, including PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, images, and more.
+ใน **GroupDocs Viewer rendering tutorial** นี้ คุณจะได้เรียนรู้วิธีการแสดงผล, แคช, และใส่น้ำลายน้ำให้กับเอกสารในรูปแบบไฟล์กว่า 170 แบบโดยใช้ GroupDocs Viewer APIs สำหรับ .NET และ Java ไม่ว่าคุณจะสร้างพอร์ทัลเว็บ, ลูกค้าเดสก์ท็อป, หรือแอปมือถือ, บทแนะนำนี้จะให้คำแนะนำแบบขั้นตอน, เคล็ดลับการปฏิบัติที่ดีที่สุด, และตัวอย่างจากโลกจริง เพื่อให้คุณสามารถส่งมอบการดูเอกสารที่แม่นยำพิกเซลได้อย่างรวดเร็ว.
 
-## คำตอบด่วน
-- **GroupDocs Viewer tutorial คืออะไร?** คู่มือแบบขั้นตอนเพื่อแสดงผล, แปลง, และแสดงไฟล์กว่า 170 รูปแบบโดยใช้ GroupDocs Viewer สำหรับ .NET และ Java.  
+## คำตอบอย่างรวดเร็ว
+- **GroupDocs Viewer rendering tutorial คืออะไร?** เป็นคู่มือแบบขั้นตอนที่แสดงวิธีการแสดงผล, แปลง, และแสดงไฟล์กว่า 170 รูปแบบด้วย GroupDocs Viewer สำหรับ .NET และ Java.  
 - **แพลตฟอร์มที่รองรับคืออะไร?** .NET (Framework, Core, .NET 5/6) และ Java (8+).  
 - **ฉันสามารถแสดงผล PDF และรูปภาพได้หรือไม่?** ใช่ – คุณสามารถส่งออกเป็น HTML, JPEG, PNG, และ PDF.  
-- **มีการแคชหรือไม่?** แน่นอน; มีบทเรียนเฉพาะที่ครอบคลุมการแคชและการจัดการทรัพยากร.  
-- **ฉันต้องการไลเซนส์หรือไม่?** มีการทดลองใช้ฟรี; จำเป็นต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานในผลิตภัณฑ์.
+- **มีการแคชหรือไม่?** แน่นอน; มีบทแนะนำเฉพาะที่ครอบคลุมการแคชและการจัดการทรัพยากร.  
+- **ฉันต้องการไลเซนส์หรือไม่?** มีการทดลองใช้ฟรี; จำเป็นต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานในสภาพแวดล้อมการผลิต.
 
-## GroupDocs Viewer tutorial คืออะไร?
-GroupDocs Viewer tutorial คือคอลเลกชันที่คัดสรรของคู่มือแบบขั้นตอนที่แสดงวิธีการโหลด, แสดงผล, และปรับแต่งการดูเอกสารในแอปพลิเคชันของคุณโดยใช้ GroupDocs Viewer API สำหรับ .NET และ Java. มันให้ตัวอย่างโค้ดที่เป็นรูปธรรม, เคล็ดลับการกำหนดค่า, และคำแนะนำแนวปฏิบัติที่ดีที่สุดเพื่อให้คุณเริ่มต้นได้อย่างรวดเร็ว.
+## GroupDocs Viewer rendering tutorial คืออะไร?
+
+GroupDocs Viewer rendering tutorial คือชุดคัดสรรของคู่มือแบบขั้นตอนที่แสดงวิธีการโหลด, แสดงผล, และปรับแต่งการดูเอกสารในแอปพลิเคชันของคุณโดยใช้ GroupDocs Viewer API สำหรับ .NET และ Java; โดยการโหลดเอกสารด้วย Viewer API และเรียกเมธอดการแสดงผล คุณจะได้ผลลัพธ์เป็น HTML, รูปภาพ, หรือ PDF อย่างทันที ช่วยให้การพัฒนารวดเร็ว.
 
 ## ทำไมต้องใช้ GroupDocs Viewer สำหรับการแสดงผลเอกสาร?
-คุณควรใช้ GroupDocs Viewer สำหรับการแสดงผลเอกสารเพราะมันรองรับไฟล์กว่า 170 รูปแบบ, ให้ความคมชัดของภาพที่พิกเซลสมบูรณ์, และทำงานบน .NET และ Java โดยไม่ต้องใช้ซอฟต์แวร์ภายนอก, ทำให้เหมาะสำหรับแอปพลิเคชันเว็บ, เดสก์ท็อป, และมือถือ.  
 
-- **การสนับสนุนรูปแบบที่หลากหลาย:** มากกว่า 170 ประเภทไฟล์, รวมถึง CAD ซับซ้อนและเอกสารสำนักงาน.  
+GroupDocs Viewer รองรับไฟล์มากกว่า 170 รูปแบบและสามารถประมวลผลเอกสารได้ถึง 500 หน้าในเวลาน้อยกว่าสองวินาทีบนฮาร์ดแวร์เซิร์ฟเวอร์ทั่วไป, ให้ความแม่นยำของภาพพิกเซลโดยไม่ต้องใช้ซอฟต์แวร์ภายนอก; การแสดงผลที่มีประสิทธิภาพสูงนี้ให้การแสดงผลที่แม่นยำในรูปแบบ HTML, รูปภาพ, หรือ PDF, ทำให้เหมาะสำหรับแอปพลิเคชันเว็บ, เดสก์ท็อป, และมือถือ.
+
+- **การสนับสนุนรูปแบบที่หลากหลาย:** มากกว่า 170 ประเภทไฟล์, รวมถึง CAD ที่ซับซ้อนและเอกสารสำนักงาน.  
 - **การแสดงผลความละเอียดสูง:** การแสดงผลภาพที่แม่นยำใน HTML, รูปภาพ, หรือ PDF.  
-- **ความยืดหยุ่นข้ามแพลตฟอร์ม:** ทำงานอย่างราบรื่นในสภาพแวดล้อม .NET และ Java.  
-- **สถาปัตยกรรมที่ขยายได้:** ปรับแต่ง pipeline การแสดงผล, เพิ่มลายน้ำ, หรือรวมการแคชด้วยความพยายามเพียงเล็กน้อย.  
+- **ความยืดหยุ่นข้ามแพลตฟอร์ม:** ทำงานได้อย่างราบรื่นในสภาพแวดล้อม .NET และ Java.  
+- **สถาปัตยกรรมที่ขยายได้:** ปรับแต่งกระบวนการแสดงผล, เพิ่มน้ำลายน้ำ, หรือรวมการแคชด้วยความพยายามน้อย.
 
 {{% alert color="primary" %}}
-เสริมพลังให้แอปพลิเคชัน .NET ของคุณด้วยความสามารถในการดูเอกสารที่มีความละเอียดสูง. บทเรียน GroupDocs.Viewer สำหรับ .NET ของเรามอบทุกสิ่งที่คุณต้องการรู้เพื่อผสานรวมตัวดูเอกสารที่ทรงพลัง. เรียนรู้วิธีการแสดงผลเอกสารกว่า 170 รูปแบบเป็น HTML, JPEG, PNG, และ PDF. สำรวจหัวข้อขั้นสูงเช่นการแสดงผลเลย์เอาต์เฉพาะในภาพวาด CAD, การจัดการไฟล์แนบของเอกสาร, และการเพิ่มประสิทธิภาพการทำงาน. เริ่มสร้างประสบการณ์การดูเอกสารที่มั่นคงและมืออาชีพใน C#, ASP.NET, และเฟรมเวิร์ก .NET อื่นๆ.
+เสริมศักยภาพให้กับแอปพลิเคชัน .NET ของคุณด้วยความสามารถในการดูเอกสารความละเอียดสูง. บทแนะนำ GroupDocs.Viewer สำหรับ .NET ของเรามอบทุกสิ่งที่คุณต้องรู้เพื่อรวมตัวดูเอกสารที่ทรงพลัง. เรียนรู้วิธีการแสดงผลกว่า 170 รูปแบบเอกสารเป็น HTML, JPEG, PNG, และ PDF. สำรวจหัวข้อขั้นสูงเช่นการแสดงผลเลย์เอาต์เฉพาะในภาพวาด CAD, การจัดการไฟล์แนบของเอกสาร, และการเพิ่มประสิทธิภาพการทำงาน. เริ่มสร้างประสบการณ์การดูเอกสารที่แข็งแกร่งและเป็นมืออาชีพใน C#, ASP.NET, และเฟรมเวิร์ก .NET อื่นๆ.
 {{% /alert %}}
 
-### วิธีเริ่มต้นใช้งาน GroupDocs Viewer ใน .NET
-เพื่อเริ่มต้นใช้งาน GroupDocs Viewer ใน .NET, ให้ติดตั้งแพคเกจ NuGet `GroupDocs.Viewer`, เพิ่มไลเซนส์ที่ถูกต้อง, และอ้างอิงเนมสเปซในโปรเจกต์ของคุณ. คลาส `Viewer` เป็นส่วนประกอบหลักที่โหลดเอกสารและให้เมธอดการแสดงผล. จากนั้นคุณสามารถสร้างอินสแตนซ์ของคลาส Viewer และเริ่มแสดงผลเอกสารเป็น HTML, รูปภาพ, หรือ PDF.  
+## วิธีเริ่มต้นใช้งาน GroupDocs Viewer ใน .NET
 
-ก่อนที่คุณจะลงลึกในคู่มือรายละเอียด, ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
+ติดตั้งแพ็กเกจ NuGet `GroupDocs.Viewer`, เพิ่มไลเซนส์ที่ถูกต้อง, และอ้างอิงเนมสเปซที่เหมาะสมในโปรเจกต์ของคุณ; จากนั้นสร้างอินสแตนซ์ `Viewer` และเรียกหนึ่งในเมธอดการแสดงผลของมัน—เช่น `RenderDocument` สำหรับการส่งออกเป็น HTML หรือ `RenderPages` พร้อม `ImageOptions` สำหรับภาพ PNG/JPEG—to render any supported document with just a few lines of code.  
+คลาส `Viewer` เป็นส่วนประกอบหลักที่โหลดเอกสารและให้เมธอดการแสดงผลเช่น `RenderDocument` และ `RenderPages`.
 
-- .NET 5/6 หรือ .NET Framework 4.6+ ติดตั้งแล้ว  
-- ไลเซนส์ GroupDocs Viewer ที่ถูกต้อง (หรือการทดลองใช้ฟรี)  
-- แพคเกจ NuGet `GroupDocs.Viewer` เพิ่มในโปรเจกต์ของคุณ  
+ก่อนที่จะดำดิ่งสู่คู่มือเชิงลึก, โปรดตรวจสอบว่าคุณมีข้อกำหนดต่อไปนี้:
 
-เมื่อคุณตั้งค่าสภาพแวดล้อมแล้ว, คุณสามารถสำรวจบทเรียนด้านล่างเพื่อดูตัวอย่างโค้ดที่เป็นรูปธรรมและคำแนะนำแนวปฏิบัติที่ดีที่สุด.  
+- .NET 5/6 หรือ .NET Framework 4.6+ ที่ติดตั้งแล้ว
+- ไลเซนส์ GroupDocs Viewer ที่ถูกต้อง (หรือการทดลองใช้ฟรี)
+- แพ็กเกจ NuGet `GroupDocs.Viewer` ที่เพิ่มในโปรเจกต์ของคุณ
 
 นี่คือลิงก์ไปยังแหล่งข้อมูล .NET ที่เป็นประโยชน์บางส่วน:
 
-- [Loading Documents](./net/loading-documents/)
-- [Advanced Loading Options](./net/advanced-loading/)
-- [Advanced Usage (Caching)](./net/advanced-usage-caching/)
-- [Rendering Options](./net/rendering-options/)
-- [Rendering Archive Files](./net/rendering-archive-files/)
-- [Rendering CAD Drawings](./net/rendering-cad-drawings/)
-- [Getting Started](./net/getting-started/)
-- [Rendering Email Messages](./net/rendering-email-messages/)
-- [Image Rendering](./net/image-rendering/)
-- [Rendering Documents to PDF](./net/rendering-documents-pdf/)
-- [Rendering Documents to Images](./net/rendering-documents-images/)
-- [Rendering Documents to HTML](./net/rendering-documents-html/)
-- [Processing Document Attachments](./net/processing-document-attachments/)
-- [Rendering Text Files](./net/rendering-text-files/)
-- [Rendering Visio Documents](./net/rendering-visio-documents/)
-- [Rendering Web Documents](./net/rendering-web-documents/)
-- [Rendering Word Processing Documents](./net/rendering-word-processing-documents/)
-- [Spreadsheet Rendering Options](./net/spreadsheet-rendering-options/)
-- [PDF Rendering Options](./net/pdf-rendering-options/)
-- [Rendering Outlook Data Files (PST, OST)](./net/rendering-outlook-data-files/)
-- [Rendering Microsoft Project Documents](./net/rendering-ms-project-documents/)
-- [Document Loading](./net/document-loading/)
-- [Rendering Basics](./net/rendering-basics/)
-- [Advanced Rendering](./net/advanced-rendering/)
-- [Performance Optimization](./net/performance-optimization/)
-- [Security & Permissions](./net/security-permissions/)
-- [Watermarks & Annotations](./net/watermarks-annotations/)
-- [File Formats Support](./net/file-formats-support/)
-- [Cloud & Remote Document Rendering](./net/cloud-remote-document-rendering/)
-- [Caching & Resource Management](./net/caching-resource-management/)
-- [Metadata & Properties](./net/metadata-properties/)
-- [Export & Conversion](./net/export-conversion/)
-- [Custom Rendering](./net/custom-rendering/)
+- [โหลดเอกสาร](./net/loading-documents/)
+- [ตัวเลือกการโหลดขั้นสูง](./net/advanced-loading/)
+- [การใช้งานขั้นสูง (การแคช)](./net/advanced-usage-caching/)
+- [ตัวเลือกการแสดงผล](./net/rendering-options/)
+- [การแสดงผลไฟล์อาร์ไคฟ์](./net/rendering-archive-files/)
+- [การแสดงผลภาพวาด CAD](./net/rendering-cad-drawings/)
+- [เริ่มต้นใช้งาน](./net/getting-started/)
+- [การแสดงผลอีเมล](./net/rendering-email-messages/)
+- [การแสดงผลภาพ](./net/image-rendering/)
+- [การแสดงผลเอกสารเป็น PDF](./net/rendering-documents-pdf/)
+- [การแสดงผลเอกสารเป็นภาพ](./net/rendering-documents-images/)
+- [การแสดงผลเอกสารเป็น HTML](./net/rendering-documents-html/)
+- [การประมวลผลไฟล์แนบของเอกสาร](./net/processing-document-attachments/)
+- [การแสดงผลไฟล์ข้อความ](./net/rendering-text-files/)
+- [การแสดงผลเอกสาร Visio](./net/rendering-visio-documents/)
+- [การแสดงผลเอกสารเว็บ](./net/rendering-web-documents/)
+- [การแสดงผลเอกสารประมวลผลคำ](./net/rendering-word-processing-documents/)
+- [ตัวเลือกการแสดงผลสเปรดชีต](./net/spreadsheet-rendering-options/)
+- [ตัวเลือกการแสดงผล PDF](./net/pdf-rendering-options/)
+- [การแสดงผลไฟล์ข้อมูล Outlook (PST, OST)](./net/rendering-outlook-data-files/)
+- [การแสดงผลเอกสาร Microsoft Project](./net/rendering-ms-project-documents/)
+- [การโหลดเอกสาร](./net/document-loading/)
+- [พื้นฐานการแสดงผล](./net/rendering-basics/)
+- [การแสดงผลขั้นสูง](./net/advanced-rendering/)
+- [การเพิ่มประสิทธิภาพการทำงาน](./net/performance-optimization/)
+- [ความปลอดภัยและสิทธิ์](./net/security-permissions/)
+- [น้ำลายน้ำและคำอธิบายประกอบ](./net/watermarks-annotations/)
+- [การสนับสนุนรูปแบบไฟล์](./net/file-formats-support/)
+- [การแสดงผลเอกสารบนคลาวด์และระยะไกล](./net/cloud-remote-document-rendering/)
+- [การแคชและการจัดการทรัพยากร](./net/caching-resource-management/)
+- [เมตาดาต้าและคุณสมบัติ](./net/metadata-properties/)
+- [การส่งออกและการแปลง](./net/export-conversion/)
+- [การแสดงผลแบบกำหนดเอง](./net/custom-rendering/)
 
 {{% alert color="primary" %}}
-ผสานรวมตัวดูเอกสารที่หลากหลายและมีประสิทธิภาพเข้าสู่แอปพลิเคชัน Java ของคุณด้วย GroupDocs.Viewer สำหรับ Java. บทเรียนของเราจะนำคุณผ่านทุกขั้นตอน, ตั้งแต่การตั้งค่าสภาพแวดล้อมจนถึงการใช้งานคุณลักษณะการแสดงผลขั้นสูง. เรียนรู้การแสดงไฟล์รูปแบบหลายประเภท, รวมถึงเอกสารซับซ้อนเช่นไฟล์ CAD แบบหลายเลย์เอาต์และไฟล์อาร์ไคฟ์ที่ป้องกันด้วยรหัสผ่าน. ทำตามตัวอย่างของเราเพื่อแสดงผลเอกสารเป็น HTML5, รูปภาพ, และ PDF, ทำให้การดูเอกสารข้ามแพลตฟอร์มเป็นเรื่องง่าย.
+รวมตัวดูเอกสารที่หลากหลายและมีประสิทธิภาพเข้ากับแอปพลิเคชัน Java ของคุณด้วย GroupDocs.Viewer สำหรับ Java. บทแนะนำของเราจะนำคุณผ่านทุกขั้นตอน, ตั้งแต่การตั้งค่าสภาพแวดล้อมของคุณจนถึงการใช้งานคุณลักษณะการแสดงผลขั้นสูง. เรียนรู้การแสดงผลไฟล์หลายรูปแบบ, รวมถึงเอกสารซับซ้อนเช่นไฟล์ CAD แบบหลายเลย์เอาต์และไฟล์อาร์ไคฟ์ที่ป้องกันด้วยรหัสผ่าน. ทำตามตัวอย่างของเราเพื่อแสดงผลเอกสารเป็น HTML5, รูปภาพ, และ PDF, ทำให้การดูเอกสารข้ามแพลตฟอร์มเป็นเรื่องง่าย.
 {{% /alert %}}
 
-### วิธีเริ่มต้นใช้งาน GroupDocs Viewer ใน Java
-เพื่อเริ่มต้นใช้งาน GroupDocs Viewer ใน Java, ให้เพิ่ม dependency ของ GroupDocs Viewer สำหรับ Maven (หรือ Gradle), กำหนดไฟล์ไลเซนส์ที่ถูกต้อง, และนำเข้าคลาสที่จำเป็น. คลาส `Viewer` เป็น API หลักที่เปิดเอกสารและแสดงผลเป็นรูปแบบที่ต้องการ. จากนั้นคุณสามารถสร้างอินสแตนซ์ Viewer และแสดงผลเอกสารเป็น HTML, รูปภาพ, หรือ PDF ด้วยเพียงไม่กี่บรรทัดของโค้ด.  
+## วิธีเริ่มต้นใช้งาน GroupDocs Viewer ใน Java
+
+เพิ่มการพึ่งพา GroupDocs Viewer Maven (หรือ Gradle) ลงในโปรเจกต์ของคุณ, กำหนดไฟล์ไลเซนส์ที่ถูกต้อง, และนำเข้าคลาสที่จำเป็น; จากนั้นสร้างอ็อบเจ็กต์ `Viewer`, โหลดเอกสารเป้าหมาย, และเรียก `viewer.render` พร้อมตัวเลือกที่เหมาะสม—เช่น `HtmlOptions` สำหรับการส่งออกเป็น HTML หรือ `ImageOptions` สำหรับการแสดงผลภาพ—to produce the desired format with minimal code.  
+คลาส `Viewer` ใน Java เป็น API หลักที่เปิดเอกสารและแสดงผลเป็นรูปแบบที่ต้องการ. คุณสร้างอินสแตนซ์ `Viewer`, โหลดไฟล์, และเรียก `viewer.render(documentPath, new HtmlOptions())` สำหรับการส่งออกเป็น HTML หรือ `ImageOptions` สำหรับการส่งออกเป็นภาพ.
 
 สำหรับนักพัฒนา Java, ข้อกำหนดเบื้องต้นคล้ายกัน:
 
-- JDK 8 หรือสูงกว่า ติดตั้งแล้ว  
-- ระบบการสร้าง Maven หรือ Gradle ถูกกำหนดค่าแล้ว  
-- dependency ของ GroupDocs Viewer สำหรับ Java เพิ่มในโปรเจกต์ของคุณ  
-
-หลังจากตั้งค่า, สำรวจบทเรียนเฉพาะ Java ด้านล่าง.  
+- JDK 8 หรือสูงกว่า ที่ติดตั้งแล้ว
+- ระบบการสร้าง Maven หรือ Gradle ที่กำหนดค่าแล้ว
+- การพึ่งพา GroupDocs Viewer สำหรับ Java ที่เพิ่มในโปรเจกต์ของคุณ
 
 นี่คือลิงก์ไปยังแหล่งข้อมูล Java ที่เป็นประโยชน์บางส่วน:
 
-- [Getting Started](./java/getting-started/)
-- [Document Loading](./java/document-loading/)
-- [Rendering Basics](./java/rendering-basics/)
-- [Advanced Rendering](./java/advanced-rendering/)
-- [Performance Optimization](./java/performance-optimization/)
-- [Security & Permissions](./java/security-permissions/)
-- [Watermarks & Annotations](./java/watermarks-annotations/)
-- [File Formats Support](./java/file-formats-support/)
-- [Cloud & Remote Document Rendering](./java/cloud-remote-document-rendering/)
-- [Caching & Resource Management](./java/caching-resource-management/)
-- [Metadata & Properties](./java/metadata-properties/)
-- [Export & Conversion](./java/export-conversion/)
-- [Custom Rendering](./java/custom-rendering/)
+- [เริ่มต้นใช้งาน](./java/getting-started/)
+- [การโหลดเอกสาร](./java/document-loading/)
+- [พื้นฐานการแสดงผล](./java/rendering-basics/)
+- [การแสดงผลขั้นสูง](./java/advanced-rendering/)
+- [การเพิ่มประสิทธิภาพการทำงาน](./java/performance-optimization/)
+- [ความปลอดภัยและสิทธิ์](./java/security-permissions/)
+- [น้ำลายน้ำและคำอธิบายประกอบ](./java/watermarks-annotations/)
+- [การสนับสนุนรูปแบบไฟล์](./java/file-formats-support/)
+- [การแสดงผลเอกสารบนคลาวด์และระยะไกล](./java/cloud-remote-document-rendering/)
+- [การแคชและการจัดการทรัพยากร](./java/caching-resource-management/)
+- [เมตาดาต้าและคุณสมบัติ](./java/metadata-properties/)
+- [การส่งออกและการแปลง](./java/export-conversion/)
+- [การแสดงผลแบบกำหนดเอง](./java/custom-rendering/)
 
 ## คำถามที่พบบ่อย
 
@@ -160,19 +161,19 @@ GroupDocs Viewer tutorial คือคอลเลกชันที่คัด
 A: ไม่จำเป็นต้องใช้ซอฟต์แวร์ภายนอก; API จัดการการแสดงผลทั้งหมดภายใน.
 
 **Q: ฉันสามารถแสดงผลเอกสารที่ป้องกันด้วยรหัสผ่านได้หรือไม่?**  
-A: ได้, คุณสามารถส่งรหัสผ่านเมื่อโหลดเอกสารผ่าน API.
+A: ใช่, คุณสามารถส่งรหัสผ่านเมื่อโหลดเอกสารผ่าน API.
 
 **Q: การแคชช่วยปรับปรุงประสิทธิภาพอย่างไร?**  
-A: การแคชเก็บหน้าที่แสดงผลหรือรูปภาพ, ลดเวลาการประมวลผลสำหรับคำขอถัดไป.
+A: การแคชเก็บหน้าที่แสดงผลหรือภาพไว้, ลดเวลาในการประมวลผลสำหรับคำขอครั้งต่อไป.
 
-**Q: สามารถเพิ่มลายน้ำลงในหน้าที่แสดงผลได้หรือไม่?**  
-A: แน่นอน—บทเรียนเฉพาะจะแสดงวิธีการใส่ลายน้ำเป็นข้อความหรือรูปภาพระหว่างการแสดงผล.
+**Q: สามารถเพิ่มน้ำลายน้ำลงในหน้าที่แสดงผลได้หรือไม่?**  
+A: แน่นอน—บทแนะนำเฉพาะจะแสดงวิธีการใส่น้ำลายน้ำเป็นข้อความหรือภาพระหว่างการแสดงผล.
 
-**Q: ไฟล์รูปแบบใดบ้างที่รองรับโดยอัตโนมัติ?**  
+**Q: มีรูปแบบไฟล์ใดบ้างที่รองรับโดยอัตโนมัติ?**  
 A: มากกว่า 170 รูปแบบ, รวมถึง PDF, DOCX, XLSX, PPTX, DWG, DWF, SVG, และหลายประเภทของรูปภาพ.
 
 ---
 
-**อัปเดตล่าสุด:** 2026-07-14  
+**อัปเดตล่าสุด:** 2026-10-26  
 **ทดสอบกับ:** GroupDocs.Viewer 23.11 for .NET & Java  
 **ผู้เขียน:** GroupDocs
