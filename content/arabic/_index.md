@@ -1,27 +1,26 @@
 ---
 additionalTitle: GroupDocs API References
-date: 2026-07-14
-description: استكشف دليل GroupDocs Viewer للعرض، التخزين المؤقت، العلامات المائية،
-  ومعالجة المستندات عبر أكثر من 170 تنسيقًا في .NET و Java.
+date: 2026-10-26
+description: دروس عرض GroupDocs Viewer تساعدك على عرض، تخزين مؤقت، وإضافة علامة مائية
+  للمستندات عبر أكثر من 170 تنسيقًا في .NET و Java.
 is_root: true
 keywords:
-- groupdocs viewer tutorial
+- groupdocs viewer rendering tutorial
 - document rendering
 - file format support
-lastmod: 2026-07-14
+lastmod: 2026-10-26
 linktitle: دروس GroupDocs Viewer
-og_description: يساعدك دليل GroupDocs Viewer على عرض، تخزين مؤقت، وإضافة علامات مائية
-  للمستندات عبر أكثر من 170 تنسيقًا في .NET و Java، مع توفير عرض عالي الدقة لتطبيقات
-  الويب وسطح المكتب والهواتف المحمولة.
+og_description: دروس عرض GroupDocs Viewer توضح كيفية عرض، تخزين مؤقت، وإضافة علامة
+  مائية للمستندات عبر أكثر من 170 تنسيقًا في .NET و Java لتوفير عرض عالي الدقة.
 og_image_alt: 'Guide: Render and display documents with GroupDocs Viewer in .NET and
   Java'
-og_title: دليل GroupDocs Viewer – عرض ومعالجة المستندات
+og_title: دروس عرض GroupDocs Viewer – عرض المستندات
 schemas:
 - author: GroupDocs
-  dateModified: '2026-07-14'
-  description: Explore the GroupDocs Viewer tutorial for rendering, caching, watermarks,
+  dateModified: '2026-10-26'
+  description: GroupDocs Viewer rendering tutorial covers rendering, caching, watermarks,
     and document rendering across 170+ formats in .NET and Java.
-  headline: GroupDocs Viewer tutorial – Render & display documents
+  headline: GroupDocs Viewer rendering tutorial – render documents
   type: TechArticle
 - questions:
   - answer: No external software is required; the API handles all rendering internally.
@@ -44,135 +43,137 @@ tags:
 - .net
 - java
 - file formats
-title: دليل GroupDocs Viewer – عرض ومعالجة المستندات
+title: دروس عرض GroupDocs Viewer – عرض المستندات
 type: docs
 url: /ar/
 weight: 11
 ---
 
-# دليل GroupDocs Viewer – معالجة وعرض المستندات
+# دليل عرض GroupDocs – عرض المستندات
 
-مرحبًا بك في مركز **GroupDocs Viewer tutorial**. في هذا الدليل ستجد مجموعة شاملة من الأدلة التي تساعدك على إتقان واجهات برمجة التطبيقات القوية لعرض المستندات الخاصة بنا لـ .NET و Java. سواء كنت تبني تطبيق ويب أو حل سطح مكتب أو تجربة هاتف محمول، يتيح لك GroupDocs Viewer عرض ومعالجة مجموعة واسعة من صيغ المستندات، بما في ذلك PDF، Microsoft Office (Word، Excel، PowerPoint)، CAD، الصور، وأكثر.
+في هذا **دليل عرض GroupDocs**، ستتعلم كيفية عرض، تخزين مؤقت، وإضافة علامة مائية للمستندات عبر أكثر من 170 تنسيق ملف باستخدام واجهات برمجة تطبيقات GroupDocs Viewer لكل من .NET و Java. سواء كنت تبني بوابة ويب، عميل سطح مكتب، أو تطبيقًا محمولًا، يقدم الدليل إرشادات خطوة بخطوة، نصائح أفضل الممارسات، وأمثلة من الواقع حتى تتمكن من تقديم عرض مستندات بدقة بكسلية مثالية بسرعة.
 
 ## إجابات سريعة
-- **ما هو دليل GroupDocs Viewer؟** دليل خطوة بخطوة لمعالجة، تحويل، وعرض أكثر من 170 صيغة ملف باستخدام GroupDocs Viewer لـ .NET و Java.  
-- **ما المنصات المدعومة؟** .NET (Framework، Core، .NET 5/6) و Java (8+).  
-- **هل يمكنني معالجة ملفات PDF والصور؟** نعم – يمكنك الإخراج إلى HTML، JPEG، PNG، و PDF.  
-- **هل التخزين المؤقت متاح؟** بالتأكيد؛ تغطي الأدلة المخصصة التخزين المؤقت وإدارة الموارد.  
-- **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية متاحة؛ الترخيص التجاري مطلوب للاستخدام في الإنتاج.
+- **ما هو دليل عرض GroupDocs؟** إنه دليل خطوة بخطوة يوضح كيفية عرض، تحويل، وعرض أكثر من 170 تنسيق ملف باستخدام GroupDocs Viewer لـ .NET و Java.  
+- **ما هي المنصات المدعومة؟** .NET (Framework, Core, .NET 5/6) و Java (8+).  
+- **هل يمكنني عرض ملفات PDF والصور؟** نعم – يمكنك الإخراج إلى HTML، JPEG، PNG، و PDF.  
+- **هل التخزين المؤقت متاح؟** بالتأكيد؛ تغطي الدروس المخصصة التخزين المؤقت وإدارة الموارد.  
+- **هل أحتاج إلى ترخيص؟** تتوفر نسخة تجريبية مجانية؛ يلزم وجود ترخيص تجاري للاستخدام في الإنتاج.
 
-## ما هو دليل GroupDocs Viewer؟
-دليل GroupDocs Viewer هو مجموعة منسقة من الأدلة خطوة بخطوة تُظهر كيفية تحميل، معالجة، وتخصيص عرض المستندات في تطبيقاتك باستخدام واجهة برمجة تطبيقات GroupDocs Viewer لـ .NET و Java. يوفر لك مقتطفات شفرة ملموسة، نصائح التكوين، وتوصيات أفضل الممارسات لتتمكن من البدء بسرعة.
+## ما هو دليل عرض GroupDocs؟
 
-## لماذا تستخدم GroupDocs Viewer لمعالجة المستندات؟
-يجب عليك استخدام GroupDocs Viewer لمعالجة المستندات لأنه يدعم أكثر من 170 صيغة ملف، يقدم تمثيل بصري دقيق، ويعمل على كل من .NET و Java دون الحاجة إلى برامج خارجية، مما يجعله مثاليًا لتطبيقات الويب، سطح المكتب، والهواتف المحمولة.  
+دليل عرض GroupDocs هو مجموعة مختارة من الأدلة خطوة بخطوة التي توضح كيفية تحميل، عرض، وتخصيص عرض المستندات في تطبيقاتك باستخدام واجهة برمجة تطبيقات GroupDocs Viewer لـ .NET و Java؛ من خلال تحميل مستند باستخدام Viewer API واستدعاء طريقة عرض ستحصل فورًا على إخراج HTML أو صورة أو PDF، مما يتيح تطويرًا سريعًا.
 
-- **دعم صيغ واسع:** أكثر من 170 نوع ملف، بما في ذلك ملفات CAD المعقدة ومستندات المكتب.  
-- **معالجة عالية الدقة:** تمثيل بصري دقيق في HTML، صور، أو PDF.  
+## لماذا تستخدم GroupDocs Viewer لعرض المستندات؟
+
+يدعم GroupDocs Viewer أكثر من 170 تنسيق ملف ويمكنه معالجة مستندات تصل إلى 500 صفحة في أقل من ثانيتين على عتاد الخادم المعتاد، موفرًا دقة بصرية مثالية دون أي برنامج خارجي؛ يوفر هذا العرض عالي الأداء تمثيلًا دقيقًا في HTML أو صور أو PDF، مما يجعله مثاليًا لتطبيقات الويب، سطح المكتب، والمحمول.
+
+- **دعم واسع للتنسيقات:** أكثر من 170 نوع ملف، بما في ذلك ملفات CAD المعقدة ومستندات المكتب.  
+- **عرض عالي الدقة:** تمثيل بصري دقيق في HTML أو صور أو PDF.  
 - **مرونة عبر المنصات:** يعمل بسلاسة في بيئات .NET و Java.  
-- **معمارية قابلة للتوسيع:** خصّص خطوط معالجة العرض، أضف علامات مائية، أو دمج التخزين المؤقت بجهد قليل.  
+- **معمارية قابلة للتوسيع:** تخصيص خطوط عرض المعالجة، إضافة علامات مائية، أو دمج التخزين المؤقت بأقل جهد.  
 
 {{% alert color="primary" %}}
-مكّن تطبيقات .NET الخاصة بك من قدرات عرض مستندات عالية الدقة. توفر أدلتنا لـ GroupDocs.Viewer for .NET كل ما تحتاجه لتكامل عارض مستندات قوي. تعلم كيفية معالجة أكثر من 170 صيغة مستند إلى HTML، JPEG، PNG، و PDF. استكشف مواضيع متقدمة مثل معالجة تخطيطات محددة في رسومات CAD، التعامل مع مرفقات المستندات، وتحسين الأداء. ابدأ ببناء تجارب عرض مستندات قوية ومهنية في C#، ASP.NET، وغيرها من أطر .NET.
+مكّن تطبيقات .NET الخاصة بك من قدرات عرض مستندات عالية الدقة. توفر دروس GroupDocs.Viewer لـ .NET كل ما تحتاج إلى معرفته لتكامل عارض مستندات قوي. تعلم كيفية عرض أكثر من 170 تنسيق مستند إلى HTML، JPEG، PNG، و PDF. استكشف مواضيع متقدمة مثل عرض تخطيطات محددة في رسومات CAD، معالجة مرفقات المستندات، وتحسين الأداء. ابدأ في بناء تجارب عرض مستندات قوية ومهنية في C#، ASP.NET، وغيرها من أطر .NET.
 {{% /alert %}}
 
-### كيفية البدء مع GroupDocs Viewer في .NET
-لبدء العمل مع GroupDocs Viewer في .NET، قم بتثبيت حزمة NuGet `GroupDocs.Viewer`، أضف ترخيصًا صالحًا، واستورد مساحة الأسماء في مشروعك. تُعد فئة `Viewer` المكوّن الأساسي الذي يحمل المستند ويوفر طرق المعالجة. بعد ذلك يمكنك إنشاء كائن Viewer والبدء في معالجة المستندات إلى HTML، صور، أو PDF.  
+## كيفية البدء مع GroupDocs Viewer في .NET
+
+قم بتثبيت حزمة NuGet `GroupDocs.Viewer`، أضف ترخيصًا صالحًا، واستورد مساحة الاسم المناسبة في مشروعك؛ ثم أنشئ مثيلًا من `Viewer` واستدعِ إحدى طرق العرض الخاصة به—مثل `RenderDocument` لإخراج HTML أو `RenderPages` مع `ImageOptions` للصور PNG/JPEG—لعرض أي مستند مدعوم ببضع أسطر من الشيفرة فقط.  
+فئة `Viewer` هي المكوّن المركزي الذي يحمل المستند ويوفر طرق عرض مثل `RenderDocument` و `RenderPages`.
 
 قبل الغوص في الأدلة التفصيلية، تأكد من توفر المتطلبات المسبقة التالية:
 
-- .NET 5/6 أو .NET Framework 4.6+ مثبتة  
+- .NET 5/6 أو .NET Framework 4.6+ مثبت  
 - ترخيص GroupDocs Viewer صالح (أو نسخة تجريبية مجانية)  
 - حزمة NuGet `GroupDocs.Viewer` مضافة إلى مشروعك  
 
-بعد إعداد البيئة، يمكنك استكشاف الأدلة أدناه لرؤية أمثلة شفرة ملموسة وتوصيات أفضل الممارسات.
+هذه روابط لبعض الموارد المفيدة لـ .NET:
 
-هذه بعض الروابط المفيدة لموارد .NET:
-
-- [Loading Documents](./net/loading-documents/)
-- [Advanced Loading Options](./net/advanced-loading/)
-- [Advanced Usage (Caching)](./net/advanced-usage-caching/)
-- [Rendering Options](./net/rendering-options/)
-- [Rendering Archive Files](./net/rendering-archive-files/)
-- [Rendering CAD Drawings](./net/rendering-cad-drawings/)
-- [Getting Started](./net/getting-started/)
-- [Rendering Email Messages](./net/rendering-email-messages/)
-- [Image Rendering](./net/image-rendering/)
-- [Rendering Documents to PDF](./net/rendering-documents-pdf/)
-- [Rendering Documents to Images](./net/rendering-documents-images/)
-- [Rendering Documents to HTML](./net/rendering-documents-html/)
-- [Processing Document Attachments](./net/processing-document-attachments/)
-- [Rendering Text Files](./net/rendering-text-files/)
-- [Rendering Visio Documents](./net/rendering-visio-documents/)
-- [Rendering Web Documents](./net/rendering-web-documents/)
-- [Rendering Word Processing Documents](./net/rendering-word-processing-documents/)
-- [Spreadsheet Rendering Options](./net/spreadsheet-rendering-options/)
-- [PDF Rendering Options](./net/pdf-rendering-options/)
-- [Rendering Outlook Data Files (PST, OST)](./net/rendering-outlook-data-files/)
-- [Rendering Microsoft Project Documents](./net/rendering-ms-project-documents/)
-- [Document Loading](./net/document-loading/)
-- [Rendering Basics](./net/rendering-basics/)
-- [Advanced Rendering](./net/advanced-rendering/)
-- [Performance Optimization](./net/performance-optimization/)
-- [Security & Permissions](./net/security-permissions/)
-- [Watermarks & Annotations](./net/watermarks-annotations/)
-- [File Formats Support](./net/file-formats-support/)
-- [Cloud & Remote Document Rendering](./net/cloud-remote-document-rendering/)
-- [Caching & Resource Management](./net/caching-resource-management/)
-- [Metadata & Properties](./net/metadata-properties/)
-- [Export & Conversion](./net/export-conversion/)
-- [Custom Rendering](./net/custom-rendering/)
+- [تحميل المستندات](./net/loading-documents/)
+- [خيارات التحميل المتقدمة](./net/advanced-loading/)
+- [استخدام متقدم (التخزين المؤقت)](./net/advanced-usage-caching/)
+- [خيارات العرض](./net/rendering-options/)
+- [عرض ملفات الأرشيف](./net/rendering-archive-files/)
+- [عرض رسومات CAD](./net/rendering-cad-drawings/)
+- [البدء](./net/getting-started/)
+- [عرض رسائل البريد الإلكتروني](./net/rendering-email-messages/)
+- [عرض الصور](./net/image-rendering/)
+- [عرض المستندات إلى PDF](./net/rendering-documents-pdf/)
+- [عرض المستندات إلى صور](./net/rendering-documents-images/)
+- [عرض المستندات إلى HTML](./net/rendering-documents-html/)
+- [معالجة مرفقات المستندات](./net/processing-document-attachments/)
+- [عرض ملفات النص](./net/rendering-text-files/)
+- [عرض مستندات Visio](./net/rendering-visio-documents/)
+- [عرض مستندات الويب](./net/rendering-web-documents/)
+- [عرض مستندات معالجة النصوص](./net/rendering-word-processing-documents/)
+- [خيارات عرض جداول البيانات](./net/spreadsheet-rendering-options/)
+- [خيارات عرض PDF](./net/pdf-rendering-options/)
+- [عرض ملفات بيانات Outlook (PST, OST)](./net/rendering-outlook-data-files/)
+- [عرض مستندات Microsoft Project](./net/rendering-ms-project-documents/)
+- [تحميل المستندات](./net/document-loading/)
+- [أساسيات العرض](./net/rendering-basics/)
+- [العرض المتقدم](./net/advanced-rendering/)
+- [تحسين الأداء](./net/performance-optimization/)
+- [الأمان والأذونات](./net/security-permissions/)
+- [العلامات المائية والتعليقات التوضيحية](./net/watermarks-annotations/)
+- [دعم تنسيقات الملفات](./net/file-formats-support/)
+- [العرض السحابي والبعيد للمستندات](./net/cloud-remote-document-rendering/)
+- [التخزين المؤقت وإدارة الموارد](./net/caching-resource-management/)
+- [البيانات الوصفية والخصائص](./net/metadata-properties/)
+- [التصدير والتحويل](./net/export-conversion/)
+- [عرض مخصص](./net/custom-rendering/)
 
 {{% alert color="primary" %}}
-دمج عارض مستندات متعدد الاستخدامات وفعال في تطبيقات Java الخاصة بك باستخدام GroupDocs.Viewer for Java. ستوجهك أدلتنا خلال كل خطوة، من إعداد بيئتك إلى تنفيذ ميزات معالجة متقدمة. تعلم عرض صيغ ملفات متعددة، بما في ذلك المستندات المعقدة مثل ملفات CAD متعددة التخطيطات والأرشيفات المحمية بكلمة مرور. اتبع أمثلتنا لمعالجة المستندات إلى HTML5، صور، و PDF، مما يتيح عرض مستندات عبر المنصات بسهولة.
+دمج عارض مستندات متعدد الاستخدامات وفعال في تطبيقات Java الخاصة بك باستخدام GroupDocs.Viewer لـ Java. ستوجهك دروسنا خلال كل خطوة، من إعداد بيئتك إلى تنفيذ ميزات العرض المتقدمة. تعلم عرض العديد من تنسيقات الملفات، بما في ذلك المستندات المعقدة مثل ملفات CAD متعددة التخطيطات والأرشيفات المحمية بكلمة مرور. اتبع أمثلتنا لعرض المستندات إلى HTML5، صور، و PDF، مما يتيح عرض مستندات عبر المنصات بسهولة.
 {{% /alert %}}
 
-### كيفية البدء مع GroupDocs Viewer في Java
-لبدء العمل مع GroupDocs Viewer في Java، أضف تبعية Maven (أو Gradle) الخاصة بـ GroupDocs Viewer، قم بتكوين ملف ترخيص صالح، واستورد الفئات المطلوبة. تُعد فئة `Viewer` الواجهة الأساسية التي تفتح المستند وتُعالجه إلى الصيغة المطلوبة. بعد ذلك يمكنك إنشاء كائن Viewer ومعالجة المستندات إلى HTML، صور، أو PDF ببضع أسطر من الشفرة.  
+## كيفية البدء مع GroupDocs Viewer في Java
 
-للمطورين على Java، المتطلبات المسبقة مشابهة:
+أضف تبعية GroupDocs Viewer Maven (أو Gradle) إلى مشروعك، قم بتكوين ملف ترخيص صالح، واستورد الفئات المطلوبة؛ ثم أنشئ كائن `Viewer`، حمّل المستند المستهدف، واستدعِ `viewer.render` بالخيارات المناسبة—مثل `HtmlOptions` لإخراج HTML أو `ImageOptions` لعرض الصور—لإنتاج التنسيق المطلوب بأقل قدر من الشيفرة.  
+فئة `Viewer` في Java هي الواجهة الأساسية التي تفتح مستندًا وتعرضه بالتنسيق المطلوب. تقوم بإنشاء مثيل `Viewer`، تحميل الملف، واستدعاء `viewer.render(documentPath, new HtmlOptions())` لإخراج HTML أو `ImageOptions` لإخراج الصور.
 
-- JDK 8 أو أعلى مثبت  
-- نظام بناء Maven أو Gradle مُكوَّن  
-- تبعية GroupDocs Viewer for Java مضافة إلى مشروعك  
+بالنسبة لمطوري Java، المتطلبات المسبقة مشابهة:
 
-بعد الإعداد، استكشف الأدلة الخاصة بـ Java أدناه.
+- JDK 8 أو أعلى مثبت
+- نظام بناء Maven أو Gradle مُكوَّن
+- تبعية GroupDocs Viewer لـ Java مضافة إلى مشروعك
 
-هذه بعض الروابط المفيدة لموارد Java:
+هذه روابط لبعض الموارد المفيدة لـ Java:
 
-- [Getting Started](./java/getting-started/)
-- [Document Loading](./java/document-loading/)
-- [Rendering Basics](./java/rendering-basics/)
-- [Advanced Rendering](./java/advanced-rendering/)
-- [Performance Optimization](./java/performance-optimization/)
-- [Security & Permissions](./java/security-permissions/)
-- [Watermarks & Annotations](./java/watermarks-annotations/)
-- [File Formats Support](./java/file-formats-support/)
-- [Cloud & Remote Document Rendering](./java/cloud-remote-document-rendering/)
-- [Caching & Resource Management](./java/caching-resource-management/)
-- [Metadata & Properties](./java/metadata-properties/)
-- [Export & Conversion](./java/export-conversion/)
-- [Custom Rendering](./java/custom-rendering/)
+- [البدء](./java/getting-started/)
+- [تحميل المستندات](./java/document-loading/)
+- [أساسيات العرض](./java/rendering-basics/)
+- [العرض المتقدم](./java/advanced-rendering/)
+- [تحسين الأداء](./java/performance-optimization/)
+- [الأمان والأذونات](./java/security-permissions/)
+- [العلامات المائية والتعليقات التوضيحية](./java/watermarks-annotations/)
+- [دعم تنسيقات الملفات](./java/file-formats-support/)
+- [العرض السحابي والبعيد للمستندات](./java/cloud-remote-document-rendering/)
+- [التخزين المؤقت وإدارة الموارد](./java/caching-resource-management/)
+- [البيانات الوصفية والخصائص](./java/metadata-properties/)
+- [التصدير والتحويل](./java/export-conversion/)
+- [عرض مخصص](./java/custom-rendering/)
 
-## الأسئلة الشائعة
+## الأسئلة المتكررة
 
 **س: هل أحتاج إلى تثبيت أي برنامج إضافي لاستخدام GroupDocs Viewer؟**  
-ج: لا يلزم أي برنامج خارجي؛ تتولى الواجهة البرمجية جميع عمليات المعالجة داخليًا.
+ج: لا يلزم أي برنامج خارجي؛ تتعامل الواجهة البرمجية مع جميع عمليات العرض داخليًا.
 
-**س: هل يمكنني معالجة مستندات محمية بكلمة مرور؟**  
+**س: هل يمكنني عرض مستندات محمية بكلمة مرور؟**  
 ج: نعم، يمكنك تمرير كلمة المرور عند تحميل المستند عبر الواجهة البرمجية.
 
 **س: كيف يُحسّن التخزين المؤقت الأداء؟**  
-ج: يقوم التخزين المؤقت بحفظ الصفحات أو الصور المعالجة، مما يقلل من وقت المعالجة للطلبات اللاحقة.
+ج: يخزن التخزين المؤقت الصفحات أو الصور المعروضة، مما يقلل وقت المعالجة للطلبات اللاحقة.
 
-**س: هل يمكن إضافة علامات مائية إلى الصفحات المعالجة؟**  
-ج: بالتأكيد—تُظهر الأدلة المخصصة كيفية إضافة علامات مائية نصية أو صورة أثناء المعالجة.
+**س: هل من الممكن إضافة علامات مائية إلى الصفحات المعروضة؟**  
+ج: بالتأكيد—تُظهر الدروس المخصصة كيفية وضع علامات مائية نصية أو صورة أثناء العرض.
 
-**س: ما هي صيغ الملفات المدعومة مباشرةً؟**  
-ج: أكثر من 170 صيغة، بما في ذلك PDF، DOCX، XLSX، PPTX، DWG، DWF، SVG، والعديد من أنواع الصور.
+**س: ما هي تنسيقات الملفات المدعومة مباشرةً؟**  
+ج: أكثر من 170 تنسيقًا، بما في ذلك PDF، DOCX، XLSX، PPTX، DWG، DWF، SVG، والعديد من أنواع الصور.
 
 ---
 
-**آخر تحديث:** 2026-07-14  
-**تم الاختبار مع:** GroupDocs.Viewer 23.11 لـ .NET و Java  
+**آخر تحديث:** 2026-10-26  
+**تم الاختبار مع:** GroupDocs.Viewer 23.11 لـ .NET & Java  
 **المؤلف:** GroupDocs

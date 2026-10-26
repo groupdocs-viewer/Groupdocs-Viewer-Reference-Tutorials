@@ -1,27 +1,26 @@
 ---
 additionalTitle: GroupDocs API References
-date: 2026-07-14
-description: Khám phá hướng dẫn GroupDocs Viewer về rendering, caching, watermarks
-  và render tài liệu trên hơn 170 định dạng trong .NET và Java.
+date: 2026-10-26
+description: Hướng dẫn render GroupDocs Viewer giúp bạn render, cache và watermark
+  tài liệu trên hơn 170 định dạng trong .NET và Java.
 is_root: true
 keywords:
-- groupdocs viewer tutorial
+- groupdocs viewer rendering tutorial
 - document rendering
 - file format support
-lastmod: 2026-07-14
+lastmod: 2026-10-26
 linktitle: Hướng dẫn GroupDocs Viewer
-og_description: Hướng dẫn GroupDocs Viewer giúp bạn render, cache và watermark tài
-  liệu trên hơn 170 định dạng trong .NET và Java, cung cấp high‑fidelity viewing cho
-  web, desktop và mobile apps.
+og_description: Hướng dẫn render GroupDocs Viewer cho thấy cách render, cache và watermark
+  tài liệu trên hơn 170 định dạng trong .NET và Java để xem với độ chính xác cao.
 og_image_alt: 'Guide: Render and display documents with GroupDocs Viewer in .NET and
   Java'
-og_title: Hướng dẫn GroupDocs Viewer – Render & display documents
+og_title: Hướng dẫn render GroupDocs Viewer – render documents
 schemas:
 - author: GroupDocs
-  dateModified: '2026-07-14'
-  description: Explore the GroupDocs Viewer tutorial for rendering, caching, watermarks,
+  dateModified: '2026-10-26'
+  description: GroupDocs Viewer rendering tutorial covers rendering, caching, watermarks,
     and document rendering across 170+ formats in .NET and Java.
-  headline: GroupDocs Viewer tutorial – Render & display documents
+  headline: GroupDocs Viewer rendering tutorial – render documents
   type: TechArticle
 - questions:
   - answer: No external software is required; the API handles all rendering internally.
@@ -44,135 +43,137 @@ tags:
 - .net
 - java
 - file formats
-title: Hướng dẫn GroupDocs Viewer – Render & display documents
+title: Hướng dẫn render GroupDocs Viewer – render documents
 type: docs
 url: /vi/
 weight: 11
 ---
 
-# Hướng dẫn GroupDocs Viewer – Kết xuất & hiển thị tài liệu
+# Hướng dẫn hiển thị GroupDocs Viewer – hiển thị tài liệu
 
-Chào mừng bạn đến với trung tâm **GroupDocs Viewer tutorial**. Trong hướng dẫn này, bạn sẽ tìm thấy bộ sưu tập đầy đủ các tài liệu giúp bạn làm chủ các API trình xem tài liệu mạnh mẽ của chúng tôi cho .NET và Java. Dù bạn đang xây dựng ứng dụng web, giải pháp desktop hay trải nghiệm di động, GroupDocs Viewer cho phép bạn kết xuất và hiển thị một loạt các định dạng tài liệu một cách liền mạch, bao gồm PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, hình ảnh và nhiều hơn nữa.
+Trong **GroupDocs Viewer rendering tutorial**, bạn sẽ học cách hiển thị, lưu cache và thêm watermark vào tài liệu trên hơn 170 định dạng tệp bằng cách sử dụng API GroupDocs Viewer cho cả .NET và Java. Dù bạn đang xây dựng một cổng web, một ứng dụng máy tính để bàn, hay một ứng dụng di động, hướng dẫn cung cấp chỉ dẫn từng bước, mẹo thực hành tốt và các ví dụ thực tế để bạn có thể nhanh chóng cung cấp khả năng xem tài liệu pixel‑perfect.
 
 ## Câu trả lời nhanh
-- **GroupDocs Viewer tutorial là gì?** Một hướng dẫn từng bước để kết xuất, chuyển đổi và hiển thị hơn 170 định dạng tệp bằng GroupDocs Viewer cho .NET và Java.  
+- **Hướng dẫn hiển thị GroupDocs Viewer là gì?** Đây là một hướng dẫn từng bước cho thấy cách hiển thị, chuyển đổi và hiển thị hơn 170 định dạng tệp bằng GroupDocs Viewer cho .NET và Java.  
 - **Các nền tảng nào được hỗ trợ?** .NET (Framework, Core, .NET 5/6) và Java (8+).  
-- **Tôi có thể kết xuất PDF và hình ảnh không?** Có – bạn có thể xuất ra HTML, JPEG, PNG và PDF.  
-- **Có sẵn tính năng cache không?** Chắc chắn; các hướng dẫn chuyên biệt đề cập đến cache và quản lý tài nguyên.  
-- **Tôi có cần giấy phép không?** Có bản dùng thử miễn phí; giấy phép thương mại là bắt buộc cho việc sử dụng trong môi trường sản xuất.
+- **Tôi có thể hiển thị PDF và hình ảnh không?** Có – bạn có thể xuất ra HTML, JPEG, PNG và PDF.  
+- **Có hỗ trợ cache không?** Chắc chắn; các hướng dẫn chuyên biệt đề cập đến cache và quản lý tài nguyên.  
+- **Tôi có cần giấy phép không?** Có bản dùng thử miễn phí; giấy phép thương mại cần thiết cho việc sử dụng trong môi trường sản xuất.
 
-## GroupDocs Viewer tutorial là gì?
-GroupDocs Viewer tutorial là một bộ sưu tập được chọn lọc các hướng dẫn từng bước cho thấy cách tải, kết xuất và tùy chỉnh việc xem tài liệu trong ứng dụng của bạn bằng API GroupDocs Viewer cho .NET và Java. Nó cung cấp các đoạn mã cụ thể, mẹo cấu hình và các khuyến nghị thực tiễn tốt nhất để bạn có thể nhanh chóng bắt đầu.
+## Hướng dẫn hiển thị GroupDocs Viewer là gì?
 
-## Tại sao nên sử dụng GroupDocs Viewer để kết xuất tài liệu?
-Bạn nên sử dụng GroupDocs Viewer để kết xuất tài liệu vì nó hỗ trợ hơn 170 định dạng tệp, cung cấp độ chính xác hình ảnh pixel‑perfect, và chạy trên cả .NET và Java mà không cần phần mềm bên ngoài, làm cho nó trở thành lựa chọn lý tưởng cho các ứng dụng web, desktop và di động.  
+Hướng dẫn hiển thị GroupDocs Viewer là một bộ sưu tập các hướng dẫn từng bước được biên soạn, cho thấy cách tải, hiển thị và tùy chỉnh việc xem tài liệu trong các ứng dụng của bạn bằng API GroupDocs Viewer cho .NET và Java; bằng cách tải tài liệu bằng Viewer API và gọi phương thức hiển thị, bạn ngay lập tức nhận được đầu ra HTML, hình ảnh hoặc PDF, giúp phát triển nhanh chóng.
 
-- **Hỗ trợ đa dạng định dạng:** Hơn 170 loại tệp, bao gồm các tài liệu CAD phức tạp và tài liệu văn phòng.  
-- **Kết xuất độ trung thực cao:** Đại diện hình ảnh chính xác trong HTML, hình ảnh hoặc PDF.  
+## Tại sao nên sử dụng GroupDocs Viewer để hiển thị tài liệu?
+
+GroupDocs Viewer hỗ trợ hơn 170 định dạng tệp và có thể xử lý tài liệu lên tới 500 trang trong vòng chưa đầy hai giây trên phần cứng máy chủ tiêu chuẩn, cung cấp độ chính xác hình ảnh pixel‑perfect mà không cần phần mềm bên ngoài; khả năng hiển thị hiệu năng cao này cung cấp đại diện chính xác dưới dạng HTML, hình ảnh hoặc PDF, làm cho nó trở nên lý tưởng cho các ứng dụng web, máy tính để bàn và di động.
+
+- **Hỗ trợ đa định dạng:** Hơn 170 loại tệp, bao gồm các tài liệu CAD phức tạp và tài liệu văn phòng.  
+- **Hiển thị độ trung thực cao:** Đại diện hình ảnh chính xác trong HTML, hình ảnh hoặc PDF.  
 - **Linh hoạt đa nền tảng:** Hoạt động liền mạch trong môi trường .NET và Java.  
-- **Kiến trúc mở rộng:** Tùy chỉnh quy trình kết xuất, thêm watermark, hoặc tích hợp cache với ít nỗ lực.  
+- **Kiến trúc mở rộng:** Tùy chỉnh quy trình hiển thị, thêm watermark, hoặc tích hợp cache với ít nỗ lực.  
 
 {{% alert color="primary" %}}
-Tăng cường khả năng xem tài liệu độ trung thực cao cho các ứng dụng .NET của bạn. Các hướng dẫn GroupDocs.Viewer cho .NET của chúng tôi cung cấp mọi thông tin bạn cần để tích hợp một trình xem tài liệu mạnh mẽ. Tìm hiểu cách kết xuất hơn 170 định dạng tài liệu sang HTML, JPEG, PNG và PDF. Khám phá các chủ đề nâng cao như kết xuất bố cục cụ thể trong bản vẽ CAD, xử lý tệp đính kèm tài liệu và tối ưu hoá hiệu năng. Bắt đầu xây dựng các trải nghiệm xem tài liệu mạnh mẽ và chuyên nghiệp trong C#, ASP.NET và các framework .NET khác.
+Trao quyền cho các ứng dụng .NET của bạn với khả năng xem tài liệu độ trung thực cao. Các hướng dẫn GroupDocs.Viewer cho .NET của chúng tôi cung cấp mọi thông tin bạn cần để tích hợp một trình xem tài liệu mạnh mẽ. Học cách hiển thị hơn 170 định dạng tài liệu sang HTML, JPEG, PNG và PDF. Khám phá các chủ đề nâng cao như hiển thị bố cục cụ thể trong bản vẽ CAD, xử lý tệp đính kèm tài liệu và tối ưu hiệu năng. Bắt đầu xây dựng trải nghiệm xem tài liệu mạnh mẽ và chuyên nghiệp trong C#, ASP.NET và các framework .NET khác.
 {{% /alert %}}
 
-### Cách bắt đầu với GroupDocs Viewer trong .NET
-Để bắt đầu với GroupDocs Viewer trong .NET, cài đặt gói NuGet `GroupDocs.Viewer`, thêm giấy phép hợp lệ và tham chiếu namespace trong dự án của bạn. Lớp `Viewer` là thành phần cốt lõi tải tài liệu và cung cấp các phương thức kết xuất. Sau đó bạn có thể khởi tạo lớp Viewer và bắt đầu kết xuất tài liệu sang HTML, hình ảnh hoặc PDF.  
+## Cách bắt đầu với GroupDocs Viewer trong .NET
 
-Trước khi đi sâu vào các hướng dẫn chi tiết, hãy đảm bảo bạn có các yêu cầu sau:
+Cài đặt gói NuGet `GroupDocs.Viewer`, thêm giấy phép hợp lệ và tham chiếu namespace phù hợp trong dự án của bạn; sau đó tạo một thể hiện `Viewer` và gọi một trong các phương thức hiển thị của nó — chẳng hạn `RenderDocument` để xuất HTML hoặc `RenderPages` với `ImageOptions` cho hình ảnh PNG/JPEG — để hiển thị bất kỳ tài liệu được hỗ trợ nào chỉ với vài dòng mã.  
+Lớp `Viewer` là thành phần trung tâm tải tài liệu và cung cấp các phương thức hiển thị như `RenderDocument` và `RenderPages`.
 
-- .NET 5/6 hoặc .NET Framework 4.6+ đã được cài đặt  
-- Giấy phép GroupDocs Viewer hợp lệ (hoặc bản dùng thử miễn phí)  
-- Gói NuGet `GroupDocs.Viewer` đã được thêm vào dự án của bạn  
+Trước khi bắt đầu các hướng dẫn chi tiết, hãy chắc chắn rằng bạn đã có các yêu cầu sau:
 
-Sau khi đã thiết lập môi trường, bạn có thể khám phá các hướng dẫn dưới đây để xem các ví dụ mã cụ thể và các khuyến nghị thực tiễn tốt nhất.
+- .NET 5/6 hoặc .NET Framework 4.6+ đã được cài đặt
+- Giấy phép GroupDocs Viewer hợp lệ (hoặc bản dùng thử miễn phí)
+- Gói NuGet `GroupDocs.Viewer` đã được thêm vào dự án của bạn
 
 Đây là các liên kết tới một số tài nguyên .NET hữu ích:
 
-- [Loading Documents](./net/loading-documents/)
-- [Advanced Loading Options](./net/advanced-loading/)
-- [Advanced Usage (Caching)](./net/advanced-usage-caching/)
-- [Rendering Options](./net/rendering-options/)
-- [Rendering Archive Files](./net/rendering-archive-files/)
-- [Rendering CAD Drawings](./net/rendering-cad-drawings/)
-- [Getting Started](./net/getting-started/)
-- [Rendering Email Messages](./net/rendering-email-messages/)
-- [Image Rendering](./net/image-rendering/)
-- [Rendering Documents to PDF](./net/rendering-documents-pdf/)
-- [Rendering Documents to Images](./net/rendering-documents-images/)
-- [Rendering Documents to HTML](./net/rendering-documents-html/)
-- [Processing Document Attachments](./net/processing-document-attachments/)
-- [Rendering Text Files](./net/rendering-text-files/)
-- [Rendering Visio Documents](./net/rendering-visio-documents/)
-- [Rendering Web Documents](./net/rendering-web-documents/)
-- [Rendering Word Processing Documents](./net/rendering-word-processing-documents/)
-- [Spreadsheet Rendering Options](./net/spreadsheet-rendering-options/)
-- [PDF Rendering Options](./net/pdf-rendering-options/)
-- [Rendering Outlook Data Files (PST, OST)](./net/rendering-outlook-data-files/)
-- [Rendering Microsoft Project Documents](./net/rendering-ms-project-documents/)
-- [Document Loading](./net/document-loading/)
-- [Rendering Basics](./net/rendering-basics/)
-- [Advanced Rendering](./net/advanced-rendering/)
-- [Performance Optimization](./net/performance-optimization/)
-- [Security & Permissions](./net/security-permissions/)
-- [Watermarks & Annotations](./net/watermarks-annotations/)
-- [File Formats Support](./net/file-formats-support/)
-- [Cloud & Remote Document Rendering](./net/cloud-remote-document-rendering/)
-- [Caching & Resource Management](./net/caching-resource-management/)
-- [Metadata & Properties](./net/metadata-properties/)
-- [Export & Conversion](./net/export-conversion/)
-- [Custom Rendering](./net/custom-rendering/)
+- [Tải tài liệu](./net/loading-documents/)
+- [Tùy chọn tải nâng cao](./net/advanced-loading/)
+- [Sử dụng nâng cao (Cache)](./net/advanced-usage-caching/)
+- [Tùy chọn hiển thị](./net/rendering-options/)
+- [Hiển thị tệp lưu trữ](./net/rendering-archive-files/)
+- [Hiển thị bản vẽ CAD](./net/rendering-cad-drawings/)
+- [Bắt đầu](./net/getting-started/)
+- [Hiển thị tin nhắn email](./net/rendering-email-messages/)
+- [Hiển thị hình ảnh](./net/image-rendering/)
+- [Hiển thị tài liệu sang PDF](./net/rendering-documents-pdf/)
+- [Hiển thị tài liệu sang hình ảnh](./net/rendering-documents-images/)
+- [Hiển thị tài liệu sang HTML](./net/rendering-documents-html/)
+- [Xử lý tệp đính kèm tài liệu](./net/processing-document-attachments/)
+- [Hiển thị tệp văn bản](./net/rendering-text-files/)
+- [Hiển thị tài liệu Visio](./net/rendering-visio-documents/)
+- [Hiển thị tài liệu web](./net/rendering-web-documents/)
+- [Hiển thị tài liệu xử lý văn bản](./net/rendering-word-processing-documents/)
+- [Tùy chọn hiển thị bảng tính](./net/spreadsheet-rendering-options/)
+- [Tùy chọn hiển thị PDF](./net/pdf-rendering-options/)
+- [Hiển thị tệp dữ liệu Outlook (PST, OST)](./net/rendering-outlook-data-files/)
+- [Hiển thị tài liệu Microsoft Project](./net/rendering-ms-project-documents/)
+- [Tải tài liệu](./net/document-loading/)
+- [Cơ bản về hiển thị](./net/rendering-basics/)
+- [Hiển thị nâng cao](./net/advanced-rendering/)
+- [Tối ưu hiệu năng](./net/performance-optimization/)
+- [Bảo mật & Quyền](./net/security-permissions/)
+- [Watermark & Chú thích](./net/watermarks-annotations/)
+- [Hỗ trợ định dạng tệp](./net/file-formats-support/)
+- [Hiển thị tài liệu đám mây & từ xa](./net/cloud-remote-document-rendering/)
+- [Cache & Quản lý tài nguyên](./net/caching-resource-management/)
+- [Siêu dữ liệu & Thuộc tính](./net/metadata-properties/)
+- [Xuất & Chuyển đổi](./net/export-conversion/)
+- [Hiển thị tùy chỉnh](./net/custom-rendering/)
 
 {{% alert color="primary" %}}
-Tích hợp một trình xem tài liệu đa năng và hiệu quả vào các ứng dụng Java của bạn với GroupDocs.Viewer cho Java. Các hướng dẫn của chúng tôi sẽ hướng dẫn bạn qua mọi bước, từ thiết lập môi trường đến triển khai các tính năng kết xuất nâng cao. Học cách hiển thị nhiều định dạng tệp, bao gồm các tài liệu phức tạp như tệp CAD đa bố cục và các kho lưu trữ được bảo vệ bằng mật khẩu. Theo dõi các ví dụ của chúng tôi để kết xuất tài liệu sang HTML5, hình ảnh và PDF, cho phép xem tài liệu đa nền tảng một cách dễ dàng.
+Tích hợp một trình xem tài liệu đa năng và hiệu quả vào các ứng dụng Java của bạn với GroupDocs.Viewer cho Java. Các hướng dẫn của chúng tôi sẽ hướng dẫn bạn qua từng bước, từ thiết lập môi trường đến triển khai các tính năng hiển thị nâng cao. Học cách hiển thị nhiều định dạng tệp, bao gồm các tài liệu phức tạp như tệp CAD đa bố cục và các tệp lưu trữ được bảo vệ bằng mật khẩu. Theo dõi các ví dụ của chúng tôi để hiển thị tài liệu sang HTML5, hình ảnh và PDF, cho phép xem tài liệu đa nền tảng một cách dễ dàng.
 {{% /alert %}}
 
-### Cách bắt đầu với GroupDocs Viewer trong Java
-Để bắt đầu với GroupDocs Viewer trong Java, thêm phụ thuộc GroupDocs Viewer Maven (hoặc Gradle), cấu hình tệp giấy phép hợp lệ và nhập các lớp cần thiết. Lớp `Viewer` là API chính mở một tài liệu và kết xuất nó sang định dạng mong muốn. Sau đó bạn có thể tạo một thể hiện Viewer và kết xuất tài liệu sang HTML, hình ảnh hoặc PDF chỉ với vài dòng mã.  
+## Cách bắt đầu với GroupDocs Viewer trong Java
+
+Thêm phụ thuộc GroupDocs Viewer Maven (hoặc Gradle) vào dự án của bạn, cấu hình tệp giấy phép hợp lệ và nhập các lớp cần thiết; sau đó khởi tạo một đối tượng `Viewer`, tải tài liệu mục tiêu và gọi `viewer.render` với các tùy chọn phù hợp — chẳng hạn `HtmlOptions` để xuất HTML hoặc `ImageOptions` để hiển thị hình ảnh — để tạo ra định dạng mong muốn với ít mã nhất.  
+Lớp `Viewer` trong Java là API chính mở một tài liệu và hiển thị nó ra định dạng mong muốn. Bạn tạo một thể hiện `Viewer`, tải tệp và gọi `viewer.render(documentPath, new HtmlOptions())` để xuất HTML hoặc `ImageOptions` để xuất hình ảnh.
 
 Đối với các nhà phát triển Java, các yêu cầu tương tự:
 
-- JDK 8 hoặc cao hơn đã được cài đặt  
-- Hệ thống xây dựng Maven hoặc Gradle đã được cấu hình  
-- Phụ thuộc GroupDocs Viewer cho Java đã được thêm vào dự án của bạn  
-
-Sau khi thiết lập, khám phá các hướng dẫn dành riêng cho Java dưới đây.
+- JDK 8 hoặc cao hơn đã được cài đặt
+- Hệ thống xây dựng Maven hoặc Gradle đã được cấu hình
+- Phụ thuộc GroupDocs Viewer cho Java đã được thêm vào dự án của bạn
 
 Đây là các liên kết tới một số tài nguyên Java hữu ích:
 
-- [Getting Started](./java/getting-started/)
-- [Document Loading](./java/document-loading/)
-- [Rendering Basics](./java/rendering-basics/)
-- [Advanced Rendering](./java/advanced-rendering/)
-- [Performance Optimization](./java/performance-optimization/)
-- [Security & Permissions](./java/security-permissions/)
-- [Watermarks & Annotations](./java/watermarks-annotations/)
-- [File Formats Support](./java/file-formats-support/)
-- [Cloud & Remote Document Rendering](./java/cloud-remote-document-rendering/)
-- [Caching & Resource Management](./java/caching-resource-management/)
-- [Metadata & Properties](./java/metadata-properties/)
-- [Export & Conversion](./java/export-conversion/)
-- [Custom Rendering](./java/custom-rendering/)
+- [Bắt đầu](./java/getting-started/)
+- [Tải tài liệu](./java/document-loading/)
+- [Cơ bản về hiển thị](./java/rendering-basics/)
+- [Hiển thị nâng cao](./java/advanced-rendering/)
+- [Tối ưu hiệu năng](./java/performance-optimization/)
+- [Bảo mật & Quyền](./java/security-permissions/)
+- [Watermark & Chú thích](./java/watermarks-annotations/)
+- [Hỗ trợ định dạng tệp](./java/file-formats-support/)
+- [Hiển thị tài liệu đám mây & từ xa](./java/cloud-remote-document-rendering/)
+- [Cache & Quản lý tài nguyên](./java/caching-resource-management/)
+- [Siêu dữ liệu & Thuộc tính](./java/metadata-properties/)
+- [Xuất & Chuyển đổi](./java/export-conversion/)
+- [Hiển thị tùy chỉnh](./java/custom-rendering/)
 
 ## Câu hỏi thường gặp
 
 **Q: Tôi có cần cài đặt phần mềm bổ sung nào để sử dụng GroupDocs Viewer không?**  
-A: Không cần phần mềm bên ngoài; API xử lý toàn bộ việc kết xuất nội bộ.
+A: Không cần phần mềm bên ngoài; API xử lý toàn bộ việc hiển thị nội bộ.
 
-**Q: Tôi có thể kết xuất tài liệu được bảo vệ bằng mật khẩu không?**  
+**Q: Tôi có thể hiển thị tài liệu được bảo vệ bằng mật khẩu không?**  
 A: Có, bạn có thể truyền mật khẩu khi tải tài liệu qua API.
 
 **Q: Cache cải thiện hiệu năng như thế nào?**  
-A: Cache lưu trữ các trang hoặc hình ảnh đã kết xuất, giảm thời gian xử lý cho các yêu cầu tiếp theo.
+A: Cache lưu trữ các trang hoặc hình ảnh đã hiển thị, giảm thời gian xử lý cho các yêu cầu tiếp theo.
 
-**Q: Có thể thêm watermark vào các trang đã kết xuất không?**  
-A: Chắc chắn—các hướng dẫn chuyên biệt chỉ cách chồng lên watermark dạng văn bản hoặc hình ảnh trong quá trình kết xuất.
+**Q: Có thể thêm watermark vào các trang đã hiển thị không?**  
+A: Chắc chắn — các hướng dẫn chuyên biệt chỉ ra cách chồng lên watermark dạng văn bản hoặc hình ảnh trong quá trình hiển thị.
 
-**Q: Các định dạng tệp nào được hỗ trợ ngay lập tức?**  
-A: Hơn 170 định dạng, bao gồm PDF, DOCX, XLSX, PPTX, DWG, DWF, SVG và nhiều loại hình ảnh.
+**Q: Những định dạng tệp nào được hỗ trợ ngay từ đầu?**  
+A: Hơn 170 định dạng, bao gồm PDF, DOCX, XLSX, PPTX, DWG, DWF, SVG và nhiều loại hình ảnh khác.
 
 ---
 
-**Cập nhật lần cuối:** 2026-07-14  
+**Cập nhật lần cuối:** 2026-10-26  
 **Được kiểm tra với:** GroupDocs.Viewer 23.11 for .NET & Java  
 **Tác giả:** GroupDocs
