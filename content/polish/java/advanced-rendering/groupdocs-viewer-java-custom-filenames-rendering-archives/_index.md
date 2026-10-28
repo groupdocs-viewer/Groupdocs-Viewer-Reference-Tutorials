@@ -70,11 +70,6 @@ type: docs
 url: /pl/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/
 weight: 1
 ---
-
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Konwertuj zip do pdf przy użyciu GroupDocs.Viewer Java – niestandardowe nazwy plików
 
 Konwertowanie archiwów zip do PDF jest częstym wymaganiem, gdy potrzebujesz udostępnić lub zarchiwizować dokumenty w uniwersalnym formacie czytelnym. W tym samouczku nauczysz się **jak konwertować zip do pdf** przy użyciu GroupDocs.Viewer dla Javy, jednocześnie kontrolując nazwę wyjściowego pliku, aby pasowała do Twoich konwencji nazewnictwa. Przejdziemy przez przygotowanie środowiska, integrację z Mavenem oraz dokładne wywołania API potrzebne do wygenerowania PDF z niestandardową nazwą, a także podpowiemy, jak zwiększyć wydajność przy dużych archiwach.
@@ -270,8 +265,3 @@ A: Odwiedź [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/) p
 - [groupdocs viewer java: Konwertuj dokumenty do PDF – Kompletny przewodnik](/viewer/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/)
 - [Jak ustawić licencje w GroupDocs.Viewer Java: Przewodnik konfiguracji plików i URL](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)
 - [Efektywne zmienianie kolejności stron PDF w GroupDocs.Viewer dla Javy: Kompleksowy przewodnik](/viewer/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

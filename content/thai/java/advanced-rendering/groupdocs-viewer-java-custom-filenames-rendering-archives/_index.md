@@ -67,11 +67,6 @@ type: docs
 url: /th/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/
 weight: 1
 ---
-
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # แปลง zip เป็น pdf ด้วย GroupDocs.Viewer Java – ชื่อไฟล์แบบกำหนดเอง
 
 การแปลงไฟล์ zip เป็น PDF เป็นความต้องการที่พบบ่อยเมื่อคุณต้องการแชร์หรือเก็บเอกสารในรูปแบบที่สามารถอ่านได้ทั่วทุกแพลตฟอร์ม ในบทเรียนนี้คุณจะได้เรียนรู้ **วิธีแปลง zip เป็น pdf** ด้วย GroupDocs.Viewer สำหรับ Java พร้อมการควบคุมชื่อไฟล์ผลลัพธ์ให้ตรงกับมาตรฐานการตั้งชื่อของคุณ เราจะเดินผ่านการเตรียมสภาพแวดล้อม, การรวม Maven, และการเรียก API ที่จำเป็นเพื่อสร้าง PDF ที่มีชื่อกำหนดเอง รวมถึงเคล็ดลับเพิ่มประสิทธิภาพสำหรับไฟล์ zip ขนาดใหญ่
@@ -268,8 +263,3 @@ viewer.view(viewOptions);
 - [groupdocs viewer java: Convert Documents to PDF – Complete Guide](/viewer/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/)
 - [How to Set Licenses in GroupDocs.Viewer Java&#58; File and URL Setup Guide](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)
 - [Efficient PDF Page Reordering with GroupDocs.Viewer for Java&#58; A Comprehensive Guide](/viewer/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

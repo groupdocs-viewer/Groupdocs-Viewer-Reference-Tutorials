@@ -69,11 +69,6 @@ type: docs
 url: /hu/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/
 weight: 1
 ---
-
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # ZIP fájl PDF-re konvertálása a GroupDocs.Viewer Java segítségével – egyedi fájlnevek
 
 A ZIP archívumok PDF-re konvertálása gyakori igény, amikor dokumentumokat kell megosztani vagy archiválni egy mindenhol olvasható formátumban. Ebben az útmutatóban megtanulja, **hogyan konvertálja a zip fájlt PDF-re** a GroupDocs.Viewer for Java segítségével, miközben a kimeneti fájlnevet a saját elnevezési konvencióihoz igazítja. Áttekintjük a környezet előkészítését, a Maven integrációt, és a pontos API hívásokat, amelyekkel egy egyedi névvel ellátott PDF-et hozhat létre, valamint teljesítmény‑növelő tippeket nagy archívumokhoz.
@@ -270,8 +265,3 @@ A: Látogassa meg a [GroupDocs dokumentációt](https://docs.groupdocs.com/viewe
 - [groupdocs viewer java: Dokumentumok PDF-re konvertálása – Teljes útmutató](/viewer/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/)
 - [Hogyan állítsuk be a licenceket a GroupDocs.Viewer Java-ban: Fájl és URL beállítási útmutató](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)
 - [Hatékony PDF oldal újrarendezés a GroupDocs.Viewer for Java-val: Átfogó útmutató](/viewer/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

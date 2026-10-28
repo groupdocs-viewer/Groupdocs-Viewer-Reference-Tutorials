@@ -64,11 +64,6 @@ type: docs
 url: /ja/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/
 weight: 1
 ---
-
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # GroupDocs.Viewer JavaでZIPをPDFに変換 – カスタムファイル名
 
 ZIP アーカイブを PDF に変換することは、文書を普遍的に読み取れる形式で共有またはアーカイブする必要がある場合に頻繁に求められます。このチュートリアルでは、GroupDocs.Viewer for Java を使用して **zip を pdf に変換する方法** を学び、出力ファイル名を命名規則に合わせて制御する方法も紹介します。環境の準備、Maven との統合、カスタム名の PDF を生成するために必要な正確な API 呼び出し、さらに大容量アーカイブ向けのパフォーマンス向上のヒントを順に解説します。
@@ -246,8 +241,3 @@ A: 包括的なガイドと API リファレンスは [GroupDocs ドキュメン
 - [groupdocs viewer java: ドキュメントを PDF に変換 – 完全ガイド](/viewer/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/)
 - [GroupDocs.Viewer Java のライセンス設定方法&#58; ファイルと URL のセットアップガイド](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)
 - [GroupDocs.Viewer for Java を使用した効率的な PDF ページ並び替え&#58; 包括的ガイド](/viewer/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

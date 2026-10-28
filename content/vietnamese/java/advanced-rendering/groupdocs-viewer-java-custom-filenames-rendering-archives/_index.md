@@ -68,11 +68,6 @@ type: docs
 url: /vi/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/
 weight: 1
 ---
-
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Chuyển đổi zip sang pdf với GroupDocs.Viewer Java – tên tệp tùy chỉnh
 
 Chuyển đổi các tệp ZIP sang PDF là một nhu cầu thường gặp khi bạn cần chia sẻ hoặc lưu trữ tài liệu ở định dạng có thể đọc được trên mọi thiết bị. Trong hướng dẫn này, bạn sẽ học **cách chuyển đổi zip sang pdf** bằng GroupDocs.Viewer cho Java đồng thời kiểm soát tên tệp đầu ra để phù hợp với quy tắc đặt tên của bạn. Chúng tôi sẽ hướng dẫn chuẩn bị môi trường, tích hợp Maven và các lời gọi API chính xác để tạo PDF với tên tùy chỉnh, cùng các mẹo tăng hiệu năng cho các lưu trữ lớn.
@@ -250,8 +245,3 @@ A: Truy cập [Tài liệu GroupDocs](https://docs.groupdocs.com/viewer/java/) �
 - [groupdocs viewer java: Chuyển đổi tài liệu sang PDF – Hướng dẫn đầy đủ](/viewer/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/)
 - [Cách thiết lập giấy phép trong GroupDocs.Viewer Java: Hướng dẫn cài đặt tệp và URL](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)
 - [Sắp xếp lại trang PDF hiệu quả với GroupDocs.Viewer cho Java: Hướng dẫn toàn diện](/viewer/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
