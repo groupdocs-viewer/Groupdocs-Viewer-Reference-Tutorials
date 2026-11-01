@@ -1,23 +1,25 @@
 ---
-date: '2026-08-08'
-description: Zjistěte, jak převést hpg na jpg a provést konverzi dokumentů v Java
-  na PDF pomocí GroupDocs.Viewer. Ovládněte efektivní vykreslování souborů HPG.
+date: '2026-11-01'
+description: Naučte se, jak převést hpg na jpg a provádět konverzi dokumentů v Javě
+  do PDF pomocí GroupDocs.Viewer. Ovládněte efektivní vykreslování souborů HPG.
+images:
+- /java/advanced-rendering/java-hpg-rendering-groupdocs-viewer-guide/og-image.png
 keywords:
 - convert hpg to jpg
 - java image conversion
 - vector graphic to jpg
-- java document to pdf
-- java convert hpg pdf
-lastmod: '2026-08-08'
-og_description: Efektivně převádějte hpg na jpg pomocí GroupDocs.Viewer pro Java.
-  Tento návod ukazuje krok za krokem nastavení, ukázky kódu a osvědčené postupy pro
-  konverzi dokumentů v Java.
+- groupdocs image conversion
+- hpg file conversion
+lastmod: '2026-11-01'
+og_description: Efektivně převádějte hpg na jpg pomocí GroupDocs.Viewer for Java.
+  Tento průvodce ukazuje krok za krokem nastavení, ukázky kódu a osvědčené postupy
+  pro konverzi dokumentů v Javě.
 og_image_alt: Developer guide showing HPG to JPG conversion with GroupDocs.Viewer
   for Java
-og_title: Převod hpg na jpg s GroupDocs.Viewer pro Java – rychlý návod
+og_title: Převod hpg na jpg s GroupDocs.Viewer for Java – rychlý průvodce
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-08'
+  dateModified: '2026-11-01'
   description: Learn how to convert hpg to jpg and perform Java document conversion
     to PDF using GroupDocs.Viewer. Master rendering HPG files efficiently.
   headline: Convert hpg to jpg with GroupDocs.Viewer for Java guide
@@ -42,33 +44,33 @@ tags:
 - java image conversion
 - hpg rendering
 - document conversion
-title: Převod hpg na jpg s GroupDocs.Viewer pro Java – návod
+title: Převod hpg na jpg s GroupDocs.Viewer for Java – průvodce
 type: docs
 url: /cs/java/advanced-rendering/java-hpg-rendering-groupdocs-viewer-guide/
 weight: 1
 ---
 
-# Převod hpg na jpg pomocí GroupDocs.Viewer pro Java průvodce
+# Převod hpg na jpg pomocí GroupDocs.Viewer pro Java – průvodce
 
-V tomto tutoriálu se naučíte, jak **převést hpg na jpg** v Java aplikaci pomocí GroupDocs.Viewer. Průvodce vás provede instalací knihovny, načtením souboru HPG, vykreslením do JPG (a také HTML, PNG a PDF) a řešením běžných problémů. Na konci pochopíte, proč je převod HPG na JPG častou potřebou pro webové publikování, archivaci obrázků a systémy pro správu dokumentů. Navštivte [web GroupDocs](https://www.groupdocs.com/) pro více informací.
+V tomto tutoriálu se naučíte, jak **převést hpg na jpg** v Java aplikaci pomocí GroupDocs.Viewer. Průvodce vás provede instalací knihovny, načtením souboru HPG, vykreslením do JPG (stejně tak i HTML, PNG a PDF) a řešením běžných problémů. Na konci pochopíte, proč je převod hpg na jpg častým požadavkem pro webové publikování, archivaci obrázků a systémy správy dokumentů. Navštivte [GroupDocs website](https://www.groupdocs.com/) pro více informací.
 
-![Vykreslování HPG pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/hpg-rendering-java.png)
-[HPG Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/hpg-rendering-java.png)
+![Vykreslení HPG pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/hpg-rendering-java.png)
+[Vykreslení HPG pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/hpg-rendering-java.png)
 
 ## Rychlé odpovědi
 - **Jaký je hlavní případ použití?** Převod grafiky HPG do web‑připraveného HTML, JPG, PNG nebo PDF pro prohlížeče a mobilní aplikace.  
 - **Která knihovna provádí převod?** GroupDocs.Viewer pro Java (v25.2).  
 - **Potřebuji licenci GroupDocs Viewer?** Bezplatná zkušební verze funguje pro hodnocení; pro produkci je vyžadována komerční licence.  
-- **Mohu převést do PDF jako součást Java převodu dokumentu do PDF?** Ano – použijte `PdfViewOptions` pro výstup PDF.  
-- **Je proces náročný na paměť?** Velké soubory vyžadují dostatečný heap; API rychle uvolňuje prostředky.
+- **Mohu převést do PDF jako součást Java převodu dokumentů do PDF?** Ano – použijte `PdfViewOptions` pro výstup PDF.  
+- **Je proces náročný na paměť?** Velké soubory vyžadují dostatečný heap; API rychle uvolňuje zdroje.
 
 ## Co je „převod hpg na jpg“?
-Převod hpg na jpg znamená rasterizaci každé vektorové stránky souboru HPG do JPEG obrázku. Výsledkem jsou lehké, prohlížečem kompatibilní obrázky, které jsou ideální pro náhledy, mobilní doručení nebo jakýkoli scénář, kde je vyžadován kompaktní formát obrázku. Proces převodu extrahuje každý vektorový prvek, použije anti‑aliasing a zapíše výsledek jako komprimovaný JPEG soubor vhodný pro rychlé doručení po webu.
+Převod hpg na jpg znamená rasterizaci každé vektorové stránky souboru HPG do JPEG obrázku. Výsledkem jsou lehké, prohlížečem kompatibilní obrázky, které jsou ideální pro náhledy, mobilní doručení nebo jakýkoli scénář, kde je vyžadován kompaktní formát obrázku. Proces převodu extrahuje každý vektorový prvek, použije anti‑aliasing a zapíše výsledek jako komprimovaný JPEG soubor vhodný pro rychlé webové doručení.
 
 ## Proč používat GroupDocs.Viewer pro Java?
-GroupDocs.Viewer podporuje vykreslování **více než 50 formátů dokumentů** a dokáže zpracovat soubory HPG až do 500 MB, aniž by načítal celý soubor do paměti. API automaticky spravuje vložené zdroje, rozvržení stránek a formát‑specifické možnosti, což činí převod Java dokumentů do PDF a obrazových formátů rychlým a spolehlivým. Jedna **groupdocs viewer licence** pokrývá všechny podporované formáty, což zjednodušuje nasazení a snižuje licenční náklady.
+GroupDocs.Viewer podporuje vykreslování **více než 50 formátů dokumentů** a může zpracovávat HPG soubory až do 500 MB bez načítání celého souboru do paměti. API automaticky zvládá vložené zdroje, rozvržení stránek a formát‑specifické možnosti, což dělá Java převod dokumentů do PDF a obrazových formátů rychlým a spolehlivým. Jedna **groupdocs viewer licence** pokrývá všechny podporované formáty, což zjednodušuje nasazení a snižuje licenční zátěž.
 
-## Předpoklady
+## Požadavky
 
 - Základní znalost Javy a Maven.  
 - Nainstalovaný JDK 8 nebo novější.  
@@ -76,7 +78,7 @@ GroupDocs.Viewer podporuje vykreslování **více než 50 formátů dokumentů**
 - Přístup k licenci GroupDocs.Viewer (zkušební nebo komerční).  
 
 ### Požadované knihovny, verze a závislosti
-Přidejte následující Maven konfiguraci do svého `pom.xml`:
+Přidejte následující Maven konfiguraci do vašeho `pom.xml`:
 
 ```xml
 <repositories>
@@ -99,11 +101,11 @@ Přidejte následující Maven konfiguraci do svého `pom.xml`:
 
 1. **Přidejte závislost** – Ujistěte se, že výše uvedený Maven úryvek je v `pom.xml`.  
 2. **Kroky získání licence**:  
-   - Začněte s bezplatnou zkušební verzí na [web GroupDocs](https://www.groupdocs.com/).  
+   - Začněte s bezplatnou zkušební verzí na [GroupDocs website](https://www.groupdocs.com/).  
    - Získejte dočasnou licenci pro rozšířené testování přes [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
-   - Kupte komerční licenci na [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).  
-   > **Pro tip:** Uložte licenční soubor na bezpečné místo a načtěte jej jednou při spuštění aplikace, abyste se vyhnuli opakovanému I/O.  
-3. **Základní inicializace** – `Viewer` je jádro GroupDocs.Viewer, které načítá a vykresluje dokumenty. Vytvořte instanci `Viewer`, která ukazuje na váš HPG soubor:
+   - Zakupte komerční licenci na [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).  
+   > **Tip:** Uložte soubor licence na bezpečné místo a načtěte jej jednou při startu aplikace, aby se předešlo opakovanému I/O.  
+3. **Základní inicializace** – `Viewer` je hlavní třída GroupDocs.Viewer, která načítá a vykresluje dokumenty. Vytvořte instanci `Viewer`, která ukazuje na váš HPG soubor:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -119,10 +121,10 @@ public class DocumentViewer {
 
 ## Jak převést hpg na jpg pomocí GroupDocs.Viewer
 
-Načtěte svůj HPG soubor pomocí `new Viewer(inputPath)` a zavolejte `viewer.view(options)` – celý převod proběhne jedním voláním metody. Tento přístup zajišťuje, že každá stránka je rasterizována do vysoce kvalitních JPEG obrázků při zachování vektorových detailů. Můžete také nastavit DPI, hloubku barev a zda zachovat EXIF metadata, což vám dává plnou kontrolu nad kvalitou výstupu a velikostí souboru.
+Načtěte svůj HPG soubor pomocí `new Viewer(inputPath)` a zavolejte `viewer.view(options)` – celý převod je proveden jedním voláním metody. Tento přístup zajišťuje, že každá stránka je rasterizována do vysoce kvalitních JPEG obrázků při zachování vektorových detailů. Můžete také specifikovat DPI, barevnou hloubku a zda zachovat EXIF metadata, což vám dává plnou kontrolu nad kvalitou výstupu a velikostí souboru.
 
-### Krok 1: definovat výstupní cesty
-Nastavte složku, kam budou uložené vykreslené obrázky. To udrží projekt přehledný a usnadní nalezení výsledků.
+### Krok 1: definujte výstupní cesty
+Nastavte složku, kam budou uloženy vykreslené obrázky. To udržuje projekt přehledný a usnadňuje nalezení výsledků.
 
 ```java
 import java.nio.file.Path;
@@ -131,10 +133,10 @@ Path outputDirectory = YOUR_DOCUMENT_DIRECTORY.resolve("RenderingHpg");
 Path pageFilePathFormat = outputDirectory.resolve("hpg_result.jpg");
 ```
 
-Nahraďte `YOUR_DOCUMENT_DIRECTORY` skutečnou cestou k adresáři obsahujícímu váš zdrojový soubor.
+Nahraďte `YOUR_DOCUMENT_DIRECTORY` skutečným adresářem, který obsahuje váš zdrojový soubor.
 
-### Krok 2: nakonfigurovat viewer pro výstup JPG
-`JpgViewOptions` je třída možností, která řídí parametry vykreslování JPEG, jako je kvalita a DPI. Vytvořte objekt možností, nastavte požadovanou kvalitu a zavolejte viewer. Blok `try‑with‑resources` zajišťuje automatické uvolnění všech nativních zdrojů.
+### Krok 2: nakonfigurujte viewer pro JPG výstup
+`JpgViewOptions` je třída možností, která řídí parametry vykreslování JPEG, jako je kvalita a DPI. Vytvořte objekt možností, nastavte požadovanou kvalitu a zavolejte viewer. Blok `try‑with‑resources` zaručuje automatické uvolnění všech nativních zdrojů.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -147,16 +149,16 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
-**Pro tip:** Upravit kvalitu obrázku pomocí `options.setQuality(int)`, pokud potřebujete menší soubory pro webové doručení.
+**Tip:** Upravte kvalitu obrázku pomocí `options.setQuality(int)`, pokud potřebujete menší velikosti souborů pro webové doručení.
 
 #### Běžné úskalí
 - **Soubor nenalezen** – Ověřte cestu k souboru HPG a ujistěte se, že soubor existuje.  
 - **Chyby oprávnění** – Aplikace musí mít práva čtení/zápisu pro vstupní i výstupní adresáře.  
 
-## Vykreslování hpg do jiných formátů
+## Vykreslení hpg do dalších formátů
 
-### Vykreslování do HTML (převod hpg do webového formátu)
-Vykreslování HTML je ideální pro náhledy v prohlížeči a umožňuje přímo vkládat zdroje.
+### Vykreslení do HTML (převod hpg webový formát)
+HTML vykreslování je ideální pro náhledy v prohlížeči a umožňuje přímo vkládat zdroje.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -168,7 +170,7 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
-### Vykreslování do PNG
+### Vykreslení do PNG
 PNG poskytuje bezztrátovou kvalitu, což je užitečné, když potřebujete vysoce věrné náhledy.
 
 ```java
@@ -181,8 +183,8 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
-### Vykreslování do PDF (Java převod dokumentu do PDF)
-PDF je preferovaný formát pro archivaci a soulad s předpisy. Třída `PdfViewOptions` vytvoří jeden PDF dokument, který obsahuje všechny vykreslené stránky.
+### Vykreslení do PDF (Java převod dokumentu do PDF)
+PDF je standardní formát pro archivaci a soulad. Třída `PdfViewOptions` vytvoří jeden PDF dokument, který obsahuje všechny vykreslené stránky.
 
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
@@ -194,26 +196,32 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
+## Jak funguje převod obrázků v Javě s GroupDocs?
+GroupDocs.Viewer čte zdrojový HPG stream, rasterizuje každou stránku na bitmapu a poté bitmapu zakóduje jako JPEG pomocí parametrů nastavených v `JpgViewOptions`. Knihovna automaticky spravuje správu barev, anti‑aliasing a volitelnou preservaci EXIF, takže se nemusíte starat o nízko‑úrovňové zpracování obrázků.
+
+## Co je převod vektorové grafiky na JPG?
+Převod vektorové grafiky na JPG transformuje škálovatelné vektorové tvary do rasterového obrázku pevné velikosti, což vám umožní zobrazit obsah v libovolném prohlížeči bez potřeby vektorového renderu. Proces zachovává vizuální věrnost aplikací anti‑aliasingu při DPI, které specifikujete, a výsledkem je ostrý JPG výstup vhodný pro náhledy a webové stránky.
+
 ## Praktické aplikace
 
 - **Webové publikování** – Převod hpg na HTML pro okamžité vykreslení v prohlížeči nebo na JPG/PNG pro stránky bohaté na obrázky.  
-- **Archivace obrázků** – Ukládejte grafiku jako JPG nebo PNG pro rychlé načítání a minimální úložný prostor.  
-- **Systémy správy dokumentů** – Používejte PDF výstup pro dlouhodobé ukládání, soulad a prohledávatelné archivy.  
+- **Archiv obrázků** – Ukládejte grafiku jako JPG nebo PNG pro rychlé načítání a minimální úložnou náročnost.  
+- **Systémy správy dokumentů** – Použijte výstup PDF pro dlouhodobé ukládání, soulad a prohledávatelné archivy.  
 
 ## Úvahy o výkonu
 
-- **Optimalizace paměti** – Přidělte dostatečný heap (`-Xmx`) pro velké HPG soubory; knihovna zvládne soubory až do 500 MB bez načítání celého souboru do paměti.  
-- **Správa zdrojů** – Vzor `try‑with‑resources` automaticky uzavírá streamy, čímž zabraňuje únikům paměti.  
-- **Dávkové zpracování** – Pro velmi velké dokumenty vykreslujte stránky po dávkách, aby byl paměťový odběr předvídatelný.  
+- **Optimalizace paměti** – Přidělte dostatečný heap (`-Xmx`) pro velké HPG soubory; knihovna zvládne soubory až do 500 MB bez úplného načtení do paměti.  
+- **Správa zdrojů** – Vzor `try‑with‑resources` automaticky uzavře streamy, čímž zabraňuje únikům paměti.  
+- **Dávkové zpracování** – Pro velmi velké dokumenty vykreslujte stránky po dávkách, aby byl využití paměti předvídatelný.  
 
-## Běžné problémy a řešení
+## Časté problémy a řešení
 
-| Problém | Příčina | Řešení |
+| Issue | Cause | Solution |
 |-------|-------|----------|
-| **Soubor nenalezen** | Nesprávná cesta nebo chybějící soubor | Zkontrolujte umístění souboru a během testování používejte absolutní cesty. |
-| **OutOfMemoryError** | Vykreslování obrovského HPG bez dostatečného heapu | Zvyšte JVM heap (`-Xmx2g` nebo více) a zpracovávejte stránky jednotlivě. |
-| **Prázdné obrázky** | Nepodporované funkce HPG | Ujistěte se, že používáte nejnovější verzi GroupDocs.Viewer; v případě přetrvání kontaktujte podporu. |
-| **Licence není rozpoznána** | Licenční soubor nebyl načten správně | Načtěte licenci jednou při spuštění: `License license = new License(); license.setLicense("path/to/license.lic");` |
+| **Soubor nenalezen** | Nesprávná cesta nebo chybějící soubor | Znovu zkontrolujte umístění souboru a během testování používejte absolutní cesty. |
+| **OutOfMemoryError** | Rendering a massive HPG without enough heap | Increase JVM heap (`-Xmx2g` or higher) and process pages individually. |
+| **Prázdné obrázky** | Unsupported HPG features | Ensure you are using the latest GroupDocs.Viewer version; contact support if the problem persists. |
+| **Licence nebyla rozpoznána** | License file not loaded correctly | Load the license once at startup: `License license = new License(); license.setLicense("path/to/license.lic");` |
 
 ## Často kladené otázky
 
@@ -223,13 +231,13 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 **Q:** Je podporována integrace s cloudovým úložištěm?  
 **A:** Můžete streamovat soubory z cloudových služeb (např. AWS S3, Azure Blob) načtením vstupního streamu do `Viewer`.
 
-**Q:** Jak mám zacházet s velmi velkými soubory HPG?  
-**A:** Zvyšte velikost JVM heap a zvažte zpracování stránek po dávkách, aby se snížil tlak na paměť.
+**Q:** Jak mám zacházet s velmi velkými HPG soubory?  
+**A:** Zvyšte velikost JVM heapu a zvažte zpracování stránek po dávkách, aby se snížil tlak na paměť.
 
-**Q:** Co když vykreslování selže bez chybové zprávy?  
-**A:** Zapněte logování v konfiguraci Vieweru, aby se zachytily podrobné diagnostické informace.
+**Q:** Co když vykreslení selže bez chybové zprávy?  
+**A:** Povolit logování v konfiguraci Vieweru pro zachycení podrobných diagnostik.
 
-**Q:** Jsou komerční projekty oprávněny používat GroupDocs.Viewer?  
+**Q:** Je povoleno používat GroupDocs.Viewer v komerčních projektech?  
 **A:** Ano, zakoupená **groupdocs viewer licence** umožňuje neomezené komerční využití.
 
 ## Zdroje
@@ -237,11 +245,11 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 - [Dokumentace](https://docs.groupdocs.com/viewer/java/)
 - [Reference API](https://reference.groupdocs.com/viewer/java/)
 - [Stáhnout GroupDocs.Viewer pro Java](https://releases.groupdocs.com/viewer/java/)
-- [Koupit licenci](https://purchase.groupdocs.com/buy)
+- [Zakoupit licenci](https://purchase.groupdocs.com/buy)
 
 ---
 
-**Poslední aktualizace:** 2026-08-08  
+**Poslední aktualizace:** 2026-11-01  
 **Testováno s:** GroupDocs.Viewer 25.2 for Java  
 **Autor:** GroupDocs  
 

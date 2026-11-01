@@ -1,22 +1,25 @@
 ---
-date: '2026-08-25'
+date: '2026-11-01'
 description: Ismerje meg, hogyan renderelhet rejtett oldalakat Java-ban a GroupDocs.Viewer
   segítségével, hogyan konfigurálja az API-t, és hogyan integrálja Java alkalmazásokba
   a teljes dokumentumláthatóság érdekében.
+images:
+- /java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/og-image.png
 keywords:
 - render hidden pages java
 - groupdocs viewer hidden slides
 - java document rendering
 - groupdocs viewer integration
-lastmod: '2026-08-25'
-og_description: Rejtett oldalak renderelése Java-ban a GroupDocs.Viewer segítségével.
-  Ez a lépésről‑lépésre útmutató bemutatja, hogyan engedélyezheti a rejtett diák renderelését,
-  hogyan konfigurálja a beállításokat, és hogyan kezelje a teljesítményt Java-ban.
+lastmod: '2026-11-01'
+og_description: Rejtett oldalak renderelése Java-ban a GroupDocs.Viewer használatával.
+  Ez a lépésről-lépésre útmutató megmutatja, hogyan engedélyezheti a rejtett diák
+  renderelését, hogyan konfigurálja a beállításokat, és hogyan kezelje a teljesítményt
+  Java-ban.
 og_image_alt: 'Developer guide: render hidden pages java using GroupDocs.Viewer'
-og_title: Rejtett oldalak renderelése Java-ban a GroupDocs.Viewer-rel – Teljes útmutató
+og_title: Rejtett oldalak renderelése Java-ban a GroupDocs.Viewer-rel – teljes útmutató
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-25'
+  dateModified: '2026-11-01'
   description: Learn how to render hidden pages java with GroupDocs.Viewer, configure
     the API, and integrate it into Java applications for full document visibility.
   headline: 'Render hidden pages java: How to use GroupDocs.Viewer'
@@ -62,37 +65,39 @@ tags:
 - groupdocs viewer
 - java rendering
 - document processing
-title: 'Rejtett oldalak renderelése Java: Hogyan használjuk a GroupDocs.Viewer-t'
+title: 'Rejtett oldalak renderelése Java-ban: Hogyan használjuk a GroupDocs.Viewer-t'
 type: docs
 url: /hu/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/
 weight: 1
 ---
 
-# Rejtett oldalak renderelése Java-ban: Hogyan használjuk a GroupDocs.Viewer-t
+# Rejtett oldalak renderelése Java-ban: A GroupDocs.Viewer használata
 
-Ebben az útmutatóban megtanulja, hogyan **renderelhet rejtett oldalakat Java-ban** a GroupDocs.Viewer segítségével, miért fontos ez a funkció a megfelelőség és a felhasználói élmény szempontjából, és pontosan mely API hívásokat kell használnia a rejtett diák vagy szakaszok renderelésének engedélyezéséhez. Akár PowerPoint prezentációkkal, Word dokumentumokkal vagy PDF-ekkel dolgozik, az alábbi lépések lehetővé teszik, hogy minden rejtett elemet feltárjon Java alkalmazásaiban.
+Ebben az oktatóanyagban megtanulja, **hogyan renderelhet rejtett oldalakat Java-ban** a GroupDocs.Viewer segítségével, miért fontos ez a funkció a megfelelőség és a felhasználói élmény szempontjából, és pontosan mely API hívásokra van szükség a rejtett diák vagy szakaszok renderelésének engedélyezéséhez. Akár PowerPoint prezentációkkal, Word dokumentumokkal vagy PDF-ekkel dolgozik, az alábbi lépések lehetővé teszik, hogy minden rejtett elemet feltárjon Java alkalmazásaiban.
 
-![Render Hidden Pages with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-pages-java.png)
-[Render Hidden Pages with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-pages-java.png)
+![Rejtett oldalak renderelése a GroupDocs.Viewer-rel Java-hoz](/viewer/advanced-rendering/render-hidden-pages-java.png)
+[Rejtett oldalak renderelése a GroupDocs.Viewer-rel Java-hoz](/viewer/advanced-rendering/render-hidden-pages-java.png)
 
 ## Gyors válaszok
-- **Meg tudja jeleníteni a GroupDocs.Viewer a rejtett PowerPoint diákat?** Igen – hívja meg a `setRenderHiddenPages(true)` metódust a nézetbeállításokon.
-- **Szükségem van licencre a rejtett oldalak rendereléséhez?** Érvényes GroupDocs licenc szükséges a termelési környezethez.
-- **Mely Java verzió támogatott?** Java 8+ és minden újabb JDK.
-- **Csak Maven a könyvtár hozzáadásának módja?** A Maven ajánlott, de a Gradle vagy a kézi JAR hozzáadás is működik.
-- **A renderelés befolyásolja a teljesítményt?** A rejtett oldalak renderelése mérsékelt többletterhet jelent; lásd a teljesítmény‑optimalizálási tippeket a későbbi részekben.
+- **Meg tudja jeleníteni a GroupDocs.Viewer a rejtett PowerPoint diákat?** Igen – call `setRenderHiddenPages(true)` on the view options.
+- **Szükségem van licencre a rejtett oldalak rendereléséhez?** A valid GroupDocs license is required for production deployments.
+- **Melyik Java verzió támogatott?** Java 8+ and any newer JDK.
+- **A Maven az egyetlen módja a könyvtár hozzáadásának?** Maven is recommended, but Gradle or manual JAR inclusion also work.
+- **A renderelés befolyásolja a teljesítményt?** Rendering hidden pages adds a modest overhead; see the performance‑tuning tips later in this guide.
 
 ## Mi az a rejtett oldalak renderelése Java-ban?
-A rejtett oldalak renderelése Java-ban azt mondja a GroupDocs.Viewer-nek, hogy a forrásdokumentumban rejtettnek vagy láthatatlannak jelölt diákot, szakaszokat vagy bármilyen tartalmat normál oldalként kezelje a renderelés során. Ez garantálja, hogy semmilyen információ ne maradjon ki, amikor HTML‑t, képeket vagy PDF‑eket generál a forrásfájlból.
 
-## Miért használja a GroupDocs.Viewer‑t a rejtett tartalom rendereléséhez?
-A GroupDocs.Viewer **több mint 30 bemeneti és kimeneti formátumot** képes feldolgozni – beleértve a PPTX, DOCX, PDF, XLSX és számos képformátumot – anélkül, hogy a teljes fájlt a memóriába töltené. A rejtett oldalak renderelésének engedélyezése **100 % audit‑kész kimenetet** biztosít, ami elengedhetetlen a jogi megfelelőség, a vezetői prezentációk és az archiválási munkafolyamatok számára.
+A rejtett oldalak renderelése Java-ban azt mondja a GroupDocs.Viewer-nek, hogy a rejtett diákat, rejtett szakaszokat vagy a forrásdokumentumban láthatatlanként jelölt tartalmat rendes oldalként kezelje a renderelés során. Ez garantálja, hogy semmilyen információ ne maradjon ki, amikor HTML-t, képeket vagy PDF-eket generál a forrásfájlból.
+
+## Miért használja a GroupDocs.Viewer-t a rejtett tartalom rendereléséhez?
+
+A rejtett oldalak renderelésének engedélyezése 100 % audit‑kész kimenetet biztosít, ami elengedhetetlen a jogi megfelelőség, a vezetői prezentációk és az archiválási munkafolyamatok számára. A GroupDocs.Viewer támogat **30+ bemeneti és kimeneti formátumot**, és akár **500 oldalig** képes feldolgozni a dokumentumokat anélkül, hogy a teljes fájlt memóriába töltené, gyors, memóriahatékony konverziót biztosítva a szabványos szerverhardveren.
 
 ## Előkövetelmények
 
-- **GroupDocs.Viewer for Java** verzió 25.2 vagy újabb.  
+- **GroupDocs.Viewer for Java** version 25.2 vagy újabb.  
 - **JDK 8+** telepítve a fejlesztői gépen.  
-- IDE, például **IntelliJ IDEA** vagy **Eclipse**.  
+- Egy IDE, például **IntelliJ IDEA** vagy **Eclipse**.  
 - **Maven** (vagy Gradle) a függőségkezeléshez.
 
 ### Szükséges könyvtárak, verziók és függőségek
@@ -105,7 +110,7 @@ A GroupDocs.Viewer **több mint 30 bemeneti és kimeneti formátumot** képes fe
 
 ### Tudás előkövetelmények
 - Alapvető Java programozási ismeretek.  
-- Ismeret a Maven `pom.xml` fájlstruktúrájával.
+- Ismeret a Maven `pom.xml` fájl struktúrájáról.
 
 ## A GroupDocs.Viewer beállítása Java-hoz
 
@@ -132,15 +137,15 @@ Adja hozzá a következő függőséget a `pom.xml` fájlhoz a GroupDocs.Viewer 
 ```
 
 ### Licenc beszerzési lépések
-- **Ingyenes próba** – kezdje egy próbaverzióval, hogy felfedezze az összes funkciót.  
-- **Ideiglenes licenc** – szerezzen rövid távú licencet a kiterjesztett teszteléshez funkcionális korlátozások nélkül.  
-- **Vásárlás** – vásároljon kereskedelmi licencet termelési használatra, és kapjon prioritásos támogatást.
+- **Free trial** – kezdje egy próbaverzióval, hogy felfedezze az összes funkciót.  
+- **Temporary license** – szerezzen be egy rövid távú licencet a kiterjesztett teszteléshez funkcionális korlátozások nélkül.  
+- **Purchase** – vásároljon kereskedelmi licencet a termelési használathoz, és kapjon elsőbbségi támogatást.
 
-### Alap inicializálás és beállítás
+### Alapvető inicializálás és beállítás
 
 Győződjön meg róla, hogy importálja a szükséges osztályokat a Java forrásfájlban:
 
-A `Viewer` osztály a fő komponens, amely betölti és rendereli a dokumentumokat.
+`Viewer` osztály a fő komponens, amely betölti és rendereli a dokumentumokat.
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -154,11 +159,11 @@ Hozzon létre egy `Viewer` példányt a dokumentumokkal való munka megkezdésé
 
 ### Rejtett oldalak renderelése
 
-Az alábbiakban lépésről‑lépésre bemutatjuk a **rejtett oldalak renderelése Java-ban** folyamatát.
+Az alábbiakban egy lépésről‑lépésre útmutató a **rejtett oldalak renderelése Java-ban** folyamatról.
 
 #### 1. lépés: Kimeneti könyvtár és fájl‑útvonal formátum meghatározása
 
-Állítsa be, hogy hová kerüljenek a renderelt HTML fájlok:
+Állítsa be, hogy a renderelt HTML fájlok hol legyenek mentve:
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
@@ -166,19 +171,19 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
 - **`outputDirectory`** – a mappa, amely a generált HTML oldalakat tartalmazza.  
-- **`pageFilePathFormat`** – a névformátum minden oldal fájlhoz, helyőrzőkkel, például `{0}` a lap számához.
+- **`pageFilePathFormat`** – a fájlnevek mintája minden oldalhoz, például `{0}` a lap számához.
 
 #### 2. lépés: HtmlViewOptions konfigurálása
 
 Hozzon létre egy `HtmlViewOptions` példányt, és engedélyezze a beágyazott erőforrásokat:
 
-Az HtmlViewOptions meghatározza a HTML kimenet renderelési beállításait.
+`HtmlViewOptions` meghatározza a HTML kimenet renderelési beállításait.
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.setRenderHiddenPages(true); // Enable rendering of hidden pages
 ```
 
-- **`forEmbeddedResources`** – CSS‑t, JavaScript‑et és képeket közvetlenül a HTML kimenetbe csomagolja.  
+- **`forEmbeddedResources`** – a CSS, JavaScript és képek közvetlenül a HTML kimenetbe ágyazott csomagolása.  
 - **`setRenderHiddenPages(true)`** – aktiválja a rejtett diák vagy szakaszok renderelését, biztosítva, hogy megjelenjenek a végleges eredményben.
 
 #### 3. lépés: Dokumentum renderelése
@@ -194,66 +199,66 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE
 - **`Viewer`** – betölti és feldolgozza a forrásfájlt.  
 - **`view(viewOptions)`** – a megadott `HtmlViewOptions` alapján végzi a renderelést.
 
-**Hibaelhárítási tipp:** Ellenőrizze, hogy a dokumentum útvonala helyes-e, és hogy a Java folyamatnak van‑e írási jogosultsága a kimeneti könyvtárra, hogy elkerülje a „hozzáférés megtagadva” hibákat.
+**Hibaelhárítási tipp:** Ellenőrizze, hogy a dokumentum útvonala helyes-e, és hogy a Java folyamatnak van‑e írási joga a kimeneti könyvtárhoz, hogy elkerülje a „hozzáférés megtagadva” hibákat.
 
 ## Gyakorlati alkalmazások
 
-- **Vállalati prezentációk** – Tartalmazza az összes rejtett diát a vezetői áttekintésekhez, garantálva, hogy semmilyen bizalmas tartalom ne maradjon ki.  
-- **Dokumentum archiválás** – Megőrzi a jogi szerződések vagy szabályzati kézikönyvek minden oldalát, még azokat is, amelyek belső használatra rejtve vannak.  
-- **Oktatási anyagok** – Teljes előadás anyagok biztosítása, beleértve a rejtett oktatói jegyzeteket is.  
-- **Interaktív jelentések** – Lehetővé teszi az elemzőknek, hogy felfedezzék a forrásban rejtett kiegészítő diagramokat vagy táblázatokat.  
-- **Szoftverdokumentáció** – Feltárja az opcionális konfigurációs szakaszokat, amelyekre a fejlesztőknek hibakeresés közben szükségük lehet.
+1. **Vállalati prezentációk** – Tartalmazza minden rejtett diát a vezetői áttekintésekhez, garantálva, hogy semmilyen bizalmas tartalom ne maradjon ki.  
+2. **Dokumentum archiválás** – Megőrzi minden oldalt a jogi szerződésekből vagy szabályzati kézikönyvekből, még azokat is, amelyek belső használatra rejtve vannak.  
+3. **Oktatási anyagok** – Teljes előadássorozat szállítása, beleértve az eredeti fájlban rejtett oktatói jegyzeteket is.  
+4. **Interaktív jelentések** – Lehetővé teszi az elemzőknek, hogy felfedezzék a forrásban rejtett kiegészítő diagramokat vagy táblázatokat.  
+5. **Szoftverdokumentáció** – Kinyitja az opcionális konfigurációs szakaszokat, amelyekre a fejlesztőknek hibakeresés közben szükségük lehet.
 
 ## Teljesítmény szempontok
 
-- **Erőforrás-kezelés** – Figyelje a JVM heap méretét (`-Xmx`) nagy PPTX fájlok sok rejtett diával történő renderelésekor.  
+- **Erőforrás-kezelés** – Figyelje a JVM heap méretét (`-Xmx`) nagy PPTX fájlok renderelésekor, amelyek sok rejtett diát tartalmaznak.  
 - **Terheléselosztás** – Ossza el a renderelési feladatokat több szerverpéldány között a nagy mennyiségű munkaterhelés kezeléséhez.  
-- **Hatékony fájlkezelés** – Használjon Java NIO stream‑eket, és kerülje a felesleges fájlmásolatokat a késleltetés alacsonyan tartásához.
+- **Hatékony fájlkezelés** – Használjon Java NIO stream-eket, és kerülje a felesleges fájlmásolatokat a késleltetés alacsonyan tartása érdekében.
 
 ## Gyakori problémák és megoldások
 
 | Probléma | Ok | Megoldás |
 |----------|----|----------|
-| Nincs kimeneti fájl generálva | Helytelen `outputDirectory` útvonal vagy hiányzó írási jogosultság | Ellenőrizze, hogy a könyvtár létezik, és adjon írási hozzáférést a Java folyamatnak |
+| Nincsenek kimeneti fájlok generálva | Helytelen `outputDirectory` útvonal vagy hiányzó írási jogosultság | Ellenőrizze, hogy a könyvtár létezik, és adjon írási jogosultságot a Java folyamatnak |
 | A rejtett oldalak még hiányoznak | `setRenderHiddenPages(true)` nincs meghívva | Győződjön meg róla, hogy a beállítás meg van adva a `viewer.view()` meghívása előtt |
-| Memóriahiány hibák | Nagyon nagy PPTX fájlok sok rejtett diával történő renderelése | Növelje a JVM heap-et (`-Xmx`) vagy ossza fel a dokumentumot kisebb darabokra a renderelés előtt |
+| Memória‑hiány hibák | Nagyon nagy PPTX fájlok renderelése sok rejtett diával | Növelje a JVM heap-et (`-Xmx`) vagy ossza fel a dokumentumot kisebb részekre a renderelés előtt |
 
 ## Gyakran ismételt kérdések
 
-**K: Milyen formátumokat támogat a GroupDocs.Viewer?**  
-V: Több mint 30 népszerű formátumot támogat, beleértve a PDF, DOCX, XLSX, PPTX, HTML és a gyakori képformátumokat.
+**Q: Milyen formátumokat támogat a GroupDocs.Viewer?**  
+A: Több mint 30 népszerű formátumot támogat, beleértve a PDF, DOCX, XLSX, PPTX, HTML és a gyakori képformátumokat.
 
-**K: Használhatom a GroupDocs.Viewer‑t kereskedelmi alkalmazásban?**  
-V: Igen – kereskedelmi licenc szükséges a termelési környezethez.
+**Q: Használhatom a GroupDocs.Viewer-t kereskedelmi alkalmazásban?**  
+A: Igen – kereskedelmi licenc szükséges a termelési környezethez.
 
-**K: Hogyan kezeljem a nagy dokumentumokat a GroupDocs.Viewer‑rel?**  
-V: Optimalizálja a memóriahasználatot a JVM heap növelésével, rendereljen oldalakat kötegekben, és fontolja meg a terheléselosztást több példány között.
+**Q: Hogyan kezeljem a nagy dokumentumokat a GroupDocs.Viewer-rel?**  
+A: Optimalizálja a memóriahasználatot a JVM heap növelésével, rendereljen oldalakat kötegekben, és fontolja meg a terheléselosztást több példány között.
 
-**K: Lehet testre szabni a kimeneti formátumot?**  
-V: Természetesen. Renderelhet HTML, PNG, JPEG vagy PDF formátumba a megfelelő `ViewOptions` osztály kiválasztásával.
+**Q: Lehet testre szabni a kimeneti formátumot?**  
+A: Természetesen. Renderelhet HTML, PNG, JPEG vagy PDF formátumba a megfelelő `ViewOptions` osztály kiválasztásával.
 
-**K: Mit tegyek, ha hibákat tapasztalok a beállítás során?**  
-V: Ellenőrizze újra a `pom.xml` függőségeket, győződjön meg róla, hogy a licencfájl a megfelelő helyen van, és ellenőrizze az összes fájlútvonalat.
+**Q: Mit tegyek, ha hibákat tapasztalok a beállítás során?**  
+A: Ellenőrizze újra a `pom.xml` függőségeit, győződjön meg róla, hogy a licencfájl a megfelelő helyen van, és ellenőrizze az összes fájlútvonalat.
 
 ## Következtetés
 
-Most már rendelkezik egy teljes, termelésre kész útmutatóval a **rejtett oldalak rendereléséhez Java-ban** a GroupDocs.Viewer használatával. A `setRenderHiddenPages(true)` engedélyezésével garantálja, hogy minden tartalmi elem – látható vagy rejtett – megjelenik a felhasználók számára. Fedezze fel a Viewer további lehetőségeit, például a vízjelzést, egyedi CSS‑t vagy a PDF konverziót a megoldás további bővítéséhez.
+Most már rendelkezik egy teljes, termelés‑kész útmutatóval a **rejtett oldalak renderelése Java-ban** a GroupDocs.Viewer használatával. A `setRenderHiddenPages(true)` engedélyezésével garantálja, hogy minden tartalom – látható vagy rejtett – renderelve legyen a felhasználók számára. Fedezze fel a Viewer további lehetőségeit, például a vízjelezést, egyedi CSS-t vagy a PDF konverziót, hogy tovább bővítse a megoldást.
 
 ---
 
-**Utolsó frissítés:** 2026-08-25  
-**Tesztelve ezzel:** GroupDocs.Viewer 25.2 for Java  
+**Utoljára frissítve:** 2026-11-01  
+**Tesztelt verzió:** GroupDocs.Viewer 25.2 for Java  
 **Szerző:** GroupDocs  
 
-## Források
+## Erőforrások
 
-- **Dokumentáció:** [GroupDocs.Viewer Java dokumentáció](https://docs.groupdocs.com/viewer/java/)
-- **API referencia:** [GroupDocs API referencia](https://reference.groupdocs.com/viewer/java/)
-- **Letöltés:** [GroupDocs Viewer letöltés](https://releases.groupdocs.com/viewer/java/)
-- **Vásárlás:** [GroupDocs licenc vásárlása](https://purchase.groupdocs.com/buy)
-- **Ingyenes próba:** [Ingyenes próba indítása](https://releases.groupdocs.com/viewer/java/)
-- **Ideiglenes licenc:** [Ideiglenes licenc beszerzése](https://purchase.groupdocs.com/temporary-license/)
-- **Támogatás:** [GroupDocs fórum](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentáció**: [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API referencia**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Letöltés**: [GroupDocs Viewer Download](https://releases.groupdocs.com/viewer/java/)
+- **Vásárlás**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Ingyenes próba**: [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Ideiglenes licenc**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Támogatás**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ## Kapcsolódó oktatóanyagok
 

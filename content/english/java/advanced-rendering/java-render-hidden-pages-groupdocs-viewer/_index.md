@@ -1,5 +1,5 @@
 ---
-date: '2026-08-25'
+date: '2026-11-01'
 description: Learn how to render hidden pages java with GroupDocs.Viewer, configure
   the API, and integrate it into Java applications for full document visibility.
 images:
@@ -9,15 +9,15 @@ keywords:
 - groupdocs viewer hidden slides
 - java document rendering
 - groupdocs viewer integration
-lastmod: '2026-08-25'
+lastmod: '2026-11-01'
 og_description: Render hidden pages java using GroupDocs.Viewer. This step‑by‑step
   tutorial shows you how to enable hidden slide rendering, configure options, and
   handle performance in Java.
 og_image_alt: 'Developer guide: render hidden pages java using GroupDocs.Viewer'
-og_title: Render hidden pages java with GroupDocs.Viewer – Complete guide
+og_title: Render hidden pages java with GroupDocs.Viewer – full guide
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-25'
+  dateModified: '2026-11-01'
   description: Learn how to render hidden pages java with GroupDocs.Viewer, configure
     the API, and integrate it into Java applications for full document visibility.
   headline: 'Render hidden pages java: How to use GroupDocs.Viewer'
@@ -89,7 +89,7 @@ Render hidden pages java tells GroupDocs.Viewer to treat hidden slides, hidden s
 
 ## Why use GroupDocs.Viewer for rendering hidden content?
 
-GroupDocs.Viewer can process **over 30 input and output formats** – including PPTX, DOCX, PDF, XLSX, and many image types – without loading the entire file into memory. Enabling hidden page rendering ensures a **100 % audit‑ready output**, which is essential for legal compliance, board‑room presentations, and archival workflows.
+Enabling hidden page rendering guarantees a 100 % audit‑ready output, which is essential for legal compliance, board‑room presentations, and archival workflows. GroupDocs.Viewer supports **30+ input and output formats** and can process documents up to **500 pages** without loading the entire file into memory, delivering fast, memory‑efficient conversion on standard server hardware.
 
 ## Prerequisites
 
@@ -244,7 +244,7 @@ You now have a complete, production‑ready guide for **render hidden pages java
 
 ---
 
-**Last Updated:** 2026-08-25  
+**Last Updated:** 2026-11-01  
 **Tested With:** GroupDocs.Viewer 25.2 for Java  
 **Author:** GroupDocs  
 
@@ -258,7 +258,7 @@ You now have a complete, production‑ready guide for **render hidden pages java
 - **Temporary license**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
 - **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-## Related Tutorials
+## Related tutorials
 
 - [Java Guide: render selected pages java with GroupDocs.Viewer](/viewer/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/)
 - [How to Convert Excel to HTML and Render Hidden Rows & Columns in Java with GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)

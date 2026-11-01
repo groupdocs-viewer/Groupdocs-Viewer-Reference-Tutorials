@@ -1,24 +1,26 @@
 ---
-date: '2026-08-08'
-description: Ismerje meg, hogyan konvertálhatja a hpg-t jpg-re, és hogyan végezhet
-  Java dokumentum konverziót PDF-re a GroupDocs.Viewer segítségével. Tanulja meg hatékonyan
-  megjeleníteni a HPG fájlokat.
+date: '2026-11-01'
+description: Ismerje meg, hogyan konvertálhatja a hpg-t jpg-re, és végezhet Java dokumentum
+  konverziót PDF-re a GroupDocs.Viewer segítségével. Tanulja meg hatékonyan renderelni
+  a HPG fájlokat.
+images:
+- /java/advanced-rendering/java-hpg-rendering-groupdocs-viewer-guide/og-image.png
 keywords:
 - convert hpg to jpg
 - java image conversion
 - vector graphic to jpg
-- java document to pdf
-- java convert hpg pdf
-lastmod: '2026-08-08'
+- groupdocs image conversion
+- hpg file conversion
+lastmod: '2026-11-01'
 og_description: Konvertálja hatékonyan a hpg-t jpg-re a GroupDocs.Viewer for Java
-  segítségével. Ez az útmutató lépésről‑lépésre bemutatja a beállítást, kódrészleteket
+  használatával. Ez az útmutató lépésről‑lépésre bemutatja a beállítást, kódrészleteket
   és a legjobb gyakorlatokat a Java dokumentum konverzióhoz.
 og_image_alt: Developer guide showing HPG to JPG conversion with GroupDocs.Viewer
   for Java
 og_title: hpg konvertálása jpg-re a GroupDocs.Viewer for Java – Gyors útmutató
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-08'
+  dateModified: '2026-11-01'
   description: Learn how to convert hpg to jpg and perform Java document conversion
     to PDF using GroupDocs.Viewer. Master rendering HPG files efficiently.
   headline: Convert hpg to jpg with GroupDocs.Viewer for Java guide
@@ -49,30 +51,30 @@ url: /hu/java/advanced-rendering/java-hpg-rendering-groupdocs-viewer-guide/
 weight: 1
 ---
 
-# HPG konvertálása JPG formátumba a GroupDocs.Viewer for Java útmutatóval
+# HPG konvertálása JPG-re a GroupDocs.Viewer for Java útmutatóval
 
-Ebben az útmutatóban megtanulja, hogyan **konvertálja a hpg-t jpg-re** egy Java alkalmazásban a GroupDocs.Viewer használatával. Az útmutató végigvezeti a könyvtár telepítésén, egy HPG fájl betöltésén, a JPG-re (valamint HTML, PNG és PDF) történő renderelésen, és a gyakori buktatók kezelésén. A végére megérti, miért gyakori a HPG JPG-re konvertálása a webes közzététel, képarchívumok és dokumentumkezelő rendszerek számára. További információkért látogassa meg a [GroupDocs weboldalát](https://www.groupdocs.com/).
+Ebben az útmutatóban megtanulja, hogyan **konvertálja a hpg-t jpg-re** egy Java alkalmazásban a GroupDocs.Viewer használatával. Az útmutató végigvezeti a könyvtár telepítésén, egy HPG fájl betöltésén, JPG-re (valamint HTML, PNG és PDF) történő renderelésén, és a gyakori buktatók kezelésén. A végére megérti, miért gyakori a hpg jpg-re konvertálása a webes publikálás, képarhívók és dokumentumkezelő rendszerek számára. Látogasson el a [GroupDocs weboldalára](https://www.groupdocs.com/) további információkért.
 
-![HPG renderelés a GroupDocs.Viewer for Java használatával](/viewer/advanced-rendering/hpg-rendering-java.png)
-[HPG renderelés a GroupDocs.Viewer for Java használatával](/viewer/advanced-rendering/hpg-rendering-java.png)
+![HPG renderelés a GroupDocs.Viewer for Java segítségével](/viewer/advanced-rendering/hpg-rendering-java.png)
+[HPG renderelés a GroupDocs.Viewer for Java segítségével](/viewer/advanced-rendering/hpg-rendering-java.png)
 
 ## Gyors válaszok
-- **Mi a fő felhasználási eset?** Az HPG grafikák átalakítása web‑kész HTML‑re, JPG‑re, PNG‑re vagy PDF‑re böngészők és mobilalkalmazások számára.  
+- **Mi a fő felhasználási eset?** Az HPG grafikák átalakítása web‑kész HTML-re, JPG-re, PNG-re vagy PDF-re böngészők és mobilalkalmazások számára.  
 - **Melyik könyvtár kezeli a konverziót?** GroupDocs.Viewer for Java (v25.2).  
-- **Szükségem van GroupDocs Viewer licencre?** Az ingyenes próba a kiértékeléshez működik; a kereskedelmi licenc a termeléshez szükséges.  
-- **Konvertálhatok PDF‑re a Java dokumentumkonverzió részeként?** Igen – használja a `PdfViewOptions`‑t a PDF kimenethez.  
+- **Szükségem van GroupDocs Viewer licencre?** Egy ingyenes próba a kiértékeléshez működik; a termeléshez kereskedelmi licenc szükséges.  
+- **Konvertálhatok PDF-re a Java dokumentum PDF konverzió részeként?** Igen – használja a `PdfViewOptions`‑t a PDF kimenethez.  
 - **Memóriaigényes a folyamat?** Nagy fájlokhoz megfelelő heap méret szükséges; az API gyorsan felszabadítja az erőforrásokat.
 
 ## Mi a “convert hpg to jpg”?
-A hpg jpg-re konvertálása azt jelenti, hogy egy HPG fájl minden vektoroldalát rasterizáljuk JPEG képpé. Ez könnyű, böngésző‑kompatibilis képeket eredményez, amelyek ideálisak bélyegképekhez, mobil szállításhoz vagy bármely olyan helyzethez, ahol kompakt képformátum szükséges. A konverziós folyamat kinyeri minden vektor elemet, alkalmaz anti‑aliasing‑et, és az eredményt tömörített JPEG fájlként írja ki, amely gyors webes szállításra alkalmas.
+A hpg jpg-re konvertálása azt jelenti, hogy egy HPG fájl minden vektoroldalát rasterizáljuk JPEG képpé. Ez könnyű, böngésző‑kompatibilis képeket eredményez, amelyek ideálisak bélyegképekhez, mobil szállításhoz vagy bármilyen olyan helyzethez, ahol kompakt képformátumra van szükség. A konverziós folyamat kinyeri minden vektor elemet, alkalmaz anti‑aliasing‑et, és a végeredményt tömörített JPEG fájlként írja ki, amely gyors webes szállításra alkalmas.
 
-## Miért használjuk a GroupDocs.Viewer for Java‑t?
-A GroupDocs.Viewer támogatja a **több mint 50 dokumentumformátum** renderelését, és képes HPG fájlokat akár 500 MB-ig feldolgozni anélkül, hogy a teljes fájlt a memóriába töltené. Az API automatikusan kezeli a beágyazott erőforrásokat, az oldalelrendezést és a formátum‑specifikus beállításokat, így a Java dokumentumkonverzió PDF‑re és képfájlokra gyors és megbízható. Egyetlen **groupdocs viewer licenc** lefedi az összes támogatott formátumot, egyszerűsítve a telepítést és csökkentve a licencköltségeket.
+## Miért használja a GroupDocs.Viewer for Java-t?
+A GroupDocs.Viewer támogatja **több mint 50 dokumentumformátum** renderelését, és képes 500 MB-ig terjedő HPG fájlokat feldolgozni anélkül, hogy a teljes fájlt a memóriába töltené. Az API automatikusan kezeli a beágyazott erőforrásokat, az oldalelrendezést és a formátumspecifikus beállításokat, így a Java dokumentum PDF‑re és képfájlokra konvertálása gyors és megbízható. Egyetlen **groupdocs viewer licenc** lefedi az összes támogatott formátumot, egyszerűsítve a telepítést és csökkentve a licencköltségeket.
 
-## Előfeltételek
+## Előkövetelmények
 
 - Alapvető Java és Maven ismeretek.  
-- JDK 8 vagy újabb telepítve.  
+- JDK 8 vagy újabb telepítve.  
 - IDE, például IntelliJ IDEA vagy Eclipse.  
 - Hozzáférés egy GroupDocs.Viewer licenchez (próba vagy kereskedelmi).  
 
@@ -96,15 +98,15 @@ Adja hozzá a következő Maven konfigurációt a `pom.xml`-hez:
 </dependencies>
 ```
 
-## A GroupDocs.Viewer beállítása Java-hoz
+## A GroupDocs.Viewer for Java beállítása
 
-1. **Add the dependency** – Győződjön meg róla, hogy a fenti Maven kódrészlet szerepel a `pom.xml`-ben.  
+1. **Add the dependency** – Győződjön meg arról, hogy a fenti Maven kódrészlet szerepel a `pom.xml`-ben.  
 2. **Licenc beszerzési lépések**:  
-   - Kezdje egy ingyenes próba verzióval a [GroupDocs weboldalán](https://www.groupdocs.com/).  
-   - Szerezzen be egy ideiglenes licencet a kiterjesztett teszteléshez a [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) segítségével.  
+   - Kezdje egy ingyenes próba verzióval a [GroupDocs weboldaláról](https://www.groupdocs.com/).  
+   - Szerezzen be egy ideiglenes licencet a kiterjesztett teszteléshez a [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) oldalon.  
    - Vásároljon kereskedelmi licencet a [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) oldalról.  
-   > **Pro tip:** Tárolja a licencfájlt biztonságos helyen, és töltse be egyszer az alkalmazás indításakor, hogy elkerülje az ismétlődő I/O műveleteket.  
-3. **Alapvető inicializálás** – `Viewer` a GroupDocs.Viewer központi osztálya, amely betölti és rendereli a dokumentumokat. Hozzon létre egy `Viewer` példányt, amely az Ön HPG fájljára mutat:
+   > **Pro tipp:** Tárolja a licencfájlt biztonságos helyen, és töltse be egyszer az alkalmazás indításakor, hogy elkerülje az ismétlődő I/O műveleteket.  
+3. **Basic initialization** – A `Viewer` a GroupDocs.Viewer központi osztálya, amely betölti és rendereli a dokumentumokat. Hozzon létre egy `Viewer` példányt, amely az Ön HPG fájljára mutat:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -118,12 +120,12 @@ public class DocumentViewer {
 }
 ```
 
-## Hogyan konvertáljunk hpg-t jpg-re a GroupDocs.Viewer használatával
+## Hogyan konvertáljunk hpg-t jpg-re a GroupDocs.Viewer segítségével
 
-Töltse be az HPG fájlt a `new Viewer(inputPath)` segítségével, és hívja meg a `viewer.view(options)`‑t – a teljes konverzió egyetlen metódushívásban történik. Ez a megközelítés garantálja, hogy minden oldal magas minőségű JPEG képpé rasterizálódik, miközben megőrzi a vektor részleteket. Megadhatja a DPI‑t, a színmélységet, és hogy megőrizze‑e az EXIF metaadatokat, így teljes irányítást kap a kimeneti minőség és a fájlméret felett.
+Töltse be az HPG fájlt a `new Viewer(inputPath)` segítségével, és hívja meg a `viewer.view(options)`‑t – a teljes konverzió egyetlen metódushívásban történik. Ez a megközelítés garantálja, hogy minden oldal magas minőségű JPEG képpé rasterizálódik, miközben megőrzi a vektor részleteket. Megadhatja a DPI-t, a színmélységet, és azt is, hogy megőrizze‑e az EXIF metaadatokat, így teljes kontrollt kap a kimeneti minőség és fájlméret felett.
 
 ### 1. lépés: kimeneti útvonalak meghatározása
-Hozzon létre egy mappát, ahová a renderelt képek mentésre kerülnek. Ez rendezetten tartja a projektet, és könnyűvé teszi az eredmények megtalálását.
+Hozzon létre egy mappát, ahová a renderelt képek mentésre kerülnek. Ez rendezetten tartja a projektet és megkönnyíti az eredmények megtalálását.
 
 ```java
 import java.nio.file.Path;
@@ -132,10 +134,10 @@ Path outputDirectory = YOUR_DOCUMENT_DIRECTORY.resolve("RenderingHpg");
 Path pageFilePathFormat = outputDirectory.resolve("hpg_result.jpg");
 ```
 
-Cserélje le a `YOUR_DOCUMENT_DIRECTORY`‑t a forrásfájlt tartalmazó tényleges könyvtárra.
+`YOUR_DOCUMENT_DIRECTORY` helyettesítse a forrásfájlt tartalmazó tényleges könyvtárral.
 
 ### 2. lépés: a viewer konfigurálása JPG kimenethez
-`JpgViewOptions` az az opciós osztály, amely a JPEG renderelési paramétereket, például a minőséget és a DPI‑t szabályozza. Hozza létre az opciós objektumot, állítsa be a kívánt minőséget, és hívja meg a viewert. A `try‑with‑resources` blokk automatikusan felszabadítja az összes natív erőforrást.
+`JpgViewOptions` az a opció osztály, amely a JPEG renderelés paramétereit, például a minőséget és a DPI‑t szabályozza. Hozza létre az opció objektumot, állítsa be a kívánt minőséget, és hívja meg a viewert. A `try‑with‑resources` blokk garantálja, hogy minden natív erőforrás automatikusan felszabadul.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -148,16 +150,18 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
-**Pro tip:** Állítsa be a képminőséget a `options.setQuality(int)`‑vel, ha kisebb fájlméretre van szükség a webes szállításhoz.
+**Pro tipp:** Állítsa be a képminőséget a `options.setQuality(int)` segítségével, ha kisebb fájlméretre van szükség a webes szállításhoz.
 
 #### Gyakori buktatók
 - **File not found** – Ellenőrizze az HPG fájl útvonalát, és győződjön meg róla, hogy a fájl létezik.  
-- **Permission errors** – Az alkalmazásnak olvasási/írási jogosultsággal kell rendelkeznie mind a bemeneti, mind a kimeneti könyvtárakhoz.  
+- **Permission errors** – Az alkalmazásnak olvasási/írási jogosultságokkal kell rendelkeznie mind a bemeneti, mind a kimeneti könyvtárakhoz.  
 
 ## HPG renderelése más formátumokba
 
-### Renderelés HTML‑re (convert hpg web formátum)
-A HTML renderelés ideális a böngésző‑alapú előnézetekhez, és lehetővé teszi az erőforrások közvetlen beágyazását.
+### Renderelés HTML-re (hpg web formátum konvertálása)
+A HTML renderelés ideális böngésző‑alapú előnézetekhez, és lehetővé teszi az erőforrások közvetlen beágyazását.
+
+`HtmlViewOptions` a dokumentumok HTML‑ként történő rendereléséhez használt opció osztály.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -169,8 +173,10 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
-### Renderelés PNG‑re
+### Renderelés PNG-re
 A PNG veszteségmentes minőséget biztosít, ami hasznos, ha magas hűségű bélyegképekre van szükség.
+
+`PngViewOptions` az a opció osztály, amely a dokumentumokat PNG képekként rendereli.
 
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
@@ -182,8 +188,8 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
-### Renderelés PDF‑re (Java dokumentumkonverzió PDF‑re)
-A PDF a leggyakrabban használt formátum archiváláshoz és megfelelőséghez. A `PdfViewOptions` osztály egyetlen PDF dokumentumot hoz létre, amely tartalmazza az összes renderelt oldalt.
+### Renderelés PDF-re (Java dokumentum konvertálása PDF-re)
+A PDF a leggyakoribb formátum archiváláshoz és megfelelőséghez. A `PdfViewOptions` osztály egyetlen PDF dokumentumot hoz létre, amely tartalmazza az összes renderelt oldalt.
 
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
@@ -195,61 +201,63 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
+## Hogyan működik a Java képkonverzió a GroupDocs-szal?
+A GroupDocs.Viewer beolvassa a forrás HPG adatfolyamot, rasterizálja minden oldalt bitmap‑re, majd a bitmapet JPEG‑ként kódolja a `JpgViewOptions`‑ben beállított paraméterekkel. A könyvtár automatikusan kezeli a színkezelést, anti‑aliasing‑et és az opcionális EXIF megőrzést, így nem kell alacsony szintű képfeldolgozással foglalkoznia.
+
+## Mi a vektorgrafika JPG-re konvertálása?
+A vektorgrafika JPG‑re konvertálása átalakítja a skálázható vektor alakzatokat egy fix méretű raster képpé, lehetővé téve a tartalom megjelenítését bármely böngészőben vektor‑renderelő nélkül. A folyamat a megadott DPI‑nél anti‑aliasing‑et alkalmaz, így éles JPG kimenetet eredményez, amely bélyegképekhez és weboldalakhoz alkalmas.
+
 ## Gyakorlati alkalmazások
+- **Webes publikálás** – Konvertálja a hpg-t HTML-re az azonnali böngésző rendereléshez, vagy JPG/PNG-re képgazdag oldalakhoz.  
+- **Képarhívók** – Tárolja a grafikákat JPG vagy PNG formátumban a gyors lekérdezés és minimális tárolási igény érdekében.  
+- **Dokumentumkezelő rendszerek** – Használja a PDF kimenetet hosszú távú tároláshoz, megfelelőséghez és kereshető archívumokhoz.  
 
-- **Web publishing** – Webes közzététel – Konvertálja a hpg-t HTML‑re az azonnali böngésző rendereléshez, vagy JPG/PNG‑re képgazdag oldalakhoz.  
-- **Image archives** – Képarchívumok – Tárolja a grafikákat JPG vagy PNG formátumban a gyors lekérdezés és a minimális tárolási igény érdekében.  
-- **Document management systems** – Dokumentumkezelő rendszerek – Használja a PDF kimenetet hosszú távú tároláshoz, megfelelőséghez és kereshető archívumokhoz.  
-
-## Teljesítménybeli megfontolások
-
-- **Memory optimization** – Memóriaoptimalizálás – Rendeljen elegendő heap memóriát (`-Xmx`) nagy HPG fájlokhoz; a könyvtár képes 500 MB‑ig terjedő fájlok kezelésére teljes memória betöltés nélkül.  
-- **Resource management** – Erőforrás-kezelés – A `try‑with‑resources` minta automatikusan bezárja a stream‑eket, megakadályozva a memória szivárgásokat.  
-- **Batch processing** – Kötegelt feldolgozás – Nagyon nagy dokumentumok esetén renderelje az oldalakat kötegekben, hogy a memóriahasználat előre látható legyen.  
+## Teljesítmény szempontok
+- **Memória optimalizálás** – Rendeljen elegendő heap helyet (`-Xmx`) nagy HPG fájlokhoz; a könyvtár képes 500 MB-ig terjedő fájlok kezelésére teljes memóriába betöltés nélkül.  
+- **Erőforrás menedzsment** – A `try‑with‑resources` minta automatikusan bezárja a streameket, megelőzve a memória szivárgásokat.  
+- **Kötegelt feldolgozás** – Nagyon nagy dokumentumok esetén renderelje az oldalakat kötegekben a memóriahasználat előre jelezhetősége érdekében.  
 
 ## Gyakori problémák és megoldások
 
-| Issue | Cause | Solution |
-|-------|-------|----------|
-| **File not found** | Incorrect path or missing file | Double‑check the file location and use absolute paths during testing. |
-| **OutOfMemoryError** | Rendering a massive HPG without enough heap | Increase JVM heap (`-Xmx2g` or higher) and process pages individually. |
-| **Blank images** | Unsupported HPG features | Ensure you are using the latest GroupDocs.Viewer version; contact support if the problem persists. |
-| **License not recognized** | License file not loaded correctly | Load the license once at startup: `License license = new License(); license.setLicense("path/to/license.lic");` |
+| Probléma | Ok | Megoldás |
+|----------|----|----------|
+| **Fájl nem található** | Helytelen útvonal vagy hiányzó fájl | Ellenőrizze a fájl helyét, és tesztelés során használjon abszolút útvonalakat. |
+| **OutOfMemoryError** | Masszív HPG renderelése nem elegendő heap nélkül | Növelje a JVM heap méretét (`-Xmx2g` vagy nagyobb) és dolgozza fel az oldalakat egyenként. |
+| **Üres képek** | Nem támogatott HPG funkciók | Győződjön meg róla, hogy a legújabb GroupDocs.Viewer verziót használja; ha a probléma továbbra is fennáll, vegye fel a kapcsolatot a támogatással. |
+| **Licenc nem ismerhető** | Licencfájl nem töltődött be megfelelően | Töltse be a licencet egyszer az indításkor: `License license = new License(); license.setLicense("path/to/license.lic");` |
 
-## Frequently asked questions
+## Gyakran ismételt kérdések
 
-**Q:** Can I render other file types with GroupDocs.Viewer?  
-**A:** Yes, the API supports dozens of formats beyond HPG, including DOCX, PPTX, PDF, and many image types.
+**K:** Renderelhetek más fájltípusokat a GroupDocs.Viewer-rel?  
+**V:** Igen, az API több tucat formátumot támogat az HPG-n kívül, beleértve a DOCX, PPTX, PDF és számos képformátumot.
 
-**Q:** Is cloud storage integration supported?  
-**A:** You can stream files from cloud services (e.g., AWS S3, Azure Blob) by loading the input stream into `Viewer`.
+**K:** Támogatott a felhő tároló integráció?  
+**V:** Fájlokat streamelhet felhőszolgáltatásokból (pl. AWS S3, Azure Blob) az input stream `Viewer`‑be betöltésével.
 
-**Q:** How should I handle very large HPG files?  
-**A:** Increase JVM heap size and consider processing pages in batches to reduce memory pressure.
+**K:** Hogyan kezeljem a nagyon nagy HPG fájlokat?  
+**V:** Növelje a JVM heap méretét, és fontolja meg az oldalak kötegelt feldolgozását a memória terhelés csökkentése érdekében.
 
-**Q:** What if rendering fails without an error message?  
-**A:** Enable logging in the Viewer configuration to capture detailed diagnostics.
+**K:** Mi a teendő, ha a renderelés hibaüzenet nélkül sikertelen?  
+**V:** Engedélyezze a naplózást a Viewer konfigurációban a részletes diagnosztika rögzítéséhez.
 
-**Q:** Are commercial projects allowed to use GroupDocs.Viewer?  
-**A:** Yes, a purchased **groupdocs viewer license** permits unrestricted commercial use.
+**K:** Engedélyezett a GroupDocs.Viewer kereskedelmi projektekben való használata?  
+**V:** Igen, egy megvásárolt **groupdocs viewer licenc** korlátlan kereskedelmi felhasználást engedélyez.
 
-## Resources
+## Erőforrások
 
-- [Documentation](https://docs.groupdocs.com/viewer/java/)
-- [API Reference](https://reference.groupdocs.com/viewer/java/)
-- [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
-- [Purchase a License](https://purchase.groupdocs.com/buy)
-
----
-
-**Last Updated:** 2026-08-08  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs  
+- [Dokumentáció](https://docs.groupdocs.com/viewer/java/)
+- [API referencia](https://reference.groupdocs.com/viewer/java/)
+- [GroupDocs.Viewer for Java letöltése](https://releases.groupdocs.com/viewer/java/)
+- [Licenc vásárlása](https://purchase.groupdocs.com/buy)
 
 ---
 
-## Related Tutorials
+**Legutóbb frissítve:** 2026-11-01  
+**Tesztelve:** GroupDocs.Viewer 25.2 for Java  
+**Szerző:** GroupDocs  
 
-- [How to Limit JPG Size in Document Rendering Using GroupDocs.Viewer for Java](/viewer/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/)
-- [How to convert pdf to html and optimize image quality in Java with GroupDocs.Viewer](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
-- [Convert IGS to PDF, HTML, JPG & PNG using GroupDocs.Viewer Java](/viewer/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/)
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan korlátozzuk a JPG méretét a dokumentum renderelésben a GroupDocs.Viewer for Java használatával](/viewer/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/)
+- [Hogyan konvertáljunk PDF-et HTML-re és optimalizáljuk a képminőséget Java-ban a GroupDocs.Viewer-rel](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
+- [IGS konvertálása PDF-re, HTML-re, JPG-re és PNG-re a GroupDocs.Viewer Java használatával](/viewer/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/)
