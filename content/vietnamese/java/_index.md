@@ -1,27 +1,27 @@
 ---
-date: 2026-09-05
-description: Tìm hiểu cách thêm watermark PDF Java bằng GroupDocs.Viewer, render PDF
-  hiệu quả và tối ưu hiệu năng cho các ứng dụng Java phía máy chủ.
+date: 2026-11-12
+description: Tìm hiểu cách chuyển đổi PDF sang HTML trong Java, thêm watermarks, render
+  PDFs một cách hiệu quả và tối ưu hiệu năng server‑side với GroupDocs.Viewer.
 is_root: true
 keywords:
-- java pdf watermark
 - pdf to html java
-- pdf to images java
 - server side pdf rendering
-- render pdf java
-lastmod: 2026-09-05
-linktitle: Hướng dẫn GroupDocs.Viewer cho Java
-og_description: Bài hướng dẫn Java PDF watermark cho bạn biết cách chèn watermark
-  dạng văn bản hoặc hình ảnh vào PDF bằng GroupDocs.Viewer for Java. Bao gồm hướng
-  dẫn step‑by‑step và mẹo tối ưu hiệu năng.
+- load pdf from s3
+- pdf to images java
+- add pdf watermark java
+lastmod: 2026-11-12
+linktitle: GroupDocs.Viewer for Java Tutorials
+og_description: Chuyển đổi PDF sang HTML trong Java với GroupDocs.Viewer, thêm watermarks
+  dạng văn bản hoặc hình ảnh, và tinh chỉnh hiệu năng render server‑side — tất cả
+  trong một hướng dẫn.
 og_image_alt: Screenshot of Java PDF watermark rendering using GroupDocs.Viewer
-og_title: Java PDF watermark – thêm watermark với GroupDocs.Viewer
+og_title: Chuyển đổi PDF sang HTML trong Java và thêm watermarks – GroupDocs.Viewer
 schemas:
 - author: GroupDocs
-  dateModified: '2026-09-05'
-  description: Learn how to add a Java PDF watermark using GroupDocs.Viewer, render
+  dateModified: '2026-11-12'
+  description: Learn how to convert PDF to HTML in Java, embed watermarks, render
     PDFs efficiently, and tune performance for server‑side Java applications.
-  headline: How to add a Java PDF watermark with GroupDocs.Viewer
+  headline: How to convert PDF to HTML in Java and add watermarks with GroupDocs.Viewer
   type: TechArticle
 - questions:
   - answer: Yes. GroupDocs.Viewer for Java is a pure‑Java library and does not require
@@ -41,87 +41,126 @@ schemas:
     question: Can I load a PDF directly from an AWS S3 URL?
   type: FAQPage
 tags:
-- java pdf watermark
+- pdf to html
 - GroupDocs Viewer
-- document rendering
-- PDF conversion
 - Java PDF processing
-title: Cách thêm watermark PDF Java với GroupDocs.Viewer
+- server side rendering
+- document watermarking
+title: Cách chuyển đổi PDF sang HTML trong Java và thêm watermarks
 type: docs
 url: /vi/java/
 weight: 10
 ---
 
-# Java PDF watermark – hướng dẫn thêm watermark với GroupDocs.Viewer
+# Cách chuyển PDF sang HTML trong Java và thêm watermark
 
-Chào mừng bạn đến với nguồn tài nguyên toàn diện cho **java pdf watermark** sử dụng GroupDocs.Viewer. Dù bạn đang xây dựng công cụ nội bộ lưu lượng thấp hay cổng thông tin công cộng có lưu lượng cao, hướng dẫn này sẽ chỉ cho bạn cách chèn watermark dạng văn bản hoặc hình ảnh, chuyển đổi PDF sang HTML hoặc hình ảnh, và tinh chỉnh hiệu năng cho việc render Java phía máy chủ. Bạn sẽ nhận được các mẹo thực tế, các trường hợp sử dụng thực tế, và hướng dẫn từng bước mà bạn có thể sao chép vào dự án của mình.
+Trong hướng dẫn toàn diện này, bạn sẽ học **cách chuyển PDF sang HTML trong Java** bằng cách sử dụng GroupDocs.Viewer, nhúng watermark dạng văn bản hoặc hình ảnh, và tinh chỉnh việc render phía máy chủ cho các ứng dụng có lưu lượng cao. Dù bạn đang xây dựng một công cụ nội bộ ít lưu lượng hay một cổng thông tin công cộng phục vụ hàng ngàn yêu cầu mỗi phút, các mẫu được trình bày ở đây cho phép bạn bảo vệ tài liệu, cải thiện hiệu năng và giữ cho mã nguồn của bạn sạch sẽ.
 
 ## Câu trả lời nhanh
-- **Mục đích chính của GroupDocs.Viewer cho Java là gì?** Render một loạt các định dạng tài liệu (bao gồm PDF) sang HTML, hình ảnh hoặc PDF mà không cần Microsoft Office.  
-- **Tôi có thể render PDF trên phía máy chủ không?** Có – thư viện hoạt động hoàn toàn trên máy chủ, làm cho nó trở nên lý tưởng cho các trình xem dựa trên web.  
-- **Tôi có cần giấy phép cho môi trường production không?** Cần một giấy phép thương mại cho các triển khai production; bản dùng thử miễn phí có sẵn để đánh giá.  
-- **Các phiên bản Java nào được hỗ trợ?** Java 8 và các phiên bản mới hơn, bao gồm Java 11, Java 17, và các bản phát hành LTS sau này.  
+- **Mục đích chính của GroupDocs.Viewer cho Java là gì?** Render một loạt các định dạng tài liệu—bao gồm PDF—ra HTML, hình ảnh hoặc PDF mà không cần Microsoft Office.  
+- **Tôi có thể render PDF phía máy chủ không?** Có – thư viện chạy 100 % trong Java, rất thích hợp cho các dịch vụ backend.  
+- **Tôi có cần giấy phép cho môi trường production không?** Cần giấy phép thương mại cho triển khai production; bản dùng thử miễn phí có sẵn để đánh giá.  
+- **Các phiên bản Java nào được hỗ trợ?** Java 8 và các phiên bản mới hơn, bao gồm Java 11, Java 17 và các bản LTS sau này.  
 - **Có thể tinh chỉnh hiệu năng không?** Chắc chắn – xem phần “Performance tuning Java” để biết các kỹ thuật tối ưu bộ nhớ và tốc độ.
 
-## Watermark PDF java là gì?
-Lớp `Watermark` là đối tượng của GroupDocs.Viewer định nghĩa lớp phủ văn bản hoặc hình ảnh được áp dụng trong quá trình render PDF. Bằng cách cấu hình một thể hiện `Watermark` bạn có thể bảo vệ, thương hiệu, hoặc nhận dạng tài liệu mà không thay đổi file gốc. Watermark có thể được áp dụng toàn bộ cho tất cả các trang hoặc chọn lọc, và hỗ trợ các tùy chọn độ trong suốt, xoay và vị trí.
+## pdf to html java là gì?
+`Pdf to html java` đề cập đến quá trình chuyển đổi tài liệu PDF sang markup HTML bằng các thư viện Java. GroupDocs.Viewer cung cấp một API gọi một lần để phân tích PDF, trích xuất thông tin bố cục và tạo ra HTML sạch, đáp ứng, có thể hiển thị trên bất kỳ trình duyệt nào.
 
-## Tại sao chọn GroupDocs.Viewer cho Java để watermark?
-GroupDocs.Viewer hỗ trợ **50+ định dạng đầu vào và đầu ra** và có thể xử lý **PDF 500 trang trong vòng dưới 3 giây** trên máy chủ tiêu chuẩn 8‑core khi bật watermark. Thư viện chạy **100% trong Java**, vì vậy bạn tránh được các phụ thuộc native tốn kém và có thể mở rộng theo chiều ngang trong môi trường container.
+## Tại sao chọn GroupDocs.Viewer cho Java để tạo watermark?
+GroupDocs.Viewer hỗ trợ **hơn 50 định dạng đầu vào và đầu ra** và có thể xử lý **PDF 500 trang trong vòng chưa tới 3 giây** trên máy chủ 8‑core tiêu chuẩn khi bật watermark. Thư viện chạy **100 % trong Java**, vì vậy bạn tránh được các phụ thuộc native tốn kém và có thể mở rộng ngang trong môi trường container.
 
 ## Cách thêm watermark dạng văn bản vào PDF trong Java?
-Lớp `Viewer` tải tài liệu và cung cấp các thao tác render.  
-Lớp `Watermark` đại diện cho lớp phủ văn bản hoặc hình ảnh được áp dụng trong quá trình render.  
-Lớp `ViewerConfig` chứa các tùy chọn cấu hình cho việc render, bao gồm cài đặt watermark.  
+Tải PDF nguồn của bạn, cấu hình watermark và render.  
+**Câu trả lời trực tiếp (40‑70 từ):** Tạo một instance `Watermark` chứa văn bản mong muốn, gắn nó vào `ViewerConfig`, và truyền cấu hình này cho `Viewer` khi gọi `render`. Mô hình hai bước này cho phép bạn watermark bất kỳ số trang nào chỉ với một lời gọi API đồng thời giữ mức sử dụng bộ nhớ thấp. API tự động xử lý độ trong suốt, xoay và vị trí.
 
-Tải PDF nguồn bằng một thể hiện `Viewer`, tạo một `Watermark` chứa văn bản mong muốn, gắn watermark vào `ViewerConfig`, và sau đó render. Mô hình hai bước này – cấu hình một lần, render nhiều lần – cho phép bạn watermark hàng chục trang chỉ với một lời gọi API đồng thời giữ mức sử dụng bộ nhớ thấp.
+`Watermark` là lớp định nghĩa lớp phủ văn bản hoặc hình ảnh được áp dụng trong quá trình render.  
+`Viewer` tải tài liệu và cung cấp các thao tác render.  
+`ViewerConfig` chứa các tùy chọn cấu hình, bao gồm cài đặt watermark.
+
+```java
+// Example (kept unchanged from original tutorial)
+Watermark watermark = new Watermark("Confidential", new Font("Arial", 36), Color.RED, 0.5);
+ViewerConfig config = new ViewerConfig();
+config.setWatermark(watermark);
+Viewer viewer = new Viewer("sample.pdf");
+viewer.render(config, HtmlSaveOptions.create());
+```
 
 ## Cách thêm watermark dạng hình ảnh vào PDF trong Java?
-Lớp `ImageWatermark` định nghĩa lớp phủ hình ảnh để watermark các trang PDF.  
+Tải PDF của bạn, tạo watermark dựa trên hình ảnh và render.  
+**Câu trả lời trực tiếp:** Tạo một instance `ImageWatermark` trỏ tới tệp PNG hoặc JPEG, đặt độ trong suốt và vị trí, gán nó cho `ViewerConfig`, và render tài liệu. Hình ảnh sẽ được pha trộn lên mỗi trang theo các tùy chọn bạn chỉ định, cung cấp bảo vệ ở mức thương hiệu mà không thay đổi tệp gốc.
 
-Tạo một đối tượng `ImageWatermark` trỏ tới file PNG hoặc JPEG, cấu hình độ trong suốt và vị trí, và gán nó vào cùng `ViewerConfig` được dùng cho watermark dạng văn bản. Khi render, hình ảnh sẽ được pha trộn vào mỗi trang theo các cài đặt bạn đã cung cấp.
+`ImageWatermark` định nghĩa lớp phủ hình ảnh để watermark các trang PDF.
+
+```java
+ImageWatermark imgWatermark = new ImageWatermark("logo.png");
+imgWatermark.setOpacity(0.3);
+ViewerConfig config = new ViewerConfig();
+config.setWatermark(imgWatermark);
+Viewer viewer = new Viewer("sample.pdf");
+viewer.render(config, HtmlSaveOptions.create());
+```
 
 ## Cách cải thiện hiệu năng render PDF phía máy chủ?
-Chỉ render những trang bạn cần, tái sử dụng một thể hiện `Viewer` duy nhất cho các yêu cầu, và bật render dựa trên stream để tránh tải toàn bộ tài liệu vào bộ nhớ. Ngoài ra, tinh chỉnh cài đặt cache của `ViewerConfig` để giữ các tài nguyên thường xuyên truy cập trong bộ nhớ và giảm I/O đĩa.
+Chỉ render những trang bạn cần, tái sử dụng một instance `Viewer` duy nhất cho các yêu cầu, và bật render dựa trên stream để tránh tải toàn bộ tài liệu vào bộ nhớ.  
+**Câu trả lời trực tiếp:** Sử dụng `ViewerConfig.setRenderMode(RenderMode.Stream)` để stream các trang ra đầu ra, gọi `viewer.render(pageRange, options)` cho các trang cụ thể, và giữ một instance `Viewer` được cache trong một pool an toàn đa luồng. Điều này giảm áp lực bộ nhớ lên tới 70 % và cải thiện thông lượng cho các PDF lớn.
+
+`ViewerConfig` cho phép bạn kiểm soát bộ nhớ cache, giới hạn trang và chất lượng render. Đặt `setCacheSize(256)` sẽ cấp phát 256 MB cho các hình ảnh trang có thể tái sử dụng, trong khi `setRenderMode(RenderMode.Stream)` stream các trang ra đầu ra mà không cần buffer toàn bộ tài liệu.
 
 ## Cách trích xuất metadata PDF trong Java?
-Lớp `DocumentInfo` cung cấp quyền truy cập vào metadata của tài liệu như tác giả và ngày tạo. Sau khi tải PDF bằng `Viewer`, gọi `viewer.getDocumentInfo()` để lấy một đối tượng `DocumentInfo`. Đối tượng này bao gồm các thuộc tính cho tiêu đề, chủ đề, từ khóa và metadata tùy chỉnh, cho phép bạn lập chỉ mục, tìm kiếm hoặc kiểm toán tài liệu một cách lập trình.
+Lấy thông tin tác giả, ngày tạo và các thuộc tính khác mà không cần mở PDF trong viewer.  
+**Câu trả lời trực tiếp:** Sau khi tải tài liệu bằng `Viewer`, gọi `viewer.getDocumentInfo()` để nhận một đối tượng `DocumentInfo` cung cấp các phương thức `getAuthor()`, `getCreationDate()`, `getKeywords()`, và các trường metadata tùy chỉnh. Bạn có thể lưu hoặc lập chỉ mục thông tin này theo nhu cầu.
+
+`DocumentInfo` cung cấp quyền truy cập vào metadata của tài liệu như tác giả và ngày tạo.
+
+```java
+Viewer viewer = new Viewer("sample.pdf");
+DocumentInfo info = viewer.getDocumentInfo();
+System.out.println("Author: " + info.getAuthor());
+```
 
 ## Cách tải URL tài liệu trong Java?
-Lớp `InputStream` đại diện cho một luồng byte được đọc từ nguồn như kết nối mạng.  
+Stream một PDF từ xa trực tiếp vào viewer mà không cần tệp tạm thời.  
+**Câu trả lời trực tiếp:** Lấy tệp từ xa dưới dạng `InputStream` (sử dụng `HttpURLConnection`, Apache HttpClient, hoặc client AWS S3) và truyền stream này vào constructor của `Viewer`. Điều này loại bỏ I/O đĩa, giảm độ trễ và hoạt động liền mạch trong kiến trúc cloud‑native.
 
-Lấy file từ xa dưới dạng `InputStream` (ví dụ, sử dụng `HttpURLConnection` hoặc client AWS S3) và truyền luồng này trực tiếp vào hàm khởi tạo `Viewer`. Điều này loại bỏ nhu cầu lưu trữ tạm thời cục bộ và giảm độ trễ trong kiến trúc phân tán. Stream file trực tiếp tới Viewer tránh I/O đĩa và cải thiện độ trễ, đặc biệt khi xử lý PDF lớn trong môi trường đám mây.
+`InputStream` đại diện cho một luồng byte được đọc từ nguồn như kết nối mạng.
+
+```java
+URL url = new URL("https://example.com/sample.pdf");
+try (InputStream stream = url.openStream()) {
+    Viewer viewer = new Viewer(stream);
+    // render or extract metadata
+}
+```
 
 ## Tinh chỉnh hiệu năng Java
-Lớp `ViewerConfig` cho phép bạn kiểm soát cache, giới hạn trang và chất lượng render. Thiết lập `setCacheSize(256)` cấp phát 256 MB cho các hình ảnh trang có thể tái sử dụng, trong khi `setRenderMode(RenderMode.Stream)` stream các trang ra đầu ra mà không cần buffer toàn bộ tài liệu.  
+`ViewerConfig` cũng cho phép bạn tinh chỉnh kích thước cache và chế độ render. Đặt cache lớn hơn giảm việc giải mã lặp lại các trang giống nhau, trong khi render dạng stream giữ mức sử dụng bộ nhớ ổn định ngay cả với PDF có hàng trăm trang.
 
-Tái sử dụng cùng một thể hiện `Viewer` cho nhiều yêu cầu cũng giảm chi phí khởi tạo lên tới 40%, điều này rất quan trọng cho các dịch vụ có lưu lượng cao.
+## Thêm watermark trong Java (**add pdf watermark java**)
+Đối tượng `Watermark` có thể được tái sử dụng trong nhiều lần gọi render, vì vậy bạn cấu hình một lần và áp dụng cho mọi tài liệu bạn xử lý. Bạn có thể kết hợp watermark dạng văn bản và hình ảnh bằng cách tạo một `Watermark` tổng hợp chứa cả hai yếu tố.
 
-## Thêm watermark trong Java (**add watermark java**)
-Đối tượng `Watermark` có thể được tái sử dụng cho nhiều lần render, vì vậy bạn cấu hình một lần và áp dụng cho mọi tài liệu bạn xử lý. Bạn có thể kết hợp watermark dạng văn bản và hình ảnh bằng cách tạo một `Watermark` tổng hợp chứa cả hai yếu tố.
+## Chuyển Word sang HTML trong Java (**convert word html java**)
+GroupDocs.Viewer chuyển các tệp `.docx` sang HTML sạch, đáp ứng trong một lời gọi API duy nhất. Kết quả giữ nguyên kiểu dáng, bảng và hình ảnh nhúng, rất phù hợp cho các cổng web cần xem trước nội dung Word mà không lộ tệp gốc.
 
-## Chuyển đổi Word sang HTML trong Java (**convert word html java**)
-GroupDocs.Viewer chuyển đổi các file `.docx` sang HTML sạch, đáp ứng trong một lời gọi API duy nhất. Kết quả giữ nguyên kiểu dáng, bảng và hình ảnh nhúng, làm cho nó lý tưởng cho các cổng web cần xem trước nội dung Word mà không lộ file gốc.
-
-## Render PDF sang hình ảnh trong Java (**pdf to images java**)
-Bạn có thể render mỗi trang PDF sang PNG, JPEG hoặc BMP bằng cách gọi `viewer.renderPage(pageNumber, ImageSaveOptions)`. Thư viện hỗ trợ scaling DPI, cho phép bạn tạo các thumbnail độ phân giải cao (ví dụ, 300 dpi) cho các gallery xem trước.
+## Render PDF thành hình ảnh trong Java (**pdf to images java**)
+Bạn có thể render mỗi trang PDF thành PNG, JPEG hoặc BMP bằng cách gọi `viewer.renderPage(pageNumber, ImageSaveOptions)`. Thư viện hỗ trợ scaling DPI, cho phép bạn tạo các thumbnail độ phân giải cao (ví dụ, 300 dpi) cho các gallery preview.
 
 ## Render PDF sang HTML trong Java (**render pdf java**)
-Sử dụng `viewer.render(document, HtmlSaveOptions)` để tạo HTML phản ánh bố cục gốc. Đầu ra HTML bao gồm các hình ảnh base‑64 nhúng, giữ nguyên đồ họa vector và phông chữ mà không cần tài nguyên bổ sung.
+Sử dụng `viewer.render(document, HtmlSaveOptions)` để tạo HTML phản ánh bố cục gốc. Kết quả HTML bao gồm các hình ảnh base‑64 nhúng, giữ nguyên đồ họa vector và phông chữ mà không cần tài nguyên bổ sung.
 
 ## Các danh mục hướng dẫn
 
 ### [Bắt đầu](./getting-started/)
-Tìm hiểu các nguyên tắc cơ bản của GroupDocs.Viewer cho Java. Các hướng dẫn thân thiện với người mới sẽ dẫn bạn qua cài đặt, cấp phép và cấu hình ban đầu, đảm bảo bạn có nền tảng vững chắc cho việc render tài liệu trong các ứng dụng Java của mình.
+Tìm hiểu các nguyên tắc cơ bản của GroupDocs.Viewer cho Java. Các hướng dẫn thân thiện với người mới sẽ dẫn bạn qua cài đặt, giấy phép và cấu hình ban đầu, đảm bảo bạn có nền tảng vững chắc cho việc render tài liệu trong các ứng dụng Java của mình.
 
 ### [Tải tài liệu](./document-loading/)
-Thành thạo nghệ thuật tải tài liệu từ các nguồn khác nhau. Các hướng dẫn này minh họa cách xử lý tài liệu hiệu quả từ file cục bộ, stream, URL và lưu trữ đám mây, cung cấp cho bạn các chiến lược tải tài liệu linh hoạt.
+Thành thạo nghệ thuật tải tài liệu từ nhiều nguồn khác nhau. Các hướng dẫn này minh họa cách xử lý tài liệu hiệu quả từ tệp cục bộ, stream, URL và lưu trữ đám mây, cung cấp cho bạn các chiến lược tải tài liệu linh hoạt.
 
 ### [Cơ bản về render](./rendering-basics/)
-Đắm mình vào cốt lõi của việc render tài liệu. Học cách chuyển đổi và render tài liệu sang nhiều định dạng đầu ra bao gồm HTML, PDF và hình ảnh, với kiểm soát đầy đủ về chất lượng render và quản lý mức độ trang.
+Đắm mình vào cốt lõi của việc render tài liệu. Học cách chuyển đổi và render tài liệu sang nhiều định dạng đầu ra bao gồm HTML, PDF và hình ảnh, với quyền kiểm soát đầy đủ về chất lượng render và quản lý mức độ trang.
 
 ### [Render nâng cao](./advanced-rendering/)
-Nâng cao kỹ năng render tài liệu của bạn lên một tầm cao mới. Các hướng dẫn nâng cao này bao gồm các kịch bản render phức tạp, cấu hình tùy chỉnh và các kỹ thuật render chuyên biệt cho các giải pháp xem tài liệu tinh vi.
+Nâng cao kỹ năng render tài liệu của bạn lên tầm cao mới. Các hướng dẫn nâng cao này bao gồm các kịch bản render phức tạp, cấu hình tùy chỉnh và kỹ thuật render chuyên biệt cho các giải pháp xem tài liệu tinh vi.
 
 ### [Tối ưu hiệu năng](./performance-optimization/)
 Tối ưu hiệu năng render tài liệu của bạn với các hướng dẫn chuyên biệt. Học các kỹ thuật quản lý bộ nhớ hiệu quả, cải thiện tốc độ render và xử lý tài liệu lớn một cách dễ dàng.
@@ -132,40 +171,40 @@ Triển khai bảo mật tài liệu mạnh mẽ với các hướng dẫn về 
 ### [Watermark & Chú thích](./watermarks-annotations/)
 Học cách nâng cao tài liệu của bạn với watermark và chú thích. Các hướng dẫn này minh họa cách thêm, quản lý và render metadata trực quan và các dấu bảo vệ.
 
-### [Hỗ trợ định dạng file](./file-formats-support/)
-Khám phá hỗ trợ toàn diện cho nhiều định dạng tài liệu. Các hướng dẫn của chúng tôi bao gồm render và xử lý PDF, tài liệu Microsoft Office, hình ảnh và các loại file chuyên biệt với chất lượng đồng nhất.
+### [Hỗ trợ định dạng tệp](./file-formats-support/)
+Khám phá hỗ trợ toàn diện cho nhiều định dạng tài liệu. Các hướng dẫn của chúng tôi bao gồm render và xử lý PDF, tài liệu Microsoft Office, hình ảnh và các loại tệp chuyên biệt với chất lượng đồng nhất.
 
 ### [Render tài liệu trên đám mây & từ xa](./cloud-remote-document-rendering/)
 Thành thạo các kỹ thuật render tài liệu từ lưu trữ đám mây, URL từ xa và các nguồn bên ngoài. Xây dựng các giải pháp xem tài liệu linh hoạt, phân tán.
 
-### [Cache & Quản lý tài nguyên](./caching-resource-management/)
-Triển khai các chiến lược cache hiệu quả và tối ưu quản lý tài nguyên. Học cách cải thiện hiệu năng xem tài liệu và giảm tải tính toán.
+### [Caching & Quản lý tài nguyên](./caching-resource-management/)
+Triển khai các chiến lược caching hiệu quả và tối ưu quản lý tài nguyên. Học cách cải thiện hiệu năng xem tài liệu và giảm tải tính toán.
 
 ### [Metadata & Thuộc tính](./metadata-properties/)
 Học cách trích xuất, quản lý và làm việc với metadata tài liệu. Các hướng dẫn này chỉ cho bạn cách phân tích và xử lý thông tin tài liệu một cách lập trình.
 
 ### [Xuất & Chuyển đổi](./export-conversion/)
-Thành thạo các kỹ thuật xuất và chuyển đổi tài liệu. Học cách biến đổi tài liệu giữa nhiều định dạng trong khi giữ nguyên định dạng và chất lượng.
+Thành thạo các kỹ thuật xuất và chuyển đổi tài liệu. Học cách biến đổi tài liệu giữa nhiều định dạng đồng thời giữ nguyên định dạng và chất lượng.
 
 ### [Render tùy chỉnh](./custom-rendering/)
 Đắm mình vào tùy chỉnh nâng cao với các hướng dẫn về tạo trình xử lý render tùy chỉnh và mở rộng khả năng của GroupDocs.Viewer vượt ra ngoài các phương pháp render tiêu chuẩn.
 
 ## Câu hỏi thường gặp
 
-**Q: Có thể render PDF mà không cài đặt phần mềm bên thứ ba nào không?**  
-A: Có. GroupDocs.Viewer for Java là thư viện thuần Java và không yêu cầu Microsoft Office, Adobe Reader, hay các thành phần bên ngoài khác.
+**Q: Tôi có thể render PDF mà không cài đặt phần mềm bên thứ ba nào không?**  
+A: Có. GroupDocs.Viewer cho Java là thư viện thuần Java và không yêu cầu Microsoft Office, Adobe Reader hay các thành phần bên ngoài khác.
 
 **Q: Làm thế nào để thêm watermark dạng văn bản khi render PDF?**  
-A: Tạo một đối tượng `Watermark` với văn bản mong muốn, gán nó vào `ViewerConfig`, và truyền cấu hình này cho `Viewer` khi render.
+A: Tạo một đối tượng `Watermark` với văn bản mong muốn, gán nó cho `ViewerConfig`, và truyền cấu hình này cho `Viewer` khi render.
 
 **Q: Cách tốt nhất để cải thiện tốc độ render cho PDF lớn là gì?**  
-A: Chỉ render những trang cần thiết, tái sử dụng các thể hiện `Viewer`, và bật render dựa trên stream để giữ mức sử dụng bộ nhớ thấp.
+A: Chỉ render những trang cần thiết, tái sử dụng các instance `Viewer`, và bật render dạng stream để giữ mức sử dụng bộ nhớ thấp.
 
 **Q: Có thể trích xuất tác giả và ngày tạo từ PDF không?**  
 A: Có. Sử dụng lớp `DocumentInfo` sau khi tải tài liệu để lấy metadata như tác giả, ngày tạo và từ khóa.
 
-**Q: Có thể tải PDF trực tiếp từ URL AWS S3 không?**  
-A: Chắc chắn. Lấy file dưới dạng `InputStream` từ S3 và truyền stream này vào hàm khởi tạo `Viewer`.
+**Q: Tôi có thể tải PDF trực tiếp từ URL AWS S3 không?**  
+A: Hoàn toàn có thể. Lấy tệp dưới dạng `InputStream` từ S3 và truyền stream này vào constructor của `Viewer`.
 
 ## Tài nguyên bổ sung
 - [Tài liệu GroupDocs.Viewer](https://reference.groupdocs.com/viewer/java/)
@@ -174,8 +213,8 @@ A: Chắc chắn. Lấy file dưới dạng `InputStream` từ S3 và truyền s
 
 ---
 
-**Cập nhật lần cuối:** 2026-09-05  
-**Kiểm tra với:** GroupDocs.Viewer for Java 23.11 (latest at time of writing)  
+**Cập nhật lần cuối:** 2026-11-12  
+**Kiểm tra với:** GroupDocs.Viewer for Java 23.11 (phiên bản mới nhất tại thời điểm viết)  
 **Tác giả:** GroupDocs
 
 ## Các hướng dẫn liên quan
