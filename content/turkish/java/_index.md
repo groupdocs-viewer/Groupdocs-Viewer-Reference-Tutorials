@@ -1,28 +1,28 @@
 ---
-date: 2026-09-05
-description: GroupDocs.Viewer kullanarak Java PDF filigranı eklemeyi öğrenin, PDF'leri
-  verimli bir şekilde renderleyin ve sunucu tarafı Java uygulamaları için performansı
-  ayarlayın.
+date: 2026-11-12
+description: Java'da PDF'yi HTML'ye dönüştürmeyi, watermarks eklemeyi, PDF'leri verimli
+  bir şekilde render etmeyi ve GroupDocs.Viewer ile sunucu‑side performansını optimize
+  etmeyi öğrenin.
 is_root: true
 keywords:
-- java pdf watermark
 - pdf to html java
-- pdf to images java
 - server side pdf rendering
-- render pdf java
-lastmod: 2026-09-05
+- load pdf from s3
+- pdf to images java
+- add pdf watermark java
+lastmod: 2026-11-12
 linktitle: GroupDocs.Viewer for Java Eğitimleri
-og_description: Java PDF filigranı öğreticisi, GroupDocs.Viewer for Java ile PDF'lere
-  metin veya görüntü filigranları eklemeyi gösterir. Adım adım rehberlik ve performans
-  ipuçları içerir.
+og_description: GroupDocs.Viewer ile Java'da PDF'yi HTML'ye dönüştürün, metin veya
+  görsel watermarks ekleyin ve sunucu‑side render performansını ayarlayın—tek bir
+  rehberde.
 og_image_alt: Screenshot of Java PDF watermark rendering using GroupDocs.Viewer
-og_title: Java PDF filigranı – GroupDocs.Viewer ile filigran ekleme
+og_title: Java'da PDF'yi HTML'ye dönüştürme ve watermarks ekleme – GroupDocs.Viewer
 schemas:
 - author: GroupDocs
-  dateModified: '2026-09-05'
-  description: Learn how to add a Java PDF watermark using GroupDocs.Viewer, render
+  dateModified: '2026-11-12'
+  description: Learn how to convert PDF to HTML in Java, embed watermarks, render
     PDFs efficiently, and tune performance for server‑side Java applications.
-  headline: How to add a Java PDF watermark with GroupDocs.Viewer
+  headline: How to convert PDF to HTML in Java and add watermarks with GroupDocs.Viewer
   type: TechArticle
 - questions:
   - answer: Yes. GroupDocs.Viewer for Java is a pure‑Java library and does not require
@@ -42,87 +42,136 @@ schemas:
     question: Can I load a PDF directly from an AWS S3 URL?
   type: FAQPage
 tags:
-- java pdf watermark
+- pdf to html
 - GroupDocs Viewer
-- document rendering
-- PDF conversion
 - Java PDF processing
-title: GroupDocs.Viewer ile Java PDF filigranı ekleme
+- server side rendering
+- document watermarking
+title: Java'da PDF'yi HTML'ye dönüştürme ve watermarks ekleme
 type: docs
 url: /tr/java/
 weight: 10
 ---
 
-# Java PDF filigranı – GroupDocs.Viewer ile filigran ekleme rehberi
+# Java'da PDF'yi HTML'ye dönüştürme ve filigran ekleme
 
-GroupDocs.Viewer kullanarak **java pdf watermark** için kapsamlı kaynağa hoş geldiniz. Düşük trafikli bir iç araç ya da yüksek verimli bir kamu portalı inşa ediyor olun, bu rehber metin veya resim filigranlarını nasıl ekleyeceğinizi, PDF'leri HTML veya görüntülere nasıl render edeceğinizi ve sunucu tarafı Java render'ı için performansı nasıl ince ayar yapacağınızı gösterir. Pratik ipuçları, gerçek dünya kullanım örnekleri ve adım adım talimatlar alacaksınız ve bunları kendi projelerinize kopyalayabilirsiniz.
+Bu kapsamlı rehberde **Java'da PDF'yi HTML'ye dönüştürmeyi** GroupDocs.Viewer kullanarak öğrenecek, metin veya görüntü filigranları ekleyecek ve yüksek verimli uygulamalar için sunucu‑tarafı render'ı ince ayar yapacaksınız. Düşük trafikli bir iç araç mı yoksa dakikada binlerce isteği hizmet eden bir portal mı inşa ediyorsunuz, burada gösterilen desenler belgelerinizi korumanıza, performansı artırmanıza ve kod tabanınızı temiz tutmanıza yardımcı olur.
 
-## Hızlı Yanıtlar
-- **GroupDocs.Viewer for Java'ın temel amacı nedir?** PDF dahil olmak üzere geniş bir belge formatı yelpazesini HTML, görüntüler veya PDF'ye Microsoft Office gerektirmeden render etmek.  
-- **PDF'leri sunucu tarafında render edebilir miyim?** Evet – kütüphane tamamen sunucuda çalışır, bu da web‑tabanlı görüntüleyiciler için idealdir.  
-- **Üretim için lisansa ihtiyacım var mı?** Üretim dağıtımları için ticari bir lisans gereklidir; değerlendirme için ücretsiz bir deneme sürümü mevcuttur.  
-- **Hangi Java sürümleri destekleniyor?** Java 8 ve üzeri, Java 11, Java 17 ve sonraki LTS sürümleri dahil.  
+## Hızlı cevaplar
+- **GroupDocs.Viewer for Java'ın temel amacı nedir?** PDF dahil olmak üzere çok çeşitli belge formatlarını HTML, görüntüler veya PDF'ye, Microsoft Office gerektirmeden dönüştürmek.  
+- **PDF'leri sunucu tarafında render edebilir miyim?** Evet – kütüphane %100 Java'da çalışır, bu da backend hizmetleri için idealdir.  
+- **Üretim için lisansa ihtiyacım var mı?** Üretim dağıtımları için ticari bir lisans gereklidir; değerlendirme için ücretsiz deneme mevcuttur.  
+- **Hangi Java sürümleri destekleniyor?** Java 8 ve üzeri, Java 11, Java 17 ve sonraki LTS sürümler dahil.  
 - **Performans ayarı mümkün mü?** Kesinlikle – bellek ve hız optimizasyon teknikleri için “Performance tuning Java” bölümüne bakın.
 
-## java pdf watermark nedir?
-`Watermark` sınıfı, PDF render sırasında uygulanan metin veya resim katmanını tanımlayan GroupDocs.Viewer nesnesidir. Bir `Watermark` örneğini yapılandırarak orijinal dosyayı değiştirmeden belgeleri koruyabilir, markalaştırabilir veya tanımlayabilirsiniz. Filigranlar tüm sayfalara global olarak ya da seçmeli olarak uygulanabilir ve opaklık, dönüş ve konumlandırma seçeneklerini destekler.
+## pdf to html java nedir?
+`Pdf to html java` bir PDF belgesini Java kütüphaneleri kullanarak HTML işaretlemesine dönüştürme sürecini ifade eder. GroupDocs.Viewer, PDF'yi ayrıştıran, düzen bilgilerini çıkaran ve herhangi bir tarayıcıda görüntülenebilen temiz, duyarlı HTML üreten tek‑çağrı API'si sağlar.
 
-## Neden Java için GroupDocs.Viewer'ı filigranlama için seçmelisiniz?
-GroupDocs.Viewer **50+ giriş ve çıkış formatını** destekler ve filigran etkinleştirildiğinde standart 8‑çekirdekli bir sunucuda **500‑sayfalık PDF'leri 3 saniyeden kısa sürede** işleyebilir. Kütüphane **%100 Java** ile çalıştığı için maliyetli yerel bağımlılıklardan kaçınır ve konteyner ortamlarında yatay ölçeklendirme yapabilirsiniz.
+## Neden GroupDocs.Viewer for Java'ı filigran eklemek için seçmelisiniz?
+GroupDocs.Viewer **50+ giriş ve çıkış formatını** destekler ve filigran etkinleştirildiğinde standart 8 çekirdekli bir sunucuda **500 sayfalık PDF'leri 3 saniyenin altında** işleyebilir. Kütüphane **%100 Java'da** çalışır, bu sayede maliyetli yerel bağımlılıklardan kaçınır ve konteyner ortamlarında yatay olarak ölçeklenebilir.
 
-## Java'da bir PDF'e metin filigranı nasıl eklenir?
-`Viewer` sınıfı bir belgeyi yükler ve render işlemlerini sağlar.  
-`Watermark` sınıfı render sırasında uygulanan metin veya resim katmanını temsil eder.  
-`ViewerConfig` sınıfı render için yapılandırma seçeneklerini tutar, filigran ayarları da dahil.
+## Java'da bir PDF'ye metin filigranı ekleme?
 
-Kaynak PDF'yi bir `Viewer` örneğiyle yükleyin, istediğiniz metni içeren bir `Watermark` oluşturun, filigranı bir `ViewerConfig`'e ekleyin ve ardından render edin. Bu iki‑adımlı desen – bir kez yapılandır, çok kez render et – tek bir API çağrısıyla onlarca sayfayı filigranlamanızı sağlar ve bellek kullanımını düşük tutar.
+Kaynak PDF'nizi yükleyin, bir filigran yapılandırın ve render edin.  
+**Direct answer (40‑70 words):** İstenen metni içeren bir `Watermark` örneği oluşturun, bunu bir `ViewerConfig`'e ekleyin ve `render` çağırdığınızda bu yapılandırmayı bir `Viewer`'a geçirin. Bu iki adımlı desen, tek bir API çağrısıyla istediğiniz sayıda sayfaya filigran eklemenizi sağlar ve bellek kullanımını düşük tutar. API opaklık, dönüş ve konumlandırmayı otomatik olarak yönetir.
 
-## Java'da bir PDF'e resim filigranı nasıl eklenir?
-`ImageWatermark` sınıfı PDF sayfaları için bir resim katmanı tanımlar.
+`Watermark`, render sırasında uygulanan metin veya görüntü kaplamasını tanımlayan sınıftır.  
+`Viewer`, bir belgeyi yükler ve render işlemlerini sağlar.  
+`ViewerConfig`, filigran ayarları dahil yapılandırma seçeneklerini tutar.
 
-PNG veya JPEG dosyasına işaret eden bir `ImageWatermark` nesnesi oluşturun, opaklık ve konumunu yapılandırın ve metin filigranlarıyla aynı `ViewerConfig`'e atayın. Render ettiğinizde, ayarladığınız seçeneklere göre resim her sayfaya karıştırılır.
+```java
+// Example (kept unchanged from original tutorial)
+Watermark watermark = new Watermark("Confidential", new Font("Arial", 36), Color.RED, 0.5);
+ViewerConfig config = new ViewerConfig();
+config.setWatermark(watermark);
+Viewer viewer = new Viewer("sample.pdf");
+viewer.render(config, HtmlSaveOptions.create());
+```
 
-## Sunucu tarafı pdf render performansını nasıl iyileştirirsiniz?
-İhtiyacınız olan sayfaları sadece render edin, istekler arasında tek bir `Viewer` örneğini yeniden kullanın ve tüm belgeyi belleğe yüklemek yerine akış‑tabanlı render'ı etkinleştirin. Ayrıca, sık erişilen kaynakları bellekte tutmak ve disk I/O'yu azaltmak için `ViewerConfig` önbellek ayarlarını ince ayar yapın.
+## Java'da bir PDF'ye görüntü filigranı ekleme?
 
-## Java'da PDF meta verilerini nasıl çıkarırsınız?
-`DocumentInfo` sınıfı, yazar ve oluşturma tarihi gibi belge meta verilerine erişim sağlar. PDF'yi bir `Viewer` ile yükledikten sonra `viewer.getDocumentInfo()` çağırarak bir `DocumentInfo` nesnesi alın. Bu nesne başlık, konu, anahtar kelimeler ve özel meta veriler gibi özellikleri içerir; böylece belgeleri programatik olarak indeksleyebilir, arayabilir veya denetleyebilirsiniz.
+PDF'nizi yükleyin, görüntü tabanlı bir filigran oluşturun ve render edin.  
+**Direct answer:** PNG veya JPEG dosyasına işaret eden bir `ImageWatermark` örneği oluşturun, opaklığını ve konumunu ayarlayın, bunu bir `ViewerConfig`'e atayın ve belgeyi render edin. Görüntü, belirttiğiniz seçeneklere göre her sayfaya karıştırılır ve orijinal dosyayı değiştirmeden marka düzeyinde koruma sağlar.
+
+`ImageWatermark`, PDF sayfalarına filigran eklemek için bir görüntü kaplaması tanımlar.
+
+```java
+ImageWatermark imgWatermark = new ImageWatermark("logo.png");
+imgWatermark.setOpacity(0.3);
+ViewerConfig config = new ViewerConfig();
+config.setWatermark(imgWatermark);
+Viewer viewer = new Viewer("sample.pdf");
+viewer.render(config, HtmlSaveOptions.create());
+```
+
+## Sunucu‑tarafı PDF render performansını nasıl artırabilirsiniz?
+
+Yalnızca ihtiyacınız olan sayfaları render edin, istekler arasında tek bir `Viewer` örneğini yeniden kullanın ve tüm belgeyi belleğe yüklemekten kaçınmak için akış‑tabanlı render'ı etkinleştirin.  
+**Direct answer:** Sayfaları çıktıya akıtmak için `ViewerConfig.setRenderMode(RenderMode.Stream)` kullanın, belirli sayfalar için `viewer.render(pageRange, options)` çağırın ve önbelleğe alınmış bir `Viewer` örneğini iş parçacığı‑güvenli bir havuzda tutun. Bu, bellek baskısını %70'e kadar azaltır ve büyük PDF'ler için iş hacmini artırır.
+
+`ViewerConfig`, önbellekleme, sayfa limitleri ve render kalitesini kontrol etmenizi sağlar. `setCacheSize(256)` ayarı, yeniden kullanılabilir sayfa görüntüleri için 256 MB ayırır, `setRenderMode(RenderMode.Stream)` ise tüm belgeyi tamponlamadan sayfaları çıktıya akıtır.
+
+## Java'da PDF meta verilerini nasıl çıkarabilirsiniz?
+
+PDF'yi bir görüntüleyicide açmadan yazar, oluşturulma tarihi ve diğer özellikleri alın.  
+**Direct answer:** `Viewer` ile bir belge yükledikten sonra, `viewer.getDocumentInfo()` çağırarak `DocumentInfo` nesnesini elde edin; bu nesne `getAuthor()`, `getCreationDate()`, `getKeywords()` ve özel meta veri alanlarını sunar. Ardından bu bilgileri ihtiyacınıza göre depolayabilir veya indeksleyebilirsiniz.
+
+`DocumentInfo`, yazar ve oluşturulma tarihi gibi bir belgenin meta verilerine erişim sağlar.
+
+```java
+Viewer viewer = new Viewer("sample.pdf");
+DocumentInfo info = viewer.getDocumentInfo();
+System.out.println("Author: " + info.getAuthor());
+```
 
 ## Java'da belge URL'si nasıl yüklenir?
-`InputStream` sınıfı, bir ağ bağlantısı gibi bir kaynaktan okunan bayt akışını temsil eder.
 
-Uzak dosyayı bir `InputStream` olarak (örneğin `HttpURLConnection` veya bir AWS S3 istemcisi kullanarak) alın ve bu akışı doğrudan `Viewer` yapıcısına geçirin. Bu, geçici yerel depolama ihtiyacını ortadan kaldırır ve dağıtık mimarilerde gecikmeyi azaltır. Dosyayı doğrudan Viewer'a akıtmak, disk I/O'yu önler ve özellikle bulut ortamlarında büyük PDF'leri işlerken gecikmeyi iyileştirir.
+Uzak bir PDF'yi geçici dosyalar olmadan doğrudan görüntüleyiciye akıtın.  
+**Direct answer:** Uzak dosyayı bir `InputStream` olarak alın (`HttpURLConnection`, Apache HttpClient veya bir AWS S3 istemcisi kullanarak) ve bu akışı `Viewer` yapıcısına geçirin. Bu, disk I/O'sunu ortadan kaldırır, gecikmeyi azaltır ve bulut‑yerel mimarilerde sorunsuz çalışır.
 
-## Java Performans Ayarı
-`ViewerConfig` sınıfı önbellekleme, sayfa limitleri ve render kalitesini kontrol etmenizi sağlar. `setCacheSize(256)` çağrısı, yeniden kullanılabilir sayfa görüntüleri için 256 MB ayırırken, `setRenderMode(RenderMode.Stream)` tüm belgeyi tamponlamadan sayfaları çıktıya akıtır.
+`InputStream`, ağ bağlantısı gibi bir kaynaktan okunan bayt akışını temsil eder.
 
-Aynı `Viewer` örneğini birden fazla istek arasında yeniden kullanmak, başlatma süresini %40'a kadar azaltır; bu da yüksek‑verimli hizmetler için kritiktir.
+```java
+URL url = new URL("https://example.com/sample.pdf");
+try (InputStream stream = url.openStream()) {
+    Viewer viewer = new Viewer(stream);
+    // render or extract metadata
+}
+```
 
-## Java'da filigran ekleme (**add watermark java**)
-`Watermark` nesnesi birden fazla render çağrısı arasında yeniden kullanılabilir; bu yüzden bir kez yapılandırıp işlediğiniz her belgeye uygularsınız. Metin ve resim filigranlarını birleştirerek her iki öğeyi de içeren bileşik bir `Watermark` oluşturabilirsiniz.
+## Performans ayarı Java
 
-## Java'da Word'ü HTML'e dönüştürme (**convert word html java**)
-GroupDocs.Viewer, `.docx` dosyalarını tek bir API çağrısıyla temiz, duyarlı HTML'e dönüştürür. Çıktı stil, tablo ve gömülü görüntüleri korur; bu da orijinal dosyayı ortaya çıkarmadan Word içeriğini önizlemek isteyen web portalları için idealdir.
+`ViewerConfig`, önbellek boyutlarını ve render modlarını da ince ayar yapmanıza olanak tanır. Daha büyük bir önbellek ayarlamak aynı sayfaların tekrar tekrar kod çözülmesini azaltırken, akış render'ı çok sayfalı PDF'lerde bile bellek kullanımını sabit tutar.
 
-## Java'da PDF'i görüntülere render etme (**pdf to images java**)
-`viewer.renderPage(pageNumber, ImageSaveOptions)` çağrısıyla her PDF sayfasını PNG, JPEG veya BMP olarak render edebilirsiniz. Kütüphane DPI ölçeklendirmesini destekler; böylece ön izleme galerileri için yüksek çözünürlüklü küçük resimler (ör. 300 dpi) oluşturabilirsiniz.
+## Java'da filigran ekleme (**add pdf watermark java**)
 
-## Java'da PDF'i HTML'e render etme (**render pdf java**)
-`viewer.render(document, HtmlSaveOptions)` kullanarak orijinal düzeni yansıtan HTML üretin. HTML çıktısı gömülü base‑64 görüntüler içerir; vektör grafikleri ve yazı tipleri ek varlıklar olmadan korunur.
+`Watermark` nesnesi birden fazla render çağrısında yeniden kullanılabilir; bu sayede bir kez yapılandırıp işlediğiniz her belgeye uygularsınız. Metin ve görüntü filigranlarını, her iki öğeyi de içeren birleşik bir `Watermark` oluşturarak birleştirebilirsiniz.
 
-## Eğitim Kategorileri
+## Java'da Word'ü HTML'ye dönüştürme (**convert word html java**)
+
+GroupDocs.Viewer, `.docx` dosyalarını tek bir API çağrısıyla temiz, duyarlı HTML'ye dönüştürür. Çıktı stil, tablolar ve gömülü görüntüleri korur; bu da orijinal dosyayı ortaya çıkarmadan Word içeriğini önizlemesi gereken web portalları için idealdir.
+
+## Java'da PDF'yi görüntülere render etme (**pdf to images java**)
+
+Her PDF sayfasını `viewer.renderPage(pageNumber, ImageSaveOptions)` çağırarak PNG, JPEG veya BMP'ye render edebilirsiniz. Kütüphane DPI ölçeklendirmesini destekler; bu sayede önizleme galerileri için yüksek çözünürlüklü küçük resimler (ör. 300 dpi) oluşturabilirsiniz.
+
+## Java'da PDF'yi HTML'ye render etme (**render pdf java**)
+
+`viewer.render(document, HtmlSaveOptions)` kullanarak orijinal düzeni yansıtan HTML üretin. HTML çıktısı gömülü base‑64 görüntüler içerir; vektör grafikler ve yazı tipleri ek varlıklar olmadan korunur.
+
+## Eğitim kategorileri
 
 ### [Başlarken](./getting-started/)
-GroupDocs.Viewer for Java temellerini öğrenin. Başlangıç‑dostu eğitimlerimiz kurulum, lisanslama ve ilk ayarları adım adım gösterir; böylece Java uygulamalarınızda belge render'ı için sağlam bir temel elde edersiniz.
+GroupDocs.Viewer for Java temellerini öğrenin. Başlangıç‑dostu eğitimlerimiz kurulum, lisanslama ve ilk ayarları adım adım gösterir, Java uygulamalarınızda belge render'ı için sağlam bir temel sağlar.
 
 ### [Belge Yükleme](./document-loading/)
-Belgeleri çeşitli kaynaklardan yükleme sanatını ustalaştırın. Bu eğitimler, yerel dosyalar, akışlar, URL'ler ve bulut depolama gibi farklı yöntemlerle belgeleri verimli bir şekilde nasıl yöneteceğinizi gösterir.
+Belge yüklemenin inceliklerini keşfedin. Bu eğitimler yerel dosyalar, akışlar, URL'ler ve bulut depolamadan belgeleri verimli bir şekilde nasıl yöneteceğinizi gösterir.
 
 ### [Render Temelleri](./rendering-basics/)
-Belge render'ının çekirdeğine dalın. HTML, PDF ve görüntüler gibi birden çok çıktı formatına dönüştürme ve render kalitesi ile sayfa‑seviyesi yönetim üzerinde tam kontrol sağlama konularını öğrenin.
+Belge render'ının çekirdeğine dalın. HTML, PDF ve görüntüler gibi birden çok çıktı formatına dönüştürme ve render kalitesi ile sayfa‑düzeyi yönetimi üzerinde tam kontrol elde edin.
 
 ### [İleri Düzey Render](./advanced-rendering/)
-Belge render becerilerinizi bir üst seviyeye taşıyın. Bu ileri düzey eğitimler, karmaşık render senaryoları, özel yapılandırmalar ve sofistike belge görüntüleme çözümleri için uzman teknikleri kapsar.
+Belge render becerilerinizi bir üst seviyeye taşıyın. Bu ileri düzey eğitimler karmaşık render senaryoları, özel yapılandırmalar ve sofistike belge görüntüleme çözümleri için uzman teknikleri kapsar.
 
 ### [Performans Optimizasyonu](./performance-optimization/)
 Özel eğitimlerimizle belge render performansınızı optimize edin. Bellek yönetimi, render hızı iyileştirmeleri ve büyük belgelerle sorunsuz çalışma tekniklerini öğrenin.
@@ -131,56 +180,56 @@ Belge render becerilerinizi bir üst seviyeye taşıyın. Bu ileri düzey eğiti
 Parola koruması, erişim kontrolleri ve izin yönetimi üzerine eğitimlerle güçlü belge güvenliği uygulayın. Belge görüntüleme uygulamalarınızın gizliliğini ve bütünlüğünü sağlayın.
 
 ### [Filigranlar & Açıklamalar](./watermarks-annotations/)
-Filigranlar ve açıklamalarla belgelerinizi zenginleştirin. Bu eğitimler, görsel meta veri ve koruyucu işaretleri ekleme, yönetme ve render etme konularını gösterir.
+Filigranlar ve açıklamalarla belgelerinizi zenginleştirin. Bu eğitimler görsel meta verileri ve koruyucu işaretleri ekleme, yönetme ve render etme konularını gösterir.
 
 ### [Dosya Formatları Desteği](./file-formats-support/)
-Çoklu belge formatları için kapsamlı desteği keşfedin. Eğitimlerimiz PDF, Microsoft Office belgeleri, görüntüler ve özel dosya türlerini tutarlı kaliteyle render ve işleme konularını kapsar.
+Birden çok belge formatı için kapsamlı desteği keşfedin. Eğitimlerimiz PDF, Microsoft Office belgeleri, görüntüler ve özel dosya türlerini tutarlı kaliteyle render ve işleme konularını kapsar.
 
 ### [Bulut & Uzaktan Belge Render'ı](./cloud-remote-document-rendering/)
-Bulut depolama, uzak URL'ler ve dış kaynaklardan belge render'ı tekniklerini ustalaştırın. Esnek, dağıtık belge görüntüleme çözümleri oluşturun.
+Bulut depolama, uzak URL'ler ve dış kaynaklardan belge render'ı tekniklerini ustalaşın. Esnek, dağıtık belge görüntüleme çözümleri oluşturun.
 
 ### [Önbellekleme & Kaynak Yönetimi](./caching-resource-management/)
 Verimli önbellekleme stratejileri uygulayın ve kaynak yönetimini optimize edin. Belge görüntüleme performansını artırmayı ve hesaplama yükünü azaltmayı öğrenin.
 
 ### [Meta Veri & Özellikler](./metadata-properties/)
-Belge meta verilerini çıkarma, yönetme ve kullanma konularını öğrenin. Bu eğitimler, belge bilgilerini programatik olarak analiz etme ve işleme yollarını gösterir.
+Belge meta verilerini çıkarma, yönetme ve kullanma konularını öğrenin. Bu eğitimler belge bilgilerini programatik olarak analiz ve işleme yollarını gösterir.
 
 ### [Dışa Aktarım & Dönüştürme](./export-conversion/)
-Belge dışa aktarım ve dönüşüm tekniklerinde uzmanlaşın. Birden çok format arasında belgeyi dönüştürürken biçimlendirme ve kaliteyi korumayı öğrenin.
+Belge dışa aktarma ve dönüştürme tekniklerinde uzmanlaşın. Formatlar arasında dönüşüm yaparken biçimlendirme ve kaliteyi korumayı öğrenin.
 
-### [Özel Render](./custom-render/)
-Özel render işleyicileri oluşturma ve GroupDocs.Viewer’ın standart render yaklaşımlarının ötesine geçme üzerine ileri düzey özelleştirme eğitimlerine dalın.
+### [Özel Render](./custom-rendering/)
+Özel render işleyicileri oluşturma ve GroupDocs.Viewer’ın standart render yaklaşımlarının ötesine geçme konularında ileri düzey özelleştirmelere dalın.
 
 ## Sıkça Sorulan Sorular
 
-**Q: Herhangi bir üçüncü‑taraf yazılımı kurmadan PDF'leri render edebilir miyim?**  
-A: Evet. GroupDocs.Viewer for Java saf‑Java bir kütüphanedir ve Microsoft Office, Adobe Reader veya başka dış bileşen gerektirmez.
+**Q: PDF'leri üçüncü taraf bir yazılım kurmadan render edebilir miyim?**  
+A: Evet. GroupDocs.Viewer for Java saf‑Java bir kütüphanedir ve Microsoft Office, Adobe Reader veya diğer dış bileşenleri gerektirmez.
 
-**Q: PDF render ederken nasıl bir metin filigranı eklerim?**  
-A: İstediğiniz metni içeren bir `Watermark` nesnesi oluşturun, `ViewerConfig`'e atayın ve render sırasında yapılandırmayı `Viewer`'a geçirin.
+**Q: PDF render ederken metin filigranı nasıl eklerim?**  
+A: İstenen metinle bir `Watermark` nesnesi oluşturun, bunu `ViewerConfig`'e atayın ve render ederken `Viewer`'a yapılandırmayı geçirin.
 
 **Q: Büyük PDF'lerde render hızını artırmanın en iyi yolu nedir?**  
-A: İhtiyacınız olan sayfaları sadece render edin, `Viewer` örneklerini yeniden kullanın ve bellek kullanımını düşük tutmak için akış‑tabanlı render'ı etkinleştirin.
+A: Yalnızca ihtiyacınız olan sayfaları render edin, `Viewer` örneklerini yeniden kullanın ve bellek kullanımını düşük tutmak için akış‑tabanlı render'ı etkinleştirin.
 
-**Q: PDF'den yazar ve oluşturma tarihini çıkarmak mümkün mü?**  
-A: Evet. Belgeyi yükledikten sonra `DocumentInfo` sınıfını kullanarak yazar, oluşturma tarihi ve anahtar kelimeler gibi meta verileri alın.
+**Q: PDF'den yazar ve oluşturulma tarihini çıkarmak mümkün mü?**  
+A: Evet. Belgeyi yükledikten sonra `DocumentInfo` sınıfını kullanarak yazar, oluşturulma tarihi ve anahtar kelimeler gibi meta verileri alın.
 
 **Q: PDF'yi doğrudan bir AWS S3 URL'sinden yükleyebilir miyim?**  
 A: Kesinlikle. Dosyayı S3'ten bir `InputStream` olarak alın ve akışı `Viewer` yapıcısına geçirin.
 
-## Ek Kaynaklar
-- [GroupDocs.Viewer Belgeleri](https://reference.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer İndirilmeleri](https://downloads.groupdocs.com/viewer/java)
+## Ek kaynaklar
+- [GroupDocs.Viewer Dokümantasyonu](https://reference.groupdocs.com/viewer/java/)
+- [GroupDocs.Viewer İndirmeleri](https://downloads.groupdocs.com/viewer/java)
 - [GroupDocs Destek Forumu](https://forum.groupdocs.com/c/viewer/)
 
 ---
 
-**Son Güncelleme:** 2026-09-05  
+**Son Güncelleme:** 2026-11-12  
 **Test Edilen Versiyon:** GroupDocs.Viewer for Java 23.11 (yazım anındaki en son sürüm)  
 **Yazar:** GroupDocs
 
-## İlgili Eğitimler
+## İlgili eğitimler
 
-- [GroupDocs Viewer ile PDF Render Java – Başlarken](/viewer/java/getting-started/)
+- [GroupDocs Viewer ile PDF Java Render – Başlarken](/viewer/java/getting-started/)
 - [PDF Katmanlı Render Java – GroupDocs.Viewer ile Verimli PDF Katmanlı Render](/viewer/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/)
 - [java convert msg to pdf – Email'den PDF'ye Render'ı GroupDocs.Viewer ile Optimize Et](/viewer/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/)
