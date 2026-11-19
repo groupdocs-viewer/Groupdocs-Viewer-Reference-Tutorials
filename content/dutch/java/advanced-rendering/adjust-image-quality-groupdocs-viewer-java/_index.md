@@ -1,24 +1,27 @@
 ---
-date: '2026-09-05'
-description: Leer hoe je pdf naar html kunt converteren en de beeldkwaliteit in PDF's
-  kunt aanpassen met GroupDocs.Viewer voor Java, waardoor de pdf‑bestandsgrootte wordt
-  verkleind terwijl de helderheid behouden blijft.
+date: '2026-11-19'
+description: Leer hoe je pdf naar html kunt converteren en image quality in PDF's
+  kunt aanpassen met GroupDocs.Viewer for Java, waardoor de pdf file size wordt verkleind
+  terwijl de clarity behouden blijft.
+images:
+- /java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/og-image.png
 keywords:
 - convert pdf to html
 - reduce pdf file size
+- pdf to html java
+- high image quality pdf
 - optimize pdf image quality
-- java pdf to html
-- GroupDocs.Viewer image quality
-lastmod: '2026-09-05'
-og_description: Converteer pdf naar html met GroupDocs.Viewer voor Java en pas de
-  beeldkwaliteit aan om de pdf‑bestandsgrootte te verkleinen terwijl de helderheid
-  behouden blijft. Leer stap‑voor‑stap.
+lastmod: '2026-11-19'
+og_description: Converteer pdf naar html met GroupDocs.Viewer for Java en pas image
+  quality aan om file size te verkleinen terwijl de clarity behouden blijft. Deze
+  stapsgewijze gids laat zien hoe je rendering options kunt configureren en optimale
+  resultaten kunt behalen.
 og_image_alt: Guide showing Java code to convert PDF to HTML with optimized image
   quality using GroupDocs.Viewer
-og_title: Converteer pdf naar html en optimaliseer de beeldkwaliteit in Java met GroupDocs.Viewer
+og_title: Converteer pdf naar html en optimaliseer images snel in Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-09-05'
+  dateModified: '2026-11-19'
   description: Learn how to convert pdf to html and adjust image quality in PDFs with
     GroupDocs.Viewer for Java, reducing pdf file size while preserving clarity.
   headline: How to convert pdf to html and optimize image quality in Java with GroupDocs.Viewer
@@ -68,38 +71,39 @@ tags:
 - Java document processing
 - pdf to html
 - image optimization
-title: Hoe pdf naar html te converteren en de beeldkwaliteit te optimaliseren in Java
+title: Hoe pdf naar html te converteren en image quality te optimaliseren in Java
   met GroupDocs.Viewer
 type: docs
 url: /nl/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Hoe pdf naar html converteren en de beeldkwaliteit optimaliseren in Java met GroupDocs.Viewer
+# Hoe pdf naar html te converteren en de afbeeldingskwaliteit te optimaliseren in Java met GroupDocs.Viewer
 
-Als je **pdf naar html moet converteren** terwijl je de visuele getrouwheid van ingesloten afbeeldingen behoudt, ben je op de juiste plek. Grote PDF‑bestanden bevatten vaak afbeeldingen met hoge resolutie die de bestandsgrootte doen oplopen, waardoor delen of web‑weergave omslachtig wordt. Met **GroupDocs.Viewer for Java** kun je de beeldkwaliteit tijdens het conversieproces fijn afstellen, zodat je de perfecte balans vindt tussen helderheid en een verkleinde PDF‑bestandsgrootte. In deze tutorial lopen we de volledige setup door, leggen we uit waarom het aanpassen van de beeldkwaliteit belangrijk is, en laten we je stap‑voor‑stap zien hoe je pdf naar html converteert met optimale resultaten.
+Als je **pdf naar html** wilt **converteren** terwijl je de visuele getrouwheid van ingesloten afbeeldingen behoudt, ben je hier aan het juiste adres. Grote PDF's bevatten vaak afbeeldingen met hoge resolutie die de bestandsgrootte opblazen, waardoor delen of web‑weergave omslachtig wordt. Met **GroupDocs.Viewer for Java** kun je de afbeeldingskwaliteit tijdens het conversieproces fijn afstemmen, zodat je de perfecte balans krijgt tussen helderheid en een verkleinde PDF‑bestandsgrootte. In deze tutorial lopen we de volledige installatie door, leggen we uit waarom het aanpassen van de afbeeldingskwaliteit belangrijk is, en laten we je stap‑voor‑stap zien hoe je pdf naar html kunt converteren met optimale resultaten.
 
-![PDF-beeldkwaliteit optimaliseren met GroupDocs.Viewer voor Java](/viewer/advanced-rendering/optimize-pdf-image-quality-java.png)
+![Optimaliseer PDF-afbeeldingskwaliteit met GroupDocs.Viewer voor Java](/viewer/advanced-rendering/optimize-pdf-image-quality-java.png)
+[Optimaliseer PDF-afbeeldingskwaliteit met GroupDocs.Viewer voor Java](/viewer/advanced-rendering/optimize-pdf-image-quality-java.png)
 
 **Wat je zult leren**
 
-- Hoe je GroupDocs.Viewer for Java installeert en configureert.  
-- De exacte code die nodig is om **pdf naar html te converteren** en de beeldcompressie te regelen.  
+- Hoe je GroupDocs.Viewer voor Java installeert en configureert.  
+- De exacte code die nodig is om **pdf naar html** te **converteren** en de beeldcompressie te regelen.  
 - Tips om **pdf‑bestandsgrootte te verkleinen** zonder leesbaarheid op te offeren.  
-- Praktijkvoorbeelden waarin **pdf‑beeldkwaliteit optimaliseren** essentieel is.
+- Praktijkvoorbeelden waarbij **pdf‑afbeeldingskwaliteit optimaliseren** essentieel is.
 
 ## Snelle antwoorden
-- **Wat betekent “convert pdf to html”?** Het zet elke PDF‑pagina om in een zelfstandige HTML‑pagina, behoudt lay‑out, lettertypen en vectorafbeeldingen zodat het document in elke browser kan worden bekeken zonder een PDF‑plug‑in.  
-- **Waarom de beeldkwaliteit aanpassen?** Het verlagen van de afbeeldingsresolutie verkleint de bestandsgrootte drastisch, versnelt het laden van pagina’s en vermindert bandbreedte terwijl er nog steeds duidelijke visuals worden geleverd.  
-- **Met welke beeldkwaliteitsinstelling moet ik beginnen?** `ImageQuality.MEDIUM` biedt een goede afweging; schakel over naar `HIGH` voor print‑klare PDF‑bestanden of `LOW` voor de kleinst mogelijke bestanden.  
+- **Wat betekent “convert pdf to html”?** Het zet elke PDF‑pagina om in een onafhankelijke HTML‑pagina, behoudt lay-out, lettertypen en vector‑graphics zodat het document in elke browser kan worden bekeken zonder een PDF‑plug‑in.  
+- **Waarom de afbeeldingskwaliteit aanpassen?** Het verlagen van de beeldresolutie verkleint de bestandsgrootte drastisch, versnelt het laden van pagina’s en vermindert bandbreedte, terwijl er nog steeds duidelijke visuals worden geleverd.  
+- **Welke afbeeldingskwaliteitsinstelling moet ik als eerste gebruiken?** `ImageQuality.MEDIUM` biedt een goede balans; schakel over naar `HIGH` voor print‑klare PDF’s of `LOW` voor de kleinst mogelijke bestanden.  
 - **Heb ik een licentie nodig voor ontwikkeling?** Een gratis proefversie werkt voor ontwikkeling en testen; een betaalde licentie is vereist voor productie‑implementaties.  
-- **Kan ik veel PDF‑bestanden in batch verwerken?** Ja—omwikkel de renderlogica in een lus of stream over een collectie bestanden.
+- **Kan ik veel PDF’s batch‑verwerken?** Ja—omsluit de renderlogica in een lus of stream over een verzameling bestanden.
 
-## Wat is “convert pdf to html”?
-**Convert pdf to html** betekent dat elke pagina van een PDF‑document wordt omgezet in een HTML‑representatie die browsers native kunnen weergeven. GroupDocs.Viewer recreëert de oorspronkelijke lay‑out, embedde afbeeldingen en mappt tekst naar HTML‑elementen, zodat de output er identiek uitziet als de bron‑PDF zonder dat er een PDF‑plug‑in nodig is.
+## Wat betekent “convert pdf to html”?
+Convert pdf to html betekent dat elke pagina van een PDF‑document wordt omgezet in een HTML‑representatie die browsers native kunnen weergeven. GroupDocs.Viewer recreëert de oorspronkelijke lay-out, voegt afbeeldingen in en mappt tekst naar HTML‑elementen, zodat de output er identiek uitziet als de bron‑PDF zonder dat een PDF‑plug‑in nodig is.
 
-## Waarom PDF‑beeldkwaliteit aanpassen?
-Het verlagen van de beeldkwaliteit **reduce pdf file size** direct, omdat rasterafbeeldingen meestal het grootste deel van de bytes van een PDF uitmaken. Door afbeeldingen te comprimeren tot 70 % kwaliteit, kun je een PDF van 30 MB verkleinen tot onder 10 MB terwijl je de visuele helderheid behoudt voor scherm‑lezen en web‑distributie.
+## Waarom de PDF‑afbeeldingskwaliteit aanpassen?
+Het verlagen van de afbeeldingskwaliteit verkleint direct **pdf‑bestandsgrootte** omdat raster‑afbeeldingen meestal het grootste deel van de bytes van een PDF uitmaken. Door afbeeldingen te comprimeren tot 70 % kwaliteit kun je een PDF van 30 MB verkleinen tot minder dan 10 MB, terwijl je de visuele helderheid behoudt voor scherm‑lezen en web‑levering.
 
 ## Vereisten
 
@@ -131,13 +135,13 @@ Voeg de GroupDocs‑repository en afhankelijkheid toe aan je `pom.xml`:
 </dependencies>
 ```
 
-### Licentie‑acquisitie
+### Licentie verkrijgen
 
-Begin met een gratis proefversie of vraag een tijdelijke licentie aan om functies zonder beperkingen te verkennen. Voor langdurig gebruik kun je een licentie aanschaffen via de [GroupDocs purchase page](https://purchase.groupdocs.com/buy).
+Begin met een gratis proefversie of vraag een tijdelijke licentie aan om functies zonder beperkingen te verkennen. Voor langdurig gebruik kun je overwegen een licentie te kopen via de [GroupDocs purchase page](https://purchase.groupdocs.com/buy).
 
 ### Basisinitialisatie en configuratie
 
-De `Viewer`‑klasse is de kernengine van GroupDocs.Viewer die een PDF‑document laadt en rendert naar verschillende uitvoerformaten. Zodra de bibliotheek op je classpath staat, kun je een `Viewer`‑instantie maken. Het volgende fragment laat zien hoe je een PDF‑bestand opent—houd het exact zoals weergegeven:
+`Viewer` is de kernengine van GroupDocs.Viewer die een PDF‑document laadt en rendert naar verschillende uitvoerformaten. Nadat de bibliotheek op je classpath staat, kun je een `Viewer`‑instantie maken. Het volgende fragment toont hoe je een PDF‑bestand opent — behoud het exact zoals getoond:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -149,12 +153,13 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
-## Hoe pdf naar html converteren met GroupDocs.Viewer
-Het converteren van een PDF naar HTML met GroupDocs.Viewer omvat twee hoofd stappen. Eerst specificeer je de uitvoermap waar de gegenereerde HTML‑pagina's en ondersteunende bronnen worden opgeslagen. Vervolgens configureer je de renderopties, inclusief het gewenste compressieniveau voor afbeeldingen, om ervoor te zorgen dat de resulterende HTML visuele getrouwheid behoudt terwijl de totale bestandsgrootte zo klein mogelijk blijft.
+## Hoe pdf naar html te converteren met GroupDocs.Viewer
 
-### Stap 1: outputdirectorypad definiëren
+Laad je PDF met `new Viewer("source.pdf")` en roep `viewer.view` aan met een `HtmlViewOptions`‑instantie — dit twee‑stappenpatroon voert de volledige conversie uit. Je kunt paginering, uitvoermap en beeldcompressie regelen via het opties‑object, waardoor je volledige flexibiliteit hebt zonder extra nabewerking.
 
-De variabele `outputPath` wijst naar de map waar elke gegenereerde HTML‑pagina wordt opgeslagen.
+### Stap 1: definieer het uitvoermappad
+
+De variabele `outputPath` wijst naar de map waarin elke gegenereerde HTML‑pagina wordt opgeslagen.
 
 ```java
 import java.nio.file.Path;
@@ -163,7 +168,7 @@ import java.nio.file.Paths;
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 ```
 
-### Stap 2: paginabestandformaat specificeren
+### Stap 2: specificeer paginabestandsformaat
 
 `pageFilePathFormat` bepaalt het naamgevingspatroon voor de individuele HTML‑pagina's.
 
@@ -171,9 +176,9 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-### Stap 3: `HtmlViewOptions`‑object maken
+### Stap 3: maak `HtmlViewOptions`‑object
 
-De `HtmlViewOptions`‑klasse definieert renderopties zoals de uitvoermap, paginering en beeldverwerking.
+`HtmlViewOptions` is de configuratieklasse op het hoogste niveau die GroupDocs.Viewer vertelt waar bestanden moeten worden weggeschreven, of er gepagineerd moet worden en hoe afbeeldingen worden behandeld.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -182,20 +187,20 @@ import com.groupdocs.viewer.options.ImageQuality;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-### Stap 4: afbeeldingskwaliteit instellen
+### Stap 4: stel afbeeldingskwaliteitsniveau in
 
-`ImageQuality` is een enum die het compressieniveau regelt dat wordt toegepast op rasterafbeeldingen tijdens het renderen.
+`ImageQuality` is een enum die het compressieniveau regelt dat op raster‑afbeeldingen wordt toegepast tijdens het renderen.
 
 ```java
 ImageQuality quality = ImageQuality.MEDIUM;
 viewOptions.getPdfOptions().setImageQuality(quality);
 ```
 
-> **Pro tip:** Gebruik `ImageQuality.HIGH` voor geprinte PDF‑bestanden of `ImageQuality.LOW` wanneer je de kleinst mogelijke bestanden nodig hebt.
+> **Pro‑tip:** Gebruik `ImageQuality.HIGH` voor geprinte PDF’s of `ImageQuality.LOW` wanneer je de kleinst mogelijke bestanden nodig hebt.
 
-### Stap 5: PDF-document renderen
+### Stap 5: render het PDF‑document
 
-De aanroep `viewer.view` verwerkt de bron‑PDF en schrijft de HTML‑bestanden naar de locatie die je hebt opgegeven.
+De `viewer.view`‑aanroep verwerkt de bron‑PDF en schrijft de HTML‑bestanden naar de opgegeven locatie.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
@@ -203,64 +208,90 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
+## Waarom dit belangrijk is voor webpublicatie
+
+Wanneer je documenten op het web aanbiedt, heeft de laadsnelheid van pagina's directe invloed op gebruikersbetrokkenheid en SEO‑rangschikkingen. Het converteren van PDF’s naar HTML elimineert de noodzaak van een PDF‑plug‑in, verbetert de toegankelijkheid en laat zoekmachines de tekst indexeren. Door **pdf‑afbeeldingskwaliteit te optimaliseren** houd je het paginagewicht laag, wat resulteert in snellere laadtijden op mobiele netwerken.
+
+## Tips en best practices
+
+- **Kies de juiste afbeeldingskwaliteit**: `MEDIUM` is ideaal voor de meeste webscenario's; reserveer `HIGH` voor print‑klare assets.  
+- **Hergebruik de `Viewer`‑instantie** bij het verwerken van meerdere bestanden in een batch om JVM‑overhead te verminderen.  
+- **Stream grote PDF’s**: GroupDocs.Viewer verwerkt pagina’s één voor één, zodat je PDF’s met meer dan 500 pagina’s kunt behandelen zonder het geheugen uit te putten.  
+- **Valideer de output**: Open de gegenereerde HTML in verschillende browsers (Chrome, Firefox, Edge) om consistentie van de lay-out te waarborgen.  
+- **Combineer met CSS**: Na conversie kun je een aangepaste stylesheet injecteren om aan te sluiten bij de branding van je site.
+
+## Hoe om te gaan met met wachtwoord beveiligde PDF's?
+
+Geef het wachtwoord door via een `LoadOptions`‑object bij het construeren van de `Viewer`. Hierdoor kan de bibliotheek het document ontsleutelen vóór het renderen, zodat je het nog steeds naar HTML kunt converteren zonder handmatige wachtwoordinvoer.
+
+## Hoe een PDF naar één HTML‑bestand te converteren in plaats van meerdere pagina's?
+
+Gebruik `HtmlViewOptions.forSinglePage(pageFilePathFormat)` en stel de pagineringsmodus in op `HtmlViewOptions.PaginationMode.SINGLE`. Dit instrueert GroupDocs.Viewer om alle pagina’s te combineren tot één HTML‑document, wat handig is voor kleine PDF’s of wanneer je een één‑pagina preview nodig hebt.
+
+## Hoe meerdere PDF's efficiënt batch‑verwerken?
+
+Itereer over een map met PDF‑bestanden, maak voor elk een `Viewer`‑instantie en hergebruik één `HtmlViewOptions`‑instantie met een dynamisch uitvoerpad. Omhul de lus met een try‑with‑resources‑blok om te garanderen dat native resources na elk bestand worden vrijgegeven.
+
 ## Veelvoorkomende problemen en oplossingen
-- **Pad‑problemen:** Controleer of de paden absoluut of correct relatief ten opzichte van de project‑root zijn.  
+
+- **Bestandspadproblemen:** Controleer of de paden absoluut of correct relatief ten opzichte van de project‑root zijn.  
 - **Bibliotheekcompatibiliteit:** Zorg ervoor dat de GroupDocs.Viewer‑versie overeenkomt met je Java‑runtime (Java 8 +).  
-- **Geheugenbeheer:** Gebruik altijd een *try‑with‑resources*‑blok voor de `Viewer` om native geheugen direct vrij te geven.
+- **Geheugenbeheer:** Gebruik altijd een *try‑with‑resources*‑blok voor de `Viewer` om native geheugen tijdig vrij te geven.
 
 ## Praktische toepassingen
 
-1. **Document‑delingsplatforms** – Bied lichtgewicht, web‑vriendelijke HTML‑versies van PDF‑bestanden aan zonder verlies van beelddetail.  
-2. **Archiveringssystemen** – Bewaar PDF‑bestanden met verkleinde grootte terwijl voldoende visuele getrouwheid voor toekomstig gebruik behouden blijft.  
-3. **E‑learning‑materiaal** – Lever cursus‑PDF‑bestanden die snel laden op studentenapparaten, zelfs bij trage verbindingen.  
+1. **Documentdelingsplatforms** – Bied lichtgewicht, web‑vriendelijke HTML‑versies van PDF’s aan zonder afbeeldingsdetails te verliezen.  
+2. **Archiveringssystemen** – Bewaar PDF’s met verkleinde grootte terwijl voldoende visuele getrouwheid voor toekomstig gebruik behouden blijft.  
+3. **E‑learning‑materiaal** – Lever cursus‑PDF’s die snel laden op apparaten van studenten, zelfs bij trage verbindingen.
 
-Je kunt deze renderstroom combineren met cloud‑opslag‑API’s (AWS S3, Azure Blob) om end‑to‑end‑document‑pijplijnen te automatiseren.
+Je kunt deze renderstroom combineren met cloud‑opslag‑API’s (AWS S3, Azure Blob) om end‑to‑end document‑pijplijnen te automatiseren.
 
 ## Prestatie‑overwegingen
-- Maak het `Viewer`‑object vrij in een **try‑with‑resources**‑blok (zoals getoond) om native geheugen snel vrij te geven.  
+
+- Vrijgeven van het `Viewer`‑object in een **try‑with‑resources**‑blok (zoals getoond) om native geheugen snel vrij te maken.  
 - Kies de laagst acceptabele `ImageQuality` om CPU‑gebruik laag te houden, vooral bij het verwerken van grote batches.  
-- GroupDocs.Viewer ondersteunt conversie naar **20+ uitvoerformaten** en kan PDF‑bestanden met honderden pagina's streamen zonder het volledige bestand in het geheugen te laden, waardoor stabiele prestaties op bescheiden servers worden gegarandeerd.
+- GroupDocs.Viewer ondersteunt conversie naar **20+ uitvoerformaten** en kan multi‑honderd‑pagina PDF’s streamen zonder het volledige bestand in het geheugen te laden, wat zorgt voor stabiele prestaties op bescheiden servers.
 
 ## Conclusie
 
-Je hebt nu een complete, productie‑klare handleiding om **pdf naar html te converteren** terwijl je **pdf‑beeldkwaliteit optimaliseert** met GroupDocs.Viewer voor Java. Pas de `ImageQuality`‑enum aan op basis van je specifieke behoeften, en je zult merkbare verkleiningen in bestandsgrootte zien zonder concessies te doen aan de visuele ervaring.
+Je hebt nu een volledige, productie‑klare handleiding om **pdf naar html** te **converteren** terwijl je **pdf‑afbeeldingskwaliteit optimaliseert** met GroupDocs.Viewer voor Java. Pas de `ImageQuality`‑enum aan om aan je specifieke behoeften te voldoen, en je zult merkbare verkleiningen in bestandsgrootte zien zonder de visuele ervaring te compromitteren.
 
 **Volgende stappen:** Verken andere uitvoerformaten (bijv. `ImageViewOptions` voor PNG/JPEG), integreer met een document‑beheersysteem, of experimenteer met aangepaste CSS om de gegenereerde HTML‑pagina's te stylen.
 
 ## Veelgestelde vragen
 
-**Q: Heeft het aanpassen van de beeldkwaliteit invloed op de weergave van tekst?**  
-A: Nee. De `ImageQuality`‑instelling beïnvloedt alleen rasterafbeeldingen; tekst wordt gerenderd als HTML/CSS en blijft scherp.
+**Q: Heeft het aanpassen van de afbeeldingskwaliteit invloed op de weergave van tekst?**  
+A: Nee. De `ImageQuality`‑instelling beïnvloedt alleen raster‑afbeeldingen; tekst wordt gerenderd als HTML/CSS en blijft scherp.
 
-**Q: Kan ik deze aanpak gebruiken met met wachtwoord beveiligde PDF‑bestanden?**  
-A: Ja. Geef het wachtwoord door aan de `Viewer`‑constructor‑overload die een `LoadOptions`‑object accepteert.
+**Q: Kan ik deze aanpak gebruiken met met wachtwoord beveiligde PDF’s?**  
+A: Ja. Geef het wachtwoord door aan de `Viewer`‑constructoroverload die een `LoadOptions`‑object accepteert.
 
-**Q: Wat als ik de PDF naar één enkel HTML‑bestand wil converteren in plaats van meerdere pagina's?**  
+**Q: Wat als ik de PDF naar één HTML‑bestand moet converteren in plaats van meerdere pagina’s?**  
 A: Gebruik `HtmlViewOptions.forSinglePage(pageFilePathFormat)` en stel de juiste pagineringsoptie in.
 
-**Q: Zijn er limieten aan het aantal pagina's dat ik in één keer kan renderen?**  
-A: De bibliotheek streamt pagina's, dus je bent alleen beperkt door beschikbaar geheugen en verwerkingstijd.
+**Q: Zijn er limieten aan het aantal pagina’s dat ik in één keer kan renderen?**  
+A: De bibliotheek streamt pagina’s, dus je wordt alleen beperkt door beschikbaar geheugen en verwerkingstijd.
 
-**Q: Hoe verifieer ik dat de resulterende HTML identiek is aan de bron‑PDF?**  
-A: Open de gegenereerde HTML in een browser en vergelijk de visuele lay‑out; je kunt ook visuele regressietest‑tools gebruiken voor geautomatiseerde controles.
+**Q: Hoe verifieer ik dat de resulterende HTML er identiek uitziet als de bron‑PDF?**  
+A: Open de gegenereerde HTML in een browser en vergelijk de visuele lay-out; je kunt ook visuele regressietest‑tools gebruiken voor geautomatiseerde controles.
 
-**Bronnen**  
-- [Documentation](https://docs.groupdocs.com/viewer/java/)  
-- [API Reference](https://reference.groupdocs.com/viewer/java/)  
-- [Download GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
-- [Purchase License](https://purchase.groupdocs.com/buy)  
-- [Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+## Bronnen
+- [Documentatie](https://docs.groupdocs.com/viewer/java/)  
+- [API‑referentie](https://reference.groupdocs.com/viewer/java/)  
+- [GroupDocs.Viewer downloaden](https://releases.groupdocs.com/viewer/java/)  
+- [Licentie kopen](https://purchase.groupdocs.com/buy)  
+- [Gratis proefversie](https://releases.groupdocs.com/viewer/java/)  
+- [Tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/)  
+- [Supportforum](https://forum.groupdocs.com/c/viewer/9)  
 
 ---
 
-**Last Updated:** 2026-09-05  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs
+**Laatst bijgewerkt:** 2026-11-19  
+**Getest met:** GroupDocs.Viewer 25.2 for Java  
+**Auteur:** GroupDocs
 
 ## Gerelateerde tutorials
 
-- [Optimize Jpg Quality Groupdocs Viewer Java](/viewer/java/advanced-rendering/optimize-jpg-quality-groupdocs-viewer-java/)
-- [Groupdocs Viewer Java Responsive Html Rendering](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
-- [Render PDF Layered Java – Efficient PDF Layered Rendering with GroupDocs.Viewer](/viewer/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/)
+- [JPG‑kwaliteit optimaliseren GroupDocs Viewer Java](/viewer/java/advanced-rendering/optimize-jpg-quality-groupdocs-viewer-java/)
+- [GroupDocs Viewer Java responsieve HTML‑rendering](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [PDF gelaagd renderen Java – efficiënte PDF‑gelaagde rendering met GroupDocs.Viewer](/viewer/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/)
